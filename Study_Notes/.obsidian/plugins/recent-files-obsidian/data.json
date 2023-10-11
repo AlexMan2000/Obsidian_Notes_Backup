@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Randomized Inference",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
+    },
+    {
+      "basename": "Significance Tests",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
+    },
+    {
+      "basename": "Discretization_System_ID",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
       "basename": "Database",
       "path": "Computer_Science/Computer_Systems/Database System/Database.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Note17B",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/Typed_Notes/Note17B.pdf"
-    },
-    {
-      "basename": "Written_Notes19",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Written_Notes19.pdf"
-    },
-    {
-      "basename": "Written_Notes16",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/Typed_Notes/Written_Notes16.pdf"
-    },
-    {
-      "basename": "Chapter_5_Money_Market",
-      "path": "Economics_Finance/NYU_EGB/Chapter_5_Money_Market.md"
-    },
-    {
-      "basename": "Chapter_7_Economic_Policy",
-      "path": "Economics_Finance/NYU_EGB/Chapter_7_Economic_Policy.md"
     }
   ],
   "omittedPaths": [],
