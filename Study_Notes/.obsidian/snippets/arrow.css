@@ -1,0 +1,15 @@
+body:not(.default-icons) div.heading-collapse-indicator.collapse-indicator::before {
+  content: "↑";
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Inter';
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+  opacity: 0;
+}
+
+
+body:not(.default-icons) div.is-collapsed div.heading-collapse-indicator.collapse-indicator {
+  transform: translateX(7px) translateY(-7px) rotate(90deg);
+}

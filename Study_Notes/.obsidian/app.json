@@ -1,0 +1,7 @@
+{
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./Database.assets",
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": false
+}

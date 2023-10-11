@@ -1,0 +1,214 @@
+{
+  "workspaces": {
+    "Study_Notes": {
+      "main": {
+        "id": "afc3fe0383aebaf5",
+        "type": "split",
+        "children": [
+          {
+            "id": "8624cc1e4a459a35",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "386764a725ec0807",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Computer_Science/Information_Systems/EECS16A/2_Circuit Analysis/Circuit Components/Power_VI_Measurements.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                },
+                "group": "dd767e52f2e4b56b"
+              }
+            ]
+          },
+          {
+            "id": "5bf8c658d5bde980",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7e33c50d9ec7e7e8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Computer_Science/Information_Systems/EECS16A/2_Circuit Analysis/Circuit Components/Power_VI_Measurements.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                },
+                "group": "dd767e52f2e4b56b"
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "f900f31b8b407685",
+        "type": "split",
+        "children": [
+          {
+            "id": "ac58ecdddeed7005",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "932953190040c9d5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "a1ae5d442675c9de",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "PREREQ",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "f77f76cb311858e9",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "4f417f835f612f94",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f58fc5649c2dc1e2",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 261.5
+      },
+      "right": {
+        "id": "646448ef3be5aeb8",
+        "type": "split",
+        "children": [
+          {
+            "id": "acda57f1214ed0a4",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eb3a2082cee979e2",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Computer_Science/Information_Systems/EECS16A/2_Circuit Analysis/Circuit Components/Power_VI_Measurements.md"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "a57d72b1463cfa44",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "83c7969190d88bc2",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Computer_Science/Information_Systems/EECS16A/2_Circuit Analysis/Circuit Components/Power_VI_Measurements.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "4b87139d7043d916",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Computer_Science/Information_Systems/EECS16A/2_Circuit Analysis/Circuit Components/Power_VI_Measurements.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "2349a3933801eec4",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "06e519aa4232ea63",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "2ad6c65501c7e27e",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 366.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "workspaces:管理工作区布局": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false
+        }
+      },
+      "active": "386764a725ec0807"
+    }
+  },
+  "active": "Study_Notes"
+}

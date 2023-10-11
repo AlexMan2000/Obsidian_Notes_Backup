@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "afc3fe0383aebaf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f9949d447818aeb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29fb2b2323276499",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f900f31b8b407685",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac58ecdddeed7005",
+        "type": "tabs",
+        "dimension": 58.05555555555556,
+        "children": [
+          {
+            "id": "932953190040c9d5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a1ae5d442675c9de",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f77f76cb311858e9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "8b4fd2a6c0ba30b8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "4f417f835f612f94",
+        "type": "tabs",
+        "dimension": 41.94444444444444,
+        "children": [
+          {
+            "id": "f58fc5649c2dc1e2",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "386764a725ec0807",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 364.5
+  },
+  "right": {
+    "id": "646448ef3be5aeb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "acda57f1214ed0a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb3a2082cee979e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "a57d72b1463cfa44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83c7969190d88bc2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4b87139d7043d916",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "2349a3933801eec4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06e519aa4232ea63",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2ad6c65501c7e27e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 524.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-custom-frames:Open Notion": false,
+      "obsidian-custom-frames:Open Google Calendar": false
+    }
+  },
+  "active": "29fb2b2323276499",
+  "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Database System/Database.md",
+    "Computer_Science/Data_Structures/CS61B/2_List_Testing/Lectures_Readings_Study_Guides.md",
+    "Computer_Science/Data_Structures/CS61B/2_List_Testing/P1800__NBody.md",
+    "Computer_Science/Data_Structures/CS61B/2_List_Testing/DE1802__Scope__Pass-by-Value__Static.md",
+    "Computer_Science/Computer_Systems/UCB_CS61C_CA/Datalab.md",
+    "Computer_Science/Computer_Systems/Machine Structure",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/1_Capacitors.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/Sets_Math Notations.md",
+    "Computer_Science/Data_Structures/CS61B/2_List_Testing/DE1803__Linked_Lists__Arrays.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md",
+    "Computer_Science/Computer_Systems/Database System",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Prop_Quantifiers.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Proof_Basics.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454574971.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454573595.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454569051.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454568671.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454565508.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454597363.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454597105.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454595105.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454581358.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.assets/20230914_1454579136.png",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Exercise_2.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Recursive_Algorithms.md",
+    "Functions_Binary_Relation.assets/20230914_1454568671.png.md",
+    "Functions_Binary_Relation.assets",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Exercise_1.md",
+    "Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.assets",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Recursive_Algorithms.assets",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.assets",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/State_Machines",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Relations_Partial_Order - 副本",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Relations_Partial_Order",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory - 副本",
+    "Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
+    "Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+    "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/3_Practice_Exercises.md",
+    "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/2_Circuit Design.md",
+    "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/3_Practice_Exercises.md",
+    "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/HW0_HW1-Sp23.md",
+    "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/Matrix_Vectors_Basics.md",
+    "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/Section_0's.md",
+    "未命名.canvas"
+  ]
+}

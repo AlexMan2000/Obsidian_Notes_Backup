@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "3b1c35b4409cf303",
+    "type": "split",
+    "children": [
+      {
+        "id": "de498508299b3f99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c1522095aa7ab6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5b44208b5e9b8b28",
+    "type": "split",
+    "children": [
+      {
+        "id": "e10ae637c25acf9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f6984d457b6fc3c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3211f62b0360fe30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ca96cb0c38519f4f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "213372bf1b297b2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd2e25aed287d172",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b83f5bcd6eaf3f7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4cfd598f7987fe5f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "470c52cf6205c82e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "19372d48844b1c4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0f6984d457b6fc3c",
+  "lastOpenFiles": [
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934368192.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934365571.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934364970.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934367441.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934366864.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934364703.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934332985.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934331413.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934364474.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934333011.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/20230722_0934363252.png",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.assets",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.assets",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Reachability_Controllability.assets",
+    "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Orthonormalization.assets",
+    "Study_Notes/Computer_Science/Data_Structures/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md"
+  ]
+}
