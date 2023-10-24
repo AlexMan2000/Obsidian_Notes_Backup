@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Randomized Inference",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
+      "basename": "Pipelining",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
     },
     {
-      "basename": "Significance Tests",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
+      "basename": "常用GDB指令",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/常用GDB指令.md"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
     },
     {
       "basename": "Discretization_System_ID",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
     },
     {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+      "basename": "Labs__C_Debugging",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Debugging.md"
+    },
+    {
+      "basename": "Randomized Inference",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
+    },
+    {
+      "basename": "Significance Tests",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
     },
     {
       "basename": "Database",
@@ -187,18 +199,6 @@
     {
       "basename": "Note19",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Note19.pdf"
-    },
-    {
-      "basename": "5_Superposition_and_Equivalence",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/5_Superposition_and_Equivalence.md"
-    },
-    {
-      "basename": "Note18",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Note18.pdf"
-    },
-    {
-      "basename": "Note17B",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/Typed_Notes/Note17B.pdf"
     }
   ],
   "omittedPaths": [],
