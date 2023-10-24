@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "CALL",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
+    },
+    {
       "basename": "Caches_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "4_2D_Touchscreen",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/4_2D_Touchscreen.md"
-    },
-    {
-      "basename": "6_Practice_Exercises",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/6_Practice_Exercises.md"
     }
   ],
   "omittedPaths": [],
