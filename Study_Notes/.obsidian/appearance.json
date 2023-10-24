@@ -4,7 +4,8 @@
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
     "arrow",
-    "MCL Multi Column"
+    "MCL Multi Column",
+    "idea"
   ],
   "theme": "moonstone"
 }

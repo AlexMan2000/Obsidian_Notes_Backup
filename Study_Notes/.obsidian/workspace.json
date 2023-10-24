@@ -23,12 +23,14 @@
             "id": "31540b7f3ae115d1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+              }
             }
           }
         ],
-        "currentTab": 1
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -110,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 441.5
+    "width": 285.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -126,7 +128,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
+              }
             }
           },
           {
@@ -137,8 +141,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "a57d72b1463cfa44",
@@ -151,6 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,6 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 254.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,20 +227,24 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "ba2f37c1b6bcc259",
+  "active": "5433c87ec6412a2a",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124655698.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124614037.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124335614.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124307500.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124259361.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124253834.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124243991.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124242256.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124235207.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024121644624.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Basics.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009533971.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009513330.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009493087.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009477500.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009452625.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009437343.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009377616.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009407567.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009357085.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/20231024_1009335732.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md",
     "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/ASCII_Table.md",
@@ -255,7 +264,6 @@
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
@@ -266,10 +274,6 @@
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__离散随机变量.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/2_样本空间_事件和概率函数/__条件概率，独立性和贝叶斯定理.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/常用GDB指令.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/__Modular_Arithmetic.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
     "未命名.canvas"
   ]
 }

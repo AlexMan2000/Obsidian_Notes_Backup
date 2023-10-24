@@ -5,6 +5,22 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
     },
     {
+      "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "X86_Basics",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Basics.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
       "basename": "Caches_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "1_Op_Amps",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/1_Op_Amps.md"
-    },
-    {
-      "basename": "Written_Notes21",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Written_Notes21.pdf"
-    },
-    {
-      "basename": "Note17",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/Typed_Notes/Note17.pdf"
-    },
-    {
-      "basename": "1_Capacitors",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/1_Capacitors.md"
-    },
-    {
-      "basename": "4_2D_Touchscreen",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/4_2D_Touchscreen.md"
     }
   ],
   "omittedPaths": [],

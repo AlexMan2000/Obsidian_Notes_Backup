@@ -1,0 +1,6 @@
+.callout[data-callout="idea"] {
+    --callout-color:0, 0, 0;
+    --callout-icon: gantt-chart-square;
+}
+
+

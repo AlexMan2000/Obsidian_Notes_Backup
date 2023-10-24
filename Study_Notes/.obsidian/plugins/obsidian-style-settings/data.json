@@ -31,5 +31,8 @@
   "Blue-Topaz-Codebox-Highlight@@blur-codebox-frosted-glass": 2,
   "Blue-Topaz-Codebox-Highlight@@code-box-style-option": "codebox-default-style",
   "blue-topaz-theme@@img-grid": true,
-  "blue-topaz-theme@@transparent-setting-panel": false
+  "blue-topaz-theme@@transparent-setting-panel": false,
+  "Blue-Topaz-Codebox-Highlight@@remove-language-type": true,
+  "blue-topaz-theme@@callout-style-settings": "traditional-callout-style",
+  "blue-topaz-theme@@full-width-callout": false
 }
