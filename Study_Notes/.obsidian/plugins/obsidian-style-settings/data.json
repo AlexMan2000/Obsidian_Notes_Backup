@@ -14,13 +14,13 @@
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-in-the-sky",
   "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-dark-sky",
   "blue-topaz-theme@@brightness-4-bg": 0.9,
-  "blue-topaz-theme@@background-image-settings-switch": false,
+  "blue-topaz-theme@@background-image-settings-switch": true,
   "blue-topaz-theme@@toggle-bg-panel-page": false,
   "blue-topaz-theme@@file-line-width": 80,
   "blue-topaz-theme@@clutter-free-headings": false,
   "blue-topaz-theme@@remove-heading-indicator": true,
   "blue-topaz-theme@@retain-header-color": false,
-  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-monochrome-topaz",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-honey-milk-topaz",
   "blue-topaz-theme@@fancy-hr": "default-hr",
   "blue-topaz-theme@@toggle-paragraph-spacing": true,
   "blue-topaz-theme@@top-bottom-style": false,
@@ -30,5 +30,6 @@
   "Blue-Topaz-Codebox-Highlight@@letter-space-code": 0,
   "Blue-Topaz-Codebox-Highlight@@blur-codebox-frosted-glass": 2,
   "Blue-Topaz-Codebox-Highlight@@code-box-style-option": "codebox-default-style",
-  "blue-topaz-theme@@img-grid": true
+  "blue-topaz-theme@@img-grid": true,
+  "blue-topaz-theme@@transparent-setting-panel": false
 }

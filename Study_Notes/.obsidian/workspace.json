@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4f9949d447818aeb",
+        "id": "97c3428485a75418",
         "type": "tabs",
         "children": [
           {
-            "id": "29fb2b2323276499",
+            "id": "5433c87ec6412a2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
-                "mode": "source",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 441.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
               }
             }
           }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 508.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,19 +205,29 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "29fb2b2323276499",
+  "active": "5433c87ec6412a2a",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/ASCII_Table.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950288577.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950275883.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950254584.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950246209.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950225885.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950225312.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950202896.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950192962.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950192693.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets/20231024_0950186531.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_X86_Bomb_Lab.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0931053085.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0931035495.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0931032758.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0931017252.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0931003299.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0930584534.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0930549546.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0930533743.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0930516714.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets/20231024_0930496732.png",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_X86_Bomb_Lab.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md",
@@ -226,15 +235,10 @@
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/2_Number_Representation/_Datalab.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/_Caches_Optimization.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/_Caches_Optimization.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md",
@@ -249,11 +253,6 @@
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/_Stable_Matching.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/___Graph_Theory.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_OPT_Basics.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Labs__Pipelining.md",
     "未命名.canvas"
   ]
 }

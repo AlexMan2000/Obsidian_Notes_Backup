@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Caches_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
+    },
+    {
+      "basename": "Floating_Number_Representation",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md"
+    },
+    {
+      "basename": "ASCII_Table",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/ASCII_Table.md"
+    },
+    {
+      "basename": "Code_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
+    },
+    {
       "basename": "Pipelining",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
     },
@@ -34,15 +50,15 @@
     },
     {
       "basename": "Lectures_Readings_Study_Guides",
-      "path": "Computer_Science/Data_Structures/CS61B/2_List_Testing/Lectures_Readings_Study_Guides.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/Lectures_Readings_Study_Guides.md"
     },
     {
       "basename": "P1800__NBody",
-      "path": "Computer_Science/Data_Structures/CS61B/2_List_Testing/P1800__NBody.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/P1800__NBody.md"
     },
     {
       "basename": "DE1802__Scope__Pass-by-Value__Static",
-      "path": "Computer_Science/Data_Structures/CS61B/2_List_Testing/DE1802__Scope__Pass-by-Value__Static.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/DE1802__Scope__Pass-by-Value__Static.md"
     },
     {
       "basename": "Datalab",
@@ -58,7 +74,7 @@
     },
     {
       "basename": "DE1803__Linked_Lists__Arrays",
-      "path": "Computer_Science/Data_Structures/CS61B/2_List_Testing/DE1803__Linked_Lists__Arrays.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/DE1803__Linked_Lists__Arrays.md"
     },
     {
       "basename": "Basic_Induction",
@@ -183,22 +199,6 @@
     {
       "basename": "6_Practice_Exercises",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/6_Practice_Exercises.md"
-    },
-    {
-      "basename": "Note20",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Note20.pdf"
-    },
-    {
-      "basename": "2_Touchscreen_Op_amp",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/2_Touchscreen_Op_amp.md"
-    },
-    {
-      "basename": "Written_Notes20",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Written_Notes20.pdf"
-    },
-    {
-      "basename": "Note19",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Typed_Notes/Note19.pdf"
     }
   ],
   "omittedPaths": [],
