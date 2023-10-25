@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
-                "mode": "preview",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -121,7 +121,7 @@
       {
         "id": "acda57f1214ed0a4",
         "type": "tabs",
-        "dimension": 45.69444444444444,
+        "dimension": 45.69444444444445,
         "children": [
           {
             "id": "eb3a2082cee979e2",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
               }
             }
           },
@@ -146,7 +146,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 20.97222222222222,
+        "dimension": 20.972222222222225,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,9 +171,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -183,7 +183,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 33.33333333333333,
+        "dimension": 33.333333333333336,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -209,18 +209,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 254.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
+      "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-custom-frames:Open Notion": false,
@@ -229,21 +231,38 @@
   },
   "active": "5433c87ec6412a2a",
   "lastOpenFiles": [
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets/image-20231024193206706.png",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024190020373.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024185728801.png",
     "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171753323.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171357550.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171351796.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171337871.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171327251.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171317581.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171258828.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024164357716.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets",
+    "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md",
+    "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md",
+    "Excalidraw/Drawing 2023-10-24 15.17.20.excalidraw.md",
+    "Excalidraw/Scripts/Downloaded/Set Grid.md",
+    "Excalidraw/Scripts/Downloaded/Set Font Family.md",
+    "Excalidraw/Scripts/Downloaded/Set Dimensions.md",
+    "Excalidraw/Scripts/Downloaded/Repeat Elements.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap format.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap connector.md",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124655698.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124614037.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124335614.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124307500.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124259361.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124253834.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124243991.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124242256.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024124235207.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets/image-20231024121644624.png",
     "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md",
@@ -257,23 +276,7 @@
     "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_X86_Bomb_Lab.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_X86_Bomb_Lab.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/2_Number_Representation/_Datalab.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/2_Number_Representation/_Datalab.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/1_C_Basics/Snek_-_贪吃蛇.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/__衍生随机变量__贝叶斯公式变体__协方差.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合离散随机变量/__二元离散变量.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__离散随机变量.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/2_样本空间_事件和概率函数/__条件概率，独立性和贝叶斯定理.md",
     "未命名.canvas"
   ]
 }

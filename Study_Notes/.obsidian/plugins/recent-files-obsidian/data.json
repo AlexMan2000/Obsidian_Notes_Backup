@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "CALL",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
+      "basename": "Data Analysis Project Report",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
+    },
+    {
+      "basename": "Exceptions&Processes",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
       "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "Drawing 2023-10-24 15.22.40.excalidraw",
+      "path": "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2023-10-24 15.21.23.excalidraw",
+      "path": "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2023-10-24 15.17.20.excalidraw",
+      "path": "Excalidraw/Drawing 2023-10-24 15.17.20.excalidraw.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "CALL",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
     },
     {
       "basename": "X86_Basics",
@@ -15,10 +43,6 @@
     {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "Caches_Optimization",
@@ -175,30 +199,6 @@
     {
       "basename": "HW0_HW1-Sp23",
       "path": "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/HW0_HW1-Sp23.md"
-    },
-    {
-      "basename": "Matrix_Vectors_Basics",
-      "path": "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/Matrix_Vectors_Basics.md"
-    },
-    {
-      "basename": "Section_0's",
-      "path": "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/Section_0's.md"
-    },
-    {
-      "basename": "PS0_PS1",
-      "path": "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/PS0_PS1.md"
-    },
-    {
-      "basename": "prob11",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Exercise_Folder/prob11.pdf"
-    },
-    {
-      "basename": "1_Circuit_Analysis_Node_Voltage",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/1_Resistive_Touchscreen/1_Circuit_Analysis_Node_Voltage.md"
-    },
-    {
-      "basename": "1_Op_Amps",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/1_Op_Amps.md"
     }
   ],
   "omittedPaths": [],
