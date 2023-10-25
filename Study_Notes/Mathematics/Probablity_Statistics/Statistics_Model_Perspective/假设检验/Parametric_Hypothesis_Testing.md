@@ -707,8 +707,8 @@ $\lambda(X)=2(l(\hat{\theta})-l(\hat{p}\cdot \hat{q}))=2n\sum_{i,j}\hat{\theta_{
 $\hat{\theta_{ij}}log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}=\hat{p_i}\hat{q_j}\cdot \frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}} log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}$
 我们对$\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}$在$1$附近进行泰勒展开:
 因为$xlogx = 0+(x-1)+\frac{1}{2}(x-1)^2+o(\epsilon)$
-于是$\begin{aligned}\hat{p_i}\hat{q_j}\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}&=\hat{p_i}\hat{q_j}[(\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}-1)+\frac{1}{2}(\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}-1)^2+o(\epsilon)]
-\\&=\hat{\theta_{ij}}-\hat{p_i}\hat{q_j}+\frac{1}{2}\frac{(\hat{\theta_{ij}}^2-\hat{p_i}\hat{q_j})^2}{\hat{p_i}\hat{q_j}}\end{aligned}$
+于是$\begin{aligned}\hat{p_i}\hat{q_j}\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}&=\hat{p_i}\hat{q_j}[(\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}-1)+\frac{1}{2}(\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}-1)^2+o(\epsilon)]\\&=\hat{\theta_{ij}}-\hat{p_i}\hat{q_j}+\frac{1}{2}\frac{(\hat{\theta_{ij}}^2-\hat{p_i}\hat{q_j})^2}{\hat{p_i}\hat{q_j}}\end{aligned}$
+
 于是$\begin{aligned}\lambda(X)&=2n\sum_{i,j}[\hat{\theta_{ij}}-\hat{p_i}\hat{q_j}+\frac{1}{2}\frac{(\hat{\theta_{ij}}^2-\hat{p_i}\hat{q_j})^2}{\hat{p_i}\hat{q_j}}]\\&=n\sum_{ij} \frac{(\hat{\theta_{ij}}^2-\hat{p_i}\hat{q_j})^2}{\hat{p_i}\hat{q_j}}\end{aligned}$, 证毕。
 
 ## Example
@@ -729,8 +729,6 @@ $\hat{\theta_{ij}}log\frac{\hat{\theta_{ij}}}{\hat{p_i}\hat{q_j}}=\hat{p_i}\hat{
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227493458.png)
 
 **Proof of degree of freedom**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227496351.png)
-
-
 
 
 

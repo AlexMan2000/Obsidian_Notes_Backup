@@ -110,8 +110,21 @@
 > ![](Exceptions&Processes.assets/image-20231024171753323.png)
 
 
+
+## Physical Control Flow
+> [!info]
+> - `Physical Control Flow` refers to the actual sequence in which instructions are executed by the hardware, especially in modern processors. 这些指令集可能来自多个`Processes`，互相交错。
+> - Due to optimizations like **pipelining, out-of-order execution, and branch prediction**, the physical order in which instructions are executed can differ significantly from the logical order. 
+> - These optimizations are done to improve the **throughput and performance** of the processor. For instance, while waiting for data from memory (which can be relatively slow), a modern CPU might execute other independent instructions that come later in the logical sequence.
+> - <span style="background:#fff88f">The CPU ensures that, despite the changes in the order of execution, the final outcomes (values in memory and registers) are as if the instructions were executed in the logical order.</span>
+
+
 ## Logic Control Flow
-> A
+> [!info]
+> `Logic Flow`是针对某个`Process`而言的，可以理解成逻辑上畅通的一段代码翻译成的指令集。
+> ![](Exceptions&Processes.assets/image-20231025100933917.png)
+> 上图中的`Logic Control Flow`就是每个`Process`各自的指令集按照时间轴方向排列的结果。将这些短小的黑线平移到一起后就组成了`Physical Control Flow`，也就是`CPU` 实际上的指令执行顺序。
+> 上图中还反映出了一个现象，就是`CPU`总是会在不同的`Process`之间来回快速切换，一会儿执行`Process A`的`Logic Flow`, 一会执行`Process B`的`Logic Flow`， 但是`CPU`会保证最终多个`Process`的运行结果和`CPU`只顺序执行一个`Process`的结果完全一致。
 
 
 

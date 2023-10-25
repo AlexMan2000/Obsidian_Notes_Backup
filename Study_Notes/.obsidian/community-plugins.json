@@ -22,5 +22,6 @@
   "quick-latex",
   "obsius-publish",
   "templater-obsidian",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "editing-toolbar"
 ]

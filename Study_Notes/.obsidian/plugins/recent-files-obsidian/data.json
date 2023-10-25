@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Data Analysis Project Report",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
-    },
-    {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
       "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "Significance Tests",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
+    },
+    {
+      "basename": "Callouts&CSS Shortcuts",
+      "path": "Obsidian_User_Notes/Callouts&CSS Shortcuts.md"
+    },
+    {
+      "basename": "P6_HTTP版本_关闭TCP_四次挥手_同源策略",
+      "path": "Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md"
+    },
+    {
+      "basename": "1D_Kinematics",
+      "path": "Physics_Notes/8.01SC/1_Kinematics_Dynamics/1D_Kinematics.md"
+    },
+    {
+      "basename": "Must-have Plugins",
+      "path": "Obsidian_User_Notes/Must-have Plugins.md"
+    },
+    {
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Data Analysis Project Report",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
     },
     {
       "basename": "Convexity",
@@ -83,10 +107,6 @@
     {
       "basename": "Randomized Inference",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
-    },
-    {
-      "basename": "Significance Tests",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
     },
     {
       "basename": "Database",
@@ -179,26 +199,6 @@
     {
       "basename": "dis5B",
       "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Exercise_Folder/dis5B.pdf"
-    },
-    {
-      "basename": "dis5D",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Exercise_Folder/dis5D.pdf"
-    },
-    {
-      "basename": "3_Practice_Exercises",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/3_Practice_Exercises.md"
-    },
-    {
-      "basename": "dis5A",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Exercise_Folder/dis5A.pdf"
-    },
-    {
-      "basename": "dis4D",
-      "path": "Computer_Science/Information_Systems/EECS16A/2_Circuit_Analysis/3_Op_Amps/Exercise_Folder/dis4D.pdf"
-    },
-    {
-      "basename": "HW0_HW1-Sp23",
-      "path": "Computer_Science/Information_Systems/EECS16A/1_Systems_and_Imaging/1_Matrix Vectors/HW0_HW1-Sp23.md"
     }
   ],
   "omittedPaths": [],

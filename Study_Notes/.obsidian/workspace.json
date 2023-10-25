@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -209,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5,
-    "collapsed": true
+    "width": 254.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,13 +230,20 @@
   },
   "active": "5433c87ec6412a2a",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231025100933917.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md",
+    "Obsidian_User_Notes/Callouts&CSS Shortcuts.md",
+    "Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md",
+    "Physics_Notes/8.01SC/1_Kinematics_Dynamics/1D_Kinematics.md",
+    "Obsidian_User_Notes/Must-have Plugins.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets/image-20231024193206706.png",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024190020373.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024185728801.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171753323.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171357550.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171351796.png",
@@ -246,7 +252,6 @@
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171317581.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024171258828.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024164357716.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets",
     "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md",
     "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md",
@@ -267,16 +272,10 @@
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md",
     "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/ASCII_Table.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.assets",
     "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets",
     "Computer_Science/Data_Structures_Algorithms/CS170_6.006",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_X86_Bomb_Lab.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md",
     "未命名.canvas"
   ]
 }
