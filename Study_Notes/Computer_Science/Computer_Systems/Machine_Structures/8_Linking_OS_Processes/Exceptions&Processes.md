@@ -120,7 +120,7 @@
 
 
 ## Logic Control Flow
-> [!info]
+> [!def]
 > `Logic Flow`是针对某个`Process`而言的，可以理解成逻辑上畅通的一段代码翻译成的指令集。
 > ![](Exceptions&Processes.assets/image-20231025100933917.png)
 > 上图中的`Logic Control Flow`就是每个`Process`各自的指令集按照时间轴方向排列的结果。将这些短小的黑线平移到一起后就组成了`Physical Control Flow`，也就是`CPU` 实际上的指令执行顺序。
@@ -129,8 +129,59 @@
 
 
 ## Concurrent/Parallel Flow
+> [!def]
 > ![](Exceptions&Processes.assets/image-20231024185728801.png)![](Exceptions&Processes.assets/image-20231024190020373.png)
+> - `Concurrency`是并发的意思，表示处理器来回切换任务，宏观上看好像是在同时进行很多任务一样。也成为`Multitasking`。
+> - `Parallelism`是并行的意思，表示有多个处理器在同时进行任务，是真正的多任务处理。
+
+> [!example]
+> ![](Exceptions&Processes.assets/image-20231026102226550.png)
+> 判断两个进程是否并发运行，只需要观察他们的`Logic Control Flow`是否有重叠，上图中:
+> 1. A和B有重叠，并发运行
+> 2. B和C有重叠，并发运行
+> 3. A和C无重叠，顺序执行
+
+
+## User and Kernel Mode
+> [!def]
+> Processors typically provide this capability with a `mode bit` in some `control register` that characterizes the privileges that the process currently enjoys. 
+> - **When the mode bit is set**, the process is running in kernel mode (sometimes called supervisor mode). A process running in kernel mode can execute any instruction in the instruction set and access any memory location in the system.
+> - **When the mode bit is not set**, the process is running in user mode. A process in user mode is not allowed to execute privileged instructions that do things such as halt the processor, change the mode bit, or initiate an I/O operation. Nor is it allowed to directly reference code or data in the kernel area of the address space. Any such attempt results in a fatal protection fault. User programs must instead access kernel code and data indirectly via the system call interface. 
+> - **A process running application code is initially in user mode**. The only way for the process to change from user mode to kernel mode is via an exception such as an interrupt, a fault, or a trapping system call. 
+> - **When the exception occurs**, and control passes to the exception handler, the processor changes the mode from user mode to kernel mode. `The handler runs in kernel mode`. When it returns to the application code, the processor changes the mode from kernel mode back to user mode.
+
+> [!example]
+> - Linux provides a clever mechanism, called the /proc filesystem, that allows user mode processes to access the contents of kernel data structures. 
+> - The /proc filesystem exports the contents of many kernel data structures as a hierarchy of text files that can be read by user programs. 
+> - For example, you can use the /proc filesys- tem to find out general system attributes such as CPU type (/proc/cpuinfo), or the memory segments used by a particular process (/proc/process-id/maps). The 2.6 version of the Linux kernel introduced a /sys filesystem, which exports addi- tional low-level information about system buses and devices.
+
+
+## Private Address Space
+> [!def]
+> 对于每一个进程来说，他们都有自己的私有地址范围`0x00000000~0xffffffff`, 有自己的栈内存，堆内存，`Code`区，`Data`区，以及各种寄存器。但是注意，这些私有地址和寄存器看起来是`Exclusive Access`, 实际上是由操作系统调度完成，为每个进程分配内存和寄存器。让进程感觉自己坐拥着所有程序执行所需的内存和处理器资源。
+> 下图展示了这一点。
+> ![](Exceptions&Processes.assets/image-20231026102942972.png)
 
 
 
+## Context Switches
+> [!def]
+> ![](Exceptions&Processes.assets/image-20231026110039145.png)
+> 在`Context Switching` 的过程中，`Process A`的所有用于确定程序运行状态(确保程序能从中断的位置继续执行)的资源都会被保存起来，包括内存资源，寄存器上的值。然后`Processor`进入`Kernel Mode`进行`Context Switching from Process A to Process B`，切换好之后`Processor`进入用户模式执行`Process B`。
+
+
+
+# Process Control
+> 本章节非常重要，涉及到进程控制的诸多概念。
+
+## Obtaining Process ID
+```ad-code
+在操作系统中，每个进程都有自己的独一无二的`ID`, 称为`Processor ID`(PID)，我们可以通过`getpid()`获取调用这个函数的进程，通过`getppid()`获取调用这个进程的进程，也就是父进程。
+```
+```c 
+#include <sys/types.h> 
+#include <unistd.h> 
+pid_t getpid(void); 
+pid_t getppid(void);
+```
 

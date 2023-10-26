@@ -1,5 +1,3 @@
-[MIT6_042JF10_chap04.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1679837311820-f620182e-6e11-4987-bf1a-6f1a0440332f.pdf)
-[RSA.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1679837245824-343a1069-fdae-440e-8cd1-f644d7498d7c.pdf)
 
 # Public Key Crypography
 ## Scenario

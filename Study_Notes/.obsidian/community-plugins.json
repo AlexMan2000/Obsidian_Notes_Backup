@@ -23,5 +23,6 @@
   "obsius-publish",
   "templater-obsidian",
   "obsidian-tasks-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-admonition"
 ]

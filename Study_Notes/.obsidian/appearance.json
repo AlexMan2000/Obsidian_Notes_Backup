@@ -1,11 +1,10 @@
 {
   "accentColor": "#8e46c8",
-  "baseFontSize": 18,
+  "baseFontSize": 20,
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
-    "arrow",
-    "MCL Multi Column",
-    "idea"
+    "self-added-callouts",
+    "callout-type-setting"
   ],
   "theme": "moonstone"
 }

@@ -1,0 +1,99 @@
+{
+  "userAdmonitions": {
+    "thm": {
+      "type": "thm",
+      "color": "39, 221, 118",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Theorem",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "lem": {
+      "type": "lem",
+      "color": "217, 103, 54",
+      "icon": {
+        "name": "book-medical",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Lemma",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "cor": {
+      "type": "cor",
+      "color": "79, 178, 191",
+      "icon": {
+        "name": "bookmark",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Corollary",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "proof": {
+      "type": "proof",
+      "color": "30, 117, 210",
+      "icon": {
+        "name": "square",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Proof",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "def": {
+      "type": "def",
+      "color": "98, 210, 75",
+      "icon": {
+        "name": "book-open",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Definition",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "code": {
+      "type": "code",
+      "color": "45, 134, 251",
+      "icon": {
+        "name": "code",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "10.1.1",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": false
+  },
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.d6674b"
+}

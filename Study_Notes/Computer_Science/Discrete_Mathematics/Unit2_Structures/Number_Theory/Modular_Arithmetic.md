@@ -1,17 +1,13 @@
-> Mathematics for Computer Science Chapter 4
-
-[MIT6_042JF10_chap04.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1678195120528-9704e698-4020-45a2-99a3-e53984142816.pdf)
-[Modular Arithmetic.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1679755632021-ef49f0a3-6476-4f03-810f-1cdefc96ec72.pdf)
-
 # Divisibility
 ## Definition
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835442228.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0835442228.png)
 
 
 ## Properties
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835471560.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0835471560.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0835483442.png)
+>[!proof]
+>![image.png](Modular_Arithmetic.assets/20231024_0835483442.png)
 > **下面是一些常用结论:**
 > - $ac|b\implies a|b~~and~~c|b$, 反之不一定成立。证明很简单，因为$ac|b$则$b=k\times (a\times c)=(k\times a)\times c=(k\times c) \times a$，这说明$a|b$以及$c|b$。
 > - 如果$a_1,a_2,\cdots, a_n$都是素数且$a_1|n, a_2|b, \cdots, a_n|b$, 则$a_1a_2\cdots a_n|b$, 这在`CRT`中经常会用到。
@@ -19,41 +15,48 @@
 
 
 ## Division Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835506967.png)![image.png](./__Modular_Arithmetic.assets/20231024_0835516807.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0835506967.png)![image.png](Modular_Arithmetic.assets/20231024_0835516807.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0835534525.png)
+> [!Proof]
+> ![image.png](Modular_Arithmetic.assets/20231024_0835534525.png)
 
 ## Examples
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835545365.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0835545365.png)
 
 
 
 # Modular Arithmetic Basics
 ## Congruence
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835564889.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0835564889.png)
 > 🔔: 这个定义非常重要，后续我们会经常用到。
 
 
 
 ## Remainder Representation
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0835568723.png)
+> [!theorem]
+> ![image.png](Modular_Arithmetic.assets/20231024_0835568723.png)
 > `Congruence`就是同余的意思，所以上述结论显然成立。
 
-**Proof**⭐⭐⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0835581328.png)
-**Example**![image.png](./__Modular_Arithmetic.assets/20231024_0835591684.png)
-:::success
-![image.png](./__Modular_Arithmetic.assets/20231024_0836003178.png)
+> [!proof]
+![image.png](Modular_Arithmetic.assets/20231024_0835581328.png)
+
+> [!Example] 
+> ![image.png](Modular_Arithmetic.assets/20231024_0835591684.png)
+
+> [!success] Useful Lemma
+> ![image.png](Modular_Arithmetic.assets/20231024_0836003178.png)
 🔔: 这个推论非常重要，后续我们会经常用到。
 **Proof: **我们知道$a - (a-qn)=qn$, which is divisible by $n$, which means $n|a-rem(a,n)$, thus by definition $a\equiv rem(a,n) \ (mod \ n)$。
 🔔: 同于符号代表符号两侧的整数在同时除以一个整数时的余数相同，所以`Modulus`本质上是把整数分成了几个集合。对于`Modulus n`来说(mod n), 它会把整数分成$n$个集合，每个集合中的整数$i$分别对应满足$rem(i, n)=0,1,2,\cdots, n-1$。
-![image.png](./__Modular_Arithmetic.assets/20231024_0836029667.png)
-:::
+![image.png](Modular_Arithmetic.assets/20231024_0836029667.png)
+
 
 
 ## Properties of Mod Congruence
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836046251.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836046251.png)
 
-**Proofs**![image.png](./__Modular_Arithmetic.assets/20231024_0836075278.png)
+> [!proof]
+> ![image.png](Modular_Arithmetic.assets/20231024_0836075278.png)
 **Proof for 7:**
 $\because a\equiv b(mod~n)\therefore ac\equiv bc(mod~n)$By property 5
 $\because c\equiv d(mod~n)\therefore cb\equiv db(mod~n)$By property 5
@@ -61,7 +64,7 @@ $\therefore ac\equiv bc \equiv cb \equiv db \equiv bd (mod~n)$By symmetry and pr
 
 
 ## Set Representation
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836096199.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836096199.png)
 > **注意点:**
 > 1. 对于`Modulus m`来说，余数有$\{0,1,2,\cdots, m-1\}$这$m$中情况，每一个余数$i$对应一个集合$S_{m,i}=\{m\cdot x+i|x\in \mathbb{Z}\}$, 表示所有除以$m$余$i$的数字组成的集合, 且**这些集合互斥**($S_{m,i}\cap S_{m,j}=\emptyset,\forall i\neq j$)
 > 2. $x~~(mod~~m)$表示为$S=\{0,1,2,\cdots,m-1\}$中的一个数，即$x\in S$。
@@ -69,7 +72,7 @@ $\therefore ac\equiv bc \equiv cb \equiv db \equiv bd (mod~n)$By symmetry and pr
 
 
 ## Notation Summary
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836105825.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836105825.png)
 > **注意点:**
 > 1. 表示同余，$a\equiv b~~(mod~~ n)$和$a= b~~(mod~~ n)$都可以。
 > 2. $x~~(mod~m)$可以表示为$x$除以$m$的余数, 也可以表示为$S=\{0,1,2,\cdots,m-1\}$中的一个数
@@ -79,7 +82,7 @@ $\therefore ac\equiv bc \equiv cb \equiv db \equiv bd (mod~n)$By symmetry and pr
 
 ## Calculation Examples
 :::success
-![image.png](./__Modular_Arithmetic.assets/20231024_0836127520.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836138891.png)
+![image.png](Modular_Arithmetic.assets/20231024_0836127520.png)![image.png](Modular_Arithmetic.assets/20231024_0836138891.png)
 :::
 
 # Exponentiation
@@ -90,7 +93,7 @@ $\therefore ac\equiv bc \equiv cb \equiv db \equiv bd (mod~n)$By symmetry and pr
 
 ## Repeated Squaring Algorithm
 > We can do much better using the trick of repeated squaring:
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836159125.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836164909.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836159125.png)![image.png](Modular_Arithmetic.assets/20231024_0836164909.png)
 
 **Proof for correctness - By Strong Induction**
 1. **Base Step:** $y=0$, 此时算法返回$1$, 因为$x^0~mod~m=1~mod~m=1$, 所以算法返回的值是正确的。
@@ -131,16 +134,16 @@ public class ModExponential {
 ```
 
 ## Runtime Analysis
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836185470.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836185470.png)
 > 🔔: 本质上, `recursive call`的数量和$y$的二进制表示的位数呈线性增长关系。比如我们要计算$3^{16}(mod~5)$, 则此时我们的`recursive call`的数量就是$log_2{16}=4$。
 
 
 
 ## Practices
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836196200.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836196200.png)
 
-**Solution 1 - Periodicity**![image.png](./__Modular_Arithmetic.assets/20231024_0836213203.png)
-**Solution 2 - Proof⭐⭐⭐**![image.png](./__Modular_Arithmetic.assets/20231024_0836224330.png)
+**Solution 1 - Periodicity**![image.png](Modular_Arithmetic.assets/20231024_0836213203.png)
+**Solution 2 - Proof⭐⭐⭐**![image.png](Modular_Arithmetic.assets/20231024_0836224330.png)
 > 一个重要的小技巧: $m-1\equiv -1(mod~m)$, 所以$(m-1)(m-1)\equiv -(m-1)~(mod~m)$
 > 因为$-(m-1)\equiv 1~(mod~m)$, 所以$m-1$是自身的`Multiplicative Inverse modulo m`。
 
@@ -155,27 +158,27 @@ public class ModExponential {
 
 
 ## Bezout Identity⭐⭐⭐⭐⭐
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836248220.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836248220.png)
 > 🔔: 但是这个定理仅仅说明了存在性，却没有给出如何构造这样的线性组合。
 > 🔔: 构造的过程由之后将要介绍的`Extended Euclidean GCD Algorithm`给出。
 > 🔔: This theorem is sometimes called "Bezout Identity".
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836264109.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836274577.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836264109.png)![image.png](Modular_Arithmetic.assets/20231024_0836274577.png)
 
-**Example**![image.png](./__Modular_Arithmetic.assets/20231024_0836279960.png)
-**Proof**⭐⭐⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0836296553.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836318535.png)
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836321397.png)
+**Example**![image.png](Modular_Arithmetic.assets/20231024_0836279960.png)
+**Proof**⭐⭐⭐⭐⭐![image.png](Modular_Arithmetic.assets/20231024_0836296553.png)![image.png](Modular_Arithmetic.assets/20231024_0836318535.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836321397.png)
 
-**Proof**⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0836335228.png)
+**Proof**⭐⭐⭐![image.png](Modular_Arithmetic.assets/20231024_0836335228.png)
 
 ## Properties of GCD
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836358594.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836358594.png)
 > 注意定理第五条中我们也可以写成$gcd(a,b)=gcd(rem(b,a),a)$, 本质上是等价的，下面我们会证明这个等价命题。
 > **🔔下面是一些证明:**
 > **Proof of 1: 根据**`**Bezout Identity**`**我们知道**`**gcd(a,b) = sa + tb for some s and t**`**. 而我们又知道所有的**`**Common Divisor m**`**都满足**$m|a$**和**$m|b$**, 所以根据**`**Divisor**`**的线性性质，我们有**$m|ua+vb$**for some u and v. 所以**$m|gcd(a,b)$**。**
 > **Proof of 2: **$gcd(ka,kb)=\min_{s,t}\{s\times ka+t\times kb|s,t\in \mathbb{R}\}=k\times \min_{s,t}\{s\times a+t\times b|s,t\in \mathbb{R}\}=k\times gcd(a,b)$
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836379922.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836379922.png)
 > **Proof of 5(利用线性组合关系即可): **
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836387782.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836387782.png)
 
 
 
@@ -183,11 +186,11 @@ public class ModExponential {
 > 欧几里得算法旨在为一对整数$(x,y)$, $x\geq y>0$找到$gcd(x,y)$。因为$gcd(x,y)=ax+by$
 
 ### Algorithm
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836401868.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836417582.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836424947.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836401868.png)![image.png](Modular_Arithmetic.assets/20231024_0836417582.png)![image.png](Modular_Arithmetic.assets/20231024_0836424947.png)
 > ⭐: 所以整个算法会在较小的数变成$0$时停止，并返回较大的数作为`GCD`。
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836435490.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836435490.png)
 
-**Proof of Correctness**![image.png](./__Modular_Arithmetic.assets/20231024_0836455551.png)
+**Proof of Correctness**![image.png](Modular_Arithmetic.assets/20231024_0836455551.png)
 ```java
 public class Euclid {
     public int euclid(int x, int y) {
@@ -206,7 +209,7 @@ public class Euclid {
 ```
 
 ### Runtime Analysis
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836475467.png)![image.png](./__Modular_Arithmetic.assets/20231024_0836483966.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836475467.png)![image.png](Modular_Arithmetic.assets/20231024_0836483966.png)
 > 我们更精确地描述一下这个算法的时间，由于每次`gcd(x,y)`的`Recursive Call`都会使得第一个参数缩小两倍或者在下一次`Recursive Call`的时候使第一个参数缩小两倍。假设$x$是一个`n-bit integer`，则我们需要**介于**$n$**和**$2n$次`Iterations`完成算法的调用。
 
 
@@ -214,24 +217,24 @@ public class Euclid {
 ## Extended Euclid Algorithm
 ### Definition
 > 我们可以使用`Extended Euclid Algorithm`找到$s,t$使得$gcd(a,b)=s\cdot a+t\cdot b$。
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836495404.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836495404.png)
 
 
 
 ### Comparison
 **Euclid Algorithm**
-![image.png](./__Modular_Arithmetic.assets/20231024_0836518829.png)
+![image.png](Modular_Arithmetic.assets/20231024_0836518829.png)
 **Extended Euclid Algorithm**
-![image.png](./__Modular_Arithmetic.assets/20231024_0836538560.png)
+![image.png](Modular_Arithmetic.assets/20231024_0836538560.png)
 
 
 ### Algorithm - Recursive Version
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0836547675.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0836547675.png)
 > **我们发现:**
 > 1. 算法的每一次`Recursive Call`$egcd(x,y)$返回的三元组$(d,a,b)$都满足$d=ax+by$，即$gcd(x,y)=ax+by$。
 > 2. 当$gcd(x,y)=(1,a,b)$时(即$gcd(x,y)=1$, $x,y$互质)，$y\cdot b\equiv 1~~(mod~~x)$，即$b$是$y$的`Multiplicative Inverse Modulus x`(后面会介绍)。
 > 
-![image.png](./__Modular_Arithmetic.assets/20231024_0836567311.png)
+![image.png](Modular_Arithmetic.assets/20231024_0836567311.png)
 > **算法的递归调用栈和运行结果序列是:**
 > $gcd(35,12)\to gcd(12, 11)\to gcd(11, 1)\to gcd(1, 0)$
 >            $(1,-1,3)\leftarrow(1,1,-1)\leftarrow(1,0,1)\leftarrow(1,1,0)$
@@ -278,18 +281,18 @@ public class ExtendedEuclid {
 ```
 
 ### Algorithm - Hand Calculation
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837008850.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837008850.png)
 
-**More Examples**![image.png](./__Modular_Arithmetic.assets/20231024_0837012780.png)
+**More Examples**![image.png](Modular_Arithmetic.assets/20231024_0837012780.png)
 
 
 ### Runtime Analysis
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837031914.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837031914.png)
 
 
 ## Jug Problem⭐⭐⭐⭐⭐
 ### Problem Settings
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837057197.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837057197.png)
 > 本质上`Jug Problem`中有两个`Jugs`, 容量分别为`a`和`b`, 假设$b\geq a$, 可以进行的操作有:
 > 1. 充满容器`a`或者`b`。
 > 2. 将其中一个容器中的水倒到另一个容器中，且我们不能使得被倒水的容器溢出。
@@ -297,14 +300,14 @@ public class ExtendedEuclid {
 
 
 ### Problem Invariant
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837072581.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837072581.png)
 
-**Proof of Lemma**![image.png](./__Modular_Arithmetic.assets/20231024_0837098803.png)
+**Proof of Lemma**![image.png](Modular_Arithmetic.assets/20231024_0837098803.png)
 🔔** Very Important: **The total amount of water is preserved, which is always $j_1+j_2$。
 
 
 ### Important Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837124526.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837124526.png)
 > 结论很显然，首先对于$a,b$的任意公约数$m$，都有$m|a,m|b$, 所以$m|ax+by$， 因为$gcd(a,b)\in m$， 所以$gcd(a,b)|ax+by$, 所以$(ax+by)=k\cdot gcd(a,b)$，证毕。
 
 
@@ -315,11 +318,11 @@ public class ExtendedEuclid {
 > 2. 任何一个`Jug`里的水量都是`gcd(a,b)`的倍数。
 > 
 假设`a = 21`且`b = 26`, 则:
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837147202.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837147202.png)
 > 本质上我们需要求出$s'$和$t'$, 其中$s'>0$且$t'<0$，算法步骤如下, 我们要重复下列步骤$s'$次(这也是为什么我们要$s'>0$。)
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837155562.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837155562.png)
 
-**Concrete Steps**⭐⭐⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0837185367.png)![image.png](./__Modular_Arithmetic.assets/20231024_0837201902.png)
+**Concrete Steps**⭐⭐⭐⭐⭐![image.png](Modular_Arithmetic.assets/20231024_0837185367.png)![image.png](Modular_Arithmetic.assets/20231024_0837201902.png)
 **Proof of algorithm**⭐⭐⭐Suppose that we have filled the `a-jug` $s'$times and that `b-jug`has been emptied $u$times.
 Let's say that at this moment `r`is the remainder in the `b-jug`, so$r=s'\cdot a-u\cdot b$always holds and that we have the constraint $0\leq r\leq b$。
 🔔: We want to prove that $L=s'\cdot a+t'\cdot b=r$ where $0<L<b$. 
@@ -331,7 +334,7 @@ Thus $r=L$as desired.
 > 1. 计算$gcd(a,b)$, 看看$gcd(a,b)|c$是否成立，也就是$gcd(a,b)$是否整除$c$。
 > 2. 如果整除，则表明存在这样的解，只要按照以下操作进行即可:
 > 
-![image.png](./__Modular_Arithmetic.assets/20231024_0837207333.png)
+![image.png](Modular_Arithmetic.assets/20231024_0837207333.png)
 > 3. 如果不能整除，则说明使用$a,b$这两个罐子不能达成最终的目标。
 
 
@@ -339,34 +342,34 @@ Thus $r=L$as desired.
 
 ## Practice Exercises
 ### Euclid Algorithm - Graphically
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837202977.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837202977.png)
 
-**Solution**⭐⭐⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0837229514.png)
+**Solution**⭐⭐⭐⭐⭐![image.png](Modular_Arithmetic.assets/20231024_0837229514.png)
 
 ### Euclid Algorithm - Recursion Practice
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837231097.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837231097.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0837248170.png)
+**Solution**![image.png](Modular_Arithmetic.assets/20231024_0837248170.png)
 
 
 ### Extended Euclid Algorithm
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837267186.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837267186.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0837281696.png)
+**Solution**![image.png](Modular_Arithmetic.assets/20231024_0837281696.png)
 
 ### Fibonacci GCD
 > **HW04 P1 Fa20**
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837295130.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837295130.png)
 
-**Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0837313387.png)
+**Proof**![image.png](Modular_Arithmetic.assets/20231024_0837313387.png)
 
 
 # Modular Inverse
 ## Definition
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837325838.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837325838.png)
 > 🔔: 注意上述定义中，连接等式两边的是$=$, 关于$=$的乘法逆元往往不是整数，比如我们找不到整数使得$7$和其相乘的结果是$1$。
 > 下面我们要介绍的是关于$\equiv$的`Multiplicative Inverse`，关于$\equiv$的乘法逆元**一定是**整数，详细请看下面的例子:
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837336430.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837336430.png)
 > 所有和$3$在`Modulus 5`下同余的整数和$7$都构成`Multiplicative Inverse`的关系，换句话说，任何模$3$余$5$的整数都是$7$的乘法逆元。
 > 🔔: 注意，$0$不但在$=$下没有乘法逆元，在$\equiv$(任何`Positive Modulus`)下都没有乘法逆元，毕竟零除以任何数的余数都是$0$。
 
@@ -379,12 +382,12 @@ Thus $r=L$as desired.
 
 
 ## Existence of Inverses⭐⭐⭐⭐⭐
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837348048.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837348048.png)
 > 🔔: 注意这里存在和唯一均满足
 
-**Proof of the Theorem**![image.png](./__Modular_Arithmetic.assets/20231024_0837361141.png)
-**Examples**![image.png](./__Modular_Arithmetic.assets/20231024_0837373011.png)
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837381203.png)
+**Proof of the Theorem**![image.png](Modular_Arithmetic.assets/20231024_0837361141.png)
+**Examples**![image.png](Modular_Arithmetic.assets/20231024_0837373011.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837381203.png)
 
 **Proof of the Necessary Condition**令$gcd(m,x)>1$为$P$, "x has no multiplicative inverse modulo m" 为$Q$。
 我们要证明$P\implies Q$, 通过`Proof by Contradiction`的方法, 也就是要证明$P\land \neg Q$是`F`即可。
@@ -392,12 +395,12 @@ Thus $r=L$as desired.
 因为$gcd(m,x)>1$(Assumed to be true), 则$m=q\cdot c,x=p\cdot c$其中$c=gcd(m,x)>1,~~p,q\in \mathbb{Z}$。
 因为存在$a$使得$ax\equiv 1~(mod~m)$成立，则$m|(ax-1)$成立，即$ax-1=k\cdot m$for some $k\in \mathbb{Z}$
 将$\begin{cases} m=q\cdot c\\x=p\cdot c\end{cases}$带入$ax-1=k\cdot m$我们有$a\cdot p\cdot c-1=k\cdot q\cdot c$, 所以$(ap-kq)c=1$, 因为$c>1$, 所以$0<ap-kq<1$, 而$ap-kq\in \mathbb{Z}$, 所以矛盾。即原命题成立。
-**Counter Examples**![image.png](./__Modular_Arithmetic.assets/20231024_0837407624.png)
-![image.png](./__Modular_Arithmetic.assets/20231024_0837407134.png)
+**Counter Examples**![image.png](Modular_Arithmetic.assets/20231024_0837407624.png)
+![image.png](Modular_Arithmetic.assets/20231024_0837407134.png)
 
 
 ## Computing Inverses - EGCD
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837421655.png)![image.png](./__Modular_Arithmetic.assets/20231024_0837431116.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837421655.png)![image.png](Modular_Arithmetic.assets/20231024_0837431116.png)
 > 原因在于，$gcd(x,y)=ax+by=1$时，我们取$mod~m$得到$by\equiv ax+by\equiv 1(mod~x)$, 所以$y=x^{-1}(mod~m)$。
 > 记忆方法: 假设我们要求$x$在$mod~m$下的`Inverse`, 我们可以调用`gcd(m,x)`, 返回的结果`(d,a,b)`中我们取$b$作为`Inverse`即可。
 > 所以我们只需要简单的调用`egcd`算法即可在$O(n)$的时间复杂度下找到`Modular Inverse`。
@@ -406,45 +409,45 @@ Thus $r=L$as desired.
 
 
 ## Bijection on Modulo
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837448178.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837448178.png)
 
 
 
 ## Practice Exercises
 ### Mechanic Practices
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837466687.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837466687.png)
 
 **(a) **No, since $3\cdot 5 \equiv 5(mod~10)$, 不符合定义。
-**(b) **![image.png](./__Modular_Arithmetic.assets/20231024_0837466427.png)
-**(c) Using Congruence Properties**![image.png](./__Modular_Arithmetic.assets/20231024_0837479508.png)
+**(b) **![image.png](Modular_Arithmetic.assets/20231024_0837466427.png)
+**(c) Using Congruence Properties**![image.png](Modular_Arithmetic.assets/20231024_0837479508.png)
 **(d) **$4x \equiv 1(mod ~8)$相当于$8|4x-1$, 这是定义。
-![image.png](./__Modular_Arithmetic.assets/20231024_0837484713.png)
-**(e) Uniqueness of multiplicative inverse**⭐⭐⭐⭐⭐![image.png](./__Modular_Arithmetic.assets/20231024_0837498866.png)
+![image.png](Modular_Arithmetic.assets/20231024_0837484713.png)
+**(e) Uniqueness of multiplicative inverse**⭐⭐⭐⭐⭐![image.png](Modular_Arithmetic.assets/20231024_0837498866.png)
 
 ### Last Digit
 > **HW04 P2 Fa20**
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837504813.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837504813.png)
 
-**Solution (a) Modular Inverse**![image.png](./__Modular_Arithmetic.assets/20231024_0837514305.png)![image.png](./__Modular_Arithmetic.assets/20231024_0837528904.png)
-**Solution (b) Finding the Patterns**![image.png](./__Modular_Arithmetic.assets/20231024_0837531875.png)
+**Solution (a) Modular Inverse**![image.png](Modular_Arithmetic.assets/20231024_0837514305.png)![image.png](Modular_Arithmetic.assets/20231024_0837528904.png)
+**Solution (b) Finding the Patterns**![image.png](Modular_Arithmetic.assets/20231024_0837531875.png)
 
 
 ### Product of Two⭐⭐⭐
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837555139.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837555139.png)
 > 本质就是构造一个`Bijection`来完成证明。
 
-**Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0837566636.png)
+**Proof**![image.png](Modular_Arithmetic.assets/20231024_0837566636.png)
 这里$f(y)=xy^{-1}(mod~m)$是一个`Bijection`: $\{1,2,\cdots, p-1\}\to \{1,2,\cdots, p-1\}$
 
 
 # Congruence Equation
 ## Lemma
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837575082.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837575082.png)
 
 
 
 ## Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0837595968.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0837595968.png)
 > **Proof:**
 > 1. **Existence:**
 > 
@@ -460,35 +463,35 @@ From the previous part, we know the general form of the solutions. Now, for each
 
 
 ## Function Perspective
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838008064.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838008064.png)
 > 首先因为$gcd(n,a)=d$, 所以$gcd(\frac{n}{d},\frac{a}{d})=1$, 即$g(x)=\frac{a}{d}x(mod~\frac{n}{d})$is a bijection over $\{0,1,\cdots,\frac{n}{d}-1\}$, 所以$ax(mod~m)$相当于放大了$d$倍，但是`Output`个数仍然是$\frac{n}{d}$, 想象一下有间隙，`Output for`$f(x)$is sparse.
 
 
 
 ## Examples
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838029136.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838029136.png)
 
 
 
 # Chinese Remainder Theorem
 ## Motivation
 :::success
-![image.png](./__Modular_Arithmetic.assets/20231024_0838046974.png)
+![image.png](Modular_Arithmetic.assets/20231024_0838046974.png)
 :::
 
 
 ## Two-Modulus Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838056102.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838056102.png)
 > 就是只能找到唯一一个$x\in \{0,1,\cdots, mn-1\}$使得$x\equiv a~(mod~n)$和$x\equiv b~(mod~m)$成立。
 
-**Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0838071039.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838091906.png)
-**Simpler Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0838117455.png)
+**Proof**![image.png](Modular_Arithmetic.assets/20231024_0838071039.png)![image.png](Modular_Arithmetic.assets/20231024_0838091906.png)
+**Simpler Proof**![image.png](Modular_Arithmetic.assets/20231024_0838117455.png)
 
 
 ## Multi-Modulus Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838132444.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838142361.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838159913.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838132444.png)![image.png](Modular_Arithmetic.assets/20231024_0838142361.png)![image.png](Modular_Arithmetic.assets/20231024_0838159913.png)
 
-**Explanations**![image.png](./__Modular_Arithmetic.assets/20231024_0838176004.png)
+**Explanations**![image.png](Modular_Arithmetic.assets/20231024_0838176004.png)
 
 
 ## Isomorphism
@@ -496,36 +499,36 @@ From the previous part, we know the general form of the solutions. Now, for each
 > 因为$x=\sum_{i=1}^k a_ib_i (mod~N)$, 可以将$a_i$看成坐标系数，$b_i$看成是基,于是:
 > $x\leftrightarrow(a_1,a_2,\cdots, a_k)$
 > 如果此时另外一个$y$满足上述定理，我们有$y\leftrightarrow (b_1,b_2,\cdots, b_k)$，则`Isomorphism`说的是$x+y \leftrightarrow (a_1+b_1,a_2+b_2,\cdots, a_k+b_k)$。
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838193119.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838215118.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838193119.png)![image.png](Modular_Arithmetic.assets/20231024_0838215118.png)
 
 
 
 ## Numerical Examples
 ### Solving Simultaneous Congruence
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838218152.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838218152.png)
 
 
 ### Finding All Solutions
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838238401.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838238401.png)
 
 
 
 ## Practices
 ### Mechanic Exercises
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838244030.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838244030.png)
 
-**(a) Observations**![image.png](./__Modular_Arithmetic.assets/20231024_0838255428.png)
-**(b) Finding a**![image.png](./__Modular_Arithmetic.assets/20231024_0838263966.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838281013.png)
+**(a) Observations**![image.png](Modular_Arithmetic.assets/20231024_0838255428.png)
+**(b) Finding a**![image.png](Modular_Arithmetic.assets/20231024_0838263966.png)![image.png](Modular_Arithmetic.assets/20231024_0838281013.png)
 **(c) Finding b**首先找到$3\times 7$的`Modular Inverse mod 5`, 取$b^*=1$就满足。
 此时$3\times 7\times 1\equiv 1~(~mod~5)$, 两边同乘以$3$得到$3\times 7\times 1\times 3\equiv 3~(~mod~5~)$
 所以$b=63$。
 **(d) Finding c**首先找到$3\times 5$的`Modular Inverse mod 7`, 取$c^*=1$就满足。
 此时$3\times 5\times 1\equiv 1(~mod~7)$, 两边同乘以$4$即可，得到$c=3\times 5\times 1\times 4=60$。
 **(e) Finding x**$x=a+b+c=140+63+40=243$
-![image.png](./__Modular_Arithmetic.assets/20231024_0838293747.png)
+![image.png](Modular_Arithmetic.assets/20231024_0838293747.png)
 
 ### CRT Decomposition
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838313915.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838313915.png)
 
 **(a)**$385=11\times 7\times 5$
 **(b)**$3^{302}=3^{(11-1)\times 30+2}\equiv 9(~mod~11)$
@@ -542,42 +545,42 @@ $b_3=(\frac{N}{n_3})(\frac{N}{n_3})^{-1}_{n_3}(\bmod~N)=35\times 6(\bmod ~385)=2
 ## Real-World Applications
 ### Sparsity of Primes
 > **HW04 P4**
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838323312.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838323312.png)
 > `Prime Power`说的是一个数只能表示成一个质数的乘方，不能有其他的`Prime Factor`。
 
-**Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0838348074.png)
+**Proof**![image.png](Modular_Arithmetic.assets/20231024_0838348074.png)
 
 
 ### Stitching the Needles
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838351273.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838361510.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838351273.png)![image.png](Modular_Arithmetic.assets/20231024_0838361510.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0838389249.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838394157.png)
+**Solution**![image.png](Modular_Arithmetic.assets/20231024_0838389249.png)![image.png](Modular_Arithmetic.assets/20231024_0838394157.png)
 
 
 # Fermat Little Theorem
 ## Main Theorems
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838407928.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838427739.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838407928.png)![image.png](Modular_Arithmetic.assets/20231024_0838427739.png)
 
-**Formal Proof**![image.png](./__Modular_Arithmetic.assets/20231024_0838434195.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838448548.png)
-**Example**![image.png](./__Modular_Arithmetic.assets/20231024_0838465748.png)
+**Formal Proof**![image.png](Modular_Arithmetic.assets/20231024_0838434195.png)![image.png](Modular_Arithmetic.assets/20231024_0838448548.png)
+**Example**![image.png](Modular_Arithmetic.assets/20231024_0838465748.png)
 
 
 ## Variant of Main Theorem
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838491237.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838491237.png)
 > 注意到上面的$a^{p-1}\equiv 1~(~~mod~~p)$当且仅当$a\neq 0(~mod~p)$的时候成立，但是$a^{p}\equiv a(mod~p)$对所有的$a$都是成立的，我们可以利用这个性质解决很多问题。
 
 
 
 ## Practices
 ### Fermat Basics
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838504315.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838504315.png)
 
-**(a)**![image.png](./__Modular_Arithmetic.assets/20231024_0838514568.png)
-**(b)**![image.png](./__Modular_Arithmetic.assets/20231024_0838521081.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838534553.png)
-**(c)**![image.png](./__Modular_Arithmetic.assets/20231024_0838542781.png)
+**(a)**![image.png](Modular_Arithmetic.assets/20231024_0838514568.png)
+**(b)**![image.png](Modular_Arithmetic.assets/20231024_0838521081.png)![image.png](Modular_Arithmetic.assets/20231024_0838534553.png)
+**(c)**![image.png](Modular_Arithmetic.assets/20231024_0838542781.png)
 
 
 ### Fermat&CRT
-> ![image.png](./__Modular_Arithmetic.assets/20231024_0838544042.png)
+> ![image.png](Modular_Arithmetic.assets/20231024_0838544042.png)
 
-**Solution**![image.png](./__Modular_Arithmetic.assets/20231024_0838558647.png)![image.png](./__Modular_Arithmetic.assets/20231024_0838563662.png)
+**Solution**![image.png](Modular_Arithmetic.assets/20231024_0838558647.png)![image.png](Modular_Arithmetic.assets/20231024_0838563662.png)
