@@ -112,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 285.5,
+    "collapsed": true
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -209,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 254.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,10 +230,14 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "f58fc5649c2dc1e2",
+  "active": "5433c87ec6412a2a",
   "lastOpenFiles": [
     "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
+    "__Modular_Arithmetic.assets/20231024_0835442228.png.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026110039145.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026110004581.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
@@ -239,11 +245,8 @@
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026102942972.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026102639713.png",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026102226550.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.assets/20231024_0835581328.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Stable_Matching.md",
-    "__Modular_Arithmetic.assets/20231024_0835442228.png.md",
     "__Modular_Arithmetic.assets",
     "Computer_Science/Discrete_Mathematics/Unit1_Proof/Sets_Math Notations.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
@@ -252,7 +255,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS188/Machine_Learning",
     "Computer_Science/Information_Systems_Machine_Learning/EECS188/Decision_Network",
     "Computer_Science/Information_Systems_Machine_Learning/EECS188/Searching_Algorithms",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Recipes",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231025100933917.png",

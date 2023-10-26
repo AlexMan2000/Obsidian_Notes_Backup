@@ -9,20 +9,24 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
     },
     {
-      "basename": "Orthonormalization",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
-    },
-    {
-      "basename": "Callouts&CSS Shortcuts",
-      "path": "Obsidian_User_Notes/Callouts&CSS Shortcuts.md"
-    },
-    {
       "basename": "Modular_Arithmetic",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
     },
     {
       "basename": "RSA_Algorithm",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md"
+    },
+    {
+      "basename": "Turing_Code",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md"
+    },
+    {
+      "basename": "Orthonormalization",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
+    },
+    {
+      "basename": "Callouts&CSS Shortcuts",
+      "path": "Obsidian_User_Notes/Callouts&CSS Shortcuts.md"
     },
     {
       "basename": "20231024_0835581328",
@@ -43,10 +47,6 @@
     {
       "basename": "Convexity",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "Turing_Code",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md"
     },
     {
       "basename": "Graph_Theory",
@@ -195,10 +195,6 @@
     {
       "basename": "Recursive_Algorithms",
       "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Recursive_Algorithms.md"
-    },
-    {
-      "basename": "Exercise_1",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Exercise_1.md"
     }
   ],
   "omittedPaths": [],

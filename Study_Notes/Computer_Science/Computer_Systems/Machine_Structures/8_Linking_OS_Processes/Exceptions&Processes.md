@@ -185,3 +185,24 @@ pid_t getpid(void);
 pid_t getppid(void);
 ```
 
+## Creating and Terminating Process
+### Process State(Simplified)
+> [!def]
+> 简单来说，进程有三种状态：
+> 1. `Running`: 表示进程正在占用`CPU`资源，或者以已经被操作系统调度放入执行队列中等待被执行。
+> 2. `Stopped`: 表示某个进程收到了一些信号，比如`SIGSTOP`, `SIGTSTP`,`SIGTTIN`,`SIGTTOU` 等信号导致这些进程暂时不会被加入任务队列，不会被操作系统调度，知道收到`SIGCONT`才会被调度。
+> 	1. `SIGSTOP`: 用于将一个进程暂停，暂时不被调度。可由用户或者操作系统发送。
+> 	2. `SIGTSTP`: 用于将一个进程暂停，暂时不被调度。可由用户或者操作系统发送。不同于`SIGSTOP`, 后者可以通过用户的键盘事件诸如`CRTL+Z`触发。
+> 	3. `SIGNTTIN`: 用于将一个试图从`Terminal`读取数据的`Background Process`暂停，一般只由操作系统设置, 目的是保证只有`Foreground Process`能和`Terminal`交互。
+> 	4. `SIGNTTOU`: 用于将一个试图写入`Terminal`的`Background Process`暂停，一般只由操作系统设置，目的是保证只有`Foreground Process`能和`Terminal`交互。
+> 3. `Terminated`: 用于将一个进程永久停止，以后也不会被调度。一般出于三种原因。(1) 收到了一个信号，这个信号的默认行为是将进程永久停止。(2) 主程序将所有代码执行完毕了。（3) 程序显式地调用了`exit()`函数。
+
+
+
+### Creating Process - Fork
+> [!code]
+> 创建一个进程很简单，我们只要调用`fork()`函数即可。这个函数往往在父进程中被调用，但是却有两个返回值，且在父进程和子进程中返回的值是不同的，分为几种情况。
+> 1. 在父进程中返回值小于零，表明`CPU`开启子进程失败
+> 
+
+
