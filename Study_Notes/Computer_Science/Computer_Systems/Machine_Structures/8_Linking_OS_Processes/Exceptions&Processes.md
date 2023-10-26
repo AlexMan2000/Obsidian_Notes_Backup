@@ -202,7 +202,71 @@ pid_t getppid(void);
 ### Creating Process - Fork
 > [!code]
 > 创建一个进程很简单，我们只要调用`fork()`函数即可。这个函数往往在父进程中被调用，但是却有两个返回值，且在父进程和子进程中返回的值是不同的，分为几种情况。
-> 1. 在父进程中返回值小于零，表明`CPU`开启子进程失败
+> 1. 在父进程中返回值小于零，表明`CPU`开启子进程失败，不会创建新的进程。
+> 2. 如果开启成功，则在父进程中返回子进程的`pid`，是一个大于零的值。在子进程中返回`0`。这种特性使得我们可以在不同的进程中执行不同的逻辑。
+> 下面是我们开启新进程的方法，这里我们处理了子进程无法开启的潜在的异常。
+```c
+pid_t Fork(void) {
+	pid_t pid;
+	if ((pid = fork()) < 0) 
+		unix_error("Fork error"); 
+	return pid;
+}
+```
+> [!important]
+> 子进程一旦开启，就和父进程并发执行。同时：
+> 1. 子进程会复制父进程的`address space`，具体表现为父进程中定义的变量子进程中有自己的一份拷贝。但注意是拷贝而不是引用。这表明父子进程在修改相同名称的变量时只会修改各自地址空间中的值，也就是说代码里面我们写的是`int x = 10`, 那么父子进程就各自拷贝了一个`int x = 10`, 父子进程对`x`的任意修改都不会影响彼此的地址空间。即`Any modifications made by one process do not affect the value seen by the other process.`。
+> 2. 子进程和和父进程共享所有的文件描述符。比如在父进程中使用`printf`打开了`stdout`, 那么在子进程中也可以将数据流输出到这个文件描述符中。
+```c
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+    int sharedVariable = 10;
+    int pid = fork();
+
+    if (pid == 0) {
+        // Child process
+        sharedVariable += 5; // Child修改对Parent不可见
+        printf("Child Process - Shared Variable: %d\n", sharedVariable);
+    } else if (pid > 0) {
+        // Parent process
+        sharedVariable -= 5; // Parent修改对Child不可见
+        printf("Parent Process - Shared Variable: %d\n", sharedVariable);
+    } else {
+        // Fork failed
+        fprintf(stderr, "Fork failed\n");
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+
+### Terminating Process - exit
+> [!code]
+> 结束一个进程很简单，我们只需要显式地调用`exit()`函数即可。The argument passed to `exit()` determines the exit status of the program.
+> - `exit(0)`: This indicates a **successful termination** of the program. It is conventionally used to indicate that the program executed without any errors or issues.
+> - `exit(1)`: This indicates an **unsuccessful termination** of the program. It is conventionally used to indicate that the program encountered some kind of **error** or issue during execution.
+> - `exit(2)`: This indicates a termination of the program due to a command line syntax error. It is conventionally used to indicate that the program was **nivoked with incorrect command line arguments.**
 > 
+> The exit status values **can be used by other programs or scripts that invoke the program to determine the outcome of its execution.**
+```c
+#include <stdlib.h>
+
+int main() {
+    // Code before termination
+
+    exit(0);  // Terminate the process with exit code 0
+
+    // Code after termination (will not be executed)
+}
+```
+
+## Process Graph
+> [!example]
+> ![](Exceptions&Processes.assets/image-20231026164025721.png)
+
 
 

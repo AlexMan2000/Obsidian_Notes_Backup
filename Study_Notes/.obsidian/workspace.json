@@ -112,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5,
-    "collapsed": true
+    "width": 285.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -210,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5,
-    "collapsed": true
+    "width": 254.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,10 +228,14 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "5433c87ec6412a2a",
+  "active": "932953190040c9d5",
   "lastOpenFiles": [
+    "Mathematics/NYU_Master_Program/DS-GA-1008",
+    "Mathematics/NYU_Master_Program/DS-GA-1014",
+    "Mathematics/NYU_Master_Program/DS-GA-1002",
     "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231026164025721.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
@@ -267,8 +269,6 @@
     "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets/image-20231024193206706.png",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024190020373.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets/image-20231024185728801.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.assets",
     "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md",
     "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md",
     "Excalidraw/Drawing 2023-10-24 15.17.20.excalidraw.md",
@@ -276,7 +276,6 @@
     "Excalidraw/Scripts/Downloaded/Set Font Family.md",
     "Excalidraw/Scripts/Downloaded/Set Dimensions.md",
     "Excalidraw/Scripts/Downloaded/Repeat Elements.md",
-    "Excalidraw/Scripts/Downloaded",
     "未命名.canvas"
   ]
 }
