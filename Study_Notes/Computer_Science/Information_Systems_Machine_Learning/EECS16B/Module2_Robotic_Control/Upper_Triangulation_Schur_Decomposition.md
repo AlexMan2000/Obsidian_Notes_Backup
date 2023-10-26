@@ -1,4 +1,3 @@
-<a name="OLYig"></a>
 # Overview
 > ![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1519105590.png)
 
@@ -117,13 +116,15 @@
 
 <a name="IS13V"></a>
 # Spectral Theorem
-<a name="Jmlue"></a>
 ## For Real Matrices
+> [!thm]
 > ![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520274318.png)
+> 其中$$V=\begin{bmatrix}  \vec{v}_1&\vec{v}_2&\cdots&\vec{v}_n\end{bmatrix}$$且$\vec{v}_{i}$是$A$的$i-th$ eigenvectors. 
 > 本质上，我们可以通过舒尔分解来构建谱分解。
 
-**Proof of Theorem 11 - Using Schur Decomposition**![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520299961.png)![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520318677.png)![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520321991.png)
-**Proof of Theorem 11 - Using Induction - HW11 Sp23 P1**[hw11_sol.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1689859639015-aa09307c-9753-4ee6-9c63-716cd627963d.pdf)
+> [!proof]
+> **Proof of Theorem 11 - Using Schur Decomposition**![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520299961.png)![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520318677.png)![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520321991.png)
+**Proof of Theorem 11 - Using Induction - HW11 Sp23 P1**
 **Simple proof of real eigenvalues**![image.png](./Upper_Triangulation_Schur_Decomposition.assets/20230914_1520347413.png)
 
 <a name="jJmFu"></a>
@@ -132,7 +133,10 @@
 
 **Poor of Theorem 11 - Hermitian Matrices**
 
-<a name="LSwV0"></a>
+
+
+
+
 # Resources
 > **Note 15 Sp22**
 > **Disc09A Sp22**

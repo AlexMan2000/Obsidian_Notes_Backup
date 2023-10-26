@@ -1,5 +1,5 @@
 {
-  "apiKey": "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",
+  "apiKey": "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",
   "defaultChatFrontmatter": "---\nsystem_commands: ['I am a helpful assistant.']\ntemperature: 0\ntop_p: 1\nmax_tokens: 4096\npresence_penalty: 1\nfrequency_penalty: 1\nstream: true\nstop: null\nn: 1\nmodel: gpt-3.5-turbo\n---",
   "stream": true,
   "chatTemplateFolder": "ChatGPT_MD/templates",

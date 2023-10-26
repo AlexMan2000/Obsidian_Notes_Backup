@@ -5,8 +5,40 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
       "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "_Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/_Structured_Matrices.md"
+    },
+    {
+      "basename": "SVD_Pseudoinverse",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
+    },
+    {
+      "basename": "Upper_Triangulation_Schur_Decomposition",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
     },
     {
       "basename": "Modular_Arithmetic",
@@ -39,14 +71,6 @@
     {
       "basename": "Sets_Math Notations",
       "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/Sets_Math Notations.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "Graph_Theory",
@@ -175,26 +199,6 @@
     {
       "basename": "Prop_Quantifiers",
       "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Prop_Quantifiers.md"
-    },
-    {
-      "basename": "Proof_Basics",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Proof_Basics.md"
-    },
-    {
-      "basename": "Functions_Binary_Relation",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Functions_Binary_Relation.md"
-    },
-    {
-      "basename": "Exercise_2",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Exercise_2.md"
-    },
-    {
-      "basename": "Structural_Induction",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.md"
-    },
-    {
-      "basename": "Recursive_Algorithms",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Recursive_Algorithms.md"
     }
   ],
   "omittedPaths": [],

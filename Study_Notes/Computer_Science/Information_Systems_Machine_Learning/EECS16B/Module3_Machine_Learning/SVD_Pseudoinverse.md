@@ -1,4 +1,4 @@
-<a name="AuxgB"></a>
+
 # Overview
 > ![image.png](./SVD_Pseudoinverse.assets/20230914_1513499887.png)
 
@@ -71,35 +71,32 @@
 # SVD - Algebraic Properties
 <a name="Mmqs5"></a>
 ## Important Lemma
-> ![image.png](./SVD_Pseudoinverse.assets/20230914_1514004989.png)
+```ad-lem
+![image.png](./SVD_Pseudoinverse.assets/20230914_1514004989.png)
+```
 
 
-
-<a name="mvEGP"></a>
 ## A^TA and AA^T
-<a name="w0X5S"></a>
 ### Eigenvalues
-> ![image.png](./SVD_Pseudoinverse.assets/20230914_1514024217.png)
+```ad-pro
+![image.png](./SVD_Pseudoinverse.assets/20230914_1514024217.png)
 > ⭐: 如果$A$是实数矩阵，则$A^TA$和$AA^T$的特征值相等(但是零特征值可能不等，视$A^TA$和$AA^T$的形状而定)，且都为**非负实数**，$\lambda=\frac{\|A\vec{v}\|^2}{\|\vec{v}\|^2}$。
-
-**Proof of Proposition 4**![image.png](./SVD_Pseudoinverse.assets/20230914_1514049418.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1514068199.png)
+```
+>[!proof]
+>**Proof of Proposition 4**![image.png](./SVD_Pseudoinverse.assets/20230914_1514049418.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1514068199.png)
 > ![image.png](./SVD_Pseudoinverse.assets/20230914_1514089412.png)
 
 
-
-<a name="yLQ9s"></a>
 ### Null Spaces
+> [!important]
 > 1. $Null(A^{\top}A)=Null(A)$
-> 
-$\forall v\in Null(A)$, $A\vec{v}=\vec{0}$, 则$A^TA\vec{v}=\vec{0}$，则$\vec{v}\in Null(A^{\top}A)$, 所以$Null(A)\subseteq Null(A^{\top}A)$。
+>$\forall v\in Null(A)$, $A\vec{v}=\vec{0}$, 则$A^TA\vec{v}=\vec{0}$，则$\vec{v}\in Null(A^{\top}A)$, 所以$Null(A)\subseteq Null(A^{\top}A)$。
 > $\forall v\in Null(A^{\top}A)$, $A^{\top}A\vec{v}=\vec{0}$, 则$\vec{v}^{\top}A^{\top}A\vec{v}=0$，则$(A\vec{v})^{\top}(A\vec{v})=\|A\vec{v}\|^2=0$, 根据`Norm`的性质，$A\vec{v}=\vec{0}$, 即$\vec{v}\in Null(A)$, 所以$Null(A^{\top}A)\subseteq Null(A)$。
 > 2. $Null(AA^{\top})=Null(A^{\top})$
 > 
 将上述证明中的$A$替换成$A^{\top}$即可。
 
 
-
-<a name="QEtaI"></a>
 ### Column Spaces
 > 1. $Col(AA^{\top})=Col(A)$:
 > 

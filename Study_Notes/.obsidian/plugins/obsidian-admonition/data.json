@@ -73,6 +73,19 @@
       "command": false,
       "injectColor": true,
       "noTitle": false
+    },
+    "pro": {
+      "type": "pro",
+      "color": "184, 18, 196",
+      "icon": {
+        "name": "align-justify",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Proposition",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
     }
   },
   "syntaxHighlight": false,

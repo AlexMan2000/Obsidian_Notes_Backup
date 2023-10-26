@@ -265,8 +265,112 @@ int main() {
 ```
 
 ## Process Graph
+> [!def]
+> - When you are first learning about the fork function, it is often helpful to sketch the process graph, which is a simple kind of precedence graph that captures the partial ordering of program statements.
+> - Each vertex a corresponds to the execution of a program statement. A directed edge a → b denotes that statement a “happens before” statement b. 
+> - Edges can be labeled with information such as the current value of a variable. Vertices corresponding to printf statements can be labeled with the output of the printf. 
+> - Each graph begins with a vertex that corresponds to the parent process calling main. This vertex has no inedges and exactly one outedge. The sequence of vertices for each process ends with a vertex corresponding to a call to exit. This vertex has one inedge and no outedges.
+
 > [!example]
 > ![](Exceptions&Processes.assets/image-20231026164025721.png)
 
 
+## Reaping Child Processes
+## Zombie Process
+> [!important] 
+> 当一个进程因为某些原因进入了`Terminated`状态，操作系统并不会马上将其占用的所有资源都释放掉，此时这些进程不能被调度，但又占用着内存空间，称为`Zombie Process`。操作系统会先等待创建这些进程的父进程的`Reaping`行为，也就是先等着看看父进程会不会着手释放掉这些僵尸进程。
+> 如果直到父进程被`Terminated`了都没有`Reaping`子进程，则操作系统中的`init`进程(`pid=1`, 在操作系统启动伊始就一直运行直到关机)就会着手将这些僵尸进程释放掉(通过主动称为这些僵尸进程的`Parent`进程的方式)。
+> 我们一般通过`waitpid()`函数来实现`Reaping`操作。
 
+
+
+### Use waitpid()
+> [!info]
+> The `waitpid()` function is used to **wait for a specific child process to change its state**. It provides various options to control the behavior of the wait operation. 
+> - pid 设置为大于零的数, 则父进程会等待`pid`所指的子进程的状态发生变化。
+> ![](Exceptions&Processes.assets/image-20231026183109973.png)
+> Here are some concrete examples showing each use case:
+
+
+#### Wait for any child state change
+> [!code]
+> 如果`pid`设置为`-1`，则父进程会等待任意一个子进程的状态发生变化。下面的例子中: 
+> - The parent process creates a child process using `fork()`. 
+> - The parent then waits for any child process to change state using `waitpid()` with the first argument as `-1`. 
+> - The `status` variable is used to store the exit status of the terminated child process. 
+> - The `WIFEXITED()` macro checks if the child process exited normally, and `WEXITSTATUS()` retrieves the exit status.
+```c
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdio.h>
+
+int main() {
+    pid_t child_pid = fork();
+    
+    if (child_pid == 0) {
+        // Child process
+        sleep(2);
+        printf("Child process exiting\n");
+        return 0;
+    }
+    else {
+        // Parent process
+        int status;
+        // The first parameter set to -1
+        pid_t terminated_pid = waitpid(-1, &status, 0);
+        
+        if (WIFEXITED(status)) {
+            printf("Child process %d exited normally with status %d\n", terminated_pid, WEXITSTATUS(status));
+        }
+    }
+    
+    return 0;
+}
+```
+
+
+2. Waiting for a specific child process to change state:
+```c
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdio.h>
+
+int main() {
+    pid_t child_pid = fork();
+    
+    if (child_pid == 0) {
+        // Child process
+        sleep(2);
+        printf("Child process exiting\n");
+        return 0;
+    }
+    else {
+        // Parent process
+        int status;
+        pid_t terminated_pid = waitpid(child_pid, &status, 0);
+        
+        if (WIFEXITED(status)) {
+            printf("Child process %d exited normally with status %d\n", terminated_pid, WEXITSTATUS(status));
+        }
+    }
+    
+    return 0;
+}
+```
+In this example, the parent process waits specifically for the child process with the given `child_pid` to change state. The rest of the code is similar to the previous example.
+
+3. Non-blocking wait:
+```c
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include
+```
+
+<hr class="__chatgpt_plugin">
+
+role::user
+
+`wait`waitpid()` function is used to wait for a specific child process to change its state. It provides various options to control the behavior of the
