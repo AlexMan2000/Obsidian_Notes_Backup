@@ -11,12 +11,8 @@
             "id": "5c1522095aa7ab6a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Study_Notes/Computer_Science/Information_Systems/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
-              }
+              "state": {}
             }
           }
         ]
