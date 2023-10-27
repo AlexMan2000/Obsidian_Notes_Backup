@@ -1,6 +1,7 @@
 # Convexity of Functions
 ## Definition&Properties
 ### Definitions&Criteria
+> [!def]
 > ![image.png](Convex_Functions.assets/20231023_2245468186.png)
 > **Implications: If **$\nabla f(\vec{x}_*)=0$**and **$f$**is convex and differentiable, then **$\vec{x}_*$**is a global minimum.**
 > **Proof:** Since $f$is convex, then $\forall \vec{y}\in dom(f)$, we have $f(\vec{y})\geq f(\vec{x}_*)+0$, which directly implies that $\vec{x}_*$is the global minimum.
@@ -8,12 +9,14 @@
 
 
 ### Proof for FOC(BV)
+> [!proof]
 > ![image.png](Convex_Functions.assets/20231023_2245476935.png)![image.png](Convex_Functions.assets/20231023_2245494126.png)
 
 
 
 
 ## Sub/Super-Level Set
+> [!def]
 > ![image.png](Convex_Functions.assets/20231023_2245513924.png)
 > **总结一下:**
 > 1. A convex function's sublevel set is convex, and the converse is not true.
@@ -25,17 +28,20 @@
 
 
 ## Epi/Hypo-graph of Functions
+> [!def]
 > ![image.png](Convex_Functions.assets/20231023_2245548465.png)![image.png](Convex_Functions.assets/20231023_2245568651.png)
 > 证明一个函数是否是凸函数的一个重要的方法是证明其`Epigraph`is convex set. 这个性质使得我们能可以在`Convex Function`和`Convex Set`之间互相转化。
 > **总的来说:**
 > 1. `Convex Function <=> Epigraph is Convex Set`.
 > 2. `Concave Function <=>  Hypograph is Convex Set`.
 
-**Matrix Fractional Function**![image.png](Convex_Functions.assets/20231023_2245588951.png)
+> [!example] Matrix Fractional Function
+> ![image.png](Convex_Functions.assets/20231023_2245588951.png)
 
 
 ## Some common convex functions
 ### Functions on R
+> [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2245592268.png)![image.png](Convex_Functions.assets/20231023_2246006779.png)
 > 1. **Exponential: **$(e^{ax})''=a^2e^{ax}\geq 0,\forall x\in dom(f)$
 > 2. **Powers:** $(x^a)''=a(a-1)x^{a-2}$, 于是当$a(a-1)\leq 0$时，$(x^a)''\leq 0$-> Concave，否则$(x^a)''\geq 0$-> Convex
@@ -49,6 +55,7 @@
 
 
 ### Functions on R^n
+> [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2246025766.png)![image.png](Convex_Functions.assets/20231023_2246036586.png)
 > 1. **Norm:** $\|\theta x+(1-\theta)y\|_p\leq \theta \|x\|_p+(1-\theta) \|y\|_p$by triangle inequality and homogenity.
 > 2. **Max Function: **
@@ -80,20 +87,24 @@
 
 # Operations Preserving Convexity
 ## Restricted to a Line
+> [!note]
 > ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)![image.png](Convex_Functions.assets/20231023_2246109067.png)
+> 
 > 这个情况说的是，如果一个函数$g(t)$定义为$f$沿着$\forall \vec{v}$的方向的取值，且$g$为凸函数，则$f$为凸函数。几何上来说，如果$f$以$\vec{x}$为起点，如果其向着任意方向定义的函数$g(t)$都是凸函数的话，则$f$为凸函数。
 > ![image.png](Convex_Functions.assets/20231023_2246128604.png)
 
 
 ## Affine Mapping
 ### Affine Function
-> 对于$f:\mathbb{R}^n\to \mathbb{R}$来说，我们有$f(\vec{x})=A\vec{x}+\vec{b}$is convex.
+> [!def]
+> 对于$f:\mathbb{R}^n\to \mathbb{R}$来说，我们有$f(\vec{x})=A\vec{x}+\vec{b}$ is convex.
 > Proof by ZOC:
 > 首先$dom(f)=\mathbb{R}^n$, 这肯定是一个`Convex Set`，其次$\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, 我们有$f(\theta\vec{x}+(1-\theta)\vec{y})=A(\theta\vec{x}+(1-\theta)\vec{y})=\theta (A\vec{x}+\vec{b})+(1-\theta)(A\vec{y}+\vec{b})=\theta f(\vec{x})+(1-\theta)f(\vec{y})$
 > 所以$f$is convex.
 
 
 ### Affine Composition
+> [!def]
 > ![image.png](Convex_Functions.assets/20231023_2246129018.png)
 > **Proof:**
 > If f is convex, then $\forall A\vec{x}+\vec{b},A\vec{y}+\vec{b}\in dom(f),\theta \in [0,1]$, we have:
@@ -107,11 +118,12 @@
 
 
 ## Non-negative Weighted Sum
+> [!def]
 > ![image.png](Convex_Functions.assets/20231023_2246121329.png)![image.png](Convex_Functions.assets/20231023_2246132323.png)
 
 
 
-## Pointwise Maximum
+## Point-wise Maximum
 ### Fundations
 > ![image.png](Convex_Functions.assets/20231023_2246135185.png)
 > **证明一: Proof by Property of Maximum**

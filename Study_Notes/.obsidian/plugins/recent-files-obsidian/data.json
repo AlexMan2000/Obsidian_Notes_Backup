@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "_Least_Square_Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/_Least_Square_Regression.md"
+    },
+    {
       "basename": "System_Level_IO",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
@@ -19,14 +31,6 @@
     {
       "basename": "PCA_Low-rank_Approximation",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "Vector_OPT_Basics",
@@ -195,10 +199,6 @@
     {
       "basename": "DE1803__Linked_Lists__Arrays",
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/DE1803__Linked_Lists__Arrays.md"
-    },
-    {
-      "basename": "Basic_Induction",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md"
     }
   ],
   "omittedPaths": [],

@@ -253,6 +253,7 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 # Generalized Inequalities
 ## Proper Cone
+> [!def]
 > ![image.png](Convexity.assets/20231023_2247527255.png)
 > `Pointed`指的是有方向，一个`Cone`只能按照特定方向辐射。
 > ![image.png](Convexity.assets/20231023_2247534948.png)
@@ -267,6 +268,34 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 ## Minimum and Minimal
 > ![image.png](Convexity.assets/20231023_2247535510.png)![image.png](Convexity.assets/20231023_2247532889.png)
 
+
+
+## Dual Cone
+### Definition
+> [!def]
+> ![](Convexity.assets/image-20231027163337028.png)
+
+
+### Properties
+> [!thm] 
+> ![](Convexity.assets/image-20231027171250483.png)
+
+> [!proof]
+> ![](Convexity.assets/image-20231027171222943.png)
+
+
+
+### Self-Dual Examples
+> [!example] Subspaces
+> ![](Convexity.assets/image-20231027163423849.png)
+
+> [!example] Positive Semidefinite Matrices
+> ![](Convexity.assets/image-20231027170933879.png)
+
+
+### Dual Cone Inequalities
+> [!def]
+> ![](Convexity.assets/image-20231027171736511.png)
 
 
 # Supporting and Separating Hyperplanes
