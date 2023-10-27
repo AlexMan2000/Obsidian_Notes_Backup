@@ -271,24 +271,47 @@ int main() {
 > - Edges can be labeled with information such as the current value of a variable. Vertices corresponding to printf statements can be labeled with the output of the printf. 
 > - Each graph begins with a vertex that corresponds to the parent process calling main. This vertex has no inedges and exactly one outedge. The sequence of vertices for each process ends with a vertex corresponding to a call to exit. This vertex has one inedge and no outedges.
 
-> [!example]
+> [!example] Example 1
 > ![](Exceptions&Processes.assets/image-20231026164025721.png)
+
+> [!example] Example 2
+> ![](Exceptions&Processes.assets/image-20231026221750254.png)![](Exceptions&Processes.assets/image-20231026221756524.png)![](Exceptions&Processes.assets/image-20231026221919391.png)
+![](Exceptions&Processes.assets/image-20231026221831212.png)
+
+
+
+
+
+
+
+> [!example] Example 3
+> ![](Exceptions&Processes.assets/image-20231026221808119.png)![](Exceptions&Processes.assets/image-20231026221943271.png)
+![](Exceptions&Processes.assets/image-20231026221843941.png)
+
+
 
 
 ## Reaping Child Processes
-## Zombie Process
+### Reaping Definition
+> [!def]
+> The process of reaping child processes is a mechanism in UNIX-like operating systems that allows a parent process to collect the exit status of its terminated child processes, ensuring proper system resource cleanup. When a child process terminates, it doesn't disappear entirely. Instead, it becomes a "zombie" process until its parent collects its exit status. 
+> **The act of collecting this exit status is called "reaping."** 
+> When we say "collecting its exit status," we're referring to the process by which a parent process retrieves the final exit information from a terminated child process. This exit information typically includes an exit code (an integer value) indicating how the child process finished using macro functions like `WIFEXITED()`
+
+### Zombie Process
 > [!important] 
 > 当一个进程因为某些原因进入了`Terminated`状态，操作系统并不会马上将其占用的所有资源都释放掉，此时这些进程不能被调度，但又占用着内存空间，称为`Zombie Process`。操作系统会先等待创建这些进程的父进程的`Reaping`行为，也就是先等着看看父进程会不会着手释放掉这些僵尸进程。
-> 如果直到父进程被`Terminated`了都没有`Reaping`子进程，则操作系统中的`init`进程(`pid=1`, 在操作系统启动伊始就一直运行直到关机)就会着手将这些僵尸进程释放掉(通过主动称为这些僵尸进程的`Parent`进程的方式)。
+> 如果直到父进程被`Terminated`了都没有`Reaping`子进程，则操作系统中的`init`进程(`pid=1`, 在操作系统启动伊始就一直运行直到关机)就会着手将这些僵尸进程释放掉(通过主动成为这些僵尸进程的`Parent`进程的方式)。
 > 我们一般通过`waitpid()`函数来实现`Reaping`操作。
 
 
 
-### Use waitpid()
+### Use waitpid() to reap
 > [!info]
 > The `waitpid()` function is used to **wait for a specific child process to change its state**. It provides various options to control the behavior of the wait operation. 
-> - pid 设置为大于零的数, 则父进程会等待`pid`所指的子进程的状态发生变化。
-> ![](Exceptions&Processes.assets/image-20231026183109973.png)
+> - `pid`设置为大于零的数, 则父进程只会等待`pid`所指的子进程的状态发生变化。
+> - `pid`设置为-1，则会等待所有子进程直到其中有一个子进程的状态发生变化。
+> ![](Exceptions&Processes.assets/image-20231026183109973.png)![](Exceptions&Processes.assets/image-20231026214613707.png)![](Exceptions&Processes.assets/image-20231026214627665.png)![](Exceptions&Processes.assets/image-20231026221224770.png)
 > Here are some concrete examples showing each use case:
 
 
@@ -298,39 +321,42 @@ int main() {
 > - The parent process creates a child process using `fork()`. 
 > - The parent then waits for any child process to change state using `waitpid()` with the first argument as `-1`. 
 > - The `status` variable is used to store the exit status of the terminated child process. 
+> - The `waitpid()` will not return until any one of the child processes of the calling process terminates.
 > - The `WIFEXITED()` macro checks if the child process exited normally, and `WEXITSTATUS()` retrieves the exit status.
 ```c
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "csapp.h"
+#define N 2
+int main()
+{
+    int status, i; 
+    pid_t pid;
 
-int main() {
-    pid_t child_pid = fork();
-    
-    if (child_pid == 0) {
-        // Child process
-        sleep(2);
-        printf("Child process exiting\n");
-        return 0;
+	/* Parent creates N children */ 
+    for (i = 0; i < N; i++) 
+        if ((pid = Fork()) == 0) 
+            /* Child */ 
+            exit(100+i);
+            
+    /* Parent reaps N children in no particular order */ 
+    while ((pid = waitpid(-1, &status, 0)) > 0) {
+        if (WIFEXITED(status)) 
+            printf("child %d terminated normally with exit status=%d\n", 
+                   pid, WEXITSTATUS(status)); 
+        else 
+            printf("child %d terminated abnormally\n", pid); 
     }
-    else {
-        // Parent process
-        int status;
-        // The first parameter set to -1
-        pid_t terminated_pid = waitpid(-1, &status, 0);
-        
-        if (WIFEXITED(status)) {
-            printf("Child process %d exited normally with status %d\n", terminated_pid, WEXITSTATUS(status));
-        }
-    }
-    
-    return 0;
+
+    /* The only normal termination is if there are no more children, waitpid() interrupted by a signal */
+    if (errno != ECHILD) 
+        unix_error("waitpid error");  
+    exit(0);
 }
 ```
 
 
-2. Waiting for a specific child process to change state:
+#### Waiting for a specific child state change
+> [!code]
+> 
 ```c
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -359,18 +385,223 @@ int main() {
     return 0;
 }
 ```
-In this example, the parent process waits specifically for the child process with the given `child_pid` to change state. The rest of the code is similar to the previous example.
 
-3. Non-blocking wait:
+
+#### Non-blocking Wait - WNOHANG
+> [!code]
+> 下面的代码中， 我们通过传递`options`参数修改了`waitpid`函数的默认行为。因为在默认状态下，函数`waitpid()`在子进程没有`terminate`的情况下是不会立即返回的，而是会一直等待到子进程`terminate`才返回子进程的`pid`。但是如果将`options`设置为`WNOHANG`，则函数`waitpid()`会立即返回`0`，这样的好处是我们可以在等待子进程`terminate`的过程中干一些其他事情。
 ```c
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <sys/types.h> 
+#include <sys/wait.h> 
+#include <unistd.h> 
+int main() { 
+	pid_t pid, wpid; 
+	int status; 
+	pid = fork(); 
+	if (pid == 0) { 
+		// This block will be executed by the child process 
+		printf("Child process: I'm the child, going to sleep for 5 seconds\n"); 
+		sleep(5); 
+		printf("Child process: I'm done sleeping. Exiting!\n"); 
+		exit(0); 
+	} else if (pid < 0) { 
+		// Fork failed 
+		perror("fork"); 
+		exit(EXIT_FAILURE); 
+	} else { 
+		// This block will be executed by the parent process 
+		do { 
+			wpid = waitpid(pid, &status, WNOHANG); 
+			if (wpid == 0) { 
+				printf("Parent process: child is still running...\n"); 
+				sleep(1); 
+			} else if (wpid < 0) { 
+				perror("waitpid"); 
+				exit(EXIT_FAILURE); 
+			} 
+		} while (wpid == 0); 
+			
+		if (WIFEXITED(status)) { 
+			printf("Parent process: child exited with status %d\n", WEXITSTATUS(status)); 
+		} else if (WIFSIGNALED(status)) { 
+			printf("Parent process: child killed by signal %d\n", WTERMSIG(status)); 
+		} 
+	} 
+	return 0; 
+}
+```
+
+
+#### Detailed Diagnosis - WUNTRACED
+> [!code]
+> 下面的代码展示了如何使用`WUNTRACED`。`WUNTRACED`和`WNOHANG`的区别是，`WUNTRACED`会一直等待子进程(`blocking wait`), 同时拦截那些使得子进程`terminated`或者`stopped`的信号（不光光是`WNOHANG`或者默认行为下的`terminated`），换句话说就是服务范围更广，能够检测到的信号种类更多。
+```c
+#include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include
+
+int main() {
+    pid_t pid, wpid;
+    int status;
+
+    pid = fork();
+
+    if (pid == 0) {
+        // This block will be executed by the child process
+        printf("Child process: I'm the child. Going to sleep for 10 seconds.\n");
+        printf("Child process: Use 'kill -TSTP %d' in another terminal to stop me.\n", getpid());
+        sleep(10);
+        printf("Child process: I'm done sleeping. Exiting!\n");
+        exit(0);
+    } else if (pid < 0) {
+        // Fork failed
+        perror("fork");
+        exit(EXIT_FAILURE);
+    } else {
+        // This block will be executed by the parent process
+        do {
+            wpid = waitpid(pid, &status, WUNTRACED);
+            if (wpid == -1) {
+                perror("waitpid");
+                exit(EXIT_FAILURE);
+            }
+
+            if (WIFEXITED(status)) {
+                printf("Parent process: child exited with status %d\n", WEXITSTATUS(status));
+            } else if (WIFSIGNALED(status)) {
+                printf("Parent process: child killed by signal %d\n", WTERMSIG(status));
+            } else if (WIFSTOPPED(status)) {
+                printf("Parent process: child stopped by signal %d\n", WSTOPSIG(status));
+            }
+
+        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
+    }
+
+    return 0;
+}
 ```
 
-<hr class="__chatgpt_plugin">
 
-role::user
+#### Detect for Resume - WCONTINUED
+> [!code]
+> 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
-`wait`waitpid()` function is used to wait for a specific child process to change its state. It provides various options to control the behavior of the
+int main() {
+    pid_t pid, wpid;
+    int status;
+
+    pid = fork();
+
+    if (pid == 0) {
+        // Child process
+        printf("Child process: I'm the child. PID: %d\n", getpid());
+        printf("Child process: Going to sleep for 15 seconds.\n");
+        printf("Child process: You can stop me with 'kill -TSTP %d' and continue with 'kill -CONT %d'\n", getpid(), getpid());
+        sleep(15);
+        printf("Child process: I'm done sleeping. Exiting!\n");
+        exit(0);
+    } else if (pid < 0) {
+        // Fork failed
+        perror("fork");
+        exit(EXIT_FAILURE);
+    } else {
+        // Parent process
+        do {
+            wpid = waitpid(pid, &status, WUNTRACED | WCONTINUED);
+            if (wpid == -1) {
+                perror("waitpid");
+                exit(EXIT_FAILURE);
+            }
+
+            if (WIFEXITED(status)) {
+                printf("Parent process: child exited with status %d\n", WEXITSTATUS(status));
+            } else if (WIFSIGNALED(status)) {
+                printf("Parent process: child killed by signal %d\n", WTERMSIG(status));
+            } else if (WIFSTOPPED(status)) {
+                printf("Parent process: child stopped by signal %d\n", WSTOPSIG(status));
+            } else if (WIFCONTINUED(status)) {
+                printf("Parent process: child continued\n");
+            }
+
+        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
+    }
+
+    return 0;
+}
+```
+
+
+
+
+## Putting Processes to Sleep
+> [!code]
+> ![](Exceptions&Processes.assets/image-20231026222059709.png)![](Exceptions&Processes.assets/image-20231026222117036.png)
+
+> [!example]
+> ![](Exceptions&Processes.assets/image-20231026222130959.png)![](Exceptions&Processes.assets/image-20231026222141287.png)
+
+
+## Running and Loading Programs
+> [!code] Execve
+> ![](Exceptions&Processes.assets/image-20231026222315268.png)![](Exceptions&Processes.assets/image-20231026222347549.png)![](Exceptions&Processes.assets/image-20231026222707568.png)
+
+>[!example]
+>![](Exceptions&Processes.assets/image-20231026222824840.png)
+
+ 
+### Structure of the Stack of the Program
+> [!important] 
+> ![](Exceptions&Processes.assets/image-20231026222733617.png)
+
+
+
+
+### Manipulate the environment
+> [!code]
+> ![](Exceptions&Processes.assets/image-20231026222442206.png)![](Exceptions&Processes.assets/image-20231026222449864.png)
+
+> [!example]
+> ![](Exceptions&Processes.assets/image-20231026222500031.png)![](Exceptions&Processes.assets/image-20231026222503637.png)![](Exceptions&Processes.assets/image-20231026222518876.png)![](Exceptions&Processes.assets/image-20231026222525703.png)
+
+
+
+
+## Shell Program
+### Linux Process Hierarchy
+> ![](Exceptions&Processes.assets/image-20231026222947082.png)
+
+
+
+
+### Simple Shell Programs
+> [!def]
+> ![](Exceptions&Processes.assets/image-20231026222957990.png)
+
+> [!code]
+> ![](Exceptions&Processes.assets/image-20231026223024144.png)![](Exceptions&Processes.assets/image-20231026223030546.png)
+
+
+
+### Problem with Simple Shell Example
+> [!important]
+> ![](Exceptions&Processes.assets/image-20231026223309026.png)![](Exceptions&Processes.assets/image-20231026230828055.png)
+
+
+
+# Signals
+## Definition
+>[!def]
+>![](Exceptions&Processes.assets/image-20231026230902548.png)
+
+
+
