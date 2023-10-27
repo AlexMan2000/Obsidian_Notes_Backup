@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
       "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "Exceptions&Processes",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
       "basename": "PCA_Low-rank_Approximation",
@@ -113,10 +121,6 @@
       "path": "Excalidraw/Drawing 2023-10-24 15.17.20.excalidraw.md"
     },
     {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
       "basename": "CALL",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Basic_Induction",
       "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md"
-    },
-    {
-      "basename": "Prop_Quantifiers",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Prop_Quantifiers.md"
     }
   ],
   "omittedPaths": [],

@@ -279,11 +279,6 @@ int main() {
 ![](Exceptions&Processes.assets/image-20231026221831212.png)
 
 
-
-
-
-
-
 > [!example] Example 3
 > ![](Exceptions&Processes.assets/image-20231026221808119.png)![](Exceptions&Processes.assets/image-20231026221943271.png)
 ![](Exceptions&Processes.assets/image-20231026221843941.png)
@@ -541,6 +536,10 @@ int main() {
 ```
 
 
+### Use wait()
+> [!code]
+> ![](Exceptions&Processes.assets/image-20231027101622687.png)
+> `wait()`的默认行为就是等待任何一个子进程`terminated`, 会一直`Blocking the calling process until any one of the child processes terminate, and return the pid of this child process`。
 
 
 ## Putting Processes to Sleep
@@ -598,10 +597,9 @@ int main() {
 
 
 
-# Signals
-## Definition
->[!def]
->![](Exceptions&Processes.assets/image-20231026230902548.png)
+
+
+
 
 
 
