@@ -1,7 +1,7 @@
 # Convexity of Functions
 ## Definition&Properties
 ### Definitions&Criteria
-> [!def]
+> [!def] Defintion
 > ![image.png](Convex_Functions.assets/20231023_2245468186.png)
 > **Implications: If **$\nabla f(\vec{x}_*)=0$**and **$f$**is convex and differentiable, then **$\vec{x}_*$**is a global minimum.**
 > **Proof:** Since $f$is convex, then $\forall \vec{y}\in dom(f)$, we have $f(\vec{y})\geq f(\vec{x}_*)+0$, which directly implies that $\vec{x}_*$is the global minimum.
@@ -16,7 +16,7 @@
 
 
 ## Sub/Super-Level Set
-> [!def]
+> [!def] Definition
 > ![image.png](Convex_Functions.assets/20231023_2245513924.png)
 > **总结一下:**
 > 1. A convex function's sublevel set is convex, and the converse is not true.
