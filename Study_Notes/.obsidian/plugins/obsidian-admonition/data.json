@@ -99,6 +99,29 @@
       "title": "Property",
       "injectColor": true,
       "noTitle": false
+    },
+    "algo": {
+      "type": "algo",
+      "color": "20, 17, 223",
+      "icon": {
+        "name": "bolt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "motiv": {
+      "type": "motiv",
+      "color": "245, 147, 10",
+      "icon": {
+        "name": "dumbbell",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

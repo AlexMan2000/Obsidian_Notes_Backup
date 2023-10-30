@@ -595,18 +595,42 @@ function computeConnectedComponents(graph):
 
 
 ### Four-Color Theorem
+> [!info]
 > **Proof: **[https://www.youtube.com/watch?v=adZZv4eEPs8](https://www.youtube.com/watch?v=adZZv4eEPs8)
 > **Any simple planar graph is four-colorable.**
 > The proof is finally done by super computers, considering all the edge cases.
 
 
 
+
 ## Applications
 ### Edge Coloring
+> [!example]
 > ![image.png](Graph_Theory.assets/20231024_0844367910.png)
 
-**Solution**![image.png](Graph_Theory.assets/20231024_0844398812.png)![image.png](Graph_Theory.assets/20231024_0844407706.png)
+> [!success] Solution
+> ![image.png](Graph_Theory.assets/20231024_0844398812.png)![image.png](Graph_Theory.assets/20231024_0844407706.png)
 注意到$(c)$问中，如果我们选择非叶子节点删除，则可能会导致`Build up Error`, 因为`Resulting Graph`可能不是树。但是选择叶子节点删除就一定是树。
+
+
+
+### Classifying Polyhedra
+> [!def] Definition
+> ![](Graph_Theory.assets/image-20231030085324526.png)![](Graph_Theory.assets/image-20231030085440096.png)![](Graph_Theory.assets/image-20231030090118794.png)![](Graph_Theory.assets/image-20231030090125265.png)
+
+
+
+
+
+> [!thm] Searching for Regular Polyhedra
+> ![](Graph_Theory.assets/image-20231030090033762.png)![](Graph_Theory.assets/image-20231030090042809.png)
+
+
+
+
+
+
+
 
 
 # Graph Modeling

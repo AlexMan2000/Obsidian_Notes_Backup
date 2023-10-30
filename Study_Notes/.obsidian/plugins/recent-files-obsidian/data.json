@@ -1,20 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Graph_Theory",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+    },
+    {
+      "basename": "4 Stable Matching",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
+    },
+    {
+      "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
     },
     {
       "basename": "Stable Matching Problem",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
     },
     {
-      "basename": "Modular_Arithmetic",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
+      "basename": "MIT6_042JF10_chap05",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap05.pdf"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "Graph_Theory",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+    },
+    {
+      "basename": "MIT6_042JF10_chap06",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap06.pdf"
     },
     {
       "basename": "Related Resources",
       "path": "Computer_Science/Discrete_Mathematics/Related Resources.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
+      "basename": "Modular_Arithmetic",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
     },
     {
       "basename": "PCA_Low-rank_Approximation",
@@ -33,28 +65,12 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
     {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "_Least_Square_Regression",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/_Least_Square_Regression.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
-    },
-    {
-      "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
     },
     {
       "basename": "Exceptions&Processes",
@@ -183,22 +199,6 @@
     {
       "basename": "Randomized Inference",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
-    },
-    {
-      "basename": "Database",
-      "path": "Computer_Science/Computer_Systems/Database System/Database.md"
-    },
-    {
-      "basename": "Lectures_Readings_Study_Guides",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/Lectures_Readings_Study_Guides.md"
-    },
-    {
-      "basename": "P1800__NBody",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/P1800__NBody.md"
-    },
-    {
-      "basename": "DE1802__Scope__Pass-by-Value__Static",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/2_List_Testing/DE1802__Scope__Pass-by-Value__Static.md"
     }
   ],
   "omittedPaths": [],

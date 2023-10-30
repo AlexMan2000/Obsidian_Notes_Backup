@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b8a4b3a3fea51c20",
+        "id": "831cb5bd2037d0d1",
         "type": "tabs",
-        "dimension": 40.234375,
+        "dimension": 46.044921875,
         "children": [
           {
-            "id": "d7e312eeca8ea69e",
+            "id": "0624866efb64defb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,17 +23,17 @@
         ]
       },
       {
-        "id": "65840a4c7eea9203",
+        "id": "7943abdfe200ffd0",
         "type": "tabs",
-        "dimension": 59.765625,
+        "dimension": 53.955078125,
         "children": [
           {
-            "id": "61b9f4e6857cf745",
+            "id": "c58080bdc5eac573",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
               }
             }
           }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
               }
             }
           },
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -235,54 +235,53 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "d7e312eeca8ea69e",
+  "active": "0624866efb64defb",
   "lastOpenFiles": [
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029222710186.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029222415685.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029220314025.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029220228031.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029215609249.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029215551805.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029213556837.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029213510449.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029213441744.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/image-20231029213427294.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030111552470.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030111312546.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030111212987.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap05.pdf",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110254576.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110238327.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110155871.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110128907.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110037482.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110009725.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets/image-20231030110001825.png",
+    "Untitled.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.assets",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/20231024_0842081442.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap06.pdf",
     "Computer_Science/Discrete_Mathematics/Related Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/_Least_Square_Regression.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
     "Mathematics/NYU_Master_Program/DS-GA-1008",
-    "Mathematics/NYU_Master_Program/DS-GA-1014",
-    "Mathematics/NYU_Master_Program/DS-GA-1002",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
     "__Modular_Arithmetic.assets/20231024_0835442228.png.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
     "Obsidian_User_Notes/Callouts&CSS Shortcuts.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Stable_Matching.md",
-    "__Modular_Arithmetic.assets",
     "Computer_Science/Discrete_Mathematics/Unit1_Proof/Sets_Math Notations.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS188/Software_Projects",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md",
-    "Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md",
     "未命名.canvas"
   ]
 }
