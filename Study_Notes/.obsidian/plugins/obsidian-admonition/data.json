@@ -122,6 +122,17 @@
       "command": false,
       "injectColor": true,
       "noTitle": false
+    },
+    "overview": {
+      "type": "overview",
+      "color": "34, 191, 81",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-sun-dim"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

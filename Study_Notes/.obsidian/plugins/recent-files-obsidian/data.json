@@ -5,12 +5,32 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
-      "basename": "4 Stable Matching",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
-    },
-    {
       "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "1.11_Autonomous_Equations",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.11_Autonomous_Equations.md"
+    },
+    {
+      "basename": "Circular_Motion",
+      "path": "Physics/8.01SC/3_Circular_Motion/Circular_Motion.md"
+    },
+    {
+      "basename": "Newton's_Law_of_Motion",
+      "path": "Physics/8.01SC/2_Newton_Laws/Newton's_Law_of_Motion.md"
+    },
+    {
+      "basename": "Worked_Examples",
+      "path": "Physics/8.01SC/1_Kinematics_Dynamics/Worked_Examples.md"
+    },
+    {
+      "basename": "2D_Kinematics",
+      "path": "Physics/8.01SC/1_Kinematics_Dynamics/2D_Kinematics.md"
+    },
+    {
+      "basename": "4 Stable Matching",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
     },
     {
       "basename": "Stable Matching Problem",
@@ -122,11 +142,11 @@
     },
     {
       "basename": "P6_HTTP版本_关闭TCP_四次挥手_同源策略",
-      "path": "Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md"
+      "path": "Computer_Science/Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md"
     },
     {
       "basename": "1D_Kinematics",
-      "path": "Physics_Notes/8.01SC/1_Kinematics_Dynamics/1D_Kinematics.md"
+      "path": "Physics/8.01SC/1_Kinematics_Dynamics/1D_Kinematics.md"
     },
     {
       "basename": "Must-have Plugins",
@@ -179,26 +199,6 @@
     {
       "basename": "Pipelining",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
-    },
-    {
-      "basename": "常用GDB指令",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/常用GDB指令.md"
-    },
-    {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
-    },
-    {
-      "basename": "Discretization_System_ID",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
-    },
-    {
-      "basename": "Labs__C_Debugging",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Debugging.md"
-    },
-    {
-      "basename": "Randomized Inference",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Randomized Inference.md"
     }
   ],
   "omittedPaths": [],
