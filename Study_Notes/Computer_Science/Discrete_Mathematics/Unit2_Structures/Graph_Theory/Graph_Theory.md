@@ -1,6 +1,7 @@
 # Graph Basics
 ## Simple Graph
 ### Definition
+> [!def]
 > ![image.png](Graph_Theory.assets/20231024_0840419132.png)![image.png](Graph_Theory.assets/20231024_0840433701.png)
 > **Properties of Simple Graphs:**
 > 🔔: Simple graphs do not have any self-loops  (that is, an edge of the form($\{a, a\}$) since an edge is deﬁned to be a set of two vertices. 
@@ -209,16 +210,41 @@
 
 
 ### Conditions for Euler Tour⭐⭐⭐⭐⭐
-> ![image.png](Graph_Theory.assets/20231024_0842051213.png)
-> 这里`Even Degree`说的是对所有的`Vertices`都成立。
+```ad-thm
+ ![image.png](Graph_Theory.assets/20231024_0842051213.png)
 
-**Full Proof - Too Complicated**![image.png](Graph_Theory.assets/20231024_0842081442.png)![image.png](Graph_Theory.assets/20231024_0842109653.png)![image.png](Graph_Theory.assets/20231024_0842129188.png)![image.png](Graph_Theory.assets/20231024_0842149703.png)
-**Proof of only if -  By Picture**![image.png](Graph_Theory.assets/20231024_0842159130.png)![image.png](Graph_Theory.assets/20231024_0842172485.png)
+这里`Even Degree`说的是对所有的`Vertices`都成立。
+```
+> [!proof] Theoretic Proof
+> ![image.png](Graph_Theory.assets/20231024_0842081442.png)![image.png](Graph_Theory.assets/20231024_0842109653.png)![image.png](Graph_Theory.assets/20231024_0842129188.png)![image.png](Graph_Theory.assets/20231024_0842149703.png)
+
+> [!Proof] Proof by Picture
+> **Proof of only if -  By Picture**![image.png](Graph_Theory.assets/20231024_0842159130.png)![image.png](Graph_Theory.assets/20231024_0842172485.png)
 **Proof of if - By Picture**![image.png](Graph_Theory.assets/20231024_0842184686.png)![image.png](Graph_Theory.assets/20231024_0842195721.png)![image.png](Graph_Theory.assets/20231024_0842214651.png)![image.png](Graph_Theory.assets/20231024_0842245309.png)![image.png](Graph_Theory.assets/20231024_0842251348.png)![image.png](Graph_Theory.assets/20231024_0842276908.png)
 **Proof of if - Recursive Algorithm**![image.png](Graph_Theory.assets/20231024_0842298955.png)
 
-### Practice Eulerian Tours
+
+### Applications
+#### Apply the procedure
+> [!important]
+> ![](Graph_Theory.assets/image-20231029213427294.png)![](Graph_Theory.assets/image-20231029213441744.png)
+
+
+#### Practice Eulerian Tours
+> [!example]
 > ![image.png](Graph_Theory.assets/20231024_0842313210.png)![image.png](Graph_Theory.assets/20231024_0842339152.png)![image.png](Graph_Theory.assets/20231024_0842354469.png)
+
+
+#### Number of Walks Covering All Edges
+> HW03 Fa20
+
+> [!example]
+> ![](Graph_Theory.assets/image-20231029220228031.png)
+
+> [!proof]
+> ![](Graph_Theory.assets/image-20231029220314025.png)
+
+
 
 
 
@@ -240,18 +266,55 @@
 
 
 ## Equivalence of Definitions
-> ![image.png](Graph_Theory.assets/20231024_0842456909.png)![image.png](Graph_Theory.assets/20231024_0842473361.png)![image.png](Graph_Theory.assets/20231024_0842489021.png)
+```ad-lem
+If v is degree 1 in connected graph G, G-v is connected.
+```
+```ad-proof
+![](Graph_Theory.assets/image-20231029212319098.png)
 
 
-  
-## Properties
-> ![image.png](Graph_Theory.assets/20231024_0842506585.png)![image.png](Graph_Theory.assets/20231024_0842523835.png)
+```
 
-**Proof**![image.png](Graph_Theory.assets/20231024_0842557408.png)![image.png](Graph_Theory.assets/20231024_0842562132.png)
-
+```ad-thm
+![](Graph_Theory.assets/image-20231029212338353.png)
 
 
-## Tree's Falling Apart
+```
+```ad-proof
+![](Graph_Theory.assets/image-20231029212439021.png)
+
+
+```
+
+
+## Basic Properties
+```ad-prop
+![image.png](Graph_Theory.assets/20231024_0842506585.png)![image.png](Graph_Theory.assets/20231024_0842523835.png)
+```
+
+```ad-proof
+![image.png](Graph_Theory.assets/20231024_0842557408.png)![image.png](Graph_Theory.assets/20231024_0842562132.png)
+```
+
+
+## Tree Proofs
+### Binary Tree
+> [!def] Definition
+> ![](Graph_Theory.assets/image-20231029203531663.png)
+> **Definition of the perfect binary trees**:
+> ![](Graph_Theory.assets/image-20231029202048662.png)
+```ad-thm
+![](Graph_Theory.assets/image-20231029213510449.png)
+
+
+```
+> [!proof]
+> ![](Graph_Theory.assets/image-20231029213556837.png)
+
+
+
+
+### Tree's Falling Apart
 > ![image.png](Graph_Theory.assets/20231024_0842583912.png)
 
 
@@ -408,21 +471,25 @@ function computeConnectedComponents(graph):
 
 
 ## Build Up Error⭐⭐⭐⭐⭐
-:::info
+> [!info]
 ![image.png](Graph_Theory.assets/20231024_0843461309.png)![image.png](Graph_Theory.assets/20231024_0843472331.png)
-:::
-**False Proof**![image.png](Graph_Theory.assets/20231024_0843499491.png)![image.png](Graph_Theory.assets/20231024_0843513432.png)
+
+> [!bug] Buggy Proof
+> ![image.png](Graph_Theory.assets/20231024_0843499491.png)![image.png](Graph_Theory.assets/20231024_0843513432.png)
 > ![image.png](Graph_Theory.assets/20231024_0843532831.png)
 
-**Correct Proof - How to Avoid**![image.png](Graph_Theory.assets/20231024_0843553575.png)
+> [!success] Successful Proof
+> ![image.png](Graph_Theory.assets/20231024_0843553575.png)
 
 
 # Planar Graphs
 ## Definition
+> [!def]
 > ![image.png](Graph_Theory.assets/20231024_0843562174.png)![image.png](Graph_Theory.assets/20231024_0843571759.png)
 
 
 ## Faces&Bridges
+> [!important]
 > When a planar graph is drawn in the plane, one can distinguish, besides its vertices and edges, its faces (more precisely, these are faces of the drawing, not of the graph itself). 
 > **The faces are the regions into which the graph subdivides the plane**. 
 > 1. One of them is inﬁnite.
@@ -445,12 +512,14 @@ function computeConnectedComponents(graph):
 
 
 ## Planarity Proof - Euler's Formula
+> [!info]
 > ![image.png](Graph_Theory.assets/20231024_0844021319.png)![image.png](Graph_Theory.assets/20231024_0844033679.png)
-> - **Number of faces: f **
-> - **Number of vertices: v **
-> - **Number of edges: e**
+> - Number of faces: f 
+> - Number of vertices: v 
+> - Number of edges: e
 
-**Proof**![image.png](Graph_Theory.assets/20231024_0844056002.png)
+> [!proof]
+> **Proof**![image.png](Graph_Theory.assets/20231024_0844056002.png)
 
 
 ## Non Planarity Proof
@@ -461,19 +530,32 @@ function computeConnectedComponents(graph):
 
 
 ### Non-planarity for K3,3
+> [!proof] Prove by Contradiction
 > ![image.png](Graph_Theory.assets/20231024_0844088643.png)
-> 可以看到，如果我们**使用**`**K5**`**的**`**Edge-Face Adjacency**`来判断`K3,3`的`Planarity`会出错，原因在于`K5`中的`Cycle length`至少是`3`，而`K3,3`中的`Cycle Length`至少是`4`。所以对于`K3,3`来说，我们的证明应该修改成下面的样子：
+> 可以看到，如果我们**使用**`K5`**的**`Edge-Face Adjacency`来判断`K3,3`的`Planarity`会出错，原因在于`K5`中的`Cycle length`至少是`3`，而`K3,3`中的`Cycle Length`至少是`4`。所以对于`K3,3`来说，我们的证明应该修改成下面的样子：
 > 1. Each face is adjacent to at least four edges, so face-edge adjacencyeach faces is at least$4f$
 > 2. Each edge is adjacent to at most two faces, so face-edge adjacenct is at most $2e$
 > 
-所以对于`K3,3`来说$4f\leq 2e$，带入`Euler's Formula`中我们有: $v+\frac{1}{2}e\geq e+2$, 所以$e\leq 2v-4$。所以如果`K3,3`是`Planar`的，就一定满足这个不等式。但是实际情况是$e=9,v=6$, $9>2\times 6-4=8$, 于是`K3,3`不是`Planar`的。
-> **使用**`**Total Number of Sides**`**来证明:**
+所以对于`K3,3`来说, 如果它是`Planar`的，则$4f\leq 2e$，带入`Euler's Formula`中我们有: $v+\frac{1}{2}e\geq e+2$, 所以$e\leq 2v-4$。所以如果`K3,3`是`Planar`的，就一定满足这个不等式。但是实际情况是$e=9,v=6$, $9>2\times 6-4=8$, 于是`K3,3`不是`Planar`的。
+> **使用**`Total Number of Sides`**来证明:**
 > Each face is adjacent to at least four edges, so total number of sides of faces in the K5 is $2e=\sum_{i=1}^f s_i\geq \sum_{i=1}^f4=4f$
 
 
 
 ### Non-planarity for all graphs
+> [!Criterion]
 > ![image.png](Graph_Theory.assets/20231024_0844117194.png)![image.png](Graph_Theory.assets/20231024_0844125525.png)![image.png](Graph_Theory.assets/20231024_0844144863.png)![image.png](Graph_Theory.assets/20231024_0844151900.png)
+
+
+### Non-Planarity Example
+> [!example] 
+> ![](Graph_Theory.assets/image-20231029222415685.png)
+
+> [!proof]
+> ![](Graph_Theory.assets/image-20231029222710186.png)
+
+
+
 
 
 
@@ -529,9 +611,23 @@ function computeConnectedComponents(graph):
 
 # Graph Modeling
 ## Banquet Arrangement
+> [!example] Banquet Arrangement
 > ![image.png](Graph_Theory.assets/20231024_0844448382.png)
 
-**Proof**![image.png](Graph_Theory.assets/20231024_0844468020.png)![image.png](Graph_Theory.assets/20231024_0844487585.png)
+> [!proof]
+> ![image.png](Graph_Theory.assets/20231024_0844468020.png)![image.png](Graph_Theory.assets/20231024_0844487585.png)
+
+
+## City Roads
+> [!example]
+> ![](Graph_Theory.assets/image-20231029215551805.png)
+
+> [!proof]
+> ![](Graph_Theory.assets/image-20231029215609249.png)
+
+
+
+
 
 
 # Related Resources

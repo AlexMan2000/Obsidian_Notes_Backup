@@ -164,7 +164,7 @@
 **Examples**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309045995.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309042410.png)
 
 
-## *Practical Example: Voting
+## Application: Voting Example
 > **EECS127 HW03 Fa22**
 
 ### Mathematical Background 
@@ -500,6 +500,125 @@ plt.show()
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309279151.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309295165.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309307214.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309326625.png)
 
 
+## Application: MNIST
+> NYU DS-GA-1014
+
+### Load Data
+> [!example]
+> 
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+x = np.load("mnist.npy")
+print(x.shape) # (70000, 28, 28)
+```
+
+
+### Plot the first five digits
+> [!code]
+```python
+for i in range(5):
+    plt.imshow(x[i], cmap="gray")
+    plt.show()
+```
+> [!info]
+> 我们可以发现前五个数字是`5`,`0`, `4`, `1`, `9`
+
+
+### PCA Procedure
+> [!important]
+> 整个`PCA`的过程可以归纳为下列的几个步骤:
+> 1. 首先我们有一个`Data Matrix`$X\in \mathbb{R}^{n \times d}$, 其中$n$表示我们有多少条数据，$d$表示每一条数据的维数，在`MINST`数据集中数据的维数是$d=28\times 28=784$，有$n=70000$条数据。
+> 2. 对数据做中心化处理，使用`CX = X - np.mean(X, axis=0)`即可实现。这一步主要是为了方便我们后续求出协方差矩阵。
+> 3. 求出协方差矩阵$\frac{1}{n}(CX)^{\top}(CX)$，使用`Cov_Matrix = 1 / len(CX) * CX.T @ CX`可求出。
+> 4. 对协方差矩阵进行对角化，主要是为了求出用于后续投影的特征向量矩阵。`eigenvalues, eigenvectors = np.linalg.eigh(Cov_Matrix)`。
+> 5. 选出前`k`个最大特征值对应的特征向量$\vec{v}_{1,\cdots,}\vec{v}_k$, 按列组成矩阵$V_k$。
+> 6. 对于任意一个数据点$\vec{x}_i$来说:
+> 	1. 第一步是将其中心化得到$\vec{m}_i=\vec{x}_i-\frac{1}{n}\sum_{i=1}^n\vec{x}_i$
+> 	2. 第二步是获取$\vec{m}_i$在$V_k$下的坐标$(z_{i,1},\cdots,z_{i,k})$，通过$V_k^{\top}\vec{m}_i$得到。这个坐标就是原来的数据点的`PCA`表示。
+
+
+### Inverse PCA Procedure
+> [!important]
+> 整个`Inverse PCA`过程本质上是将$V_k$下的坐标表示转换成`Canonical Basis`下的坐标表示，步骤如下:
+> 1. 首先我们需要求原来的数据集的平均向量$\vec{u}=\frac{1}{n}\sum_{i=1}^{n}\vec{x}_i$。
+> 2. 通过$\hat{x}_i=\mu+z_{i,1}\vec{v}_1+\cdots+z_{i,k}\vec{v}_k$构造出原来的数据点。
+
+
+### Full Code
+> [!code]
+> 下面是完整的代码，附有详细的注释:
+```python
+# Compute the dimension of each data point
+def dim_data(data):
+    return data.shape[1]
+
+# Compute the mean of the sample
+def mean_data(data):
+    return np.mean(data, axis=0)
+    
+    
+# Compute the standard deviation of the sample
+def sd_data(data):
+    return (data - np.mean(data, axis=0)) / np.svd(data, axis=0)
+
+
+# Centerize the data for further computation of the covariance matrix
+def centerize_data(data):
+    # Centerize the data
+    return data - np.mean(data, axis=0)
+    
+# Compute the eigenbasis with k eigenvectors
+def compute_eigenbasis_k(centered_data, k):
+    # Compute the top k eigenvectors for our eigenbasis
+    cov_matrix = 1 / len(centered_data) * centered_data.T @ centered_data
+    eigenvalues, eigenvectors = np.linalg.eigh(cov_matrix)
+    
+    sorted_eigenvalues = sorted([(i, eigenvalues[i]) for i in range(len(eigenvalues))], key = lambda x: x[1], reverse=True)
+    sorted_eigenvectors = eigenvectors[list(map(lambda x: x[0], sorted_eigenvalues))][:k]
+    
+    return sorted_eigenvectors.T
+    
+    
+# Main Procedure: PCA
+def PCA_procedure(data, k):
+    centered_data = centerize_data(data)
+    V_k = compute_eigenbasis_k(centered_data, k)
+    
+    # Find PCA coordinates
+    Z_k = V_k.T @ centered_data.T
+    
+    # Z_k is a matrix with (k, 70000), where the coordinates for each data point is organized in columns
+    return Z_k, V_k
+    
+    
+# Main Procesure: Inverse PCA
+def inverse_PCA_procedure(Z_k, V_k, data, k):
+    centered_data = centerize_data(data)
+    mu = data.mean(axis=0)
+    
+    # Revert to origin
+    RC_k = V_k @ Z_k + mu.reshape(dim_data(data),1)
+    
+    
+    # RC_k is a matrix with (784, 70000), where the reconstructed coordinates for each data point is organized in columns
+    return RC_k
+      
+# Display the reconstructed images
+def show_first_five_reconstructed(data, k):
+    # Draw the first five reconstructed images
+    fig, axes = plt.subplots(1, 5, figsize=(16,16), constrained_layout=True)
+
+    Z_k, V_k = PCA_procedure(data, k)
+    RC_k = inverse_PCA_procedure(Z_k, V_k, data, k)
+    
+    for i in range(5):
+        axes[i].imshow(RC_k[:,i].reshape(28,28), cmap="gray")
+    
+    plt.title(f"Reconstructed images when k = {k}", loc = "left")
+```
 
 
 # Low-Rank Approximation

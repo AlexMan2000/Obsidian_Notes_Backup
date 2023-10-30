@@ -107,6 +107,7 @@ $\mathbb{E}[\vec{y}\vec{y}^{\top}]=\mathbb{E}[A\vec{u}(A\vec{u})^{\top}]=\mathbb
 
 ## Operator Norm
 ### Definition
+> [!def] Definition
 > ![image.png](./Matrix_Basics.assets/20231023_2305328246.png)
 > **我们推导一些性质:**
 > 1. $\|A\vec{u}\|_p\leq \|A\|_p\|\vec{u}\|_p$

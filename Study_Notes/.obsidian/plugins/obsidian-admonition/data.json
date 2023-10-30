@@ -43,13 +43,14 @@
       "type": "proof",
       "color": "30, 117, 210",
       "icon": {
-        "name": "square",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-file-text"
       },
       "command": false,
       "title": "Proof",
       "injectColor": true,
-      "noTitle": false
+      "noTitle": false,
+      "copy": true
     },
     "def": {
       "type": "def",
@@ -86,6 +87,18 @@
       "injectColor": true,
       "noTitle": false,
       "copy": true
+    },
+    "prop": {
+      "type": "prop",
+      "color": "124, 79, 130",
+      "icon": {
+        "name": "product-hunt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Property",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

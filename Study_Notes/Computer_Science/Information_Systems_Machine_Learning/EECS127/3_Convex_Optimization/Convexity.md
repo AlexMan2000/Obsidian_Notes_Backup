@@ -269,13 +269,29 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 > ![image.png](Convexity.assets/20231023_2247535510.png)![image.png](Convexity.assets/20231023_2247532889.png)
 
 
+## Dual Norm
+### Definition
+> [!def] Definition
+> ![](Convexity.assets/image-20231028225429617.png)
+
+
+### Examples
+> [!example] Dual Norm of Euclidean Norm
+> ![](Convexity.assets/image-20231028225559770.png)
+
+> [!example] Dual Norm of $l_{{\infty}}$ Norm
+> ![](Convexity.assets/image-20231028225621780.png)
+
+> [!example] Dual Norm of $l_{2}$ Norm on Matrices
+> ![](Convexity.assets/image-20231028225726298.png)
+
 
 ## Dual Cone
 ### Definition
 > [!def]
 > ![](Convexity.assets/image-20231027163337028.png)
 
-
+ 
 ### Properties
 > [!thm] 
 > ![](Convexity.assets/image-20231027171250483.png)
@@ -284,13 +300,16 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 > ![](Convexity.assets/image-20231027171222943.png)
 
 
-
 ### Self-Dual Examples
 > [!example] Subspaces
 > ![](Convexity.assets/image-20231027163423849.png)
 
 > [!example] Positive Semidefinite Matrices
 > ![](Convexity.assets/image-20231027170933879.png)
+
+> [!example] Dual of a Norm Cone
+> ![](Convexity.assets/image-20231028224836842.png)![](Convexity.assets/image-20231028224825468.png)
+
 
 
 ### Dual Cone Inequalities
