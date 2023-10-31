@@ -75,8 +75,8 @@
       "injectColor": true,
       "noTitle": false
     },
-    "pro": {
-      "type": "pro",
+    "proposition": {
+      "type": "proposition",
       "color": "184, 18, 196",
       "icon": {
         "name": "align-justify",
@@ -133,6 +133,18 @@
       "command": false,
       "injectColor": true,
       "noTitle": false
+    },
+    "corollary": {
+      "type": "corollary",
+      "color": "149, 48, 232",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-bookmark"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
     }
   },
   "syntaxHighlight": false,

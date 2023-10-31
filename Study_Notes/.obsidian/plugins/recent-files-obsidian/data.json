@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
+      "basename": "cvxbook-solutions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "SVD_Pseudoinverse",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
+    },
+    {
+      "basename": "Reachability_Controllability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
+    },
+    {
+      "basename": "Discretization_System_ID",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/Untitled.md"
+    },
+    {
+      "basename": "3.7_基变换_图像压缩",
+      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.7_基变换_图像压缩.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "Drawing 2023-10-30 20.51.15.excalidraw",
+      "path": "Excalidraw/Drawing 2023-10-30 20.51.15.excalidraw.md"
+    },
+    {
       "basename": "System_Level_IO",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
@@ -41,10 +85,6 @@
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap05.pdf"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
-    },
-    {
       "basename": "Graph_Theory",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
     },
@@ -61,20 +101,8 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
     },
     {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
       "basename": "Modular_Arithmetic",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "Matrix_Basics",
@@ -83,10 +111,6 @@
     {
       "basename": "Structured_Matrices",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "_Least_Square_Regression",
@@ -99,10 +123,6 @@
     {
       "basename": "Vector_OPT_Basics",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
     },
     {
       "basename": "Upper_Triangulation_Schur_Decomposition",
@@ -179,26 +199,6 @@
     {
       "basename": "X86_Basics",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Basics.md"
-    },
-    {
-      "basename": "Caches_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
-    },
-    {
-      "basename": "Floating_Number_Representation",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md"
-    },
-    {
-      "basename": "ASCII_Table",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/ASCII_Table.md"
-    },
-    {
-      "basename": "Code_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "Pipelining",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
     }
   ],
   "omittedPaths": [],

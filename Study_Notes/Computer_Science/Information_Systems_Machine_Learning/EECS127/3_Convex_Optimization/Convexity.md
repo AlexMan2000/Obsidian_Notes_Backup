@@ -2,10 +2,25 @@
 ## Affine Set
 ### Canonical Definition
 > ![image.png](Convexity.assets/20231023_2246254943.png)![image.png](Convexity.assets/20231023_2246266946.png)
-> 注意这里我们没有对$\theta$的取值做任何限制。
+> 注意这里我们没有对 $\theta$ 的取值做任何限制。
+
+
+
+## Affine Subspaces
+### Motivation
+> [!motiv] Motivation
+> 在给出定义之前，我们先思考这样一个问题:
+> Given $\vec{v}_1,\vec{v}_{2,\cdots,}\vec{v}_k,\vec{u}\in \mathbb{R}^n$ , when is $\vec{u}\in \textbf{aff}\{\vec{v}_1,\cdots,\vec{v}_k\}$?
+> 这个问题可以等价为:
+> $\begin{cases} \vec{u}=\lambda_1\vec{v}_1+\cdots+\lambda_k\vec{v}_k\\1=\lambda_1+\cdots+\lambda_k\end{cases}$。
+> This $Q$ is equivalent to: Is $\begin{bmatrix} \vert&\cdots&\vert&\vert\\ \vec{v_1} & \dots & \vec{v_k} & \vec{u}\\\vert&\cdots&\vert&\vert \\ 1 & \dots & 1 & 1  \end{bmatrix}$ consistent? (最后一列是增广列)。
+> The solution set of $A\vec{x}=\vec{b}$是一个`affine set`$C$, `affine set`本身不是`subspace`, 因为$\vec{0}$可能不在$C$中。但是如果我们任取一个$A\vec{x}=\vec{b}$的解$\vec{x}_0$则$A(\vec{x}-\vec{x}_0)=\vec{0}$, 此时$\vec{x}-\vec{x}_{0}\in\mathcal{N}(A)$, 而$\mathcal{N}(A)$是一个`Subspace`。所以我们知道$C-x_0$是一个`subspace`。
+
+
 
 
 ### Subspace Definition
+> [!def]
 > ![image.png](Convexity.assets/20231023_2246297453.png)
 
 
@@ -14,27 +29,38 @@
 > ![image.png](Convexity.assets/20231023_2246309132.png)![image.png](Convexity.assets/20231023_2246325231.png)
 > **Affine Hull:**
 > ![image.png](Convexity.assets/20231023_2246329375.png)
+> **假设有三个点$x_1,x_2,x_3$, 我们分情况讨论:**
+> 1. **如果 $x_1,x_2,x_3$ 线性无关**，则 $\textbf{aff}\{x_1,x_2,x_3\}$ 表示 $\mathbb{R}^2$，我们可以这样思考: 对于$\textbf{aff}\{x_1,x_2,x_3\}$来说，我们有$a_1x_1+a_2x_2+a_3x_3$ , 我们可以令$a_1+a_2=1,a_3=0$, 所以经过$x_1,x_2$的直线上的所有点都在$\textbf{aff}~C$ 中。同理，令$a_2+a_3=1,a_1=0$, 则经过$x_2,x_3$的直线上的所有点都在$\textbf{aff}~C$ 中。然后我们任取$x_1,x_2$直线上的一点$x_4$和$x_2,x_3$直线上的一点$x_5$, 然后取他们的`affine combination`, 如下图所示，我们可以得到$a_5(a_1x_1+a_2x_2)+a_6(a_3x_2+a_4x_3)=a_5a_1x_1+(a_5a_2+a_6a_3)x_2+a_6a_4x_3$, 我们可以证明这仍然是一个`affine combination`, 所以以此类推$\textbf{aff}~C=\mathbb{R}^2$。
+> ![](Convexity.assets/image-20231030210450644.png)
+> 2. 如果$x_1,x_2,x_3$并非线性无关，即存在两个$x_i,x_{j},i\neq j$使得$x_i\parallel x_j$, 此时$\textbf{aff}~C$就是一条直线。
+> 3. 如果$x_1=x_2=x_3$, 则此时$\textbf{aff}~C$就是一个点。
 
 
 
-## Affine Dimension
+## Affine Dimension of a set
+> [!def]
+> 注意`Affine Dimension of a set`和`Dimension of an affine set`是不一样的。
+> - Affine dimension of a set is the dimension of the affine hull of this set.
+> - Dimension of an affine set is the dimension of the translated subspace of this affine set.
 > ![image.png](Convexity.assets/20231023_2246347288.png)
-
-
-
-
 
 
 
 # Convex Objects
 ## Convex Set/Convex Hull
 > ![image.png](Convexity.assets/20231023_2246356107.png)![image.png](Convexity.assets/20231023_2246367805.png)
+> 下图中展示了三个点的`Convex Combination`组成的几何图形, 是由点围成的内部的区域。
+> ![](Convexity.assets/image-20231030220911208.png)
 
 
 
-## Convex Cone/Conic Hull
+## (Convex) Cone/Conic Hull
+> [!def]
 > ![image.png](Convexity.assets/20231023_2246373237.png)
-> `Being a Conex Cone`implies`Being a Convex Set`, 也就是说`Being a Convex Cone`is a stronger condition than `Being a Convex Set`。
+> - `Being a Conex Cone`implies`Being a Convex Set`, 也就是说`Being a Convex Cone`is a stronger condition than `Being a Convex Set`。
+> - `Convex Cone`has to pass the origin. 
+> 	- 所以任意直线不是凸锥，直线必须过远点才是凸锥。
+> 	- 所以$\mathbb{R}^n$空间的子空间一定是一个凸锥，因为首先$\mathbb{R}^n$是一个凸集，其次$\mathbb{R}^n$过原点。
 
 
 
@@ -42,7 +68,12 @@
 
 ## Operations Preserving Convexity of Set
 ### Intersection of Convex Set
-> ![image.png](Convexity.assets/20231023_2246388445.png)![image.png](Convexity.assets/20231023_2246402243.png)
+> [!def]
+> ![image.png](Convexity.assets/20231023_2246402243.png)
+
+> [!important]
+> A set is convex if and only if its intersection with an arbitrary line $\{\hat{x} + tv | t \in R\}$ is convex.
+> 
 
 
 
@@ -51,8 +82,15 @@
 
 
 
-### Affine Image
-> ![image.png](Convexity.assets/20231023_2246453808.png)![image.png](Convexity.assets/20231023_2246469337.png)![image.png](Convexity.assets/20231023_2246475324.png)![image.png](Convexity.assets/20231023_2246476294.png)
+### Affine Image(仿射变换)
+#### Definition
+> [!def]
+> ![image.png](Convexity.assets/20231023_2246453808.png)![image.png](Convexity.assets/20231023_2246469337.png)![image.png](Convexity.assets/20231023_2246475324.png)
+
+
+#### Basic Examples
+> [!example] Examples
+> ![image.png](Convexity.assets/20231023_2246476294.png)
 > $f(S)=\alpha S$可以看成$f(\vec{x})=\alpha I\vec{x}$, $f(S)=S+\alpha$可以看成$f(\vec{x})=\vec{x}+\vec{a}$本质都是`Affine Mapping`。
 > ![image.png](Convexity.assets/20231023_2246476073.png)
 > $f(S)$可以看成$f(\vec{x}_1,\vec{x}_2)=\begin{bmatrix} I&0\end{bmatrix}\begin{bmatrix} \vec{x}_1\\\vec{x}_2\end{bmatrix}=\vec{x}_1$, 其中$A=\begin{bmatrix} I&0\end{bmatrix}$, 且$dom(f)=S\subseteq\mathbb{R}^m\times \mathbb{R}^n$
@@ -62,18 +100,20 @@
 
 
 
+
 ### Inverse Affine Image
+> [!def]
 > ![image.png](Convexity.assets/20231023_2246488559.png)
 > **Proof:**
 > $\forall \vec{x},\vec{y}\in f^{-1}(C)$, we have by definition $f(\vec{x}),f(\vec{y})\in C$。Since $C$is convex, thus $\forall \theta\in[ 0,1]$, we know $\theta f(\vec{x})+(1-\theta) f(\vec{y})\in C$。Since $f$is affine, then by its property we have $\theta f(\vec{x})+(1-\theta)f(\vec{y})=f(\theta\vec{x}+(1-\theta)\vec{y})\in C$, which implies $\theta\vec{x}+(1-\theta)\vec{y}\in f^{-1}(C)$。Thus tying all these together, we have proven that $\forall \vec{x},\vec{y}\in f^{-1}(C),\theta\in [0,1]$, we have $\theta\vec{x}+(1-\theta)\vec{y}\in f^{-1}(C)$, which implies that $f^{-1}(C)$is convex.
-
 
 
 ## Functions Preserving convexity
 ### Perspective Function
 #### Definition
 > ![image.png](Convexity.assets/20231023_2246499637.png)![image.png](Convexity.assets/20231023_2246493579.png)
-
+> 我们有如下的公式，$(-\frac{\vec{x}}{t},1)=(-P(\vec{x},t),-1)$, 也就是说我们投影后的 $x$ 轴坐标可以直接通过$-P(\vec{x},t)$给出。
+> ![](Convexity.assets/image-20231031160014697.png)
 
 
 #### Convexity of (Inverse) Image
@@ -87,16 +127,27 @@
 
 
 
-
 #### Convexity
 > ![image.png](Convexity.assets/20231023_2246574837.png)
+
+
+
+#### Probability
+> [!example]
+> ![](Convexity.assets/image-20231031160354195.png)
+> 为什么$f_{ij}=\frac{p_{ij}}{\sum\limits_{i=1}^np_{kj}}$是一个`Linear-Fractional Function`呢, 我们考虑$\vec{p}=\begin{bmatrix} p_{11}&p_{12}&\cdots&p_{nm}\end{bmatrix}$, 则分子可以看成$\begin{bmatrix} 0&\cdots&1_{ij}&\cdots&0\end{bmatrix}^{\top}\vec{p}_j$, 分母就是$\begin{bmatrix} 0&\cdots&1_{1j}&1_{2j}&\cdots&1_{mj}&\cdots&0\end{bmatrix}^{\top}\vec{p}$。
+
 
 
 
 ## Exercises
 > ![image.png](Convexity.assets/20231023_2246589828.png)
 > 画图即可。
-> ![image.png](Convexity.assets/20231023_2247005945.png)![image.png](Convexity.assets/20231023_2247017486.png)
+> ![image.png](Convexity.assets/20231023_2247005945.png)![image.png](Convexity.assets/20231023_2247017486.png)![](Convexity.assets/image-20231030221558084.png)
+
+
+
+
 
 
 # Important Convex Sets
@@ -124,7 +175,7 @@
 
 
 ### Voronoi Description
-> #### ![image.png](Convexity.assets/20231023_2247137542.png)![image.png](Convexity.assets/20231023_2247146499.png)
+>  ![image.png](Convexity.assets/20231023_2247137542.png)![image.png](Convexity.assets/20231023_2247146499.png)
 
 
 
@@ -153,19 +204,24 @@
 
 
 ## Euclidean Balls
+> [!def]
 > ![image.png](Convexity.assets/20231023_2247218693.png)
 > **Convexity:**
+> 
 > ![image.png](Convexity.assets/20231023_2247237392.png)
 
 
 
-## Ellipsoids
+ ## Ellipsoids(椭球)
 ### Definition
+> [!def]
 > ![image.png](Convexity.assets/20231023_2247267075.png)
-> 对于$(2.4)$中的定义，我们知道, 如果$A=P^{\frac{1}{2}}$，则: 
-> $\begin{aligned}(x_c+P^{\frac{1}{2}}u-x_c)^{\top}(P^{\frac{1}{2}})^{-2}(x_c+P^{\frac{1}{2}}u-x_c)&=(P^{\frac{1}{2}}u)^{\top}(P^{\frac{1}{2}})^{-2}(Au)\\&=u^{\top}(P^{\frac{1}{2}})^{\top}(P^{\frac{1}{2}})^{-2}P^{\frac{1}{2}}u\\&=u^{\top}u\leq 1\end{aligned}$
+> - 对于$(2.4)$中的定义，我们知道, 如果$A=P^{\frac{1}{2}}$，则: 
+> $\begin{aligned}(x_c+P^{\frac{1}{2}}u-x_c)^{\top}(P^{\frac{1}{2}})^{-2}(x_c+P^{\frac{1}{2}}u-x_c)&=(P^{\frac{1}{2}}u)^{\top}(P^{\frac{1}{2}})^{-2}(P^{\frac{1}{2}}u)\\&=u^{\top}(P^{\frac{1}{2}})^{\top}(P^{\frac{1}{2}})^{-2}P^{\frac{1}{2}}u\\&=u^{\top}u\leq 1\end{aligned}$
 > 这符合$(2.3)$的定义。
-> 同时如果令$P=r^2I$则，$\mathcal{E}$是一个`Norm Ball`with radius $r$。
+> - 同时这里的$A$不唯一，如果我们将$AQ$（$Q$是一个正交矩阵）替换$A$, 则仍然满足$(2.3)$的定义。但是如果我们假定$A$是正定矩阵，则唯一。
+> - 几何上说，$Au$ 就是对单位球 “旋转-拉伸-旋转”为椭球，而$x_c+Au$ 就是再将这个椭球中心平移到 $x_c$。
+> - 同时如果令$P=r^2I$则，$\mathcal{E}$是一个`Norm Ball`with radius $r$。
 
 
 
@@ -186,41 +242,107 @@
 
 
 ## Polyhedra
-### Definition
+> [!def]
 > ![image.png](Convexity.assets/20231023_2247355265.png)![image.png](Convexity.assets/20231023_2247364858.png)![image.png](Convexity.assets/20231023_2247374723.png)
 > **Convexity:**
 > $\forall \vec{x},\vec{y}\in\mathcal{P},\theta\in [0,1]$, we have $A\vec{x}\leq \vec{b}$and $C\vec{x}=\vec{d}$and $A\vec{y}\leq \vec{b}$and $C\vec{y}=\vec{d}$, thus we can obtain  $A(\theta \vec{x}+(1-\theta)\vec{y})\leq \theta\vec{b}+(1-\theta)\vec{b}=\vec{b}$ and $C(\theta \vec{x}+(1-\theta)\vec{y})= \theta\vec{d}+(1-\theta)\vec{d}=\vec{d}$, which implies that $\mathcal{P}$is a convex set.
 
 
+## Simplex
+### Affine/Linear Independence
+> [!def]
+> ![](Convexity.assets/image-20231031103109902.png)
 
-### *Concept Check
-> ![image.png](Convexity.assets/20231023_2247372949.png)
-> 
+> [!proposition]
+> ![](Convexity.assets/image-20231031103152573.png)![](Convexity.assets/image-20231031103159579.png)
 
-
-
-
-### Properties
-#### Polyhedra Decomposition
-> ![image.png](Convexity.assets/20231023_2247385061.png)![image.png](Convexity.assets/20231023_2247385488.png)
-
+> [!proof] Proof for Proposition
+> ![](Convexity.assets/image-20231031103545934.png)![](Convexity.assets/image-20231031103552561.png)
 
 
-## *Simplex
+### Simplex Definition
+> [!def]
 > ![image.png](Convexity.assets/20231023_2247394810.png)
-> **Convexity:**
 > 
+> 
+
+> [!example] $R^2$ 空间的例子
+> ![](Convexity.assets/image-20231031110259195.png)
+> 在$\mathbb{R}^2$空间中，我们只能构建出$(a)$和$(b)$中的单纯型吗，分别对应线段和三角形。因为在$\mathbb{R}^2$空间中我们无法找到三组线性无关的向量（四个点构成，如$(c)$所示, $\vec{x}_2-\vec{x}_{1,}\vec{x}_3-\vec{x}_1,\vec{x}_4-\vec{x}_1$是线性相关的），所以也自然无法构建出有四条边的单纯型。
+
+> [!example] $R^3$空间中的一个例子
+> ![](Convexity.assets/image-20231031110800279.png)
+
+
+### Simplex is a Polyhedra
+> [!important] 
+> ![](Convexity.assets/image-20231031111513188.png)
+
+
+
+
+###  Affine Dimension of Simplex
+> 假设我们有$k+1$个点$\vec{x}_0,\cdots,\vec{x}_{k}$, 他们`affinely independent`, 则我们可以构造`simplex`: $C=conv\{\vec{x}_0,\cdots,\vec{x}_{k}\}$。
+> $C$ 的`Affine Dimension`是$dim(aff(C)-\vec{x}^*)$ ($aff(C)$表示$C$的`affine hull`, 且$\vec{x}^*\in aff(C))$。
+
+
+
+
+## Important Solution Sets
+### Linear Matrix Inequality
+> [!example] 在控制理论中非常重要，后面会有详细介绍，这里不做展开。
+> ![](Convexity.assets/image-20231031142958857.png)
+> 其中$A(x)\preceq B$等价于$A(x)-B\preceq 0$, 即$A(x)-B$是半负定的。
+> 
+
+> [!proof]
+> 定义$A(X)=X_1A_1+\cdots+X_nA_n$,其中$X_{i},A_{i},B\in \mathbb{S}_+^n$。
+> 我们可以定义仿射变换$f(X):= B-A(X)$, 则$f^{-1}(S_+^n)=\{X|B-A(X)\succeq 0\}$。假设$dom(f)=\mathbb{S}_+^n$，则 $f$ 实际上是一个从矩阵空间到矩阵空间的仿射映射，因为$\mathbb{S}_+^n$是一个凸集，所以$f(\mathbb{S}_+^n)$也是凸集。
+> 本例中，我们可以将矩阵$A_i$当成是标量，$X_i$看成是变量，就会好理解很多。
+
+
+### Quadratic Inequality
+> [!example]
+> ![](Convexity.assets/image-20231031163354999.png)
+> **Solution(a):**
+> 
+> ![](Convexity.assets/image-20231031164800808.png)![](Convexity.assets/image-20231031164806532.png)
+> **Some Remarks:**
+> 
+> ![](Convexity.assets/image-20231031164815727.png)
+> **Solution (b):**
+> 
+> ![](Convexity.assets/image-20231031165254029.png)
 
 
 
 ## Exercises
+### Basic Problems - Applying Definitions
+> [!example] Exercise 1
 > ![image.png](Convexity.assets/20231023_2247397093.png)
 > 1. 首先$S$一定是`Convex`的，因为:
 > 
 $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1-\theta) y_1&+\theta x_2 e^{-t}+ (1-\theta) y_2e^{-t}+\theta x_3 e^{-2t}+ (1-\theta) y_3e^{-2t}\\&=\theta(x_1+x_2e^{-t}+x_3e^{-2t})+(1-\theta)(y_1+y_2e^{-t}+y_3e^{-2t})\\&\leq \theta\times 1.1+(1-\theta)\times 1.1\\&=1.1\end{aligned}$
 > 所以$\theta\vec{x}+(1-\theta)\vec{y}\in S$。要注意上面的推导中的一个重要前提是$\theta\in [0,1]$, 这也蕴含了$\theta$和$1-\theta$都大于等于零这一条件，这就导致我们在已知$x_1+x_2e^{-t}+x_3e^{-2t}\leq 1.1$和$y_1+y_2e^{-t}+y_3e^{-2t}\leq 1.1$的情况下可以在等式两边同时乘以$\theta$或者$1-\theta$而不改变不等式的符号然后直接相加。
 > 2. 而`Being Convex doesn't imply being affine`，对于`Affine Combination`我们并没有对$\theta$的取值范围做任何限制，所以如果我们取$\theta=-1$, $x_1=1.1,x_2=0,x_3=0$和$y_1=0,y_2=1.1,y_3=0$则$\theta \vec{x}+(1-\theta)\vec{y}=(-1.1,2.2,0)$此时$-1.1+2.2e^{-t}>1.1$for some $t\geq 1$。所以$S$并不是`Affine`的。
-> 3. 因为`Polyhedra`是
+> 3. 答案有错误，这个集合应该也是`Polyhedra`，因为它可以看成一些列的`halfspace`的交集。$t=1,2,3,\cdots$每一个 $t$ 对应着一个`Halfspace`。
+
+> [!example] Exercise 2
+> 
+> ![](Convexity.assets/image-20231030221823730.png)![](Convexity.assets/image-20231031100956319.png)![](Convexity.assets/image-20231031101002783.png)
+
+
+
+### Advanced Problems - Probability
+> [!example]
+> ![](Convexity.assets/image-20231031101329715.png)![](Convexity.assets/image-20231031101333958.png)
+> **Solution:**
+> 
+> 
+> ![](Convexity.assets/image-20231031162857405.png)![](Convexity.assets/image-20231031165405696.png)![](Convexity.assets/image-20231031165412418.png)
+
+
+
 
 
 # Important Convex Cones
@@ -362,9 +484,8 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 > 试想一个有尖点的凸集。
 
 
-
 # Schur Complement
-## Definition
+### Definition
 > ![image.png](Convexity.assets/20231023_2248057261.png)
 
 

@@ -187,7 +187,7 @@ static ssize_t rio_read(rio_t *rp, char *usrbuf, size_t n)
 	/* Check if there is unread bytes in the internal buffer */
     while (rp->rio_cnt <= 0) { /* Refill if buf is empty */
 	    /* 1. The internal buf is empty, so we read from the file descriptor */
-        rp->rio_cnt = read(rp->rio_fd, rp->rio_buf, sizeof(rp->rio_buf));
+        rp->rio_cnt = read(rp->rio_fd, rp->rio_buf, sizeof(rp->rio_buf)); // Notice here it reads sizeof(rp->rio_buf) at once, reducing the number of times of calling read() system call.
 
         if (rp->rio_cnt < 0) {
             if (errno != EINTR) /* Interrupted by sig handler return */

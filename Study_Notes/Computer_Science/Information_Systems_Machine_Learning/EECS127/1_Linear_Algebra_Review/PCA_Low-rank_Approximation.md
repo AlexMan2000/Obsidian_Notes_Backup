@@ -574,12 +574,12 @@ def centerize_data(data):
 def compute_eigenbasis_k(centered_data, k):
     # Compute the top k eigenvectors for our eigenbasis
     cov_matrix = 1 / len(centered_data) * centered_data.T @ centered_data
+    # 函数返回的eigenvalues是从小到大排列的，eigenvectors也是从小到大排列的, 所以需要取个反
     eigenvalues, eigenvectors = np.linalg.eigh(cov_matrix)
+	# eigenvectors 列方向倒序排列，取前k列作为PCA Basis
+    sorted_eigenvectors = np.fliplr(eigenvectors)[:,:k]
     
-    sorted_eigenvalues = sorted([(i, eigenvalues[i]) for i in range(len(eigenvalues))], key = lambda x: x[1], reverse=True)
-    sorted_eigenvectors = eigenvectors[list(map(lambda x: x[0], sorted_eigenvalues))][:k]
-    
-    return sorted_eigenvectors.T
+    return sorted_eigenvectors
     
     
 # Main Procedure: PCA
@@ -619,7 +619,7 @@ def show_first_five_reconstructed(data, k):
     
     plt.title(f"Reconstructed images when k = {k}", loc = "left")
 ```
-
+> https://github.com/AlexMan2000/NYU-Master-Program/blob/master/DS-GA-1014/Homeworks/hw7/mnist_pca/mnist_pca.ipynb
 
 # Low-Rank Approximation
 ## Motivation
