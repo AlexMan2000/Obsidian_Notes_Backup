@@ -59,7 +59,7 @@
 > ![image.png](Convexity.assets/20231023_2246373237.png)
 > - `Being a Conex Cone`implies`Being a Convex Set`, 也就是说`Being a Convex Cone`is a stronger condition than `Being a Convex Set`。
 > - `Convex Cone`has to pass the origin. 
-> 	- 所以任意直线不是凸锥，直线必须过远点才是凸锥。
+> 	- 所以任意直线不是凸锥，直线必须过原点才是凸锥。
 > 	- 所以$\mathbb{R}^n$空间的子空间一定是一个凸锥，因为首先$\mathbb{R}^n$是一个凸集，其次$\mathbb{R}^n$过原点。
 
 
