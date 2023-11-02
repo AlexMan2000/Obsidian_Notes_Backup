@@ -41,6 +41,7 @@
 > ![](Convex_Functions.assets/image-20231101083304682.png)
 > 这样的定义方法保证了，如果$f$ 是凸函数，则$\tilde{f}$ 也是凸函数，而且是扩展了定义域之后的凸函数。
 > 读者可能会想，为什么我们要在$x\notin dom(f)$的时候取正无穷，本质上是因为如果不取正无穷，$\tilde{f}$ 就不一定能保持凸性了。
+> 对于$f$ 是concave的情况，我们一般定义$-\infty$。
 
 > [!important]
 > ![](Convex_Functions.assets/image-20231101084605534.png)
@@ -211,7 +212,123 @@
 
 
 ## Composition of functions
+
+
+
+
 > ![image.png](Convex_Functions.assets/20231023_2246227216.png)![image.png](Convex_Functions.assets/20231023_2246243355.png)
 
-**Proofs**
+
+### Fundations - Composition
+> [!important] 
+> ![](Convex_Functions.assets/image-20231101124120692.png)
+
+
+### Scalar Composition (k=1)
+> [!proof] k=1,n=1 
+> 假设$k=n=1$
+>  $dom(g)=dom(h)=dom(f)=\mathbb{R}$
+>  $h,g$ 均为凸函数，且均二阶可导
+>  则我们可以求 $f$ 的二阶导判断其凸性:
+>  ![](Convex_Functions.assets/image-20231102110302591.png)
+
+> [!proof] k=1, n>1
+> 假设$k=1, n\geq 1$
+> $dom(g),dom(h), dom(f)\neq \mathbb{R}^n,\mathbb{R}^k,\mathbb{R}^n$，即定义域均不一定是全空间
+> $h,g$均为凸函数，但均不一定是二阶可微。
+> 则，我们有以下条件判断$f$ 的凸性:
+> ![](Convex_Functions.assets/image-20231102111349125.png)
+> **Proof:**
+> 首先因为$g$ 是凸函数，所以
+> - $\forall \vec{x},\vec{y}\in dom(g),\theta\in [0,1]$, $g(\theta\vec{x}+(1-\theta)\vec{y})\leq \theta g(\vec{x})+(1-\theta)g(\vec{y})$。
+> - $dom(g)$是凸集, 即$\forall \vec{x},\vec{y}\in dom(g),\theta\in [0，1]，\theta g(\vec{x})+(1-\theta)g(\vec{y})\in dom(g)$
+> 
+> 因为$h$是凸函数，所以$h(\theta g(\vec{x})+(1-\theta)g(\vec{y}))\leq \theta h(g(\vec{x}))+(1-\theta)h(g(\vec{y}))=\theta f(\vec{x})+(1-\theta)f(\vec{y})$
+> 为了证明$f$ 是凸函数，我们需要$f(\theta \vec{x}+(1-\theta)\vec{y})\leq \theta f(\vec{x})+(1-\theta)f(\vec{y})$, 所以说我们只需要证明$f(\theta \vec{x}+(1-\theta)\vec{y})\leq h(\theta g(\vec{x})+(1-\theta)g(\vec{y}))$, 即$h(g(\theta \vec{x}+(1-\theta)\vec{y}))\leq h(\theta g(\vec{x})+(1-\theta)g(\vec{y}))$即可。
+> 但是现在有个问题就是$g(\theta \vec{x}+(1-\theta)\vec{y})$不一定属于$dom(h)$, 我们需要证明$g(\theta \vec{x}+(1-\theta)\vec{y})\in dom(h)$。
+> 我们使用反证法，假设$g(\theta \vec{x}+(1-\theta)\vec{y})\notin dom(h)$, 因为$\tilde{h}$是不减的，所以$\tilde{h}(g(\theta \vec{x}+(1-\theta)\vec{y}))\leq \tilde{h}(\theta g(\vec{x})+(1-\theta)g(\vec{y}))$, 但我们知道，对于任意不属于$dom(h)$但属于$dom(\tilde{h})$的输入来说，其经过函数$h$的输出都是$+\infty$, 所以等式左边是$+\infty$, 而等式右边是`finite value`, 因为$\theta g(\vec{x})+(1-\theta)g(\vec{y})\in dom(h)$，所以推出了矛盾，所以原命题成立。
+> ![](Convex_Functions.assets/image-20231102154641878.png)
+
+
+
+> [!example] Examples
+> ![](Convex_Functions.assets/image-20231102131236831.png)
+
+
+
+
+### Vector Composition (k > 1)
+> 
+
+
+
+### Summary
+> [!important]
+> ![](Convex_Functions.assets/image-20231101124231719.png)
+
+
+## Perspective of a Function
+### Definition
+> [!important] 
+> 函数的透视和透视函数是不一样的。
+> 透视函数: $P:\mathbb{R}^{n+1}\to \mathbb{R}^{n},dom(P)=\mathbb{R}^{n}\times \mathbb{R}_{++}$
+> $P(\vec{z},t)=\frac{\vec{z}}{t}$
+> 而函数的透视定义如下:
+> ![](Convex_Functions.assets/image-20231102134451922.png)
+> 同时，这里有一个小的补充概念，就是边缘凸和联合凸的概念，对于$g(x,t)$这个函数来说:
+>  - 如果我们要证明$g(x,t)$关于$x$是凸函数，则我们需要验证，对于任意的固定的$\forall t_0$, $g(x,t_0)=q(x)$是一个凸函数, 我们只需要证明$\forall t_0\in T, \forall \vec{x},\vec{y}\in dom(g), \theta\in [0,1],g(\theta x+(1-\theta)y,t_{0})\leq \theta g(x,t_0)+(1-\theta)g(y,t_0)$
+> - 如果我们要证明$(x,t)$关于$(x,t)$是凸函数，则我们需要验证$\forall (\vec{x},t)\in dom(g),\theta\in [0,1]$, 有$g(\theta (\vec{x},t_1)+(1-\theta)(\vec{y},t_{2}))\leq \theta g(\vec{x},t_1)+(1-\theta) g(\vec{y},t_2)$
+
+> [!proof]
+> 假设$f$是凸函数：
+> - 首先证明$dom(g)$是凸集，$\forall (x,t_1),(y,t_{2})\in dom(g),\theta\in [0,1]$, $\theta(x,t_1)+(1-\theta)(y,t_2)=(\theta x+(1-\theta)y,\theta t_1+(1-\theta)t_2)$。
+> 	因为$\frac{\theta x+(1-\theta)y}{\theta t_1+(1-\theta)t_2}=\frac{\theta t_1\frac{x}{t_1}+(1-\theta)t_2\frac{y}{t_2}}{\theta t_1+(1-\theta)t_2}$。 因为$\frac{x}{t_{1}}\in dom(f),\frac{y}{t_{2}}\in dom(f)$且$dom(f)$是凸集，所以$\frac{\theta t_1\frac{x}{t_1}+(1-\theta)t_2\frac{y}{t_2}}{\theta t_1+(1-\theta)t_{2}}\in dom(f)$，即$(\theta x+(1-\theta)y,\theta t_1+(1-\theta)t_{2})\in dom(g)$。证毕。
+> - 然后证明$g$是凸函数, $\forall \begin{bmatrix}\vec{x}\\t_1 \end{bmatrix},\begin{bmatrix}\vec{y}\\t_2 \end{bmatrix}\in dom(g),\theta\in [0,1]$, 我们有:
+> 	$\begin{align}g(\theta \begin{bmatrix}\vec{x}\\t_1 \end{bmatrix}+(1-\theta)\begin{bmatrix}\vec{y}\\t_2 \end{bmatrix})&=g(\theta\vec{x}+(1-\theta)\vec{y},\theta t_1+(1-\theta)t_2)\\&=(\theta t_1+(1-\theta)t_2)f(\frac{\theta\vec{x}+(1-\theta)\vec{y}}{\theta t_1+(1-\theta)t_2})\\&=(\theta t_1+(1-\theta)t_2)f(\frac{\theta t_1\frac{\vec{x}}{t_1}+(1-\theta)t_2\frac{\vec{y}}{t_2}}{\theta t_1+(1-\theta)t_2})\\&\leq (\theta t_1+(1-\theta)t_2)\{\frac{\theta t_1f(\frac{\vec{x}}{t_1})+(1-\theta)t_2f(\frac{\vec{y}}{t_2})}{\theta t_1+(1-\theta)t_2}\}\\&=\theta t_1f(\frac{\vec{x}}{t_1})+(1-\theta)t_2f(\frac{\vec{y}}{t_2})\\&=\theta g(\vec{x},t_1)+(1-\theta)g(\vec{y},t_2)\end{align}$
+> 	证毕。
+
+
+### Important Examples
+> [!example] Euclidean Norm Squared
+> ![](Convex_Functions.assets/image-20231102143433104.png)
+
+> [!example] Negative Logarithm
+> ![](Convex_Functions.assets/image-20231102143515323.png)
+> **Direct Proof of Convexity:**
+> $\forall (x,t_1),(y,t_{2})\in dom(g),\theta\in [0,1],(\theta x+(1-\theta)y,\theta t_1+(1-\theta)t_{2})\in dom(g)$ since $\frac{\theta x+(1-\theta)y}{\theta t_1+(1-\theta)t_{2}}\in dom(f)$。
+> $\nabla^{2}g(x,t)=\begin{bmatrix}\frac{t}{x^2}&-\frac{1}{x}\\-\frac{1}{x}&\frac{1}{t} \end{bmatrix}$，since $det(\nabla^{2}g(x,t))\succeq 0,\forall x,t$, then $g$ is convex.
+> 
+> ![](Convex_Functions.assets/image-20231102145613078.png)
+> 原因是我们有$\sum_{i=1}^nu_ilog(\frac{u_i}{v_i})=\sum_{i=1}^ng(u_i,v_i)$, 其中$g(u_i,v_i)=g(A\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix})$, 所以$g$是一个凸函数和仿射变换的组合，对于$(\vec{u},\vec{v})$来说是凸的。
+
+> [!example] KL Divergence
+> ![](Convex_Functions.assets/image-20231102150826455.png)
+> 其中$\sum\limits_{i=1}^{n}v_i-u_i=\mathbb{1}^{\top}(\vec{v}-\vec{u})$
+
+
+
+
+# Conjugate Functions
+## Definition
+> [!def]
+> ![](Convex_Functions.assets/image-20231102152048131.png)![](Convex_Functions.assets/image-20231102152057357.png)
+
+
+
+## Properties
+> [!property] Property 1: Maximum length point is the tagent line
+> 对于上述一维的情况，我们知道，$f^*(y)$要想取到最大值，必须满足$\nabla(\vec{y}^{\top}\vec{x}-f(\vec{x}))=\vec{y}-\nabla f(\vec{x})=\vec{0}$, 放到一维的情况就是$f'(x)=y$。
+
+> [!property] Property 2: Convexity
+> ![](Convex_Functions.assets/image-20231102154425469.png)
+
+
+## Examples
+> [!example]
+> 
+
+
+
+
+
 

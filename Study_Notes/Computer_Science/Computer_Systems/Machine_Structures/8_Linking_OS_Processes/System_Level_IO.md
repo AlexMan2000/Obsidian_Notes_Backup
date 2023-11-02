@@ -357,7 +357,7 @@ int main(int argc, char **argv)
 ### File Sharing Across Descriptors
 > [!important] 
 > ![](System_Level_IO.assets/image-20231030161208123.png)
-> **Multiple descriptors can also reference the same file through different file table entries, as shown in Figure 10.13.** This might happen, for example, if you were to call the open function twice with the same filename. The key idea is that each descriptor has its own distinct file position, so different reads on different descriptors can fetch data from different locations in the file.
+> **Multiple descriptors can also reference the same file through different file table entries, as shown in Figure 10.13.** This might happen, for example, if you were to call the open function twice with the same filename. The key idea is that each descriptor has its own distinct file position, so different reads on different descriptors **can fetch data from different locations in the file**.
 
 
 
