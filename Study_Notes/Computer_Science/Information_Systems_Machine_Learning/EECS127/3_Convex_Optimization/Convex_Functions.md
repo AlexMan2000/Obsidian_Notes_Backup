@@ -249,22 +249,26 @@
 > 我们使用反证法，假设$g(\theta \vec{x}+(1-\theta)\vec{y})\notin dom(h)$, 因为$\tilde{h}$是不减的，所以$\tilde{h}(g(\theta \vec{x}+(1-\theta)\vec{y}))\leq \tilde{h}(\theta g(\vec{x})+(1-\theta)g(\vec{y}))$, 但我们知道，对于任意不属于$dom(h)$但属于$dom(\tilde{h})$的输入来说，其经过函数$h$的输出都是$+\infty$, 所以等式左边是$+\infty$, 而等式右边是`finite value`, 因为$\theta g(\vec{x})+(1-\theta)g(\vec{y})\in dom(h)$，所以推出了矛盾，所以原命题成立。
 > ![](Convex_Functions.assets/image-20231102154641878.png)
 
-
-
 > [!example] Examples
 > ![](Convex_Functions.assets/image-20231102131236831.png)
+> 其中第四点我们需要额外关注一下，此时$h(z)=z^p(z\geq 0)$，即$dom(h)=\mathbb{R}_+$, 于是我们需要扩展$h$, 但是如果扩展成$h(z)=\begin{cases} h(z)&z\in dom(h)\\\infty&z\notin dom(h)\end{cases}$, 则$\tilde{h}$并不是一个单调的函数，也就不能使用上面的四条规则来判断$f=h(g(x))$的凸性了。于是我们对于这个特殊的函数必须采用其他的扩展构造方法，其中一种是$h(z)=\begin{cases} h(z)&z\in dom(h)\\0&z\notin dom(h)\end{cases}$。
 
 
 
 
 ### Vector Composition (k > 1)
-> 
+> [!important] 
+> ![](Convex_Functions.assets/image-20231102160149420.png)
+
+
 
 
 
 ### Summary
 > [!important]
-> ![](Convex_Functions.assets/image-20231101124231719.png)
+> ![](Convex_Functions.assets/image-20231101124231719.png)![](Convex_Functions.assets/image-20231102160154807.png)
+
+
 
 
 ## Perspective of a Function
@@ -321,10 +325,16 @@
 
 > [!property] Property 2: Convexity
 > ![](Convex_Functions.assets/image-20231102154425469.png)
+> 在对偶性原理中，这个性质非常重要。
+
+> [!property] Property 3: Fenchel's Inequality
+
+
 
 
 ## Examples
-> [!example]
+### Basic Examples
+> [!example] 
 > 
 
 

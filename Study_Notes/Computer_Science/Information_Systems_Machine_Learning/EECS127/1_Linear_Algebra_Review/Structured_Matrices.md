@@ -288,7 +288,7 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 
-# *Stochastic Matrices
+# Stochastic Matrices
 ## Definition
 > 
 
@@ -298,5 +298,6 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 > 
 
 
+# Graphs and Graph Laplacian
 
 
