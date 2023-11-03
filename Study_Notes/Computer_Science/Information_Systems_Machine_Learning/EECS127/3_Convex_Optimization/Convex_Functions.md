@@ -29,7 +29,7 @@
 > [!def] Second Order Condition
 > ![](Convex_Functions.assets/image-20231101091518411.png)![](Convex_Functions.assets/image-20231101095409365.png)
 
-> [!example]
+> [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)
 
 
@@ -61,6 +61,9 @@
 > 2. A concave function's superlevel set is convex, and the converse is not true.
 > 
 ![image.png](Convex_Functions.assets/20231023_2245531802.png)
+
+> [!proof]
+> ![](Convex_Functions.assets/image-20231102200610591.png)
 
 
 
@@ -335,9 +338,13 @@
 ## Examples
 ### Basic Examples
 > [!example] 
-> 
+> ![](Convex_Functions.assets/image-20231102172240554.png)![](Convex_Functions.assets/image-20231102172302937.png)
 
 
+# Quasiconvex Function(拟凸函数)
+## Definition
+> [!def]
+> ![](Convex_Functions.assets/image-20231102201406943.png)![](Convex_Functions.assets/image-20231102201427281.png)
 
 
 

@@ -212,7 +212,7 @@
 
 
 
- ## Ellipsoids(椭球)
+## Ellipsoids(椭球)
 ### Definition
 > [!def]
 > ![image.png](Convexity.assets/20231023_2247267075.png)
