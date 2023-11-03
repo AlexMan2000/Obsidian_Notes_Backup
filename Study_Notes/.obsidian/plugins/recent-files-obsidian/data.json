@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
@@ -17,8 +17,16 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
+      "basename": "SVD_Pseudoinverse",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
+    },
+    {
       "basename": "Structured_Matrices",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Caches_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
     },
     {
       "basename": "cvxbook-solutions",
@@ -35,10 +43,6 @@
     {
       "basename": "Graph_Theory",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
     },
     {
       "basename": "Reachability_Controllability",
@@ -195,10 +199,6 @@
     {
       "basename": "Drawing 2023-10-24 15.21.23.excalidraw",
       "path": "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-10-24 15.17.20.excalidraw",
-      "path": "Excalidraw/Drawing 2023-10-24 15.17.20.excalidraw.md"
     }
   ],
   "omittedPaths": [],

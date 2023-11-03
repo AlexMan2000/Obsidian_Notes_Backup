@@ -28,6 +28,7 @@
 ### Defintion 4: Second Order Condition
 > [!def] Second Order Condition
 > ![](Convex_Functions.assets/image-20231101091518411.png)![](Convex_Functions.assets/image-20231101095409365.png)
+> **注意:** 函数使用二阶条件必须满足函数在其定义域上处处二阶可导。
 
 > [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)
@@ -54,6 +55,7 @@
 
 
 ## Sub/Super-Level Set
+### Definition
 > [!def] Definition
 > ![image.png](Convex_Functions.assets/20231023_2245513924.png)
 > **总结一下:**
@@ -65,6 +67,11 @@
 > [!proof]
 > ![](Convex_Functions.assets/image-20231102200610591.png)
 
+
+### Important Properties
+> [!property]
+> 若函数的Sublevel Set 都是凸集，则$f$ 不一定为凸函数。
+> 比如$f(x)=-e^x$, 它的所有的$\alpha-$sublevel set都是凸集，但是 $f$ 不是凸函数，而是一个凹函数。
 
 
 
@@ -265,12 +272,15 @@
 
 
 
-
-
 ### Summary
 > [!important]
 > ![](Convex_Functions.assets/image-20231101124231719.png)![](Convex_Functions.assets/image-20231102160154807.png)
 
+
+
+## Exercises
+### Geometric Mean Function
+> 证明$f(x)=(\prod_{i=1}^{n}x_i)^{\frac{1}{n}},x\in\mathbb{R}^n$
 
 
 
@@ -336,16 +346,66 @@
 
 
 ## Examples
-### Basic Examples
+### Scalar Examples
 > [!example] 
 > ![](Convex_Functions.assets/image-20231102172240554.png)![](Convex_Functions.assets/image-20231102172302937.png)
 
 
-# Quasiconvex Function(拟凸函数)
-## Definition
+### Vector Examples
+> [!example]
+> ![](Convex_Functions.assets/image-20231102213727777.png)
+> 
+
+
+
+
+
+# Quasiconvex Function(拟凸函数/单模态函数)
+## Definition 1: Sub-Level Set
 > [!def]
 > ![](Convex_Functions.assets/image-20231102201406943.png)![](Convex_Functions.assets/image-20231102201427281.png)
+> **总结一下:**
+> 1. Quasi-Convex: If $S_{\alpha}=\{x\in dom(f)\big|f(x)\leq \alpha\}$ is convex $\forall \alpha$
+> 2. Quasi-Concave: If $S_{\alpha}'=\{x\in dom(f)\big|f(x)\geq \alpha\}$ is convex $\forall \alpha$
+> 3. Quasi-Linear: If $S_{\alpha}''=\{x\in dom(f)\big|f(x)= \alpha\}$ is convex $\forall \alpha$
 
+
+## Definition 2: Jensen's Inequality
+> [!def] 
+> ![](Convex_Functions.assets/image-20231102222950813.png)![](Convex_Functions.assets/image-20231102222956060.png)
+
+
+
+## Properties
+> [!property] Convex functions are quasi-convex functions
+> 凸函数 $\implies$ 拟凸函数
+> - 采用第一种定义证明: 因为Convex function 的 sub-level set 都是 convex 的, 且所有 sub-level set 都是 convex 的函数，根据定义，都是 quasi-convex functions, 证毕。
+> - 采用第二种定义证明: 因为对于凸函数而言$f(\theta \vec{x}+(1-\theta)\vec{y})\leq \theta f(\vec{x})+(1-\theta)f(\vec{y}),\forall \theta\in [0,1]$。这表明$f(\theta \vec{x}+(1-\theta)\vec{y})\leq f(\vec{x})$和$f(\theta \vec{x}+(1-\theta)\vec{y})\leq f(\vec{y})$均成立(取$\theta=0,1$即可)，于是综合来看$f(\theta \vec{x}+(1-\theta)\vec{y})\leq \max\{f(\vec{x}),f(\vec{y})\}$，根据定义，$f$ 是拟凸函数。
+> 
+> **注意:** 逆命题不成立。
+
+> [!property] 
+
+
+
+
+
+## Examples
+### Length of a vector
+> [!example]
+> 向量的长度定义为: 向量中最后一个非零元素的位置
+> ![](Convex_Functions.assets/image-20231102223710862.png)
+
+### Linear-fractional function
+> [!example]
+> ![](Convex_Functions.assets/image-20231102224445381.png)
+
+
+### 向量的零范数
+> [!example]
+> ![](Convex_Functions.assets/image-20231102231633216.png)
+> - 在$n=1$时，$\|x\|_0$是拟凸函数
+> - 在$n=2$时，$\|x\|_0$不是拟凸函数，试取$\alpha=1.5$, 得到的集合就是一个十字形的交集，这显然不是一个凸集。
 
 
 
