@@ -13,8 +13,8 @@
       "noTitle": false,
       "copy": true
     },
-    "lem": {
-      "type": "lem",
+    "lemma": {
+      "type": "lemma",
       "color": "217, 103, 54",
       "icon": {
         "name": "book-medical",

@@ -78,7 +78,7 @@
 
 ## A^TA and AA^T
 ### Eigenvalues
-```ad-pro
+```ad-proof
 ![image.png](./SVD_Pseudoinverse.assets/20230914_1514024217.png)
 > ⭐: 如果$A$是实数矩阵，则$A^TA$和$AA^T$的特征值相等(但是零特征值可能不等，视$A^TA$和$AA^T$的形状而定)，且都为**非负实数**，$\lambda=\frac{\|A\vec{v}\|^2}{\|\vec{v}\|^2}$。
 ```

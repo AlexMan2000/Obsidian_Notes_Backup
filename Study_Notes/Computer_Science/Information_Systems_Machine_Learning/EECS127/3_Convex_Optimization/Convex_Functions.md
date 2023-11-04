@@ -1,8 +1,13 @@
 # Convexity of Functions
 ## Miscellaneous Definitions
-### Definition 1: Inequality
+### Definition 1: Jensen's Inequality
 > [!def] Definition1 : Jensen's Inequality
 > ![](Convex_Functions.assets/image-20231101091313319.png)![](Convex_Functions.assets/image-20231101091321286.png)
+
+> [!proof] Prove Generalized Gensen's Inequality
+> ![](Convex_Functions.assets/image-20231103111850188.png)![](Convex_Functions.assets/image-20231103131039239.png)
+
+
 
 
 ### Definition 2: Restricted to a line
@@ -32,6 +37,12 @@
 
 > [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)
+
+
+### Definition 5: Epigraph
+> [!important]
+> ![](Convex_Functions.assets/image-20231103111750488.png)
+
 
 
 
@@ -222,13 +233,6 @@
 
 
 ## Composition of functions
-
-
-
-
-> ![image.png](Convex_Functions.assets/20231023_2246227216.png)![image.png](Convex_Functions.assets/20231023_2246243355.png)
-
-
 ### Fundations - Composition
 > [!important] 
 > ![](Convex_Functions.assets/image-20231101124120692.png)
@@ -278,9 +282,13 @@
 
 
 
-## Exercises
-### Geometric Mean Function
-> 证明$f(x)=(\prod_{i=1}^{n}x_i)^{\frac{1}{n}},x\in\mathbb{R}^n$
+### Exercises
+> [!example] EECS127 Fa22 Disc05
+> ![image.png](Convex_Functions.assets/20231023_2246227216.png)![image.png](Convex_Functions.assets/20231023_2246243355.png)![](Convex_Functions.assets/image-20231103133048334.png)
+> 其中:
+> - (b) 小问我们也可以取$f(z)=z^{\frac{1}{3}}$和$g(x)=x$
+> - (c) 小问我们也可以取$f(z)=e^{-z}$和$g(x)=x^2$
+
 
 
 
@@ -361,7 +369,8 @@
 
 
 # Quasiconvex Function(拟凸函数/单模态函数)
-## Definition 1: Sub-Level Set
+## Definition
+### Definition 1: Sub-Level Set
 > [!def]
 > ![](Convex_Functions.assets/image-20231102201406943.png)![](Convex_Functions.assets/image-20231102201427281.png)
 > **总结一下:**
@@ -370,9 +379,44 @@
 > 3. Quasi-Linear: If $S_{\alpha}''=\{x\in dom(f)\big|f(x)= \alpha\}$ is convex $\forall \alpha$
 
 
-## Definition 2: Jensen's Inequality
+### Definition 2: Jensen's Inequality
 > [!def] 
 > ![](Convex_Functions.assets/image-20231102222950813.png)![](Convex_Functions.assets/image-20231102222956060.png)
+
+
+### Definition 3: First Order Condition
+>[!important] 
+>![](Convex_Functions.assets/image-20231103083422939.png)![](Convex_Functions.assets/image-20231103083810955.png)![](Convex_Functions.assets/image-20231103083835602.png)
+> **Proof of forward direction:**
+> - 如果$f$是拟凸函数，则$f(t\vec{x}+(1-t)\vec{y})\leq \max\{f(\vec{x}),f(\vec{y})\}$, 因为$f(\vec{y})\leq f(\vec{x})$, 所以$f(t\vec{x}+(1-t)\vec{y})\leq \max\{f(\vec{x}),f(\vec{y})\}\leq f(\vec{x}y)$, 于是我们重新组织一下等式两边的项有: $\lim_{t\to 0}\frac{f(\vec{x}+t(\vec{y}-\vec{x}))-f(\vec{x})}{t}\leq 0$，即$\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})\leq 0$
+> 
+> **Proof of backward direction:**
+> - $\forall \vec{x},\vec{y}\in dom(f)$且$\vec{x}\neq \vec{y}$, $f(\vec{y})\leq f(\vec{x})$。$\forall \theta\in (0,1)$取$z=\theta \vec{x}+(1-\theta)\vec{y}$, 则我们要证明$f(\vec{x})\geq f(\vec{z})$。
+> 	- 反证法，如果$f(\vec{x})< f(\vec{z})$, 则根据假设$f(\vec{y})\leq f(\vec{z})$, 此时我们使用两次一阶条件，得到$\begin{cases}f(\vec{x})<f(\vec{z})\implies \nabla f(\vec{z})^{\top}(\vec{x}-\vec{z})\leq 0\\f(\vec{y})< f(\vec{z})\implies \nabla f(\vec{z})^{\top}(\vec{y}-\vec{z})\leq 0 \end{cases}$, 将 $\vec{z}$ 带入得到$\begin{cases}f(\vec{x})< f(\vec{z})\implies \nabla f(\vec{z})^{\top}(1-\theta)(\vec{x}-\vec{y})\leq 0\\f(\vec{y})< f(\vec{z})\implies \nabla f(\vec{z})^{\top}\theta(\vec{y}-\vec{x})\leq 0 \end{cases}$。
+> 	- 因为$\theta\in (0,1)$, 所以$\begin{cases}f(\vec{x})< f(\vec{z})\implies \nabla f(\vec{z})^{\top}(\vec{x}-\vec{y})\leq 0\\f(\vec{y})< f(\vec{z})\implies \nabla f(\vec{z})^{\top}(\vec{y}-\vec{x})\leq 0 \end{cases}$, 这表明$\nabla f(z)=0$
+> 	- 现在我们取$(x,f(x)),(z,f(z))$之间的一点$(z_i,f(z_i))$, 根据上面的推导，$\nabla f(z_i)=0$, 所以我们由这个步骤一直取下去我们会发现$f(\vec{x})=f(\vec{z})$, 假设不成立。
+> 
+> 
+> **Implications:** 
+> - 对于凸函数来说，如果$\nabla f(\vec{x})=0$，则$f(\vec{y})\geq f(\vec{x}),\forall\vec{y}$, 即$\vec{x}$是全局最小值点。
+> - 对于拟凸函数来说，如果$\nabla f(\vec{x})=0$, 则并不会推出什么新的东西，$\vec{x}$并不一定是全局最小值点。
+> 
+
+> [!bug] Faulty Proof of Backward Direction
+> - 首先我们的目标是证明$\begin{cases} f(\vec{x})\geq f(\theta \vec{x}+(1-\theta)\vec{y})\\f(\vec{y})\geq f(\theta\vec{x}+(1-\theta)\vec{y})\end{cases}$，这等价于证明$\begin{cases} f(\theta\vec{x}+(1-\theta)\vec{x})- f(\theta \vec{x}+(1-\theta)\vec{y})\geq 0\\f(\theta\vec{y}+(1-\theta)\vec{y})- f(\theta\vec{x}+(1-\theta)\vec{y})\geq 0\end{cases}$
+> - 而这等价于证明:$\begin{cases} \frac{f(\theta \vec{x}+(1-\theta)\vec{y})-f(\theta\vec{x}+(1-\theta)\vec{x}) }{1-\theta}\leq 0\\\frac{f(\theta\vec{x}+(1-\theta)\vec{y})-f(\theta\vec{y}+(1-\theta)\vec{y}) }{\theta}\leq 0\end{cases}$, 这进一步等价于证明$\begin{cases} \frac{f(\vec{x}+(1-\theta)(\vec{y}-\vec{x}))-f(\vec{x}) }{1-\theta}\leq 0\\\frac{f(\vec{y}+\theta(\vec{x}-\vec{y}))-f(\vec{y}) }{\theta}\leq 0\end{cases}$。
+> - 两边分别对$\theta$和$1-\theta$取极限，等价于$\begin{cases}\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})\leq 0\\\nabla f(\vec{y})^{\top}(\vec{x}-\vec{y})\leq 0\end{cases}$
+> - 而这个结论我们通过已知条件$\begin{cases} f(\vec{y})\leq f(\vec{x})\implies \nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})\leq 0\\f(\vec{x})\leq f(\vec{y})\implies \nabla f(\vec{y})^{\top}(\vec{x}-\vec{y})\leq 0\end{cases}$, 就可以完成证明。
+> - 证明中的问题在于，一个函数拟凸，等价于$\forall \vec{x},\vec{y}\in dom(f), \forall \theta\in [0,1], f(\theta \vec{x}+(1-\theta)\vec{y})\leq \max\{f(\vec{x},\vec{y})\}$, 注意这里是对所有的$\theta\in [0,1]$都成立的。但是上面的证明中我们只考虑了$\theta\to 0$和$\theta \to 1$的情况。
+
+
+### Definition 4: Second Order Condition
+> [!important] 
+> ![](Convex_Functions.assets/image-20231103095551879.png)
+> **Remarks:**
+> - 对于凸函数来说，其二阶条件表明对于所有的$\vec{x}\in dom(f)$, 在$\vec{x}$处有定义的`Hessian Matrix`都是半正定的。
+> - 而对于拟凸函数来说，其二阶条件表明，对于所有的一阶导存在且为零的点，其`Hessian Matrix`是半正定的就可以了。
+> - 一个典型的例子就是$f(x)=x^2$，既是凸函数又是拟凸函数。
 
 
 
@@ -383,9 +427,6 @@
 > - 采用第二种定义证明: 因为对于凸函数而言$f(\theta \vec{x}+(1-\theta)\vec{y})\leq \theta f(\vec{x})+(1-\theta)f(\vec{y}),\forall \theta\in [0,1]$。这表明$f(\theta \vec{x}+(1-\theta)\vec{y})\leq f(\vec{x})$和$f(\theta \vec{x}+(1-\theta)\vec{y})\leq f(\vec{y})$均成立(取$\theta=0,1$即可)，于是综合来看$f(\theta \vec{x}+(1-\theta)\vec{y})\leq \max\{f(\vec{x}),f(\vec{y})\}$，根据定义，$f$ 是拟凸函数。
 > 
 > **注意:** 逆命题不成立。
-
-> [!property] 
-
 
 
 
@@ -407,5 +448,34 @@
 > - 在$n=1$时，$\|x\|_0$是拟凸函数
 > - 在$n=2$时，$\|x\|_0$不是拟凸函数，试取$\alpha=1.5$, 得到的集合就是一个十字形的交集，这显然不是一个凸集。
 
+
+
+# Log-convex and Log-concave Functions
+## Definition
+> [!def]
+> - 对于一个函数$f:\mathbb{R}^{n}\to\mathbb{R},f(\vec{x})>0,\forall \vec{x}\in dom(f)$，它是是对数凹函数，当且仅当$\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, 我们有$f(\theta \vec{x}+(1-\theta)\vec{y})\geq f(\vec{x})^{\theta}f(\vec{y})^{1-\theta}$。**另一种表述是，如果$f$是对数凹函数，则表明$log f$是凹函数。**
+> - 对于一个函数$f:\mathbb{R}^{n}\to\mathbb{R},f(\vec{x})>0,\forall \vec{x}\in dom(f)$，它是是对数凸函数，当且仅当$\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, 我们有$f(\theta \vec{x}+(1-\theta)\vec{y})\leq f(\vec{x})^{\theta}f(\vec{y})^{1-\theta}$。**另一种表述是，如果$f$是对数凸函数，则表明$log f$是凸函数。**
+> 
+> ![](Convex_Functions.assets/image-20231103101549993.png)
+
+
+
+## Properties
+> [!important] 对数凸 => 凸
+> 如果 $f$ 是对数凸函数，则 $f$ 为凸函数。
+> **Proof:** $f = e^{log f}$, 因为$f$ 是对数凸函数，所以$log f$是凸函数，因为$e^z$在$\mathbb{R}$上单调不降，所以这个函数组合的结果也是凸函数。
+> **总结:** 对数凸是比凸更强的条件，所以上述结论的逆命题不一定成立。
+
+> [!important] 凹 => 对数凹
+> 如果 $f$ 是凹函数且$f(x)>0,\forall x\in dom(f)$，则 $log f$ 为凹函数。
+> **Proof:** $g = logf$, $f$ 是凹函数，且$\tilde{log}(z)$在$\mathbb{R}$上单调不降，所以$g$是凹函数，即$f$是对数凹函数。
+> 总结: 凹是比对数凹更强的条件，所以上述结论的逆命题不一定成立。
+
+
+
+
+# Chapter Exercise
+> **Chapter 2**: 2.1, 2.2, 2.5, 2.7,  2.10, 2.16, 2.18, 2.19
+> **Chapter 3**: 3.1, 3.2, 3.5, 3.13, 3.18, 3.21, 3.32, 3.33, 3.36, 3.43
 
 

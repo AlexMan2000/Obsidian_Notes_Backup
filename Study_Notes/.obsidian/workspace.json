@@ -6,7 +6,7 @@
       {
         "id": "9ce3cf10a6077b8e",
         "type": "tabs",
-        "dimension": 46.616541353383454,
+        "dimension": 46.09375,
         "children": [
           {
             "id": "8ad83db21617d6d6",
@@ -15,18 +15,6 @@
               "type": "markdown",
               "state": {
                 "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c78c2b326bfdb6e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -50,19 +38,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9565f4d2f17ae3d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "93faebd5dfd65d97",
         "type": "tabs",
-        "dimension": 53.383458646616546,
+        "dimension": 53.90625,
         "children": [
           {
             "id": "2cec927b84acd9ce",
@@ -81,6 +81,18 @@
               "type": "pdf",
               "state": {
                 "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+              }
+            }
+          },
+          {
+            "id": "9930eca375974ab5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -193,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
               }
             }
           },
@@ -218,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -292,28 +304,37 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "c78c2b326bfdb6e3",
+  "active": "2e1e892c30ccfea6",
   "lastOpenFiles": [
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102231633216.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102224445381.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102224441747.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102223710862.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102222956060.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102222950813.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103210224358.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103210217652.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103201808727.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103201802139.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103201710969.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103160513254.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103160139724.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103154709313.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103144139109.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/image-20231103144116059.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102213727777.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102201427281.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102201406943.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231102200610591.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/___高阶知识点和练习.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets",
@@ -322,7 +343,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/Untitled.md",
     "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.7_基变换_图像压缩.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Excalidraw/Drawing 2023-10-30 20.51.15.excalidraw.md",
     "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.assets",
@@ -331,14 +351,6 @@
     "Mathematics/Differential_Equations/MIT_18.03SC/1.11_Autonomous_Equations.md",
     "Physics/8.01SC/3_Circular_Motion/Circular_Motion.md",
     "Physics/8.01SC/2_Newton_Laws/Newton's_Law_of_Motion.md",
-    "Physics/8.01SC/1_Kinematics_Dynamics/Worked_Examples.md",
-    "Physics/8.01SC/1_Kinematics_Dynamics/2D_Kinematics.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
-    "Untitled.md",
-    "Computer_Science/Discrete_Mathematics/Related Resources.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
     "未命名.canvas"
   ]
 }

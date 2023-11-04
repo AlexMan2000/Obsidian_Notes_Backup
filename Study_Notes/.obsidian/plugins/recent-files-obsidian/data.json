@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
     },
     {
       "basename": "BV_cvxbook",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
     },
     {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+      "basename": "cvxbook-solutions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
     },
     {
       "basename": "SVD_Pseudoinverse",
@@ -29,16 +37,44 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
     },
     {
-      "basename": "cvxbook-solutions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
+      "basename": "20231023_2251198964",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/20231023_2251198964.png"
     },
     {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Ch2_张成空间_维数和基",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md"
+    },
+    {
+      "basename": "Ch1_向量空间与子空间",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
+    },
+    {
+      "basename": "Ch3_线性变换",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
     },
     {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
+    },
+    {
+      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
       "basename": "Graph_Theory",
@@ -59,10 +95,6 @@
     {
       "basename": "3.7_基变换_图像压缩",
       "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.7_基变换_图像压缩.md"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
     },
     {
       "basename": "Drawing 2023-10-30 20.51.15.excalidraw",
@@ -125,10 +157,6 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
     },
     {
-      "basename": "_Least_Square_Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/_Least_Square_Regression.md"
-    },
-    {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "Significance Tests",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Significance Tests.md"
-    },
-    {
-      "basename": "P6_HTTP版本_关闭TCP_四次挥手_同源策略",
-      "path": "Computer_Science/Web_Development/3_网络篇/P6_HTTP版本_关闭TCP_四次挥手_同源策略.md"
-    },
-    {
-      "basename": "1D_Kinematics",
-      "path": "Physics/8.01SC/1_Kinematics_Dynamics/1D_Kinematics.md"
-    },
-    {
-      "basename": "Must-have Plugins",
-      "path": "Obsidian_User_Notes/Must-have Plugins.md"
-    },
-    {
-      "basename": "Parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Data Analysis Project Report",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Data Analysis Project Report.md"
-    },
-    {
-      "basename": "Drawing 2023-10-24 15.22.40.excalidraw",
-      "path": "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-10-24 15.21.23.excalidraw",
-      "path": "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md"
     }
   ],
   "omittedPaths": [],

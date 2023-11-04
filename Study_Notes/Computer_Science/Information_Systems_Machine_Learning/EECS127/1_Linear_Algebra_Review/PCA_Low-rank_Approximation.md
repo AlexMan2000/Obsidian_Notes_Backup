@@ -630,8 +630,8 @@ def show_first_five_reconstructed(data, k):
 ### Version 1
 > **这里我们介绍两个定理并证明:**
 > 假设$A\in \mathbb{R}^{m\times n}(m\geq n)$且$A=U\Sigma V^{\top}$, $A_k=\sum_{i=1}^k\sigma_i\vec{u}_i\vec{v}_i^{\top}$并且$\sigma_1\geq \sigma_2\geq \cdots \geq \sigma_n$, $k\leq rk(A)=r$
-> 1. $A_k=\argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_2$
-> 2. $A_k=\argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_F$
+> 1. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_2$
+> 2. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_F$
 > 
 我们想要通过$1$来证明$2$。
 
@@ -659,39 +659,49 @@ $\begin{aligned}\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2+0&=\|C-C_{i-1}\|_2+\
 
 
 ### Version 2
+> [!thm]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309379079.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309386541.png)
 
-**Proof of Theorem 3**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309406607.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309422485.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309441598.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309444943.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309469441.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309481969.png)
+> [!proof] The proof is long(Optional)
+> **Proof of Theorem 3**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309406607.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309422485.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309441598.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309444943.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309469441.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309481969.png)
 
 ## Examples
+> [!example]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309497687.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309518157.png)
 
 
 
 # Equivalent Arguments of PCA
+> [!important]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309537662.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309552167.png)
 
 
 
 ## P2 <=> P1
 ### Projection Lemma
+> [!thm]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309565191.png)
 
-**Proof**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309589836.png)
+> [!proof]
+> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309589836.png)
 
 ### Equivalence
-**Equivalence to P1**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309599717.png)
+> [!proof]
+> **Equivalence to P1**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309599717.png)
 
 ## P3 <=> P2
 ### Lemma
+> [!lemma]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310001351.png)
 
 
 
 ### Equivalence
+> [!thm]
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310023315.png)
 
-**Proof**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310041295.png)
+> [!proof]
+> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310041295.png)
 
 
 
@@ -705,8 +715,7 @@ $\begin{aligned}\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2+0&=\|C-C_{i-1}\|_2+\
 > - **Note 17 Sp22**
 > - **Disc11 Sup Sp22**
 > 
-**EECS127:**
+ **EECS127:**
 > - **Disc 03 Fa22**
 > - **Hw03 Fa22**
 
-# 
