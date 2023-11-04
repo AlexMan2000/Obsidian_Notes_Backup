@@ -96,23 +96,32 @@
 
 <a name="dEhJP"></a>
 ## Least Squares & Projections
+> [!thm]
 > ![image.png](./Orthonormalization.assets/20230914_1517589561.png)
 
-**Proof of Theorem 16**![image.png](./Orthonormalization.assets/20230914_1517595429.png)
+> [!proof]
+> **Proof of Theorem 16**![image.png](./Orthonormalization.assets/20230914_1517595429.png)
+
+> [!cor]
 > ![image.png](./Orthonormalization.assets/20230914_1518018459.png)
 
-**Proof of Corollary 17**![image.png](./Orthonormalization.assets/20230914_1518033731.png)
+> [!proof]
+> **Proof of Corollary 17**![image.png](./Orthonormalization.assets/20230914_1518033731.png)
+
+> [!thm]
 > ![image.png](./Orthonormalization.assets/20230914_1518043126.png)
 
-**Proof of Theorem 18**我们把$\vec{s}_1, \cdots, \vec{s}_n$放到一个矩阵$M\in \mathbb{R}^{m\times n}$中，这些向量$\vec{s}_i,i\in [1,n]$是互相线性无关的。于是$M$矩阵的形状必须满足$m\geq n$, 然后套用`Corollary 17`即可。<br />重复上述步骤，使用`Theorem 16`即可。
+> [!proof]
+> **Proof of Theorem 18**我们把$\vec{s}_1, \cdots, \vec{s}_n$放到一个矩阵$M\in \mathbb{R}^{m\times n}$中，这些向量$\vec{s}_i,i\in [1,n]$是互相线性无关的。于是$M$矩阵的形状必须满足$m\geq n$, 然后套用`Corollary 17`即可。<br />重复上述步骤，使用`Theorem 16`即可。
 
 
 
-<a name="dpd9m"></a>
 ## Orthogonality Principles
+> [!important]
 > ![image.png](./Orthonormalization.assets/20230914_1518067563.png)
 
-**Proof of Theorem 19**![image.png](./Orthonormalization.assets/20230914_1518083134.png)![image.png](./Orthonormalization.assets/20230914_1518094475.png)<br />$\vec{z}\in S, \vec{y}\in S$，根据子空间的性质(向量的线性组合也在子空间内)，所以$\vec{z}-\vec{y}\in S$。<br />因为$(ii)$假设$\vec{y}-\vec{x}$与$S$正交, 所以$\vec{y}-\vec{x}$垂直于$S$中的任何一个向量, 当然也包括$\vec{z}-\vec{y}$, 所以$\langle \vec{z}-\vec{y}, \vec{y}-\vec{x}\rangle=0$。
+> [!proof]
+> **Proof of Theorem 19**![image.png](./Orthonormalization.assets/20230914_1518083134.png)![image.png](./Orthonormalization.assets/20230914_1518094475.png)$\vec{z}\in S, \vec{y}\in S$，根据子空间的性质(向量的线性组合也在子空间内)，所以$\vec{z}-\vec{y}\in S$。<br />因为$(ii)$假设$\vec{y}-\vec{x}$与$S$正交, 所以$\vec{y}-\vec{x}$垂直于$S$中的任何一个向量, 当然也包括$\vec{z}-\vec{y}$, 所以$\langle \vec{z}-\vec{y}, \vec{y}-\vec{x}\rangle=0$。
 > **证明中出现的非常重要的想法:**
 > 1. 如果我们有$\{\vec{v}_1,\vec{v}_2,\cdots,\vec{v}_n\}$这个`Orthogonal Sets`，则我们可以将这个集合以任意的方式平均分成几个子集，这些子集张成的子空间互相正交。
 > 2. 对于任意向量$\vec{x}$和一个子空间$S$, $proj_S(\vec{x})$存在且唯一。令其为$\vec{y}=proj_S(\vec{x})\in S$, 则$\forall z\in S$,$\|\vec{z}-\vec{x}\|>\|\vec{y}-\vec{x}\|$, 也就是投影距离$\vec{x}$的端点最近。
@@ -121,7 +130,6 @@
 
 <a name="dsOLx"></a>
 # Gram-Schmidt Orthonormalization
-<a name="ZlcIU"></a>
 ## Algorithm
 > ![image.png](./Orthonormalization.assets/20230914_1518123943.png)
 

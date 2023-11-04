@@ -94,10 +94,6 @@
 > 
 
 
-
-# Solving Systems of Linear Equations
-
-
 # Sensitivity Analysis
 ## Basic Concepts
 ### Pertubation
@@ -230,4 +226,96 @@
 
 
 ## Total Least Square
-> 
+> https://people.duke.edu/~hpgavin/SystemID/CourseNotes/TotalLeastSquares.pdf
+### Problem Statement
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231104145517614.png)![](Least_Square_Regression.assets/image-20231104145623199.png)
+
+
+### Theorem
+> [!thm]
+> ![](Least_Square_Regression.assets/image-20231104150344063.png)
+
+> [!proof]
+> ![](Least_Square_Regression.assets/image-20231104150418251.png)![](Least_Square_Regression.assets/image-20231104150439249.png)
+
+
+
+# Regression Techniques Comparison
+> [!motiv]
+> EECS127 Fa23 disc05
+> ![](Least_Square_Regression.assets/image-20231104110142561.png)![](Least_Square_Regression.assets/image-20231104110418257.png)
+> 重要假设：假设我们的数据矩阵$[A,y]$已经做过中心化处理，即如果我们将$A， y$的各行求和取平均会得到，我们的模型一定过原点的条件，也就是说我们的模型不带有偏置项，即用 $A\vec{w}$ 就可以表示。
+
+
+
+## Linear Regression
+### Model
+> [!example]
+> 现在假设$A=\begin{bmatrix} -1\\-1\\2\end{bmatrix},y=\begin{bmatrix} -1\\0\\1\end{bmatrix}$, 我们可以很轻松地得到$\vec{w}=w_0=(A^{\top}A)^{-1}A^{\top}\vec{b}=1.5$。现在如果我们把$x,y$轴的元素调转位置，即$A=\begin{bmatrix} -1\\0\\1\end{bmatrix},y=\begin{bmatrix} -1\\-1\\2\end{bmatrix}$, 我们会得到$\vec{w}=w_0=0.5$, 画图得到：
+> ![](Least_Square_Regression.assets/image-20231104112438117.png)![](Least_Square_Regression.assets/image-20231104112509633.png)
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def LR(A, b):  # (n, d), (n, 1)
+    return np.linalg.lstsq(A, b)[0]  # (d, 1)
+```
+
+
+
+
+## Orthogonal Distance Regression
+### Motivation
+> [!motiv] Motivation
+> 上面的例子中，我们发现，如果我们将输入输出进行调换，得到的回归模型就会不一致，但是如果我们希望模型在数据调转前后不受影响，则我们可以使用`ODR`:
+> ![](Least_Square_Regression.assets/image-20231104112826520.png)
+
+
+### Maxiumum Eigenvalue  Formulation
+> [!proof]
+> ![](Least_Square_Regression.assets/image-20231104120704658.png)![](Least_Square_Regression.assets/image-20231104122500671.png)
+
+
+### Switching the Coordinates
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231104123226118.png)![](Least_Square_Regression.assets/image-20231104123554379.png)
+
+```python
+def ODR(A, b):  # (n, d), (n, 1)
+    Z = np.block([A, b])  # (n, d + 1)
+    U, S, Vh = np.linalg.svd(Z)  # (n, n), (min(n, d + 1), ), (d + 1, d + 1)
+    return Vh[0].reshape(-1, 1)  # (d + 1, 1)
+```
+> [!solution]
+> ![](Least_Square_Regression.assets/image-20231104123436413.png)
+
+
+### Implication
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231104143734993.png)
+
+
+
+## Total Least Square
+### Motivation
+> [!motiv] Motivation
+> ![](Least_Square_Regression.assets/image-20231104123903719.png)
+
+
+### Solving This System
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231104124326532.png)
+```python
+def TLS(A, b): # (n, d), (n, 1)
+    Z = np.block([A, b])  # (n, d + 1)
+    U, S, Vh = np.linalg.svd(Z)  # (n, n), (min(n, d + 1), ), (d + 1, d + 1)
+    Ay_tilde = U.T[0].reshape(-1,1) @ np.array(S[0]).reshape(1,1) @ Vh[0].reshape(1,-1) # (n, d+1)
+    print("A tilde: {}".format(Ay_tilde[:,0]))
+    print("y tilde: {}".format(Ay_tilde[:,1]))
+    print("x: {}".format(Vh[1][0] / (Vh[1][1] / -1)))
+    return np.array(Vh[1][0] / (Vh[1][1] / -1)).reshape(1,1) 
+```
+
+
+

@@ -135,9 +135,18 @@ $\max_{\|\vec{u}\|=1}(\|A\vec{u}\|_2)^2=\max_{\|\vec{u}\|=1}\vec{u}^{\top}A^{\to
 
 
 # Fundamental Theorem of LA
+> [!thm]
 > ![image.png](./Matrix_Basics.assets/20231023_2305337642.png)![image.png](./Matrix_Basics.assets/20231023_2305351845.png)![image.png](./Matrix_Basics.assets/20231023_2305374893.png)![image.png](./Matrix_Basics.assets/20231023_2305389165.png)
 
-**Proof**![image.png](./Matrix_Basics.assets/20231023_2305402289.png)
+## Proof From Textbook
+> [!proof]
+> ![image.png](./Matrix_Basics.assets/20231023_2305402289.png)
+
+
+## Proof From Lecture
+> [!proof]
+> 我们首先证明$Col(A^{\top})=Ker(A)^{\perp},Col(A)=Ker(A^{\top})^{\perp}$, 使用和书中不一样的视角:
+> ![](Matrix_Basics.assets/image-20231104131613204.png)![](Matrix_Basics.assets/image-20231104131624928.png)
 
 
 # Matrix Functions

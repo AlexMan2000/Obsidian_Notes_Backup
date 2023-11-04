@@ -74,11 +74,22 @@ $\overline{\vec{v}}^{\top}S\vec{v}=\overline{\vec{v}}^{\top}(S\vec{v})=\overline
 
 
 ## Rayleigh Quotient
+### Maximum Eigenvalues
+> [!important]
 > 对于$A\in S^n$, 我们有如下定义:
 > ![image.png](Structured_Matrices.assets/20231023_2321222976.png)
 
-**Proof of Theorem 4.3**![image.png](Structured_Matrices.assets/20231023_2321246844.png)![image.png](Structured_Matrices.assets/20231023_2321243609.png)
-假设$\lambda_1>\lambda_2>\cdots>\lambda_n$, 则最大值在$\vec{u}_1$($\lambda_1$对应的特征值)处取到，此时$\vec{u}_1^{\top}A\vec{u}_1=\vec{u}_1^{\top}\lambda_1\vec{u}_1=\lambda_1\|\vec{u}\|_2^2=\lambda_1$，最小值在$\vec{u}_n$取到。
+> [!proof]
+> **Proof of Theorem 4.3**![image.png](Structured_Matrices.assets/20231023_2321246844.png)![image.png](Structured_Matrices.assets/20231023_2321243609.png)假设$\lambda_1>\lambda_2>\cdots>\lambda_n$, 则最大值在$\vec{u}_1$($\lambda_1$对应的特征值)处取到，此时$\vec{u}_1^{\top}A\vec{u}_1=\vec{u}_1^{\top}\lambda_1\vec{u}_1=\lambda_1\|\vec{u}\|_2^2=\lambda_1$，最小值在$\vec{u}_n$取到。
+
+
+### Subsequent Eigenvalues
+> [!important]
+> ![](Structured_Matrices.assets/image-20231104121223307.png)
+> 因为我们有一个很重要的假设，$A$是对称矩阵，所以我们在进行$argmax_{\|\vec{v}\|_2=1,\vec{v}\perp\vec{v}_i,i=1,2,\cdots, k}\vec{v}^{\top}A\vec{v}$时，可以利用谱分解定理:
+> $$\begin{align}argmax\vec{v}^{\top}A\vec{v}&=\vec{v}^{\top}U\Lambda U^{\top}\vec{v}\\&=\sum_{i=1}^{n}(\vec{v}_i^{\top}\vec{u}_i)\lambda_i(\vec{u}_i^{\top}\vec{v}_i)\\&=\sum_{i=k+1}^n(\vec{v}_i^{\top}\vec{u}_i)\lambda_i(\vec{u}_i^{\top}\vec{v}_i)\\&\leq\lambda_{k+1}\|U_{k+1,n}\vec{v}\|_2^2\\&=\lambda_{k+1}\end{align}$$, where $\vec{v}^*=\vec{u}_{k+1},U_{k+1,n}$是$U$的第$k+1$列到第$n$列。
+
+
 
 
 ## Matrix Gain

@@ -1,14 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
       "basename": "Least_Square_Regression",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
     },
@@ -17,20 +9,36 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
     },
     {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
     },
     {
-      "basename": "cvxbook-solutions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Orthonormalization",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
       "basename": "SVD_Pseudoinverse",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
     },
     {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+      "basename": "cvxbook-solutions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
     },
     {
       "basename": "Caches_Optimization",
@@ -153,10 +161,6 @@
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
     },
     {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
@@ -175,10 +179,6 @@
     {
       "basename": "Turing_Code",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md"
-    },
-    {
-      "basename": "Orthonormalization",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
     },
     {
       "basename": "Callouts&CSS Shortcuts",

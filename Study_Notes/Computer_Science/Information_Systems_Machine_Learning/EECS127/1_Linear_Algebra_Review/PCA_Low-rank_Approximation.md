@@ -144,7 +144,7 @@
 
 
 
-# Picking the best number of PC
+## Picking the best number of PC
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2308576283.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2308587884.png)
 
 
@@ -621,55 +621,6 @@ def show_first_five_reconstructed(data, k):
 ```
 > https://github.com/AlexMan2000/NYU-Master-Program/blob/master/DS-GA-1014/Homeworks/hw7/mnist_pca/mnist_pca.ipynb
 
-# Low-Rank Approximation
-## Motivation
-> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309335541.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309355780.png)
-
-
-## Eckart-Young-Mirsky Theorem
-### Version 1
-> **这里我们介绍两个定理并证明:**
-> 假设$A\in \mathbb{R}^{m\times n}(m\geq n)$且$A=U\Sigma V^{\top}$, $A_k=\sum_{i=1}^k\sigma_i\vec{u}_i\vec{v}_i^{\top}$并且$\sigma_1\geq \sigma_2\geq \cdots \geq \sigma_n$, $k\leq rk(A)=r$
-> 1. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_2$
-> 2. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_F$
-> 
-我们想要通过$1$来证明$2$。
-
-**Proof of 1**我们要证明的是$\forall rk(B)=k$, $\|A-B\|_2\geq \|A-A_k\|_2$
-根据`Matrix - 2 Norm`(Can be generalized to Lp Norm)的定义我们有: $\|A\|_2=\max_{\vec{x}}\frac{\|A\vec{x}\|_2}{\|\vec{x}\|_2}=\max_{\|\vec{u}\|=1}\|A\vec{u}\|_2$, 所以$\|A\vec{u}\|\leq \|A\|_2~~s.t.\|\vec{u}\|=1$。
-所以$\|A-B\|_2\geq \|(A-B)\vec{w}\|_2~~s.t.\|\vec{w}\|=1$, 和我们要证明的式子进行比较，我们需要选择一个单位向量$\vec{w}$使得$\|(A-B)\vec{w}\|_2$和$\|A-A_k\|_2$比较相近。
-我们可以取$\vec{w}\in null(B)$, 使得$(A-B)\vec{w}=A\vec{w}-B\vec{w}=A\vec{w}$, 则$\|(A-B)\vec{w}\|_2=\|A\vec{w}\|_2$
-对于$A\in \mathbb{R}^{m\times n}$来说，我们对其进行奇异值分解，得到$A=U\Sigma V^{\top}$, 令$V_{k+1}=\begin{bmatrix} V_{k+1}&V_{rest}\end{bmatrix}$其中$\mathcal{R}(V_{k+1})\perp \mathcal{R}(V_{rest})$且$dim(\mathcal{R}(V_{k+1}))=k+1$, 因为$rk(B)=k$, 所以$dim(\mathcal{N}(B))=n-k$。
-所以根据`Fundamental Theorem of Linear Algebra`我们有$\mathcal{R}(V_{k+1})\cap B\neq \{0\}$, 令$\vec{w}\in \mathcal{R}(V_{k+1})\cap B$, 即$\vec{w}\in \mathcal{R}(V_{k+1})$, 令$\vec{w}=V\vec{\alpha}=\begin{bmatrix}V_{k+1}&V_{rest} \end{bmatrix}\begin{bmatrix} \alpha_1^{\top}\\\alpha_2^{\top}\end{bmatrix}$且$\|\vec{w}\|=1$，这样的$\vec{w}$一定存在。
-因为$\|\vec{w}\|=1$, 所以$\sum_{i=1}^{k+1}\alpha_i^2=1$
-于是$\|A\vec{w}\|_2=\|U\Sigma V^{\top}\vec{w}\|_2=\|U\Sigma V^{\top}V\vec{\alpha}\|_2=\|U\Sigma \vec{\alpha}\|_2=\|\Sigma \vec{\alpha}\|_2=\sqrt{\alpha_1^2\sigma_1^2+\cdots+\alpha_{k+1}^2\sigma_{k+1}^2}\geq \sqrt{\sigma_{k+1}^2(\sum_{i=1}^{k+1}\alpha_i^2)}=\sigma_{k+1}$
-所以我们证明了$\|(A-B)\vec{w}\|_2\geq \sigma_{k+1}=\|A-A_k\|_2~~s.t.\|\vec{w}\|=1,\forall\vec{w}\in \mathcal{N}(B)\cap \mathcal{R}(V_{k+1})$
-即$\|A-B\|_2\geq \|A-A_k\|_2$成立。
-**Proof of 2 Using 1**我们想要$\|A-B\|_F\geq \|A-A_k\|_F$, $\forall B~~s.t.~~rk(B)=k$成立。
-我们知道$\|A-A_k\|_F=\|\sum_{i=k+1}^n \sigma_i\vec{u}_i\vec{v}_i^{\top}\|_F=\sqrt{\sum_{i=k+1}^n\sigma_i^2(A)}$ 
-所以我们想证明$\|A-B\|_F=\sum_{i=1}^{n}\sigma_i^2(A-B)\geq  \sum_{i=k+1}^n\sigma_i^2(A)=\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$成立。
-想要证明$\sum_{i=1}^{n}\sigma_i^2(A-B)\geq\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$, 我们可以转而先证明:$\sum_{i=1}^{n-k}\sigma_i^2(A-B)\geq\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$
-也就可以转而先证明$\sigma_i^2(A-B)\geq\sigma_{k+i}^2(A) ~~\forall i=1,2,\cdots n-k$
-因为$\sigma_{k+i}(A)$是$k+i$- th largest singular value of A, 所以根据`Matrix-2 Norm`的定义我们知道: $\sigma_{k+i}(A)=\|A-A_{k+i-1}\|_2$。
-令$A-B=C$, 则$\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2$, 其中$rk(C_{i-1})=i-1$
-因为$rk(B)=k$, 所以$\|B-B_{k}\|_2=\sigma_{k+1}(B)=0$, 于是: 
-$\begin{aligned}\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2+0&=\|C-C_{i-1}\|_2+\|B-B_k\|_2\\&\geq\|C-C_{i-1}+B-B_k\|_2\\&=\|A-C_{i-1}-B_k\|_2 \end{aligned}$
-令$D=B_k+C_{i-1}$, 则$rk(D)\leq rk(B_k)+rk(C_{i-1})=k+i-1$
-所以$\sigma_i(A-B)\geq\|A-D\|_2\geq\sigma_{k+i}(A)$(第二个等号在$D=A_{k+i-1}$处取到)
-
-
-### Version 2
-> [!thm]
-> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309379079.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309386541.png)
-
-> [!proof] The proof is long(Optional)
-> **Proof of Theorem 3**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309406607.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309422485.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309441598.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309444943.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309469441.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309481969.png)
-
-## Examples
-> [!example]
-> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309497687.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309518157.png)
-
-
 
 # Equivalent Arguments of PCA
 > [!important]
@@ -707,6 +658,77 @@ $\begin{aligned}\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2+0&=\|C-C_{i-1}\|_2+\
 
 ## Notes on Separable Minimization
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310063073.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310076123.png)
+
+
+
+# Low-Rank Approximation
+## Motivation
+> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309335541.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309355780.png)
+
+
+## Eckart-Young-Mirsky Theorem
+### Version 1 - EECS127 Lecture
+> [!thm]
+> **这里我们介绍两个定理并证明:**
+> 假设$A\in \mathbb{R}^{m\times n}(m\geq n)$且$A=U\Sigma V^{\top}$, $A_k=\sum_{i=1}^k\sigma_i\vec{u}_i\vec{v}_i^{\top}$并且$\sigma_1\geq \sigma_2\geq \cdots \geq \sigma_n$, $k\leq rk(A)=r$
+> 1. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_2$
+> 2. $A_k=argmin_{\text{B}\in \mathbb{R}^{m\times n}\\~~\text{rk(B)}=k}\|A-B\|_F$
+> 
+我们想要通过$1$来证明$2$。
+
+>[!proof]
+>**Proof of 1**
+>我们要证明的是$\forall rk(B)=k$, $\|A-B\|_2\geq \|A-A_k\|_2$根据`Matrix - 2 Norm`(Can be generalized to Lp Norm)的定义我们有: $\|A\|_2=\max_{\vec{x}}\frac{\|A\vec{x}\|_2}{\|\vec{x}\|_2}=\max_{\|\vec{u}\|=1}\|A\vec{u}\|_2$.
+>所以$\|A\vec{u}\|\leq \|A\|_2~~s.t.\|\vec{u}\|=1$。
+>所以$\|A-B\|_2\geq \|(A-B)\vec{w}\|_2~~s.t.\|\vec{w}\|=1$, 和我们要证明的式子进行比较，我们需要选择一个单位向量$\vec{w}$使得$\|(A-B)\vec{w}\|_2$和$\|A-A_k\|_2$比较相近。
+>我们可以取$\vec{w}\in null(B)$, 使得$(A-B)\vec{w}=A\vec{w}-B\vec{w}=A\vec{w}$, 则$\|(A-B)\vec{w}\|_2=\|A\vec{w}\|_2$.对于$A\in \mathbb{R}^{m\times n}$来说，我们对其进行奇异值分解，得到$A=U\Sigma V^{\top}$, 令$V_{k+1}=\begin{bmatrix} V_{k+1}&V_{rest}\end{bmatrix}$其中$\mathcal{R}(V_{k+1})\perp \mathcal{R}(V_{rest})$且$dim(\mathcal{R}(V_{k+1}))=k+1$, 因为$rk(B)=k$, 所以$dim(\mathcal{N}(B))=n-k$。所以根据`Fundamental Theorem of Linear Algebra`我们有$\mathcal{R}(V_{k+1})\cap B\neq \{0\}$, 令$\vec{w}\in \mathcal{R}(V_{k+1})\cap B$, 即$\vec{w}\in \mathcal{R}(V_{k+1})$, 令$\vec{w}=V\vec{\alpha}=\begin{bmatrix}V_{k+1}&V_{rest} \end{bmatrix}\begin{bmatrix} \alpha_1^{\top}\\\alpha_2^{\top}\end{bmatrix}$且$\|\vec{w}\|=1$，这样的$\vec{w}$一定存在。因为$\|\vec{w}\|=1$, 所以$\sum_{i=1}^{k+1}\alpha_i^2=1$
+>
+>于是$\|A\vec{w}\|_2=\|U\Sigma V^{\top}\vec{w}\|_2=\|U\Sigma V^{\top}V\vec{\alpha}\|_2=\|U\Sigma \vec{\alpha}\|_2=\|\Sigma \vec{\alpha}\|_2=\sqrt{\alpha_1^2\sigma_1^2+\cdots+\alpha_{k+1}^2\sigma_{k+1}^2}\geq \sqrt{\sigma_{k+1}^2(\sum_{i=1}^{k+1}\alpha_i^2)}=\sigma_{k+1}$
+>所以我们证明了$\|(A-B)\vec{w}\|_2\geq \sigma_{k+1}=\|A-A_k\|_2~~s.t.\|\vec{w}\|=1,\forall\vec{w}\in \mathcal{N}(B)\cap \mathcal{R}(V_{k+1})$,即$\|A-B\|_2\geq \|A-A_k\|_2$成立。
+>**Proof of 2 Using 1**
+>我们想要$\|A-B\|_F\geq \|A-A_k\|_F$, $\forall B~~s.t.~~rk(B)=k$成立。我们知道$\|A-A_k\|_F=\|\sum_{i=k+1}^n \sigma_i\vec{u}_i\vec{v}_i^{\top}\|_F=\sqrt{\sum_{i=k+1}^n\sigma_i^2(A)}$ 。所以我们想证明$\|A-B\|_F=\sum_{i=1}^{n}\sigma_i^2(A-B)\geq  \sum_{i=k+1}^n\sigma_i^2(A)=\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$成立。想要证明$\sum_{i=1}^{n}\sigma_i^2(A-B)\geq\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$, 我们可以转而先证明:$\sum_{i=1}^{n-k}\sigma_i^2(A-B)\geq\sum_{i=1}^{n-k} \sigma_{k+i}^2(A)$，也就可以转而先证明$\sigma_i^2(A-B)\geq\sigma_{k+i}^2(A) ~~\forall i=1,2,\cdots n-k$因为$\sigma_{k+i}(A)$是$k+i$- th largest singular value of A, 所以根据`Matrix-2 Norm`的定义我们知道: $\sigma_{k+i}(A)=\|A-A_{k+i-1}\|_2$。令$A-B=C$, 则$\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2$, 其中$rk(C_{i-1})=i-1$。因为$rk(B)=k$, 所以$\|B-B_{k}\|_2=\sigma_{k+1}(B)=0$, 于是: $\begin{aligned}\sigma_{i}(A-B)=\sigma_i(C)=\|C-C_{i-1}\|_2+0&=\|C-C_{i-1}\|_2+\|B-B_k\|_2\\&\geq\|C-C_{i-1}+B-B_k\|_2\\&=\|A-C_{i-1}-B_k\|_2 \end{aligned}$
+>令$D=B_k+C_{i-1}$, 则$rk(D)\leq rk(B_k)+rk(C_{i-1})=k+i-1$
+>所以$\sigma_i(A-B)\geq\|A-D\|_2\geq\sigma_{k+i}(A)$(第二个等号在$D=A_{k+i-1}$处取到)
+
+
+### Version 2 - EECS16B
+> [!thm]
+> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309379079.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309386541.png)
+
+> [!proof] The proof is long(Optional)
+> **Proof of Theorem 3**![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309406607.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309422485.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309441598.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309444943.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309469441.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309481969.png)
+
+## Proof from Textbook
+### Proof for Frobenius Norm
+> [!proof] Proof, p150~p152
+> ![](PCA_Low-rank_Approximation.assets/image-20231104125845574.png)![](PCA_Low-rank_Approximation.assets/image-20231104125904989.png)![](PCA_Low-rank_Approximation.assets/image-20231104125932310.png)
+
+
+### Proof for Spectrum Norm
+> [!proof]
+> 我们可以仿照上面的方法来证明`Eckart-Young-Theorem`对矩阵的谱范数也成立。
+> 
+
+
+# Low-Rank Approximation Applications
+## Minimum Distance to Rank Deficiency
+>[!def]
+>![](PCA_Low-rank_Approximation.assets/image-20231104132634709.png)
+
+
+
+
+
+## SVD Image Compression
+## Explained Variance
+> [!def] Explained Variance
+> ![](PCA_Low-rank_Approximation.assets/image-20231104131831634.png)
+
+> [!example] Example 1
+> ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309497687.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309518157.png)
+
+> [!example] Example 2
+> ![](PCA_Low-rank_Approximation.assets/image-20231104133012190.png)![](PCA_Low-rank_Approximation.assets/image-20231104133054031.png)![](PCA_Low-rank_Approximation.assets/image-20231104133110516.png)
 
 
 
