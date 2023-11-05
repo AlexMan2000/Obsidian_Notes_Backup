@@ -101,9 +101,11 @@
 
 ## Min-max Principles⭐⭐⭐⭐⭐
 ### Poincare Inequality - 4.4
+> [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321266493.png)
 
-**Proof****第一部分的证明如下:**
+> [!proof]
+> **第一部分的证明如下:**
 因为$A$是对称矩阵$S^n$，所以$A=U\Lambda U^{\top}$(By Spectrum Decomposition), 令$U_k=[\vec{u}_k,\cdots, \vec{u}_n]$, 即$dim(Col(U_k))=n-k+1$, 令$Col(U_k)=\mathcal{Q}$, $dim(\mathcal{Q})=n-k+1$。
 因为$dim(\mathcal{V})=k$, 所以:
 $\begin{aligned}dim(\mathcal{Q}+\mathcal{V})&=dim(\mathcal{Q})+dim(\mathcal{V})-dim(\mathcal{Q}\cap \mathcal{V})\\&=n-k+1+k-dim(\mathcal{Q}\cap \mathcal{V})\\&\leq dim(\mathbb{R}^n)\\&=n\end{aligned}$
@@ -116,14 +118,19 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 于是$\vec{y}^{\top}A\vec{y}\geq \lambda_{n-k+1}$
 
 ### Min-max Principles
+> [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321298439.png)
 
-**Proof**![image.png](Structured_Matrices.assets/20231023_2321304323.png)
+> [!proof]
+> ![image.png](Structured_Matrices.assets/20231023_2321304323.png)
 
-### Applications
+
+### Applications - Eigenvalue Increments
+> [!important]
 > ![image.png](Structured_Matrices.assets/20231023_2321317122.png)
 
-**Proof**![image.png](Structured_Matrices.assets/20231023_2321327427.png)
+> [!proof]
+> ![image.png](Structured_Matrices.assets/20231023_2321327427.png)
 
 
 ## Important Symmetric Matrices
@@ -342,6 +349,8 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 > [!property] 3 When we add edges, $\lambda_2$ increases.
 > 因为add edges的最终结果一定会使得graph变成connected，即只有一个connected component, 此时$\lambda$从等于零变成大于零。
+> 下面是严格的证明:
+> ![](Structured_Matrices.assets/image-20231105141837881.png)
 
 > [!property] 4 Eigenvalues can scale with the number of vertices
 > 对于$A$这个对称矩阵来说，如果
@@ -366,6 +375,16 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 > ![](Structured_Matrices.assets/image-20231104175323831.png)
 
 
+## Normalized Laplacian Matrix
+### Definition
+> [!def]
+> ![](Structured_Matrices.assets/image-20231105143402388.png)
 
 
-### Applications: Spectral Clustering Algorithm
+### Properties
+> [!property]
+> 
+
+
+
+## Applications: Spectral Clustering Algorithm

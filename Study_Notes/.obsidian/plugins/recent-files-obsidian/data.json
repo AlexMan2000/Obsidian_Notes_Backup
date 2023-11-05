@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "Ch2_张成空间，维数和基",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
+    },
+    {
+      "basename": "Ch3_线性变换",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
+    },
+    {
+      "basename": "Ch1_向量空间与子空间",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
+    },
+    {
+      "basename": "Atom_Structure",
+      "path": "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md"
+    },
+    {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
     },
@@ -37,20 +65,12 @@
       "path": "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md"
     },
     {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
-    },
-    {
       "basename": "Caches_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
     },
     {
       "basename": "SVD_Pseudoinverse",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
     },
     {
       "basename": "PCA_Low-rank_Approximation",
@@ -63,18 +83,6 @@
     {
       "basename": "20231023_2251198964",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/20231023_2251198964.png"
-    },
-    {
-      "basename": "Ch2_张成空间_维数和基",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md"
-    },
-    {
-      "basename": "Ch1_向量空间与子空间",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
-    },
-    {
-      "basename": "Ch3_线性变换",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
     },
     {
       "basename": "离散马尔科夫链",
@@ -173,10 +181,6 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
-    },
-    {
       "basename": "Upper_Triangulation_Schur_Decomposition",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "Callouts&CSS Shortcuts",
       "path": "Obsidian_User_Notes/Callouts&CSS Shortcuts.md"
-    },
-    {
-      "basename": "20231024_0835581328",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.assets/20231024_0835581328.png"
-    },
-    {
-      "basename": "Stable_Matching",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Stable_Matching.md"
     }
   ],
   "omittedPaths": [],

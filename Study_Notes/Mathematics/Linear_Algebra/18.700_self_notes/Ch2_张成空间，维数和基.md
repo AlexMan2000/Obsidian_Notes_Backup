@@ -5,7 +5,7 @@
 
 # 1 线性组合和基
 ## 1.1 Linear Combination
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149388504.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1431596711.png)
 > 在矩阵视角中，我们常常将这些向量$\bf v_1,v_2,v_3,...,v_m$看成是某个矩阵的列向量, 这些列向量的线性组合构成了$\bf A=\begin{bmatrix} v_1&v_2&v_3&\cdots &v_m\end{bmatrix}$的列空间$\bf col(A)$
 
 > **例如: 我们说**$(17,-4,2)$**是**$(2,1,-3)$**和**$(1,-2,4)$**的线性组合**
@@ -15,9 +15,9 @@
 
 
 ## 1.2 Span
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149401134.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432007628.png)
 > 我们使用`Span`符号来表示一组向量的线性组合。数学家也常常使用`Linear Span`来描述和`Span`相同的含义。
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149413828.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432029981.png)
 
 
 
@@ -34,11 +34,11 @@
 
 
 ### Lemma 3 - Subset Relationship
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149417732.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432038494.png)
 
 
 ### Theorem 2.7 - Version 1
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149434991.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432041720.png)
 
 **证明是V的子空间**
 1. 首先要证明`Span`张成的空间是一个$V$的子空间
@@ -61,31 +61,31 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 2. **再证明**`**Span**`**张成的子空间**$S$**是 所有包含了**$S$**中所有向量的子空间**$T$**中最小的那个子空间。 换句话说，有很多**$V$**的子空间**$\{T_1,T_2,\cdots ,T_n\}$**，他们都包含**$\{v_1,v_2,\cdots,v_m\}$**但是**$span(v_1,v_2,\cdots,v_m)$**代表的子空间**$S$**一定是最小的那个, 也就是**$|S|<|T_i|,\forall i$**, 我们下面来证明这个拗口的结论。**
 
 首先, 对于子空间$T_i\subset V$, 因为他们对加法数乘都封闭，所以$\forall u,v \in T_i,au+bv\in T_i$, 所以$a_1v_1+a_2v_2+\cdots+a_mv_m \in T_i$但是$T_i$还可以继续扩展，因为$T_i$还含有$v_{m+1},\cdots$甚至无限多个向量, 而$S$中包含$m$个向量$a_1v_1+a_2v_2+\cdots+a_mv_m \in S$, 所以$S\subset T_i$, 所以$S$是最小的那个子空间
-**图例**![](./Ch2_张成空间，维数和基.assets/20231103_1149442281.png)
+**图例**![](./Ch2_张成空间，维数和基.assets/20231105_1432054445.png)
 
 
 ### Theorem 2.7 - Version 2
 > 这个结论很重要，需要认真对待。另一种表述
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149458086.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432062272.png)
 > $\operatorname{span}(S) = \bigcap_{W \text { a subspace of } \mathrm{V},~S\subseteq W} W$
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149478304.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149483215.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432083478.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432097591.png)
 
 
 
 ## 1.4 Spans
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149505140.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432102889.png)
 > 说白了就是$v_1,...,v_m$通过线性组合能够得到$V$中的所有向量。
 > 转化成矩阵语言就是$\bf \begin{bmatrix} v_1&v_2&\cdots&v_m\end{bmatrix}x=b$对于所有$\bf b\in V$都有解
 
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149515225.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432124505.png)
 
 
 
 # 2 向量空间
 ## 2.1 有限维向量空间
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149523673.png)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149542710.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432141530.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432155009.png)
 > $\mathcal{P}(\bf F)$是定义在$\bf F$上的向量空间，且为$\bf F^F$的子空间, 这里给出证明:
 
 **Proof**> 对于$\mathcal{P}(\mathbf{F})=\{p(z)=a_0+a_1z+a_2z^2+\cdots +a_mz^m|a_i\in \mathbf{F},z\in \mathbf{F},p:\mathbf{F}\to \mathbf{F}\}$
@@ -100,19 +100,19 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 
 
 ## 2.2 Degree of Polynomial
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149554226.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432173893.png)
 > 一般而言，如果一个多项式($\bf F\to F$)$p(z)=a_0+a_1z+\cdots+a_mz^m$能够同时被两组系数$a_0,a_1,\cdots,a_m$和$b_1,b_2,\cdots,b_m$表示，则一定有$a_i=b_i$, 即$p(z)=0\in \mathcal{P}(\mathbf{F})$(`additive identity`)。换句话说，一个多项式的系数被唯一的确定。于是就有了下面的定义:
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149572517.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432183394.png)
 > **此处**$-\infty < m$**, 这里其实就开始渗透同构的概念了，说的就是一个多项式也能够看成一个向量空间，其向量空间的维数等于多项式的**`**最高次数+1**`
 
 :::success
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1149598057.png)
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150004960.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432191273.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432219466.png)
 :::
 
 ## 2.3 无限维向量空间
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150021307.png)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150024042.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432238786.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432284821.png)
 > $\mathcal{P}_m(\mathbf{F})$是有限维的，$\mathcal{P}(\mathbf{F})$是无限维的。
 
 
@@ -123,7 +123,7 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 > 本小节主要讲述线性无关性，是线性算子视角理解线性代数的最核心的部分。
 
 ## 3.1 定义
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150039723.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432306162.png)
 > 对于定义中的第一条，从矩阵的视角就是$v_1,v_2,\cdots,v_m$按列组成的矩阵的零空间只有$\{0\}$
 
 
@@ -145,7 +145,7 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 
 
 ## 3.3 线性无关的例子
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150055748.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432315394.png)
 
 **(a)****先证明正方向:**
 对于$v\in \{v\}$, 如果$\{v\}$中的向量线性无关，则我们说$v$只能被唯一的表示成$v$的线性组合(`**Corollary 2.17**`)，也就是说只存在唯一的$a$使等式$(1-a)v=0$（$v=av$得到）成立, 所以$a=1$, 如果$v=0$，则$a$有无数种选择，与线性无关性矛盾，证毕。
@@ -162,8 +162,8 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 
 # 4 线性相关性
 ## 4.1 线性相关的定义
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150077295.png)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150087303.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432321670.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432344961.png)
 
 
 ## 4.2 推论
@@ -179,131 +179,131 @@ $\forall u\in S$, $cu=c(a_1v_1+a_2v_2+\cdots+a_mv_m)=ca_1v_1+ca_2v_2+\cdots+ca_m
 
 
 ## 4.3 线性相关性引理
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150101910.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432352485.png)
 > $(b)$**说的是，如果一个向量列表**$v_1,v_2,\cdots,v_m$**是线性相关的， 则任意从中去掉一个向量，剩余的向量仍然能够张成原来的空间**
 > 这个引理是为了证明后面的`4.4`中的定理。
 > **边界情况:**
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150116664.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432372735.png)
 
-**Proof of (a)**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150144796.png)
-**Proof of (b)**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150159239.png)
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150175750.png)
+**Proof of (a)**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432388864.png)
+**Proof of (b)**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432393999.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432417742.png)
 代入$v_j$后，$u=c_1-\frac{a_1}{a_j}v_1+\cdots+(c_j-\frac{a_{j-1}}{a_j})v_{j-1}+a_{j+1}v_{j+1}+\cdots +a_mv_m$
 $u$$\in$$span(v_1,\cdots,v_{j-1},v_{j+1},\cdots v_m)$, 所以删除$j^{th}$之后的向量列表$v_1,\cdots,v_{j-1},v_{j+1},\cdots,v_m$仍然能够张成原来$v_1,v_2,\cdots,v_m$能张成的空间的
  
 
 
 ## 4.4 无关组长度小于张成组长度
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150183906.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432429688.png)
 > 结论挺显然的，我们就不去深究了, 其实就是如果一些向量是线性相关且能张成有限维空间$\bf V$，则去掉一个向量也能张成这个空间。**本质就是**`**Spanning List**`**虽然张成了**$V$**，但不是最短的向量列表, 而**`**Linear Independent List**`**是最短的向量列表。**
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150199719.png)
-**Step 1**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150214291.png)
-**Step j**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150237134.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432445997.png)
+**Step 1**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432466640.png)
+**Step j**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432479617.png)
 每次在增加了$u$的时候(比如我们刚刚增加了$u_t$的时候)，得到了如下长度为$n+1$的向量列表$u_1,u_2,\cdots,u_t,w_1,w_2,\cdots, w_{n-t},w_{n-t+1}$，此时向量列表长度为$n+1$, 一定是线性相关且能`Span`$\bf V$空间的(引理告诉我们的)，马上下一步我们就要划掉$w_{n-t+1}$, 因为引理告诉我们如果一个向量列表线性相关，则划掉一个不会影响划掉以后剩余向量所能张成的空间的。如果划掉的是$u$中的某一个了，则说明我们划掉前的向量就已经线性无关了，矛盾，所以划掉的永远是$w$中的一个。于是$w$一定比$u$多。
 
 
 ## 4.5 使用4.4的一些例子
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150258621.png)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150264262.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432497613.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432501274.png)
 
 
 ## 4.6 有限维子空间的定义
 > 我们给出一个常用命题
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150271344.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432526536.png)
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150281493.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432531966.png)
 
 
 # 5 基
 ## 基的定义
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150298480.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150309096.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432553341.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432567129.png)
 > 基就是能够张成$V$空间的线性无关的**向量列表**。
 
-**Examples**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150326330.png)
+**Examples**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1432584436.png)
 
 
 
 
 
 ## 基的判断条件
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150348085.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433001665.png)
 > **如果一个向量列表想要成为**$V$**的基:**
 > - 他必须张成$V$
 > - 向量列表中的向量还要**线性无关**。
 
 **Proof（类似于线性无关的定义）**[证明类似于线性无关性](https://www.yuque.com/alexman/so5y8g/atgxkz/edit#rFstW)
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150367944.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433027034.png)
 
 
 
 ## 基的常用性质
 ### Useful Lemma⭐⭐⭐
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150368659.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433036461.png)
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150371802.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150391144.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433041600.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433064449.png)
 
 
 ### Spanning List 可以缩减为基
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150414654.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433074594.png)
 > 证明思路就是我们先找一组向量能够`Span`这个`Vector Space`, 然后一点一点删除多余的向量最后得到这个`Vector Space`的一组基。
 > 这个就对应了`EECS16B`中的`Gram-Schmidt`过程。
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150426277.png)
-**Step 1**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150446691.png)
-**Step j**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150458672.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433098264.png)
+**Step 1**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433109543.png)
+**Step j**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433129014.png)
 
 ### 有限维向量空间一定有基
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150464991.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433133181.png)
 > **每个有限维空间一定有其张成向量组**, 则根据`5.3`中的定理，这个向量组可以被化简成一组基，所以每个有限维空间一定有其基。
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150473865.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433145038.png)
 
 ### 线性无关组可以扩充成一个基
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150488187.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433164519.png)
 > 一个向量列表中的向量光线性无关还不够，他们必须能够张成$V$, 所以可以被扩充到恰好能张成$V$，扩张过度就会变成线性相关列了。
 > 本质就是我先从$\bf V$中找一组线性无关的向量$u_1,\cdots, u_m$，然后找一组$\bf V$的基$w_1,\cdots,w_n$, 把这两个列表合并成一个大列表，$u_1,\cdots, u_m, w_1,\cdots,w_n$, 这个大列表一定能够`Span`$\bf V$, 然后从这个列表中开始删除多余的向量最后得到一组基。
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150517048.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433176829.png)
 
 
 ## 子空间和直和
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150514299.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433192407.png)
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150541234.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433213435.png)
 
  
 # 6 维数
 ## 维数的定义
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150541859.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150553557.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150558043.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433226026.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433231899.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433247738.png)
 
 
 
 
 ## 维数和基的性质
 ### 同一个向量空间的基长度相同
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150555035.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150563349.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433261991.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433279756.png)
 > 一个有限维向量空间的基长度一定相等。
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150578945.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433295285.png)
 
 
 ### 向量列表的长度限制
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150572554.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433303681.png)
 > **证明可以使用下列引理:**
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150579790.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433304696.png)
 
 **Proof of 1**因为$dim(V)=n$, 所以$V$有一个长度为$n$的`Basis`, 不妨令其为$(v_1,v_2,\cdots,v_n)$, 令$x_1,x_2,\cdots, x_k\in Span(v_1,v_2,\cdots, v_n)$, 根据引理可知如果$x_1,\cdots x_k$是线性无关的，则$k\leq n$。因为否则($k>n$)就是线性相关的了。
 **Proof of 2**因为$dim(V)=n$, 所以我们考虑$V$的一组基$v_1,\cdots, v_n$。因为$Span(x_1,\cdots, x_k)=V$,$v_1,v_2,\cdots, v_n\in Span(x_1,\cdots, x_k)$。因为$(v_1,v_2,\cdots, v_n)$线性无关，所以根据引理$n\leq k$。
 
 
 ### 长度正好的向量列表是基⭐⭐⭐
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150572105.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433322464.png)
 > **为了证明这个结论，我们需要先证明下列三个引理:**
 > **引理1:**
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150577706.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150574040.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150589098.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433321914.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433322656.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433325590.png)
 > **引理2:**
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150589224.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433331265.png)
 > 1. $\forall x\in Span(x_2,\cdots, x_k)$, 我们有$x=\alpha_2x_2+\cdots+\alpha_kx_k=0x_1+\alpha_2x_2+\cdots+\alpha_kx_k\in Span(x_1,\cdots, x_k)$。
 > 
 所以$Span(x_2,\cdots, x_k)\subseteq Span(x_1,\cdots, x_k)$
@@ -311,50 +311,46 @@ $u$$\in$$span(v_1,\cdots,v_{j-1},v_{j+1},\cdots v_m)$, 所以删除$j^{th}$之�
 > 
 综上，$Span(x_1,\cdots, x_k)= Span(x_2,\cdots, x_k)$
 > **引理3:**
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150581129.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433347124.png)
 > 因为$v_1,\cdots, v_k$是线性无关的，所以$\alpha_1v_1+\cdots\alpha_kv_k=0$仅在$\alpha_1=\alpha_2=\cdots=\alpha_k=0$时成立。
 > 假设$(v_1,\cdots, v_k,x)$线性相关，则存在使得$\beta_1v_1+\beta_2v_2+\cdots \beta_kv_k+\beta_{k+1}x=0$成立的不全为零（即$(\beta_1,\cdots,\beta_{k+1})\neq \vec{0}$)的系数。
 > 如果$\beta_{k+1}\neq 0$, 则$x=\frac{\beta_1}{\beta_{k+1}}v_1+\frac{\beta_2}{\beta_{k+1}}v_2+\cdots+\frac{\beta_k}{\beta_{k+1}}v_k\in Span(v_1,\cdots, v_k)$矛盾。
 > 如果$\exists \beta_i\neq 0, i=1,2,\cdots, k$且$\beta_{k+1}=0$, 则$v_i=\frac{\beta_1}{\beta_{i}}v_1+\cdots+\frac{\beta_{i-1}}{\beta_{i}}v_{i-1}+\cdots+\frac{\beta_{i+1}}{\beta_{i}}v_{i+1}+\cdots+\frac{\beta_k}{\beta_{i}}v_k$, 这和$v_i$线性无关矛盾。
 > 所以综上，$(v_1,\cdots, v_k,x)$线性无关。
 
-**Proof of 1**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1150598515.png)
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151001856.png)
-**Proof of 2**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151023257.png)
-![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151037656.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151046491.png)
+**Proof of 1**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433362618.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433385850.png)
+**Proof of 2**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433391376.png)
+![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433416493.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433425986.png)
 
 
 
 ## 维数和子空间
 ### 子空间的维数(不等/等式关系)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151046098.png)![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151055133.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433431038.png)![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433458234.png)
 
-**Proof****先证明第一部分：**
-我们可以利用`Proposition 3.1`进行证明, 每个不等式使用一次。因为$dim(U)=a$, 所以$U$存在一组基$\{u_1,u_2,\cdots, u_a\}$, 同理$V$存在一组基$\{v_1,v_2,\cdots, v_b\}$。
-因为$\forall u_i, u_i\in U\subset V$, 即$u_1,u_2,\cdots, u_a\in V$。因为$u_i$线性无关，所以根据`proposition 3.1`, $a\leq b$, 即$dim(U)\leq dim(V)$。
-同理可证明第二个不等式。
-**证明第二部分：**
-如果$dim(U)=dim(V)$, 说明$dim(U)\leq dim(V)$和$dim(U)\geq dim(V)$同时成立。也就是说$u_1,u_2,\cdots, u_a$即线性无关，又是$V$的`Spanning List`, 于是$\{u_1,\cdots ,u_a\}$也构成$V$的基。因为同一个字空间的基长度相同，所以$a=b$。证毕。
+> [!proof]
+> **先证明第一部分**：我们可以利用`Proposition 3.1`进行证明, 每个不等式使用一次。因为$dim(U)=a$, 所以$U$存在一组基$\{u_1,u_2,\cdots, u_a\}$, 同理$V$存在一组基$\{v_1,v_2,\cdots, v_b\}$。因为$\forall u_i, u_i\in U\subset V$, 即$u_1,u_2,\cdots, u_a\in V$。因为$u_i$线性无关，所以根据`proposition 3.1`, $a\leq b$, 即$dim(U)\leq dim(V)$。同理可证明第二个不等式。
+> **证明第二部分：**如果$dim(U)=dim(V)$, 说明$dim(U)\leq dim(V)$和$dim(U)\geq dim(V)$同时成立。也就是说$u_1,u_2,\cdots, u_a$即线性无关，又是$V$的`Spanning List`, 于是$\{u_1,\cdots ,u_a\}$也构成$V$的基。因为同一个字空间的基长度相同，所以$a=b$。证毕。
 
 ### 不等关系
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151057612.png)
-
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433463580.png)
 
 
 
 
 ### 子空间的和的维数(等式关系)
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151051029.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433475131.png)
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151065366.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433494358.png)
 
 
 ## 算例
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151083099.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433511856.png)
 
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151087425.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433522072.png)
 
-**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151094301.png)
+**Proof**![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433545619.png)
 
 
 
@@ -379,7 +375,7 @@ $u$$\in$$span(v_1,\cdots,v_{j-1},v_{j+1},\cdots v_m)$, 所以删除$j^{th}$之�
 > 
 > [**1.39**](https://www.yuque.com/alexman/so5y8g/wal3n1#Vxeyk)** **紧接着我们想$U=U_1+U_2+...+U_m$这个家伙和原来的$U_j$之间存在怎样的关系。根据**1.39 Lemma**我们知道这个集合包含了原来所有$U_j$内的所有向量，那么有没有比这个集合更小的集合能够恰好包含我们原来的所有向量呢？
 > 答案就是$U$本身。论证的思路也很简单，我们先要找到所有和$U$一样，能够包含所有$U_j$中的向量的集合$T_i$，然后说明这样的每个$T_i$都必须包含我们的$U$, 这样就能说明$U$是满足条件的最小集合了。
-> ![image.png](./Ch2_张成空间，维数和基.assets/20231103_1151122384.png)
+> ![image.png](./Ch2_张成空间，维数和基.assets/20231105_1433568682.png)
 > 注意到所有包含$U_1,U_2,...,U_m$的子空间$T_i$必须包含$U_1+U_2+U_3+...+U_m$(这是因为加法封闭性), 于是$U$是最小的那个。
 > **对于**`**Directed Sum**`**的一个很好的类比就是集合的并集，包含两个集合**$U_1,U_2$**的所有元素的最小集合就是**$U_1\cup U_2$
 

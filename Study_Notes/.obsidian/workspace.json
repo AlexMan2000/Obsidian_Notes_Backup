@@ -6,7 +6,6 @@
       {
         "id": "9ce3cf10a6077b8e",
         "type": "tabs",
-        "dimension": 63.17991631799163,
         "children": [
           {
             "id": "8ad83db21617d6d6",
@@ -31,58 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2e1e892c30ccfea6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "93faebd5dfd65d97",
-        "type": "tabs",
-        "dimension": 36.82008368200837,
-        "children": [
-          {
-            "id": "1cf0a9aa15bc44f2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-              }
-            }
-          },
-          {
-            "id": "9930eca375974ab5",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-              }
-            }
-          },
-          {
-            "id": "493a155ca47567a3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-              }
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,7 +123,7 @@
       {
         "id": "acda57f1214ed0a4",
         "type": "tabs",
-        "dimension": 29.79166666666667,
+        "dimension": 29.831144465290805,
         "children": [
           {
             "id": "eb3a2082cee979e2",
@@ -181,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
               }
             }
           },
@@ -198,7 +148,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 33.68055555555556,
+        "dimension": 33.67729831144465,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -206,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -235,7 +185,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 36.52777777777778,
+        "dimension": 36.49155722326454,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -280,45 +230,47 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "2e1e892c30ccfea6",
+  "active": "c33e03db2b35f19b",
   "lastOpenFiles": [
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433568682.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433522072.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433545619.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433511856.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433494358.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433475131.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433463580.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433458234.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433431038.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433425986.png",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
+    "Ch2_张成空间，维数和基.assets/20231103_1149388504.png.md",
+    "Ch2_张成空间，维数和基.assets",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md",
+    "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md",
+    "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105131613001.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105131006471.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105130951888.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105130537508.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125939453.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125807821.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125751115.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125740327.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125734773.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231105125734769.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
     "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md",
     "Chemistry/UNIT1_ The_Atoms/Atom_Structure.assets",
     "Chemistry/UNIT5_Chemical_Kinetics",
     "Chemistry/UNIT4_Transition_Metals",
     "Chemistry/UNIT3_Thermodynamics",
     "Chemistry/UNIT2_Chemical_Bonding",
-    "Chemistry/UNIT1_ The_Atoms",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.assets",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
@@ -326,7 +278,6 @@
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/___高阶知识点和练习.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
     "未命名.canvas"
   ]
 }

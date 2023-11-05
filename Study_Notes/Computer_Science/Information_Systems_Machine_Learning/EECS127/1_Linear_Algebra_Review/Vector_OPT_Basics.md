@@ -313,23 +313,19 @@
 
 
 
-<a name="kmsj3"></a>
 ## Inequality Relationship
-> **If **$U_1$**and **$U_2$**are subspaces of a finite-dimensional vector space **$V$**, then:**
+> **If $U_1$and $U_2$ are subspaces of a finite-dimensional vector space $V$**, then:
 > $\max\{dim(U_1),dim(U_2)\}\leq dim(U_1+U_2)\leq dim(V)$**。**
-> **证明: **
-> 1. **左侧不等式，因为**$U_1\subseteq U_1+U_2$**, **$U_2\subseteq U_1+U_2$**, 所以**$dim(U_1)\leq dim(U_1+U_2)$**, **$dim(U_2)\leq dim(U_1+U_2)$**, 即**$\max\{dim(U_1),dim(U_2)\}\leq dim(U_1+U_2)$**。**
+> **证明:** 
+> 1. **左侧不等式，因为**$U_1\subseteq U_1+U_2$**, $U_2\subseteq U_1+U_2$**, 所以$dim(U_1)\leq dim(U_1+U_2)$, **$dim(U_2)\leq dim(U_1+U_2)$**, 即$\max\{dim(U_1),dim(U_2)\}\leq dim(U_1+U_2)$**。**
 > 2. **右侧不等式，**
-> 
-首先我们证明$U_1+U_2\subseteq V$, $\forall \vec{u}\in U_1+U_2$, $\exists \vec{u}_1\in U_1,\vec{u}_2\in U_2$, $s.t.~~\vec{u}=\vec{u}_1+\vec{u}_2$, 因为$\vec{u}_1\in U_1\subseteq V$, $\vec{u}_2\in U_2\subseteq V$, 所以$\vec{u}_1+\vec{u}_2=\vec{u}\in V$, 于是$U_1+U_2\subseteq V$。
+> 首先我们证明$U_1+U_2\subseteq V$, $\forall \vec{u}\in U_1+U_2$, $\exists \vec{u}_1\in U_1,\vec{u}_2\in U_2$, $s.t.~~\vec{u}=\vec{u}_1+\vec{u}_2$, 因为$\vec{u}_1\in U_1\subseteq V$, $\vec{u}_2\in U_2\subseteq V$, 所以$\vec{u}_1+\vec{u}_2=\vec{u}\in V$, 于是$U_1+U_2\subseteq V$。
 > 然后我们证明$U_1+U_2$是$V$的一个子空间即可。
 >    1. 首先$\vec{0}=\vec{0}+\vec{0}\in U_1+U_2$
 >    2. 任取$\vec{n}_1,\vec{n}_2\in U_1+U_2$, $\vec{n}_1=\vec{u}_1+\vec{u}_2$($\vec{u}_1\in U_1,\vec{u}_2\in U_2$), 
-> 
-$\vec{n}_2=\vec{w}_1+\vec{w}_2$($\vec{w}_1\in U_1,\vec{w}_2\in U_2$) , 则$\vec{n}_1+\vec{n}_2=(\vec{u}_1+\vec{w}_1)+(\vec{u}_2+\vec{w}_2)\in U_1+U_2$
+> $\vec{n}_2=\vec{w}_1+\vec{w}_2$($\vec{w}_1\in U_1,\vec{w}_2\in U_2$) , 则$\vec{n}_1+\vec{n}_2=(\vec{u}_1+\vec{w}_1)+(\vec{u}_2+\vec{w}_2)\in U_1+U_2$
 >    3. 任取$\vec{n}_1\in U_1+U_2,\alpha\in \mathbf{F}$, 则$\alpha\vec{n}_1=\alpha\vec{u}_1+\alpha\vec{u}_2$($\vec{u}_1\in U_1,\vec{u}_2\in U_2)\in U_1+U_2$
-> 
-证毕。
+> 证毕。
 
 
 
