@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "c33e03db2b35f19b",
+            "id": "2c89f6b2142d3c74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
               }
             }
           },
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -230,10 +230,21 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "c33e03db2b35f19b",
+  "active": "932953190040c9d5",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.assets/20231105_1708289347.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources",
+    "Computer_Science/Computer_Systems/Machine_Structures/新建文件夹",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.assets/20231105_1708289347.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433568682.png",
@@ -244,8 +255,6 @@
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433475131.png",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433463580.png",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433458234.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433431038.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433425986.png",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
     "Ch2_张成空间，维数和基.assets/20231103_1149388504.png.md",
@@ -253,7 +262,6 @@
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md",
     "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md",
@@ -264,20 +272,12 @@
     "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
     "Chemistry/UNIT1_ The_Atoms/Atom_Structure.assets",
-    "Chemistry/UNIT5_Chemical_Kinetics",
-    "Chemistry/UNIT4_Transition_Metals",
-    "Chemistry/UNIT3_Thermodynamics",
-    "Chemistry/UNIT2_Chemical_Bonding",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/___高阶知识点和练习.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
     "未命名.canvas"
   ]
 }
