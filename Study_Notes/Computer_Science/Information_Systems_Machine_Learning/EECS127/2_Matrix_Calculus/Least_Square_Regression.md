@@ -121,12 +121,18 @@
 
 
 
-## Sensativity to Coefficient Matrix A
+## Sensativity to Coefficient Matrix 
+### Definition
 > [!def]
 > ![image.png](Least_Square_Regression.assets/20231023_2251036916.png)
 > 换句话说就是在改变$A$之后看看$\vec{x}$的变化请跨。
 > 注意到这里我们给了$\frac{\|\delta x\|_2}{\|x+\delta x\|_2}$一个上界，这和之前的$\frac{\|\delta x\|_2}{\|x\|_2}$不太一样。但是这两个值都是用于描述$\delta x$相对于原来$x$的变化量的大小。那么哪一个更好呢?
 > ![image.png](Least_Square_Regression.assets/20231023_2251033279.png)![image.png](Least_Square_Regression.assets/20231023_2251038553.png)![image.png](Least_Square_Regression.assets/20231023_2251039397.png)
+
+### Proof
+> [!proof]
+> ![](Least_Square_Regression.assets/image-20231104154212805.png)
+
 
 
 
@@ -216,6 +222,21 @@
 
 
 
+### Ridge Regression on Bounded Input
+> EECS127 Sp23 Homework 5 P2
+
+> [!example] Example
+> ![](Least_Square_Regression.assets/image-20231104155205763.png)![](Least_Square_Regression.assets/image-20231104160412875.png)![](Least_Square_Regression.assets/image-20231104160905528.png)![](Least_Square_Regression.assets/image-20231104160930362.png)
+
+
+
+
+### Ridge Regression for Data Matrix Noise
+> [!example]
+> ![](Least_Square_Regression.assets/image-20231104163203010.png)![](Least_Square_Regression.assets/image-20231104163218891.png)![](Least_Square_Regression.assets/image-20231104163231038.png)
+
+
+
 ## Tikhonov Regularization
 > [!def]
 > ![image.png](Least_Square_Regression.assets/20231023_2251223067.png)![image.png](Least_Square_Regression.assets/20231023_2251222382.png)
@@ -236,8 +257,15 @@
 > [!thm]
 > ![](Least_Square_Regression.assets/image-20231104150344063.png)
 
+#### Proof from textbook
 > [!proof]
 > ![](Least_Square_Regression.assets/image-20231104150418251.png)![](Least_Square_Regression.assets/image-20231104150439249.png)
+
+#### Proof from Duke
+> https://people.duke.edu/~hpgavin/SystemID/CourseNotes/TotalLeastSquares.pdf
+
+> [!proof]
+> ![](Least_Square_Regression.assets/image-20231104152658635.png)![](Least_Square_Regression.assets/image-20231104152712236.png)![](Least_Square_Regression.assets/image-20231104152728871.png)![](Least_Square_Regression.assets/image-20231104152745153.png)![](Least_Square_Regression.assets/image-20231104152758015.png)
 
 
 
@@ -316,6 +344,8 @@ def TLS(A, b): # (n, d), (n, 1)
     print("x: {}".format(Vh[1][0] / (Vh[1][1] / -1)))
     return np.array(Vh[1][0] / (Vh[1][1] / -1)).reshape(1,1) 
 ```
+> [!solution]
+> ![](Least_Square_Regression.assets/image-20231104152559834.png)
 
 
 

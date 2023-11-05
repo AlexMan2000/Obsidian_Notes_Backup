@@ -191,6 +191,7 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 
 
 ## Basic Properties
+> [!property]
 > **对于任意**$A\in \mathbb{S}^n_+$**,**$A\succcurlyeq0$**, 且都可以进行正交对角化得到**$A=U^T\Lambda U$**:**
 > 1. $\vec{x}^{\top}A\vec{x}\geq 0\iff$**All eigenvalues are non-negative.**
 > 
@@ -204,25 +205,27 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 
 
 
-## *Advanced Properties
-> 1. **半正定矩阵的和: **如果$A,B\in \mathbb{S}_+^n$, 则$A+B\in \mathbb{S}_+^n$。更一般的，如果$A_i\in \mathbb{S}_+^n$, 我们有$\sum_{i=1}^n A_i\in \mathbb{S}_+^n$。（Closed under addition）
+## Advanced Properties
+> [!property] 
+> 1.**半正定矩阵的和: **如果$A,B\in \mathbb{S}_+^n$, 则$A+B\in \mathbb{S}_+^n$。更一般的，如果$A_i\in \mathbb{S}_+^n$, 我们有$\sum_{i=1}^n A_i\in \mathbb{S}_+^n$。（Closed under addition）
 > 2. **半正定矩阵序列: 假设**$A_1,A_2,\cdots A_k\in \mathbb{S}^{n}_+$**(用**$(A_k\in \mathbb{S}^n_+)_{k\geq 1}$**表示矩阵序列)。如果**$\lim_{k\to \infty}A_k=A$**(表示**$\lim_{k\to \infty} (A_k)_{ij}=A_{ij},\forall 1\leq i,j \leq n$**)，则**$A\in \mathbb{S}^n_+$**:**
 > 3. **半正定矩阵的零空间:** $A\in \mathbb{S}_+^n,\vec{x}\in \mathbb{R}^n$, $\vec{x}\in \mathcal{N}(A)\iff\vec{x}^{\top}A\vec{x}=0$
 > 4. **半正定矩阵会增加特征值:** 对于$A\in \mathbb{S}^n$, $B\in \mathbb{S}^n_+$, 则: $\lambda_k(A+B)\geq \lambda_k(A), k=1,2,\cdots, n$
 > 
 ![image.png](Structured_Matrices.assets/20231023_2321509279.png)
 
-**Proof of 1**$\vec{x}^{\top}(A+B)\vec{x}=\vec{x}^{\top}A\vec{x}+\vec{x}^{\top}B\vec{x}\geq 0$, 所以$A+B\in \mathbb{S}_+^n$。
-$\vec{x}^{\top}(\sum_{i=1}^nA_i)\vec{x}=\sum_{i=1}^n\vec{x}^{\top}A_i\vec{x}\geq 0$, 所以$\sum_{i=1}^nA_i\in \mathbb{S}_+^n$。
-**Proof of 2**![image.png](Structured_Matrices.assets/20231023_2321527542.png)![image.png](Structured_Matrices.assets/20231023_2321531578.png)
-**Proof of 3**![image.png](Structured_Matrices.assets/20231023_2321551953.png)
+> [!proof]
+> **Proof of 1**
+> $\vec{x}^{\top}(A+B)\vec{x}=\vec{x}^{\top}A\vec{x}+\vec{x}^{\top}B\vec{x}\geq 0$, 所以$A+B\in \mathbb{S}_+^n$。$\vec{x}^{\top}(\sum_{i=1}^nA_i)\vec{x}=\sum_{i=1}^n\vec{x}^{\top}A_i\vec{x}\geq 0$, 所以$\sum_{i=1}^nA_i\in \mathbb{S}_+^n$。
+> **Proof of 2**![image.png](Structured_Matrices.assets/20231023_2321527542.png)![image.png](Structured_Matrices.assets/20231023_2321531578.png)**Proof of 3**![image.png](Structured_Matrices.assets/20231023_2321551953.png)
 上面的非对称矩阵实际上是无法进行`Diagonalization`的，因为$0$特征值对应的特征向量不足以张成$\mathbb{R}^2$空间。
-***Proof of 4**
+
 
 ## Congruence Transformation
 > ![image.png](Structured_Matrices.assets/20231023_2321571282.png)
 
-**Proof**![image.png](Structured_Matrices.assets/20231023_2321581365.png)
+> [!proof]
+> ![image.png](Structured_Matrices.assets/20231023_2321581365.png)
 > ![image.png](Structured_Matrices.assets/20231023_2321594761.png)
 
 
@@ -254,7 +257,8 @@ $\vec{x}^{\top}(\sum_{i=1}^nA_i)\vec{x}=\sum_{i=1}^n\vec{x}^{\top}A_i\vec{x}\geq
 > ![image.png](Structured_Matrices.assets/20231023_2322113268.png)![image.png](Structured_Matrices.assets/20231023_2322134911.png)
 
 
-### *Rank Increment by adding Dyad
+### Rank Increment by adding Dyad
+> [!important] 
 > 下面我们探究一个问题，对于$A\in \mathbb{S}^n_+$和$\vec{v}\in \mathbb{R}^n$, 探究$Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)$的取值。
 > 1. 对于$\vec{v}\vec{v}^{\top}$来说，我们知道，$\vec{v}\vec{v}^{\top}\in \mathbb{S}^n_+,\forall \vec{v}$。
 > 2. 首先我们有两个等式关系成立:
@@ -273,18 +277,19 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 >    1. $A\in \mathbb{S}_+^n,\vec{x}\in \mathbb{R}^n$, $\vec{x}\in \mathcal{N}(A)\iff\vec{x}^{\top}A\vec{x}=0$
 >    2. $A+\vec{v}\vec{v}^{\top}\in \mathbb{S}_+^n,\vec{x}\in \mathbb{R}^n$, $\vec{x}\in \mathcal{N}(A+\vec{v}\vec{v}^{\top})\iff\vec{x}^{\top}(A+\vec{v}\vec{v}^{\top})\vec{x}=0$
 > 
-所以$\forall \vec{x}\in \mathcal{N}(A+\vec{v}\vec{v}^{\top}),~\vec{x}^{\top}(A+\vec{v}\vec{v}^{\top})\vec{x}=0\implies \vec{x}^{\top}A\vec{x}=0~and~\vec{x}^{\top}\vec{v}\vec{v}^{\top}\vec{x}=0\implies \vec{x}\in \mathcal{N}(A)\$
+所以$\forall \vec{x}\in \mathcal{N}(A+\vec{v}\vec{v}^{\top}),~\vec{x}^{\top}(A+\vec{v}\vec{v}^{\top})\vec{x}=0\implies \vec{x}^{\top}A\vec{x}=0~and~\vec{x}^{\top}\vec{v}\vec{v}^{\top}\vec{x}=0\implies \vec{x}\in \mathcal{N}(A)$
 > 即我们有$\vec{x}\in \mathcal{N}(A+\vec{v}\vec{v}^{\top})\implies \vec{x}\in \mathcal{N}(A)$。
 > 因为对于$A\in\mathbb{S}^n_+$来说，$\mathcal{N}(A)=\mathcal{N}(A^{\top})=\mathcal{R}(A)^{\perp}$, 
 > $\vec{x}\in \mathcal{R}(A)\implies \vec{x}\in \mathcal{R}(A+\vec{v}\vec{v}^{\top})$
 > ![image.png](Structured_Matrices.assets/20231023_2322146525.png)
 
 
-
 ### Cauchy Matrix
+> [!example]
 > ![image.png](Structured_Matrices.assets/20231023_2322155645.png)
 
-**Proof**![image.png](Structured_Matrices.assets/20231023_2322172912.png)
+> [!proof]
+> ![image.png](Structured_Matrices.assets/20231023_2322172912.png)
 
 
 
@@ -312,9 +317,54 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 # Graphs and Graph Laplacian
 ## Laplacian Matrix
 ### Definition
+> [!def]
+> ![](Structured_Matrices.assets/image-20231104172337372.png)
+
+> [!proof] Proof Sketch
+> ![](Structured_Matrices.assets/image-20231104172318313.png)
+> 可以把$\vec{x}$想像成是在给`nodes`分配权重。
 
 
 ### Properties
+> [!property] 1 Positive-Definiteness&Non-negative Eigenvalues
+> $L\in \mathbb{S}_+^n$, 首先根据定义可知:
+> $\vec{x}^{\top}L\vec{x}=\sum\limits_{i=1}^n(x_i-x_{j})^2\geq0\forall\vec{x}\in\mathbb{R}^n$
+> 另外，因为$D$和$-A$都是对称矩阵，所以相加之后仍然是对称矩阵。
+> ![](Structured_Matrices.assets/image-20231104174317696.png)
+> 这个很显然，因为$L$是半正定矩阵。
+
+> [!property] 2 Smallest Eigenvalue is zero，its geometric multiplicity reflects number of connected components
+> ![](Structured_Matrices.assets/image-20231104173500701.png)
+> 我们有$$\begin{align}\vec{x}\in Ker(A)&\iff \vec{x}^{\top}L\vec{x}=0\\&\iff x_i=x_j\forall i\neq j\\&\iff x_i=x_j~in~all~connected~components\end{align}$$
+> 所以如果`G`是`connected`的话，即`G`只有一个`connected component`, 则一定有一个`eigenvector`, 它的每一个元素都相等。
+> ![](Structured_Matrices.assets/image-20231104174245301.png)
+
+> [!property] 3 When we add edges, $\lambda_2$ increases.
+> 因为add edges的最终结果一定会使得graph变成connected，即只有一个connected component, 此时$\lambda$从等于零变成大于零。
+
+> [!property] 4 Eigenvalues can scale with the number of vertices
+> 对于$A$这个对称矩阵来说，如果
+
+
+### Aside: Connectivity
+#### Basic Definitions
+> [!def]
+> ![](Structured_Matrices.assets/image-20231104174953622.png)
+
+
+#### Theorem
+> [!thm]
+> ![](Structured_Matrices.assets/image-20231104175427616.png)
+> 
+
+> [!lemma]
+> ![](Structured_Matrices.assets/image-20231104175306149.png)
+> 这里其实是recursively apply lemma 2.1 直到 graph is disconnected.
+
+> [!proof] Proof for lemma 2.1
+> ![](Structured_Matrices.assets/image-20231104175323831.png)
+
+
 
 
 

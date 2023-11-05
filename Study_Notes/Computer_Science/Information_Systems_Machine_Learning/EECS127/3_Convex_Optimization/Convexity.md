@@ -317,7 +317,7 @@
 
 
 ## Exercises
-### Basic Problems - Applying Definitions
+### Applying Definitions
 > [!example] Exercise 1
 > ![image.png](Convexity.assets/20231023_2247397093.png)
 > 1. 首先$S$一定是`Convex`的，因为:
@@ -333,7 +333,7 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 
 
-### Advanced Problems - Probability
+### Probability
 > [!example]
 > ![](Convexity.assets/image-20231031101329715.png)![](Convexity.assets/image-20231031101333958.png)
 > **Solution:**

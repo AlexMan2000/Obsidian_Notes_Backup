@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
       "basename": "Least_Square_Regression",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
     },
@@ -9,24 +25,12 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
     },
     {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
       "basename": "BV_cvxbook",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
     },
     {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
-    },
-    {
       "basename": "Orthonormalization",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
@@ -75,10 +79,6 @@
     {
       "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "System_Level_IO",
