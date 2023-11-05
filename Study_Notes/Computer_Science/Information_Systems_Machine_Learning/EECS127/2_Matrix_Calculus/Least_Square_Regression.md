@@ -69,6 +69,18 @@
 
 **Solution**![image.png](Least_Square_Regression.assets/20231023_2250592876.png)
 
+## Least Square as Quadratic Optimization
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231105114233364.png)![](Least_Square_Regression.assets/image-20231105114242477.png)![](Least_Square_Regression.assets/image-20231105115213972.png)![](Least_Square_Regression.assets/image-20231105115848036.png)
+
+
+
+
+
+
+
+
+
 
 # Interpretation of LS Problem
 ## Approximate Solution of Linear Equations
@@ -160,6 +172,7 @@
 
 # Variant of Least Square
 ## Weighted Least Square
+### Version 1: Minimization
 > [!important]
 > ![image.png](Least_Square_Regression.assets/20231023_2251184805.png)![image.png](Least_Square_Regression.assets/20231023_2251184434.png)
 
@@ -169,8 +182,15 @@
 **(c)**![image.png](Least_Square_Regression.assets/20231023_2251223784.png)
 
 
+### Version 2: Matrix Formula
+> EECS127 Fa22 Homework 5 P4
 
-## MLE -> Weight Least Square
+> [!important]
+> ![](Least_Square_Regression.assets/image-20231105112249108.png)![](Least_Square_Regression.assets/image-20231105112304733.png)![](Least_Square_Regression.assets/image-20231105112315689.png)![](Least_Square_Regression.assets/image-20231105112330661.png)
+
+
+
+### Version 3: MLE
 > [!important]
 > Suppose we have data points $\{(\vec{x}_1,y_1),(\vec{x}_2,y_2),\cdots, (\vec{x}_n,y_n)\}$and assume our linear model is parametrized by $\vec{w}$ where $y_i=\vec{x}_i^{\top}\vec{w}+Z_i$and $Z_i\sim N(0,\sigma_i^2)$, and $Z_i$'s are i.i.d.
 > Then we use MLE to estimate the parameter $\vec{w}$。
@@ -185,6 +205,8 @@
 > - 模型是线性的。
 > `MLE` 问题可以化简成一个`Least Square Problem`。对于一些其他的分布，不能保证化简成一个`Least Square Problem`。
 
+> [!summary]
+> ![](Least_Square_Regression.assets/image-20231105112449034.png)
 
 
 
@@ -219,6 +241,13 @@
 > $\begin{align}argmax_{\vec{w}}f(\vec{w}|\vec{Y}=\vec{y})&=argmax_{\vec{w}}\frac{f(\vec{Y}=\vec{y}|\vec{w})\cdot f(\vec{w})}{f(\vec{y})}\\&=argmax_{\vec{w}}f(\vec{Y}=\vec{y}|\vec{w})\cdot f(\vec{w})\\&=argmax_{\vec{w}}\prod_{i=1}^n\frac{exp\{-\frac{(y_i-\vec{x}_i^{\top}\vec{w})^2}{2\sigma_i^2}\}}{\sqrt{2\pi}\cdot \sigma_{i}}\times\frac{exp\{-(\vec{w}-\vec{\mu})^{\top}\Sigma_{\vec{w}}^{-1}(\vec{w}-\vec{\mu})\}}{(\sqrt{2\pi})^{n}|\Sigma_{\vec{w}}|}\\&=argmax_{\vec{w}}C\cdot exp\{\sum_{i=1}^n-\frac{(y_i-\vec{x}_i^{\top}\vec{w})}{2\sigma_i^2}-(\vec{w}-\vec{\mu})^{\top}\Sigma_{\vec{w}}^{-1}(\vec{w}-\vec{\mu})\}\\&=argmin_{\vec{w}}\sum_{i=1}^n\frac{(y_i-\vec{x}_i^{\top}\vec{w})}{2\sigma_i^2}+(\vec{w}-\vec{\mu})^{\top}\Sigma_{\vec{w}}^{-1}(\vec{w}-\vec{\mu})\\&=argmin_{\vec{w}}\|S(X\vec{w}-\vec{y})\|_2^2+\|\sqrt{\Sigma_{\vec{w}}^{-1}}(\vec{w}-\vec{\mu})\|_2^2\end{align}$。
 >
 > 其中：$S=\begin{bmatrix} \frac{1}{\sqrt{2}\sigma_1}&0&\cdots&0\\0&\frac{1}{\sqrt{2}\sigma_2}&\cdots&0\\\vdots&0&\ddots&\vdots\\0&0&\cdots&\frac{1}{\sqrt{2}\sigma_n}\end{bmatrix}$， $\Sigma_{\vec{w}}=\begin{bmatrix} \rho_1^2&0&\cdots&0\\0&\rho_2^2&\cdots&0\\\vdots&0&\ddots&\vdots\\0&0&\cdots&\rho_n^2\end{bmatrix}$
+
+> [!summary]
+> ![](Least_Square_Regression.assets/image-20231105112540184.png)![](Least_Square_Regression.assets/image-20231105112655140.png)![](Least_Square_Regression.assets/image-20231105112702167.png)
+
+
+
+
 
 
 

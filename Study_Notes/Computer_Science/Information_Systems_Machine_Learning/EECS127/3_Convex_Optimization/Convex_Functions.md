@@ -45,6 +45,12 @@
 
 
 
+### Summary
+> [!summary]
+> ![](Convex_Functions.assets/image-20231104222412190.png)![](Convex_Functions.assets/image-20231104222417717.png)![](Convex_Functions.assets/image-20231104222436453.png)![](Convex_Functions.assets/image-20231104222444734.png)
+
+
+
 
 ## Extended Value Extensions
 ### Definition
@@ -151,6 +157,16 @@
 > 	3. **Eigenshift Rules**: If the eigenvalues for $\mathbf{A}$ are $\sigma_i(\mathbf{A})$ then the eigenvalues for $\mathbf{A}+\lambda I$are $\sigma_i(\mathbf{A})+1$。
 
 
+### Sinusoidal Function
+> EECS127 Disc06 P4
+
+> [!example]
+> ![](Convex_Functions.assets/image-20231105124546001.png)![](Convex_Functions.assets/image-20231105124552611.png)![](Convex_Functions.assets/image-20231105124558134.png)
+
+
+### Log-Likelihood Function
+> [!example]
+> ![](Convex_Functions.assets/image-20231105125740327.png)![](Convex_Functions.assets/image-20231105125751115.png)![](Convex_Functions.assets/image-20231105125807821.png)
 
 
 # Operations Preserving Convexity
@@ -215,6 +231,14 @@
 > **对于**$(b)$**来说:**
 > 
 > ![](Convex_Functions.assets/image-20231101121205701.png)
+
+
+
+### Matrix-2-Norm
+> [!example]
+> ![](Convex_Functions.assets/image-20231105125939453.png)![](Convex_Functions.assets/image-20231105130537508.png)
+
+
 
 
 
@@ -470,6 +494,60 @@
 > 如果 $f$ 是凹函数且$f(x)>0,\forall x\in dom(f)$，则 $log f$ 为凹函数。
 > **Proof:** $g = logf$, $f$ 是凹函数，且$\tilde{log}(z)$在$\mathbb{R}$上单调不降，所以$g$是凹函数，即$f$是对数凹函数。
 > 总结: 凹是比对数凹更强的条件，所以上述结论的逆命题不一定成立。
+
+
+
+# Strong Convexity
+## Taylor's Theorem
+> [!thm]
+> ![](Convex_Functions.assets/image-20231104220400332.png)
+> 其中积分可以理解为`Residuals`
+
+> [!proof]
+> ![](Convex_Functions.assets/image-20231104220519742.png)
+
+
+
+
+## Definitions
+### Definition 1: Jensen's Inequality
+> [!def]
+> ![](Convex_Functions.assets/image-20231104212358864.png)
+
+> [!property] Strongly Convex -> Unique Minimizer
+> ![](Convex_Functions.assets/image-20231105130951888.png)![](Convex_Functions.assets/image-20231105131006471.png)
+
+> [!property] Convexity -> Local Minimum = Globally Minimum
+> ![](Convex_Functions.assets/image-20231105131613001.png)
+
+
+
+
+### Definition 2: First-Order Condition
+> [!def]
+> ![](Convex_Functions.assets/image-20231104222956395.png)![](Convex_Functions.assets/image-20231104222540926.png)![](Convex_Functions.assets/image-20231104223000885.png)
+> **Remarks:**
+> - 其中$\frac{\mu}{2}\|\vec{y}-\vec{x}\|^2=\frac{1}{2}(\vec{y}-\vec{x})^{\top}\begin{bmatrix} \mu&0&\cdots&0\\0&\mu&\cdots&0\\\vdots&0&\ddots&\vdots\\0&0&\cdots&\mu\end{bmatrix}(\vec{y}-\vec{x})$, 而我们知道$f(\vec{x})+\langle\nabla f(\vec{x}), \vec{y}-\vec{x}\rangle+\frac{\mu\|\vec{y}-\vec{x}\|^2}{2}$是一个`Quadratic Function`, 所以本质上如果对于可微函数$f$来说，我们能够找到一个`Quadratic Lower Bound Like this`, 那么这个函数是$\mu$-strongly convex的。 
+> - 和`Taylor Theorem`做一个对比: `Taylor Theorem`的目的是找到一个最接近原函数的下界$\begin{aligned} f(\vec{y}) \approx f(\vec{x})+\nabla^{\top}(\vec{x}) \cdot(\vec{y}-\vec{x})+\frac{1}{2}(\vec{y}-\vec{x})^{\top} \nabla^2 f(\vec{x})(\vec{y}-\vec{x})\end{aligned}$, 而$\mu$-strongly convex 只需要存在这样一个下界即可。
+> - 另外，`Taylor Theorem`中的$\nabla f(\vec{x})$在不同的$\vec{x}$下的值是不一样的，所以在不同的$\vec{x}$下这个`Quadratic Term`是会随$\vec{x}$的位置变化的，而`mu-strongly convex`的这个下界实际上是给海森矩阵规定了一个下界，使得`Hessian Matrix`在所有$\vec{x}$处都是这个下界。
+> 
+
+> [!proof]
+> ![](Convex_Functions.assets/image-20231104222551310.png)
+
+
+## Properties
+> [!property] Property: $\mu$-strongly convex=>strongly(strictly) convex
+> $\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, we have by definition of $\mu$-strongly convex that:
+> $$\begin{align}f(\theta\vec{x}+(1-\theta)\vec{y})-\frac{\mu}{2}\|\theta\vec{x}+(1-\theta)\vec{y}\|^2\\\leq\theta(f(\vec{x})-\frac{\mu}{2}\|\vec{x}\|^2)+(1-\theta)(f(\vec{y})-\frac{\mu}{2}\|\vec{y}\|^2)\end{align}$$
+> Then we rearrange the terms and could get the following:
+> $$\begin{align}f(\theta\vec{x}+(1-\theta)\vec{y})&\leq \theta f(\vec{x})+(1-\theta)f(\vec{y})-\frac{\mu}{2}(\theta\|\vec{x}\|^2+(1-\theta)\|\vec{y}\|^2)\\&+\frac{\mu}{2}\|\theta\vec{x}+(1-\theta)\vec{y}\|^2\\&<\theta f(\vec{x})+(1-\theta)f(\vec{y})-\frac{\mu}{2}(\theta\|\vec{x}\|^2+(1-\theta)\|\vec{y}\|^2)\\&+\frac{\mu}{2}(\theta^2\|\vec{x}\|^2+\theta(1-\theta)(\|\vec{x}\|^2+\|\vec{y}\|^2)+(1-\theta)^2\|\vec{y}\|^2)\\&=\theta f(\vec{x})+(1-\theta)f(\vec{y})\end{align}$$ 
+> where:
+>$$\|\vec{x}\|^2+\|\vec{y}\|^2>2\langle\vec{x}, \vec{y}\rangle \text { for } \vec{x} \neq \vec{y} .$$
+
+> [!lemma] Lemma: $g(\vec{x})$ is convex implies $g(\vec{x})+\mu\frac{\|\vec{x}\|^2}{2}$ is strongly convex
+> $$\begin{aligned}g(\theta \vec{x}+(1-\theta) \vec{y})+\frac{\mu \| \theta \vec{x}+(1-\theta)\|^2}{2} & \leq \theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left(\theta^2\|\vec{x}\|^2+2 \theta(1-\theta)\langle\vec{x}, \vec{y}\rangle+(1-\theta)^2\|\vec{y}\|^2\right) \\& \left.<\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta^2\|\vec{x}\|^2+\theta(1-\theta)\left(\| \vec{x}\left\|^2+\right\| \vec{y} \|^2\right)+(1-\theta)^2\right] \| \vec{y} \|^2\right] \\& =\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta \| \vec{x}\left\|^2+(1-\theta)\right\| \vec{y} \|^2\right] \\& =\theta\left(g(\vec{x})+\frac{\mu}{2}\|\vec{x}\|^2\right)+(1-\theta)\left[g(\vec{y})+\frac{\mu}{2}\|\vec{y}\|^2\right] .\end{aligned}$$
+
 
 
 

@@ -501,3 +501,6 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 > 
 
 
+
+# Disproving Convexity
+> 

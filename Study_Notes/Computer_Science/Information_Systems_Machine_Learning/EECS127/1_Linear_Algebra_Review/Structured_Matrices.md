@@ -1,11 +1,12 @@
 # Symmetric Matrices
 ## Basic Properties
 ### Eigendecomposition
+> [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321064469.png)
 
-**Proof - Part 1**$\overline{\vec{v}}^{\top}S\vec{v}=(\overline{\vec{v}}^{\top}S)\vec{v}=(S\overline{\vec{v}})^{\top}\vec{v}=(\overline{S\vec{v}})^{\top}\vec{v}=(\overline{\lambda \vec{v}})^{\top}\vec{v}=\overline{\lambda}^{\top}\overline{\vec{v}}^{\top}\vec{v}=\overline{\lambda}\|\vec{v}\|_2^2$
-$\overline{\vec{v}}^{\top}S\vec{v}=\overline{\vec{v}}^{\top}(S\vec{v})=\overline{\vec{v}}^{\top}\lambda \vec{v}=\lambda \overline{\vec{v}}^{\top}\vec{v}=\lambda \|\vec{v}\|_2^2$
-所以$\overline{\lambda}=\lambda$, 所以$\lambda\in \mathbb{R}$。
+> [!proof]
+> **Proof - Part 1**
+> $\overline{\vec{v}}^{\top}S\vec{v}=(\overline{\vec{v}}^{\top}S)\vec{v}=(S\overline{\vec{v}})^{\top}\vec{v}=(\overline{S\vec{v}})^{\top}\vec{v}=(\overline{\lambda \vec{v}})^{\top}\vec{v}=\overline{\lambda}^{\top}\overline{\vec{v}}^{\top}\vec{v}=\overline{\lambda}\|\vec{v}\|_2^2$,$\overline{\vec{v}}^{\top}S\vec{v}=\overline{\vec{v}}^{\top}(S\vec{v})=\overline{\vec{v}}^{\top}\lambda \vec{v}=\lambda \overline{\vec{v}}^{\top}\vec{v}=\lambda \|\vec{v}\|_2^2$。所以$\overline{\lambda}=\lambda$, 所以$\lambda\in \mathbb{R}$。
 **Proof - Part 2**![image.png](Structured_Matrices.assets/20231023_2321089914.png)
 **Proof - Part 3**![image.png](Structured_Matrices.assets/20231023_2321105736.png)![image.png](Structured_Matrices.assets/20231023_2321125711.png)
 
@@ -363,7 +364,6 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 > [!proof] Proof for lemma 2.1
 > ![](Structured_Matrices.assets/image-20231104175323831.png)
-
 
 
 

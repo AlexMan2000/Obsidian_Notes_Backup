@@ -17,8 +17,8 @@
       "type": "lemma",
       "color": "217, 103, 54",
       "icon": {
-        "name": "book-medical",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-separator-vertical"
       },
       "command": false,
       "title": "Lemma",
