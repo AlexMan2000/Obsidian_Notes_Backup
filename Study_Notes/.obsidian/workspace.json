@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2c89f6b2142d3c74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md"
               }
             }
           },
@@ -156,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -230,31 +217,37 @@
       "obsidian-custom-frames:Open Google Calendar": false
     }
   },
-  "active": "932953190040c9d5",
+  "active": "8ad83db21617d6d6",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747585944.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747567914.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747541883.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747523613.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747509247.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747492427.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747464789.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747446654.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747423153.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets/20231105_1747416116.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_Thread_Level_Programming.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.assets/20231105_1708289347.png",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources",
     "Computer_Science/Computer_Systems/Machine_Structures/新建文件夹",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.assets/20231105_1708289347.png",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources.assets",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433568682.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433522072.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433545619.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433511856.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433494358.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433475131.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433463580.png",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets/20231105_1433458234.png",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.assets",
     "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间_维数和基.md",
     "Ch2_张成空间，维数和基.assets/20231103_1149388504.png.md",
@@ -271,13 +264,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
     "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Chemistry/UNIT1_ The_Atoms/Atom_Structure.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
     "未命名.canvas"
   ]
 }

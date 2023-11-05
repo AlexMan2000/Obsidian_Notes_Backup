@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Labs_SIMD_Instructions",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md"
+    },
+    {
+      "basename": "Data-Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
+    },
+    {
+      "basename": "Thread_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+    },
+    {
+      "basename": "Process_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md"
+    },
+    {
+      "basename": "Labs_Thread_Level_Programming",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_Thread_Level_Programming.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
       "basename": "Cache Lab",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     },
     {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
     },
     {
       "basename": "Structured_Matrices",
@@ -179,26 +199,6 @@
     {
       "basename": "Modular_Arithmetic",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "Upper_Triangulation_Schur_Decomposition",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
-    },
-    {
-      "basename": "RSA_Algorithm",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md"
-    },
-    {
-      "basename": "Turing_Code",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md"
-    },
-    {
-      "basename": "Callouts&CSS Shortcuts",
-      "path": "Obsidian_User_Notes/Callouts&CSS Shortcuts.md"
     }
   ],
   "omittedPaths": [],
