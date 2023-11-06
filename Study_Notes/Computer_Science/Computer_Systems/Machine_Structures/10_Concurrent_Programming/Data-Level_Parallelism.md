@@ -68,6 +68,9 @@
 
 
 ## SIMD Matrix Multiplication
-> 
+> ![](Data-Level_Parallelism.assets/image-20231105204038302.png)
+
+
+
 
 

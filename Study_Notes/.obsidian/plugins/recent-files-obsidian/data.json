@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Labs_SIMD_Instructions",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md"
+      "basename": "Thread_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
     },
     {
       "basename": "Data-Level_Parallelism",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
     },
     {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Labs_SIMD_Instructions",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md"
     },
     {
       "basename": "Process_Level_Parallelism",
@@ -31,10 +35,6 @@
     {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
     {
       "basename": "Vector_OPT_Basics",
