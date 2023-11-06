@@ -100,6 +100,12 @@
 
 
 ## Min-max Principles⭐⭐⭐⭐⭐
+### Useful Lemmas
+> [!lemma] Lemma 1: Minimum of $\vec{x}^{\top}A\vec{x}$, where $\|\vec{x}\|_2=1$ and $A\in \mathbb{S}$
+> ![](Structured_Matrices.assets/image-20231106112728113.png)
+
+
+
 ### Poincare Inequality - 4.4
 > [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321266493.png)
@@ -115,14 +121,43 @@ $\begin{aligned}dim(\mathcal{Q}+\mathcal{V})&=dim(\mathcal{Q})+dim(\mathcal{V})-
 **第二部分的证明如下:**
 步骤基本一样，就是说我们要认识到，对于矩阵$A$的特征值$\vec{v}$，满足$A\vec{v}=\lambda \vec{v}$, 则矩阵$-A$的特征值满足$-A\vec{v}=(-\lambda)\vec{v}$, 即$A$和$-A$的特征值的转化通过去负即可实现。
 $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\&\leq \lambda_k(-A)\sum_{i=k}^n\zeta_i^2\\&=(-\lambda_{n-k+1}(A))\sum_{i=k}^n\zeta_i^2\\&=-\lambda_{n-k+1}(A)\end{aligned}$
-于是$\vec{y}^{\top}A\vec{y}\geq \lambda_{n-k+1}$
+于是$\vec{y}^{\top}A\vec{y}\geq \lambda_{n-k+1}(A)$。
+当然我们也可以仿照上面的证明过程，取$U_k=\begin{bmatrix} \vec{u}_1&\cdots\vec{u}_{n-k+1}\end{bmatrix}$ 来证明。
 
-### Min-max Principles
+
+### Min-max Main Theorem
+
+#### K-th largest eigenvalues
 > [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321298439.png)
 
-> [!proof]
-> ![image.png](Structured_Matrices.assets/20231023_2321304323.png)
+> [!proof] Detailed Proof
+> 首先我们证明$\lambda_k(A)=\max_{dim(V)=k}\min_{\vec{x}\in V, \|\vec{x}\|_2=1}\vec{x}^{\top}A \vec{x}$.
+> 令$\mu_k(A)=\max_{dim(V)=k}\min_{\vec{x}\in V, \|\vec{x}\|_2=1}\vec{x}^{\top}A \vec{x}$, 我们有:
+> 1. $u_k(A)\leq\max_{V,dim(V)=k}\lambda_k(A)=\lambda_k(A)$
+> 2. 令$V=\begin{bmatrix} \vec{u}_1,\cdots,\vec{u}_k\end{bmatrix}$, 此时$u_k(A)=\min_{\vec{x}\in V,dim(V)=k}\vec{x}^{\top}A\vec{x}\geq\lambda_k(A)$, 此时我们取等号。
+> 
+> 第二个等式我们运用上述的结果来证明: 
+> 我们有$$\begin{align}\lambda_{k}(A)&=\lambda_{n-k+1}(-A)\\&=\max_{V,dim(V)=n-k+1}\min_{\vec{x}\in V,\|\vec{x}\|=1}\vec{x}^{\top}(-A)\vec{x}\\&=\min_{V,dim(V)=n-k+1}\max_{\vec{x}\in V,\|\vec{x}\|_2=1}\vec{x}^{\top}A\vec{x}\end{align}$$
+
+
+#### K-th smallest eigenvalues
+> [!thm]
+> Let $A \in \mathrm{S}^n$ and let $\mathcal{V}$ denote a subspace of $\mathrm{R}^n$. Then, for $k \in\{1, \ldots, n\}$ it holds that$$
+\begin{aligned}
+\lambda_{n-k+1}(A) & =\max _{\operatorname{dim} \mathcal{V}=n-k+1} \min _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x \\
+& =\min _{\operatorname{dim} \mathcal{V}=k} \max _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x .
+\end{aligned}
+$$
+
+> [!proof] Detailed Proof
+> 首先我们证明$\lambda_{n-k+1}(A)=\max_{dim(V)=n-k+1}\min_{\vec{x}\in V, \|\vec{x}\|_2=1}\vec{x}^{\top}A \vec{x}$.
+> 令$\mu_{n-k+1}(A)=\max_{dim(V)=n-k+1}\min_{\vec{x}\in V, \|\vec{x}\|_2=1}\vec{x}^{\top}A \vec{x}$, 我们有:
+> 1. $u_{n-k+1}(A)\geq\max_{V,dim(V)=n-k+1}\lambda_k(A)=\lambda_{n-k+1}(A)$
+> 2. 令$V=\begin{bmatrix} \vec{u}_k,\cdots,\vec{u}_n\end{bmatrix}$, 此时$u_{n-k+1}(A)=\min_{\vec{x}\in V,dim(V)=n-k+1}\vec{x}^{\top}A\vec{x}\leq\lambda_{n-k+1}(A)$, 此时我们取等号。
+> 
+> 第二个等式我们运用上述的结果来证明: 
+> 我们有$$\begin{align}\lambda_{n-k+1}(A)&=\lambda_{k}(-A)\\&=\max_{V,dim(V)=k}\min_{\vec{x}\in V,\|\vec{x}\|=1}\vec{x}^{\top}(-A)\vec{x}\\&=\min_{V,dim(V)=k}\max_{\vec{x}\in V,\|\vec{x}\|_2=1}\vec{x}^{\top}A\vec{x}\end{align}$$
 
 
 ### Applications - Eigenvalue Increments
@@ -135,17 +170,20 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 
 ## Important Symmetric Matrices
 ### Sample Covariance Matrix
+> [!example]
 > ![image.png](Structured_Matrices.assets/20231023_2321348554.png)
 
 
 
 
 ### Gram Matrix
+> [!example]
 > ![image.png](Structured_Matrices.assets/20231023_2321359155.png)![image.png](Structured_Matrices.assets/20231023_2321371678.png)
 
 
 
 ## Exercises
+> [!example]
 > **HW02 Sp23**
 > ![image.png](Structured_Matrices.assets/20231023_2321397597.png)![image.png](Structured_Matrices.assets/20231023_2321404903.png)![image.png](Structured_Matrices.assets/20231023_2321423940.png)
 
@@ -388,3 +426,88 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ## Applications: Spectral Clustering Algorithm
+
+
+
+### Code
+```python
+# Full Algorithm Packages
+class Spectral_Graph_Clustering_Algorithm():
+    
+    def __init__(self, filename):
+        self.filepath = filename
+        self.A = self.load_data(filename)
+        
+    
+    def load_data(self, filepath):
+        A = np.loadtxt(filepath)
+        return A
+    
+    def compute_L_A_D(self, A, normalized = True):
+        D = np.diag(A.sum(axis = 1))
+        L = D - A
+        D_sqrt = np.diag(np.power(A.sum(axis = 1),- 0.5))
+        L_norm = D_sqrt @ L @ D_sqrt
+        L_norm
+        return L_norm if normalized else L
+    
+    def compute_data_for_KMeans(self,L,k):
+        eigenvalues, eigenvectors = np.linalg.eigh(L)
+        
+        data_matrix = eigenvectors[:, 1:k]
+        
+        self.eigenmatrix = data_matrix
+        
+        return data_matrix
+        
+    
+    def perform_KMeans(self,data, k):
+        import pandas as pd
+        from functools import reduce
+        kmeans = KMeans(n_clusters=k, random_state=0).fit(data)
+        labels = kmeans.labels_
+
+        return labels
+        
+    
+    def reorder_adj_matrix(self,A,k):
+        point_label_df = pd.DataFrame(np.hstack((points,labels.reshape(-1,1))))
+        concatenated = reduce(lambda accu, curr: accu + curr,[list(point_label_df[point_label_df[point_label_df.columns[-1]]==i].index) for i in range(k)])
+        reordered_adj = np.zeros_like(A)
+        counter = 0
+        for i in concatenated:
+            reordered_adj[counter,:] = A[i,:]
+            reordered_adj[:,counter] = A[:,i]
+            counter += 1
+            
+        return reordered_adj
+    
+    def fit(self, k, normalized = True):
+        A = self.load_data(self.filepath)
+        L = self.compute_L_A_D(A)
+        data_matrix = self.compute_data_for_KMeans(L, k)
+        labels = self.perform_KMeans(data_matrix, k)
+        reordered_adj = self.reorder_adj_matrix(A,k)
+        self.reordered_adj = reordered_adj
+        self.L = L
+        return reordered_adj
+        
+    
+    def plot_adj_matrix(self,):
+        plt.imshow(self.reordered_adj, aspect='equal',cmap='Greys',  interpolation='none')
+    
+    def plot_clusters(self,):
+        plt.scatter(self.eigenmatrix[:,0],self.eigenmatrix[:,1])
+        plt.show()
+
+    
+
+adj_filepath = "./adjacency.txt"
+SGCA = Spectral_Graph_Clustering_Algorithm(adj_filepath)
+
+SGCA.load_data(adj_filepath)
+reordered_adj = SGCA.fit(k = 6)
+SGCA.plot_adj_matrix()
+# SGCA.plot_clusters()
+plt.show()
+```
