@@ -10,27 +10,24 @@
 **Proof - Part 2**![image.png](Structured_Matrices.assets/20231023_2321089914.png)
 **Proof - Part 3**![image.png](Structured_Matrices.assets/20231023_2321105736.png)![image.png](Structured_Matrices.assets/20231023_2321125711.png)
 
-### Calculating Eigenvalues
+### Calculating Eigenvalues - Four Methods
+> [!important]
 > ![image.png](Structured_Matrices.assets/20231023_2321128391.png)![image.png](Structured_Matrices.assets/20231023_2321135545.png)
 
-
-#### Method 1: Using Eigenvector orthogonality
+> [!example] Method 1: Using Eigenvector orthogonality
 > ![image.png](Structured_Matrices.assets/20231023_2321146450.png)
 
 
-#### Method 2: Using Frobenius Norm
+> [!example] Method 2: Using Frobenius Norm
 > ![image.png](Structured_Matrices.assets/20231023_2321152712.png)
 
 
-
-#### Method 3: Characteristic Equations
-> $(\lambda-2)^2-4=\lambda^2-4\lambda=0$, $\lambda_1=4,\lambda_2=0$
-
+> [!example] Method 3: Characteristic Equations
+ $(\lambda-2)^2-4=\lambda^2-4\lambda=0$, $\lambda_1=4,\lambda_2=0$
 
 
-#### Method 4: Observation
+> [!example] Method 4: Observation
 > 观察到矩阵的列之和为定值$4$, 此时我们知道必有一个特征值为$4$。同时矩阵的迹为$4$, 所以剩下的一个特征值是$0$。
-
 
 
 ### Diagonalization
@@ -99,7 +96,7 @@
 
 
 
-## Min-max Principles⭐⭐⭐⭐⭐
+## Min-max Principles 
 ### Useful Lemmas
 > [!lemma] Lemma 1: Minimum of $\vec{x}^{\top}A\vec{x}$, where $\|\vec{x}\|_2=1$ and $A\in \mathbb{S}$
 > ![](Structured_Matrices.assets/image-20231106112728113.png)
@@ -125,9 +122,7 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 当然我们也可以仿照上面的证明过程，取$U_k=\begin{bmatrix} \vec{u}_1&\cdots\vec{u}_{n-k+1}\end{bmatrix}$ 来证明。
 
 
-### Min-max Main Theorem
-
-#### K-th largest eigenvalues
+### K-th largest eigenvalues
 > [!thm]
 > ![image.png](Structured_Matrices.assets/20231023_2321298439.png)
 
@@ -141,14 +136,11 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 > 我们有$$\begin{align}\lambda_{k}(A)&=\lambda_{n-k+1}(-A)\\&=\max_{V,dim(V)=n-k+1}\min_{\vec{x}\in V,\|\vec{x}\|=1}\vec{x}^{\top}(-A)\vec{x}\\&=\min_{V,dim(V)=n-k+1}\max_{\vec{x}\in V,\|\vec{x}\|_2=1}\vec{x}^{\top}A\vec{x}\end{align}$$
 
 
-#### K-th smallest eigenvalues
+
+
+### K-th smallest eigenvalues
 > [!thm]
-> Let $A \in \mathrm{S}^n$ and let $\mathcal{V}$ denote a subspace of $\mathrm{R}^n$. Then, for $k \in\{1, \ldots, n\}$ it holds that$$
-\begin{aligned}
-\lambda_{n-k+1}(A) & =\max _{\operatorname{dim} \mathcal{V}=n-k+1} \min _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x \\
-& =\min _{\operatorname{dim} \mathcal{V}=k} \max _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x .
-\end{aligned}
-$$
+> Let $A \in \mathrm{S}^n$ and let $\mathcal{V}$ denote a subspace of $\mathrm{R}^n$. Then, for $k \in\{1, \ldots, n\}$ it holds that$$\begin{aligned}\lambda_{n-k+1}(A) & =\max _{\operatorname{dim} \mathcal{V}=n-k+1} \min _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x \\& =\min _{\operatorname{dim} \mathcal{V}=k} \max _{x \in \mathcal{V},\|x\|_2=1} x^{\top} A x .\end{aligned}$$
 
 > [!proof] Detailed Proof
 > 首先我们证明$\lambda_{n-k+1}(A)=\max_{dim(V)=n-k+1}\min_{\vec{x}\in V, \|\vec{x}\|_2=1}\vec{x}^{\top}A \vec{x}$.
@@ -158,6 +150,7 @@ $$
 > 
 > 第二个等式我们运用上述的结果来证明: 
 > 我们有$$\begin{align}\lambda_{n-k+1}(A)&=\lambda_{k}(-A)\\&=\max_{V,dim(V)=k}\min_{\vec{x}\in V,\|\vec{x}\|=1}\vec{x}^{\top}(-A)\vec{x}\\&=\min_{V,dim(V)=k}\max_{\vec{x}\in V,\|\vec{x}\|_2=1}\vec{x}^{\top}A\vec{x}\end{align}$$
+
 
 
 ### Applications - Eigenvalue Increments
@@ -182,10 +175,11 @@ $$
 
 
 
-## Exercises
+### Exercises
 > [!example]
 > **HW02 Sp23**
 > ![image.png](Structured_Matrices.assets/20231023_2321397597.png)![image.png](Structured_Matrices.assets/20231023_2321404903.png)![image.png](Structured_Matrices.assets/20231023_2321423940.png)
+
 
 
 # Dyads（二分体矩阵）

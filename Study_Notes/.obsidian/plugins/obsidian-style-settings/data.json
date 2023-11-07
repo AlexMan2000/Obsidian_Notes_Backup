@@ -1,6 +1,5 @@
 {
   "blue-topaz-theme@@bt-status-on": false,
-  "blue-topaz-theme@@outline-style": "logseq-outline-style",
   "blue-topaz-theme@@file-bg-shape-option": "file-shape-default",
   "blue-topaz-theme@@layout-style-options": "layout-style-options-default",
   "blue-topaz-theme@@toggle-calendar-shadow": true,
@@ -38,5 +37,9 @@
   "blue-topaz-theme@@admonition-bg-color-same": false,
   "blue-topaz-theme@@style-options-for-admonition-plugin": true,
   "Blue-Topaz-Codebox-Highlight@@mute-code-indent-line": false,
-  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": true
+  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": true,
+  "blue-topaz-theme@@quiet-outline-optimize": true,
+  "blue-topaz-theme@@rainbow-ordered-list": false,
+  "blue-topaz-theme@@rainbow-checkbox": false,
+  "blue-topaz-theme@@outline-style": "logseq-outline-style"
 }

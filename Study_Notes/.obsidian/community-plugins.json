@@ -6,7 +6,6 @@
   "obsidian-custom-attachment-location",
   "dataview",
   "obsidian-latex-suite",
-  "obsidian-outliner",
   "table-editor-obsidian",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-kanban",
@@ -23,5 +22,8 @@
   "obsius-publish",
   "templater-obsidian",
   "obsidian-tasks-plugin",
-  "obsidian-admonition"
+  "obsidian-admonition",
+  "editing-toolbar",
+  "obsidian-outliner",
+  "obsidian-quiet-outline"
 ]

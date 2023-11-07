@@ -5,16 +5,32 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
     {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
       "basename": "Vector_OPT_Basics",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
     },
     {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Related_Resources.md"
+    },
+    {
       "basename": "PCA_Low-rank_Approximation",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "Thread_Level_Parallelism",
@@ -49,10 +65,6 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
     },
     {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
       "basename": "Ch2_张成空间，维数和基",
       "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
     },
@@ -69,16 +81,8 @@
       "path": "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md"
     },
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
       "basename": "Convexity",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
@@ -191,14 +195,6 @@
     {
       "basename": "MIT6_042JF10_chap06",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap06.pdf"
-    },
-    {
-      "basename": "Related Resources",
-      "path": "Computer_Science/Discrete_Mathematics/Related Resources.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
     }
   ],
   "omittedPaths": [],

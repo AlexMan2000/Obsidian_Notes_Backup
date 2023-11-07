@@ -2,9 +2,7 @@
   "accentColor": "#8e46c8",
   "baseFontSize": 25,
   "cssTheme": "Blue Topaz",
-  "enabledCssSnippets": [
-    "self-added-callouts",
-    "callout-type-setting"
-  ],
-  "theme": "moonstone"
+  "enabledCssSnippets": [],
+  "theme": "moonstone",
+  "showViewHeader": true
 }
