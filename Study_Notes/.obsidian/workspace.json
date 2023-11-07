@@ -100,7 +100,30 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 43.06049822064057,
+        "dimension": 30,
+        "children": [
+          {
+            "id": "abd22396395eb00b",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "2bfcad073fc70b2f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "ac5e674590e10608",
+        "type": "tabs",
+        "dimension": 13.88888888888889,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -130,30 +153,14 @@
                 "unlinkedCollapsed": true
               }
             }
-          },
-          {
-            "id": "2bfcad073fc70b2f",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "abd22396395eb00b",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 56.93950177935943,
+        "dimension": 56.111111111111114,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -198,7 +205,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "91138db70701010e",
+  "active": "abd22396395eb00b",
   "lastOpenFiles": [
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Untitled.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
