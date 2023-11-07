@@ -1,7 +1,7 @@
 # Symmetric Matrices
 ## Basic Properties
 ### Eigendecomposition
-> [!thm]
+> [!thm] Theorem
 > ![image.png](Structured_Matrices.assets/20231023_2321064469.png)
 
 > [!proof]

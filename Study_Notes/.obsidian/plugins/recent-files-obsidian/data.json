@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Bivariate_Multivariate_Distributions",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
+    },
+    {
+      "basename": "Multivariate_Parametric_Models",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Multivariate_Parametric_Models.md"
+    },
+    {
       "basename": "Structured_Matrices",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
@@ -87,10 +99,6 @@
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
     },
     {
       "basename": "cvxbook-solutions",
@@ -191,10 +199,6 @@
     {
       "basename": "MIT6_042JF10_chap05",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap05.pdf"
-    },
-    {
-      "basename": "MIT6_042JF10_chap06",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap06.pdf"
     }
   ],
   "omittedPaths": [],
