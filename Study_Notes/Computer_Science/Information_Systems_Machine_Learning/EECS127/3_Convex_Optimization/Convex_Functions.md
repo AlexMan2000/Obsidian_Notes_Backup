@@ -498,18 +498,60 @@
 
 
 # Strong Convexity
-## Taylor's Theorem
+## Mathematical Preliminaries
+### Taylor Theorem
+#### Precise Statement
+> [!important]
+> ![](Convex_Functions.assets/image-20231108121240259.png)
+
+#### Remainder Formula
+> [!important] Mean-Value Formulation
+> ![](Convex_Functions.assets/image-20231108121316293.png)
+
+> [!important] Integral Formulation
+> ![](Convex_Functions.assets/image-20231108121340381.png)
+
+
+#### Vectorized Theorem
 > [!thm]
 > ![](Convex_Functions.assets/image-20231104220400332.png)
 > 其中积分可以理解为`Residuals`
 
 > [!proof]
 > ![](Convex_Functions.assets/image-20231104220519742.png)
+> 上面$(8.1.4)$有一些小错误，应该是$\int_0^tsg''(s)ds$
 
 
 
+### Lipschitz Smoothness
+> [!important] 
+> 注意这个概念和`Lipschitz Continuity`不一样:
+> ![](Convex_Functions.assets/image-20231108112104019.png)
 
-## Definitions
+
+#### Definition
+> [!def]
+> ![](Convex_Functions.assets/image-20231108104402589.png)
+
+#### Lemmas  
+> [!lemma]
+> ![](Convex_Functions.assets/image-20231108104439094.png)![](Convex_Functions.assets/image-20231108104447726.png)![](Convex_Functions.assets/image-20231108111629862.png)
+
+> [!proof] Proof 12.1.1
+> ![](Convex_Functions.assets/image-20231108124517995.png)
+
+> [!proof] Proof 12.1.2
+> ![](Convex_Functions.assets/image-20231108111333971.png)
+
+> [!proof] Proof 12.1.3
+> The first part follows from the first order condition of a convex function and lemma 12.1.2 
+> The second part follows from 
+
+> [!proof] Proof 8.1.7
+> By lemma 12.1.2 we have:
+> ![](Convex_Functions.assets/image-20231108111707483.png)
+
+## mu-Strongly Convex Definitions
 ### Definition 1: Jensen's Inequality
 > [!def]
 > ![](Convex_Functions.assets/image-20231104212358864.png)
@@ -525,7 +567,7 @@
 
 ### Definition 2: First-Order Condition
 > [!def]
-> ![](Convex_Functions.assets/image-20231104222956395.png)![](Convex_Functions.assets/image-20231104222540926.png)![](Convex_Functions.assets/image-20231104223000885.png)
+> ![](Convex_Functions.assets/image-20231104222956395.png)![](Convex_Functions.assets/image-20231108102725005.png)![](Convex_Functions.assets/image-20231104222540926.png)![](Convex_Functions.assets/image-20231104223000885.png)
 > **Remarks:**
 > - 其中$\frac{\mu}{2}\|\vec{y}-\vec{x}\|^2=\frac{1}{2}(\vec{y}-\vec{x})^{\top}\begin{bmatrix} \mu&0&\cdots&0\\0&\mu&\cdots&0\\\vdots&0&\ddots&\vdots\\0&0&\cdots&\mu\end{bmatrix}(\vec{y}-\vec{x})$, 而我们知道$f(\vec{x})+\langle\nabla f(\vec{x}), \vec{y}-\vec{x}\rangle+\frac{\mu\|\vec{y}-\vec{x}\|^2}{2}$是一个`Quadratic Function`, 所以本质上如果对于可微函数$f$来说，我们能够找到一个`Quadratic Lower Bound Like this`, 那么这个函数是$\mu$-strongly convex的。 
 > - 和`Taylor Theorem`做一个对比: `Taylor Theorem`的目的是找到一个最接近原函数的下界$\begin{aligned} f(\vec{y}) \approx f(\vec{x})+\nabla^{\top}(\vec{x}) \cdot(\vec{y}-\vec{x})+\frac{1}{2}(\vec{y}-\vec{x})^{\top} \nabla^2 f(\vec{x})(\vec{y}-\vec{x})\end{aligned}$, 而$\mu$-strongly convex 只需要存在这样一个下界即可。
@@ -537,6 +579,7 @@
 
 
 ## Properties
+###  mu-strongly => strongly
 > [!property] Property: $\mu$-strongly convex=>strongly(strictly) convex
 > $\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, we have by definition of $\mu$-strongly convex that:
 > $$\begin{align}f(\theta\vec{x}+(1-\theta)\vec{y})-\frac{\mu}{2}\|\theta\vec{x}+(1-\theta)\vec{y}\|^2\\\leq\theta(f(\vec{x})-\frac{\mu}{2}\|\vec{x}\|^2)+(1-\theta)(f(\vec{y})-\frac{\mu}{2}\|\vec{y}\|^2)\end{align}$$
@@ -545,9 +588,27 @@
 > where:
 >$$\|\vec{x}\|^2+\|\vec{y}\|^2>2\langle\vec{x}, \vec{y}\rangle \text { for } \vec{x} \neq \vec{y} .$$
 
-> [!lemma] Lemma: $g(\vec{x})$ is convex implies $g(\vec{x})+\mu\frac{\|\vec{x}\|^2}{2}$ is strongly convex
+> [!corollary] Corollary: $g(\vec{x})$ is convex implies $g(\vec{x})+\mu\frac{\|\vec{x}\|^2}{2}$ is strongly convex
 > $$\begin{aligned}g(\theta \vec{x}+(1-\theta) \vec{y})+\frac{\mu \| \theta \vec{x}+(1-\theta)\|^2}{2} & \leq \theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left(\theta^2\|\vec{x}\|^2+2 \theta(1-\theta)\langle\vec{x}, \vec{y}\rangle+(1-\theta)^2\|\vec{y}\|^2\right) \\& \left.<\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta^2\|\vec{x}\|^2+\theta(1-\theta)\left(\| \vec{x}\left\|^2+\right\| \vec{y} \|^2\right)+(1-\theta)^2\right] \| \vec{y} \|^2\right] \\& =\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta \| \vec{x}\left\|^2+(1-\theta)\right\| \vec{y} \|^2\right] \\& =\theta\left(g(\vec{x})+\frac{\mu}{2}\|\vec{x}\|^2\right)+(1-\theta)\left[g(\vec{y})+\frac{\mu}{2}\|\vec{y}\|^2\right] .\end{aligned}$$
 
+
+### Quadratic Bounds
+#### Quadratic Lower Bound
+> [!important]
+> 本章节主要介绍$\mu$-strongly convex 的一个重要性质。我们知道对于一个凸函数来说，他的下界是其一阶泰勒估计。而$\mu$-strongly convex function的一个重要性质是: 他的下界是一个二次函数, 二次函数的系数由$\mu$决定。
+> ![](Convex_Functions.assets/image-20231108104059403.png)
+
+
+
+#### Quadratic Upper Bound
+> [!important]
+> 对于一个$\mu$-strongly且$M$-Lipschitz Smooth的函数来说，其有二阶上界。
+> ![](Convex_Functions.assets/image-20231108124744800.png)![](Convex_Functions.assets/image-20231108124750721.png)
+
+
+### Bounds on Hessian
+> [!corollary]
+> ![](Convex_Functions.assets/image-20231108125028666.png)
 
 
 

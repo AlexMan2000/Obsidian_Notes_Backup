@@ -1,8 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
+    },
+    {
+      "basename": "Upper_Triangulation_Schur_Decomposition",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
+    },
+    {
+      "basename": "Orthonormalization",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
+      "basename": "Discretization_System_ID",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
+    },
+    {
+      "basename": "20230722_0934527652",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.assets/20230722_0934527652.png"
+    },
+    {
+      "basename": "_Ch2_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Ch1_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
       "basename": "Convex_Problems",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Turing_Code",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md"
+    },
+    {
+      "basename": "RSA_Algorithm",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md"
     },
     {
       "basename": "Bivariate_Multivariate_Distributions",
@@ -29,20 +85,12 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Related_Resources.md"
     },
     {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
       "basename": "Matrix_Basics",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
     },
     {
       "basename": "Vector_Calculus",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "Thread_Level_Parallelism",
@@ -73,10 +121,6 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     },
     {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_Descent_Method/Gradient_Descent.md"
-    },
-    {
       "basename": "Ch2_张成空间，维数和基",
       "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
     },
@@ -97,16 +141,8 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     },
     {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
       "basename": "cvxbook-solutions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
     },
     {
       "basename": "Drawing 2023-11-05 09.54.46.excalidraw",
@@ -119,10 +155,6 @@
     {
       "basename": "SVD_Pseudoinverse",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "Orthonormalization",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
     },
     {
       "basename": "20231023_2251198964",
@@ -149,10 +181,6 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
     },
     {
-      "basename": "Discretization_System_ID",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
-    },
-    {
       "basename": "Untitled",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/Untitled.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "1.11_Autonomous_Equations",
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.11_Autonomous_Equations.md"
-    },
-    {
-      "basename": "Circular_Motion",
-      "path": "Physics/8.01SC/3_Circular_Motion/Circular_Motion.md"
-    },
-    {
-      "basename": "Newton's_Law_of_Motion",
-      "path": "Physics/8.01SC/2_Newton_Laws/Newton's_Law_of_Motion.md"
-    },
-    {
-      "basename": "Worked_Examples",
-      "path": "Physics/8.01SC/1_Kinematics_Dynamics/Worked_Examples.md"
-    },
-    {
-      "basename": "2D_Kinematics",
-      "path": "Physics/8.01SC/1_Kinematics_Dynamics/2D_Kinematics.md"
-    },
-    {
-      "basename": "4 Stable Matching",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
-    },
-    {
-      "basename": "Stable Matching Problem",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
-    },
-    {
-      "basename": "MIT6_042JF10_chap05",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/MIT6_042JF10_chap05.pdf"
     }
   ],
   "omittedPaths": [],

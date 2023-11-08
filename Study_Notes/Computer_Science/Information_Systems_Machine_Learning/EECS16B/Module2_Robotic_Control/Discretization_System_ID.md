@@ -28,13 +28,14 @@
 > ![image.png](./Discretization_System_ID.assets/20230722_0934298784.png)![image.png](./Discretization_System_ID.assets/20230722_0934296012.png)
 
 
-
 ### Solving Process
-> $\begin{aligned}& \vec{x}_d[i]=A_d \vec{x}_d[i-1]+B_d \vec{u}_d[i-1] \\& =A_d(A_d \vec{x}_d[i-2]+B_d \vec{u}_d[i-2])+B_d \vec{u}_d[i-1] \\& =A_d^2 \vec{x}_d[i-2]+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& =A_d^2(A_d \vec{x}_d[i-3]+B_d \vec{u}_d[i-3])+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& =A_d^3 \vec{x}_d[i-3]+A_d^2 B \vec{u}_d[i-3]+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& = \\& =A_d^{i-1}(A_d \vec{x}_d[0]+B_d \vec{u}_d[0])+\sum_{k=1}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k] \\& =A_d^i \vec{x}_d[0]+\sum_{k=0}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k] \\& =A_d^i \vec{x}_0+\sum_{k=0}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k]\end{aligned}$
+>[!proof]
+>$\begin{aligned}& \vec{x}_d[i]=A_d \vec{x}_d[i-1]+B_d \vec{u}_d[i-1] \\& =A_d(A_d \vec{x}_d[i-2]+B_d \vec{u}_d[i-2])+B_d \vec{u}_d[i-1] \\& =A_d^2 \vec{x}_d[i-2]+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& =A_d^2(A_d \vec{x}_d[i-3]+B_d \vec{u}_d[i-3])+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& =A_d^3 \vec{x}_d[i-3]+A_d^2 B \vec{u}_d[i-3]+A_d B_d \vec{u}_d[i-2]+B_d \vec{u}_d[i-1] \\& = \\& =A_d^{i-1}(A_d \vec{x}_d[0]+B_d \vec{u}_d[0])+\sum_{k=1}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k] \\& =A_d^i \vec{x}_d[0]+\sum_{k=0}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k] \\& =A_d^i \vec{x}_0+\sum_{k=0}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k]\end{aligned}$
 
 
 
 ### Validation Process
+> [!important]
 > 我们需要验证$\vec{x}_d[i]=A_d^i \vec{x}_0+\sum_{k=0}^{i-1} A_d^{i-k-1} B_d \vec{u}_d[k]$是否满足$(3)$和$(4)$。
 > 1. **验证**$(3)$**:**
 >    1. 等式左侧:$\begin{aligned}\vec{x}[i+1]&=A_d^{i+1} \vec{x}_0+\sum_{k=0}^{i} A_d^{i-k} B_d \vec{u}[k]\end{aligned}$
@@ -238,15 +239,19 @@ $\vec{x}(0)=e^{A\times 0}\vec{x}_0=\vec{x}_0$, 满足第二个条件， 证毕�
 
 ### When A is Invertible
 #### Diagonal Version
+> [!thm]
 > ![image.png](./Discretization_System_ID.assets/20230722_0934318366.png)
 
-**Proof**![image.png](./Discretization_System_ID.assets/20230722_0934318254.png)![image.png](./Discretization_System_ID.assets/20230722_0934313593.png)![image.png](./Discretization_System_ID.assets/20230722_0934316509.png)![image.png](./Discretization_System_ID.assets/20230722_0934313645.png)
+> [!proof]
+> ![image.png](./Discretization_System_ID.assets/20230722_0934318254.png)![image.png](./Discretization_System_ID.assets/20230722_0934313593.png)![image.png](./Discretization_System_ID.assets/20230722_0934316509.png)![image.png](./Discretization_System_ID.assets/20230722_0934313645.png)
 **Side Notes**![image.png](./Discretization_System_ID.assets/20230722_0934314203.png)
 
 #### General Version
+> [!thm]
 > ![image.png](./Discretization_System_ID.assets/20230722_0934315388.png)
 
-**Proof**假设现在我们要求当$t\in [i\Delta, (i+1)\Delta)$上的$\vec{x}_c(t)$的情况，令$t_{int}=t-i\Delta$, 则我们根据[Continuous Solution](#YCFQb)有:
+> [!proof]
+> 假设现在我们要求当$t\in [i\Delta, (i+1)\Delta)$上的$\vec{x}_c(t)$的情况，令$t_{int}=t-i\Delta$, 则我们根据[Continuous Solution](#YCFQb)有:
 $\begin{aligned}\vec{x}_c(t_{int})&=Ve^{\Lambda t_{int}}V^{-1}\vec{x}_c(t_{int}=0)+\int_0^{t_{int}}Ve^{\Lambda(t_{int}-\tau)}V^{-1}B_c\vec{u}_d[i]d\tau\\&=Ve^{\Lambda(t-i\Delta)}V^{-1}\vec{x}_d[i]+\int_0^{t-i\Delta}Ve^{\Lambda (t-i\Delta-\tau)}V^{-1}B_c\vec{u}_d[i]d\tau\end{aligned}$
 其中$A_c=V\Lambda V^{-1}$。
 因为$\vec{x}_d[i+1]=\vec{x}_c(t_{int}=\Delta)$, 所以$t=(i+1)\Delta$, 即:

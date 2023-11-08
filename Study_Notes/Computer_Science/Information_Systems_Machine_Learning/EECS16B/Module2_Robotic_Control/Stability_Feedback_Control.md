@@ -33,12 +33,14 @@
 ### Boundedness of Vector Sequences and Functions
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934518040.png)
 
-**Proof of Lemma 17 Discrete Case****(i): **$(\implies)$如果$\vec{u}_d$是有界的，则根据定义，$\|\vec{u}_d[i]\|\leq R_u,\forall i$, 即$\forall i,\exists R_u~s.t.~~\|\vec{u}_d[i]\|=\sqrt{|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2}\leq R_u$
-所以$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq R_u^2$, 对于$u_{d,j}[i]$来说，假设$\exists j, s.t. \forall M\in \mathbb{R},|u_{d,j}[i]|>M$(即无界)，则$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq R_u^2$,不成立，所以$u_{d,j}[i]$is bounded for all i.
-$(\Longleftarrow)$如果$u_k$是有界的，则$\exists R_{u,i}\in \mathbb{R}, s.t. |u_k[i]|\leq R_{u,k},\forall k\in \{1,2,\cdots, m\},\forall i$。则$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq \sum_{k}R_{u,k}^2$, 即$\|\vec{u}[i]\|\leq \sum_{k}R_{u,k}^2$所以$\vec{u}$有界。
-**(ii): **$(\implies)$如果$\vec{u}$是有界的，则根据$(i)$, $u_k$是有界的，令其为$R_k$, 即$|u_k[i]|\leq R_k,\forall i$。因为$C\vec{u}$有界等价于$(C\vec{u})_{k,:}$有界。而$(C\vec{u}[i])_{k,:}=C_{k,:}\vec{u}[i]=\sum_{j=1}^kc_{kj}u_{j[i]}\leq \sum_{j=1}^kc_{kj}R_{k}$, 证毕。
-$(\Longleftarrow)$如果$C\vec{u}$有界，则$(C\vec{u})_{k,:}$有界, 则利用$(i)$中的逻辑即可。
-**Proof of Lemma 17 Continuous Case**将上述证明中所有的求和符号都改成积分符号即可。
+> [!proof]
+> **Proof of Lemma 17 Discrete Case**
+> **<font color="#ff0000">(i):</font>** **$(\implies)$如果$\vec{u}_d$是有界的，则根据定义，$\|\vec{u}_d[i]\|\leq R_u,\forall i$, 即$\forall i,\exists R_u~s.t.~~\|\vec{u}_d[i]\|=\sqrt{|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2}\leq R_u$
+> 所以$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq R_u^2$, 对于$u_{d,j}[i]$来说，假设$\exists j, s.t. \forall M\in \mathbb{R},|u_{d,j}[i]|>M$(即无界)，则$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq R_u^2$,不成立，所以$u_{d,j}[i]$is bounded for all i.
+> $(\Longleftarrow)$如果$u_k$是有界的，则$\exists R_{u,i}\in \mathbb{R}, s.t. |u_k[i]|\leq R_{u,k},\forall k\in \{1,2,\cdots, m\},\forall i$。则$|u_{d,1}[i]|^2+|u_{d,2}[i]|^2+\cdots+|u_{d,n}[i]|^2\leq \sum_{k}R_{u,k}^2$, 即$\|\vec{u}[i]\|\leq \sum_{k}R_{u,k}^2$所以$\vec{u}$有界。
+> <font color="#ff0000">(ii): </font>$(\implies)$如果$\vec{u}$是有界的，则根据$(i)$, $u_k$是有界的，令其为$R_k$, 即$|u_k[i]|\leq R_k,\forall i$。因为$C\vec{u}$有界等价于$(C\vec{u})_{k,:}$有界。而$(C\vec{u}[i])_{k,:}=C_{k,:}\vec{u}[i]=\sum_{j=1}^kc_{kj}u_{j[i]}\leq \sum_{j=1}^kc_{kj}R_{k}$, 证毕。
+> $(\Longleftarrow)$如果$C\vec{u}$有界，则$(C\vec{u})_{k,:}$有界, 则利用$(i)$中的逻辑即可。
+> **Proof of Lemma 17 Continuous Case**将上述证明中所有的求和符号都改成积分符号即可。
 
 
 
@@ -55,7 +57,8 @@ $(\Longleftarrow)$如果$C\vec{u}$有界，则$(C\vec{u})_{k,:}$有界, 则利�
 ### Scalar Case
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934518407.png)
 
-**Proof**![image.png](./Stability_Feedback_Control.assets/20230722_0934527126.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934526538.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934525077.png)
+> [!proof]
+> ![image.png](./Stability_Feedback_Control.assets/20230722_0934527126.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934526538.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934525077.png)
 > 上述证明中，当$|a|<1$, 如果$x[0]=0$, 则我们选择$u[k]=0,\forall k$即可让`System Unstable`, 但是如果$x[0]\neq 0$的取值, 则使得系统`unstable`的$u[i]$的构造需要变化一下，详见下面的例子:
 > **Disc06B**
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934525133.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934523789.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934525468.png)
@@ -67,14 +70,15 @@ $(\Longleftarrow)$如果$C\vec{u}$有界，则$(C\vec{u})_{k,:}$有界, 则利�
 ### Diagonalizable Matrix Case
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934523922.png)
 
-**Proof**![image.png](./Stability_Feedback_Control.assets/20230722_0934527652.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934527047.png)
+> [!proof]
+> ![image.png](./Stability_Feedback_Control.assets/20230722_0934527652.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934527047.png)
 🔔: $\vec{e}_j$表示只有第$j$项元素为$1$, 其余所有项元素为$0$的向量。
 
 
 ### Non-Diagonalizable Matrix Case
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934522088.png)
 
-**Proof**![image.png](./Stability_Feedback_Control.assets/20230722_0934536704.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934535679.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934537392.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934537328.png)
+**Proof**![image.png](./Stability_Feedback_Control.assets/20230722_0934536704.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934535679.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934537328.png)
 > ![image.png](./Stability_Feedback_Control.assets/20230722_0934535270.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934531879.png)
 
 

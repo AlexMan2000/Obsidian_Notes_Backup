@@ -660,7 +660,6 @@ def show_first_five_reconstructed(data, k):
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310063073.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2310076123.png)
 
 
-
 # Low-Rank Approximation
 ## Motivation
 > ![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309335541.png)![image.png](./PCA_Low-rank_Approximation.assets/20231023_2309355780.png)
