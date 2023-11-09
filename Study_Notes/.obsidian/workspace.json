@@ -4,40 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "05f1a44dfbadae67",
-        "type": "tabs",
-        "dimension": 42.659758203799655,
-        "children": [
-          {
-            "id": "5eee2aebdd2b3396",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34e5c93483592bdf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 57.340241796200345,
         "children": [
           {
             "id": "953d00ed98868bf1",
@@ -53,13 +21,63 @@
             "id": "2b2a3a4161a34caa",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "4702437a05b4045f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f873e35e9eeb0952",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
+              }
+            }
+          },
+          {
+            "id": "8a57348c5d174b6c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
+              }
+            }
+          },
+          {
+            "id": "e53a45416d1ae55c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf"
+              }
+            }
+          },
+          {
+            "id": "c1b3cbdaae8ffc41",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -88,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PREREQ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,7 +181,7 @@
       {
         "id": "ac5e674590e10608",
         "type": "tabs",
-        "dimension": 13.88888888888889,
+        "dimension": 30.90277777777778,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -171,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +206,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +218,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 56.111111111111114,
+        "dimension": 39.09722222222222,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -245,54 +263,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5eee2aebdd2b3396",
+  "active": "c1b3cbdaae8ffc41",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108125028666.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108124750721.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108124744800.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108124517995.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108121340381.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108121316293.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108121240259.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108115647532.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108112104019.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.assets/image-20231108111707483.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/Ch1_Intro_Big-O.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/6_SVM_Kernel/Kernel_Methods.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/6_SVM_Kernel/Kernel_Methods.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Stochastic_Matrices.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Stochastic_Matrices.assets",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/EECS126_Lecture_Notes.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141658733.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141651949.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141607605.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141556094.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141548715.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141257791.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141125631.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141124533.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141120180.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141028697.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review",
+    "Mathematics/Probablity_Statistics/Probability_Basics/Untitled",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/伯努利过程.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__离散随机变量.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Turing_Code.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Stable_Matching.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Multivariate_Parametric_Models.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Untitled.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Related_Resources.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices 1.md",
-    "Untitled.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS189",
-    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.assets",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
     "未命名.canvas"
   ]
 }

@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "Introduction to Probability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf"
+    },
+    {
+      "basename": "21 Markov Chains",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf"
+    },
+    {
+      "basename": "DTMCs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
+    },
+    {
+      "basename": "markov_chains",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
+    },
+    {
+      "basename": "Probability in EECS",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
+    },
+    {
+      "basename": "Counting_Rules",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
+    },
+    {
+      "basename": "CTMCs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md"
+    },
+    {
+      "basename": "Important Applications Of Basic Probability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
+    },
+    {
+      "basename": "__大数定律，中心极限定理和收敛定理",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md"
+    },
+    {
+      "basename": "__高阶知识点和练习_(1)",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md"
+    },
+    {
+      "basename": "概率不等式",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
+    },
+    {
+      "basename": "__期望，方差，标准差",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md"
+    },
+    {
+      "basename": "泊松过程",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "伯努利过程",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/伯努利过程.md"
+    },
+    {
+      "basename": "__离散随机变量",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__离散随机变量.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "4 Stable Matching",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
+    },
+    {
+      "basename": "Stable Matching Problem",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Discretization_System_ID",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
+    },
+    {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
     },
@@ -9,32 +97,40 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
     },
     {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
+      "basename": "Reachability_Controllability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
+    },
+    {
       "basename": "Orthonormalization",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
     },
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+      "basename": "SVD_Pseudoinverse",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "_Ch2_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "image-20231108095325288",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.assets/image-20231108095325288.png"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
-    },
-    {
-      "basename": "Discretization_System_ID",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
-    },
-    {
       "basename": "20230722_0934527652",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.assets/20230722_0934527652.png"
-    },
-    {
-      "basename": "_Ch2_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
     },
     {
       "basename": "Ch1_Intro_Big-O",
@@ -43,14 +139,6 @@
     {
       "basename": "PCA_Low-rank_Approximation",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
     },
     {
       "basename": "Turing_Code",
@@ -111,94 +199,6 @@
     {
       "basename": "Labs_Thread_Level_Programming",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_Thread_Level_Programming.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "Ch2_张成空间，维数和基",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
-    },
-    {
-      "basename": "Ch3_线性变换",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
-    },
-    {
-      "basename": "Ch1_向量空间与子空间",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
-    },
-    {
-      "basename": "Atom_Structure",
-      "path": "Chemistry/UNIT1_ The_Atoms/Atom_Structure.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "cvxbook-solutions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-    },
-    {
-      "basename": "Drawing 2023-11-05 09.54.46.excalidraw",
-      "path": "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md"
-    },
-    {
-      "basename": "Caches_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "20231023_2251198964",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.assets/20231023_2251198964.png"
-    },
-    {
-      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
-    },
-    {
-      "basename": "Graph_Theory",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "Reachability_Controllability",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.assets/Untitled.md"
-    },
-    {
-      "basename": "3.7_基变换_图像压缩",
-      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.7_基变换_图像压缩.md"
-    },
-    {
-      "basename": "Drawing 2023-10-30 20.51.15.excalidraw",
-      "path": "Excalidraw/Drawing 2023-10-30 20.51.15.excalidraw.md"
-    },
-    {
-      "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
-    },
-    {
-      "basename": "1.11_Autonomous_Equations",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.11_Autonomous_Equations.md"
     }
   ],
   "omittedPaths": [],

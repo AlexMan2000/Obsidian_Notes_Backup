@@ -1,0 +1,9 @@
+# Periodicity
+
+# Irreducibility
+
+> 
+
+
+# Hitting Time
+> 

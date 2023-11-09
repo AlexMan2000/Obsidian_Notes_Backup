@@ -191,6 +191,13 @@
 **Example**![image.png](./SVD_Pseudoinverse.assets/20230914_1515183426.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515199813.png)
 
 
+## Useful Techniques
+> [!important]
+> Suppose $A\in \mathbb{R}^{m\times n}$.
+> - When $A$ is full column rank, where $m>n$ and $rank(A)=n$, we have $A=U\begin{bmatrix} \Sigma_1\\0\end{bmatrix}V^{\top}$
+> - When $A$ is full row rank, where $m<n$ and $rank(A)=m$, we have $A=U\begin{bmatrix} \Sigma_1&0\end{bmatrix}V^{\top}$
+
+
 <a name="saySj"></a>
 # Vector Space Miscellaneous
 <a name="dswpA"></a>
@@ -279,15 +286,17 @@
 > 2. 如果$A$列满秩，则$\Sigma^{\dagger}_{n\times m}=(\Sigma^{\top}\Sigma)^{-1}_{n\times n}\Sigma^{\top}_{n\times m}$。推导如上文。
 > 3. 如果$A$行满秩，则$\Sigma^{\dagger}_{n\times m}=\Sigma^{\top}_{n\times m}(\Sigma \Sigma^{\top})^{-1}_{m\times m}$。推导如上文。
 
-**Proofs****(i): **如果$A$可逆，则$AA^{-1}=I$, $A=U_r\Sigma_r V_r^{\top}$, 所以$A^{-1}=(U_r\Sigma_r V_r^{\top})^{-1}=V_r\Sigma_r^{-1}U_r^{\top}=A^{\dagger}$<br />**(ii): **$(A^{\dagger})^{\dagger}=(V_r\Sigma_r^{-1}U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r^{-1}$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r V_r^{\top}=A$, 证毕。<br />**(iii):** $(A^{\top})^{\dagger}=(V_r\Sigma_r U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r^{-1} V_r^{\top}=(V_r\Sigma_r^{-1}U_r^{\top})^{\top}=(A^{\dagger})^{\top}$<br />**(iv): **$(\alpha A)^{\dagger}=( U_r\alpha\Sigma_r V_r^{\top})^{\dagger}=V_r(\alpha\Sigma_r)^{\dagger}U_r^{\top}=V_r\alpha^{-1}\Sigma^{\dagger}U_r^{\top}=\alpha^{-1}A^{\dagger}$<br />**(v): **$AA^{\dagger}A=(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})=(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})=U_r\Sigma_r V_r^{\top}=A$<br />**(vi):**$A^{\dagger}AA^{\dagger}=(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}=(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r^{\top})=V_r\Sigma_r U_r^{\top}=A^{\dagger}$<br />**(vii) 和 (viii) 见上文推导。**
+> [!proof]
+> **Proofs**(i): **如果$A$可逆，则$AA^{-1}=I$, $A=U_r\Sigma_r V_r^{\top}$, 所以$A^{-1}=(U_r\Sigma_r V_r^{\top})^{-1}=V_r\Sigma_r^{-1}U_r^{\top}=A^{\dagger}$<br />**(ii): **$(A^{\dagger})^{\dagger}=(V_r\Sigma_r^{-1}U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r^{-1}$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r V_r^{\top}=A$, 证毕。<br />**(iii):** $(A^{\top})^{\dagger}=(V_r\Sigma_r U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r^{-1} V_r^{\top}=(V_r\Sigma_r^{-1}U_r^{\top})^{\top}=(A^{\dagger})^{\top}$<br />**(iv): **$(\alpha A)^{\dagger}=( U_r\alpha\Sigma_r V_r^{\top})^{\dagger}=V_r(\alpha\Sigma_r)^{\dagger}U_r^{\top}=V_r\alpha^{-1}\Sigma^{\dagger}U_r^{\top}=\alpha^{-1}A^{\dagger}$<br />**(v): **$AA^{\dagger}A=(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})=(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})=U_r\Sigma_r V_r^{\top}=A$<br />**(vi):**$A^{\dagger}AA^{\dagger}=(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}=(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r^{\top})=V_r\Sigma_r U_r^{\top}=A^{\dagger}$<br />**(vii) 和 (viii) 见上文推导。**
 
 
 <a name="R9kUX"></a>
 ## Orthogonal Projectors
+> [!important]
 > 我们知道对于一个$d$维子空间$S$来说，存在一个`Basis`$\{\vec{b}_1,\vec{b}_2,\cdots, \vec{b}_d\}$, $\vec{b}_i\in \mathbb{R}^n$。
 > 令$B=[\vec{b}_1,\vec{b}_2,\cdots, \vec{b}_d]\in \mathbb{R}^{n\times d}$，则对于任意向量$\vec{x}\in \mathbb{R}^n$来说，$proj_S(\vec{x})=B(B^{\top}B)^{-1}B^{\top}\vec{x}$
 > 当$B$的各列为单位正交向量时，$B^{\top}B=I_d$, 即$proj_S(\vec{x})=BB^{\top}\vec{x}$。
-> **对于一个矩阵**$A\in \mathbb{R}^{m\times n}$**来说，我们定义其四个空间的**`**Orthogonal Projectors**`**为:**
+> **对于一个矩阵**$A\in \mathbb{R}^{m\times n}$**来说，我们定义其四个空间的**`Orthogonal Projectors`**为:**
 > 1. $P_{\mathcal{R}(A)}=AA^{\dagger}$
 > - 对于$\mathcal{R}(A)$来说，我们知道$\mathcal{R}(U_r)=\mathcal{R}(A)$, 且$U_r\in \mathbb{R}^{m\times r}$为$\mathcal{R}(A)$的一组正交基。根据上面的描述，$\forall \vec{x}\in \mathbb{R}^m$来说，$proj_{\mathcal{R}(A)}(\vec{x})=U_rU_r^{\top}\vec{x}=AA^{\dagger}\vec{x}$。
 > - 如果$A$为列满秩，则$P_{\mathcal{R}(A)}=AA^{\dagger}=A(A^{\top}A)^{-1}A^{\top}$
@@ -305,16 +314,18 @@
 
 <a name="FqLGO"></a>
 ## Pseudoinverse&Least Square
+> [!thm]
 > ![image.png](./SVD_Pseudoinverse.assets/20230914_1515427659.png)
 > 这里阐述了$A$不是列满秩时的最小二乘问题，当$A$不是列满秩时，我们有多个最小二乘解。
-> `**Side Notes**`**:**
+> `Side Notes`**:**
 > 1. $proj_{Col(A)}(\vec{b})$是唯一的，且**当**$A$**的列满秩时**，$proj_{Col(A)}(\vec{b})=A(A^TA)^{-1}A^T\vec{b}$ ，此时我们求解$A\vec{z}=proj_{Col(A)}(\vec{b})=A(A^TA)^{-1}A^T\vec{b}$(两边同乘$(A^TA)^{-1}A^T$), 可以得到$\vec{z}=(A^TA)^{-1}A^T\vec{b}$唯一存在。 
 > 2. **当**$A$**不是列满秩时**，$A\vec{z}=proj_{Col(A)}(\vec{b})$的解$\vec{z}$就不唯一了。
 > 3. $\vec{x}^{*}\in Col(A^{\top})$，因为$\vec{x}^*=A^{\dagger}\vec{y}=\sum_{i=1}^r \sigma_i\vec{v}_i\vec{u}_i^{\top}\vec{y}\in Col(V_r)=Col(A^{\top})$。
 > 4. $\vec{x}^*\perp Null(A)$，因为$Col(A^{\top})\perp Null(A)$, 所以$\forall \vec{x}\in Col(A^{\top})$, $\vec{x}\perp Null(A)$。
 > 5. $S=A^{\dagger}\vec{b}+Null(A)=\{A^{\dagger}\vec{b}+\vec{z}|\vec{z}\in Null(A)\}$。
 
-**Proof of Theorem 20 - Method 1**![image.png](./SVD_Pseudoinverse.assets/20230914_1515446571.png)<br />![image.png](./SVD_Pseudoinverse.assets/20230914_1515469953.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515497828.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515513395.png)
+> [!proof] **Proof of Theorem 20 - Method 1**
+> ![image.png](./SVD_Pseudoinverse.assets/20230914_1515446571.png)<br />![image.png](./SVD_Pseudoinverse.assets/20230914_1515469953.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515497828.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515513395.png)
 **Proof of Theorem 20 - Method 2 Clearer Version （EECS127 HW03）**![image.png](./SVD_Pseudoinverse.assets/20230914_1515533336.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515551704.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515572855.png)
 > **上面的证明中有一个重要技巧:**
 > 1. 假设$\vec{x}_0=\vec{x}-proj_{Null(A)}\vec{x}$, 则$\vec{x}_0$和$Null(A)$正交。几何上来看，$\vec{x}_0$其实就是$Null(A)$的`Error Vector`，所以垂直。
@@ -326,9 +337,6 @@
 > - `Corollary 22`说的是: 对于行满秩的矩阵来说，满足$A\vec{x}=\vec{b}$的解中最小`Norm`的是$\vec{x}=A^+\vec{b}$。
 
 
-
-
-<a name="fWnnd"></a>
 # Examples
 <a name="ikrpE"></a>
 ## Example 1: Construction

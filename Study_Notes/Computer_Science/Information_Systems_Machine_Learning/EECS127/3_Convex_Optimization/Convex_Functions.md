@@ -497,14 +497,13 @@
 
 
 
-# Strong Convexity
-## Mathematical Preliminaries
-### Taylor Theorem
-#### Precise Statement
+# Strong Convexity&Lipschitz-Smooth
+## Taylor Theorem
+### Precise Statement
 > [!important]
 > ![](Convex_Functions.assets/image-20231108121240259.png)
 
-#### Remainder Formula
+### Remainder Formula
 > [!important] Mean-Value Formulation
 > ![](Convex_Functions.assets/image-20231108121316293.png)
 
@@ -512,7 +511,7 @@
 > ![](Convex_Functions.assets/image-20231108121340381.png)
 
 
-#### Vectorized Theorem
+### Vectorized Theorem
 > [!thm]
 > ![](Convex_Functions.assets/image-20231104220400332.png)
 > 其中积分可以理解为`Residuals`
@@ -523,7 +522,7 @@
 
 
 
-### Lipschitz Smoothness
+## Lipschitz Smoothness
 > [!important] 
 > 注意这个概念和`Lipschitz Continuity`不一样:
 > ![](Convex_Functions.assets/image-20231108112104019.png)
@@ -533,7 +532,7 @@
 > [!def]
 > ![](Convex_Functions.assets/image-20231108104402589.png)
 
-#### Lemmas  
+#### Important Lemmas  
 > [!lemma]
 > ![](Convex_Functions.assets/image-20231108104439094.png)![](Convex_Functions.assets/image-20231108104447726.png)![](Convex_Functions.assets/image-20231108111629862.png)
 
@@ -551,7 +550,7 @@
 > By lemma 12.1.2 we have:
 > ![](Convex_Functions.assets/image-20231108111707483.png)
 
-## mu-Strongly Convex Definitions
+## mu-Strongly Convexity
 ### Definition 1: Jensen's Inequality
 > [!def]
 > ![](Convex_Functions.assets/image-20231104212358864.png)
@@ -578,7 +577,7 @@
 > ![](Convex_Functions.assets/image-20231104222551310.png)
 
 
-## Properties
+## Important Properties
 ###  mu-strongly => strongly
 > [!property] Property: $\mu$-strongly convex=>strongly(strictly) convex
 > $\forall\vec{x},\vec{y}\in dom(f),\theta\in [0,1]$, we have by definition of $\mu$-strongly convex that:
@@ -592,7 +591,7 @@
 > $$\begin{aligned}g(\theta \vec{x}+(1-\theta) \vec{y})+\frac{\mu \| \theta \vec{x}+(1-\theta)\|^2}{2} & \leq \theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left(\theta^2\|\vec{x}\|^2+2 \theta(1-\theta)\langle\vec{x}, \vec{y}\rangle+(1-\theta)^2\|\vec{y}\|^2\right) \\& \left.<\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta^2\|\vec{x}\|^2+\theta(1-\theta)\left(\| \vec{x}\left\|^2+\right\| \vec{y} \|^2\right)+(1-\theta)^2\right] \| \vec{y} \|^2\right] \\& =\theta g(\vec{x})+(1-\theta) g(\vec{y})+\frac{\mu}{2}\left[\theta \| \vec{x}\left\|^2+(1-\theta)\right\| \vec{y} \|^2\right] \\& =\theta\left(g(\vec{x})+\frac{\mu}{2}\|\vec{x}\|^2\right)+(1-\theta)\left[g(\vec{y})+\frac{\mu}{2}\|\vec{y}\|^2\right] .\end{aligned}$$
 
 
-### Quadratic Bounds
+### Quadratic Bounds - For Strong Convexity&Lipschitz Smooth
 #### Quadratic Lower Bound
 > [!important]
 > 本章节主要介绍$\mu$-strongly convex 的一个重要性质。我们知道对于一个凸函数来说，他的下界是其一阶泰勒估计。而$\mu$-strongly convex function的一个重要性质是: 他的下界是一个二次函数, 二次函数的系数由$\mu$决定。
@@ -606,11 +605,27 @@
 > ![](Convex_Functions.assets/image-20231108124744800.png)![](Convex_Functions.assets/image-20231108124750721.png)
 
 
-### Bounds on Hessian
-> [!corollary]
+#### Bounds on Hessian
+> [!corollary] Corollary -  L2 Norm Case
 > ![](Convex_Functions.assets/image-20231108125028666.png)
 
+> [!proof] Proof of the first inequality
+> Since $f$ is $\mu$-strongly convex, we have:$$\langle\nabla f(\vec{x})-\nabla f(\vec{y}), \vec{x}-\vec{y}\rangle \geqslant \mu\|\vec{x}-\vec{y}\|_2^2$$Letting $\vec{y}=\vec{x}+\alpha \vec{h}$ where $\alpha$ is small, then:$$\begin{aligned}\left\langle\nabla f(\vec{x})-\nabla f(\vec{x}+\alpha \cdot \vec{h}), \vec{x}-(\vec{x}+\alpha \cdot \vec{h}) \big\rangle \geqslant \mu\|\vec{x}-(\vec{x}+\alpha \cdot \vec{h})\|_2^2\right. \\\left\langle\nabla f(\vec{x})-\nabla f(\vec{x}+\alpha \vec{h}),-\alpha \cdot \vec{h}\rangle\geqslant \mu\|-\alpha \cdot \vec{h}\|_2^2\right. \\-\alpha\langle\nabla f(\vec{x})-\nabla f(\vec{x}+\alpha \vec{h}), \vec{h}\rangle \geqslant \mu \alpha^2\|\vec{h}\|_2^2 \\\left\langle\frac{\nabla f(\vec{x}+\alpha \cdot \vec{h})-\nabla f(\vec{x})}{\alpha}, \vec{h}\right\rangle \geqslant \mu\|\vec{h}\|_2^2\end{aligned}$$letting $\alpha \rightarrow 0$, we have$$\begin{aligned}\left\langle\nabla^2 f(\vec{x}) \vec{h}, \vec{h}\right\rangle & \geqslant \mu\|\vec{h}\|_2^2 \\\vec{h}^{\top} \nabla^2 f(\vec{x}) \vec{h} & \geqslant \vec{h}^{\top} \mu I_n \vec{h} \\\vec{h}^{\top}\left(\nabla^2 f(\vec{x})-\mu I_n\right) \vec{h} & \geqslant 0 \quad \forall \vec{h}\in\mathbb{R}^n \\\therefore \nabla^2 f(\vec{x})-\mu I_n & \succeq 0 \\\therefore \nabla^2 f(\vec{x}) & \succeq \mu I_n\end{aligned}$$
 
+> [!proof] Proof of the second inequality
+> Since $f$ is L-Lipschitz Smooth, we have:$$\begin{aligned}\| \nabla f(\vec{x}) & -\nabla f(\vec{y})\left\|_2 \leq L\right\| \vec{x}-\vec{y} \|_2 \\\nabla^2 f(\vec{x}) \cdot \vec{h} & =\lim _{\alpha \rightarrow 0} \frac{\nabla f(\vec{x}+\alpha \cdot \vec{h})-\nabla f(\vec{x})}{\alpha} \\\therefore\left\|\nabla^2 f(\vec{x}) \cdot \vec{h}\right\|_2 & =\lim _{\alpha \rightarrow 0} \frac{\|\nabla f(\vec{x}+\alpha \cdot \vec{h})-\nabla f(\vec{x})\|_2}{|\alpha|} \\& \leq \lim _{\alpha \rightarrow 0} \frac{L\|\vec{x}+\alpha \cdot \vec{h}-\vec{x}\|_2}{|\alpha|} \\& =\lim _{\alpha \rightarrow 0} \frac{L|\alpha|\|\vec{h}\|_2}{|\alpha|} \\& =L\|\vec{h}\|_2 \\\therefore \vec{h}^{\top} \nabla^2 f(\vec{x}) \vec{h} & \leqslant \vec{h}^{\top} L I_n \vec{h} \\\vec{h}^{\top}\left(\nabla^2 f(\vec{x})-L \cdot I_n\right) \vec{h} & \leqslant 0 \quad \forall \vec{h} \in R^n \\\therefore \nabla^2 f(\vec{x})-L \cdot I_n & \leq 0 . \\\nabla^2 f(\vec{x}) & \leq L \cdot I_n .\end{aligned}$$
+
+
+> [!corollary] Corollary - General Norm
+> ![](Convex_Functions.assets/image-20231108161129458.png)
+
+
+
+#### Summary
+> [!summary]
+>  总的来说，对于一个$\mu$-strongly convex且$L$-Smooth的函数，我们有:
+> $\forall\vec{x},\vec{y}\in dom(f)$:
+> $$\begin{aligned}f(\vec{y})&\leq f(\vec{x})+\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})+\frac{L}{2}\|\vec{y}-\vec{x}\|_2^2\\&\geq f(\vec{x})+\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})+\frac{\mu}{2}\|\vec{y}-\vec{x}\|_2^2\end{aligned}$$  
 
 
 # Chapter Exercise

@@ -39,7 +39,7 @@
 
 
 ## Equivalent Problems
-Original Optimization Problem
+### Original Optimization Problem
 > [!def]
 > 假设我们有如下的优化问题:
 > ![](Convex_Problems.assets/image-20231105101428399.png)
@@ -58,14 +58,21 @@ Original Optimization Problem
 ### Transformation of Objective and Constraints
 > [!important]
 > ![](Convex_Problems.assets/image-20231105101935888.png)
+>
 
 >[!example] L2 Norm
 >![](Convex_Problems.assets/image-20231105102246839.png)
 
 
 
-### Slack Variables
-> 
+
+### Slack Variables - 降维
+> [!important]
+> ![](Convex_Problems.assets/image-20231109110450166.png)![](Convex_Problems.assets/image-20231109110500417.png)
+
+
+
+
 
 
 ### Elimiating Linear Equality Constraint
@@ -80,8 +87,30 @@ Original Optimization Problem
 > [!important]
 > ![](Convex_Problems.assets/image-20231105102408912.png)
 > 这种方法本质上是将$h_i(\vec{x})=0,i=1,2\cdots, m$看成是方程组，然后$\vec{x}=\phi(\vec{z})$表示我们可以用一个函数$\phi$来描述上述方程组的解集，这样我们就可以丢掉$h_i$这些等式约束。区别是现在的优化问题变成了和 $\vec{z}$ 相关的优化问题。这样一来如果我们在这个等价的优化问题上求出了$\vec{z}^*$, 则通过简单的函数变换得到$\vec{x}^*=\phi(\vec{z}^*)$。
-> - 有人可能会问，为什么我们能够找到这样的函数$\phi$, 设想一下我们在求解线性方程组时经常将其写成$A\vec{x}=\vec{b}$的形式，而$\vec{x}=A^{\dagger}\vec{b}+\mathcal{N}(A)$, 所以我们是可以找到一个线性函数满足$\vec{x}=\phi(\vec{z})$的。
+> - 有人可能会问，为什么我们能够找到这样的函数$\phi$, 设想一下我们在求解线性方程组时经常将其写成$A\vec{x}=\vec{z}$的形式，而$\vec{x}=A^{\dagger}\vec{z}+\mathcal{N}(A)$, 所以我们是可以找到一个线性函数满足$\vec{x}=\phi(\vec{z})$的。
 > - 当然上述的方法只适用于消除线性约束。
+
+
+# Convex Problem
+## Standard Form
+> [!def]
+> ![](Convex_Problems.assets/image-20231109105314054.png)![](Convex_Problems.assets/image-20231109105350649.png)
+
+
+## 狭义/广义凸优化问题
+> [!important]
+> 狭义凸优化问题就是满足`Standard Form`的凸优化问题，广义凸优化问题就是需要经过一些等价代数变化才能够得到`Standard Form`的凸优化问题。下面的问题就是一个广义凸优化问题:
+> ![](Convex_Problems.assets/image-20231109105832959.png)![](Convex_Problems.assets/image-20231109110009852.png)
+
+
+
+
+
+
+
+
+
+
 
 
 

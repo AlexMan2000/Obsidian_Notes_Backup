@@ -69,25 +69,17 @@ $\begin{aligned}\vec{x}[0]&=A_d^0 \vec{x}_0\\&=\vec{x_0}\end{aligned}$, 满足�
 > 3. 如果$A$可逆，$\int_0^t e^{At}=e^{At}A^{-1}\big|_0^t=(e^{At}-I_n)A^{-1}$
 > 4. $\vec{x}(t)=e^{At}\vec{x}_0$是微分方程组$\begin{cases} \frac{d}{dt}\vec{x}(t)=A\vec{x}(t)\\\vec{x}(0)=\vec{x}_0\end{cases}$的解
 
-**Proof for 1****Part(a):**
-根据定义:
-$e^A=I_n+A+\frac{A^2}{2!}+\cdots$，$e^{\Lambda} =I_n+\Lambda+\frac{\Lambda^2}{2!}+\cdots$
-则我们有:
-$\begin{aligned}Ve^{\Lambda}V^{-1}&=V(I_n+\Lambda+\frac{\Lambda^2}{2!}+\cdots)V^{-1}\\&=I_n+V\Lambda  V^{-1}+V\frac{\Lambda^2}{2!}V^{-1}+\cdots\\&=I_n+A+\frac{V\Lambda V^{-1}V\Lambda V^{-1}}{2!}+\cdots\\&=I_n+A+\frac{A^2}{2!}+\cdots\\&=e^A\end{aligned}$
-**Part(b):**
-和`Part(a)`类似, 将$A$替换成$At$, $\Lambda$替换成$\Lambda t$即可。
-**Proof for 2**根据性质一，我们知道$\frac{d}{dt}e^{At}=V\frac{d}{dt}e^{\Lambda t}V^{-1}$
-$\begin{aligned}V\frac{d}{dt}e^{\Lambda t}V^{-1}&=V\frac{d}{dt}(I_n+\Lambda t+\frac{\Lambda^2t^2}{2!}+\frac{\Lambda^3t^3}{3!}+\cdots)V^{-1}\\&=V(0+\Lambda +\Lambda^2t+\frac{\Lambda^3t^2}{2!}+\cdots)V^{-1}\\&=V(\Lambda +\Lambda^2t+\frac{\Lambda^3t^2}{2!}+\cdots)V^{-1}\\&=V\Lambda  V^{-1}+V\Lambda^2t^2V^{-1}+V\frac{\Lambda^3 t^2}{2!}V^{-1}+\cdots\\&=A+A^2t+\frac{A^3t^2}{2!}+\cdots\\&=A(I_n+At+\frac{A^2t^2}{2!})\\&=Ae^{At}\end{aligned}$
-证毕。
-**Proof for 3**根据性质一，我们知道$\int_0^te^{At}dt=V\int_0^te^{\Lambda t}dtV^{-1}$
-下面的推导将会使用$A^{-1}=(V\Lambda V^{-1})^{-1}=V\Lambda^{-1}V^{-1}$:
-$\begin{aligned}V\int_0^te^{\Lambda t}dtV^{-1}&=V\int_0^t(I_n+\Lambda t+\frac{\Lambda^2t^2}{2!}+\frac{\Lambda^3t^3}{3!}+\cdots)dtV^{-1}\\&=V(I_nt+\Lambda \frac{t^2}{2!} +\frac{\Lambda^2 t^3}{3!}+\cdots)V^{-1}\\&=V(\Lambda t+\Lambda^2 \frac{t^2}{2!} +\frac{\Lambda^3t^3}{3!}+\cdots)\Lambda^{-1}V^{-1}\\&=V(I_n+\Lambda t+\Lambda^2 \frac{t^2}{2!} +\frac{\Lambda^3t^3}{3!}+\cdots-I_n)\Lambda^{-1}V^{-1}\\&=VI_n\Lambda^{-1}V^{-1}+V\Lambda t\Lambda^{-1}V^{-1}+V\Lambda^2\frac{t^2}{2!}\Lambda^{-1}V^{-1}+\cdots-VI_n\Lambda^{-1}V^{-1}\\&=(VI_nV^{-1})(V\Lambda^{-1}V^{-1})+(V\Lambda t V^{-1})(V\Lambda^{-1}V^{-1})+(V\Lambda^2\frac{t^2}{2!}V^{-1})(V\Lambda^{-1}V^{-1})+\cdots-(VI_nV^{-1})(V\Lambda^{-1}V^{-1})\\&=I_nA^{-1}+AtA^{-1}+\frac{(At)^2}{2!}A^{-1}+\cdots-I_nA^{-1}\\&=(I_n+At+\frac{(At)^2}{2!}+\cdots)A^{-1}-I_nA^{-1}\\&=(e^{At}-I_n)A^{-1}\end{aligned}$
+> [!proof]
+> **Proof for 1 
+> Part(a):**
+> 根据定义:$e^A=I_n+A+\frac{A^2}{2!}+\cdots$，$e^{\Lambda} =I_n+\Lambda+\frac{\Lambda^2}{2!}+\cdots$,
+> 则我们有:$\begin{aligned}Ve^{\Lambda}V^{-1}&=V(I_n+\Lambda+\frac{\Lambda^2}{2!}+\cdots)V^{-1}\\&=I_n+V\Lambda  V^{-1}+V\frac{\Lambda^2}{2!}V^{-1}+\cdots\\&=I_n+A+\frac{V\Lambda V^{-1}V\Lambda V^{-1}}{2!}+\cdots\\&=I_n+A+\frac{A^2}{2!}+\cdots\\&=e^A\end{aligned}$
+> **Part(b):**和`Part(a)`类似, 将$A$替换成$At$, $\Lambda$替换成$\Lambda t$即可。
+> **Proof for 2**根据性质一，我们知道$\frac{d}{dt}e^{At}=V\frac{d}{dt}e^{\Lambda t}V^{-1}$$\begin{aligned}V\frac{d}{dt}e^{\Lambda t}V^{-1}&=V\frac{d}{dt}(I_n+\Lambda t+\frac{\Lambda^2t^2}{2!}+\frac{\Lambda^3t^3}{3!}+\cdots)V^{-1}\\&=V(0+\Lambda +\Lambda^2t+\frac{\Lambda^3t^2}{2!}+\cdots)V^{-1}\\&=V(\Lambda +\Lambda^2t+\frac{\Lambda^3t^2}{2!}+\cdots)V^{-1}\\&=V\Lambda  V^{-1}+V\Lambda^2t^2V^{-1}+V\frac{\Lambda^3 t^2}{2!}V^{-1}+\cdots\\&=A+A^2t+\frac{A^3t^2}{2!}+\cdots\\&=A(I_n+At+\frac{A^2t^2}{2!})\\&=Ae^{At}\end{aligned}$证毕。
+> **Proof for 3**根据性质一，我们知道$\int_0^te^{At}dt=V\int_0^te^{\Lambda t}dtV^{-1}$下面的推导将会使用$A^{-1}=(V\Lambda V^{-1})^{-1}=V\Lambda^{-1}V^{-1}$:$\begin{aligned}V\int_0^te^{\Lambda t}dtV^{-1}&=V\int_0^t(I_n+\Lambda t+\frac{\Lambda^2t^2}{2!}+\frac{\Lambda^3t^3}{3!}+\cdots)dtV^{-1}\\&=V(I_nt+\Lambda \frac{t^2}{2!} +\frac{\Lambda^2 t^3}{3!}+\cdots)V^{-1}\\&=V(\Lambda t+\Lambda^2 \frac{t^2}{2!} +\frac{\Lambda^3t^3}{3!}+\cdots)\Lambda^{-1}V^{-1}\\&=V(I_n+\Lambda t+\Lambda^2 \frac{t^2}{2!} +\frac{\Lambda^3t^3}{3!}+\cdots-I_n)\Lambda^{-1}V^{-1}\\&=VI_n\Lambda^{-1}V^{-1}+V\Lambda t\Lambda^{-1}V^{-1}+V\Lambda^2\frac{t^2}{2!}\Lambda^{-1}V^{-1}+\cdots-VI_n\Lambda^{-1}V^{-1}\\&=(VI_nV^{-1})(V\Lambda^{-1}V^{-1})+(V\Lambda t V^{-1})(V\Lambda^{-1}V^{-1})+(V\Lambda^2\frac{t^2}{2!}V^{-1})(V\Lambda^{-1}V^{-1})+\cdots-(VI_nV^{-1})(V\Lambda^{-1}V^{-1})\\&=I_nA^{-1}+AtA^{-1}+\frac{(At)^2}{2!}A^{-1}+\cdots-I_nA^{-1}\\&=(I_n+At+\frac{(At)^2}{2!}+\cdots)A^{-1}-I_nA^{-1}\\&=(e^{At}-I_n)A^{-1}\end{aligned}$
 
-
-
-**Proof for 4**利用性质$2$我们知道:
-$\frac{d}{dt}\vec{x}(t)=\frac{d}{dt}e^{At}\vec{x}_0=Ae^{At}\vec{x}_0=A\vec{x}(t)$, 满足第一个条件
-$\vec{x}(0)=e^{A\times 0}\vec{x}_0=\vec{x}_0$, 满足第二个条件， 证毕。
+> [!proof]
+> **Proof for 4**利用性质$2$我们知道:$\frac{d}{dt}\vec{x}(t)=\frac{d}{dt}e^{At}\vec{x}_0=Ae^{At}\vec{x}_0=A\vec{x}(t)$, 满足第一个条件$\vec{x}(0)=e^{A\times 0}\vec{x}_0=\vec{x}_0$, 满足第二个条件， 证毕。
 
 
 ## Continuous-Time LTI Differential Equation
