@@ -9,12 +9,12 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf"
     },
     {
-      "basename": "DTMCs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
-    },
-    {
       "basename": "markov_chains",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
+    },
+    {
+      "basename": "DTMCs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
     },
     {
       "basename": "Probability in EECS",
