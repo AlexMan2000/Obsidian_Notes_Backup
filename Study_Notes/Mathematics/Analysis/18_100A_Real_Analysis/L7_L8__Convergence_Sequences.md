@@ -38,13 +38,16 @@ We want to find the following scenario: $|(-1)^M-x|\geq \epsilon_0$, and we noti
 > 这个定理暗含一个重要的思想，就是当一个数列$\{x_n;n\in \mathbb{N}\}$是单调的时候，我们可以把数列看成是一个`Ordered Field`, 同时这个数列是$\mathbb{R}$的子集，于是上界或者下界一定存在。
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510086443.png)
 
-**Proof of Theorem 6**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510086162.png)
-**Proof of Theorem 7**正方向: 首先由`Theorem 3`可知，因为$\{x_n\}$是收敛的， 所以$\{x_n\}$一定是有界的。
-反方向: 假设数列$\{x_n\}$是有界的， 因为$\{x_n\}$是单调递减的，于是我们令$S=\{x_n|n\in \mathbb{N}\}$为一个集合，我们知道$S\subset \mathbb{R}$, 于是$inf S$存在，假设$x=infS$, 则根据最小下界的定义，我们知道$\forall \epsilon>0,\exists M_0\in \mathbb{N}  ~~s.t.~~ x\leq x_{M_0}<x+\epsilon$, 同时我们因为数列$\{x_n\}$是单调递减的，于是$x_{n}\geq x_{n+1}$, 于是$\forall n\geq M_0, x_n\leq x_{M_0}$。因为$x_n\in S$， 所以$x\leq x_n$。
-所以我们有$\forall n\geq M_0, x-\epsilon<x\leq x_n\leq x_{M_0}<x+\epsilon$, 也就是$\exists M_0\in \mathbb{n},~s.t.~~\forall n\geq M_0, x-\epsilon<x_n<x+\epsilon$($|x_n-x|<\epsilon$), 就是$x_n\to x=infS$, 证毕。
+> [!proof]
+> **Proof of Theorem 6**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510086162.png)
+> **Proof of Theorem 7**
+> 正方向: 首先由`Theorem 3`可知，因为$\{x_n\}$是收敛的， 所以$\{x_n\}$一定是有界的。
+> 反方向: 假设数列$\{x_n\}$是有界的， 因为$\{x_n\}$是单调递减的，于是我们令$S=\{x_n|n\in \mathbb{N}\}$为一个集合，我们知道$S\subset \mathbb{R}$, 于是$inf S$存在，假设$x=infS$, 则根据最小下界的定义，我们知道$\forall \epsilon>0,\exists M_0\in \mathbb{N}  ~~s.t.~~ x\leq x_{M_0}<x+\epsilon$, 同时我们因为数列$\{x_n\}$是单调递减的，于是$x_{n}\geq x_{n+1}$, 于是$\forall n\geq M_0, x_n\leq x_{M_0}$。因为$x_n\in S$， 所以$x\leq x_n$。
+> 所以我们有$\forall n\geq M_0, x-\epsilon<x\leq x_n\leq x_{M_0}<x+\epsilon$, 也就是$\exists M_0\in \mathbb{n},~s.t.~~\forall n\geq M_0, x-\epsilon<x_n<x+\epsilon$($|x_n-x|<\epsilon$), 就是$x_n\to x=infS$, 证毕。
  
  
 ## Examples
+> [!example]
 > **Theorem 1:** 如果$c\in (0,1)$,则$\lim_{n\to \infty} c^n=0$
 > **Theorem 2: **如果$c>1$,则$\{c^n\}$is unbounded.
 > 证明这两个定理需要一个**常用引理**:
@@ -79,28 +82,20 @@ $c^n=(1+(c-1))^n\geq 1+n(c-1)$
 ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510092967.png)
 
 ## Important Lemma⭐⭐⭐
-:::info
-假设$1\leq n_1<n_2<\cdots<n_k$, 则$n_k \geq k,\forall k\in \mathbb{N}$
-我们可以使用数学归纳法证明:
-
-1. 根据`Subsequence`的定义,$n_1\geq 1$成立
-2. 假设$n_m\geq m$成立，则$n_{m+1}-n_{m}\geq 1=n_m+1\geq m+1$
-3. 根据数学归纳法， $\forall k\in \mathbb{N}, n_k\geq k$。证毕。
-:::
+> [!lemma]
+> 假设$1\leq n_1<n_2<\cdots<n_k$, 则$n_k \geq k,\forall k\in \mathbb{N}$
+> 我们可以使用数学归纳法证明:
+> 1. 根据`Subsequence`的定义,$n_1\geq 1$成立
+> 2. 假设$n_m\geq m$成立，则$n_{m+1}-n_{m}\geq 1=n_m+1\geq m+1$
+> 3. 根据数学归纳法， $\forall k\in \mathbb{N}, n_k\geq k$。证毕。
 
 ## 数列收敛=>所有子数列收敛
+> [!important]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510097414.png)
-> **如果我们写的清楚一些就会有: **
+> 如果我们写的清楚一些就会有: 
 > 如果$\{x_n\}$converges to $x$, 则其任何`subsequences`$\{x_{n_k}\}$都有$\lim_{k\to \infty} x_{n_k}\to x$
-
-**Proof(Medium)**应用上述引理，我们有如下证明过程:
-假设数列$\{x_n\}$收敛, 不妨设$\lim_{n\to \infty} x_n=x$, 则根据收敛的定义: $\forall \epsilon>0, \exists M_0\in \mathbb{N},~~s.t.~~\forall n\geq M_0, |x_n-x|<\epsilon$
-此时我们选择$M=M_0$。如果$k\geq M_0$, 则$n_k\geq k\geq M_0$, 所以$\forall \epsilon>0,\exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n_k>M_0,~|x_{n_k}-x|<\epsilon$, 这也意味着$\lim_{n\to\infty}x_{n_k}=x$，证毕。
-
-## 数列有界, 收敛=所有子数列收敛
-> ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510097614.png)
-
-**Proof**
+> Proof(Medium)，应用上述引理，我们有如下证明过程:
+> 假设数列$\{x_n\}$收敛, 不妨设$\lim_{n\to \infty} x_n=x$, 则根据收敛的定义: $\forall \epsilon>0, \exists M_0\in \mathbb{N},~~s.t.~~\forall n\geq M_0, |x_n-x|<\epsilon$此时我们选择$M=M_0$。如果$k\geq M_0$, 则$n_k\geq k\geq M_0$, 所以$\forall \epsilon>0,\exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n_k>M_0,~|x_{n_k}-x|<\epsilon$, 这也意味着$\lim_{n\to\infty}x_{n_k}=x$，证毕。
 
 
 ## Divergence Remarks
@@ -112,102 +107,101 @@ $c^n=(1+(c-1))^n\geq 1+n(c-1)$
 [Lecture Note 8.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1667885974163-6271733d-e78f-4906-bf53-d7ac2bd3a51c.pdf)
 
 ## Squeeze Theorem
+> [!thm]
 > 一种验证数列$\{x_n\}$收敛的方式就是找到其他两个数列满足下面的关系:
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510101379.png)
 
-**Proof(Easy)**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510101582.png)
+> [!proof]
+> **Proof(Easy)**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510101582.png)
 
 ## Basic Facts
+> [!lemma]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510108127.png)
 
-**Proof(Easy from definition)**
-1. 正方向:
+> [!proof]
+> **Proof(Easy from definition)**
+> 1. 正方向:
+> $\begin{aligned}\lim_{n\to \infty}x_n=x&\implies \lim_{n\to \infty}(x_n-x)=0\\&\implies \forall \epsilon >0,\exists M_0\in \mathbb{N} ~~s.t.~~ \forall n\geq M_0,|x_n-x|<\epsilon\\&\implies ||x_n-x|-0|<\epsilon\end{aligned}$,于是$\lim_{n\to \infty}|x_n-x|=0$
+> 3. 反方向:$\begin{aligned}\lim_{n\to \infty}|x_n-x|=0&\implies \forall \epsilon >0,\exists M_0\in \mathbb{N} ~~s.t.~~ \forall n\geq M_0,||x_n-x|-0|<\epsilon\\&\implies|x_n-x|<\epsilon\end{aligned}$。于是$\lim_{n\to \infty} x_n=x$
 
-$\begin{aligned}\lim_{n\to \infty}x_n=x&\implies \lim_{n\to \infty}(x_n-x)=0\\&\implies \forall \epsilon >0,\exists M_0\in \mathbb{N} ~~s.t.~~ \forall n\geq M_0,|x_n-x|<\epsilon\\&\implies ||x_n-x|-0|<\epsilon\end{aligned}$
-于是$\lim_{n\to \infty}|x_n-x|=0$
-
-2. 反方向:
-
-$\begin{aligned}\lim_{n\to \infty}|x_n-x|=0&\implies \forall \epsilon >0,\exists M_0\in \mathbb{N} ~~s.t.~~ \forall n\geq M_0,||x_n-x|-0|<\epsilon\\&\implies|x_n-x|<\epsilon\end{aligned}$
-于是$\lim_{n\to \infty} x_n=x$
-**Example(Application of the theorem 3)**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510102904.png)
+> [!example]
+> **Example(Application of the theorem 3)**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510102904.png)
 ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510104575.png)
 
 ## 数列的比较
+> [!thm]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510105980.png)![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510104165.png)
 
-**Proof of Part 1(Medium)**因为$\{x_n\}$和$\{y_n\}$都是收敛的数列，不妨设$\lim_{n\to \infty}x_n=x, \lim_{n\to \infty}y_n =y$且$y<x$($x-y>0$), 所以我们有: 
-$\exists M_0\in \mathbb{N}, \forall n\geq M_0, |y_n-y|<\frac{x-y}{2}$, 即$y-\frac{x-y}{2}<y_n<y+\frac{x-y}{2}$
-$\exists M_1\in \mathbb{N}, \forall n\geq M_1, |x_n-x|<\frac{x-y}{2}$, 即$x-\frac{x-y}{2}<x_n<x+\frac{x-y}{2}$
-于是我们为了让上述关系均成立，我们取$M\geq max\{M_0,M_1\}$, 此时我们有:
-$y_M<y+\frac{x-y}{2}=\frac{x+y}{2}=x-\frac{x-y}{2}<x_M$, 所以$\exists M\in \mathbb{N},~~s.t.~~ x_M>y_M$, 这和$\forall n\in \mathbb{N}, x_n\leq y_n$是矛盾的。于是$\forall n\in \mathbb{N}, x_n\leq y_n$， 证毕。
-**Proof of Part 2(Easy)**直接使用`Theorem 6`的第一部分即可。
+> [!proof]
+> **Proof of Part 1(Medium)**因为$\{x_n\}$和$\{y_n\}$都是收敛的数列，不妨设$\lim_{n\to \infty}x_n=x, \lim_{n\to \infty}y_n =y$且$y<x$($x-y>0$), 所以我们有: $\exists M_0\in \mathbb{N}, \forall n\geq M_0, |y_n-y|<\frac{x-y}{2}$, 即$y-\frac{x-y}{2}<y_n<y+\frac{x-y}{2}$, $\exists M_1\in \mathbb{N}, \forall n\geq M_1, |x_n-x|<\frac{x-y}{2}$, 即$x-\frac{x-y}{2}<x_n<x+\frac{x-y}{2}$于是我们为了让上述关系均成立，我们取$M\geq max\{M_0,M_1\}$, 此时我们有:$y_M<y+\frac{x-y}{2}=\frac{x+y}{2}=x-\frac{x-y}{2}<x_M$, 所以$\exists M\in \mathbb{N},~~s.t.~~ x_M>y_M$, 这和$\forall n\in \mathbb{N}, x_n\leq y_n$是矛盾的。于是$\forall n\in \mathbb{N}, x_n\leq y_n$， 证毕。
+> **Proof of Part 2(Easy)**直接使用`Theorem 6`的第一部分即可。
 > **Remarks about Theorem:**
 > $\forall n, x_n<y_n \not \Rightarrow \lim_{n\to \infty} x_n<\lim_{n\to \infty}y_n$
 > **Example:**
 > $x_n=0, \forall n$, $y_n=\frac{1}{n}$then $x_n<y_n$and $\lim_{n\to \infty}x_n=0,\lim_{n\to \infty} y_n=0$, 此时$\lim_{n\to \infty}x_n=\lim_{n\to \infty} y_n$
 
+
+## 极限的保号性
+> [!thm]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510111803.png)
 
-**Proof**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510114927.png)
+> [!proof]
+> ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510114927.png)
 
 ## 数列的代数运算
 ### Basic Algebraic Operations
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510118571.png)
 
-**Proof of 1(Easy)**因为$\lim_{n\to \infty}x_n=x,\lim_{n\to \infty}y_n=y$, 所以我们有: 
-$\forall \epsilon>0, \exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_0, |x_n-x|<\frac{\epsilon}{2}$
-$\forall \epsilon>0, \exists M_1\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_1, |y_n-y|<\frac{\epsilon}{2}$
-于是我们取$M=M_0+M_1$满足$M\geq \max\{M_0,M_1\}$, 所以:
-$\begin{aligned}|x_n+y_n-(x+y)|&\leq |x_n-x|+|y_n-y|\\&<\frac{\epsilon}{2}+\frac{\epsilon}{2}\\&=\epsilon
-\end{aligned}$
-所以$\lim_{n\to \infty}x_n+y_n\to x+y$, 证毕。
-**Proof of 2(Easy)**因为$\lim_{n\to \infty}x_n=x$， 所以$\forall \epsilon>0, \exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_0, |x_n-x|<\frac{\epsilon}{|c|+1}$, 这么做的目的马上就能看到。于是
-$|cx_n-cx|=|c||x_n-x|<\frac{|c|}{|c|+1}\epsilon<\epsilon$
-所以$\lim_{n\to \infty} cx_n \to cx$
-那么为什么要取$\frac{\epsilon}{|c|+1}$而不是$\frac{\epsilon}{|c|}$呢？原因就是我们要为了防止$c=0$的情况。
-那为什么不取$\frac{\epsilon}{|c|-1}$呢? 原因是我们需要借助$<$关系过渡到$\epsilon$上，但是$\frac{\epsilon}{|c|-1}$不能实现这个需求。
-**Proof of 3(Medium): Triangle Inequality&Squeeze Theorem**我们根据极限的定义和三角不等式有:
-$\begin{aligned}|x_ny_n-xy|&=|(x_n-x)y_n+xy_n-xy|\\&\leq|x_n-x||y_n|+|x||y_n-y|\end{aligned}$
-于是现在我们需要利用$<$关系将$|x_n-x||y_n|+|x||y_n-y|$过渡到$\epsilon$。
-因为数列$\{y_n\}$是收敛于$y$的， 所以根据`Theorem 7.3`$\{y_n\}$是`Bounded`的, 换句话说
-$\exists B\geq 0, \forall n\in \mathbb{N}, |y_n|\leq B$
-同时根据`Theorem 8.3`我们知道因为$\lim_{n\to \infty}x_n=x,\lim_{n\to \infty}y_n=y$, 所以
-$\lim_{n\to \infty}|x_n-x|=0,\lim_{n\to \infty}|y_n-y|=0$
-所以:
-$0\leq |x_n-x||y_n|+|x||y_n-y|\leq |x_n-x|B+|x||y_n-y|$
-而根据`Theorem 8.8`我们有$\lim_{n\to \infty} x_n+y_n=x+y$:
-$\lim_{n\to \infty} |x_n-x|B+|x||y_n-y| =0+|x|\cdot x=0$
-根据`Theorem 8.1 Squeeze Theorem`可知$\lim_{n\to \infty}|x_ny_n-xy|=0$, 这意味着$\lim_{n\to \infty} x_ny_n=xy$,证毕。
-**Proof of 4(Medium): Triangle Inequality&Squeeze Theorem**为了证明这个结论, 我们实际上可以利用已经证明的结论$\lim_{n\to \infty}x_ny_n=xy$
-于是我们只要证明$\lim_{n\to \infty}\frac{1}{y_n}=\frac{1}{y}$
-为了摆脱对于$\epsilon$的复杂讨论，我们转而证明$\lim_{n\to \infty}|\frac{1}{y_n}-\frac{1}{y}|=0$, 同时我们为了利用夹逼定理， 需要为$|\frac{1}{y_n}-\frac{1}{y}|$找一个上界, 且这个上界趋近于零。
-因为: $|\frac{1}{y_n}-\frac{1}{y}|=\frac{|y_n-y|}{|y_n||y|}$, 但是$\frac{|y_n-y|}{|y_n||y|}$不一定趋近于零，我们需要利用$\leq$关系进行放缩
-这个于是我们可以为$|y_n|$找一个下界来$b$, 使得$\forall n\in \mathbb{N}, |y_n|\geq b, ~~s.t.~~ \frac{|y_n-y|}{|y_n||y|}\leq \frac{|y_n-y|}{b|y|}$。
-因为$\lim_{n\to \infty}y_n=y$, 所以数列$\{y_n\}$是有界的，所以$\{|y_n|\}$也一定是有界的，于是
-$\exists M_0, \forall n\geq M_0,~~s.t.~~ |y_n-y|\leq M_0$, 所以根据三角不等式: $|y_n|=|y_n-y+y|\leq |y_n-y|+|y|\leq M_0+|y|$，但这仅仅对$\forall n\geq M_0$成立。
-对于$n=1,2,\cdots, M_0-1$：
-$\{|y_n|\}$上界是$\min\{|y_1|,|y_2|,\cdots, |y_n|\}$, 不妨令$b=\min\{|y_1|,|y_2|,\cdots, M_0+|y|\}$, 使得$\forall n\in \mathbb{N}, |y_n|\geq b$
-于是$\frac{|y_n-y|}{|y_n||y|}\leq \frac{|y_n-y|}{b|y|}$, 根据夹逼原理，$\lim_{n\to \infty}|\frac{1}{y_n}-\frac{1}{y}|=0$，根据$\lim_{n\to \infty}x_ny_n=xy$和$\lim_{n\to \infty}x_n=x$, 我们知道$\lim_{n\to \infty}\frac{x_n}{y_n}=\frac{x}{y}$成立，证毕。
+> [!proof]
+> **Proof of 1(Easy)**因为$\lim_{n\to \infty}x_n=x,\lim_{n\to \infty}y_n=y$, 所以我们有: $\forall \epsilon>0, \exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_0, |x_n-x|<\frac{\epsilon}{2}$, $\forall \epsilon>0, \exists M_1\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_1, |y_n-y|<\frac{\epsilon}{2}$, 于是我们取$M=M_0+M_1$满足$M\geq \max\{M_0,M_1\}$, 所以:
+> $\begin{aligned}|x_n+y_n-(x+y)|&\leq |x_n-x|+|y_n-y|\\&<\frac{\epsilon}{2}+\frac{\epsilon}{2}\\&=\epsilon\end{aligned}$
+> 所以$\lim_{n\to \infty}x_n+y_n\to x+y$, 证毕。
+> **Proof of 2(Easy)**因为$\lim_{n\to \infty}x_n=x$， 所以$\forall \epsilon>0, \exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n\geq M_0, |x_n-x|<\frac{\epsilon}{|c|+1}$, 这么做的目的马上就能看到。于是$|cx_n-cx|=|c||x_n-x|<\frac{|c|}{|c|+1}\epsilon<\epsilon$所以$\lim_{n\to \infty} cx_n \to cx$
+> 那么为什么要取$\frac{\epsilon}{|c|+1}$而不是$\frac{\epsilon}{|c|}$呢？原因就是我们要为了防止$c=0$的情况。
+> 那为什么不取$\frac{\epsilon}{|c|-1}$呢? 原因是我们需要借助$<$关系过渡到$\epsilon$上，但是$\frac{\epsilon}{|c|-1}$不能实现这个需求。
+> **Proof of 3(Medium): Triangle Inequality&Squeeze Theorem**我们根据极限的定义和三角不等式有:
+> $\begin{aligned}|x_ny_n-xy|&=|(x_n-x)y_n+xy_n-xy|\\&\leq|x_n-x||y_n|+|x||y_n-y|\end{aligned}$
+> 于是现在我们需要利用$<$关系将$|x_n-x||y_n|+|x||y_n-y|$过渡到$\epsilon$。因为数列$\{y_n\}$是收敛于$y$的， 所以根据`Theorem 7.3`$\{y_n\}$是`Bounded`的, 换句话说$\exists B\geq 0, \forall n\in \mathbb{N}, |y_n|\leq B$。同时根据`Theorem 8.3`我们知道因为$\lim_{n\to \infty}x_n=x,\lim_{n\to \infty}y_n=y$, 所以
+> $\lim_{n\to \infty}|x_n-x|=0,\lim_{n\to \infty}|y_n-y|=0$
+> 所以:
+> $0\leq |x_n-x||y_n|+|x||y_n-y|\leq |x_n-x|B+|x||y_n-y|$而根据`Theorem 8.8`我们有$\lim_{n\to \infty} x_n+y_n=x+y$:
+> $\lim_{n\to \infty} |x_n-x|B+|x||y_n-y| =0+|x|\cdot 0=0$
+> 根据`Theorem 8.1 Squeeze Theorem`可知$\lim_{n\to \infty}|x_ny_n-xy|=0$, 这意味着$\lim_{n\to \infty} x_ny_n=xy$,证毕。
+> **Proof of 4(Medium): Triangle Inequality&Squeeze Theorem**为了证明这个结论, 我们实际上可以利用已经证明的结论$\lim_{n\to \infty}x_ny_n=xy$。于是我们只要证明$\lim_{n\to \infty}\frac{1}{y_n}=\frac{1}{y}$
+> 为了摆脱对于$\epsilon$的复杂讨论，我们转而证明$\lim_{n\to \infty}|\frac{1}{y_n}-\frac{1}{y}|=0$, 同时我们为了利用夹逼定理， 需要为$|\frac{1}{y_n}-\frac{1}{y}|$找一个上界, 且这个上界趋近于零。
+> 因为: $|\frac{1}{y_n}-\frac{1}{y}|=\frac{|y_n-y|}{|y_n||y|}$, 但是$\frac{|y_n-y|}{|y_n||y|}$不一定趋近于零，我们需要利用$\leq$关系进行放缩
+> 这个于是我们可以为$|y_n|$找一个下界来$b$, 使得$\forall n\in \mathbb{N}, |y_n|\geq b, ~~s.t.~~ \frac{|y_n-y|}{|y_n||y|}\leq \frac{|y_n-y|}{b|y|}$。
+> 因为$\lim_{n\to \infty}y_n=y$, 所以数列$\{y_n\}$是有界的，所以$\{|y_n|\}$也一定是有界的，于是
+> $\exists M_0, \forall n\geq M_0,~~s.t.~~ |y_n-y|\leq M_0$, 所以根据三角不等式: $|y_n|=|y_n-y+y|\leq |y_n-y|+|y|\leq M_0+|y|$，但这仅仅对$\forall n\geq M_0$成立。
+> 对于$n=1,2,\cdots, M_0-1$：
+> $\{|y_n|\}$上界是$\min\{|y_1|,|y_2|,\cdots, |y_n|\}$, 不妨令$b=\min\{|y_1|,|y_2|,\cdots, M_0+|y|\}$, 使得$\forall n\in \mathbb{N}, |y_n|\geq b$
+> 于是$\frac{|y_n-y|}{|y_n||y|}\leq \frac{|y_n-y|}{b|y|}$, 根据夹逼原理，$\lim_{n\to \infty}|\frac{1}{y_n}-\frac{1}{y}|=0$，根据$\lim_{n\to \infty}x_ny_n=xy$和$\lim_{n\to \infty}\frac{1}{y_n}=\frac{1}{y}$, 我们知道$\lim_{n\to \infty}\frac{x_n}{y_n}=\frac{x}{y}$成立，证毕。
 
 ### Power Operations
+> [!thm]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510118976.png)
 
-**Proof of Theorem 10**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510117174.png)
+> [!proof] **Proof of Theorem 10**
+> ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510117174.png)
 
+> [!proof] Proof of Remark 9
+> 利用极限的乘法性质即可。
 
 ### Absolute Value
+> [!thm]
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510126580.png)
 > **Reverse Triangle Inequality:**
 > $\forall a,b\in \mathbb{R}$, $||a|-|b||\leq |a-b|$
 > 注意: `Theorem 12`的逆命题不一定成立。比如$x_n=(-1)^n$, $|x_n|=1\to 1$但是$x_n$diverges.
 > 但是如果$\lim_{n\to \infty}|x_n|=0$, 则$\lim_{n\to \infty} x_n=0$成立(`By Theorem 8.3`)
+> 即`Absolute Convergence` doesn't necessarily imply `Convergence`
 
-**Proof of Reverse Triangle Inequality**$|a|=|a-b+b|\leq |a-b|+|b|\implies |a|-|b|\leq |a-b|$
-$|b|=|b-a+a|\leq |b-a|+|a|\implies |b|-|a|\leq |b-a|$
-于是$||a|-|b||\leq |a-b|$
-**Proof of Theorem 12 Using Theorem 10**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510121323.png)
-**Proof of Theorem 12 Using Reverse Triangle Inequality**根据`Reverse Triangle Inequality`$0\leq ||x_n|-|x||\leq |x_n-x|$, 根据夹逼定理，得到$\lim_{n\to \infty}||x_n|-|x||=0$。
+> [!proof]
+> **Proof of Reverse Triangle Inequality**$|a|=|a-b+b|\leq |a-b|+|b|\implies |a|-|b|\leq |a-b|$
+> $|b|=|b-a+a|\leq |b-a|+|a|\implies |b|-|a|\leq |b-a|$
+> 于是$||a|-|b||\leq |a-b|$
+> **Proof of Theorem 12 Using Theorem 10**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510121323.png)
+> **Proof of Theorem 12 Using Reverse Triangle Inequality**根据`Reverse Triangle Inequality`$0\leq ||x_n|-|x||\leq |x_n-x|$, 根据夹逼定理，得到$\lim_{n\to \infty}||x_n|-|x||=0$。
 
 
 

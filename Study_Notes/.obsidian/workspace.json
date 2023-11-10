@@ -6,37 +6,75 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 38.988580750407834,
+        "dimension": 49.84423676012461,
         "children": [
-          {
-            "id": "953d00ed98868bf1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-              }
-            }
-          },
           {
             "id": "2b2a3a4161a34caa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5dec5c92cd64e86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c35a7fca67e6273",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "452fa205438f5926",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "93f1d5702452c979",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
-        "dimension": 61.011419249592166,
+        "dimension": 50.155763239875384,
         "children": [
           {
             "id": "f873e35e9eeb0952",
@@ -77,9 +115,19 @@
                 "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf"
               }
             }
+          },
+          {
+            "id": "953d00ed98868bf1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -191,7 +239,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +256,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,8 +294,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5,
-    "collapsed": true
+    "width": 390.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -266,53 +313,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c1b3cbdaae8ffc41",
+  "active": "932953190040c9d5",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
+    "Mathematics/Analysis/18_S096_Metric_Space",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152558825.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152558334.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152554183.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152553698.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152551058.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152548473.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546819.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546389.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152525752.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152521334.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109181402769.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180714274.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180656666.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180010709.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109173636369.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109173519754.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/EECS126_Lecture_Notes.pdf",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141658733.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141651949.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141607605.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141556094.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/伯努利过程.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__离散随机变量.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
     "未命名.canvas"
   ]
 }

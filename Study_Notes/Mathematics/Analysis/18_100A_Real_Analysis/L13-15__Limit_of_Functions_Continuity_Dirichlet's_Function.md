@@ -144,34 +144,31 @@
 ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509103303.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106256.png)
 
 ## Continuity Theorem⭐⭐⭐⭐⭐
+> [!thm]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509111515.png)
 > 这里命题$3$的证明和之前的`Convergence`中的证明一致。
 > 其中命题$3$的否定形式在我们证明`Discontinuity`的时候特别有用，我们写出其表述:
-> $f$**is discontinuous at **$c$**if there exists a sequence **$\{x_n\}$**of elements of **$S$**such that **$x_n\to c$**but **$f(x_n)$**does not converge to **$f(c)$**(**$\lim_{n\to \infty}x_n \neq f(c)$**)**
+> $f$ **is discontinuous at $c$if there exists a sequence $\{x_n\}$of elements of $S$such that $x_n\to c$but $f(x_n)$does not converge to $f(c)$**(**$\lim_{n\to \infty}x_n \neq f(c)$**)
 
-**Proof of Theorem 15.1.1(Easy)**本质上，如果$c$不是$S$(函数$f$的定义域)，则临近$c$的点只有$c$本身，此时$f(x)=f(c)=c$。下面我们详细证明:
- 根据定义，如果$c$不是$f$的一个`Cluster Point`, 则$\exists \delta_0>0,~~s.t.~~(c-\delta_0,c+\delta_0)\cap S=\{c\}\tag{1}$
-然后根据我们上面的函数连续的定义我们有: $\forall \epsilon>0,\exists \delta_0>0,~~s.t.~~$如果$x\in S$且$|x-c|<\delta_0$, 则我们有$x=c$(根据$(1)$)，此时$|f(x)-f(c)|=|f(c)-f(c)|=0<\epsilon$。证毕。
-**Proof of Theorem 15.1.2(Medium)**假设$c$是$S$的一个`Cluster Point`, 则我们根据定义有: $\forall \delta>0, (c-\delta,c+\delta)\cap S\backslash\{c\}\neq \emptyset$。同时因为
-($\Longleftarrow$): 如果$\lim_{x\to c}f(x)=f(c)$, 则根据定义，$\forall \epsilon>0, \exists \delta>0,~s.t. ~~if~~x\in S~~ and ~~0<|x-c|<\delta, ~|f(x)-f(c)|<\epsilon$。
-此时我们选取$\delta=\delta_0$, 则如果$x\in S$且$|x-c|<\delta_0$，我们分两种情况讨论：
-
-1. $x=c$(我们可以这么做，因为$c\in S$)，则此时$|f(x)-f(c)|=|f(c)-f(c)|=0<\epsilon$
-2. $x\neq c$，则根据极限的条件，我们有$|f(x)-f(c)|<\epsilon$
-
-($\Longrightarrow$): 如果$f(x)$在$c\in S$处连续, 则根据定义，$\forall \epsilon>0, \exists \delta>0,~s.t. ~~if~~x\in S~~ and ~~|x-c|<\delta, ~|f(x)-f(c)|<\epsilon$, 我们也分两种情况讨论:
-
-1. 如果$x\neq c$，则$\exists\delta>0 ,0<|x-c|<\delta$, 满足$|f(x)-f(c)|<\epsilon$
-2. 如果$x=c$, 则$\exists \delta >0, |c-c|=0<\delta$, 满足$|f(c)-f(c)|=0<\epsilon$。
-
-综上所述，证毕。
-**Proof of Theorem 15.1.3(Medium, 类比Convergence Theorem)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509112360.png)
-你可能会疑惑，为什么$\exists x\in S,~~s.t.~~ |x-c|<\delta$, 就能得到$\forall n\in \mathbb{N}, |x_n-c|<\frac{1}{n}$, 其实我们可以这样想:
-$\exists x_1\in S, ~~s.t.~~, |x_1-c|<1$
-$\exists x_2\in S, ~~s.t.~~, |x_2-c|<\frac{1}{2}$
-所以自然而然我们有:
-$\exists x_n\in S, ~~s.t.~~, |x_n-c|<\frac{1}{n}$
-我们所做的这些努力最终是为了能够套用我们的假设: 如果$x_n\to c$, 则$f(x_n)\to f(c)$, 进而推出矛盾。
+> [!proof]
+> **Proof of Theorem 15.1.1(Easy)**本质上，如果$c$不是$S$(函数$f$的定义域)，则临近$c$的点只有$c$本身，此时$f(x)=f(c)=c$。下面我们详细证明:
+> 根据定义，如果$c$不是$f$的一个`Cluster Point`, 则$\exists \delta_0>0,~~s.t.~~(c-\delta_0,c+\delta_0)\cap S=\{c\}\tag{1}$
+> 然后根据我们上面的函数连续的定义我们有: $\forall \epsilon>0,\exists \delta_0>0,~~s.t.~~$如果$x\in S$且$|x-c|<\delta_0$, 则我们有$x=c$(根据$(1)$)，此时$|f(x)-f(c)|=|f(c)-f(c)|=0<\epsilon$。证毕。
+> 
+> **Proof of Theorem 15.1.2(Medium)**假设$c$是$S$的一个`Cluster Point`, 则我们根据定义有: $\forall \delta>0, (c-\delta,c+\delta)\cap S\backslash\{c\}\neq \emptyset$。同时因为
+> ($\Longleftarrow$): 如果$\lim_{x\to c}f(x)=f(c)$, 则根据定义，$\forall \epsilon>0, \exists \delta>0,~s.t. ~~if~~x\in S~~ and ~~0<|x-c|<\delta, ~|f(x)-f(c)|<\epsilon$。
+> 此时我们选取$\delta=\delta_0$, 则如果$x\in S$且$|x-c|<\delta_0$，我们分两种情况讨论：
+> 1. $x=c$(我们可以这么做，因为$c\in S$)，则此时$|f(x)-f(c)|=|f(c)-f(c)|=0<\epsilon$
+> 2. $x\neq c$，则根据极限的条件，我们有$|f(x)-f(c)|<\epsilon$
+> 
+> ($\Longrightarrow$): 如果$f(x)$在$c\in S$处连续, 则根据定义，$\forall \epsilon>0, \exists \delta>0,~s.t. ~~if~~x\in S~~ and ~~|x-c|<\delta, ~|f(x)-f(c)|<\epsilon$, 我们也分两种情况讨论:
+> 1. 如果$x\neq c$，则$\exists\delta>0 ,0<|x-c|<\delta$, 满足$|f(x)-f(c)|<\epsilon$
+> 2. 如果$x=c$, 则$\exists \delta >0, |c-c|=0<\delta$, 满足$|f(c)-f(c)|=0<\epsilon$。
+> 综上所述，证毕。
+> 
+> **Proof of Theorem 15.1.3(Medium, 类比Convergence Theorem)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509112360.png)
+> 你可能会疑惑，为什么$\exists x\in S,~~s.t.~~ |x-c|<\delta$, 就能得到$\forall n\in \mathbb{N}, |x_n-c|<\frac{1}{n}$, 其实我们可以这样想:$\exists x_1\in S, ~~s.t.~~, |x_1-c|<1$,$\exists x_2\in S, ~~s.t.~~, |x_2-c|<\frac{1}{2}$
+> 所以自然而然我们有:$\exists x_n\in S, ~~s.t.~~, |x_n-c|<\frac{1}{n}$。我们所做的这些努力最终是为了能够套用我们的假设: 如果$x_n\to c$, 则$f(x_n)\to f(c)$, 进而推出矛盾。
 
 ## Some Examples
 ### Trignometric Functions

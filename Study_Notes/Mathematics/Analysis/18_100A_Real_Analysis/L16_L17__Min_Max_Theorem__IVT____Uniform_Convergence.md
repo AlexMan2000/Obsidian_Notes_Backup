@@ -82,58 +82,68 @@ $\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=
 
 # 3 Continuity Types
 ## Continuity
+> [!thm]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509155335.png)
+> **Remarks:**
+> 注意，这里的`Continuous`是针对每一个`Cluster Point`而言的，也就是在每一个`Cluster Point`$c$的周围都能找到一个$c$使得if $\forall\delta>0,|x-c|<\delta$, then $|f(x)-f(c)|<\epsilon$。
 
-**Example**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509163614.png)
+> [!example]
+> **Example**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509163614.png)
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509166966.png)
 
 ## Uniform Continuity
 ### Definition
+> [!def]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169040.png)
 
-**Example(Proof for uniform continuity)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169200.png)
+> [!example] $f(x)=x^2$ is uniformly continuous on $[0,1]$
+> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169200.png)
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509162151.png)
 
 
 ### Non-Uniform Continuity
+> [!def]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509165883.png)
 > **Sequence Perspective(Non Uniform Criteria):**
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509176704.png)
 
-**Proof for the criteria ( 2=3 )**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177778.png)
-**Examples(Proof for non-uniform continuity)**
-1. ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509171039.png)
+> [!proof]
+> **Proof for the criteria ( 2=3 )**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177778.png)
 
-![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509179674.png)
+> [!example] Example 1: $f(x)=\frac{1}{x}$ is not uniformly continuous on $(0,1)$
+> **Examples(Proof for non-uniform continuity)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509171039.png)
+![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509179674.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509172378.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177499.png)
 
-2. $f(x)=x^2$**is not uniformly continuous on **$\mathbb{R}$
 
-Choose $\epsilon_0=1$, but $\delta>0$. Choose $c=\frac{1}{\delta}$, $x=\frac{1}{\delta}+\frac{\delta}{2}$, 则$|x-c|=\frac{\delta}{2}<\delta$。 $|x^2-c^2|=|(x+c)(x-c)|=(\frac{2}{\delta}+\frac{\delta}{2})\frac{\delta }{2}=1+\frac{\delta^2}{4}\geq 1=\epsilon_0$
+> [!example] Example 2: $f(x)=x^2$is not uniformly continuous on  $\mathbb{R}$
+> Choose $\epsilon_0=1$, but $\delta>0$. Choose $c=\frac{1}{\delta}$, $x=\frac{1}{\delta}+\frac{\delta}{2}$, 则$|x-c|=\frac{\delta}{2}<\delta$。 $|x^2-c^2|=|(x+c)(x-c)|=(\frac{2}{\delta}+\frac{\delta}{2})\frac{\delta }{2}=1+\frac{\delta^2}{4}\geq 1=\epsilon_0$
 
-3. ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509172378.png)
 
-![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177499.png)
+> [!example] Example 3: $f(x)=e^x$ is not uniformly continous on $\mathbb{R}$
+> We could start from choosing $\epsilon_0=1,~x=c+\frac{\delta}{2}$, where $|x-c|=\frac{\delta}{2}<\delta$. Then $|e^x-e^c|=|e^c(e^{\frac{\delta}{2}}-1)|=|e^c||e^{\frac{\delta}{2}}-1|$. Here since $\lim_{c\to \infty}e^c=\infty$, we know that there always exists such $c\in \mathbb{R}$ so that $|e^c||e^{\frac{\delta}{2}}-1|>1=\epsilon_0$ and the proof is finished.
+
 
 
 ## Continuity vs Uniform Continuity
 ### Difference
+> [!important]
 > 对于函数$f:S\to \mathbb{R}$
 > - 在`Continuity`中，我们的条件是$\forall \epsilon>0, \forall c\in S, \exists \delta(\epsilon,c)>0, \forall x\in S~~and~~ x\in (c-\delta, c+\delta),|f(x)-f(c)|<\epsilon$
-> 
-$\delta$是一个多元函数，也就是会依赖于$\epsilon$和$c$的取值。
+> $\delta$是一个多元函数，也就是会依赖于$\epsilon$和$c$的取值。 可以想象一个`box`在函数上移动，这个`box`的横轴长度就是$|x-c|=\delta$, 这个`box`的纵轴宽度就是$|f(x)-f(c)|=\epsilon$, 这个`box`在函数上滑动时`box`的横轴长度可以改变，从而使得纵轴宽度不超过$\epsilon$。
 > - 在`Uniform Continuity`中，我们的条件是$\forall \epsilon>0,\exists \delta(\epsilon)>0, \forall x,c\in S~~that~~satisfies~~|x-c|<\delta,|f(x)-f(c)|<\epsilon$
-> 
-$\delta$有且仅能依赖于$\epsilon$的值，是一个比`Continuity`更强的连续性质。
+> $\delta$有且仅能依赖于$\epsilon$的值，是一个比`Continuity`更强的连续性质, 可以想象一个`box`在函数上移动，这个`box`的横轴长度就是$|x-c|=\delta$, 这个`box`的纵轴宽度就是$|f(x)-f(c)|=\epsilon$, 我们要保证这个`box`无论滑动到哪里函数的值都不会超过`box`的纵轴宽度。
 > 辅助视频: [https://www.youtube.com/watch?v=nquj643mU1o](https://www.youtube.com/watch?v=nquj643mU1o)
 
 
 
 ### 在闭合定义域下, Cont. = Uniform Cont.
+> [!thm]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177413.png)
-> **注意: **这个结论成立的条件是当函数$f$被定义在$[a,b]$(`Close and Bounded Interval`)上时才成立。
+> 注意: 这个结论成立的条件是当函数$f$被定义在$[a,b]$(`Close and Bounded Interval`)上时才成立。
 
-**Proof of Theorem 7（Hard, BW-Theorem）**($\Longleftarrow$): 这个结论很显然，因为如果$f$是`Uniformly Continuous`的，则$\forall \epsilon>0, \exists \delta=\delta(\epsilon)>0, ~~s.t.~~\forall x,c\in S, 只要|x-c|<\delta ,则|f(x)-f(c)|<\epsilon$, 这其实就是一个比`Continuous`更强的条件。
-![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509184058.png)
+> [!proof]
+> **Proof of Theorem 7（Hard, BW-Theorem）**
+> ($\Longleftarrow$): 这个结论很显然，因为如果$f$是`Uniformly Continuous`的，则$\forall \epsilon>0, \exists \delta=\delta(\epsilon)>0, ~~s.t.~~\forall x,c\in S, 只要|x-c|<\delta ,则|f(x)-f(c)|<\epsilon$, 这其实就是一个比`Continuous`更强的条件。![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509184058.png)
 
 
 

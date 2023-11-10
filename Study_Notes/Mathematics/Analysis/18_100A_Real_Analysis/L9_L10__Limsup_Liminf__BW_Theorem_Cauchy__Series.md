@@ -27,80 +27,70 @@
 
 
 ## Prove Zero Identity**⭐⭐⭐**
-:::info
-在证明一个实数$x\in \mathbb{R}$为零或者小于等于零的过程中，一个非常好用的方法是:
+> [!info]
+> 在证明一个实数$x\in \mathbb{R}$为零或者小于等于零的过程中，一个非常好用的方法是:
+> - 如果$\forall \epsilon>0, |x|<\epsilon$, 则$x=0$
+> - 如果$\forall \epsilon>0, x<\epsilon$, 则$x\leq 0$
+> 
+> 下面证明`Theorem 4`的过程中就会用到这个方法。
 
-- 如果$\forall \epsilon>0, |x|<\epsilon$, 则$x=0$
-- 如果$\forall \epsilon>0, x<\epsilon$, 则$x\leq 0$
-
-下面证明`Theorem 4`的过程中就会用到这个方法。
-:::
  
 ## Definition&Examples
+> [!important]
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510164982.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510169841.png)
 > **直观理解limsup和liminf:** [https://www.youtube.com/watch?v=EvTpC5FlirE](https://www.youtube.com/watch?v=EvTpC5FlirE)
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510166897.png)
-> **总的来说，对于任意一个**`**Bounded Sequence**`$\{x_n\}$**, **$\lim_{n\to \infty}x_n$**可能不存在，但是:**
+> **总的来说，对于任意一个**`Bounded Sequence`$\{x_n\}$**, $\lim_{n\to \infty}x_n$可能不存在，但是:**
 > 1. $\forall n\in \mathbb{N}, \lim_{n\to \infty} \sup\{x_k|k\geq n\}$一定存在。
 > 2. $\forall n\in \mathbb{N}, \lim_{n\to \infty} \inf\{x_k|k\geq n\}$也一定存在。
 > 3. $\forall n\in \mathbb{N},a_n=\sup\{x_k|k\geq n\}$是递减数列，且有界。
 > 4. $\forall n\in \mathbb{N},b_n=\inf\{x_k|k\geq n\}$是递增数列，且有界。
 > 
-**注意事项:**
+> **注意事项:**
 > $\{x_k|k\geq n\}$是数列$\{x_n\}$的子序列。但是由$a_n=\sup\{x_k|k\geq n\}$或者$b_n=\inf\{x_k|k\geq n\}$组成的序列$\{a_n\}$和$\{b_n\}$不一定是$\{x_n\}$的子序列。在下面的例子中我们将会看到。
 
-**Lemma and Proof****If **$A,B\subset \mathbb{R}$**, **$A,B\neq \emptyset$**且**$A,B$**都是有界的，则:**
-$A\subset B\implies infB\leq infA\leq supA\leq supB$
-**Proof(Easy): **首先因为$A\subset B$**, **所以$sup B$是$A$的一个`Upper Bound`, 根据$sup$的定义，我们有$supA\leq sup B$, 同理可证$infB\leq infA$。而我们知道$inf A\leq supA$恒成立，于是证毕。
-**Proof of Theorem 4(Medium)⭐⭐⭐**根据定义, 我们知道$a_n=\sup\{x_k:k\geq n\}$, $b_n=\sup\{x_k:k\geq n\}$
-
-1. **证明数列**$\{a_n\}$**是递减的,**$\{b_n\}$**是递增的**
-
-首先为了证明$\{a_n\}$是递减的，我们只需要证明$\forall n\in \mathbb{N}, a_{n+1}\leq a_n$。根据定义$A_1=\{x_k:k\geq n+1\}\subset B_1=\{x_k:k\geq n\}$, 根据我们刚刚证明的`Lemma`，所以$supA\leq supB$, 于是$a_{n+1}\leq a_n,\forall n\in \mathbb{N}$, 证毕。
-然后为了证明$\{b_n\}$是递增的，我们只需要证明$\forall n\in \mathbb{N}, b_{n}\leq b_{n+1}$，$A_2=\{x_k:k\geq n+1\}\subset B_2=\{x_k:k\geq n\}$,根据我们刚刚证明的`Lemma`，所以$infB\leq infA$, 于是$b_{n}\leq b_{n+1},\forall n\in \mathbb{N}$, 证毕。
-
-2. **证明数列**$\{a_n\}$**和**$\{b_n\}$**都是有界的。**
-
-因为$\{x_n\}$有界，所以$\exists B\leq 0,~~s.t.~~\forall n\in \mathbb{N} , -B\leq x_n\leq B$, 而我们知道集合$\{x_k:k\geq n\}\subset \{x_n\}$, 所以$-B\leq \{x_k:k\geq n\}\leq B$, 所以根据`Greatest Lower Bound`的性质, 我们有$-B\leq \inf\{x_k:k\geq n\}\leq \sup\{x_k:k\geq n\}\leq B$, 于是$-B\leq a_n\leq b_n\leq B$, 于是$\{a_n\}$和$\{b_n\}$都是有界的。证毕。
-
-3. **证明**$\lim_{n\to \infty} b_n \leq \lim_{n\to \infty}a_n$
-
-首先我们有$\forall n\in \mathbb{N} , b_n\leq a_n$成立，因为对于任意一个$n\in \mathbb{N}$, $b_n=\inf\{x_k:k\geq n\}, a_n=\sup\{x_k:k\geq n\}$, 而对于集合$\{x_k:k\geq n\}$来说，总有$\inf\{x_k:k\geq n\} \leq \sup\{x_k:k\geq n\}$成立，于是$\forall n\in \mathbb{N}, b_n\leq a_n$。
-而根据数列极限的基本性质[不等式关系](https://www.yuque.com/alexman/cbermo/whd7gt#G8Uw8)我们有: $\lim_{n\to \infty} b_n\leq \lim_{n\to \infty}a_n$，证毕。
-**Examples⭐⭐**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510167155.png)
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510179661.png)
-在第二个例子中，我们看到由$a_n=\inf\{x_k|k\geq n\}$组成的序列就不是$\{x_n\}$的子序列。需要特别注意。
-同时上面的两个例子其实也顺便探究了$\limsup_{n\to \infty}x_n$和$\liminf_{n\to \infty}x_n$是否相等和数列$\{x_n\}$是否收敛之间的关系，而这个关系被`BW`封装成了一个定义，后面我们会详细介绍。
+> [!proof]
+> **Lemma and Proof
+> If $A,B\subset \mathbb{R}$**, **$A,B\neq \emptyset$且$A,B$都是有界的，则:**$A\subset B\implies infB\leq infA\leq supA\leq supB$
+> **Proof(Easy): **首先因为$A\subset B$**, **所以$sup B$是$A$的一个`Upper Bound`, 根据$sup$的定义，我们有$supA\leq sup B$, 同理可证$infB\leq infA$。而我们知道$inf A\leq supA$恒成立，于是证毕。
+> **Proof of Theorem 4(Medium)⭐⭐⭐**根据定义, 我们知道$a_n=\sup\{x_k:k\geq n\}$, $b_n=\inf\{x_k:k\geq n\}$
+> 1. **证明数列**$\{a_n\}$**是递减的,**$\{b_n\}$**是递增的**。首先为了证明$\{a_n\}$是递减的，我们只需要证明$\forall n\in \mathbb{N}, a_{n+1}\leq a_n$。根据定义$A_1=\{x_k:k\geq n+1\}\subset B_1=\{x_k:k\geq n\}$, 根据我们刚刚证明的`Lemma`，所以$supA\leq supB$, 于是$a_{n+1}\leq a_n,\forall n\in \mathbb{N}$, 证毕。然后为了证明$\{b_n\}$是递增的，我们只需要证明$\forall n\in \mathbb{N}, b_{n}\leq b_{n+1}$，$A_2=\{x_k:k\geq n+1\}\subset B_2=\{x_k:k\geq n\}$,根据我们刚刚证明的`Lemma`，所以$infB\leq infA$, 于是$b_{n}\leq b_{n+1},\forall n\in \mathbb{N}$, 证毕。
+> 2. **证明数列**$\{a_n\}$**和**$\{b_n\}$**都是有界的。**因为$\{x_n\}$有界，所以$\exists B\leq 0,~~s.t.~~\forall n\in \mathbb{N} , -B\leq x_n\leq B$, 而我们知道集合$\{x_k:k\geq n\}\subset \{x_n\}$, 所以$-B\leq \{x_k:k\geq n\}\leq B$, 所以根据`Greatest Lower Bound`的性质, 我们有$-B\leq \inf\{x_k:k\geq n\}\leq \sup\{x_k:k\geq n\}\leq B$, 于是$-B\leq a_n\leq b_n\leq B$, 于是$\{a_n\}$和$\{b_n\}$都是有界的。证毕。
+> 3. **证明**$\lim_{n\to \infty} b_n \leq \lim_{n\to \infty}a_n$。首先我们有$\forall n\in \mathbb{N} , b_n\leq a_n$成立，因为对于任意一个$n\in \mathbb{N}$, $b_n=\inf\{x_k:k\geq n\}, a_n=\sup\{x_k:k\geq n\}$, 而对于集合$\{x_k:k\geq n\}$来说，总有$\inf\{x_k:k\geq n\} \leq \sup\{x_k:k\geq n\}$成立，于是$\forall n\in \mathbb{N}, b_n\leq a_n$。而根据数列极限的基本性质[不等式关系](https://www.yuque.com/alexman/cbermo/whd7gt#G8Uw8)我们有: $\lim_{n\to \infty} b_n\leq \lim_{n\to \infty}a_n$，证毕。
+> 
+> **Examples⭐⭐**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510167155.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510179661.png)。在第二个例子中，我们看到由$a_n=\inf\{x_k|k\geq n\}$组成的序列就不是$\{x_n\}$的子序列。需要特别注意。同时上面的两个例子其实也顺便探究了$\limsup_{n\to \infty}x_n$和$\liminf_{n\to \infty}x_n$是否相等和数列$\{x_n\}$是否收敛之间的关系，而这个关系被`BW`封装成了一个定义，后面我们会详细介绍。
 
 
 ## limsup/liminf 不等式**⭐⭐⭐**
+> [!property]
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510173474.png)
 
-**Proof(Medium)**
-1. 首先我们证明中间的不等式，我们令集合$M=\{x_{n_k}:k\geq j\}$,  所以我们知道$\forall k\geq j$, $inf M\leq x_{n_k} \leq supM$, 即$\liminf_{k\to\infty}x_{n_k}\leq x_{n_k}\leq \limsup_{k\to \infty}x_{n_{k}}$
-2. 我们证明第三个不等式:
-
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510175840.png)
-
-3. 第一个不等式的证明思路类似:
-
-假设$b_j:=\inf\{x_k:k\geq j\},d_j:=\inf\{x_{n_k}:k\geq j\}$, 注意到虽然$\{d_j\}$可能不是$\{b_j\}$的子序列（因为数列顺序不同），但是因为$n_k\geq k,\forall k\in \mathbb{N}$, 所以$\{x_{n_k}:k\geq j\}\subset \{x_k:k\geq j\}$, 于是$\inf\{x_{n_k}:k\geq j\}\geq\inf\{x_k:k\geq j\},\forall j$, 于是$\liminf_{k\to \infty}\{x_{n_k}:k\geq j\}\geq\liminf_{k\to \infty}\{x_k:k\geq j\}$, 即$\liminf x_n\leq \liminf x_{n_k}$
-综上，我们有$\liminf x_n\leq \liminf x_{n_k}\leq \limsup x_{n_k}\leq \limsup x_n$
+> [!proof]
+> **Proof(Medium)**
+> 1. 首先我们证明中间的不等式，我们令集合$M=\{x_{n_k}:k\geq j\}$,  所以我们知道$\forall k\geq j$, $inf M\leq x_{n_k} \leq supM$, 即$\liminf_{k\to\infty}x_{n_k}\leq x_{n_k}\leq \limsup_{k\to \infty}x_{n_{k}}$
+> 2. 我们证明第三个不等式:![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510175840.png)
+> 3. 第一个不等式的证明思路类似:
+> 假设$b_j:=\inf\{x_k:k\geq j\},d_j:=\inf\{x_{n_k}:k\geq j\}$, 注意到虽然$\{d_j\}$可能不是$\{b_j\}$的子序列（因为数列顺序不同），但是因为$n_k\geq k,\forall k\in \mathbb{N}$, 所以$\{x_{n_k}:k\geq j\}\subset \{x_k:k\geq j\}$, 于是$\inf\{x_{n_k}:k\geq j\}\geq\inf\{x_k:k\geq j\},\forall j$, 于是$\liminf_{k\to \infty}\{x_{n_k}:k\geq j\}\geq\liminf_{k\to \infty}\{x_k:k\geq j\}$, 即$\liminf x_n\leq \liminf x_{n_k}$
+> 
+> 综上，我们有$\liminf x_n\leq \liminf x_{n_k}\leq \limsup x_{n_k}\leq \limsup x_n$
 
 
 # 3 Bolzano-Weierstress
 ## BW1:数列有界=存在子数列收敛
+> [!lemma]
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510173231.png)
 
-**Proof of Theorem 2.3.4（Medium）**
-1. 证明$\lim_{n\to \infty}x_{n_k}=\limsup_{n\to \infty}x_n$
+> [!proof]
+> **Proof of Theorem 2.3.4（Medium）**
+> 1. 证明$\lim_{n\to \infty}x_{n_k}=\limsup_{n\to \infty}x_n$![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510174911.png)于是$n_1+1<n_2+1<\cdots<n_k+1$, 所以$\{a_{n_k+1}\}$是$\{a_n\}$的一个`Subsequence`而我们知道$\lim_{n\to \infty} a_n=\limsup_{n\to \infty}\{x_k:k\geq n\}\stackrel{From ~~Definition}=\limsup_{n\to \infty}x_n$ , 所以根据[Subsequence Convergence Theorem](https://www.yuque.com/alexman/cbermo/whd7gt#n4MgK), 任何$\{a_n\}$的子序列$\{a_{n_k+1}\}$都满足$\lim_{k\to \infty}a_{n_k+1}=\limsup_{n\to \infty}x_n$。于是，利用夹逼原理, $\lim_{n\to \infty}x_{n_k}=\limsup_{n\to \infty}x_n$, 证毕。
+> 2. 证明$\lim_{k\to \infty}x_{m_k}=\liminf_{n\to \infty}x_n$, 我们有类似的论证思路，即利用$inf$的定义。
+> Let $b_n=\inf \left\{x_k \mid k \geqslant n\right\}$. and $B=\left\{x_k \mid k \geqslant n\right\}$.
+> $$\begin{aligned}& \because b_1=\inf \left\{x_k \mid k \geqslant 1\right\} \\& \therefore \exists n_1 \in N \text {, st. } b_1<x_{n_1}<b_1+1\end{aligned}$$
+> Now we construct $b_{n_1+1}=\inf \left\{x_k \mid k \geqslant n_1+1\right\}$ and will have:$$\exists n_2>n_1 \text {, s.t } b_{n_1+1}<x_{n_2}<b_{n_1+1}+\frac{1}{2}$$
+> Continuing this process we could get a sequence of integer $n_1<n_2<\ldots$ such that:$$\begin{aligned}& b_{n_k+1}<x_{n_k}<b_{n_k+1}+\frac{1}{k} \\& \because n_1<n_2<\cdots<n_k \\& \therefore n_1+1<n_2+1<\cdots<n_k+1 \\& \therefore\left\{b_{n_k+1}\right\} \text { is a subsequence of }\left\{b_n\right\} \\& \therefore \lim _{k \rightarrow \infty} b_{n_k+1}=\lim _{k \rightarrow \infty} b_n=\lim _{n \rightarrow \infty}\left(\operatorname{linf}_{n \rightarrow \infty}\left\{x_k \mid k \geqslant n\right\}\right)=\liminf _{n \rightarrow \infty} b_n \\& \quad \lim _{k \rightarrow \infty} b_{n_k+1}+\frac{1}{k}=\lim _{n \rightarrow \infty} b_n+\frac{1}{k}=\lim _{n \rightarrow \infty} \inf b_n+0=\liminf _{n \rightarrow \infty} b_n .\end{aligned}$$
+> $\therefore\left\{b_{n_k+1}\right\}$ is a subsequence of $\left\{b_n\right\}$
+> $\therefore$ By squeeze theorem, we have $\lim _{k \rightarrow \infty} x_{n_k}=\lim _{n \rightarrow \infty} b_n$
 
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510174911.png)
-于是$n_1+1<n_2+1<\cdots<n_k+1$, 所以$\{a_{n_k+1}\}$是$\{a_n\}$的一个`Subsequence`
-而我们知道$\lim_{n\to \infty} a_n=\limsup_{n\to \infty}\{x_k:k\geq n\}\stackrel{From ~~Definition}=\limsup_{n\to \infty}x_n$ , 所以根据[Subsequence Convergence Theorem](https://www.yuque.com/alexman/cbermo/whd7gt#n4MgK), 任何$\{a_n\}$的子序列$\{a_{n_k+1}\}$都满足$\lim_{k\to \infty}a_{n_k+1}=\limsup_{n\to \infty}x_n$。
-于是，利用夹逼原理, $\lim_{n\to \infty}x_{n_k}=\limsup_{n\to \infty}x_n$, 证毕。
-
-2. 证明$\lim_{n\to \infty}x_{m_k}=\liminf_{n\to \infty}x_n$
 
 
 
@@ -110,21 +100,20 @@ $A\subset B\implies infB\leq infA\leq supA\leq supB$
 
 
 ## 数列有界, 收敛=(limsup=liminf=lim)
+> [!thm]
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510174036.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510182672.png)
 
-**Proof of Theorem 11(Easy)**
-1.  ($\Longleftarrow$,  $\liminf x_n=\limsup x_n$means $\{x_n\}$is convergent)。
+> [!proof]
+> **Proof of Theorem 11(Easy)**
+> 1. ($\Longleftarrow$),  $\liminf x_n=\limsup x_n$means $\{x_n\}$is convergent)。首先我们知道$\inf\{x_k:k\geq n\}\leq x_n\leq \sup\{x_k:k\geq n\}$(很显然)，因为$\liminf x_n=\limsup x_n$, 所以根据夹逼原理我们有$\liminf\{x_k:k\geq n\}\leq \lim_{n\to \infty}x_n\leq \limsup\{x_k:k\geq n\}$, 即$\liminf x_n\leq \lim_{n\to \infty}x_n\leq\limsup x_n$, 而因为$\liminf x_n=\limsup x_n$, 所以$\lim_{n\to \infty}x_n=\liminf x_n=\limsup x_n$, $\{x_n\}$收敛，证毕。
+> 2. ($\Longrightarrow$), $\{x_n\}$is convergent means $\liminf x_n=\limsup x_n$)。
+> 
+> 我们令$L=\lim_{n\to \infty}x_n$. 根据之前的`Limit of Subsequences`定理，我们知道（如果数列收敛与$x$, 则其所有子数列也都收敛于$x$）:
+> - 存在$\{x_n\}$的子序列$\{x_{n_k}\}$使得$\lim_{k\to \infty}x_{n_k}=\limsup x_n\implies L=\limsup x_n$
+> - 存在$\{x_n\}$的子序列$\{x_{m_k}\}$使得$\lim_{k\to \infty}x_{m_k}=\liminf x_n\implies L=\liminf x_n$
+> 
+> 于是$\liminf x_n=\limsup x_n=L$, 证毕。
 
-首先我们知道$\inf\{x_k:k\geq n\}\leq x_n\leq \sup\{x_k:k\geq n\}$(很显然)，因为$\liminf x_n=\limsup x_n$, 所以根据夹逼原理我们有$\liminf\{x_k:k\geq n\}\leq \lim_{n\to \infty}x_n\leq \limsup\{x_k:k\geq n\}$, 即$\liminf x_n\leq \lim_{n\to \infty}x_n\leq\limsup x_n$, 而因为$\liminf x_n=\limsup x_n$, 所以$\lim_{n\to \infty}x_n=\liminf x_n=\limsup x_n$, $\{x_n\}$收敛，证毕。
-
-2. ($\Longrightarrow$, $\{x_n\}$is convergent means $\liminf x_n=\limsup x_n$)。
-
-我们令$L=\lim_{n\to \infty}x_n$. 根据之前的`Limit of Subsequences`定理，我们知道（如果数列收敛与$x$, 则其所有子数列也都收敛于$x$）:
-
-   - 存在$\{x_n\}$的子序列$\{x_{n_k}\}$使得$\lim_{k\to \infty}x_{n_k}=\limsup x_n\implies L=\limsup x_n$
-   - 存在$\{x_n\}$的子序列$\{x_{m_k}\}$使得$\lim_{k\to \infty}x_{m_k}=\liminf x_n\implies L=\liminf x_n$
-
-于是$\liminf x_n=\limsup x_n=L$, 证毕。
 
 
 ## Negation on BW Theorem
@@ -134,39 +123,42 @@ $A\subset B\implies infB\leq infA\leq supA\leq supB$
 # 4 Completeness of Real Numbers
 ## Cauchy Sequence
 ### Definition
-:::info
+> [!info]
 ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181535.png)
 本质上，`Cauchy`描述了一个在$n\geq M_0\in \mathbb{N}$后元素两两很接近的数列。
-:::
-**Example**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181767.png)
+
+> [!example]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181767.png)
 
 
 ### Counter-Definition
-:::info
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510186317.png)
-:::
-**Example**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510184384.png)
+> [!def]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510186317.png)
+
+> [!example]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510184384.png)
 
 ## Theorems on Cauchy Sequence**⭐⭐**
 ### Cauchy => Boundedness
-:::info
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510184914.png)
-:::
-**Proof(Easy)**类比[Convergent Sequence is Bounded](https://www.yuque.com/alexman/cbermo/whd7gt#FCUzp)的思想，我们有:
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181511.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510193556.png)
+> [!thm]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510184914.png)
+
+> [!proof]
+> 类比[Convergent Sequence is Bounded](https://www.yuque.com/alexman/cbermo/whd7gt#FCUzp)的思想，我们有:![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181511.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510193556.png)
 
 ### Subsequence Convergence
-:::info
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510197860.png)
-**Remark:**
+> [!thm]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510197860.png)
+> **Remark:**
+> - 对于一个任意数列来说，如果存在一个收敛的子数列，原数列不一定收敛。
+> - 而对于一个柯西数列来说，但凡存在一个收敛的子数列，那么这个柯西数列就是收敛的。
 
-- 对于一个任意数列来说，如果存在一个收敛的子数列，原数列不一定收敛。
-- 而对于一个柯西数列来说，但凡存在一个收敛的子数列，那么这个柯西数列就是收敛的。
-:::
-**Proof of Theorem 6(Easy, just by definition)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510196061.png)
-$n_M\geq M$的结论是应用了我们之前证明过的一个引理:
-假设$1\leq n_1<n_2<\cdots<n_k$, 则$n_k \geq k,\forall k\in \mathbb{N}$
-证明: [引理证明](https://www.yuque.com/alexman/cbermo/whd7gt#n6PiQ)
+
+> [!proof]
+> **Proof of Theorem 6(Easy, just by definition)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510196061.png)
+> $n_M\geq M$的结论是应用了我们之前证明过的一个引理:
+> 假设$1\leq n_1<n_2<\cdots<n_k$, 则$n_k \geq k,\forall k\in \mathbb{N}$
+> 证明: [引理证明](https://www.yuque.com/alexman/cbermo/whd7gt#n6PiQ)
 
 
 ### Prove Cauchy**⭐⭐⭐**

@@ -32,31 +32,42 @@
 > 1. $x$is a lower bound for $S$
 > 2. for all $\epsilon>0$, $\exists y\in S$such that $x\leq y< x+\epsilon$
 
-**Proof**我们先证明第一条`Least Upper Bound`:
-**正方向:**
-因为$x=supS$, 所以$\forall s\in S, s\leq supS=x$, 于是$x$一定是一个`Upper Bound for S`
-因为$x=supS$是`Least Upper Bound`, 则$\forall \epsilon$, $supS-\epsilon$不是$S$的`Upper Bound`, 这表明$\exists e\in S~~s.t.~~supS-\epsilon<e<supS$, 正方向证明完毕。
-**反方向：**
-      	首先因为$x$是$S$的一个`Upper Bound`, 且$S\subset \mathbb{R}$, 所以$supS$存在。而我们知道$x\geq supS$ 因为$\forall \epsilon>0, \exists y\in S~~s.t.~~x-\epsilon< y\leq x$, 所以$$
+> [!proof]
+> **Proof**我们先证明第一条`Least Upper Bound`:
+> **正方向:**
+> 因为$x=supS$, 所以$\forall s\in S, s\leq supS=x$, 于是$x$一定是一个`Upper Bound for S`
+> 因为$x=supS$是`Least Upper Bound`, 则$\forall \epsilon$, $supS-\epsilon$不是$S$的`Upper Bound`, 这表明$\exists e\in S~~s.t.~~supS-\epsilon<e<supS$, 正方向证明完毕。
+> 
+> **反方向：**
+> 首先因为$x$是$S$的一个`Upper Bound`, 且$S\subset \mathbb{R}$, 所以$supS$存在。而我们知道$x\geq supS$ 因为$\forall \epsilon>0, \exists y\in S~~s.t.~~x-\epsilon< y\leq x$, 所以
 
-### 1.2.2 Other Corollaries 
+
+## 1.2.2 Other Corollaries 
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509542777.png)
 > 我们使用两种方法证明这个结论:
 > 第一种是通过求出集合$\{1-\frac{1}{n}|n\in \mathbb{N}\}$的`Upper Bound`的取值范围来得到那个最小的`Upper Bound`。
 > 第二种是使用`Least Upper Bound`的精确定义来证明.
 
-**Proof 1: Using Definition of Sup**令集合, 因为, , 于是, 换句话说，是集合的`Upper Bound`。令, 则我们想证明, 因为这样我们就可以知道的`Least Upper Bound`是了。
-为了证明, 我们可以通过反证法证明然后推矛盾。
-假设, 则, 则根据`Archimedian Property`我们知道, 也就是说, 即, 这和的定义相悖，于是成立。
-于是
-**Proof 2: Using the above corollary**令集合$S=\{1-\frac{1}{n}|n\in \mathbb{N}\}$, 因为$\forall n \in \mathbb{N}$, $1-\frac{1}{n}\leq 1$, 于是$\forall e\in S,e\leq 1$, 换句话说，$1$是集合$S$的`Upper Bound`。下面我们只需要证明$\forall \epsilon>0,\exists y \in S ~~s.t.~~ 1-\epsilon<y\leq 1$。
-根据`Archimedian Property`, 我们知道$\forall \epsilon>0$, $\exists n\in \mathbb{N},~~s.t.~~n\epsilon>1$, 即$\epsilon>\frac{1}{n}$, 所以相当于说$\forall \epsilon>0, \exists n\in \mathbb{N} ~~s.t.~~ 1-\epsilon<1-\frac{1}{n}\leq 1$, 于是$\forall \epsilon>0,\exists e\in S~~s.t.~~1-\epsilon<e\leq 1$, 于是根据上面的精确定义，我们知道$1$就是$S$的`Least Upper Bound`。
-> ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509554023.png)
-> 令$S=\{\frac{1}{n}:n\in \mathbb{N}\}$
+> [!proof]
+> **Proof 1: Using Definition of Sup**
+> 令集合 $S=\left\{1-\frac{1}{n} \mid n \in \mathbb{N}\right\}$ ，因为 $\forall n \in \mathbb{N} ， 1-\frac{1}{n} \leq 1$ ，于是 $\forall e \in S, e \leq 1$ ，换句话说， 1 是集合 $S$ 的 Upper Bound。令 $x=\sup S$ ，则我们想证明 $x \geq 1$ ，因为这样我们就可以知道 $S$ 的 Lea st Upper Bound 是 1 了。为了证明 $x \geq 1$ ，我们可以通过反证法证明 $x<1$ 然后推矛盾。假设 $x<1$ ，则 $1-x>0$ ，则根据 Archimedian Property 我们知道 $\exists n \in \mathbb{N}$ s.t. $n(1-x)>1$ ，也就是说 $\exists n \in \mathbb{N}$, s.t. $1-x>\frac{1}{n}$ ，即 $x<1-\frac{1}{n} \in S$ ，这和 $x=\sup S$ 的定义相悖，于是 $x \geq 1$ 成立。于是 $\sup S=1$
 
-**Proof 1: Using Definition of Inf**首先, , 所以是的`Lower Bound`, 令, 我们要证明。
-我们还是使用反证法, 假设, 则根据`Archimedian Property`, , 于是, 这与的定义矛盾，于是成立，也就是说是的`Greatest Lower Bound`
-**Proof 2: Using the above corollary**首先, 是的`Lower Bound`, 然后根据`Archimedian Property`, , 于是, 而, 于是
+> [!proof]
+> **Proof 2: Using theorem 4**令集合$S=\{1-\frac{1}{n}|n\in \mathbb{N}\}$, 因为$\forall n \in \mathbb{N}$, $1-\frac{1}{n}\leq 1$, 于是$\forall e\in S,e\leq 1$, 换句话说，$1$是集合$S$的`Upper Bound`。下面我们只需要证明$\forall \epsilon>0,\exists y \in S ~~s.t.~~ 1-\epsilon<y\leq 1$。根据`Archimedian Property`, 我们知道$\forall \epsilon>0$, $\exists n\in \mathbb{N},~~s.t.~~n\epsilon>1$, 即$\epsilon>\frac{1}{n}$, 所以相当于说$\forall \epsilon>0, \exists n\in \mathbb{N} ~~s.t.~~ 1-\epsilon<1-\frac{1}{n}\leq 1$, 于是$\forall \epsilon>0,\exists e\in S~~s.t.~~1-\epsilon<e\leq 1$, 于是根据上面的精确定义，我们知道$1$就是$S$的`Least Upper Bound`。
+
+
+
+> [!corollary] 
+> ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509554023.png)
+> 
+
+> [!proof] Proof Method 1: Definition of Inf
+> 首先 $\forall n \in \mathbb{N} ， \frac{1}{n}>0$ ，所以 0 是 $S$ 的 Lower Bound，令 $x=\inf S$ ，我们要证明 $x \leq 0$ 。我们还是使用反证法，假设 $x>0$ ，则根据 Archimedian Property， $\exists n \in \mathbb{N}, n x>1$ ，于是 $\exists n \in \mathbb{N}, x>\frac{1}{n}$ ，这与 $x=\inf S$ 的定义矛盾，于是 $x \leq 0$ 成立，也就是说 0 是 $S$ 的 Greatest Lower Bound
+
+> [!proof] Proof Method 2: Using theorem 4
+> 首先， 0 是 $S$ 的 Lower Bound，然后根据 Archimedian Property， $\exists n \in \mathbb{N}$ s.t $n \epsilon>1$ ，于是 $\forall \epsilon>0, \exists n \in \mathbb{N}$, s.t. $0<\frac{1}{n}<0+\epsilon$ ，而 $\frac{1}{n} \in S$ ，于是 $0=\inf S$
+
+
 
 ## 1.3 Properties of Sup/Inf
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509558394.png)
@@ -77,29 +88,37 @@
 ## 1.5 Absolute Value
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509558163.png)
 
-**Proof of (1)**首先证明前半个命题:
-如果, 则
-如果,则
-如果, 则
-所以
-然后证明后半个命题:
-正方向:
-如果, 则
-如果,则
-如果, 则
-所以
-反方向：
-如果, 则
-证毕。
-**Proof of (2)**如果, 则, 则, 且, 所以
-如果, 则, 则, 且, 所以
-**Proof of (3)**如果, 则, 则, 且, 所以
-如果或者, 则, 则, 且, 所以, 证毕。
-**Proof of (4)**令, 重复`Proof of (3)`中的证明即可。
-**Proof of (5)**如果, 则, 因为, 所以, 所以
-如果, 则, 因为, 所以, 所以, 所以。证毕。
-**Proof of (6)**取，然后按照`Proof of (6)`中的步骤证明。
+> [!proof] Proof of (1)
+> 首先证明前半个命题:
+> 如果 $x>0$ ，则 $|x|=x>0$
+> $::$ 如果 $x<0$, 则 $|x|=-x>0$
+> 如果 $x=0$ ，则 $|x|=x=0$
+> 所以 $|x| \geq 0$
+> 
+> 然后证明后半个命题:
+> 正方向:
+> 如果 $x \geq 0$ ，则 $|x|=x=0$
+> 如果 $x \leq 0$ ，则 $|x|=-x=0$
+> 如果 $x=0$ ，则 $|x|=x=0$
+> 所以 $x=0$
+>
+> 反方向:
+> 如果 $x=0$ ，则 $|x|=x=0$证毕。
 
+> [!proof] Proof of (2)
+> 如果 $x \leq 0$ ，则 $-x \geq 0$ ，则 $|-x|=-x$ ，且 $|x|=-x$ ，所以 $|-x|=|x|$如果 $x \geq 0$ ，则 $-x \leq 0$ ，则 $|-x|=-(-x)=x$ ，且 $|x|=x$ ，所以 $|-x|=|x|$
+
+> [!proof] Proof of (3)
+> 如果 $x \geq 0, y \geq 0$ ，则 $x y \geq 0$ ，则 $|x y|=x y$ ，且 $|x||y|=x y$ ，所以 $|x y|=|x||y|$如果 $x \geq 0, y \leq 0$ 或者 $x \leq 0, y \geq 0$ ，则 $x y \leq 0$ ，则 $|x y|=-x y$ ，且 $|x||y|=-x y$ ，所以 $|x y|=|x||y|$ ，证毕。
+
+> [!proof] Proof of (4)
+> 令$x=y$, 重复`Proof of (3)`中的证明即可。
+
+> [!proof] Proof of (5)
+> 如果 $x \geq 0$ ，则 $|x|=x \geq 0$ ，因为 $y \geq|x| \geq 0$ ，所以 $-y \leq 0$ ，所以 $-y \leq x=|x| \leq y$如果 $x \leq 0$ ，则 $|x|=-x \geq 0$ ，因为 $y \geq|x| \geq 0$ ，所以 $-y \leq 0$ ，所以 $-y \leq-x=|x| \leq y$ ，所以 $-y \leq x \leq y$ 。证毕。
+
+> [!proof] Proof of (6)
+> 令$x=y$, 重复`Proof of (6)`中的证明即可。
 
 ## 1.6 Ordered Set without AP
 > `Archimedian Property`并非在所有`Ordered Set`上都成立，比如我们可以考虑下面的集合:

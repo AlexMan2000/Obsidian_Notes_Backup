@@ -277,7 +277,7 @@ public List<Comparable> mergeSortIterative(List<Comparable> array) {
 
 
 ## Efficiency Analysis
-> **上述算法中我们看到，我们的**`**Pivot Element**`**(也就是**$v$**)的选取会影响我们的**`**Recurrence Equation**`**: **
+> **上述算法中我们看到，我们的**`Pivot Element`**(也就是**$v$**)的选取会影响我们的**`Recurrence Equation`**: 
 > 1. 如果我们的$v$将原来的大小为$n$的数组分割为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{\frac{4}{3}})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
 > 2. 如果我们的$v$将原来的大小为$n$的数组分割为$\frac{n}{8}$和$\frac{7n}{8}$的两个子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{\frac{8}{7}})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
 > 3. 如果我们的$v$将原来的大小为$n$的数组分割为两个大小为$\frac{n}{2}$的子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{2})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
@@ -286,12 +286,11 @@ public List<Comparable> mergeSortIterative(List<Comparable> array) {
 所以我们可以看到，这个算法复杂度永远是$O(n)$，那么我们是否可以随机选取$v$呢? 反正算法复杂度基本都是$O(n)$。答案是肯定的。
 > **现在假设**$T(n)$**是**`**Expected Time to find k-th smallest in n-elem array**`**, 此时我们可以这样思考: **
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951086660.png)
-> **对于**`**Time to reduce array size to **`$\frac{3n}{4}$**:**
+> 对于`Time to reduce array size to`$\frac{3n}{4}$**:
 > 1. 我们假设其为事件$A$：我们选取的元素$v$将原来的大小为$n$的数组分割为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组。在概率的视角下我们假设$P(A)=p$。
 > 2. 我们假设一个随机变量$X$表示选取到元素$v$(这个元素将大小为$n$的数组分割为长度为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组)所需要的时间，则$X$服从几何分布$Geo(p)$。我们知道$E[X]=\frac{1}{p}$, 于是$T(n) \leq T(\frac{3n}{4})+O(n)\cdot \frac{1}{p}$。
 > 3. 如果我们称那些位于`25-percentile`和`75-percentile`之间的$v$是好的$v$，则我们知道事件$A$为: `Time to reduce array size to between`$\frac{1}{4}n$`and`$\frac{3}{4}n$，且$P(A)=\frac{1}{2}$, 此时:$T(n)\leq T(\frac{n}{2})+O(n)\cdot \frac{1}{\frac{1}{2}}=T(\frac{n}{2})+2\cdot O(n)$, 此时$T(n)=O(n)$仍然成立。
-> 
-![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951113503.png)
+> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951113503.png)
 
 
 

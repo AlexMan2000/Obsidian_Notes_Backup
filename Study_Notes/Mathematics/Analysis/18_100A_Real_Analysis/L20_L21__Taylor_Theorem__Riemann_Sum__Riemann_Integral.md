@@ -110,34 +110,38 @@
 ## P1 Prove the polynomial roots
 > ![image.png](L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.assets/20230302_1509336097.png)
 
-**Proof(Easy)**Denote $f(x)=\frac{x^{1121}}{1121}+\frac{x^{2021}}{2021}+x+1$, and it is continous on $\mathbb{R}$.
-First we compute the derivative of $f(x)$, which is $f'(x)=x^{1120}+x^{2020}+1>0, \forall x\in \mathbb{R}$
-Thus by the bisection method we know since $f(-1)<0, f(1)>0$, and that $f(x)$is monotonically increasing, we know $f(x)=0$has exactly one real root.
+> [!proof]
+> **Proof(Easy)**
+> Denote $f(x)=\frac{x^{1121}}{1121}+\frac{x^{2021}}{2021}+x+1$, and it is continous on $\mathbb{R}$.First we compute the derivative of $f(x)$, which is $f'(x)=x^{1120}+x^{2020}+1>0, \forall x\in \mathbb{R}$Thus by the bisection method we know since $f(-1)<0, f(1)>0$, and that $f(x)$is monotonically increasing, we know $f(x)=0$has exactly one real root.
 
 
 ## P2 Compute Taylor Expansion
 > ![image.png](L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.assets/20230302_1509336064.png)
 
-**(a) **$\begin{aligned}P_4(x)&=f(0)+f^{(1)}(0)(x-0)+\frac{f^{(2)}(0)(x-0)^2}{2!}+\frac{f^{(3)}(0)(x-0)^3}{3!}+\frac{f^{(4)}(0)(x-0)^2}{4!}\\&=x-\frac{x^3}{3!}\end{aligned}$
+> [!proof]
+> **(a) **$\begin{aligned}P_4(x)&=f(0)+f^{(1)}(0)(x-0)+\frac{f^{(2)}(0)(x-0)^2}{2!}+\frac{f^{(3)}(0)(x-0)^3}{3!}+\frac{f^{(4)}(0)(x-0)^2}{4!}\\&=x-\frac{x^3}{3!}\end{aligned}$
 **(b)**$P_4(x)=1+\frac{1}{4}(x+1)+\frac{1}{32}(x+1)^2+\frac{1}{576}(x+1)^3+\frac{1}{24\times 16\times 24}(x+1)^4$
 
 
 ## P3 Using L'Hospital Law
 > ![image.png](L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.assets/20230302_1509336073.png)
 
-**(a) **$\lim_{x\to 0}\frac{x-sinx}{x^3}=\lim_{x\to 0}\frac{1-cosx}{x^2}=\lim_{x\to 0}\frac{sinx}{2x}=\frac{1}{2}$
-**(b)**$\lim_{x\to \frac{\pi}{2}}\frac{1-sinx}{(x-\frac{\pi}{2})^2}=\lim_{h\to 0}\frac{1-sin(h+\frac{\pi}{2})}{h^2}=\lim_{h\to 0}\frac{1-cos(h)}{h^2}=\frac{1}{2}$
+> [!proof]
+> **(a) **$\lim_{x\to 0}\frac{x-sinx}{x^3}=\lim_{x\to 0}\frac{1-cosx}{x^2}=\lim_{x\to 0}\frac{sinx}{2x}=\frac{1}{2}$
+> **(b)**$\lim_{x\to \frac{\pi}{2}}\frac{1-sinx}{(x-\frac{\pi}{2})^2}=\lim_{h\to 0}\frac{1-sin(h+\frac{\pi}{2})}{h^2}=\lim_{h\to 0}\frac{1-cos(h)}{h^2}=\frac{1}{2}$
 
 
 ## P4 Taylor Expansion
 > ![image.png](L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.assets/20230302_1509344259.png)
 
-**Proof**$f(x)=f(c)+\frac{f'''(t)(x-c)^4}{4!}$. 如果$x\neq x_0$则因为$f'''(c)>0$, 所以$f(x)>f(x_0)$
+> [!proof]
+> **Proof**$f(x)=f(c)+\frac{f'''(t)(x-c)^4}{4!}$. 如果$x\neq x_0$则因为$f'''(c)>0$, 所以$f(x)>f(x_0)$
 
 
 
 ## P5 Partitions&Tags
 > ![image.png](L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.assets/20230302_1509344663.png)
 
-**(a) 计算Norm**$||\underline{x}^{(r)}||=\max\{\frac{b-a}{r},\frac{b-a}{r},\cdots, \frac{b-a}{r}\}=\frac{b-a}{r}$
-**(b) 计算Riemann Sum**根据定义，我们有$\begin{aligned}\lim_{r\to \infty}S_f(x^{(r)},\epsilon^{(r)})&=\lim_{r\to \infty}\sum_{k=1}^nf(\epsilon_k)(x_k-x_{k-1})\\&=\lim_{r\to \infty}\sum_{k=1}^n  f(a+(b-a)\frac{k}{r})(b-a)\frac{1}{r}\\&= \lim_{r\to \infty}\sum_{k=1}^n (\alpha(a+(b-a)\frac{k}{r})+\beta)(b-a)\frac{1}{r}\\&= \lim_{r\to \infty}\{\sum_{k=1}^n \}\end{aligned}$
+> [!proof]
+> **(a) 计算Norm**$||\underline{x}^{(r)}||=\max\{\frac{b-a}{r},\frac{b-a}{r},\cdots, \frac{b-a}{r}\}=\frac{b-a}{r}$
+> **(b) 计算Riemann Sum**根据定义，我们有$\begin{aligned}\lim_{r\to \infty}S_f(x^{(r)},\epsilon^{(r)})&=\lim_{r\to \infty}\sum_{k=1}^nf(\epsilon_k)(x_k-x_{k-1})\\&=\lim_{r\to \infty}\sum_{k=1}^n  f(a+(b-a)\frac{k}{r})(b-a)\frac{1}{r}\\&= \lim_{r\to \infty}\sum_{k=1}^n (\alpha(a+(b-a)\frac{k}{r})+\beta)(b-a)\frac{1}{r}\\&= \lim_{r\to \infty}\{\sum_{k=1}^n \}\end{aligned}$

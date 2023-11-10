@@ -91,7 +91,7 @@
 > $f_n\to f$`is pointwise convergent if` $\forall \epsilon>0, \forall x\in E, \exists N\in \mathbb{Z}^{+}， s.t. |f_n(x)-f(x)|<\epsilon$
 > $f_n\to f$`is uniformly convergent if` $\forall \epsilon>0, \exists N\in \mathbb{Z}^{+}~~s.t.~~\forall n>N,~\forall x\in E，  |f_n(x)-f(x)|<\epsilon$
 > 二者的区别就在于`Pointwise Convergence`中$f_n(x)$收敛于$f(x)$的速度会受到$x$取值的具体影响， 而`Uniform Convergence`中$f_n(x)$收敛于$f(x)$的速度对所有$x$都一样，是一个更为苛刻的条件。
-> **所以: **`**Uniform Convergence**`**意味着**`**Pointwise Convergence**`**。**
+> **所以: **`Uniform Convergence`**意味着**`**Pointwise Convergence**`**。**
 
 
 

@@ -4,10 +4,11 @@
 # 1 Derivative
 ## Definition
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217740.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509216037.png)
-> **受到我们在**`**Continuity Theorem**`**中的启发，我们可以引入**`**Sequence**`**的描述，于是上述极限的描述可以变成: **
+> **受到我们在**`Continuity Theorem`**中的启发，我们可以引入**`Sequence`**的描述，于是上述极限的描述可以变成: 
 > $\lim_{x\to c}\frac{f(x)-f(c)}{x-c}=L\iff \forall\{x_n\}, 如果x_n\to c, \lim_{n\to \infty}\frac{f(x_n)-f(c)}{x_n-c} =L$
 
-**Examples**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509219649.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509213564.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217727.png)
+> [!example]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509219649.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509213564.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217727.png)
 
 
 ## Differentiable=>Continuous
