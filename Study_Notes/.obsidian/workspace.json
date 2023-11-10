@@ -6,6 +6,7 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
+        "dimension": 38.988580750407834,
         "children": [
           {
             "id": "953d00ed98868bf1",
@@ -23,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,6 +36,7 @@
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
+        "dimension": 61.011419249592166,
         "children": [
           {
             "id": "f873e35e9eeb0952",
@@ -244,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 390.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,10 +270,18 @@
   "lastOpenFiles": [
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/EECS126_Lecture_Notes.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109181402769.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180714274.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180656666.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109180010709.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109173636369.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets/image-20231109173519754.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/EECS126_Lecture_Notes.pdf",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
@@ -278,18 +289,11 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141651949.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141607605.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141556094.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141548715.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141257791.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141125631.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141124533.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141120180.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20231109141028697.png",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review",
-    "Mathematics/Probablity_Statistics/Probability_Basics/Untitled",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
@@ -309,7 +313,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
     "未命名.canvas"
   ]
 }

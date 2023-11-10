@@ -13,12 +13,16 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
     },
     {
-      "basename": "DTMCs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
-    },
-    {
       "basename": "Probability in EECS",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
+    },
+    {
+      "basename": "Convergence Theorems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theorems.md"
+    },
+    {
+      "basename": "DTMCs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
     },
     {
       "basename": "Counting_Rules",
@@ -195,10 +199,6 @@
     {
       "basename": "Process_Level_Parallelism",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md"
-    },
-    {
-      "basename": "Labs_Thread_Level_Programming",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_Thread_Level_Programming.md"
     }
   ],
   "omittedPaths": [],
