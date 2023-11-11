@@ -6,7 +6,7 @@
 ## Cluster Points⭐⭐⭐⭐⭐
 > [!def]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509056247.png)
-> Another way of phrasing the deﬁnition is to say that $x$ is a cluster point of $S$ if for every $ε > 0$, there exists a $y ∈ S$ such that $y\neq x$ and $|x−y| < ε$. 
+> Another way of phrasing the deﬁnition is to say that $x$ is a cluster point of $S$ if for every $ε > 0$, there exists a $y ∈ S$ such that $0<|x−y| < ε$. 
 > **Note that a cluster point of **$S$** need not lie in **$S$**.**
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509051823.png)
 
@@ -29,6 +29,7 @@
 
 # 2 Function Convergence
 ## Definition⭐⭐
+> [!def]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509052673.png)
 > 至于为什么会要求$c$是`Cluster Point`, 是因为我们想要$(c-\delta,c+\delta)\cap S\neq \emptyset$, 也就是上面的$0<|x-c|<\delta$条件的来源。同时$|x-c|>0$的条件也在一定程度上限制了$x\neq c$这一事实。
 

@@ -94,16 +94,36 @@ $c^n=(1+(c-1))^n\geq 1+n(c-1)$
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510097414.png)
 > 如果我们写的清楚一些就会有: 
 > 如果$\{x_n\}$converges to $x$, 则其任何`subsequences`$\{x_{n_k}\}$都有$\lim_{k\to \infty} x_{n_k}\to x$
-> Proof(Medium)，应用上述引理，我们有如下证明过程:
-> 假设数列$\{x_n\}$收敛, 不妨设$\lim_{n\to \infty} x_n=x$, 则根据收敛的定义: $\forall \epsilon>0, \exists M_0\in \mathbb{N},~~s.t.~~\forall n\geq M_0, |x_n-x|<\epsilon$此时我们选择$M=M_0$。如果$k\geq M_0$, 则$n_k\geq k\geq M_0$, 所以$\forall \epsilon>0,\exists M_0\in \mathbb{N}, ~~s.t.~~ \forall n_k>M_0,~|x_{n_k}-x|<\epsilon$, 这也意味着$\lim_{n\to\infty}x_{n_k}=x$，证毕。
+> 
+> ![](L7_L8__Convergence_Sequences.assets/image-20231110181342072.png)
+
 
 
 ## Divergence Remarks
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510093418.png)
 
 
+# 4 Tail of a sequence
+## Definition
+> [!def]
+> ![](L7_L8__Convergence_Sequences.assets/image-20231110184647142.png)
 
-# 4 Methods to Check Convergence 
+## Theorem
+> [!thm]
+> ![](L7_L8__Convergence_Sequences.assets/image-20231110185215975.png)
+
+> [!proof]
+> ![](L7_L8__Convergence_Sequences.assets/image-20231110185230436.png)
+
+
+## Insights about tail sequence
+> [!important]
+> ![](L7_L8__Convergence_Sequences.assets/image-20231110185300428.png)![](L7_L8__Convergence_Sequences.assets/image-20231110185304581.png)
+
+
+
+
+# 5 Limit Properties of the Sequence
 [Lecture Note 8.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1667885974163-6271733d-e78f-4906-bf53-d7ac2bd3a51c.pdf)
 
 ## Squeeze Theorem
@@ -205,7 +225,7 @@ $c^n=(1+(c-1))^n\geq 1+n(c-1)$
 
 
 
-# 5 Basic Topology: Closed Sets
+# 6 Basic Topology: Closed Sets
 [Basic Topology.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1668439588279-1a4657a2-81e7-4d2b-985a-c9c762d63099.pdf)
 
 ## Definition
@@ -238,7 +258,7 @@ $c^n=(1+(c-1))^n\geq 1+n(c-1)$
 **Proof(Easy)**![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510132467.png)
 **Example: **The union of inﬁnitely many closed sets needn't be closed.![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510144477.png)
 
-# 6 Assignment and Concepts
+# 7 Assignment and Concepts
 [hw4.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1668218626296-56899535-7014-4ba4-8cd0-17a37236dd01.pdf)
 
 ## Closed Sets

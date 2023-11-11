@@ -50,7 +50,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a036b07186d1eee2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,6 +88,16 @@
         "type": "tabs",
         "dimension": 50.155763239875384,
         "children": [
+          {
+            "id": "18692e29d2ecda95",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf"
+              }
+            }
+          },
           {
             "id": "f873e35e9eeb0952",
             "type": "leaf",
@@ -126,8 +148,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -239,7 +260,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +277,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -313,29 +334,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "932953190040c9d5",
+  "active": "452fa205438f5926",
   "lastOpenFiles": [
-    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185304581.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185300428.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185230436.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185215975.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110184647142.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110181342072.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 649288.crdownload",
+    "Mathematics/Analysis/18_100A_Real_Analysis/realanal2.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 540563.crdownload",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546242.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152542852.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152541076.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152539519.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
     "Mathematics/Analysis/18_S096_Metric_Space",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152558825.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152558334.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152554183.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152553698.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152551058.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152548473.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546819.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546389.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152525752.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152521334.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
@@ -345,15 +370,11 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/EECS126_Lecture_Notes.pdf",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",

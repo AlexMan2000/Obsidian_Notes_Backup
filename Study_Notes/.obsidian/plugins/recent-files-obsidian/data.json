@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
-    },
-    {
       "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
     },
@@ -21,12 +17,20 @@
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md"
     },
     {
-      "basename": "L1_L2__集合_数学归纳和势",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md"
+      "basename": "realanal",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf"
     },
     {
       "basename": "L11_L12__Absolute_Convergence_Tests_for_Series",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md"
+    },
+    {
+      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
+    },
+    {
+      "basename": "L1_L2__集合_数学归纳和势",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
@@ -195,10 +199,6 @@
     {
       "basename": "RSA_Algorithm",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md"
-    },
-    {
-      "basename": "Bivariate_Multivariate_Distributions",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
     }
   ],
   "omittedPaths": [],

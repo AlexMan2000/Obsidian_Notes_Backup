@@ -144,7 +144,7 @@
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510184914.png)
 
 > [!proof]
-> 类比[Convergent Sequence is Bounded](https://www.yuque.com/alexman/cbermo/whd7gt#FCUzp)的思想，我们有:![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181511.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510193556.png)
+> 类比[L7_L8__Convergence_Sequences](L7_L8__Convergence_Sequences.md) 中的数列收敛=>数列有界的思想，我们有:![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510181511.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510193556.png)
 
 ### Subsequence Convergence
 > [!thm]
@@ -162,25 +162,28 @@
 
 
 ### Prove Cauchy**⭐⭐⭐**
-:::info
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510195906.png)
-这个结论的证明过程融合了我们之前学习的很多理论，值得反复练习。
-:::
-**Proof(Medium)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510198946.png)
-> **注意: 如果我们的数列**$\{x_n\}$**是由**`**Rational Numbers**`**组成的，则即便它收敛，也不是柯西数列。**
-> $\mathbb{R}$**和**$\mathbb{Q}$**的区别就是前者具有**`**Least Upper Bound Property**`**, 而这个性质也使得上面的**`**定理7**`**能双向成立。**
+> [!important]
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510195906.png)
+> 这个结论的证明过程融合了我们之前学习的很多理论，值得反复练习。
 
-**Example**取$\{x_n\},~~s.t.~~x_n\in \mathbb{Q}$且$x_n\to \sqrt{2}\in \mathbb{R}$, 则根据上面的定理，我们知道因为这个数列收敛，于是数列一定是一个`Cauchy Sequence`, 但是它不收敛于$\mathbb{Q}$。
+> [!proof]
+> **Proof(Medium)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510198946.png)
+> **注意: 如果我们的数列**$\{x_n\}$**是由**`Rational Numbers`**组成的，则即便它收敛，也不是柯西数列。**
+> $\mathbb{R}$**和**$\mathbb{Q}$**的区别就是前者具有**`Least Upper Bound Property`**, 而这个性质也使得上面的**`定理7`**能双向成立。**
+
+> [!example]
+> **Example**取$\{x_n\},~~s.t.~~x_n\in \mathbb{Q}$且$x_n\to \sqrt{2}\in \mathbb{R}$, 则根据上面的定理，我们知道因为这个数列收敛，于是数列一定是一个`Cauchy Sequence`, 但是它不收敛于$\mathbb{Q}$。
 
 
 ## Summary on Cauchy Sequence
+> [!summary]
 > 实数柯西数列的重要性在于，对于一些很复杂的数列来说，通常判断其收敛性是比较困难的(我们可能会需要给出一个可行的收敛值，这将耗费大量的时间)，于是我们可以尝试对数列的性质进行分析，看看它是否是一个实数柯西数列，如果是，那么我们就知道他肯定是收敛的。
-> **下面我们来梳理几个**`**Cauchy Sequence**`**的几个常用逻辑链:**
+> **下面我们来梳理几个**`Cauchy Sequence`**的几个常用逻辑链:**
 > 1. 如果数列是`Cauchy`, 则其一定是`Bounded`的。
 > 2. 如果数列是`Cauchy`, 则如果存在一个收敛的子数列，则原数列收敛。
-> 3. 一个由实数组成的数列，则`Cauchy`==`Convergent` 
+> 3. 一个由实数组成的数列，则`Cauchy`==`Convergent`
 
-
+ 
 
 # 5 Convergence Test
 ## 5.0 Important Lemma
@@ -193,17 +196,21 @@
 **Proof**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510206622.png)
 
 ## 5.2 P-Test
-> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510201282.png)
+> [!thm]
+>  ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510201282.png)
 
-**Proof(Medium)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510202304.png)
+> [!proof]
+> **Proof(Medium)**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510202304.png)
+
 
 ## 5.3 Ratio Test
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510208003.png)
 > **注意:**
 > ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510207927.png)
 
-**Proof(Hard)**证明`Ratio Test`最重要的技巧就是将其转化为一个递增或者递减的数列。之后的`Series Ratio Test`中我们还会用到。
-![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510212272.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510216459.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510217679.png)
+> [!proof]
+> **Proof(Hard)**证明`Ratio Test`最重要的技巧就是将其转化为一个递增或者递减的数列。之后的`Series Ratio Test`中我们还会用到。
+> ![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510212272.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510216459.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510217679.png)
 **Applications**![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510216011.png)![image.png](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/20230302_1510229945.png)
 
 # 6 Infinite Limits
