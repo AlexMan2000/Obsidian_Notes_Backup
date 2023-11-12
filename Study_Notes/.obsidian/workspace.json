@@ -33,36 +33,12 @@
             }
           },
           {
-            "id": "7c35a7fca67e6273",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "452fa205438f5926",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a036b07186d1eee2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,13 +57,33 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
         "dimension": 50.155763239875384,
         "children": [
+          {
+            "id": "611e692efb3e7c0c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
+              }
+            }
+          },
+          {
+            "id": "e2a040efc0ac53b6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
+              }
+            }
+          },
           {
             "id": "18692e29d2ecda95",
             "type": "leaf",
@@ -148,7 +144,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -260,7 +257,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -277,7 +274,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -336,40 +333,44 @@
   },
   "active": "452fa205438f5926",
   "lastOpenFiles": [
-    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111222359556.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111222314394.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/20230302_1509229261.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111221219303.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220747109.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220651861.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220531883.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220356069.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220337638.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220249284.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213409292.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185304581.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185300428.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185230436.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110185215975.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110184647142.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.assets/image-20231110181342072.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/More_on_Topology.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf.crdownload",
+    "Mathematics/Analysis/18_100A_Real_Analysis/More_on_Topology.assets",
+    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 86605.crdownload",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
+    "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md",
+    "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.assets",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/未确认 649288.crdownload",
     "Mathematics/Analysis/18_100A_Real_Analysis/realanal2.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 540563.crdownload",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152546242.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152542852.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152541076.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.assets/20231110_1152539519.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
-    "Mathematics/Analysis/18_S096_Metric_Space",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
     "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
@@ -378,9 +379,6 @@
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/伯努利过程.md",
     "未命名.canvas"
   ]
 }

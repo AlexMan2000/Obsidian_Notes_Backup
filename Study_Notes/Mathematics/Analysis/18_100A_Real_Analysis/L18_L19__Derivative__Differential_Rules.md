@@ -2,55 +2,128 @@
 [Lecture Note 19.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669469364540-f0162772-1c69-4440-ba4b-6aa2b8936cd2.pdf)
 
 # 1 Derivative
-## Definition
+## Canonical Definition
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217740.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509216037.png)
 > **受到我们在**`Continuity Theorem`**中的启发，我们可以引入**`Sequence`**的描述，于是上述极限的描述可以变成: 
 > $\lim_{x\to c}\frac{f(x)-f(c)}{x-c}=L\iff \forall\{x_n\}, 如果x_n\to c, \lim_{n\to \infty}\frac{f(x_n)-f(c)}{x_n-c} =L$
 
-> [!example]
-> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509219649.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509213564.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217727.png)
 
+
+## Important Examples
+### Affine Functions
+> [!example] Examples
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509219649.png)
+> 
+
+
+### Power Functions
+> [!example]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509213564.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509217727.png)
+
+
+### Reciprocal Functions
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111203935785.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111221219303.png)
+
+
+
+
+### Absolute Value Functions
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111210006274.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111210014013.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111212313657.png)
+
+
+
+### Highly Oscillatory Functions
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111212445242.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111212452837.png)
+
+
+
+
+## Derivatives as Linear Approximation
+> [!def]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220249284.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220337638.png)
+
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220356069.png)
+
+
+
+## Left and Right Derivatives
+> [!def]
+>  ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220531883.png)
+
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220651861.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220747109.png)
+
+
+
+
+
+# 2 Properties of the derivative
 
 ## Differentiable=>Continuous
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509211763.png)
-很显然，这个定理的逆命题不成立。连续不意味着可导。
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509229261.png)
-:::
-**Proof of Theorem 1**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509221391.png)
+
+> [!thm]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509211763.png)
+> 很显然，这个定理的逆命题不成立。连续不意味着可导。
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509229261.png)
+
+> [!proof]
+> **Proof of Theorem 1** - Method 1![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509221391.png)
+> **Method 2:**
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111222314394.png)
 
 
-## *Continuous&Nowhere Differentiable
+
+
+
+## Continuous Differentiable Function
+> [!important]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111222359556.png)
+
+
+
+
+
+
+
+## Continuous&Nowhere Differentiable
 ### Lemma 1
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509227891.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509225732.png)
-:::
-**Proof of Theorem 6(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509226520.png)
-可以画图辅助思考
+> [!lemma]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509227891.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509225732.png)
+
+> [!thm]
+> **Proof of Theorem 6(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509226520.png)
+> 可以画图辅助思考
 
 ### Lemma 2
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509226747.png)
-:::
-**Proof of Theorem 7(Easy)**我们使用三角不等式证明:
-$|a|=|a+b+c+(-b)+(-c)|\leq |a+b+c|+|b+c|\leq |a+b+c|+|b|+|c|$
+> [!lemma]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509226747.png)
+
+> [!proof]
+> **Proof of Theorem 7(Easy)**我们使用三角不等式证明:$|a|=|a+b+c+(-b)+(-c)|\leq |a+b+c|+|b+c|\leq |a+b+c|+|b|+|c|$
 
 ### Lemma 3
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509225045.png)
-:::
-**Proof of Theorem 8(Hard)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509236001.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237260.png)
+> [!lemma]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509225045.png)
+
+> [!proof]
+> **Proof of Theorem 8(Hard)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509236001.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237260.png)
 
 
 ### Proof of nowhere differentiable
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509232041.png)
-:::
-**Proof of Theorem 9(Hard)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237530.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509231261.png)
+>[!thm]
+>![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509232041.png)
+
+> [!proof]
+> **Proof of Theorem 9(Hard)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237530.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509231261.png)
+
 
 # 2 Differential Rules& Theorems
 ## Differential Rules
-:::info
+> [!thm]
 ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237998.png)
 :::
 **Proof(Easy)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509245274.png)

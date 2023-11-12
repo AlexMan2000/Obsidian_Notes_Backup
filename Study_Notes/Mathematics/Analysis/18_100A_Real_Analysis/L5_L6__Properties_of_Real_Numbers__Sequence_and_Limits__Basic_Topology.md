@@ -312,10 +312,12 @@ Examples![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Bas
 ## P2 Decimal/Cardinality
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1510056429.png)
 
-Proof(Easy)为了证明$|E|=|\mathcal{P}(\mathbb{N})|$, 我们只要证明存在一个双射$f:E\to \mathcal{P}(\mathbb{N})$即可。根据`Hint`可知，我们只要证明这个映射是`One-to-one Correspondence`的即可。
-首先证明`Injection`: 对于$\forall f(x)=f(y)$, 我们有$\{j\in \mathbb{N}:d_{-j}=2\}=\{t\in \mathbb{N}:d_{-t}=2\}$, 所以$x=y$(因为$\forall d_{-i}$, $d_{-i}$不是$2$就是$1$), 这表明$f$是`Injection`
-然后证明`Surjection`: $\forall S\subset \mathbb{N}$, 或者$S\in \mathcal{P}(\mathbb{N})$, 我们总能在$E$中找到一个元素$x\in (0,1)$形如$x=0.d_{-1}d_{-2}\cdots$且$\forall t\in S$, $d_{-t}=2;\forall q\notin S, d_{-q}=1$使得$f(x)=S\in \mathcal{P}(\mathbb{N})$，于是$f$是`Surjection`。
-综上$f$是`Bijection`, 证毕。
+> [!proof]
+> **Proof(Easy)**
+> 为了证明$|E|=|\mathcal{P}(\mathbb{N})|$, 我们只要证明存在一个双射$f:E\to \mathcal{P}(\mathbb{N})$即可。根据`Hint`可知，我们只要证明这个映射是`One-to-one Correspondence`的即可。
+> 首先证明`Injection`: 对于$\forall f(x)=f(y)$, 我们有$\{j\in \mathbb{N}:d_{-j}=2\}=\{t\in \mathbb{N}:d_{-t}=2\}$, 所以$x=y$(因为$\forall d_{-i}$, $d_{-i}$不是$2$就是$1$), 这表明$f$是`Injection`。
+> 然后证明`Surjection`: $\forall S\subset \mathbb{N}$, 或者$S\in \mathcal{P}(\mathbb{N})$, 我们总能在$E$中找到一个元素$x\in (0,1)$形如$x=0.d_{-1}d_{-2}\cdots$且$\forall t\in S$, $d_{-t}=2;\forall q\notin S, d_{-q}=1$使得$f(x)=S\in \mathcal{P}(\mathbb{N})$，于是$f$是`Surjection`。
+> 综上$f$是`Bijection`, 证毕。
 > 这个结论可以推广到$|\mathbb{R}|=|\mathcal{P}(\mathbb{N})|$, 在这里不作证明。
 
 
@@ -323,11 +325,12 @@ Proof(Easy)为了证明$|E|=|\mathcal{P}(\mathbb{N})|$, 我们只要证明存在
 ## P3 (Un)countability
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1510064639.png)
 
-**(a) Proof(Easy)**因为$A$和$B$都是`Countably Infinite Sets`, 则$\exists f: A\longleftrightarrow \mathbb{N}~~and~~g: B\longleftrightarrow \mathbb{N}$。
-现在我们要证明$\exists h:A\cup B\longleftrightarrow \mathbb{N}$
-直观来看，我们可以令$f$唯一映射到所有偶数上，$g$唯一映射到所有奇数上，然后取$h:A\cup B\longleftrightarrow \mathbb{N}$令$h$唯一映射到所有自然数上，即可证毕。如果我们想用数学语言来表述的话:
-我们可以构造映射$h(z)=\begin{cases} 2f(z)&z\in A\\2g(z)+1&z\in B\end{cases}$。
-
+> [!proof]
+> **(a) Proof(Easy)
+> 因为$A$和$B$都是`Countably Infinite Sets`, 则$\exists f: A\longleftrightarrow \mathbb{N}~~and~~g: B\longleftrightarrow \mathbb{N}$。
+> 现在我们要证明$\exists h:A\cup B\longleftrightarrow \mathbb{N}$
+> 直观来看，我们可以令$f$唯一映射到所有偶数上，$g$唯一映射到所有奇数上，然后取$h:A\cup B\longleftrightarrow \mathbb{N}$令$h$唯一映射到所有自然数上，即可证毕。如果我们想用数学语言来表述的话:
+> 我们可以构造映射$h(z)=\begin{cases} 2f(z)&z\in A\\2g(z)+1&z\in B\end{cases}$。
 1. 首先证明`injection`: 对于所有的$x\neq y\in A\cup B$, 我们讨论三种情况:
    1. $x\neq y\in A$, 此时因为$f$是`Injection`, 所以$f(x)\neq h(y)$即$h(x)\neq h(y)$
    2. $x\neq y\in B$, 此时因为$g$是`Injection`, 所以$g(x)\neq g(y)$即$h(x)\neq h(y)$

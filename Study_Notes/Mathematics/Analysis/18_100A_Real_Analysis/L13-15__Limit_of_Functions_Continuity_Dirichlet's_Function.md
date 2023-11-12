@@ -27,7 +27,7 @@
 > [!proof]
 > **Proof of Theorem 3(Easy)**($\Longrightarrow$): If $x$ is a cluster point of $S$, then according to the definition, we have $\forall \epsilon>0, (x-\epsilon,x+\epsilon)\cap S\backslash \{x\}\neq \emptyset$, which means $\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap S$. Thus we have, $y\in (x-\epsilon,x+\epsilon)$and $y\in S$. If we take enough number of elements like $y$and form a sequence, we are sure that $\exists \{x_n\}$of elements in $S\backslash \{x\}$such that $\lim_{n\to \infty}x_n=x$。($\Longleftarrow$): If there exists a sequence $\{x_n\}$of elements in $S\backslash\{x\}$such that $\lim_{n\to \infty} x_n=x$, we will have $\forall \epsilon>0, \exists M_0\in \mathbb{N}, ~~s.t~~\forall n\geq M_0, |x_n-x|<\epsilon$, which means $\exists y\in \{x_n\},~~s.t.~~|y-x|<\epsilon$. Also since $\{x_n\} \subset S\backslash\{x\}$, which implies $\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap S$, which ends our proof
 
-# 2 Function Convergence
+# 2 Function Convergence - Definition
 ## Definition⭐⭐
 > [!def]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509052673.png)
@@ -42,38 +42,91 @@
 > **Proof of Theorem 6(Medium)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509062521.png)
 
 
-# 3 Function/Sequence Limits
-## Limit Analogy
-### Convergence⭐⭐⭐⭐⭐
+
+## Important Examples - How to choose delta
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111153509588.png)
+
+> [!proof]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111153630425.png)
+
+
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110193634933.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110193640645.png)
+
+
+
+# 3 Function Convergence - Sequence
+## Limit&Sequence⭐⭐⭐⭐⭐
+### Theorem 
 > [!def]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509069565.png)
 > **注意: 这里**$c$**不一定要在**$S$**中，因为极限研究的是函数在**$c$**附近的行为，如果**$c$**不在函数的定义域**$S$**内(**$S$**的 **`Cluster Point`**完全有可能不在**$S$**中，因为我们没有要求**$S$**是一个闭区间或者**`Closed Set`**)，也不影响函数在**$c$**处的极限值的取值。**
+> 
 
 > [!proof]
 > **Proof of Theorem 11(Medium)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509069574.png)
 
 
+### Examples 
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110194144407.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110200455484.png)
+
+
+
+## Function Limit
 ### Squeeze Theorem For Functions
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509068343.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509064782.png)
-> 证明在本章作业中给出。
+> [!thm]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110200520638.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509068343.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509064782.png)
+
+
+> [!proof] Proof of Corollary 3.1.10
+> Since. $\lim _{x \rightarrow c} f(x)$ exists, let's denote $\lim _{x \rightarrow c} f(x)=L$ 
+> By lemma 3:1.7 (Theorem 11), suppose $\left\{x_n\right\}_{n=1}^{\infty}$ is a sequence in $S \backslash\{c\}$ and $X_n \rightarrow C$, we have
+> $$\begin{aligned}& \left\{f\left(x_n\right)\right\}_{n=1}^{\infty} \rightarrow L \\& \because a \leqslant f\left(x_n\right) \leqslant b \quad \forall\left\{x_n\right\}_{n=1}^{\infty}\end{aligned}$$
+> By the basic property of limit:$$\begin{aligned}\lim _{n \rightarrow \infty} a & \leqslant \lim _{n \rightarrow \infty}\left\{f\left(x_n\right)\right\}_{n=1}^{\infty} \leqslant \lim _{n \rightarrow \infty} b \\a & \leqslant L \leqslant b \\a & \leqslant \lim _{x \rightarrow c} f(x) \leqslant b\end{aligned}$$
+
+
+> [!proof] Proof of Corollary 3.1.11
+> Since limits of $f(x), g(x), h(x)$ exists at $c$, we have:
+> $$\lim _{x \rightarrow c} f(x)=L_1, \lim _{x \rightarrow c} g(x)=L_2, \lim _{x \rightarrow c} h(x)=L_3 \text {. }$$
+> By Lemma 3.1.7 (Theorem 11) we have.
+> $\exists\left\{x_n\right\}_{n=1}^{\infty}$ in $S \backslash\{c\}$ and $x_n \rightarrow C$, such that
+> $$\left\{f\left(x_n\right)\right\}_{n=1}^{\infty} \rightarrow L_1,\left\{g\left(x_n\right)\right\}_{n=1}^{\infty} \rightarrow L_2,\left\{h\left(x_n\right)\right\}_{n=1}^{\infty} \rightarrow L_3 \text {. }$$
+> $$\because f(x) \leqslant g(x) \leq h(x) \quad \forall x \in S$$
+> $\therefore f\left(x_n\right) \leqslant g\left(x_n\right) \leqslant h\left(x_n\right) \quad \forall\left\{x_n\right\}_{n=1}^{\infty}$
+> $\therefore \lim _{h \rightarrow \infty} f\left(x_n\right) \leqslant \lim _{n \rightarrow \infty} g\left(x_n\right) \leqslant \lim _{n \rightarrow \infty} h\left(x_n\right)$
+> $\because \lim _{x \rightarrow c} f(x)=\lim _{x \rightarrow c} h(x)$
+> $$
+> \therefore \lim _{n \rightarrow \infty} f\left(x_n\right)=\lim _{n \rightarrow \infty} h\left(x_n\right)$$
+> By squeeze theorem:$$
+> \begin{aligned}
+> & \lim _{n \rightarrow \infty} f\left(x_n\right)=\lim _{n \rightarrow \infty} g\left(x_n\right)=\lim _{n \rightarrow \infty} h\left(x_n\right) \\
+> \therefore & \lim _{x \rightarrow c} f(x)=\lim _{x \rightarrow c} g(x)=\lim _{x \rightarrow c} h(x) .
+> \end{aligned}$$
 
 
 
 ### Limit Operations
+> [!corollary]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509079206.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509075673.png)
-
+> 这些性质都可以使用Theorem 10(Lemma 3.1.17)转化成数列，然后通过数列极限的性质进行证明。
 
 
 ## Algebraic Operations⭐⭐
 ### Linear Operations
+> [!example]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509075275.png)
 
-**Proof(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509071572.png)
+> [!proof]
+> **Proof(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509071572.png)
 
 ### Roots
+> [!example]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509077129.png)
 
-**Proof(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509086777.png)
+> [!proof]
+> **Proof(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509086777.png)
 
 
 ### Power
@@ -108,34 +161,108 @@
 **Proof of Theorem 3(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509096522.png)
 
 
+# 4 Supremum/Infimum of Functions
+## Boundedness of Functions
+> [!def]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195219198.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195436677.png)
 
-## Left&Right Limit
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195417499.png)
+
+
+
+
+## Local Boundedness
+> [!def]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195507102.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195811268.png)
+
+> [!proof]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195817774.png)
+
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195601656.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111195845231.png)
+
+
+ 
+
+
+# 5 Left&Right Limit&Infinite Limit
+## Left/Right Limit
 ### Left Limit
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509096627.png)
+> [!def]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509096627.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111201331476.png)
+
+
 
 
 
 ### Right Limit
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509092004.png)
+> [!def]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509092004.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111201310717.png)
 
 
 
-### Example
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509094378.png)
+
+
+### Examples
+> [!example]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509094378.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111201420851.png)
+
+
 
 
 
 ## Left Limit=Right Limit=Limit
+> [!thm]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509109197.png)
 
-**Proof of Theorem 9(Easy)**($\Longrightarrow$):  因为$\lim_{x\to c}x_n=L$, 所以$\forall \epsilon>0, \exists\delta >0,~~我们有, 如果x\in S且0<|x-c|<\delta$, 则$|f(x)-L|<\epsilon$。则无论我们从左还是从右接近$c$, 都会有$|f(x)-L|<\epsilon$成立。
-($\Longleftarrow$): 因为$\lim_{x\to c^-}x_n=L$, 所以$\forall \epsilon>0, \exists\delta_1 >0, c-\delta_1<x<c, ~~s.t.~~ |f(x)-L|<\epsilon$。因为$\lim_{x\to c^+}x_n=L$, 所以$\forall \epsilon>0, \exists\delta_2 >0, c<x<c+\delta_2, ~~s.t.~~ |f(x)-L|<\epsilon$， 于是我们可以选择$\delta=\min\{\delta_1,\delta_2\}$, 然后证明$\lim_{x\to c}x_n=L$
-如果$0<|x-c|<\delta$, 则$x\in (c-\delta,c)\subset (c-\delta_1,c)$或者$x\in (c,c+\delta)\subset (c+\delta_2)$成立，在两种情况下，$|f(x)-L|<\epsilon$, 证毕。
+> [!proof]
+> **Proof of Theorem 9(Easy)**
+> ($\Longrightarrow$):  因为$\lim_{x\to c}x_n=L$, 所以$\forall \epsilon>0, \exists\delta >0,~~我们有, 如果x\in S且0<|x-c|<\delta$, 则$|f(x)-L|<\epsilon$。则无论我们从左还是从右接近$c$, 都会有$|f(x)-L|<\epsilon$成立。
+> ($\Longleftarrow$): 因为$\lim_{x\to c^-}x_n=L$, 所以$\forall \epsilon>0, \exists\delta_1 >0, c-\delta_1<x<c, ~~s.t.~~ |f(x)-L|<\epsilon$。因为$\lim_{x\to c^+}x_n=L$, 所以$\forall \epsilon>0, \exists\delta_2 >0, c<x<c+\delta_2, ~~s.t.~~ |f(x)-L|<\epsilon$， 于是我们可以选择$\delta=\min\{\delta_1,\delta_2\}$, 然后证明$\lim_{x\to c}x_n=L$
+> 如果$0<|x-c|<\delta$, 则$x\in (c-\delta,c)\subset (c-\delta_1,c)$或者$x\in (c,c+\delta)\subset (c+\delta_2)$成立，在两种情况下，$|f(x)-L|<\epsilon$, 证毕。
 
 
-# 4 Continuous Functions
+
+## Infinite Limit
+### Convergence Definition
+> [!def]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111201849677.png)
+
+### Divergence Definition
+> [!def]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111202006550.png)
+
+
+### Useful Tricks
+> [!important]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111202324279.png)
+
+
+
+### Examples
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111202239883.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111203027028.png)
+
+
+
+
+
+
+
+## Exercises
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111154003609.png)
+
+> [!proof]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111154016453.png)
+
+
+
+
+# 6 Continuous Functions
 ## Definition&Negation
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106308.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106177.png)
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106308.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231110214823820.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106177.png)
 > 但是使用定义证明`Discontinuity`不是很方便，后面我们会介绍通过数列的方法来证明，那样证明更直观方便。
 > **需要特别注意两点：**
 > 1. 这里的$|x-c|<\delta$, 和前面的$0<|x-c|<\delta$是不一样的， 因为函数连续研究的不是在$c$点附近的行为而一般是研究在$c$点处的行为。所以不要求$x\neq c$, 后面的`Continuity Theorem`中会有所介绍。
@@ -145,11 +272,19 @@
 ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509103303.png)![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509106256.png)
 
 ## Continuity Theorem⭐⭐⭐⭐⭐
+> [!motiv] Motivation
+> 在介绍`Continuity Theorem`之前，我们如果要证明一个函数是否连续，就必须从定义出发，有时候非常的繁琐。
+
+
+### Proving Continuity
+
 > [!thm]
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509111515.png)
 > 这里命题$3$的证明和之前的`Convergence`中的证明一致。
 > 其中命题$3$的否定形式在我们证明`Discontinuity`的时候特别有用，我们写出其表述:
-> $f$ **is discontinuous at $c$if there exists a sequence $\{x_n\}$of elements of $S$such that $x_n\to c$but $f(x_n)$does not converge to $f(c)$**(**$\lim_{n\to \infty}x_n \neq f(c)$**)
+> $f$ **is discontinuous at $c$ if there exists a sequence $\{x_n\}$of elements of $S$ such that $x_n\to c$ but $f(x_n)$does not converge to $f(c)$**(**$\lim_{n\to \infty}x_n \neq f(c)$**)
+> **Remarks:**
+> 这个定理的强大之处在于，他使得我们能够将函数连续的问题转化为一个数列极限的问题，这样我们就可以套用很多极限的性质，简化证明过程。
 
 > [!proof]
 > **Proof of Theorem 15.1.1(Easy)**本质上，如果$c$不是$S$(函数$f$的定义域)，则临近$c$的点只有$c$本身，此时$f(x)=f(c)=c$。下面我们详细证明:
@@ -171,35 +306,21 @@
 > 你可能会疑惑，为什么$\exists x\in S,~~s.t.~~ |x-c|<\delta$, 就能得到$\forall n\in \mathbb{N}, |x_n-c|<\frac{1}{n}$, 其实我们可以这样想:$\exists x_1\in S, ~~s.t.~~, |x_1-c|<1$,$\exists x_2\in S, ~~s.t.~~, |x_2-c|<\frac{1}{2}$
 > 所以自然而然我们有:$\exists x_n\in S, ~~s.t.~~, |x_n-c|<\frac{1}{n}$。我们所做的这些努力最终是为了能够套用我们的假设: 如果$x_n\to c$, 则$f(x_n)\to f(c)$, 进而推出矛盾。
 
-## Some Examples
-### Trignometric Functions
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509118295.png)
 
-**Proof of Theorem 2(Medium, have to recall some trignometric properties)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509111437.png)
-
-
-### Dirichlet Function
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509118397.png)
-
-**Proof(Medium)**我们将使用上述的`Continuity Theorem`的`Negation`，即$\exists \{x_n\} \subset S, s.t.~~ if ~~ x_n\to c ,f(x)~~doesn't ~~converge ~~to ~~f(c)$。
-既然题目要求我们证明对于所有的$c\in \mathbb{R}$都有$f$在$c$处不连续，我们完全可以分类讨论所有的情况:
-
-1. $c\in \mathbb{Q}$, 因为我们知道任意的两个有理数之间都会有无理数的存在，于是我们可以构造出一个满足下列条件的数列:
-
-$\forall n\in \mathbb{N}, c<x_n<c+\frac{1}{n}$，所以根据`Squeeze Theorem`, 我们有$\lim_{n\to \infty} x_n=c$, 即$x_n\to c$注意$x_n\in \mathbb{Q^c}$, 但是此时，$\lim_{n\to \infty}f(x_n)=0\neq 1=f(c)$。
-
-2. $c\in \mathbb{Q}^c$, 因为我们知道任意的两个无理数之间都会有有理数的存在，于是我们可以构造出一个满足下列条件的数列
-
-$\forall n\in \mathbb{N}, c<x_n<c+\frac{1}{n}$，所以根据`Squeeze Theorem`, 我们有$\lim_{n\to \infty} x_n=c$, 即$x_n\to c$注意$x_n\in \mathbb{Q}$, 但是此时，$\lim_{n\to \infty}f(x_n)=1\neq 0=f(c)$。
-证毕。
-
-### Polynomials
-> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509112108.png)
-
-**Proof of Theorem 3(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509123864.png)
+### Proving Discontinuity
+> [!thm]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111091033718.png)
 
 
-## Algebraic Operations
+
+
+## Continuity Proposition
+### Corollaries
+> [!corollary] 
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111090646335.png)
+> 使用`Continuity Theorem`证明即可。
+
+### Algebraic Operations
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509123833.png)
 
 **Proof of Theorem 4(Easy)**
@@ -209,33 +330,121 @@ $\forall n\in \mathbb{N}, c<x_n<c+\frac{1}{n}$，所以根据`Squeeze Theorem`, 
 **Examples**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509122834.png)
 
 
-## Composition of continuous function
+### Composition of continuous function
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509122599.png)
 
-**Proof of Theorem 5**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509121425.png)
-**Example****假设**$f(x)=\frac{1}{3+(sinx)^4}$**is continuous:**
+> [!proof]
+> **Proof of Theorem 5**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509121425.png)
 
-- By composition: $sin^4(x)$is continuous
-- By algebraic operation: $3+(sinx)^4$is continuous
-- By algebraic operation: $\frac{1}{3+(sinx)^4}$is continuous.
+> [!example]
+> 假设**$f(x)=\frac{1}{3+(sinx)^4}$** is continuous:
+> - By composition: $sin^4(x)$ is continuous
+> - By algebraic operation: $3+(sinx)^4$is continuous
+> - By algebraic operation: $\frac{1}{3+(sinx)^4}$is continuous.
+> 
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213409292.png)
 
-# 5 Assignment
+
+
+
+
+## Continuous Examples
+### Trignometric Functions
+> [!example]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509118295.png)
+
+> [!proof]
+> **Proof of Theorem 2(Medium, have to recall some trignometric properties)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509111437.png)
+
+
+### Polynomials
+> [!example]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509112108.png)
+
+> [!proof]
+> **Proof of Theorem 3(Easy)**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509123864.png)
+
+### Reciprocal Function
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111090118375.png)
+
+
+## Discontinuous Examples
+### Binary Example
+> [!example] 
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111091121087.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111091151774.png)
+
+
+### Dirichlet Function
+> [!important]
+> ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509118397.png)
+
+> [!proof] Proof Method 1
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111091348464.png)
+
+> [!proof] Proof Method 2
+> 我们将使用上述的 Continuity Theorem 的 Negation，即 $\exists\left\{x_n\right\} \subset S$, s.t. if $x_n \rightarrow c, f(x)$ doesn't converge to $f(c)$ 。
+> 既然题目要求我们证明对于所有的 $c \in \mathbb{R}$ 都有 $f$ 在 $c$ 处不连续，我们完全可以分类讨论所有的情况:
+> 1. $c \in \mathbb{Q}$ ，因为我们知道任意的两个有理数之间都会有无理数的存在，于是我们可以构造出一个满足下列条件的数列:
+> $\forall n \in \mathbb{N}, c<x_n<c+\frac{1}{n}$ ，所以根据 Squeeze Theorem，我们有 $\lim _{n \rightarrow \infty} x_n=c$ ，即 $x_n \rightarrow c$ 注意 $x_n \in \mathbb{Q}^c$ ，但是此时， $\lim _{n \rightarrow \infty} f\left(x_n\right)=0 \neq 1=f(c)$ 。
+> 2. $c \in \mathbb{Q}^c$ ，因为我们知道任意的两个无理数之间都会有有理数的存在，于是我们可以构造出一个满足下列条件的数列$\forall n \in \mathbb{N}, c<x_n<c+\frac{1}{n}$ ，所以根据 Squeeze Theorem，我们有 $\lim _{n \rightarrow \infty} x_n=c$ ，即 $x_n \rightarrow c$ 注意 $x_n \in \mathbb{Q}$ ，但是此时， $\lim _{n \rightarrow \infty} f\left(x_n\right)=1 \neq 0=f(c)$ 。证毕。
+
+
+
+### Popcorn Function
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111093314401.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111092629188.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111092701317.png)
+
+
+### Sign Function
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213118907.png)
+
+
+
+### Highly Oscillating Functions
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213316936.png)![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111212947690.png)
+
+
+
+
+
+### Removable Discontinuity
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111092731449.png)
+
+
+
+
+
+
+# 7 Types of Discontinuity
+> [!def]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213002736.png)
+
+
+
+
+# 8 Assignment
 [hw7.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669194193583-2b28bd12-c9d8-4587-813d-47d4fbac3921.pdf)
 [hw8.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669453710485-86b5b6dd-054b-4796-86fe-30873718682c.pdf)
 
 ## P1 Cluster Point
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509127188.png)
 
-**Proof(Easy)****对于一个实数**$x$**来说，它要么是有理数，要么是无理数，所以我们分类讨论:**
-
-1. $x\in \mathbb{Q}$, 即$x$是有理数，因为对于任意两个实数($x+\epsilon$和$x-\epsilon$)之间都会有一个无理数，于是$\forall \epsilon>0$, 我们有$\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap\mathbb{R}\backslash\mathbb{Q}$, 于是$x$是$\mathbb{R}\backslash\mathbb{Q}$的一个`Cluster Point`。
-2. $x\in \mathbb{R}\backslash \mathbb{Q}$，即$x$是无理数，因为对于任意两个实数($x+\epsilon$和$x-\epsilon$)之间都会有一个无理数，于是$\forall \epsilon>0$, 我们有$\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap\mathbb{R}\backslash\mathbb{Q}$, 于是$x$是$\mathbb{R}\backslash\mathbb{Q}$的一个`Cluster Point`。
+> [!proof]
+> **Proof(Easy)**
+> 对于一个实数**$x$**来说，它要么是有理数，要么是无理数，所以我们分类讨论:
+> 1. $x\in \mathbb{Q}$, 即$x$是有理数，因为对于任意两个实数($x+\epsilon$和$x-\epsilon$)之间都会有一个无理数，于是$\forall \epsilon>0$, 我们有$\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap\mathbb{R}\backslash\mathbb{Q}$, 于是$x$是$\mathbb{R}\backslash\mathbb{Q}$的一个`Cluster Point`。
+> 2. $x\in \mathbb{R}\backslash \mathbb{Q}$，即$x$是无理数，因为对于任意两个实数($x+\epsilon$和$x-\epsilon$)之间都会有一个无理数，于是$\forall \epsilon>0$, 我们有$\exists y\neq x\in (x-\epsilon,x+\epsilon)\cap\mathbb{R}\backslash\mathbb{Q}$, 于是$x$是$\mathbb{R}\backslash\mathbb{Q}$的一个`Cluster Point`。
 
 
 ## P2 Function&Subsequence
 > ![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509122039.png)
 
-**Proof(Easy, BW Theorem)**假设$c$是$S$的一个`Cluster Point`, 则$\forall \epsilon>0, \exists y\neq c \in (c-\epsilon,c+\epsilon)\cap S$。
+**Proof(Easy, BW Theorem)
+假设$c$是$S$的一个`Cluster Point`, 则$\forall \epsilon>0, \exists y\neq c \in (c-\epsilon,c+\epsilon)\cap S$。
 则$\forall n\in \mathbb{N}, \exists x_n\neq c\in (c-\frac{1}{n},c+\frac{1}{n})$， 即存在数列$\{x_n\}\subset S\backslash\{c\}$满足$\lim_{n\to \infty}x_n=c$
 因为$f:S\to \mathbb{R}$是有界的，换句话说就是$\forall x\in S, |f(x)|\leq B$。
 于是对于刚刚构造的$\{x_n\}\subset S\backslash\{c\}$来说，$\{f(x_n)\}_n$是有界的。
@@ -248,7 +457,7 @@ $\forall n\in \mathbb{N}, c<x_n<c+\frac{1}{n}$，所以根据`Squeeze Theorem`, 
 **(a) Convergence=>Boundedness**假设$\lim_{x\to c}f(x)=L$, 则$\forall \epsilon>0, \exists\delta>0, if~~x\in S~~and~~0<|x-c|<\delta,~~s.t.~~|f(x)-L|<\epsilon$
 我们使用三角不等式得到: $|f(x)|=|f(x)-L+L|\leq |f(x)-L|+|L|<\epsilon+|L|$,令$B=\epsilon+|L|$，证毕。
 本质上就是从`Convergence`推导`Boundedness`。
-**(b) **假设$\lim_{x\to c}f(x)=L$, 则$\forall \epsilon>0, \exists\delta>0, if~~x\in S~~and~~0<|x-c|<\delta,~~s.t.~~|f(x)-L|<\epsilon$。所以$\exists \delta>0$使得$\epsilon=L$，得到$0<f(x)<2L$, 证毕。
+**(b) 假设$\lim_{x\to c}f(x)=L$, 则$\forall \epsilon>0, \exists\delta>0, if~~x\in S~~and~~0<|x-c|<\delta,~~s.t.~~|f(x)-L|<\epsilon$。所以$\exists \delta>0$使得$\epsilon=L$，得到$0<f(x)<2L$, 证毕。
 
 
 ## P4 Squeeze Theorem for Function Limit

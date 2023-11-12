@@ -2,85 +2,131 @@
 [Lecture Note 17.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669344118496-0228cf54-96b0-4a6b-a369-db95c4eed273.pdf)
 [Supplementals_Continuous_Function.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669469216427-3dab6a62-9827-493f-b9e2-d35e4fd225e8.pdf)
 
-# 1 Min/Max Theorem
-## Close+Continuous=>Bounded⭐⭐⭐⭐⭐
+# 1 Min/Max Theorem(EVT)
+## Lemma:Close+Continuous=>Bounded⭐⭐⭐⭐⭐
+> [!lemma]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509134296.png)
 > **Unbounded(Negation of Definition):**
 > A function $f:S\to \mathbb{R}$is unbounded if $\forall B\geq 0,\exists x\in S, ~~s.t.~~|f(x)|\geq  B$
 
-**Proof of Theorem 2(Medium, Using BW Theorem and Contradiction)**⭐⭐我们使用反证法证明，首先假设$f:[a,b]\to \mathbb{R}$是连续的，但$f$是`Unbounded`的。
-所以根据定义，我们有$\forall B\geq 0, \exists x\in [a,b],~~s.t.~~|f(x)|\geq B$
-如果我们知道了$\exists x\in [a,b]$, 则我们可以由此构建出一个数列$\{x_n\}$，即$\exists \{x_n\}\subset [a,b]$(这个数列中的元素都是来自于$[a,b]$中的)， 使得$\forall B\geq 0,~~s.t.~~|f(x_n)|\geq B$。
-**因为这里是**$\forall B\geq 0$**, 于是我们可以写出: **$\forall n\in \mathbb{N},~~s.t.~~|f(x_n)|\geq n \tag{1}$
-而$\{x_n\}\subset [a,b]$, 意味着$\{x_n\}$是`Bounded`的，根据`BW-Theorem`, 我们知道$\exists \{x_{n_k}\}$($\{x_n\}$的子序列)$\subset \{x_n\}$是收敛的。
-因为$f$是连续的(假设在$c$点处连续)，所以对于所有的$\{x_n\}\subset [a,b]$，都满足: 如果$x_n\to c$($c\in [a,b]$and is a cluster point of $[a,b]$), 则$f(x_n)\to f(c)$。
-因为我们刚刚找到的$\{x_{n_k}\}$就满足这个条件，即$x_{n_k}\to c$且$\lim_{k\to \infty} f(x_{n_k})=f(c)$。
-而根据`L13&L14&L15`中的`Corollary 3.1.13`, 我们有$\lim_{k\to \infty} |f(x_{n_k})|=|f(c)|$, 而这表明$|f(x_{n_k})|$收敛，这也意味着$|f({x_{n_k}})|$有界。
-于是根据$(1)$式, 我们知道$|f({x_{n_k}})|\geq n_k$, 而从之前的章节中，我们通过数学归纳法已经证明了$n_k\geq k$的结论，于是$|f({x_{n_k}})|\geq k$, 这和$|f({x_{n_k}})|$有界是矛盾的，证毕。
-**Examples**
-1. 对于连续函数$f(x)=3x+1$, $D_f=[0,1]$, 则我们要证明函数$f(x)$有界。
-
-根据三角不等式我们有: $|f(x)|=|3x+1|=3|x|+1\leq 3+1=4$, 于是函数有界。
-
-2. 对于分段函数: $f(x)=\begin{cases} 0&x=0\\ \frac{1}{x}&x\neq 0 \end{cases}$
-
-$\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=B+1>B$, 证毕。
+> [!proof]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111100319154.png)
 
 
-## Close+Continuous=>Absolute Min/Max
+
+> [!example]
+> **Examples**
+> 1. 对于连续函数$f(x)=3x+1$, $D_f=[0,1]$, 则我们要证明函数$f(x)$有界。根据三角不等式我们有: $|f(x)|=|3x+1|=3|x|+1\leq 3+1=4$, 于是函数有界。
+> 2. 对于分段函数: $f(x)=\begin{cases} 0&x=0\\ \frac{1}{x}&x\neq 0 \end{cases}$，$\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=B+1>B$, 证毕。
+
+
+
+## Min-Max Theorem(EVT)
+> [!thm]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509131196.png)
-> 注意，$f$可能不在端点处取到极值，如上图所示。
+> 注意，$f$ 可能不在端点处取到极值，如上图所示。
 > 写成数学语言就是: $\exists c,d \in [a,b],~~s.t.~~ f([a,b])\subset [f(c),f(d)]$。
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509131630.png)
 
-**Proof of Theorem 4(Medium)**
-1. 首先我们证明， 如果$f$是定义在$[a,b]$上的连续函数，则$f$能在$[a,b]$上的某一点取到最大值，假设这一点为$d$。
+> [!proof] **Proof of Theorem 4(Medium)**
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111100528251.png)
 
-首先$f$在$[a,b]$上是连续函数，于是$f$在每一点上都有定义，且根据之前的定理，函数是有界的。所以如果我们将$f$在$[a,b]$上的值域组合起来形成一个集合, 那么这个集合一定有一个最大值，不妨设为$L$, 则记为$L=\sup\{f(x):x\in [a,b]\}$, 于是根据之前证明过的一个结论，如果$a_0=\sup\{a_n:n\in \mathbb{N}\}$, 则$\exists s\in \{a_n:n\in \mathbb{N}\}, a_0-\epsilon<s<a_0$, 如果我们把这样的$s$收集起来组成一个数列，则我们可以得到$\forall n\in \mathbb{N}, a_0-\frac{1}{n}<a_n<a_0$, 且根据夹逼定理，$\lim_{n\to \infty}a_n=a_0$。
-应用到本题中，我们可以构造一个由函数的值域组成的数列，记为$\{f(x_n)\}_n$($x_n\subset [a,b]$), 满足$L-\frac{1}{n}<f(x_n)<L$，即$\lim_{n\to \infty} f(x_n)=L$。
-因为$\{x_n\}\subset [a,b]$, 所以$\{x_n\}$实际上是`Bounded`的。于是根据`Bolzano-Weierstress Theorem`, 我们知道$\exists \{x_{n_k}\}\subset [a,b]$且$x_{n_k}\to d$, 因为$f$是连续的，所以$f(x_{n_k})\to f(d)$, 即$\lim_{k\to \infty} f(x_{n_k})=f(d)$。
-那么，怎么将$f(d)$和$L$建立关系呢？注意到$\{f(x_{n_k})\}_k$是$\{f(x_n)\}_n$的一个子序列，而且我们证明了$\{f(x_n)\}_n$收敛于$L$, 所以其所有子序列也都收敛于$L$, 即$\{f(x_{n_k})\}_k\to L$, 所以$f(d)=L$, 因为$\forall x\in [a,b], f(x)\leq f(d)$, 所以$f$在$d$处取到最大值。
 
-2. 首先我们证明， 如果$f$是定义在$[a,b]$上的连续函数，则$f$能在$[a,b]$上的某一点取到最小值，假设这一点为$c$。证明过程和上面类似，无非就是将$\sup$替换成$\inf$的情景，这里略去证明过程。
-
- 
 
 ## Cases Min/Max doesn't apply
+> [!important]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509139505.png)
 
+## Examples
+> [!example]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111102932296.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111102936405.png)
 
 
-# 2 Intermediate Value Theorem
+# 2 Intermediate Value Theorem(IVT)
 > 本小节我们介绍一些**连续函数**的特殊性质。
 
 
-## Bisection Technique(Examine Root)
+## Lemma: Bisection Technique(Examine Root)
+> [!lemma]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509142389.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509143727.png)
 > **注意:**
 > 如果$f:[a,b]\to \mathbb{R}$不是连续函数，则如果$f(a)<0$其$f(b)>0$, 那么$\exists c\in [a,b], ~~s.t.~~f(c)=0$还成立吗? (**不一定**)
 > 取$f(x)=\begin{cases}x-1&x\neq 1\\\frac{1}{2}&x=1 \end{cases}$,则$f(0)=-1,f(2)=1$, 但是不存在$c\in [a,b],~~s.t.~~f(c)=0$。
 > 这个性质依赖于函数是连续的，因为只有函数是连续的，才能在定义域上取到所有的值。
 
-**Proof of Theorem 8(Hard, Bisection Method)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509141640.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509146965.png)
-**Example**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509149041.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509146198.png)
+> [!proof]
+> **Proof of Theorem 8(Hard, Bisection Method)**
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111103208294.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111103216507.png)
 
 
 ## Bolzano IVT
+### Theorem
+> [!important]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509158463.png)
 > **这个定理也可以写成集合形式, 也是一个非常重要的推论:**
 > 对于一个`Continuous Function`$f:[m,n]\to \mathbb{R}$来说(假设$f(m)<f(n)$), 我们有$[f(m),f(n)]\subset f([m,n])$
 > **我们可以想象一个这样的函数, 就不难说明上面的结论是正确的了:**
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509157296.png)
 
-**Proof of Bolzano IVT(Easy, using Bisection Technique)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509156667.png)
+> [!proof]
+> **Proof of Bolzano IVT(Easy, using Bisection Technique)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509156667.png)
+
+
+### Applications
+#### Roots of Odd Degreee Polynomials
+> [!example]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111104419729.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111104425082.png)
+
+> [!proof] Construction for $g(-K)<0$
+> Let $f(x)=a_d x^d+a_{d-1} x^{d-1}+\cdots+a_1 x+a_0$
+> Since $f(x)$ is degree- $d$ polynomial, we have $a_d \neq 0$
+> $$\therefore \begin{aligned}
+> g(x)=\frac{f(x)}{a^d} & =x^d+\frac{a_{d-1}}{a_d} x^{d-1}+\cdots+\frac{a_1}{a_d} x+a_0 \\& =x^d+b_{d-1} x^{d-1}+\cdots+b_1 x+b_0 .\end{aligned}$$
+> Where $b_k=\frac{a_k}{a_d}$
+> Now consider $g(-n)$ where $n \in N$
+> $$g(-n)=(-n)^d+b_{d-1}(-n)^{d-1}+\cdots+b_1(-n)+b_0$$
+> We compare the highest order team with the rest:$$
+> \begin{aligned}
+> \left|\frac{b_{d-1}(-n)^{\alpha-1}+\cdots+b_1(-n)+b_0}{(-n)^d}\right| & =\frac{\left|b_{d-1}(-n)^{d-1}+\cdots+b_1(-n)+b_0\right|}{n^d} \\
+> & \leq \frac{\left|b_{d-1}\right|\left|(-n)^{d-1}\right|+\cdots+\left|b_1\right||-n|+\left|b_0\right|}{n^d} \\& \leqslant \frac{n^{d-1}\left(\left|b_{d-1}\right|+\cdots+\left|b_1\right|+\left|b_0\right|\right)}{n^d} \\& =\frac{\left|b_{d-1}\right|+\cdots+\left|b_1\right|+\left|b_0\right|}{n}\end{aligned}$$By squeeze theorem we have:
+> $$\begin{aligned}& \lim _{n \rightarrow \infty}\left|\frac{b_{d-1}(-n)^{d-1}+\cdots+b_1(-n)+b_0}{(-n)^d}\right|=0 \\& \therefore \exists M \in N \text { st }\left|\frac{b_{d-1}(-M)^{d-1}+\cdots+b_1(-M)+b_0}{(-M)^d}\right|<1 \\& \therefore \exists M \in N \text { st. } b_{d-1}(-M)^{d-1}+\cdots+b_1(-M)+b_0<M^d \\& \therefore \exists M \in N \text { st }(-M)^d+b_{d-1}(-M)^{d-1}+\cdots+b_1(-M)+b_0<0 \\& \therefore \exists M \in N \text { sst } g(-M)<0\end{aligned}$$
+
+
+> [!example]
+> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509149041.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509146198.png)
+
+
+#### Rational Numbers
+> [!example]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111104908956.png)
+
+
+### Discontinuous Function with IVT Property
+> [!example]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111104932567.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111141052996.png)
+
+> [!proof] Proof
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111141739452.png)
+
 
 ## Range
-> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509152604.png)
+> [!thm]
+> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509152604.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111141854583.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111141858152.png)
 
-**Proof of Theorem 11(Medium)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509158488.png)
+
+> [!proof]
+> **Proof of Theorem 11(Medium)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509158488.png)
 
 
-# 3 Continuity Types
+# 3 Continuous Function on Compact Sets
+## Definition
+> [!def]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111142632458.png)
+
+
+
+
+# 4 Continuity Types - Uniform Continuity
 ## Continuity
 > [!thm]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509155335.png)
@@ -92,24 +138,31 @@ $\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509166966.png)
 
 ## Uniform Continuity
-### Definition
+### Definition - Limit Perspective
 > [!def]
-> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169040.png)
+> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169040.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154659343.png)
+
+
 
 > [!example] $f(x)=x^2$ is uniformly continuous on $[0,1]$
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509169200.png)
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509162151.png)
 
 
-### Non-Uniform Continuity
-> [!def]
-> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509165883.png)
-> **Sequence Perspective(Non Uniform Criteria):**
-> ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509176704.png)
 
-> [!proof]
-> **Proof for the criteria ( 2=3 )**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177778.png)
+## Non-Uniform Continuity
+### Limit Perspective
+> [!thm]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111155349241.png)
 
+
+
+### Non-Uniform Continuity - Sequence Perspective
+> [!thm]
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154636044.png)
+
+
+### Examples
 > [!example] Example 1: $f(x)=\frac{1}{x}$ is not uniformly continuous on $(0,1)$
 > **Examples(Proof for non-uniform continuity)**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509171039.png)
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509179674.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509172378.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509177499.png)
@@ -122,6 +175,8 @@ $\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=
 > [!example] Example 3: $f(x)=e^x$ is not uniformly continous on $\mathbb{R}$
 > We could start from choosing $\epsilon_0=1,~x=c+\frac{\delta}{2}$, where $|x-c|=\frac{\delta}{2}<\delta$. Then $|e^x-e^c|=|e^c(e^{\frac{\delta}{2}}-1)|=|e^c||e^{\frac{\delta}{2}}-1|$. Here since $\lim_{c\to \infty}e^c=\infty$, we know that there always exists such $c\in \mathbb{R}$ so that $|e^c||e^{\frac{\delta}{2}}-1|>1=\epsilon_0$ and the proof is finished.
 
+> [!example] Example 4: $f(x)=sin(\frac{1}{x})$ is not uniformly continuous on $(0,1)$
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111155722544.png)
 
 
 ## Continuity vs Uniform Continuity
@@ -130,8 +185,10 @@ $\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=
 > 对于函数$f:S\to \mathbb{R}$
 > - 在`Continuity`中，我们的条件是$\forall \epsilon>0, \forall c\in S, \exists \delta(\epsilon,c)>0, \forall x\in S~~and~~ x\in (c-\delta, c+\delta),|f(x)-f(c)|<\epsilon$
 > $\delta$是一个多元函数，也就是会依赖于$\epsilon$和$c$的取值。 可以想象一个`box`在函数上移动，这个`box`的横轴长度就是$|x-c|=\delta$, 这个`box`的纵轴宽度就是$|f(x)-f(c)|=\epsilon$, 这个`box`在函数上滑动时`box`的横轴长度可以改变，从而使得纵轴宽度不超过$\epsilon$。
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154439642.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154451163.png)![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154523899.png)
 > - 在`Uniform Continuity`中，我们的条件是$\forall \epsilon>0,\exists \delta(\epsilon)>0, \forall x,c\in S~~that~~satisfies~~|x-c|<\delta,|f(x)-f(c)|<\epsilon$
 > $\delta$有且仅能依赖于$\epsilon$的值，是一个比`Continuity`更强的连续性质, 可以想象一个`box`在函数上移动，这个`box`的横轴长度就是$|x-c|=\delta$, 这个`box`的纵轴宽度就是$|f(x)-f(c)|=\epsilon$, 我们要保证这个`box`无论滑动到哪里函数的值都不会超过`box`的纵轴宽度。
+> ![](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/image-20231111154457918.png)
 > 辅助视频: [https://www.youtube.com/watch?v=nquj643mU1o](https://www.youtube.com/watch?v=nquj643mU1o)
 
 
@@ -147,29 +204,35 @@ $\forall B\geq 0, \exists 0<x<\frac{1}{B+1}<1, ~~s.t. |f(x)|>|f(\frac{1}{B+1})|=
 
 
 
-## Lipschitz Continuity
+# 5 Lipschitz Continuity
 ### Definition
+> [!def]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509188166.png)
 
-**Geometric Interpretation**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509181728.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509186433.png)
-**Examples**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509188014.png)
+> [!important]
+> **Geometric Interpretation**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509181728.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509186433.png)
+
+> [!example]
+> **Examples**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509188014.png)
 ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509184771.png)![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509192419.png)
 **Counterexample**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509195247.png)
 
 ### Theorem
+> [!thm]
 > ![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509195869.png)
 
-**Proof**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509199426.png)
+> [!proof]
+> **Proof**![image.png](L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.assets/20230302_1509199426.png)
 
 ## Summary
+> [!summary]
 > **对于一个**$f:S\to \mathbb{R}$**, 我们有:**
 >  `Lipschitz Continuity` $\implies$`Uniformly Continuous` $\implies$`Continuous`
-> **在**$S$**是一个**`**Closed Interval**`** 时:**
+> **在**$S$**是一个**`Closed Interval`** 时:**
 > `Uniformly Continuous` $\iff$`Continuous`
 
 
-
-# 4 Assignment
+# 6 Assignment
 [hw8.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669461278622-7804b900-a697-4a4b-ae57-c670aac1d0e0.pdf)
 [hw9.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1669455681797-7ca86ce0-79dd-47e7-9e4b-f1123e256b55.pdf)
 
