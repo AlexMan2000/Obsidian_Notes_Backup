@@ -1,24 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Understanding_Analysis_Solution",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
+    },
+    {
       "basename": "Understanding Analysis",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
     },
     {
-      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
+      "basename": "L7_L8__Convergence_Sequences",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
     },
     {
-      "basename": "intro_analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md"
     },
     {
       "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
     },
     {
-      "basename": "L7_L8__Convergence_Sequences",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
+      "basename": "intro_analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+    },
+    {
+      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
     },
     {
       "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
@@ -53,16 +65,8 @@
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md"
     },
     {
-      "basename": "Understanding_Analysis_Solution",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
-    },
-    {
       "basename": "Basic Topology",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf"
-    },
-    {
-      "basename": "L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md"
     },
     {
       "basename": "Introduction to Metric Space",
@@ -83,10 +87,6 @@
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "Introduction to Probability",
@@ -195,10 +195,6 @@
     {
       "basename": "Reachability_Controllability",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
-    },
-    {
-      "basename": "Orthonormalization",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
     }
   ],
   "omittedPaths": [],
