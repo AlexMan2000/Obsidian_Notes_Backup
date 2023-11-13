@@ -6,7 +6,7 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 43.14919530230535,
+        "dimension": 30.504908835904626,
         "children": [
           {
             "id": "2b2a3a4161a34caa",
@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
-        "dimension": 56.85080469769465,
+        "dimension": 69.49509116409537,
         "children": [
           {
             "id": "c89e177dfe619adb",
@@ -164,8 +164,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 217.5,
+    "collapsed": true
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -277,7 +277,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -294,7 +294,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -332,7 +332,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 390.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -351,16 +352,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "611e692efb3e7c0c",
+  "active": "c89e177dfe619adb",
   "lastOpenFiles": [
-    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/image-20231113160939448.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
     "Untitled.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/未确认 880725.crdownload",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194253191.png",
@@ -372,7 +374,6 @@
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150044709.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150040023.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150028810.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112142154762.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L24_L25__Weierstrass_M-test_Approximation__Interchanging_Limits.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",

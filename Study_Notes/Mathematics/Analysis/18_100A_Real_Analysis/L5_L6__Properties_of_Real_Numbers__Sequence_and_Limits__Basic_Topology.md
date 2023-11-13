@@ -74,8 +74,10 @@
 
 **Proof of Theorem 6.1: Using Corollary from 1.2.1**因为$\mathbb{R}$具有`Least Upper Bound Property`且$A$是`Bounded Above`的，且$A\subset \mathbb{R}$, 所以$A$有最小上界$sup A$。于是根据$supA$的定义，我们有$\forall a\in A, a\leq supA$, 于是$a+x\leq supA+x$, 所以$supA+x$是集合$x+A$的上界。
 而我们知道$supA$是$A$的最小上界，所以$\forall \epsilon >0,\exists a\in A~~s.t.~~ supA-\epsilon< a\leq supA$。于是$supA+x-\epsilon <a+x\leq supA +x$, 于是$supA+x$是$x+A$的最小上界，证毕。
-**Proof of Theorem 6.2: Using Corollary from 1.2.1**因为具有`Least Upper Bound Property`且是`Bounded Above`的，且, 所以有最小上界。于是根据的定义，我们有, 于是, 所以是集合的上界。
-而我们知道是的最小上界，所以。于是, 于是是的最小上界。
+**Proof of Theorem 6.2: Using Corollary from 1.2.1**
+![](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/image-20231113160939448.png)
+
+
 
 ## 1.4 Inequality Relationship between Sup/Inf
 > ![image.png](L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/20230302_1509558632.png)
