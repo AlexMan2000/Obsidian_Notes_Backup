@@ -74,24 +74,89 @@
 
 # 5 Pointwise/Uniform Convergence
 ## Pointwise Convergence
+### Defintion
+> [!def]
 > ![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509389424.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509385149.png)
 
-**Examples**![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509388139.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391497.png)
-**Graphical Explanations**![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391572.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509399337.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391690.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509403986.png)
+
+### Important Properties
+> [!example] Pointwise Convergence doesn't preserve boundedness
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112135316269.png)![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112135320725.png)
+
+> [!example] Pointwise Convergence doesn't preserve continuity
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112135347768.png)
+
+> [!example] Unbounded Function Sequence can still pointwisely converge
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112135658860.png)
+
+> [!example] Differentiating Convergent Function Sequence may results in non-convergence
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112135925168.png)
+
+> [!example] Pointwise Convergence doesn't preserve Differentiability
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112140047007.png)![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112140051493.png)
+
+
+### Examples
+> [!example]
+> ![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509388139.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391497.png)
+> **Graphical Explanations**![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391572.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509399337.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509391690.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509403986.png)
 
 
 
 ## Uniform Convergence
+### Canonical Definition
+> [!def]
 > ![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509404616.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509406046.png)![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509404432.png)
 
-**Proof of Theorem 9(Easy)**![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509405975.png)
-**Graphical Explanations(Distance)**
+> [!proof]
+> **Proof of Theorem 9(Easy)**![image.png](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/20230302_1509405975.png)
+
+
+
+### Important Examples
+> [!example]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112142145897.png)![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112142154762.png)
+
+
+
+### Cauchy Condition for Uniform Convergence
+> [!thm]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150028810.png)
+
+> [!proof]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150040023.png)![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150044709.png)
+
+
+### Properties of Uniform Convergence
+#### Preserves Boundedness
+> [!thm]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150849452.png)
+
+#### Preserves Continuity
+> [!thm]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150918614.png)
+
+#### Implications of Theorem 9.16
+> [!important]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112193401691.png)
+
+
+#### Doesn't Preserve Differentiability
+> [!important]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112193755445.png)
+
+> [!example]
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194228200.png)![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194253191.png)
+
+
 
 ## Difference between them
+> [!important]
 > $f_n\to f$`is pointwise convergent if` $\forall \epsilon>0, \forall x\in E, \exists N\in \mathbb{Z}^{+}， s.t. |f_n(x)-f(x)|<\epsilon$
 > $f_n\to f$`is uniformly convergent if` $\forall \epsilon>0, \exists N\in \mathbb{Z}^{+}~~s.t.~~\forall n>N,~\forall x\in E，  |f_n(x)-f(x)|<\epsilon$
 > 二者的区别就在于`Pointwise Convergence`中$f_n(x)$收敛于$f(x)$的速度会受到$x$取值的具体影响， 而`Uniform Convergence`中$f_n(x)$收敛于$f(x)$的速度对所有$x$都一样，是一个更为苛刻的条件。
-> **所以: **`Uniform Convergence`**意味着**`**Pointwise Convergence**`**。**
+> **所以: `Uniform Convergence`意味着**`Pointwise Convergence`**。
+> ![](L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112140428560.png)
 
 
 

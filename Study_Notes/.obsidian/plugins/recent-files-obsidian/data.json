@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Understanding Analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
+    },
+    {
+      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
+    },
+    {
+      "basename": "intro_analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+    },
+    {
+      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
+    },
+    {
+      "basename": "L7_L8__Convergence_Sequences",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
+    },
+    {
+      "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md"
+    },
+    {
+      "basename": "L24_L25__Weierstrass_M-test_Approximation__Interchanging_Limits",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L24_L25__Weierstrass_M-test_Approximation__Interchanging_Limits.md"
+    },
+    {
       "basename": "L18_L19__Derivative__Differential_Rules",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
     },
@@ -13,20 +41,12 @@
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
     },
     {
-      "basename": "Understanding Analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-    },
-    {
       "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
     },
     {
       "basename": "realanal",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf"
-    },
-    {
-      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
     },
     {
       "basename": "Related_Resources",
@@ -39,10 +59,6 @@
     {
       "basename": "Basic Topology",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf"
-    },
-    {
-      "basename": "L7_L8__Convergence_Sequences",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
     },
     {
       "basename": "L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology",
@@ -71,14 +87,6 @@
     {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md"
-    },
-    {
-      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
     },
     {
       "basename": "Introduction to Probability",
@@ -191,14 +199,6 @@
     {
       "basename": "Orthonormalization",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Orthonormalization.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
     }
   ],
   "omittedPaths": [],

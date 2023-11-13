@@ -48,7 +48,7 @@
 > [!example]
 > ![](L18_L19__Derivative__Differential_Rules.assets/image-20231111220356069.png)
 
-
+ 
 
 ## Left and Right Derivatives
 > [!def]
@@ -121,84 +121,157 @@
 > **Proof of Theorem 9(Hard)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237530.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509231261.png)
 
 
-# 2 Differential Rules& Theorems
-## Differential Rules
+# 3 Differential Rules
+## Main Theorem
 > [!thm]
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237998.png)
-:::
-**Proof(Easy)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509245274.png)
-**Proof of Quotient Rules：**
-$\begin{aligned}\lim_{x\to c}\frac{\frac{f(x)}{g(x)}-\frac{f(c)}{g(c)}}{x-c}&=\lim_{x\to c}\frac{f(x)g(c)-g(x)f(c)}{g(x)g(c)(x-c)}=\lim_{x\to c}\frac{g(c)(f(x)-f(c))-f(c)(g(x)-g(c))}{g(x)g(c)(x-c)} \\&=\lim_{x\to c}\frac{f(x)-f(c)}{g(x)(x-c)}-\lim_{x\to c}\frac{g(x)-g(c)}{g(x)(x-c)}\cdot \frac{f(c)}{g(c)}\\&=\frac{1}{g(c)}\lim_{x\to c}\frac{f(x)-f(c)}{(x-c)}-\frac{1}{g(c)}\lim_{x\to c}\frac{g(x)-g(c)}{(x-c)}\cdot \frac{f(c)}{g(c)}\\&=\frac{g(c)f'(c)}{g^2(c)}-\frac{g'(c)f(c)}{g^2(c)}\\&=\frac{f'(c)g(c)-g'(c)f(c)}{g^2(c)}\end{aligned}$证毕。
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509237998.png)
+
+> [!proof]
+> **Proof(Easy)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509245274.png)
+> **Proof of Quotient Rules：**$\begin{aligned}\lim_{x\to c}\frac{\frac{f(x)}{g(x)}-\frac{f(c)}{g(c)}}{x-c}&=\lim_{x\to c}\frac{f(x)g(c)-g(x)f(c)}{g(x)g(c)(x-c)}=\lim_{x\to c}\frac{g(c)(f(x)-f(c))-f(c)(g(x)-g(c))}{g(x)g(c)(x-c)} \\&=\lim_{x\to c}\frac{f(x)-f(c)}{g(x)(x-c)}-\lim_{x\to c}\frac{g(x)-g(c)}{g(x)(x-c)}\cdot \frac{f(c)}{g(c)}\\&=\frac{1}{g(c)}\lim_{x\to c}\frac{f(x)-f(c)}{(x-c)}-\frac{1}{g(c)}\lim_{x\to c}\frac{g(x)-g(c)}{(x-c)}\cdot \frac{f(c)}{g(c)}\\&=\frac{g(c)f'(c)}{g^2(c)}-\frac{g'(c)f(c)}{g^2(c)}\\&=\frac{f'(c)g(c)-g'(c)f(c)}{g^2(c)}\end{aligned}$证毕。
 
 
 ## Chain Rules
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509246164.png)
-:::
-**Proof(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509246709.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509244428.png)
+> [!thm]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509246164.png)
+
+> [!proof]
+> **Proof(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509246709.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509244428.png)
 
 
-## Relative Max/Min
-:::info
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509243282.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509247010.png)
-:::
-**Proof of Theorem 4(Medium)****Proof of relative maximum:**
-![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509248702.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509251457.png)
-**Proof of relative minimum:**
-Let $f$has relative minimum at $c\in (a,b)$then $\exists \delta>0$such that $(c-\delta,c+\delta)\subset (a,b)$and $\forall x\in (c-\delta, c+\delta)$, $f(x)\geq f(c)$. Let:
-$x_n = c-\frac{\delta}{2n}\in (c-\delta,c)$
-$f'(c)=\lim_{n\to \infty}\frac{f(x_n)-f(c)}{x_n-c}\leq 0$
-Now let 
-$y_n=c+\frac{\delta}{2n}\in (c,c+\delta)$
-Then $f'(c)=\lim_{n\to \infty}\frac{f(y_n)-f(c)}{y_n-c}\geq 0$
-Therefore $f'(c)=0$with $\begin{cases}f'(x)> 0&x<c \\ f'(x)<0&x>c\end{cases}$, which indicates that $c\in (a,b)$is the relative minimum.
-These finishes our proof.
 
+# 4 Local Max/Min
+## Relative Max/Min - Interior Points
+> [!thm]
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509243282.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509247010.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112090620942.png)
+
+> [!proof] Proof by definition
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112090723488.png)
+
+> [!proof] Proof by sequence
+> **Proof of Theorem 4(Medium)Proof of relative maximum:**
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509248702.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509251457.png)
+> **Proof of relative minimum:**
+> Let $f$has relative minimum at $c\in (a,b)$then $\exists \delta>0$such that $(c-\delta,c+\delta)\subset (a,b)$and $\forall x\in (c-\delta, c+\delta)$, $f(x)\geq f(c)$. 
+> Let:
+> $x_n = c-\frac{\delta}{2n}\in (c-\delta,c)$
+> $f'(c)=\lim_{n\to \infty}\frac{f(x_n)-f(c)}{x_n-c}\leq 0$
+> Now let 
+> $y_n=c+\frac{\delta}{2n}\in (c,c+\delta)$
+> Then $f'(c)=\lim_{n\to \infty}\frac{f(y_n)-f(c)}{y_n-c}\geq 0$
+> Therefore $f'(c)=0$with $\begin{cases}f'(x)> 0&x<c \\ f'(x)<0&x>c\end{cases}$, which indicates that $c\in (a,b)$is the relative minimum.
+> These finishes our proof.
+
+
+## Relative Max/Min - Endpoints
+> [!thm]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112085008675.png)
+
+> [!proof]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112085020165.png)
+
+
+
+## Critical Points
+> [!def]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112090524232.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112090738977.png)
+
+> [!example]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112090758345.png)
+
+
+
+# 5 MVT
 ## Rolle Theorem
+> [!thm]
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509252521.png)
 
-**Proof of Rolle Theorem(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509254884.png)
+> [!proof]
+> **Proof of Rolle Theorem(Medium)**
+> 论证思路: 利用函数在$[a,b]$上连续，所以`Min-max theorem`成立的特性来论证。
+> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509254884.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112092520361.png)
 
 
-## Mean Value Theorem
+
+
+
+## Mean Value Theorem(MVT)
+> [!thm]
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509257195.png)
 > 本质上这是`Rolle Theorem` 的 一个`Extension`
 
-**Proof of MVT(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509252806.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509251467.png)
+> [!proof]
+> **Proof of MVT(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509252806.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509251467.png)
 
 
 ## Proof of Constant Function
+> [!thm]
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509258379.png)
 
-**Proof of theorem 9(Easy)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509254842.png)
+> [!proof]
+> **Proof of theorem 9(Easy)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509254842.png)
+> **Alternative Proof**
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112093022699.png)
+
+> [!corollary]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112093148435.png)
+
 
 
 ## Monotonicity
+> [!thm]
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509258069.png)
 
-**Proof of Theorem 10(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509269455.png)
+> [!proof]
+> **Proof of Theorem 10(Medium)**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509269455.png)
+> **Alternative Proof**
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112093522687.png)
 
 
+## Strict Monotonicity
+> [!important]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112093318358.png)
 
-# 3 Three L'Hospital Theorems
+
+# 6 Inverse Function Theorem
+> 
+
+
+# 7 Three L'Hospital Theorems
 [L'Hopital.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1670914698603-a8f7d439-e683-4654-8695-3a8973865d81.pdf)
-## Baby Version
-> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509261017.png)
 
-**Proof**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509262755.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509263310.png)
-
-## Macho Version
-> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509267096.png)
-> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509262168.png)
-
-**Proof**![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509266131.png)![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509263899.png)
-
-## Extended Version
-> ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509274762.png)
+## Lemma: Cauchy Mean Value
+> [!lemma]
+> 
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112094847705.png)
 
 
+## 0/0 Version
+> [!thm]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112094911474.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112094916726.png)
 
-# 4 Assignment
+> [!example] Examples
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095627737.png)
+
+
+
+## infty/infty Version
+> [!thm]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095645151.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095658429.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095706669.png)![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095722410.png)
+
+> [!example] Examples
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231112095759762.png)
+
+
+
+
+
+
+
+
+
+
+# 6 Assignment
 [hw10.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1670462953326-c2c9fa17-ed8e-4f3e-800f-8ded55c349be.pdf)
 ## P1 Holder Condition
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509277128.png)

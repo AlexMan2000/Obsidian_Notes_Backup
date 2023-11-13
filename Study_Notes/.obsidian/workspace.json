@@ -38,7 +38,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc7601b1a249d4f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,6 +77,16 @@
         "dimension": 50.155763239875384,
         "children": [
           {
+            "id": "c89e177dfe619adb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+              }
+            }
+          },
+          {
             "id": "611e692efb3e7c0c",
             "type": "leaf",
             "state": {
@@ -81,16 +103,6 @@
               "type": "pdf",
               "state": {
                 "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-              }
-            }
-          },
-          {
-            "id": "18692e29d2ecda95",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf"
               }
             }
           },
@@ -145,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -217,7 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 217.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -257,7 +269,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -274,7 +286,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,29 +343,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "452fa205438f5926",
+  "active": "e2a040efc0ac53b6",
   "lastOpenFiles": [
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111222359556.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111222314394.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/20230302_1509229261.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 880725.crdownload",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194253191.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194228200.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112193755445.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112193401691.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150918614.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150849452.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150044709.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150040023.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112150028810.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112142154762.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L24_L25__Weierstrass_M-test_Approximation__Interchanging_Limits.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111221219303.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220747109.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220651861.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220531883.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220356069.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220337638.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.assets/image-20231111220249284.png",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213409292.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/More_on_Topology.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/Basic Topology.pdf.crdownload",
     "Mathematics/Analysis/18_100A_Real_Analysis/More_on_Topology.assets",
@@ -363,12 +379,8 @@
     "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.assets",
     "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/未确认 649288.crdownload",
-    "Mathematics/Analysis/18_100A_Real_Analysis/realanal2.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
     "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
@@ -378,7 +390,6 @@
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/3_一元随机变量/离散随机变量/__期望，方差，标准差.md",
     "未命名.canvas"
   ]
 }
