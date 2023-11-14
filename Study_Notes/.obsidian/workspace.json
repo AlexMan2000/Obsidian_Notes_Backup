@@ -6,7 +6,7 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 30.504908835904626,
+        "dimension": 47.064989517819704,
         "children": [
           {
             "id": "2b2a3a4161a34caa",
@@ -38,19 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc7601b1a249d4f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,12 +65,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
-        "dimension": 69.49509116409537,
+        "dimension": 52.93501048218029,
         "children": [
           {
             "id": "c89e177dfe619adb",
@@ -164,7 +152,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -236,8 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5,
-    "collapsed": true
+    "width": 217.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -277,7 +265,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -294,7 +282,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
+                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -332,8 +320,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5,
-    "collapsed": true
+    "width": 390.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -352,18 +339,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c89e177dfe619adb",
+  "active": "e2a040efc0ac53b6",
   "lastOpenFiles": [
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.assets/image-20231113160939448.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
     "Untitled.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/未确认 880725.crdownload",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194253191.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.assets/image-20231112194228200.png",
@@ -389,16 +386,6 @@
     "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md",
     "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.assets",
     "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L1_L2__集合_数学归纳和势.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
     "未命名.canvas"
   ]
 }

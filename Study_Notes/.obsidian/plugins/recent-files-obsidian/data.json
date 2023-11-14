@@ -1,12 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "intro_analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+      "basename": "Understanding Analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
     },
     {
       "basename": "Understanding_Analysis_Solution",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
+    },
+    {
+      "basename": "Important Applications Of Basic Probability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
+    },
+    {
+      "basename": "Counting_Rules",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
+    },
+    {
+      "basename": "Labs_SIMD_Instructions",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md"
+    },
+    {
+      "basename": "Thread_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+    },
+    {
+      "basename": "Data-Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
+    },
+    {
+      "basename": "OS_VM_I_O",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md"
+    },
+    {
+      "basename": "Code_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
+    },
+    {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
+    },
+    {
+      "basename": "intro_analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
     },
     {
       "basename": "L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology",
@@ -17,20 +65,12 @@
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
     },
     {
-      "basename": "Understanding Analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-    },
-    {
       "basename": "L7_L8__Convergence_Sequences",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
     },
     {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
     },
     {
       "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
@@ -117,16 +157,8 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/DTMCs.md"
     },
     {
-      "basename": "Counting_Rules",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
-    },
-    {
       "basename": "CTMCs",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/3_Multiplexing/CTMCs.md"
-    },
-    {
-      "basename": "Important Applications Of Basic Probability",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
     },
     {
       "basename": "__大数定律，中心极限定理和收敛定理",
@@ -167,34 +199,6 @@
     {
       "basename": "4 Stable Matching",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/4 Stable Matching.pdf"
-    },
-    {
-      "basename": "Stable Matching Problem",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
-      "basename": "Discretization_System_ID",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "Upper_Triangulation_Schur_Decomposition",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
-    },
-    {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
-    },
-    {
-      "basename": "Reachability_Controllability",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Reachability_Controllability.md"
     }
   ],
   "omittedPaths": [],

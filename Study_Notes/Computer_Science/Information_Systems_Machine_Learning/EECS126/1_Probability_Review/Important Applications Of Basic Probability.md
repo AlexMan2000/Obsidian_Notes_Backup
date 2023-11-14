@@ -73,7 +73,7 @@
 
 
 
-# Loading Balance
+# Loading Balancing
 > [!motiv] Motivation
 > ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109140720274.png)![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109141257791.png)
 
