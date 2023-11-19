@@ -145,7 +145,7 @@
 > 求`PDF`按照国际惯例就是求导:
 > ![image.png](./Random_Vectors.assets/20231107_2133338606.png)
 
-# 
+# Joint/Marginal Distribution
 ## Subvectors
 ### Definition
 > ![image.png](./Random_Vectors.assets/20231107_2133359729.png)
@@ -167,14 +167,31 @@
 
 
 ### Axiom of Probability
+> [!thm]
 > ![image.png](./Random_Vectors.assets/20231107_2133382344.png)![image.png](./Random_Vectors.assets/20231107_2133398905.png)
 
 
 
 ### Marginal Distribution
+> [!thm]
 > ![image.png](./Random_Vectors.assets/20231107_2133417722.png)
 
-**Proof**![image.png](./Random_Vectors.assets/20231107_2133421722.png)
+> [!proof] **Proof**
+> ![image.png](./Random_Vectors.assets/20231107_2133421722.png)
+
+
+### Example - Conditional Probability
+> [!important]
+> ![](Random_Vectors.assets/image-20231118094303303.png)
+> Second Part
+> ![](Random_Vectors.assets/image-20231118101057536.png)
+
+
+> [!solution]
+> ![](Random_Vectors.assets/image-20231118100549337.png)![](Random_Vectors.assets/image-20231118100643450.png)![](Random_Vectors.assets/image-20231118100649138.png)
+> Second Part
+> ![](Random_Vectors.assets/image-20231118101108204.png)
+
 
 ## Conditional Distribution
 ### Definition
@@ -184,29 +201,36 @@
 > ![image.png](./Random_Vectors.assets/20231107_2133458451.png)
 
 **Proof**![image.png](./Random_Vectors.assets/20231107_2133479295.png)
-### 
 
-## Integrating Example
-### Lemma
+### Packet Routing
+> [!important]
+> ![](Random_Vectors.assets/image-20231118101925533.png)
+
+> [!solution]
+> ![](Random_Vectors.assets/image-20231118102010066.png)
+
+
+### Desert
+#### Lemma
+> [!lemma]
 > ![image.png](./Random_Vectors.assets/20231107_2133488727.png)
 
-**Proof**![image.png](./Random_Vectors.assets/20231107_2133499856.png)
 
-### Problem Setting
+#### Problem Setting
 > ![image.png](./Random_Vectors.assets/20231107_2133513487.png)![image.png](./Random_Vectors.assets/20231107_2133525020.png)
 
 
-### Joint Distribution
+#### Joint Distribution
 > ![image.png](./Random_Vectors.assets/20231107_2133533286.png)
 
 
 
-### Conditional Distribution
+#### Conditional Distribution
 > ![image.png](./Random_Vectors.assets/20231107_2133558629.png)
 > 首先我们求$X_1,X_3$的联合分布，也就是对所有的$X_2$求和，得到下面的式子：![image.png](./Random_Vectors.assets/20231107_2133568384.png)
 > 之后我们可以求解边缘分布($X_2|X_1,X_3$): ![image.png](./Random_Vectors.assets/20231107_2133585978.png)
 
-**Graph**![image.png](./Random_Vectors.assets/20231107_2133592604.png)
+> **Graph**![image.png](./Random_Vectors.assets/20231107_2133592604.png)
 
 
 ## Independence
@@ -222,4 +246,16 @@
 > ![image.png](./Random_Vectors.assets/20231107_2134027771.png)![image.png](./Random_Vectors.assets/20231107_2134048173.png)![image.png](./Random_Vectors.assets/20231107_2134054865.png)
 
 
+
+
+
+# Expectation/Variance
+## Iterated Law of Random Vector
+> [!thm]
+> ![](Random_Vectors.assets/image-20231118093359812.png)
+
+> [!proof]
+> We can define $$ \mathbb{E}(X_I | X_J) = \int_{X_J} X_I f_{X_I|X_J}(X_I | X_J) dX_I$$. It's a multivariable function $h(X_{J})$ of random vector $X_{J}$. Then:
+> $$\mathbb{E}(\mathbb{E}(X_I | X_J)) = \int_{X_J} \mathbb{E}(X_I | X_J) f(X_J) dX_J = \int_{X_J} \left( \int_{X_I} X_I f_{X_I|X_J}(X_I | X_J) dX_I \right) f(X_J) dX_J Since f_{X_I|X_J} = \frac{f_{X_I,X_J}}{f_{X_J}}$$
+> Therefore, $$\mathbb{E}(\mathbb{E}(X_I | X_J)) = \int_{X_J} \mathbb{E}(X_I | X_J) f(X_J) dX_J = \int_{X_J} \left( \int_{X_I} X_I \frac{f_{X_I,X_J}}{f_{X_J}} dX_I \right) f(X_J) dX_J = \int_{X_J} \int_{X_I} X_I f_{X_I,X_J} dX_I dX_J = \int_{X_I} X_I \left( \int_{X_J} f_{X_I,X_J} dX_J \right) dX_I = \mathbb{E}(X_I)$$
 

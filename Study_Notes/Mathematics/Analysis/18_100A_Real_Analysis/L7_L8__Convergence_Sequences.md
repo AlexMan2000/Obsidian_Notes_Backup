@@ -26,6 +26,7 @@ We want to find the following scenario: $|(-1)^M-x|\geq \epsilon_0$, and we noti
 ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510087883.png)
 
 
+
 # 2 Monotone Sequence
 ## Definition
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510081985.png)
@@ -53,23 +54,10 @@ We want to find the following scenario: $|(-1)^M-x|\geq \epsilon_0$, and we noti
 > 证明这两个定理需要一个**常用引理**:
 > 假设$x\geq -1, n\in \mathbb{N}$, 则$(1+x)^n=1+C_{n-1}^1 1^{n-1}\cdot x+\cdots \geq 1+nx$
 
-**Proof of Theorem 1(Medium)**首先证明存在性, 因为$c\in (0,1)$, 所以我们有$0<c^{n+1}<c^n, n\in \mathbb{N}$成立，我们也可以使用数学归纳法来证明:
 
-1. $n=1$时， $0<c^2<c$成立
-2. 假设$n=m$时， $0<c^{m+1}<c^m$成立, 则$n=m+1$时，$0<c^{m+1}\cdot c<c^{m}\cdot m\iff0<c^{m+2}<c^{m+1}$
-3. 于是`By induction`, 我们有$0<c^{n+1}<c^n,\forall n\in \mathbb{N}$
-
-所以$0<c^{n+1}<c^{n}<c^{n-1}<\cdots <c, \forall n$, 于是$\{c_n\}$单调递减且有界, 于是根据`Theorem 7`我们有:$\{c^n\}$收敛。假设收敛于$L$, 下面我们证明$L=0$, 你可能会想使用之前的方法证明$\begin{cases} L\geq 0\\L\leq 0\end{cases}$，但是这样会比较繁琐，而其实也不需要这么麻烦。在数学分析中，如果我们要证明一个数为$0$, 我们也可以使用极限的思想: $\forall \epsilon>0, |L|<\epsilon\implies L=0$来证明。由于$c\in (0,1)$, 则$1-c>0$, 我们可以好好利用一下这个性质。如果我们要证明$|L|<\epsilon ,\forall \epsilon$我们可以转而证明
-$(1-c)|L|<(1-c)\epsilon\iff |(1-c)L|<(1-c)\epsilon \tag{1}$
-而我们知道$\lim_{n\to \infty} c^n=L$, 这相当于在说$\forall \epsilon>0, \exists n\geq M_0, ~~s.t.~~ |c^n-L|<\epsilon$, 但是这个条件好像并不能帮助我们证明$(1)$, 于是我们考虑如下构造:
-$\forall \epsilon>0, \exists n\geq M_0, ~~s.t.~~ |c^n-L|<(1-c)\frac{\epsilon}{2}$
-于是:
-$\begin{aligned}|(1-c)L|=|L-cL|=|L-c^{M_0+1}+c^{M_0+1}-cL|&\leq |L-c^{M_0+1}|+c|c^{M_0}-L|
-\\&=|c^{M_0+1}-L|+c|c^{M_0}-L|\\&<(1-c)\frac{\epsilon}{2}+c(1-c)\frac{\epsilon}{2}\\&<(1-c)\frac{\epsilon}{2}+(1-c)\frac{\epsilon}{2}\\&=(1-c)\epsilon\end{aligned}$
-所以$\forall \epsilon>0,|L|<\epsilon$, 所以$L=0$, 证毕。
-**Proof of Theorem 2(Medium)**我们想要证明$\forall B\geq 0, \exists n\geq M_0,~~s.t.~~|c^n|=c^n> B$。看到形如证明$z^n>T$($z>1$时)的不等式，我们就可以考虑使用上面的引理先进行一些放缩(利用$c-1>0$的性质)。也就是我们可以进行如下操作:
-$c^n=(1+(c-1))^n\geq 1+n(c-1)$
-所以我们总是可以找到$\forall B\geq 0, n> \frac{B}{c-1},~~s.t.~~ c^n\geq 1+n(c-1)>\frac{B}{c-1}\cdot (c-1)=B$, 证毕。
+> [!proof]
+> **Proof of Theorem 2(Medium)**我们想要证明$\forall B\geq 0, \exists n\geq M_0,~~s.t.~~|c^n|=c^n> B$。看到形如证明$z^n>T$($z>1$时)的不等式，我们就可以考虑使用上面的引理先进行一些放缩(利用$c-1>0$的性质)。也就是我们可以进行如下操作:$c^n=(1+(c-1))^n\geq 1+n(c-1)$
+> 所以我们总是可以找到$\forall B\geq 0, n> \frac{B}{c-1},~~s.t.~~ c^n\geq 1+n(c-1)>\frac{B}{c-1}\cdot (c-1)=B$, 证毕。
 
 
 # 3 Subsequence

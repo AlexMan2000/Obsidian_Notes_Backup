@@ -35,6 +35,11 @@
 > ![](Convex_Functions.assets/image-20231101091518411.png)![](Convex_Functions.assets/image-20231101095409365.png)
 > **注意:** 函数使用二阶条件必须满足函数在其定义域上处处二阶可导。
 
+> [!proof]
+> ![](Convex_Functions.assets/image-20231115120848117.png)![](Convex_Functions.assets/image-20231115120853668.png)![](Convex_Functions.assets/image-20231115120906996.png)
+
+
+
 > [!example] Examples
 > ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)
 
@@ -166,7 +171,12 @@
 
 ### Log-Likelihood Function
 > [!example]
+> 总的来说，`log-likelihood function`在$\mu$和$\frac{1}{\sigma^2}$上分别是`strictly concave`的(`partial strictly concave`), 但是在$(\mu, \frac{1}{\sigma^2})$上不是`strictly convex/concave`的（不是`jointly convex/concave`的）。
 > ![](Convex_Functions.assets/image-20231105125740327.png)![](Convex_Functions.assets/image-20231105125751115.png)![](Convex_Functions.assets/image-20231105125807821.png)
+
+
+## Properties From Convexity
+> 
 
 
 # Operations Preserving Convexity

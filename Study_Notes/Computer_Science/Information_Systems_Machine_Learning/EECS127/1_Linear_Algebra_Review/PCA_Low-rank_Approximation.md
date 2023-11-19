@@ -715,6 +715,20 @@ def show_first_five_reconstructed(data, k):
 >![](PCA_Low-rank_Approximation.assets/image-20231104132634709.png)
 
 
+## Subspace Projection - PCA
+> [!example]
+> ![](PCA_Low-rank_Approximation.assets/image-20231117223101475.png)![](PCA_Low-rank_Approximation.assets/image-20231117223107990.png)
+
+> [!solution] (a)
+> ![](PCA_Low-rank_Approximation.assets/image-20231117224922335.png)![](PCA_Low-rank_Approximation.assets/image-20231117224928026.png)
+
+> [!solution] (b)
+> ![](PCA_Low-rank_Approximation.assets/image-20231117224944671.png)
+
+> [!solution] (c)
+> ![](PCA_Low-rank_Approximation.assets/image-20231117224953871.png)![](PCA_Low-rank_Approximation.assets/image-20231117224957587.png)
+
+
 
 
 

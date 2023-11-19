@@ -30,8 +30,15 @@
 
 
 ## Steepest Gradient Descent
+### Motivation
 > [!motiv] Motivation
 > ![](Gradient_Descent.assets/image-20231108102212825.png)
+
+
+### Direction Steepest Ascent
+> [!thm]
+> ![](Gradient_Descent.assets/image-20231117220151969.png)![](Gradient_Descent.assets/image-20231117220200437.png)![](Gradient_Descent.assets/image-20231117220207277.png)
+
 
 
 

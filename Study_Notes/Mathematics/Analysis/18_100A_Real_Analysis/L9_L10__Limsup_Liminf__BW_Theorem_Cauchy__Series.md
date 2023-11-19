@@ -75,6 +75,13 @@
 > 综上，我们有$\liminf x_n\leq \liminf x_{n_k}\leq \limsup x_{n_k}\leq \limsup x_n$
 
 
+
+## Properties
+> [!property]
+> ![](L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.assets/image-20231116085327396.png)
+
+
+
 # 3 Bolzano-Weierstress
 ## BW1:数列有界=存在子数列收敛
 > [!lemma]

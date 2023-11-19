@@ -88,6 +88,7 @@ $Rank(A)=Rank(UDU^{-1})=Rank(DU^{-1})=Rank(D)$(By 2 and 3)
 
 
 ### Inequality Properties
+> [!proof]
 > **对于**$A\in \mathbb{R}^{m\times n}$**和**$\vec{x}\in \mathbb{R}^{n}$**, 我们有:**
 > $\|A\vec{x}\|_2^2=\sum_{i=1}^m|\vec{a}_i^{\top}\vec{x}|^2\leq \sum_{i=1}^m\|\vec{a}_i^{\top}\|_2^2\|\vec{x}\|_2^2=\|A\|_F^2\|\vec{x}\|_2^2$（柯西不等式）
 > **对于**$A\in \mathbb{R}^{m\times n}$**和**$B\in \mathbb{R}^{n\times p}$**, 令**$B=\begin{bmatrix} \vec{b}_1&\vec{b}_2&\cdots&\vec{b}_p\end{bmatrix}$**:**

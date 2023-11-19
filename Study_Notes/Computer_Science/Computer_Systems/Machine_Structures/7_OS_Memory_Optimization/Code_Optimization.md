@@ -1,7 +1,7 @@
 # Optimization Level by GCC
 > ![image.png](./Code_Optimization.assets/20231024_0923227791.png)![image.png](./Code_Optimization.assets/20231024_0923249353.png)
 
-# 
+
 # Common Types of GCC Optimization
 ## Code Motion
 > ![image.png](./Code_Optimization.assets/20231024_0923269800.png)

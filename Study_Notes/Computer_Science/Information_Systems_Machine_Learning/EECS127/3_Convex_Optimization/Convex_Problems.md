@@ -38,7 +38,7 @@
 
 
 
-## Equivalent Problems
+## Problem Transformation
 ### Original Optimization Problem
 > [!def]
 > 假设我们有如下的优化问题:
@@ -121,6 +121,17 @@
 > [!example]
 > ![](Convexity.assets/image-20231104164118268.png)![](Convexity.assets/image-20231104164129281.png)![](Convexity.assets/image-20231104164556058.png)![](Convex_Problems.assets/image-20231104164843443.png)
 
+
+
+
+# Uniqueness of Optimal Solution
+
+## Constant Linear Function
+> [!thm]
+> ![](Convex_Problems.assets/image-20231117230142776.png)
+
+> [!proof]
+> ![](Convex_Problems.assets/image-20231117230207335.png)
 
 
 
