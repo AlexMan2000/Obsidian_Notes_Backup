@@ -743,6 +743,23 @@ def show_first_five_reconstructed(data, k):
 > [!example] Example 2
 > ![](PCA_Low-rank_Approximation.assets/image-20231104133012190.png)![](PCA_Low-rank_Approximation.assets/image-20231104133054031.png)![](PCA_Low-rank_Approximation.assets/image-20231104133110516.png)
 
+  
+## Low Rank Matrix Completion - Nuclear Norm
+> [!important] EECS127 Sp23 MT1 P13
+> ![](PCA_Low-rank_Approximation.assets/image-20231129143528361.png)![](PCA_Low-rank_Approximation.assets/image-20231129143534968.png)![](PCA_Low-rank_Approximation.assets/image-20231129143856343.png)![](PCA_Low-rank_Approximation.assets/image-20231129143911613.png)![](PCA_Low-rank_Approximation.assets/image-20231129143919208.png)![](PCA_Low-rank_Approximation.assets/image-20231129143927654.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Resources

@@ -114,12 +114,7 @@
 > ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109141023921.png)![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109141028697.png)
 
 
+# Clustering Coefficients
+> [!example]
+> ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231119215406310.png)
 
-
-
-
-
-# Memoryless Properties
-
-
-# Tail Sum for Expectation

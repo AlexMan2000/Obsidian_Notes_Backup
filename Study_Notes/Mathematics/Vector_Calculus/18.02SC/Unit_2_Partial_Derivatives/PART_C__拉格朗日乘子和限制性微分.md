@@ -424,6 +424,4 @@ $(\frac{\partial (xy)}{\partial z})_{x,y}=(\frac{\partial (zt)}{\partial z})_{x,
 
 **(a)**![image.png](./PART_C__拉格朗日乘子和限制性微分.assets/20230302_1045032171.png)
 **(b)**![image.png](./PART_C__拉格朗日乘子和限制性微分.assets/20230302_1045039020.png)
-# 
-## 
 

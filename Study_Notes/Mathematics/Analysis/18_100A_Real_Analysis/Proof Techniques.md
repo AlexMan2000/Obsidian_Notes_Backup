@@ -65,6 +65,7 @@
 ## Using Limsup and Liminf Equality
 > 
 
+
 # How to prove Sequence Divergence
 ## Using Definition
 > 
@@ -80,6 +81,8 @@
 
 ## Using Unboundedness
 > 
+
+
 
 ## Using Limsup and Liminf Inequality
 > 

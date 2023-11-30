@@ -6,7 +6,7 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 39.338555265448214,
+        "dimension": 49.49406071271447,
         "children": [
           {
             "id": "2b2a3a4161a34caa",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,27 +38,39 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ba58c79b6a86049f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "4702437a05b4045f",
         "type": "tabs",
-        "dimension": 60.661444734551786,
+        "dimension": 50.50593928728553,
         "children": [
           {
-            "id": "264930f6b7097c6f",
+            "id": "c381094d8f28c9fc",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf"
               }
             }
           },
@@ -113,22 +125,22 @@
             }
           },
           {
+            "id": "7150ebb12acee00f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+              }
+            }
+          },
+          {
             "id": "e53a45416d1ae55c",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf"
-              }
-            }
-          },
-          {
-            "id": "c1b3cbdaae8ffc41",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Introduction to Probability.pdf"
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
               }
             }
           },
@@ -141,19 +153,8 @@
                 "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
               }
             }
-          },
-          {
-            "id": "7150ebb12acee00f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,7 +226,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 200
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -265,7 +266,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -282,7 +283,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -320,8 +321,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 391.5,
-    "collapsed": true
+    "width": 242.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -340,53 +340,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c41124f1b9fe63ab",
+  "active": "b5dec5c92cd64e86",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.assets/image-20231118211524715.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.assets/image-20231118204829648.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.assets/image-20231118204822413.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.assets/image-20231118202251740.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.assets/image-20231118202009973.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20231118200348929.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20231118200342991.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20231118200331291.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20231118200321849.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20231118200308163.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129230556806.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129214230352.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129214225472.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129213717115.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129213710800.png",
+    "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.assets/image-20231129211220265.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.assets/image-20231129180548947.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
+    "Mathematics/Vector_Calculus/18.02SC/Unit_2_Partial_Derivatives/PART_C__拉格朗日乘子和限制性微分.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/统计基本概念/模型_点估计和置信区间.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.assets",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__大数定律，中心极限定理和收敛定理.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/__高阶知识点和练习_(1).md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/MAP,LMS, LLMS.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/GLM___Logistic_Regression.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Generalized Linear Model.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.assets/image-20231129172007882.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.assets/image-20231129171934452.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.assets/image-20231129171133577.png",
     "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.assets",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231129162350343.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_OPT_Basics.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.assets",
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/Lab07 SIMD&OpenMP.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_SIMD_Instructions.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Labs_Thread_Level_Programming.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
     "未命名.canvas"
   ]
 }

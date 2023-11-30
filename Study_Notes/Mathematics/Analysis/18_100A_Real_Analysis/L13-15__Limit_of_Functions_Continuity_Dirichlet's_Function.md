@@ -234,10 +234,17 @@
 > ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111202006550.png)
 
 
-### Useful Tricks
+### Useful Tricks - Change of Variables
 > [!important]
 > ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111202324279.png)
 
+
+### Useful Tricks - Sequence Criterion
+> [!important]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231129161142204.png)
+
+> [!example]
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231129162149396.png)
 
 
 ### Examples
@@ -336,7 +343,7 @@
 > [!proof]
 > **Proof of Theorem 5**![image.png](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/20230302_1509121425.png)
 
-> [!example]
+> [!example] Example - Sinusoidal Function
 > 假设**$f(x)=\frac{1}{3+(sinx)^4}$** is continuous:
 > - By composition: $sin^4(x)$ is continuous
 > - By algebraic operation: $3+(sinx)^4$is continuous
@@ -344,8 +351,8 @@
 > 
 > ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231111213409292.png)
 
-
-
+> [!example] Example - Infinity
+> ![](L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.assets/image-20231129162350343.png)
 
 
 ## Continuous Examples

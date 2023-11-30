@@ -1,6 +1,8 @@
 # Maximum Posterior Estimation
 > [!summary]
-> 求的是$argmax_{\theta}f_{\theta|x}(\theta|x)$
+> 求的是$argmax_{\theta}f_{\theta|x}(\theta|x)$, 也是一个关于$X$的函数$g(X)$
+> Compute Mean Square Error:
+> $MSE=E[(Y-g(X))^2]$
 
 
 
@@ -28,6 +30,24 @@
 > - $\text{cov}(\hat{\Theta},\tilde{\Theta}) = 0$
 > - Since $\Theta = \hat{\Theta} - \tilde{\Theta}: \text{var}(\Theta) = \text{var}(\hat{\Theta}) + \text{var}(\tilde{\Theta})$ 
 > 
+
+
+## Summary
+> [!summary]
+> Suppose we want to estimate $Y$ given $X$, then:
+> 1. How to calculate mean squared error?
+> The LMS estimator is $E[Y|X]$, which is a random variable $g(X)$. 
+> - If the integral region of joint distribution of $X,Y$ is tractable, then MSE=$E[(Y-g(X))^2]=\iint_{X,Y\in X\times Y}(Y-g(X))^2f_{X,Y}(x,y)dydx$
+> - Otherwise, MSE = $E[Var(Y|X)]$
+
+> [!example] Using Joint PMF
+> ![](MAP&LMS&LLMS.assets/image-20231120171737643.png)![](MAP&LMS&LLMS.assets/image-20231120171746473.png)![](MAP&LMS&LLMS.assets/image-20231120171802102.png)
+
+
+> [!example] Using E[Var(Y|X)]
+> See great example 1
+
+
 
 
 # Linear Least Mean Square Estimation

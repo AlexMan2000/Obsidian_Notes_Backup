@@ -157,6 +157,29 @@
       "injectColor": true,
       "noTitle": false,
       "copy": true
+    },
+    "lab": {
+      "type": "lab",
+      "color": "84, 29, 29",
+      "icon": {
+        "name": "file-code",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "tech": {
+      "type": "tech",
+      "color": "76, 134, 65",
+      "icon": {
+        "name": "creative-commons-share",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

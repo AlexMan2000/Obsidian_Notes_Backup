@@ -130,12 +130,6 @@
 
 
 
-# Causual Inference
-> 
-
-
-
-
 # Continuous Random Vectors
 ## CDF/PDF
 > **CDF for Random Vector:**

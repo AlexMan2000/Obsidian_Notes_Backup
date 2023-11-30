@@ -382,61 +382,6 @@ public int[] selectionInPlace(int[] LL, int v) {
 
 
 
-# Polynomial Multiplication
-## Definition of Polynomials
-> 假设我们有$d+1$个不同的点$(x_0,y_0),(x_1,y_1),\cdots, (x_{d},y_{d})$, 则过这$d+1$个点可以唯一确定一个`Degree-d`的多项式，记为$A(x)=a_{d}x^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0$。
-> **我们定义:**
-> 1. $a_0,a_1,\cdots, a_{d}$为多项式$A(x)$的系数
-> 2. $A(x_0),A(x_1),\cdots, A(x_d)$为多项式$A(x)$在$x_0,x_1,\cdots, x_d$这些点上`Evaluated`的值。
-
-
-
-## Polynomials and Signals
-> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951177638.png)
-> 对于图$(a)$中的连续信号$a_c(t)$来说，我们将其离散化得到图$(b)$用$a[i]$表示，然后我们可以将$a_c(t)$表示为$a_c(t)=\sum_{i=0}^{T-1}a[t]\delta(t-i)$, 其中$T$表示的是我们总共划分了多少`Intervals`, **这对任意的连续信号都成立。**
-> **举几个例子:**
-> $a(1)=\sum_{i=0}^{T-1}a(i)\delta(1-i)$，$a(2)=\sum_{i=0}^{T-1}a(i)\delta(2-i)$，其中$\delta(t-i)$就是图$(c)$中的`Impulse Input`在`Shift i time steps`之后的图像，我们有$\delta(t-i)=\begin{cases}1&i=t\\0&otherwise \end{cases}$, 这表明$\sum_{i=0}^{T-1}a[t]\delta(t-i)$只会将$a[i]$中的第$t$个$a[t]$分段筛选出来，说明这是成立的。
-> **有了上面的铺垫，我们可以换一种角度思考**`**Signal**`**:  **
-> **因为**$a_c(t)=\sum_{i=0}^{n-1}a[t]\delta(t-i)$**, 我们令**$a[0]=a_0, a[1]=a_1,\cdots, a[n-1]=a_{n-1}$**, 此时我们有**$a_c(t)=a_0\delta(t)+a_1\delta(t-1)+\cdots+a_{n-1}\delta(t-n+1)$**, 令**$\delta(t-i)=t^i$**(表示**`**Delayed by i steps**`**，也可以表示**`**One Time Unit**`**), 则:**
-> $a_c(t)=a_0+a_1t+a_2xt^2+\cdots+a_{n-1}t^{n-1}$
-> **下面我们从**`**System**`**的视角来解释**`**Polynomial Multiplication**`**的意义, **假设系统的输入是$a$, 输出是$b$, 如下图所示:
-> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951183316.png)
-> **则输入**$a$**相当于在**$t=0$**处输入**$a_0$**, **$t=1$**处输入**$a_1$**, **$t=2$**处输入**$a_2$**, 依次类推。换句话说，输入信号**$a$**相当于是在不同时间步的一系列的**`**Impulses**`**:**
-> 1. 在$t=0$处输入$1$, 则输出为$b_0+b_1x+\cdots+b_{n-1}x^{n-1}$(By Definition of Impulse Response)
-> 2. 在$t=0$处输入$a_0$, 则输出为$a_0(b_0+b_1x+\cdots+b_{n-1}x^{n-1})$(By Linearity)
-> 3. 在$t=1$处输入$a_1$, 这可以看成是`Shift the input by 1 time step`，所以输出也需要`Shift by 1 time step`, 也就是乘上一个$x$, 所以输出是 $a_1x(b_0+b_1x+\cdots+b_{n-1}x^{n-1})$(By Linearity and Time Invariance)
-> 4. 依此类推, 我们得到完整的输出是$(a_0+a_1x+\cdots+a_{n-1}x^{n-1})(b_0+b_1x+\cdots+b_{n-1}x^{n-1})=a(x)b(x)$。
-> 
-**我们举个例子:**
-> - 假设在$t=0$时输入为$1$, 且输出为$3+5x+2x^2$, 则我们可以将其表示为信号，即$a_0=3, a_1=5, a_2=2$。
-> - 再假设在$t=1$时输入为$2$, 则输出为$2x(3+5x+2x^2)=6x+10x^2+4x^4$, 这说明$a_0=6, a_1=0,a_3=10,a_4=0,a_5=4$。
-> 
-**总结一下：**
-> 假设我们知道了一个系统的`Impulse Response`$b(x)$, 则如果此时系统的`Input`是$a(x)$, 则系统的`Output`为$a(x)b(x)$。
-
-
-
-## Representations of Polynomials
-> 1. `**Coefficient Representations**`**: **我们可以将多项式$A(x)=a_0+a_1x+\cdots+a_{n-1}x^{n-1}$写成一个向量$\begin{bmatrix} a_0\\a_1\\\vdots\\a_{n-1}\end{bmatrix}$。
-> 2. `**Value Representation**`: 我们可以将多项式$A(x)=a_0+a_1x+\cdots+a_{n-1}x^{n-1}$写成若干个`Evaluation`的结果。对于$n-1$degree的多项式来说，我们可以用$A(x_0),\cdots, A(x_{n-1})$来表示这个多项式，写成向量就是$\begin{bmatrix} A(x_0)\\A(x_1)\\\vdots\\A(x_{n-1})\end{bmatrix}$。
-> 3. **两种表示方式的转换**: $\begin{bmatrix} 1&x_0&x_0^2&\cdots&x_0^{n-1}\\ 1&x_1&x_1^2&\cdots&x_1^{n-1}\\\vdots\\ 1&x_{n-1}&x_{n-1}^2&\cdots&x_{n-1}^{n-1}\end{bmatrix}\begin{bmatrix} a_0\\a_1\\\vdots\\a_{n-1}\end{bmatrix}=\begin{bmatrix} A(x_0)\\A(x_1)\\\vdots\\A(x_{n-1})\end{bmatrix}$, 表示从`Coefficient Representation`到`Value Representation`的转换。这也就是`FFT`的基本逻辑。
-
-### 
-
-## Product of Polynomials
-> **我们使用上述两种多项式的定义来表示多项式的乘积, 假设我们有**$A(x)$**和**$B(x)$**两个多项式，且其乘积为**$C(x)$**, 则:**
-> 1. **如果我们使用**`**Coefficient Representation**`**来表示多项式**$C(x)$**: 则:**
-> 
-$\begin{aligned}C(x)&=(a_dx^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0)(b_dx^d+b_{d-1}x^{d-1}+\cdots+b_1x+b_0)\\&=c_d\sum_{i=0}^da_ib_{d-i}+c_{d-1}\sum_{i=0}^{d-1}a_ib_{d-1-i}+\cdots+c_1\sum_{i=0}^{1}a_ib_{1-i}+c_0\end{aligned}$ 
-> 其中$c_k=\sum_{i=0}^ka_ib_{k-i}$
-> 2. **我们使用**`**Value Representation**`**来表示多项式**$C(x)$**, 则: **
-> 
-计算$C(x_k)=A(x_k)B(x_k)$$\forall k=0,1,2,\cdots, 2d$
-> 然后根据$(x_0,C(x_0)),(x_1,C(x_1)),(x_2,C(x_2))\cdots, (x_{2d},C(x_{2d}))$找回
-> $C(x)$的系数$c_0,c_1,\cdots, c_{2d}$。
-> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951197734.png)
-
-
 
 # Complex Roots
 ## How to Compute
@@ -479,7 +424,7 @@ $\begin{aligned}C(x)&=(a_dx^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0)(b_dx^d+b_{d-1}x^{d
 
 
 
-# Evaluation of Polynomial
+# Polynomial Evaluation
 > 已知多项式$A(x)=c_dx^d+c_{d-1}x^{d-1}+\cdots+c_{1}x+c_0$和$x_0,x_1,\cdots, x_d$个点，则我们可以将点$x_i$带入多项式$A(x)$中，此时$A(x_0)$表示在$x_0$处多项式的值。
 > 同时`Evaluation of Polynomial`的过程也和进制间的转换过程如出一辙，假设我们有一个数字在`Base b`下的表示为$(a_{n}a_{n-1}a_{n-2}\cdots a_0)_b$, 那么如果我们要转换为$10$进制的话就需要计算$a_0+a_1\times b+\cdots+a_{n-1}b^{n-1}+a_{n}\times b^n$, 相当于计算$A(b)$。
 
@@ -487,8 +432,8 @@ $\begin{aligned}C(x)&=(a_dx^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0)(b_dx^d+b_{d-1}x^{d
 
 ## Intuitive Evaluation
 > 下面我们介绍两种常见的`Evaluation Method`:
-> 1. 第一种是从`Least-Significant Bit`开始`Evaluate`
-> 2. 第二种是从`Most-Significant Bit`开始`Evalaute`
+> 1. 第一种是从`Least-Significant Bit`开始`Evaluate`, 每一个点的算法时间复杂度为$O(n^2)$
+> 2. 第二种是从`Most-Significant Bit`开始`Evalaute`, 每一个点的算法时间复杂度为$O(n)$
 
 ### Algorithm I - From LSB
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951259078.png)
@@ -517,7 +462,7 @@ def naiveEval(w, coeffs):
     return res
 ```
 
-### Algorithm II - From MSB
+### Algorithm II - Horner's Method
 #### Iterative Implementation - Loop Invariant
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951276609.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951283986.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951296442.png)
 
@@ -546,7 +491,9 @@ def iterativeEval(w, coeffs):
     return res
 ```
 
+
 #### Recursive Implementations
+> [!algo]
 > **Algorithm Description: We give the following pseudocode.**
 > function eval($[a_0, \cdots, a_n],x$):
 > if n == 0:
@@ -586,14 +533,16 @@ def recursiveEval(w, coeffs):
 ```
 
 
+
 ## Evaluation by Divide and Conquer
 ### Algorithm
+> [!algo]
 > 对于一个多项式$A(x)$来说，如果我们想要计算其在某个$x_i$处的值的话，我们可以直接带入多项式的表达式，也可以使用分治的方式来求值。但是使用分治的前提是，我们的$x_i$必须是以**正负对**的形式出现的。也就是说$\pm x_0, \pm x_1,\cdots, \pm x_n$的形式，方法如下:
 > 我们将其按照`degree`分成两组，一组是`odd-degree`, 一组是`even-degree`, 比如$A(x)=3+x+x^2+x^3$我们将其分成：
 > 1. `Even Degree`: $3+x^2$
 > 2. `Odd Degree`: $x+x^3$
 > 
-则我们可以将$A(x)$写成$A(x)=A_e(x^2)+xA_o(x^2)$, 其中$A_e(x^2)=3+x^2$, $A_o(x^2)=1+x^2$, 目的是为了使得我们在计算$A(x_i)$和$A(-x_i)$的时候可以回收利用一些分治的结果。因为根据定义:
+> 则我们可以将$A(x)$写成$A(x)=A_e(x^2)+xA_o(x^2)$, 其中$A_e(x^2)=3+x^2$, $A_o(x^2)=1+x^2$, 目的是为了使得我们在计算$A(x_i)$和$A(-x_i)$的时候可以回收利用一些分治的结果。因为根据定义:
 > $\begin{cases}A(x_i)&=A_e(x_i^2)+x_iA_o(x_i^2)\\A(-x_i)&=A_e(x_i^2)-x_iA_o(x_i^2)\end{cases}$
 > 所以我们在计算$A(x_i)$和$A(-x_i)$的时候是可以利用$A_e(x_i^2)$和$A_o(x_i^2)$的分治结果的。原来$A(x_i)$的`Evaluating`过程是需要计算`degree d`的多项式的，而现在`Evaluating`过程只需要计算两个`degree d/2`的多项式。完整过程如下图所示:
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951309475.png)
@@ -601,12 +550,12 @@ def recursiveEval(w, coeffs):
 > 1. 我们在使用$x_0,x_1,\cdots, x_{n-1}$对$A(x)$进行`Evalaute`的时候, 要确保它们是`Positive-Negative Pairs`，因为这样才能使用分治算法。
 > 2. 我们在`Evaluate`$A_e(x)$和$A_o(x)$的时候，使用的是$x_0^2, x_1^2,\cdots, x_{\frac{n}{2}-1}^2$, 为了确保我们在计算$A(x_i^2)$的时候仍然能够使用分治算法，我们需要保证$x_0^2,x_1^2,\cdots, x_{\frac{n}{2}-1}^2$也是`Positive-Negative Pairs`。
 > 
-所以本质上我们需要$x_0,x_1,\cdots, x_{n-1}$是`Positive-Negative Pairs`, 且$x_0^2,x_1^2,\cdots, x_{\frac{n}{2}-1}^2$也是`Positive-Negative Pairs`。而`Complex Root`就满足这个要求，令$n$为偶数:
+> 所以本质上我们需要$x_0,x_1,\cdots, x_{n-1}$是`Positive-Negative Pairs`, 且$x_0^2,x_1^2,\cdots, x_{\frac{n}{2}-1}^2$也是`Positive-Negative Pairs`。而`Complex Root`就满足这个要求，令$n$为偶数:
 > 1. 我们令$x_0,x_1,\cdots, x_{n-1}$为$z^n=1$的根，即`n-th root of unity`。
 > 2. 我们令$x_0^2,x_1^2,\cdots, x_{\frac{n}{2}-1}^2$为$z^{\frac{n}{2}}=1$的根，即`n/2-th root of unity`。
 > 3. 依此类推, $x_0^n$为$z=1$的根，即`1-th root of unity`。
 > 
-**参考上文我们有如下算法: **
+> 参考上文我们有如下算法: 
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951323709.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951336612.png)
 
 
@@ -615,40 +564,98 @@ def recursiveEval(w, coeffs):
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951363315.png)
 
 
+# Polynomial Multiplication
+## Definition of Polynomials
+> 假设我们有$d+1$个不同的点$(x_0,y_0),(x_1,y_1),\cdots, (x_{d},y_{d})$, 则过这$d+1$个点可以唯一确定一个`Degree-d`的多项式，记为$A(x)=a_{d}x^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0$。
+> **我们定义:**
+> 1. $a_0,a_1,\cdots, a_{d}$为多项式$A(x)$的系数
+> 2. $A(x_0),A(x_1),\cdots, A(x_d)$为多项式$A(x)$在$x_0,x_1,\cdots, x_d$这些点上`Evaluated`的值。
+
+
+
+## Polynomials and Signals
+> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951177638.png)
+> 对于图$(a)$中的连续信号$a_c(t)$来说，我们将其离散化得到图$(b)$用$a[i]$表示，然后我们可以将$a_c(t)$表示为$a_c(t)=\sum_{i=0}^{T-1}a[t]\delta(t-i)$, 其中$T$表示的是我们总共划分了多少`Intervals`, **这对任意的连续信号都成立。**
+> **举几个例子:**
+> $a(1)=\sum_{i=0}^{T-1}a(i)\delta(1-i)$，$a(2)=\sum_{i=0}^{T-1}a(i)\delta(2-i)$，其中$\delta(t-i)$就是图$(c)$中的`Impulse Input`在`Shift i time steps`之后的图像，我们有$\delta(t-i)=\begin{cases}1&i=t\\0&otherwise \end{cases}$, 这表明$\sum_{i=0}^{T-1}a[t]\delta(t-i)$只会将$a[i]$中的第$t$个$a[t]$分段筛选出来，说明这是成立的。
+> **有了上面的铺垫，我们可以换一种角度思考**`**Signal**`**:  **
+> **因为**$a_c(t)=\sum_{i=0}^{n-1}a[t]\delta(t-i)$**, 我们令**$a[0]=a_0, a[1]=a_1,\cdots, a[n-1]=a_{n-1}$**, 此时我们有**$a_c(t)=a_0\delta(t)+a_1\delta(t-1)+\cdots+a_{n-1}\delta(t-n+1)$**, 令**$\delta(t-i)=t^i$**(表示**`**Delayed by i steps**`**，也可以表示**`**One Time Unit**`**), 则:**
+> $a_c(t)=a_0+a_1t+a_2xt^2+\cdots+a_{n-1}t^{n-1}$
+> **下面我们从**`**System**`**的视角来解释**`**Polynomial Multiplication**`**的意义, **假设系统的输入是$a$, 输出是$b$, 如下图所示:
+> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951183316.png)
+> **则输入**$a$**相当于在**$t=0$**处输入**$a_0$**, **$t=1$**处输入**$a_1$**, **$t=2$**处输入**$a_2$**, 依次类推。换句话说，输入信号**$a$**相当于是在不同时间步的一系列的**`**Impulses**`**:**
+> 1. 在$t=0$处输入$1$, 则输出为$b_0+b_1x+\cdots+b_{n-1}x^{n-1}$(By Definition of Impulse Response)
+> 2. 在$t=0$处输入$a_0$, 则输出为$a_0(b_0+b_1x+\cdots+b_{n-1}x^{n-1})$(By Linearity)
+> 3. 在$t=1$处输入$a_1$, 这可以看成是`Shift the input by 1 time step`，所以输出也需要`Shift by 1 time step`, 也就是乘上一个$x$, 所以输出是 $a_1x(b_0+b_1x+\cdots+b_{n-1}x^{n-1})$(By Linearity and Time Invariance)
+> 4. 依此类推, 我们得到完整的输出是$(a_0+a_1x+\cdots+a_{n-1}x^{n-1})(b_0+b_1x+\cdots+b_{n-1}x^{n-1})=a(x)b(x)$。
+> 
+**我们举个例子:**
+> - 假设在$t=0$时输入为$1$, 且输出为$3+5x+2x^2$, 则我们可以将其表示为信号，即$a_0=3, a_1=5, a_2=2$。
+> - 再假设在$t=1$时输入为$2$, 则输出为$2x(3+5x+2x^2)=6x+10x^2+4x^4$, 这说明$a_0=6, a_1=0,a_3=10,a_4=0,a_5=4$。
+> 
+**总结一下：**
+> 假设我们知道了一个系统的`Impulse Response`$b(x)$, 则如果此时系统的`Input`是$a(x)$, 则系统的`Output`为$a(x)b(x)$。
+
+
+
+## Representations of Polynomials
+> 1. `**Coefficient Representations**`**: **我们可以将多项式$A(x)=a_0+a_1x+\cdots+a_{n-1}x^{n-1}$写成一个向量$\begin{bmatrix} a_0\\a_1\\\vdots\\a_{n-1}\end{bmatrix}$。
+> 2. `**Value Representation**`: 我们可以将多项式$A(x)=a_0+a_1x+\cdots+a_{n-1}x^{n-1}$写成若干个`Evaluation`的结果。对于$n-1$degree的多项式来说，我们可以用$A(x_0),\cdots, A(x_{n-1})$来表示这个多项式，写成向量就是$\begin{bmatrix} A(x_0)\\A(x_1)\\\vdots\\A(x_{n-1})\end{bmatrix}$。
+> 3. **两种表示方式的转换**: $\begin{bmatrix} 1&x_0&x_0^2&\cdots&x_0^{n-1}\\ 1&x_1&x_1^2&\cdots&x_1^{n-1}\\\vdots\\ 1&x_{n-1}&x_{n-1}^2&\cdots&x_{n-1}^{n-1}\end{bmatrix}\begin{bmatrix} a_0\\a_1\\\vdots\\a_{n-1}\end{bmatrix}=\begin{bmatrix} A(x_0)\\A(x_1)\\\vdots\\A(x_{n-1})\end{bmatrix}$, 表示从`Coefficient Representation`到`Value Representation`的转换。这也就是`FFT`的基本逻辑。
+
+
+## Algorithm
+> [!algo] Algorithm
+> **我们使用上述两种多项式的定义来表示多项式的乘积, 假设我们有**$A(x)$**和**$B(x)$**两个多项式，且其乘积为**$C(x)$**, 则:**
+> 1. **如果我们使用**`Coefficient Representation`**来表示多项式**$C(x)$**: 则:**
+> 
+> $\begin{aligned}C(x)&=(a_dx^d+a_{d-1}x^{d-1}+\cdots+a_1x+a_0)(b_dx^d+b_{d-1}x^{d-1}+\cdots+b_1x+b_0)\\&=c_d\sum_{i=0}^da_ib_{d-i}+c_{d-1}\sum_{i=0}^{d-1}a_ib_{d-1-i}+\cdots+c_1\sum_{i=0}^{1}a_ib_{1-i}+c_0\end{aligned}$ 
+> 其中$c_k=\sum_{i=0}^ka_ib_{k-i}$, 注意到，每一个系数都需要$d+1$次乘法运算和$d$ 次加法运算，总共$2d+1$次代数运算，因为我们一共有$d+1$个系数，所以算法时间复杂度为$O(d^2)$。
+> 2. **我们使用**`Value Representation`**来表示多项式**$C(x)$, 则: 
+> 计算$C(x_k)=A(x_k)B(x_k)$$\forall k=0,1,2,\cdots, 2d$
+> 然后根据$(x_0,C(x_0)),(x_1,C(x_1)),(x_2,C(x_2))\cdots, (x_{2d},C(x_{2d}))$找回
+> $C(x)$的系数$c_0,c_1,\cdots, c_{2d}$。
+> ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951197734.png)
+> **Remarks:**
+> 1. `Evaluation`的步骤如果我们不使用`FFT`则算法时间复杂度为$O(n^2)$(如果我们使用`Horner's Method`), 使用`FFT`则算法时间复杂度为$O(nlogn)$。
+> 2. 在选择`Points`的步骤中，因为$C(x)$是$2d$-degree, 所以我们需要选择至少$2d+1$个点。
+
+
+
+
+
 
 # Fast Fourier Transformation
 ## Interpolation&Evaluation
+> [!motiv] Motivation
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951382296.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951391352.png)
 
 
 
 ## Vandermonde Matrix
-> 1. `**Vandermonde Matrix**`**:**
-> 
-我们知道一个多项式从`Polynomial Representation`到`Value Representation`可以通过以下矩阵变换实现:
+> [!important]
+> 1. `Vandermonde Matrix`**:**
+> 我们知道一个多项式从`Polynomial Representation`到`Value Representation`可以通过以下矩阵变换实现:
 > $\left[\begin{array}{c}A\left(x_0\right) \\A\left(x_1\right) \\\vdots \\A\left(x_{n-1}\right)\end{array}\right]=\left[\begin{array}{ccccc}1 & x_0 & x_0^2 & \cdots & x_0^{n-1} \\1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\& & \vdots & & \\1 & x_{n-1} & x_{n-1}^2 & \cdots & x_{n-1}^{n-1}\end{array}\right]\left[\begin{array}{c}a_0 \\a_1 \\\vdots \\a_{n-1}\end{array}\right]$
 > 其中$\left[\begin{array}{ccccc}1 & x_0 & x_0^2 & \cdots & x_0^{n-1} \\1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\& & \vdots & & \\1 & x_{n-1} & x_{n-1}^2 & \cdots & x_{n-1}^{n-1}\end{array}\right]$是傅里叶变换矩阵，也被称为`Vandermonde matrix`。
 > 2. $M$**的可逆性?**
-> 
-我们记$M=\begin{bmatrix}1 & x_0 & x_0^2 & \cdots & x_0^{n-1} \\1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\& & \vdots & & \\1 & x_{n-1} & x_{n-1}^2 & \cdots & x_{n-1}^{n-1}\end{bmatrix}$，如果这个矩阵可逆，则`Polynomial Representation`到`Value Representation`的过程就也是可逆的。事实上，当$x_0,x_1,\cdots, x_{n-1}$不全相同的时候，$M^{-1}$存在且唯一。 原因很简单，全相同时，$Rank(M)=1$, 不全相同时，$M$靠后的列无法表示为$M$靠前的列的线性组合。
+> 我们记$M=\begin{bmatrix}1 & x_0 & x_0^2 & \cdots & x_0^{n-1} \\1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\& & \vdots & & \\1 & x_{n-1} & x_{n-1}^2 & \cdots & x_{n-1}^{n-1}\end{bmatrix}$，如果这个矩阵可逆，则`Polynomial Representation`到`Value Representation`的过程就也是可逆的。事实上，当$x_0,x_1,\cdots, x_{n-1}$不全相同的时候，$M^{-1}$存在且唯一。 原因很简单，全相同时，$Rank(M)=1$, 不全相同时，$M$靠后的列无法表示为$M$靠前的列的线性组合。
 > 3. **那么如何保证**$x_0,x_1,\cdots, x_{n-1}$**不全相同呢?**
-> 
-还记得我们在使用`Divide and Conquer`来`Evaluate Polynomial`的时候**选取**$x_0,x_1,\cdots, x_{n-1}$**为**`**n-th root of unity**`, 也就是$w^0,w^1,\cdots,w^{n-1}$, 肯定不全相同。而且`n-th root of unity`还有一些非常好的性质，于是我们可以令:
+> 还记得我们在使用`Divide and Conquer`来`Evaluate Polynomial`的时候**选取**$x_0,x_1,\cdots, x_{n-1}$**为**`n-th root of unity`, 也就是$w^0,w^1,\cdots,w^{n-1}$, 肯定不全相同。而且`n-th root of unity`还有一些非常好的性质，于是我们可以令:
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951415914.png)
 > $M_n(w)$这个记号中，$n$代表的是矩阵的`Size`，$w$代表的是矩阵$M$的第二行第二列的元素变量。
 > 行方向为$1,w,w^2,\cdots, w^{n-1}$, 也就是`n-th root of unity`
 > 列方向为`Polynomial Degree`增加的方向。
 > 4. $M_n(w)$**的列互相正交且列的长度为**$\sqrt{n}$
-> 
-注意这里的`Inner Product`是`Complex Inner Product`
+> 注意这里的`Inner Product`是`Complex Inner Product`
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951427538.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951431656.png)
-> 5. **Inverse Formula I: **$MM^*=nI$**，其中**$M^*$**为**$M$**的共轭转置**
+> 5. **Inverse Formula I: $MM^*=nI$**，其中$M^*$**为$M$的共轭转置
+> 6. 我们令$M=\begin{bmatrix} \vec{m}_1\\\vec{m}_2\\\vdots\\\vec{m}_n\end{bmatrix}$,$M^*=\begin{bmatrix} \vec{m}_1^*&\vec{m}_2^*&\cdots&\vec{m}_n^*\end{bmatrix}$, 因为$\vec{m}_i\vec{m}_j^*=\begin{cases}n&i=j\\0&i\neq j \end{cases}$, 所以$MM^*=nI$。
+> 7. Inverse Formula II: $M^{-1}=\frac{1}{n}M^*$**, **$M_n(w)^{-1}=\frac{1}{n}M_n(w^{-1})$
+> 有了上面的结论我们知道, $MM^*=nI$, 即$M(\frac{1}{n}M^*)=I$, 于是$M^{-1}=\frac{1}{n}M^*$。
 > 
-我们令$M=\begin{bmatrix} \vec{m}_1\\\vec{m}_2\\\vdots\\\vec{m}_n\end{bmatrix}$,$M^*=\begin{bmatrix} \vec{m}_1^*&\vec{m}_2^*&\cdots&\vec{m}_n^*\end{bmatrix}$, 因为$\vec{m}_i\vec{m}_j^*=\begin{cases}n&i=j\\0&i\neq j \end{cases}$, 所以$MM^*=nI$。
-> 6. **Inverse Formula II: **$M^{-1}=\frac{1}{n}M^*$**, **$M_n(w)^{-1}=\frac{1}{n}M_n(w^{-1})$
 > 
-有了上面的结论我们知道, $MM^*=nI$, 即$M(\frac{1}{n}M^*)=I$, 于是$M^{-1}=\frac{1}{n}M^*$。
-> 因为$M_n(w)=\left[\begin{array}{ccccc}
+>因为 $$M_n(w)=\left[\begin{array}{ccccc} \\
 1 & 1 & 1 & \cdots & 1 \\
 1 & \omega & \omega^2 & \cdots & \omega^{n-1} \\
 1 & \omega^2 & \omega^4 & \cdots & \omega^{2(n-1)} \\
@@ -656,17 +663,28 @@ def recursiveEval(w, coeffs):
 1 & \omega^j & \omega^{2 j} & \cdots & \omega^{(n-1) j} \\
 & & \vdots & & \\
 1 & \omega^{(n-1)} & \omega^{2(n-1)} & \cdots & \omega^{(n-1)(n-1)}
-\end{array}\right]$, 于是$M_n(w)^{-1}=\frac{1}{n}M^*_n(w)$
+\end{array}\right]$$,于是$M_n(w)^{-1}=\frac{1}{n}M^*_n(w)$
 > 因为$M_n^*(w)=\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\1 & w^{-1} & \omega^{-2} & \cdots & \omega^{-(n-1)} \\1 & \omega^{-2} & \omega^{-4} & \cdots & \omega^{-2(n-1)} \\& & \vdots & & \\1 & \omega^{-j} & \omega^{-2 j} & \cdots & \omega^{-(n-1) j} \\& & \vdots & & \\1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \cdots & \omega^{-(n-1)(n-1)}\end{array}\right]=M_n(w^{-1})$, 于是我们有$M_n(w)^{-1}=\frac{1}{n}M_n(w^{-1})$。
 
 
 
 ## Definitive FFT Algorithm
+> [!algo] Algorithm
 > 总结一下，$FFT$算法接收一个向量$\vec{a}=\begin{bmatrix}a_0\\a_1\\\vdots\\a_{n-1} \end{bmatrix}$和一个复数$w$(`n-th root of unity`)作为输入。
 > 整个转换的过程为$M_n(w)\vec{a}$(`Matrix-Vector Multiplication`), 其中$M_n(w)\in\mathbb{R}^{n\times n}$(傅里叶转换矩阵)。
 > 为了方便起见，我们假设$n=2^k$, 则:
 > ![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951442948.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951456177.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951455271.png)![image.png](./_Ch2_Divide_and_Conquer_FFT.assets/20231024_0951462553.png)
 
+
+## Algorithm Walkthrough
+> [!important] EECS170 Fa20 Disc02 P1
+> ![](_Ch2_Divide_and_Conquer_FFT.assets/image-20231129211220265.png)![](_Ch2_Divide_and_Conquer_FFT.assets/image-20231129213710800.png)![](_Ch2_Divide_and_Conquer_FFT.assets/image-20231129213717115.png)
+
+
+
+# Cubed Fourier
+> [!example]
+> ![](_Ch2_Divide_and_Conquer_FFT.assets/image-20231129230556806.png)
 
 
 

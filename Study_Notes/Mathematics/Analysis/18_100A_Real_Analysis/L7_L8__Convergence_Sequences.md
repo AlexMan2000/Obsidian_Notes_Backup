@@ -1,5 +1,5 @@
 [Lecture Note 7.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1667885974174-6608d1ee-cf6d-448a-b2f0-9671148ce4e7.pdf)
-# 1 Divergence Sequence
+# 1 Convergent Sequence
 ## Definitions
 > 我们在上一小节已经介绍了数列收敛的定义:
 > ![image.png](L7_L8__Convergence_Sequences.assets/20230302_1510072602.png)

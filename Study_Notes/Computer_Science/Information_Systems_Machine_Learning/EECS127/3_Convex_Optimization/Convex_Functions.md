@@ -528,7 +528,7 @@
 
 > [!proof]
 > ![](Convex_Functions.assets/image-20231104220519742.png)
-> 上面$(8.1.4)$有一些小错误，应该是$\int_0^tsg''(s)ds$
+> 上面$(8.1.4)$有一些小错误，应该是$\frac{1}{2}\int_0^tsg''(s)ds$
 
 
 
@@ -638,8 +638,20 @@
 > $$\begin{aligned}f(\vec{y})&\leq f(\vec{x})+\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})+\frac{L}{2}\|\vec{y}-\vec{x}\|_2^2\\&\geq f(\vec{x})+\nabla f(\vec{x})^{\top}(\vec{y}-\vec{x})+\frac{\mu}{2}\|\vec{y}-\vec{x}\|_2^2\end{aligned}$$  
 
 
-# Chapter Exercise
+# Chapter Exercises
 > **Chapter 2**: 2.1, 2.2, 2.5, 2.7,  2.10, 2.16, 2.18, 2.19
 > **Chapter 3**: 3.1, 3.2, 3.5, 3.13, 3.18, 3.21, 3.32, 3.33, 3.36, 3.43
 
+## 2.2 Intersection with arbitrary lines
+> [!important]
+> ![](Convex_Functions.assets/image-20231129160007763.png)
 
+
+## 2.10 Solution Set of a quadratic inequality
+> [!important]
+> ![](Convex_Functions.assets/image-20231129155447216.png)![](Convex_Functions.assets/image-20231129155517986.png)
+
+
+
+
+> 
