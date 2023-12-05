@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./_Ch2_Divide_and_Conquer_FFT.assets",
+  "attachmentFolderPath": "./Thread_Level_Parallelism.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

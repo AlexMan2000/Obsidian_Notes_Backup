@@ -1,4 +1,9 @@
 [lab03_spec.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1695135740084-a5b5199e-006a-465d-81a6-8ab99e20f033.pdf)
+# How to use Venus
+> [!important]
+> ![](Labs__RISC-V_Venus.assets/image-20231201135557430.png)
+
+
 
 # Basic RISC-V Program
 ```c
@@ -43,7 +48,7 @@ finish:
     addi a0, x0, 10 # argument to ecall to terminate
     ecall # terminate ecall
 ```
-                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                            
 # Array Accessing
 > ![image.png](./Labs__RISC-V_Venus.assets/20231023_2305098671.png)
 > **要求是要实现函数**`**f**`**的行为，这个函数接收两个参数:**

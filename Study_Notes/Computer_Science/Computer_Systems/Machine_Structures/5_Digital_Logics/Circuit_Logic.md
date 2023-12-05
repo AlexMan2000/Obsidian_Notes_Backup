@@ -1,10 +1,26 @@
 # State Intro
 ## Concepts
-> ![image.png](./Circuit_Logic.assets/20231023_2259451507.png)![image.png](./Circuit_Logic.assets/20231023_2259454705.png)![image.png](./Circuit_Logic.assets/20231023_2259473371.png)
+> [!important]
+> ![image.png](./Circuit_Logic.assets/20231023_2259451507.png)![image.png](./Circuit_Logic.assets/20231023_2259454705.png)![image.png](./Circuit_Logic.assets/20231023_2259473371.png)![](Circuit_Logic.assets/image-20231201102628424.png)![](Circuit_Logic.assets/image-20231201102700858.png)
+
+
+## Definition
+> [!important]
+> ![](Circuit_Logic.assets/image-20231201102742868.png)![](Circuit_Logic.assets/image-20231201102746903.png)
+
+
+
+## Formulas
+> [!important]
+> ![](Circuit_Logic.assets/image-20231201102719630.png)
+
+
+
 
 
 
 ## Exercises
+> [!example]
 > ![image.png](./Circuit_Logic.assets/20231023_2259497410.png)![image.png](./Circuit_Logic.assets/20231023_2259502548.png)
 
 

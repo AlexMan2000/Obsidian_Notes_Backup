@@ -177,7 +177,12 @@
 
 # Multi-Level Caches
 ## Multilevel Cache Diagram
-> ![image.png](Caches_Optimization.assets/20231024_0932379034.png)![image.png](Caches_Optimization.assets/20231024_0932392474.png)
+> [!important]
+> ![image.png](Caches_Optimization.assets/20231024_0932379034.png)![image.png](Caches_Optimization.assets/20231024_0932392474.png)![](Caches_Optimization.assets/image-20231201163947131.png)![](Caches_Optimization.assets/image-20231201164355085.png)
+
+
+
+
 
 
 
@@ -192,6 +197,11 @@
 > ![image.png](Caches_Optimization.assets/20231024_0932463323.png)![image.png](Caches_Optimization.assets/20231024_0932468541.png)
 
 
+## Multi-Level Hit Rate
+> [!important]
+> L1/L2/L3/...之间的`Hit Rate`互不影响。
+> 增加`L1`的`Hit Rate`不会影响`L2`的`Hit Rate`。
+> 
 
 
 ## Rewriting Performance
@@ -387,8 +397,24 @@ i = 1, j = 3
 
 
 
-# Code Analysis
+# Cache Performance
 ## Cache Parameter Analysis
+### Associativity Tradeoffs
+> [!important]
+> ![](Caches_Optimization.assets/image-20231201164925881.png)
+
+
+### Cache Size Tradeoffs
+> [!important]
+> ![](Caches_Optimization.assets/image-20231201164949621.png)
+
+### Block Size Tradeoffs
+> [!important]
+> ![](Caches_Optimization.assets/image-20231201165017537.png)
+
+
+
+
 ### Example 1: High-Order DMC - P6.11
 > ![image.png](Caches_Optimization.assets/20231024_0933427677.png)![image.png](Caches_Optimization.assets/20231024_0933457001.png)
 

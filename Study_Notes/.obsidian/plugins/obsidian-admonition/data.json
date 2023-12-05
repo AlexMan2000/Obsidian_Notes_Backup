@@ -180,6 +180,40 @@
       "command": false,
       "injectColor": true,
       "noTitle": false
+    },
+    "debug": {
+      "type": "debug",
+      "color": "62, 208, 133",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-bug"
+      },
+      "command": false,
+      "title": "Fix",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "task": {
+      "type": "task",
+      "color": "21, 203, 158",
+      "icon": {
+        "name": "tasks",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "test": {
+      "type": "test",
+      "color": "27, 160, 243",
+      "icon": {
+        "name": "code",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

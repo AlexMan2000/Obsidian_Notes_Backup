@@ -1,6 +1,9 @@
 # Amdahl's Law
-> 
+> [!important]
+> ![](Data-Level_Parallelism.assets/image-20231201105939613.png)
 
+> [!proof]
+> ![](Data-Level_Parallelism.assets/image-20231201110339980.png)
 
 
 # Flynn's Taxonomy
@@ -69,6 +72,14 @@
 
 ## SIMD Matrix Multiplication
 > ![](Data-Level_Parallelism.assets/image-20231105204038302.png)
+
+
+
+# Core Idea of Data-Level Parallelism
+> [!important]
+> ![](Data-Level_Parallelism.assets/image-20231201103925129.png)![](Data-Level_Parallelism.assets/image-20231201104112766.png)
+
+
 
 
 
@@ -250,4 +261,23 @@ long long int sum_simd_unrolled(int vals[NUM_ELEMS]) {
 }
 
 ```
+
+
+# Vector Product Example
+> [!example] CS61C Sp23 Disc09 P2
+> ![](Data-Level_Parallelism.assets/image-20231201105042113.png)
+
+
+# Concept Check
+## Intrinsic Instructions
+> [!important]
+> ![](Data-Level_Parallelism.assets/image-20231201101405016.png)
+
+
+
+
+## Flow-Control Heavy?
+> [!important]
+> ![](Data-Level_Parallelism.assets/image-20231201101254342.png)
+> 重点: Data-Level Parallelism takes advantage of the fact that we are performing `same operations` on multiple data elements. Control Flow Statement simply disrupt the "same operation" here.
 

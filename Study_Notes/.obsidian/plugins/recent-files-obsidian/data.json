@@ -1,32 +1,188 @@
 {
   "recentFiles": [
     {
-      "basename": "_Ch2_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
-    },
-    {
-      "basename": "Linear Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md"
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
       "basename": "eecs127_reader",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf"
     },
     {
+      "basename": "Thread_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+    },
+    {
+      "basename": "_CPU",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md"
+    },
+    {
+      "basename": "RISC-V_Single-Cycle_Datapath",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md"
+    },
+    {
+      "basename": "MAP&LMS&LLMS",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md"
+    },
+    {
+      "basename": "__迭代期望与随机变量的和",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md"
+    },
+    {
       "basename": "Duality Theory",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md"
     },
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+      "basename": "__高阶知识点和练习",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md"
     },
     {
       "basename": "MLE&Multivariate Gaussian",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "intro_analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+    },
+    {
+      "basename": "20231202_2139346841",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/20231202_2139346841.png"
+    },
+    {
+      "basename": "Kernel&Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Kernel&Processes.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "P2100__Game_2048",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/P2100__Game_2048.md"
+    },
+    {
+      "basename": "Process_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md"
+    },
+    {
+      "basename": "RISC-V_Functions",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Functions.md"
+    },
+    {
+      "basename": "RISC-V_Instructions",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md"
+    },
+    {
+      "basename": "Security_Principles",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md"
+    },
+    {
+      "basename": "Numpc",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/Numpc.md"
+    },
+    {
+      "basename": "CS61kaChow",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/CS61kaChow.md"
+    },
+    {
+      "basename": "Data-Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
+    },
+    {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
+    },
+    {
+      "basename": "Lab08_Virtual_Memory",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md"
+    },
+    {
+      "basename": "OS_VM_I_O",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md"
+    },
+    {
+      "basename": "MapReduce_Spark",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/12_Big_Data_Topics/MapReduce_Spark.md"
+    },
+    {
+      "basename": "Lab07_Cache",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab07_Cache.md"
+    },
+    {
+      "basename": "Caches_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
+    },
+    {
+      "basename": "Memory_Vulnerability",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Memory_Vulnerability.md"
+    },
+    {
+      "basename": "SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/SQL.md"
+    },
+    {
+      "basename": "Code_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
+    },
+    {
+      "basename": "Labs__RISC-V_Venus",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/Labs__RISC-V_Venus.md"
+    },
+    {
+      "basename": "Labs__CLI_Setup",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__CLI_Setup.md"
+    },
+    {
+      "basename": "Labs__C_Programming",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Programming.md"
+    },
+    {
+      "basename": "Labs__C_Debugging",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Debugging.md"
+    },
+    {
+      "basename": "Linear Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md"
+    },
+    {
+      "basename": "Circuit_Logic",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md"
+    },
+    {
+      "basename": "State_Elements",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/State_Elements.md"
+    },
+    {
+      "basename": "Pipelining",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
+    },
+    {
+      "basename": "常用GDB指令",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/常用GDB指令.md"
+    },
+    {
+      "basename": "Indices&B+ Trees",
+      "path": "Computer_Science/Computer_Systems/Database Systems/Indices&B+ Trees.md"
+    },
+    {
+      "basename": "Cost Models",
+      "path": "Computer_Science/Computer_Systems/Database Systems/Cost Models.md"
+    },
+    {
+      "basename": "Disk&Buffer&Files",
+      "path": "Computer_Science/Computer_Systems/Database Systems/Disk&Buffer&Files.md"
+    },
+    {
+      "basename": "_Ch2_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "PART_C__拉格朗日乘子和限制性微分",
@@ -41,164 +197,8 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
     },
     {
-      "basename": "intro_analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
-    },
-    {
       "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "cvxbook-solutions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-    },
-    {
-      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
-    },
-    {
-      "basename": "L7_L8__Convergence_Sequences",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
-    },
-    {
-      "basename": "L11_L12__Absolute_Convergence_Tests_for_Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md"
-    },
-    {
-      "basename": "Proof Techniques",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.md"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "21 Markov Chains",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/21 Markov Chains.pdf"
-    },
-    {
-      "basename": "markov_chains",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "Code_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Least_Square_Regression.md"
-    },
-    {
-      "basename": "Understanding_Analysis_Solution",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
-    },
-    {
-      "basename": "Data-Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
-    },
-    {
-      "basename": "Lab07 SIMD&OpenMP",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/Lab07 SIMD&OpenMP.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "Recommendor Sysrtem",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Recommendor Sysrtem.md"
-    },
-    {
-      "basename": "Recommender System",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Recommender System.md"
-    },
-    {
-      "basename": "Linear Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md"
-    },
-    {
-      "basename": "Random Process",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1002/Random Process.md"
-    },
-    {
-      "basename": "MAP&LMS&LLMS",
-      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md"
-    },
-    {
-      "basename": "Causal Inference",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1002/Causal Inference.md"
-    },
-    {
-      "basename": "Probability Formulas and Theorems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
-    },
-    {
-      "basename": "Random_Vectors",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/高阶知识点和练习.md"
-    },
-    {
-      "basename": "__衍生随机变量__贝叶斯公式变体__协方差",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/__衍生随机变量__贝叶斯公式变体__协方差.md"
-    },
-    {
-      "basename": "二元连续型变量",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/二元连续型变量.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/高阶知识点和练习.md"
-    },
-    {
-      "basename": "L18_L19__Derivative__Differential_Rules",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
-    },
-    {
-      "basename": "Convergence Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
-    },
-    {
-      "basename": "Important Applications Of Basic Probability",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "__迭代期望与随机变量的和",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md"
     }
   ],
   "omittedPaths": [],
