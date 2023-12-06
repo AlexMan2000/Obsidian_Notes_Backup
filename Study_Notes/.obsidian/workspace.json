@@ -6,7 +6,6 @@
       {
         "id": "ca0ac2206467774a",
         "type": "tabs",
-        "dimension": 74.81108312342569,
         "children": [
           {
             "id": "2b2a3a4161a34caa",
@@ -50,126 +49,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a96a14a76961df6d",
+            "id": "635d6088a4474bef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "29140410b890e6cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
-      },
-      {
-        "id": "4702437a05b4045f",
-        "type": "tabs",
-        "dimension": 25.188916876574307,
-        "children": [
-          {
-            "id": "c89e177dfe619adb",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
-              }
-            }
-          },
-          {
-            "id": "c1b4e72fb90ce339",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "611e692efb3e7c0c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
-              }
-            }
-          },
-          {
-            "id": "321a76ff5c6a13d4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-              }
-            }
-          },
-          {
-            "id": "f873e35e9eeb0952",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
-              }
-            }
-          },
-          {
-            "id": "8a57348c5d174b6c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
-              }
-            }
-          },
-          {
-            "id": "7150ebb12acee00f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-              }
-            }
-          },
-          {
-            "id": "e53a45416d1ae55c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-              }
-            }
-          },
-          {
-            "id": "953d00ed98868bf1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-              }
-            }
-          }
-        ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -281,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -298,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -336,7 +247,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 244.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -355,53 +266,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "953d00ed98868bf1",
+  "active": "a841c388b43c40d2",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf",
-    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/image-20231204160550770.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/image-20231204160021186.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/image-20231204160002263.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/image-20231204153646558.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215559989.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215554402.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215446234.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215406603.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215246718.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215051679.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215044489.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215039489.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205203221203.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205203040690.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs",
     "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
     "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/20231202_2139346841.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Kernel&Processes.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
     "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/P2100__Game_2048.md",
     "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
     "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P1803__Bear_Maps.md",
     "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P1802__BYoG.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets/20231203_1614429679.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets/20231203_1614405628.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets/20231203_1614387442.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets/20231203_1614395554.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets/20231203_1614363186.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P1802__BYoG.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md",
     "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Functions.md",
     "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md",
-    "Computer_Science/Java_Language/JavaWeb",
-    "Computer_Science/Java_Language/JVM",
-    "Computer_Science/Java_Language/Multithreading",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md",
-    "Computer_Science/Game_Development/C++_Fundamentals",
-    "Computer_Science/Game_Development",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/Numpc.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/CS61kaChow.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/_RISC-V_Classify.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_RISC-V_Classify.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/CPU.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md",
     "未命名.canvas"
   ]
 }

@@ -214,6 +214,28 @@
       "command": false,
       "injectColor": true,
       "noTitle": false
+    },
+    "concept": {
+      "type": "concept",
+      "color": "32, 213, 192",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-lightbulb"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "uses": {
+      "type": "uses",
+      "color": "30, 153, 112",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-message-square"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

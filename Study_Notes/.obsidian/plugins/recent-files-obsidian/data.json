@@ -1,24 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+      "basename": "Operating System Interfaces",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
     },
     {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf"
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md"
     },
     {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+      "basename": "Relation_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md"
+    },
+    {
+      "basename": "CALL",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
+    },
+    {
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+    },
+    {
+      "basename": "Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
+    },
+    {
+      "basename": "Fundamental OS Concepts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
+    },
+    {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
+    },
+    {
+      "basename": "RISC-V_Single-Cycle_Datapath",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md"
     },
     {
       "basename": "_CPU",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md"
     },
     {
-      "basename": "RISC-V_Single-Cycle_Datapath",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md"
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+    },
+    {
+      "basename": "cvxbook-solutions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
+    },
+    {
+      "basename": "BV_cvxbook",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
+    },
+    {
+      "basename": "markov_chains",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
+    },
+    {
+      "basename": "Probability in EECS",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
+    },
+    {
+      "basename": "Understanding Analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
+    },
+    {
+      "basename": "Understanding_Analysis_Solution",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
+    },
+    {
+      "basename": "Thread_Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
+    },
+    {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf"
     },
     {
       "basename": "MAP&LMS&LLMS",
@@ -51,10 +107,6 @@
     {
       "basename": "20231202_2139346841",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/20231202_2139346841.png"
-    },
-    {
-      "basename": "Kernel&Processes",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Kernel&Processes.md"
     },
     {
       "basename": "Related_Resources",
@@ -93,10 +145,6 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
     },
     {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
       "basename": "Lab08_Virtual_Memory",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md"
     },
@@ -119,10 +167,6 @@
     {
       "basename": "Memory_Vulnerability",
       "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Memory_Vulnerability.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/SQL.md"
     },
     {
       "basename": "Code_Optimization",
@@ -155,50 +199,6 @@
     {
       "basename": "State_Elements",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/State_Elements.md"
-    },
-    {
-      "basename": "Pipelining",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/Pipelining.md"
-    },
-    {
-      "basename": "常用GDB指令",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/常用GDB指令.md"
-    },
-    {
-      "basename": "Indices&B+ Trees",
-      "path": "Computer_Science/Computer_Systems/Database Systems/Indices&B+ Trees.md"
-    },
-    {
-      "basename": "Cost Models",
-      "path": "Computer_Science/Computer_Systems/Database Systems/Cost Models.md"
-    },
-    {
-      "basename": "Disk&Buffer&Files",
-      "path": "Computer_Science/Computer_Systems/Database Systems/Disk&Buffer&Files.md"
-    },
-    {
-      "basename": "_Ch2_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "PART_C__拉格朗日乘子和限制性微分",
-      "path": "Mathematics/Vector_Calculus/18.02SC/Unit_2_Partial_Derivatives/PART_C__拉格朗日乘子和限制性微分.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
     }
   ],
   "omittedPaths": [],

@@ -368,6 +368,10 @@ int main(int argc, char **argv)
 > We can also understand how parent and child processes share files. Suppose that before a call to `fork()`, the parent process has the open files shown in Figure 10.12. Then Figure 10.14 shows the situation after the call to fork. 
 > - The child gets its own duplicate copy of the parent’s descriptor table. Parent and child share the same set of open file tables and thus share the same file position. 
 > - **An important consequence is that the parent and child must both close their descriptors before the kernel will delete the corresponding file table entry.**
+> 
+> **If the child process closes a file descriptor, will parent process's file table be affected?**
+> - No. The child process gets a copy of the parent's file descriptors when it's created by `fork()`, but changes it makes after that aren't shared back to the parent.
+> - (Note that, while the file descriptor **table** is not shared with the parent, the state of the file descriptors themselves is! For instance, if you `seek()` on a file descriptor that a child process inherited from its parent, that affects the copy in the parent as well.)
 
 
 ### Practice Examples
