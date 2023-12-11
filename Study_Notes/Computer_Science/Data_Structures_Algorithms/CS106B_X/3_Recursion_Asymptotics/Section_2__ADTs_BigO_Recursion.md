@@ -112,7 +112,7 @@ Map<int, Set<string>> reverseMap(Map<string, int>& map) {
 **Solution**![image.png](./Section_2__ADTs_BigO_Recursion.assets/20231114_1938591482.png)
 
 
-## *Q7 Jaccard Similarity
+## Q7 Jaccard Similarity
 ### Similarity Definition
 > 本题介绍一种文档相似度比较的方法，对于两篇文档$D_S$和$D_T$来说，我们首先将其`Tokenized`，$S$表示文档$D_S$中的所有单词(去重之后)组成的集合，$T$表示$D_T$中的所有单词(去重之后)组成的集合。
 > 两篇文档的`Jaccard Similarity`被定义为$J(S,T)=\frac{|S\cap T|}{|S\cup T|}$:

@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
+      "basename": "Sec4_Recursive_Backtracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md"
     },
     {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md"
+      "basename": "Enumeration_BackTracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Enumeration_BackTracking.md"
     },
     {
-      "basename": "Relation_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md"
+      "basename": "Sec3_Recursion_BackTracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md"
     },
     {
-      "basename": "CALL",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
-    },
-    {
-      "basename": "Operating System Introduction",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
-    },
-    {
-      "basename": "Fundamental OS Concepts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "RISC-V_Single-Cycle_Datapath",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md"
-    },
-    {
-      "basename": "_CPU",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "cvxbook-solutions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf"
-    },
-    {
-      "basename": "BV_cvxbook",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/BV_cvxbook.pdf"
-    },
-    {
-      "basename": "markov_chains",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/2_PageRank/markov_chains.pdf"
-    },
-    {
-      "basename": "Probability in EECS",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/Probability in EECS.pdf"
-    },
-    {
-      "basename": "Understanding Analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-    },
-    {
-      "basename": "Understanding_Analysis_Solution",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding_Analysis_Solution.pdf"
-    },
-    {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
-    },
-    {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/eecs127_reader.pdf"
-    },
-    {
-      "basename": "MAP&LMS&LLMS",
-      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md"
-    },
-    {
-      "basename": "__迭代期望与随机变量的和",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md"
-    },
-    {
-      "basename": "Duality Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md"
-    },
-    {
-      "basename": "__高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md"
-    },
-    {
-      "basename": "MLE&Multivariate Gaussian",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "intro_analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
-    },
-    {
-      "basename": "20231202_2139346841",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.assets/20231202_2139346841.png"
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md"
     },
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
     },
     {
-      "basename": "P2100__Game_2048",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/P2100__Game_2048.md"
+      "basename": "Generics_In_C",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md"
     },
     {
-      "basename": "Process_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md"
+      "basename": "Ch4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
     },
     {
-      "basename": "RISC-V_Functions",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Functions.md"
+      "basename": "X86_Control",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Control.md"
     },
     {
-      "basename": "RISC-V_Instructions",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md"
-    },
-    {
-      "basename": "Security_Principles",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md"
-    },
-    {
-      "basename": "Numpc",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/Numpc.md"
-    },
-    {
-      "basename": "CS61kaChow",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/5_Performance_Programming/CS61kaChow.md"
-    },
-    {
-      "basename": "Data-Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Data-Level_Parallelism.md"
-    },
-    {
-      "basename": "Lab08_Virtual_Memory",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md"
-    },
-    {
-      "basename": "OS_VM_I_O",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md"
-    },
-    {
-      "basename": "MapReduce_Spark",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/12_Big_Data_Topics/MapReduce_Spark.md"
-    },
-    {
-      "basename": "Lab07_Cache",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab07_Cache.md"
-    },
-    {
-      "basename": "Caches_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
-    },
-    {
-      "basename": "Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Memory_Vulnerability.md"
+      "basename": "X86_Data",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Data.md"
     },
     {
       "basename": "Code_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
     },
     {
-      "basename": "Labs__RISC-V_Venus",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/Labs__RISC-V_Venus.md"
+      "basename": "File_System_Components",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.md"
     },
     {
-      "basename": "Labs__CLI_Setup",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__CLI_Setup.md"
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
-      "basename": "Labs__C_Programming",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Programming.md"
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
     },
     {
-      "basename": "Labs__C_Debugging",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Labs__C_Debugging.md"
+      "basename": "Exceptions&Processes",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
+    },
+    {
+      "basename": "Assign3_Recursion_Backtracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign3_Recursion_Backtracking.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/3_Recursion_Asymptotics/Lectures_Readings.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
+    },
+    {
+      "basename": "Sorting_Searching",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
+    },
+    {
+      "basename": "Drawing 2023-12-10 22.00.18.excalidraw",
+      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md"
+    },
+    {
+      "basename": "image.jpg",
+      "path": "image.jpg.md"
+    },
+    {
+      "basename": "Graphs",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md"
+    },
+    {
+      "basename": "Advanced Topics",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md"
+    },
+    {
+      "basename": "Numerics",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md"
+    },
+    {
+      "basename": "Shortest Path",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest Path.md"
+    },
+    {
+      "basename": "Dynamic Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic Programming.md"
+    },
+    {
+      "basename": "Hashing",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Hashing.md"
+    },
+    {
+      "basename": "Recurrences",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Recurrences.md"
+    },
+    {
+      "basename": "Sum&Asymptotics",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md"
+    },
+    {
+      "basename": "Algorithmic_Thinking",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
+    },
+    {
+      "basename": "_P1902B__K-d_Tree",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/11_Tries_Quadtrees_Kd_Trees/_P1902B__K-d_Tree.md"
     },
     {
       "basename": "Linear Programs",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md"
     },
     {
-      "basename": "Circuit_Logic",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md"
+      "basename": "Problem_Set_1",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md"
     },
     {
-      "basename": "State_Elements",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/State_Elements.md"
+      "basename": "Ch1_Static_Checking",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch1_Static_Checking.md"
+    },
+    {
+      "basename": "Ch3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md"
+    },
+    {
+      "basename": "Class_Design",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Design.md"
+    },
+    {
+      "basename": "Template Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "Streams",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
+    },
+    {
+      "basename": "STD_Containers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STD_Containers.md"
+    },
+    {
+      "basename": "Iterators_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md"
+    },
+    {
+      "basename": "_Assign4_Recursion_to_the_Rescue",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md"
+    },
+    {
+      "basename": "Stable Matching Problem",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
+    },
+    {
+      "basename": "Graph_Theory",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+    },
+    {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+    },
+    {
+      "basename": "_Ch2_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "image-20231030095335264.png",
+      "path": "Stable Matching Problem.assets/image-20231030095335264.png.md"
+    },
+    {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "QuadTrees_K-D_Trees",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/11_Tries_Quadtrees_Kd_Trees/QuadTrees_K-D_Trees.md"
+    },
+    {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     }
   ],
   "omittedPaths": [],

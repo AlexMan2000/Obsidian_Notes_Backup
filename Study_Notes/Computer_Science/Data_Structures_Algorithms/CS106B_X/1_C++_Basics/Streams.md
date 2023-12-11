@@ -87,11 +87,16 @@ int main()
 
 # 1 stringStream
 ## Definition
-> ![image.png](./Streams.assets/20231114_1943507493.png)![image.png](./Streams.assets/20231114_1943521087.png)
+> [!def]
+> Need to use `#include <sstream>`
+> ![image.png](./Streams.assets/20231114_1943507493.png)![image.png](./Streams.assets/20231114_1943521087.png)![](Streams.assets/image-20231207175228657.png)
+
+
 
 
 
 ## ostringStream
+> [!def]
 > Stands for `outputstringStream`
 > `ostringstream oss("Ito En Green Tea")`: Create a buffer array that holds all the characters and set the pointer to before the first character. There is a limit to the size of the oss, but finitely many spaces.
 > ![image.png](./Streams.assets/20231114_1943542841.png)
@@ -104,8 +109,19 @@ int main()
 > `oss.seekp(0)`: Sets the position where the next character is to be inserted into the output stream. Set the cursor to index 0
 
 
-## Key Methods
-> ![image.png](./Streams.assets/20231114_1944025370.png)![image.png](./Streams.assets/20231114_1944045087.png)
+## Extraction Keyword
+### How to use
+> [!important]
+> ![](Streams.assets/image-20231207175302491.png)![](Streams.assets/image-20231207175419865.png)![](Streams.assets/image-20231207175425494.png)![](Streams.assets/image-20231207175445457.png)![](Streams.assets/image-20231207175449461.png)
+
+
+
+### Limitation - Use getline()
+> [!important]
+> ![](Streams.assets/image-20231207175724316.png)![](Streams.assets/image-20231207175737587.png)
+> Consume means extraction but not store.
+> 
+> ![](Streams.assets/image-20231207175806603.png)
 
 
 
@@ -193,6 +209,7 @@ int main()
 
 
 ## Four iostreams
+> Need to include `#include <iostream>`
 > ![image.png](./Streams.assets/20231114_1944181190.png)
 
 
@@ -202,16 +219,18 @@ int main()
 
 
 
-## cin - 标准输入流
+## std::cin - 标准输入流
 ### Definition
+> [!def]
 > ![image.png](./Streams.assets/20231114_1944228951.png)
 
 
 
 
 ### cin Details
+> [!important]
 > ![image.png](./Streams.assets/20231114_1944249260.png)
-> **当下一行**`**cin**`**执行时，**`**cin**`**会先跳过任何的**`**whitespace**`**(包括**`**tab, space, newliner**`**)。然后如果**`**buffer**`**中没有**`**Trash**`**的话, 就会再**`**prompt user input**`**。**
+> **当下一行**`cin`**执行时，**`cin`**会先跳过任何的**`whitespace`**(包括**`tab, space, newliner`**)。然后如果**`buffer`**中没有**`Trash`**的话, 就会再**`prompt user input`**。**
 > ![image.png](./Streams.assets/20231114_1944264323.png)
 
 ```cpp
@@ -309,14 +328,56 @@ Now the buffer is not empty, we don't prompt the user for input, so we read the 
 
 
 
-## cout - 标准输出流
+## std::cout - 标准输出流
+### Definition
+> [!def]
 > ![image.png](./Streams.assets/20231114_1944481031.png)![image.png](./Streams.assets/20231114_1944496419.png)![image.png](./Streams.assets/20231114_1944518082.png)
+
+
+### Buffer&Flush
+> [!important]
+> ![](Streams.assets/image-20231207180244729.png)![](Streams.assets/image-20231207180255794.png)![](Streams.assets/image-20231207180306020.png)
+
+
+ 
+
+## std::endl 
+### Basic Behavior
+> [!def]
+> ![](Streams.assets/image-20231207224227736.png)![](Streams.assets/image-20231207224234003.png)
+
+
+### Flushing Behavior
+> [!important]
+> ![](Streams.assets/image-20231207224301879.png)![](Streams.assets/image-20231207224411988.png)![](Streams.assets/image-20231207224422432.png)![](Streams.assets/image-20231207224454393.png)![](Streams.assets/image-20231207224500228.png)![](Streams.assets/image-20231207224512038.png)![](Streams.assets/image-20231207224516168.png)![](Streams.assets/image-20231207224526283.png)![](Streams.assets/image-20231207224549483.png)![](Streams.assets/image-20231207224557947.png)![](Streams.assets/image-20231207224603283.png)![](Streams.assets/image-20231207224608571.png)![](Streams.assets/image-20231207224618968.png)
+
+
+
+
+## "\n"
+### Usecase
+> [!concept]
+> Flushing is expensive, but C++ know whento auto flush
+> ![](Streams.assets/image-20231207224703664.png)
+> After 4 for loops, our intermediate buffer is full, which looks like the following:
+> 
+> ![](Streams.assets/image-20231207224755708.png)
+> Then C++ flushes whatever is in the intermediate buffer
+> and we are able to put the last element into the emptied intermediate buffer:
+> ![](Streams.assets/image-20231207224829323.png)![](Streams.assets/image-20231207224902382.png)![](Streams.assets/image-20231207224915255.png)
+
+
+### When to Use?
+> [!important]
+> ![](Streams.assets/image-20231207225755601.png)
+> Since "\n" utilize C++'s auto flush mechanism, it is way smarter than std::endl, which flushes robotically.
 
 
 
 
 ## getline
 ### What it does?
+> [!concept]
 > ![image.png](./Streams.assets/20231114_1944533156.png)![image.png](./Streams.assets/20231114_1944552117.png)![image.png](./Streams.assets/20231114_1944575862.png)
 
 
@@ -330,7 +391,7 @@ Now the buffer is not empty, we don't prompt the user for input, so we read the 
 ### getline pitfalls
 > ![image.png](./Streams.assets/20231114_1945004001.png)![image.png](./Streams.assets/20231114_1945026379.png)
 > `getline`会`skip the delimiter`说的是读取到的字符串中不会包含`\n`
-> `getline(cin,variable, option)`: option参数可以更改`stopping delimiter`
+> `getline(cin,variable, option)`: option参数可以更改`stopping delimiter`, 默认是`\n`
 > ![image.png](./Streams.assets/20231114_1945054040.png)![image.png](./Streams.assets/20231114_1945079006.png)![image.png](./Streams.assets/20231114_1945092267.png)![image.png](./Streams.assets/20231114_1945126144.png)
 
 
@@ -466,6 +527,7 @@ int getInteger(const string& prompt,
 
 
 # 3 filestream
+> [!concept]
 > `#include <fstream>`:
 > - `ifstream`stands for input file stream (not “something that might be a stream”)
 > - `ofstream`stands for output file stream  
@@ -473,29 +535,77 @@ int getInteger(const string& prompt,
 
 ## ifstream - 文件输入流
 ### 创建文件输入流
+> [!important]
 > `ifstream(inputFileStream)`是`Class Type`而不是我们能够直接使用的`object`, 所以我们需要先实例化这个`Class`, 实例化之后就可以和`cin`的用法基本一致了:
 > - `ifstream myStream("myFile.txt")`  表示我要从`myFile.txt`文件中读取内容
 > - `int myInteger;`
 > - `myStream >> myInteger;` 
-> 
-注意我们不能直接`ifstream >> myInteger`, 这将导致`Compilation`不通过。另外我们也可以使用`ifstream`对象中的`open`方法创建一个文件输入流。
+> 注意我们不能直接`ifstream >> myInteger`, 这将导致`Compilation`不通过。另外我们也可以使用`ifstream`对象中的`open`方法创建一个文件输入流。
 > `ifstream myStream;`
 > `myStream.open("myFile.txt")`
+> 
+> ![](Streams.assets/image-20231207230255516.png)
 
 
 
-### 判断文件是否存在
+
+
+
+
+### 判断文件是否正常打开
+> [!important]
 > 判断文件是否存在我们可以使用`.is_open()`方法。
 > `istream input("myfile.txt")`
 > `if(! input.is_open()){ cerr<<...<<endl;}`
 
 
 
+### 读取文件内容
+### Using String Extractor
+> [!example]
+> ![](Streams.assets/image-20231209221320360.png)![](Streams.assets/image-20231209221406394.png)
+
+
+
+### Using getline
+> [!example]
+> ![](Streams.assets/image-20231209221138822.png)![](Streams.assets/image-20231209221148873.png)![](Streams.assets/image-20231209221159341.png)
+
+
+
+
+
+
+
 
 ## ofstream - 文件输出流
 ### 创建文件输出流
+> [!important]
 > `ofstream myStream("myFile.txt")`, 表示我要往`myfile.txt`中写内容
-> ![image.png](./Streams.assets/20231114_1946021731.png)![image.png](./Streams.assets/20231114_1946044763.png)
+> ![image.png](./Streams.assets/20231114_1946021731.png)![image.png](./Streams.assets/20231114_1946044763.png)![](Streams.assets/image-20231207225921856.png)
+
+```c++
+int main() { 
+/// associating file on construction 
+// 1. Creates an output file stream to the file “hello.txt”
+std::ofstream ofs(“hello.txt”) 
+// Checks if the file is open and if it is, then tries to write to it!
+if (ofs.is_open()) { 
+	ofs << “Hello CS106L!” << ‘\n’; 
+} 
+// This closes the output file stream to “hello.txt”
+ofs.close(); 
+// Will silently fail
+ofs << “this will not get written”;
+// Reopens the stream
+ofs.open(“hello.txt”); 
+// Successfully writes to stream
+ofs << “this will though! It’s open again”; return 0;
+```
+
+### Flags
+> [!important]
+> ![](Streams.assets/image-20231207230142511.png)
 
 
 
@@ -513,8 +623,8 @@ int getInteger(const string& prompt,
 
 # 4 Stream Manipulators
 ## Table Formatter
-> It's an example of a stream manipulator, an object that can be inserted into a stream to **change some sort of stream property. **`endl`和`setw/left/right/setfill`是其中的几个，我们也可以使用这几个`Manipulators`完成下面的文件读取任务。
-> **假设现在我们有一个文件**`**table-data.txt**`**, 我们想要对其进行格式化输出:**
+> It's an example of a stream manipulator, an object that can be inserted into a stream to **change some sort of stream property. `endl`和`setw/left/right/setfill`是其中的几个，我们也可以使用这几个`Manipulators`完成下面的文件读取任务。
+> 假设现在我们有一个文件**`**table-data.txt**`**, 我们想要对其进行格式化输出:**
 > ![image.png](./Streams.assets/20231114_1946096574.png)
 
 
@@ -662,17 +772,80 @@ void PrintTableHeader() {
 > ![image.png](./Streams.assets/20231114_1946203883.png)![image.png](./Streams.assets/20231114_1946217200.png)
 
 
+# 5 Exercises
+## Word Count
+> [!task]
+> ![](Streams.assets/image-20231209215844398.png)
 
 
+### Self-Implementation
+```c++
+#include <sstream>
+#include <fstream>
+#include <iostream>
+#include <map>
+using namespace std;
 
-## 
+int main() {
+    // TODO: Write your code here
+    
+    // 1. Use ifstream to read in the file
+    ifstream ifs("words.txt");
+    
+    // 2. Check is open or not
+    if (!ifs.is_open()) {
+        cerr << "File Descriptor unopened!" << endl;
+        exit(1);
+    }
+    
+    // 3. Initialize the data structure to store the word frequency
+    map<string, int> word_frequency;
+    
+    // 4.1 Try getting a single line from the file, delimited by \n
+    string line;
+    while (getline(ifs, line)) {
+        // 4.2 Transform the std::string to std::stringstream so that we could pull out the words in each line.
+        stringstream ssw(line);
+        string word;
+        while (ssw >> word) {
+            word_frequency[word]++;
+        }
+    }
+    
+    // 5. Print the word frequency out to the console, use const to specify that we won't modify
+    for (const auto& pair: word_frequency) {
+        cout << pair.first << "\t"<< word_frequency[pair.first] << endl;
+    }
 
-### getline()
-> It reads characters from a stream until a newline character is encountered, then stores the read characters (minus the newline) in a string . getline accepts two parameters, a stream to read from and a string to write to. For example, to read a line of text from the console, you could use this code:
-> ![image.png](./Streams.assets/20231114_1946237000.png)
-> **Loop-and-a-half&its simplification:**
-> ![image.png](./Streams.assets/20231114_1946259219.png)
+    return 0;
+}
+```
 
 
+### Formal Solution
+```c++
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <map>
 
-# 
+int main() {
+    std::ifstream file("words.txt");
+    std::string line;
+    std::map<std::string, int> wordCount;
+
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string word;
+        while (ss >> word) {
+            wordCount[word]++;
+        }
+    }
+
+    for (const auto& pair : wordCount) {
+        std::cout << pair.first << " : " << pair.second << std::endl;
+    }
+
+    return 0;
+}
+```

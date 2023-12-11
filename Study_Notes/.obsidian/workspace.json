@@ -4,83 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "ca0ac2206467774a",
+        "id": "b36739866896769f",
         "type": "tabs",
         "children": [
           {
-            "id": "2b2a3a4161a34caa",
+            "id": "61baf58451805f4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b5dec5c92cd64e86",
+            "id": "974d5b2c4c140bbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS170_6.006/_Ch2_Divide_and_Conquer_FFT.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c41124f1b9fe63ab",
+            "id": "4d38a3e988390aea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a841c388b43c40d2",
+            "id": "69261391f2c6a77a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "635d6088a4474bef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "29140410b890e6cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -152,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 290.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -192,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 211.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -266,53 +243,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a841c388b43c40d2",
+  "active": "4d38a3e988390aea",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215559989.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215554402.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215446234.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215406603.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215246718.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215051679.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215044489.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205215039489.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205203221203.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets/image-20231205203040690.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Relation_SQL.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs",
-    "Computer_Science/Computer_Systems/Machine_Structures/6_CPU_Datapath/RISC-V_Single-Cycle_Datapath.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/_CPU.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/cvxbook-solutions.pdf",
-    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__迭代期望与随机变量的和.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/__高阶知识点和练习.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127/2_Matrix_Calculus/Vector_Calculus.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Enumeration_BackTracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211170036080.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211170029236.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211161803057.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211161746693.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/P2100__Game_2048.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P1803__Bear_Maps.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P1802__BYoG.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Functions.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153317624.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153313226.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153243296.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153214396.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153031146.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211152921589.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Control.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/CS61C_Labs",
+    "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Data.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign3_Recursion_Backtracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/3_Recursion_Asymptotics/Lectures_Readings.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Stanford_CS111",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md",
+    "Computer_Science/Computer_Science_Tools",
+    "Computer_Science/Computer_Science_Tools/Docker",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Network_Programming",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Multithreading",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Multiprocessing",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
+    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md",
+    "image.jpg.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest Path.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic Programming.md",
     "未命名.canvas"
   ]
 }

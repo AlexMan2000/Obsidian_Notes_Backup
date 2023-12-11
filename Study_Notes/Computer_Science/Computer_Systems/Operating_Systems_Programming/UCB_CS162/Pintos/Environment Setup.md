@@ -1,0 +1,1 @@
+https://alfredthiel.gitbook.io/pintosbook/getting-started/environment-setup#option-b-virtual-machine

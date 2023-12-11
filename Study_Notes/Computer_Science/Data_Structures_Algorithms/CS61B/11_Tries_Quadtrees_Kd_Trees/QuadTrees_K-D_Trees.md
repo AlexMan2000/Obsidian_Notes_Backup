@@ -94,7 +94,7 @@
 ## K-D Tree for 2D
 > ![image.png](QuadTrees_K-D_Trees.assets/20230302_0959445119.png)[Demo Link](https://docs.google.com/presentation/d/1WW56RnFa3g6UJEquuIBymMcu9k2nqLrOE1ZlnTYFebg/edit#slide=id.g54b6045b73_0_38)
 > So for the 2-D case, it partitions like an X-based Tree on the first level, then like a Y-based Tree on the next, then as an X-based Tree on third level, a Y-based Tree on the fourth, etc.
-> For the 3-D case, it** rotates between each of the three dimensions** **every three levels**, and so on and so forth for even higher dimensions. Here you can see the advantages in a K-D Tree in how it is more easily generalized to higher dimensions. 
+> For the 3-D case, it rotates between each of the three dimensions **every three levels**, and so on and so forth for even higher dimensions. Here you can see the advantages in a K-D Tree in how it is more easily generalized to higher dimensions. 
 > But, no matter how high the dimensions get, a K-D tree will always be a **binary** **tree**, **since each level is partitioned into "greater" and "less than".**
 
 [cs61b kdtree insertion demo.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1676875152208-768b4bfd-895b-4c84-8fa5-46a19c09cd7f.pdf)

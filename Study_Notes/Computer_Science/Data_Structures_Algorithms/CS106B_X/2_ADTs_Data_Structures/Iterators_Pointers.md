@@ -1,5 +1,14 @@
 # 2 Iterators
+## Definition
+> [!def]
+> ![](Iterators_Pointers.assets/image-20231209222347345.png)
+
+
+
+
+
 ## Basic Usage&Example
+> [!important]
 > ![image.png](./Iterators_Pointers.assets/20231114_1941341672.png)![image.png](./Iterators_Pointers.assets/20231114_1941364124.png)
 
 ```cpp
@@ -172,7 +181,7 @@ int main() {
 ## Summary
 > ![image.png](./Iterators_Pointers.assets/20231114_1942153961.png)![image.png](./Iterators_Pointers.assets/20231114_1942174438.png)
 
-# 
+
 # 4 Pointers
 [lecture6_iterators_and_pointers_w23.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1693582435938-f8920744-26ae-4d52-b94f-0cdc990a063b.pdf)
 

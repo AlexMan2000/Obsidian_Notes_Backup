@@ -39,7 +39,7 @@
 ## Alignment
 > ![image.png](./X86_Data.assets/20231023_2320115931.png)![image.png](./X86_Data.assets/20231023_2320128172.png)![image.png](./X86_Data.assets/20231023_2320141214.png)![image.png](./X86_Data.assets/20231023_2320157970.png)
 
-
+Bl
 
 ## Example
 > ![image.png](./X86_Data.assets/20231023_2320167351.png)![image.png](./X86_Data.assets/20231023_2320171829.png)

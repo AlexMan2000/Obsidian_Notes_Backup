@@ -447,8 +447,6 @@ int main(){
 ### Common Pitfalls
 > ![image.png](Lectures_Readings.assets/20230302_2140435135.png)
 
-### 
-
 
 ## Maps
 ### Definition

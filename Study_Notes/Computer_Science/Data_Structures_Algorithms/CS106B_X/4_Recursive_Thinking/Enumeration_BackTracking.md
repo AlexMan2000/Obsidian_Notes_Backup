@@ -132,7 +132,7 @@ void findSolutionIterative(int n, char source, char dest, char aux) {
 }
 ```
 
-# Enumeration&BackTracking
+# Enumeration
 ## Generating Coin Sequence
 > ![image.png](./Enumeration_BackTracking.assets/20231114_1937313313.png)![image.png](./Enumeration_BackTracking.assets/20231114_1937328416.png)![image.png](./Enumeration_BackTracking.assets/20231114_1937342785.png)
 
@@ -343,7 +343,7 @@ int main() {
 
 
 ## Enumerating Combinations
-> `**Combination**`**其实就是**`**Subset**`**问题的一个变种，区别在于**`**Combination**`**限制了**`**Subset**`**的长度。所以本质上**`**Combination**`**还是在问两个问题: **
+> `Combination`**其实就是**`Subset`**问题的一个变种，区别在于**`Combination`**限制了**`Subset`**的长度。所以本质上**`Combination`**还是在问两个问题: 
 > 1. `Do I pick this element or not?`
 > 2. `Can I pick more element? `
 
@@ -450,7 +450,34 @@ int main() {
 ```
 
 
-# Shrinkable Words⭐⭐⭐⭐⭐
+# BackTracking
+## BackTracking Template
+> [!summary]
+> ![](Enumeration_BackTracking.assets/image-20231207150556488.png)
+
+
+## Cracking a Combo Lock
+> [!example]
+> We will rewrite the generateAllSequeneces() function to adapt to this particular task. 
+> ![](Enumeration_BackTracking.assets/image-20231207150811810.png)![](Enumeration_BackTracking.assets/image-20231207150831580.png)
+> Basically we want the function to return immediately if we have found a working combo(4-digit solution). So we have to modify the function above as required as follows:
+> 1. Function should return whether we can crack the lock, so return type should be bool. 
+> 2. The length of the lock password is always 4, so no need for the first argument length.
+> 3. Since we are not collecting all the combos(which might work or might not), so we don't need the second argument.
+> 4. The last argument should be changed to be the digits that we have tried soFar.
+>
+> ![](Enumeration_BackTracking.assets/image-20231207151433767.png)![](Enumeration_BackTracking.assets/image-20231207151455971.png)![](Enumeration_BackTracking.assets/image-20231207151501472.png)![](Enumeration_BackTracking.assets/image-20231207151511575.png)![](Enumeration_BackTracking.assets/image-20231207151524206.png)![](Enumeration_BackTracking.assets/image-20231207151529910.png)
+
+> [!important] Recursive Intuition
+> ![](Enumeration_BackTracking.assets/image-20231207151555963.png)![](Enumeration_BackTracking.assets/image-20231207151611454.png)![](Enumeration_BackTracking.assets/image-20231207151640712.png)
+
+
+
+
+
+
+
+# Shrinkable Words - Permutations⭐⭐⭐⭐⭐
 ## Definition
 > ![image.png](./Enumeration_BackTracking.assets/20231114_1937526667.png)![image.png](./Enumeration_BackTracking.assets/20231114_1937533317.png)
 
@@ -566,7 +593,7 @@ int main() {
 
 
 
-# Dense Crossword
+# Dense Crossword - Permutations
 > ![image.png](./Enumeration_BackTracking.assets/20231114_1938152323.png)![image.png](./Enumeration_BackTracking.assets/20231114_1938175247.png)
 > **我们的最终目的是: **
 > 要填满这个`Crossword Puzzles`, 保证`Crossword Board`的每一行，每一列的单词都是合法的，即`Lexicon.contains(word) for word in rows and columns`。

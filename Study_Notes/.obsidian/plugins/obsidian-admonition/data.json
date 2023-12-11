@@ -104,10 +104,11 @@
       "type": "algo",
       "color": "20, 17, 223",
       "icon": {
-        "name": "bolt",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-atom"
       },
       "command": false,
+      "title": "Algorithm",
       "injectColor": true,
       "noTitle": false,
       "copy": true

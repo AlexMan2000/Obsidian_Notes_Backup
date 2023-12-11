@@ -3,23 +3,52 @@
 
 
 # Common Types of GCC Optimization
+## Constant Folding
+> [!concept]
+> ![](Code_Optimization.assets/image-20231211145005373.png)![](Code_Optimization.assets/image-20231211145432262.png)![](Code_Optimization.assets/image-20231211145548188.png)![](Code_Optimization.assets/image-20231211145554074.png)
+
+
+
+
 ## Code Motion
-> ![image.png](./Code_Optimization.assets/20231024_0923269800.png)
+> [!concept]
+> ![](./Code_Optimization.assets/20231024_0923269800.png)
 > `Code Motion`是一种预先计算循环体中的变量的代码优化方式，可以减少循环体中不必要的重复代数运算。
 > 下面的代码使用`gcc -O1`达到，它将循环体转换成指针风格，相比之前的优化，下面的代码将数组访问转换成了指针风格。
-> ![image.png](./Code_Optimization.assets/20231024_0923295449.png)
+> 
+> ![](./Code_Optimization.assets/20231024_0923295449.png)
 
 
 
 
 ## Reduction in Strength
-> ![image.png](./Code_Optimization.assets/20231024_0923303645.png)
+> [!concept]
+> ![](Code_Optimization.assets/image-20231211150056800.png)![](./Code_Optimization.assets/20231024_0923303645.png)
 
 
 
 ## Share Common Subexpressions
-> ![image.png](./Code_Optimization.assets/20231024_0923333839.png)
+> [!concept]
+> ![](Code_Optimization.assets/image-20231211145724003.png)![](Code_Optimization.assets/image-20231211145821096.png)![image.png](./Code_Optimization.assets/20231024_0923333839.png)
 > 这种优化方式非常重要，在图像处理中，我们经常需要访问相邻的至少四个像素点，上面的优化可以大幅减少不必要的计算。
+
+
+
+
+## Dead Code
+> [!concept]
+> ![](Code_Optimization.assets/image-20231211145849423.png)![](Code_Optimization.assets/image-20231211145855475.png)![](Code_Optimization.assets/image-20231211145900554.png)
+
+
+
+## Tail Recursion
+> [!concept]
+> ![](Code_Optimization.assets/image-20231211150132116.png)![](Code_Optimization.assets/image-20231211150206122.png)
+
+
+
+
+
 
 
 
@@ -32,7 +61,7 @@
 > ![image.png](./Code_Optimization.assets/20231024_0923394386.png)
 > 我们会发现算法复杂度下降到了`O(n)`。
 > ![image.png](./Code_Optimization.assets/20231024_0923418144.png)
-> **但是实际上，编译器并不会自动做出我们想要的优化操作(只有我们人为将**`**strlen**`**移出循环才可以)，有以下几个原因:**
+> **但是实际上，编译器并不会自动做出我们想要的优化操作(只有我们人为将**`strlen`**移出循环才可以)，有以下几个原因:**
 > 1. 由于循环在执行的过程中我们的字符串`s`也在不断地被修改，所以编译器会非常小心，生怕计算`strlen(s)`的时候出错，故每次循环都会计算一次。
 > 2. 编译器需要决定使用哪个`strlen`函数，因为我们可能自己写了一个`strlen`, 然后在`Linking`期间将这个用户自定义的(而不是`C++`标准库的)`strlen`编译成`object file`，此时`strlen`的行为其实就更不可控了，尤其是如果用户定义的`strlen`会造成`buffer overflow`时，所以编译器会把`procedure call`（比如`strlen`）当成一个黑盒子。
 > 3. 对于编译器，它要考虑的是如何保证优化后程序的行为一致。因为一些问题的存在，编译器无法确定是否可以优化。最典型的问题是`memory aliasing`，出现的场景是两个指针指向同一块内存地址。函数可能有`side effect`，所以函数调用不会被轻易的优化，除非是`inline`。

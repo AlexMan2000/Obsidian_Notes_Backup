@@ -25,12 +25,13 @@
 
 ### Verbal Matching Condition
 > [!info]
-> ![](Stable%20Matching%20Problem.assets/image-20231030094857247.png)![](Stable%20Matching%20Problem.assets/image-20231030094906586.png)
+> ![](Stable%20Matching%20Problem.assets/image-20231209210307343.png)![](Stable%20Matching%20Problem.assets/image-20231030094857247.png)![](Stable%20Matching%20Problem.assets/image-20231030094906586.png)
 > 下面我们证明为什么这个`Matching Condition`是必要的。
 
 ```ad-thm 
 **Informal Theorem**
-![](Stable%20Matching%20Problem.assets/image-20231030095335264.png)
+![](Stable%20Matching%20Problem.assets/image-20231209210129323.png)
+
 
 
 ```
