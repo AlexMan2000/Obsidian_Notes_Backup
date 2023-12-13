@@ -41,7 +41,7 @@
 
 
 > [!example] Examples
-> ![image.png](Convex_Functions.assets/20231023_2246106208.png)![image.png](Convex_Functions.assets/20231023_2246102904.png)
+> ![](Convex_Functions.assets/20231023_2246106208.png)![](Convex_Functions.assets/20231023_2246102904.png)
 
 
 ### Definition 5: Epigraph
@@ -318,7 +318,7 @@
 
 ### Exercises
 > [!example] EECS127 Fa22 Disc05
-> ![image.png](Convex_Functions.assets/20231023_2246227216.png)![image.png](Convex_Functions.assets/20231023_2246243355.png)![](Convex_Functions.assets/image-20231103133048334.png)
+> ![](Convex_Functions.assets/20231023_2246227216.png)![](Convex_Functions.assets/20231023_2246243355.png)![](Convex_Functions.assets/image-20231103133048334.png)
 > 其中:
 > - (b) 小问我们也可以取$f(z)=z^{\frac{1}{3}}$和$g(x)=x$
 > - (c) 小问我们也可以取$f(z)=e^{-z}$和$g(x)=x^2$
@@ -354,15 +354,14 @@
 > [!example] Negative Logarithm
 > ![](Convex_Functions.assets/image-20231102143515323.png)
 > **Direct Proof of Convexity:**
-> $\forall (x,t_1),(y,t_{2})\in dom(g),\theta\in [0,1],(\theta x+(1-\theta)y,\theta t_1+(1-\theta)t_{2})\in dom(g)$ since $\frac{\theta x+(1-\theta)y}{\theta t_1+(1-\theta)t_{2}}\in dom(f)$。
-> $\nabla^{2}g(x,t)=\begin{bmatrix}\frac{t}{x^2}&-\frac{1}{x}\\-\frac{1}{x}&\frac{1}{t} \end{bmatrix}$，since $det(\nabla^{2}g(x,t))\succeq 0,\forall x,t$, then $g$ is convex.
+> 
 > 
 > ![](Convex_Functions.assets/image-20231102145613078.png)
-> 原因是我们有$\sum_{i=1}^nu_ilog(\frac{u_i}{v_i})=\sum_{i=1}^ng(u_i,v_i)$, 其中$g(u_i,v_i)=g(A\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix})$, 所以$g$是一个凸函数和仿射变换的组合，对于$(\vec{u},\vec{v})$来说是凸的。
+> 原因是我们有$\sum_{i=1}^nu_ilog(\frac{u_i}{v_i})=\sum_{i=1}^ng(u_i,v_i)$, 其中$g(u_i,v_i)=g(A_i\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix})$, 所以$g$是一个凸函数和仿射变换的组合，对于$(\vec{u},\vec{v})$来说是凸的。
 
 > [!example] KL Divergence
 > ![](Convex_Functions.assets/image-20231102150826455.png)
-> 其中$\sum\limits_{i=1}^{n}v_i-u_i=\mathbb{1}^{\top}(\vec{v}-\vec{u})$
+> 其中$\sum\limits_{i=1}^{n}v_i-u_i=\mathbb{1}^{\top}(\vec{v}-\vec{u})$, 所以$D_{KL}(\vec{u},\vec{v})=\sum\limits_{i=1}^ng(u_i,v_i)+\mathbb{1}^{\top}(\vec{v}-\vec{u})=\sum\limits_{i=1}^ng(A_i\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix})+[1^{\top},-1^{\top}]\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix}$, which is a convex function w.r.t $\begin{bmatrix} \vec{u}\\\vec{v}\end{bmatrix}$.
 
 
 
@@ -639,19 +638,50 @@
 
 
 # Chapter Exercises
-> **Chapter 2**: 2.1, 2.2, 2.5, 2.7,  2.10, 2.16, 2.18, 2.19
 > **Chapter 3**: 3.1, 3.2, 3.5, 3.13, 3.18, 3.21, 3.32, 3.33, 3.36, 3.43
 
-## 2.2 Intersection with arbitrary lines
-> [!important]
-> ![](Convex_Functions.assets/image-20231129160007763.png)
+## 3.1 Definition of Convexity
+> [!example]
+> ![](Convex_Functions.assets/image-20231212220702498.png)
+
+> [!solution]
+> ![](Convex_Functions.assets/image-20231212221436210.png)
+> Here for part (d), we assume that $a\leq b$.
 
 
-## 2.10 Solution Set of a quadratic inequality
-> [!important]
-> ![](Convex_Functions.assets/image-20231129155447216.png)![](Convex_Functions.assets/image-20231129155517986.png)
 
 
 
 
-> 
+
+## 3.2 Level Sets of Convex Objects
+
+
+## 3.5 Integral of Convex Function
+> [!example]
+> ![](Convex_Functions.assets/image-20231212221753475.png)
+
+> [!solution] Fundamental Theorem of Calculus
+> ![](Convex_Functions.assets/image-20231212222218317.png)
+
+
+
+## 3.13 KL Divergence
+> [!example]
+> ![](Convex_Functions.assets/image-20231212230448614.png)![](Convex_Functions.assets/image-20231212222655982.png)
+
+> [!solution]
+> ![](Convex_Functions.assets/image-20231212230505908.png)
+
+
+## 3.18 Convexity of Matrix Functions
+> [!example]
+> ![](Convex_Functions.assets/image-20231212230825309.png)
+
+> [!solution]
+> ![](Convex_Functions.assets/image-20231212230917961.png)
+> Note that in solution part (a), we utilize the following facts
+> - $Z\in  \mathbb{S}_{++}^n$, which implies that $Z^{-\frac{1}{2}}$ exists.
+> - $tr(ABC)=tr(CAB)$.
+
+

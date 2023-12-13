@@ -1,12 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "Basic_Induction",
+      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md"
+    },
+    {
+      "basename": "Structural_Induction",
+      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.md"
+    },
+    {
+      "basename": "Functions_Cardinality",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Functions_Cardinality.md"
+    },
+    {
+      "basename": "Counting_Rules",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
       "basename": "Ch4_Specifications",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
     },
     {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Duality Theory",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md"
     },
     {
       "basename": "Relations_Partial_Orders",
@@ -89,10 +133,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md"
     },
     {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
-    },
-    {
       "basename": "X86_Control",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Control.md"
     },
@@ -155,50 +195,6 @@
     {
       "basename": "Hashing",
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Hashing.md"
-    },
-    {
-      "basename": "Recurrences",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Recurrences.md"
-    },
-    {
-      "basename": "Sum&Asymptotics",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md"
-    },
-    {
-      "basename": "Algorithmic_Thinking",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
-    },
-    {
-      "basename": "_P1902B__K-d_Tree",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/11_Tries_Quadtrees_Kd_Trees/_P1902B__K-d_Tree.md"
-    },
-    {
-      "basename": "Linear Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/5_LP_QP_QCOP_SDP/Linear Programs.md"
-    },
-    {
-      "basename": "Problem_Set_1",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md"
-    },
-    {
-      "basename": "Ch1_Static_Checking",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch1_Static_Checking.md"
-    },
-    {
-      "basename": "Ch3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md"
-    },
-    {
-      "basename": "Class_Design",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Design.md"
-    },
-    {
-      "basename": "Template Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.md"
-    },
-    {
-      "basename": "Functions and Lambdas",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
     }
   ],
   "omittedPaths": [],

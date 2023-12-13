@@ -64,6 +64,9 @@
 > [!def]
 > ![](Directed%20Graph.assets/image-20231212201741480.png)
 
+> [!important] Negation on the defintion
+> A directed graph $G=(V,E)$ is not strongly connected if there exists some $u,v\in V$ such that either there is no path from u to v or there is no path from v to u.
+
 > [!example]
 > ![](Directed%20Graph.assets/image-20231212201824810.png)
 
@@ -73,10 +76,20 @@
 > ![](Directed%20Graph.assets/image-20231212201939426.png)![](Directed%20Graph.assets/image-20231212202335200.png)![](Directed%20Graph.assets/image-20231212202346566.png)
 
 
+
+## SCC are not mutually reachable
+> [!important]
+> Two disjoint SCCs can't be mutually reachable from one another
+
+
+
+
+
 # Directed Acyclic Graphs(DAGs)
 ## Topological Orderings
 > [!def]
 > ![](Directed%20Graph.assets/image-20231212203100980.png)![](Directed%20Graph.assets/image-20231212203413917.png)![](Directed%20Graph.assets/image-20231212203425416.png)
+> Note that topological ordering is for all the nodes. In other words, it must be a sequence of nodes that covers all the nodes in the graph.
 
 
 ## Definition of DAG
@@ -95,12 +108,60 @@
 > [!proof] Formal Proof
 > ![](Directed%20Graph.assets/image-20231212204345916.png)
 
+> [!proof] Proof Techniques
+> ![](Directed%20Graph.assets/image-20231213094015586.png)![](Directed%20Graph.assets/image-20231213094030793.png)
+
+
+## Properties of DAGs
+### Sources and Sinks
+> [!important] Topological Sorting Order Picking Process
+> ![](Directed%20Graph.assets/image-20231213103911019.png)![](Directed%20Graph.assets/image-20231213103919925.png)![](Directed%20Graph.assets/image-20231213104035155.png)
+
+
+### DAG -> At least one source
+> [!property]
+> ![](Directed%20Graph.assets/image-20231213104157016.png)
+
+> [!proof] Proof Sketch
+> ![](Directed%20Graph.assets/image-20231213104918591.png)
+
+> [!proof] Formal Proof
+> ![](Directed%20Graph.assets/image-20231213104950022.png)
+
+> [!summary] Intuition of the Lemma
+> ![](Directed%20Graph.assets/image-20231213105116110.png)
 
 
 
+### DAG -> Removing Source Preserves DAG
+> [!property]
+> ![](Directed%20Graph.assets/image-20231213105131877.png)
+
+> [!proof] Formal Proof
+> ![](Directed%20Graph.assets/image-20231213105144975.png)
 
 
-# Condensations
+## DAG -> Topological Ordering
+> [!thm]
+> ![](Directed%20Graph.assets/image-20231213105345027.png)
+
+
+
+# Condensations of Digraphs
+## Definition
+> [!def]
+> ![](Directed%20Graph.assets/image-20231213110605064.png)
+
+> [!example] Example Condensation
+> ![](Directed%20Graph.assets/image-20231213110635052.png)![](Directed%20Graph.assets/image-20231213110640354.png)![](Directed%20Graph.assets/image-20231213110653430.png)
+
+
+## Condensation is a DAG
+> [!thm]
+> ![](Directed%20Graph.assets/image-20231213110732872.png)
+
+
+
 
 
 

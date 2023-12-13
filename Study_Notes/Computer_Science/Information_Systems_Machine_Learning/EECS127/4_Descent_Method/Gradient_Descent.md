@@ -113,7 +113,16 @@
 ### Main Theorem - Version 2
 > 
 
+
+
+## Convergence of G.D. of Ridge Regression
+
+
+
 # Convergence for Stochastic G.D.
+
+
+
 
 
 

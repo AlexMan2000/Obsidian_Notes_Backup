@@ -503,4 +503,22 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 
 # Disproving Convexity
-> 
+
+
+
+# Chapter Exercises
+> **Chapter 2**: 2.1, 2.2, 2.5, 2.7,  2.10, 2.16, 2.18, 2.19
+
+
+## 2.2 Intersection with arbitrary lines
+> [!important]
+> ![](Convex_Functions.assets/image-20231129160007763.png)
+
+
+## 2.10 Solution Set of a quadratic inequality
+> [!important]
+> ![](Convex_Functions.assets/image-20231129155447216.png)![](Convex_Functions.assets/image-20231129155517986.png)
+
+
+## 2.16 Operations that Preserve Convexity
+> []

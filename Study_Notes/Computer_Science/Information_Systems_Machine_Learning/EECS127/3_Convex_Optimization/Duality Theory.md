@@ -263,6 +263,8 @@
 ### Example 3: Quadratic Programming
 > [!example] Disc10 P1 Fa22
 > ![](Duality%20Theory.assets/image-20231119172628183.png)![](Duality%20Theory.assets/image-20231119172647795.png)![](Duality%20Theory.assets/image-20231119172653053.png)![](Duality%20Theory.assets/image-20231119172657944.png)![](Duality%20Theory.assets/image-20231119172703059.png)![](Duality%20Theory.assets/image-20231119172710081.png)
+> **Notes:**
+> We should see that when we are dualizing, we can choose to partial dualize the constraint, but when using KKT, we have to use all the constraints.
 
 
 
@@ -282,12 +284,18 @@
 > We want to show that:$$
 > \begin{aligned}p^* r= & \min _{\vec{x} \in R^n} \sum_{i=1}^n-\alpha_i \log \left(x_i\right) \\& \text { s.t } \vec{x} \geqslant 0, \quad 1^{\top} \vec{x} \leqslant C\end{aligned}$$has the same solutions as the original minimization problem:$$\begin{aligned}P_{\text {min }}^*= & \min _{\vec{x} \in \mathbb{R}^{-}} \sum_{i=1}^n-\alpha_i \log \left(x_i\right) \\& \text { s.t. } \quad \vec{x} \geq 0,1^{\top} \vec{x}=c\end{aligned}$$
 > We first prove that $p_{\text {min }}^*=p^*_{r}$ :
+> 
 > Since the relaxed optimization problem has a larger feasible set than the original one, we are safe to conclude that $p^*_r \leqslant p^*_\min$.
+> 
 > Now we just need to show $p^*_r \geqslant p^*_{min}$ .
+> 
 > Suppose for the sale of contradiction, $\vec{x}^r$ is an optimal solution to the relaxed minimization problem such that $p^*{ }_r<p^*_{min}$.
+> 
 > Then $I^{\top} \vec{x}^r \leqslant C$ and $\sum_{i=1}^n-\alpha_i \log \left(x_i^r\right)=p^*_r$.
-> If $\vec{x}^r$ is feasible for the original problem, then $1^{\top} \vec{x}^r=c$ and $\sum_{i=1}^n-\alpha_i \log \left(x_i^r\right)=p^* r<p_{\text {min }}$, which is a contradiction to the definition of $P_{\text {min }}^*$.
-> If $\vec{x}^r$ is nt feasible for the original problem, since $1^{\top} \vec{x}^r \leq C$, we know that $1^{\top} \vec{x}^r<C$. 
+> 
+> - If $\vec{x}^r$ is feasible for the original problem, then $1^{\top} \vec{x}^r=c$ and $\sum_{i=1}^n-\alpha_i \log \left(x_i^r\right)=p^* r<p_{\text {min }}$, which is a contradiction to the definition of $P_{\text {min }}^*$.
+> - If $\vec{x}^r$ is nt feasible for the original problem, since $1^{\top} \vec{x}^r \leq C$, we know that $1^{\top} \vec{x}^r<C$. 
+> 
 > Under this case, we can construct the vector:
 > $$\vec{x}^*=\left[\begin{array}{c} \\c-1^{\top} \vec{x}^r+x_1^r \\x_2^r \\\vdots \\x_n^r\end{array}\right]$$
 > which is feasible for the original problem, since$$\begin{aligned}
@@ -297,12 +305,15 @@
 > & =\sum_{i=1}^n-\alpha_i \log \left(x_i^r\right) \\
 > & =p^*_r
 > \end{aligned}$$
+> 
 > This implies that $p^*_{\min} \leq \sum_{i=1}^n-\alpha_i \log \left(x_i^*\right)<p^*_r$, which is a contradiction.
 > $\therefore$ We conduce that $p_r^* \geqslant p^* \min$ and thus $p^*_r=p_{\text {min }}^*$.
+> 
 > Now we aim to show that the original problem and relaxed problem have the same set of solution.
 > Suppose $\vec{x}^r$ is an optimal solution for relaxed problem, then $\sum_{i=1}^n-\alpha_i \log \left(x_i^r\right)=p^* r$ and $1^{\top} \vec{x}^r \leq c, x_i^r \geq 0 \forall i$.
 > If $\vec{x}$ is infeasible for the original problem, then $\mathcal{1}^{\top} \vec{x}^r<C$, we construct the same solution vector as above and could find that $p^*_{min}<p^*_r$, a contradiction to $p^*_r=p^*_{min}$that we hove proved.
 > $\therefore \vec{x}$ is feasible for the original problem.
+> 
 > Now suppose $\vec{x}^*$ is an optimal solution for anginal problem, we have $\sum_{i=1}^n-\alpha_i \log \left(x_i^*\right)=p^*_{min}$  and $1^{\top} \vec{x}^*=c$. $\because 1^{\top} \vec{x}^*=c \Rightarrow 1^{\top} \vec{x}^* \leq c, \therefore \vec{x}^*$ is feasible for the relaxed problem and we know that $\vec{x}^*$ is also optimal since $p^*_r=p^*_{min}$.
 
 

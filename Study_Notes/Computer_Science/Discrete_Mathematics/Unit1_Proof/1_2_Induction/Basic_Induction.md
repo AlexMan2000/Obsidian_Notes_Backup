@@ -118,15 +118,15 @@
 
 # 2 Ordinary Induction
 ## Rule for ordinary Induction
-:::info
-![image.png](./Basic_Induction.assets/20230914_1451504566.png)
-:::
+> [!important]
+> ![](./Basic_Induction.assets/20230914_1451504566.png)
+
 
 
 ## Inference Rule for Induction
-:::info
-![image.png](./Basic_Induction.assets/20230914_1451518864.png)
-:::
+> [!overview] Idea
+> ![](./Basic_Induction.assets/20230914_1451518864.png)
+
 
 
 
@@ -137,23 +137,48 @@
 
 
 ## Simple Induction Example
-:::info
-![image.png](./Basic_Induction.assets/20230914_1451572261.png)![image.png](./Basic_Induction.assets/20230914_1451582896.png)
-根据`Inference Rule`, 我们只要证明:
-![image.png](./Basic_Induction.assets/20230914_1452006251.png)
-:::
-**Analysis**![image.png](./Basic_Induction.assets/20230914_1452026279.png)
-**Complete Proof**![image.png](./Basic_Induction.assets/20230914_1452036201.png)
+
+> [!example]
+> ![image.png](./Basic_Induction.assets/20230914_1451572261.png)![image.png](./Basic_Induction.assets/20230914_1451582896.png)
+> 根据`Inference Rule`, 我们只要证明:
+> ![image.png](./Basic_Induction.assets/20230914_1452006251.png)
+
+> [!exmaple] **Analysis**
+> ![image.png](./Basic_Induction.assets/20230914_1452026279.png)
+> **Complete Proof**![image.png](./Basic_Induction.assets/20230914_1452036201.png)
 
 
 ## Induction vs Welling Ordering Principle
-:::info
 ![image.png](./Basic_Induction.assets/20230914_1452059098.png)
-:::
+
+
+# 3 Variants on Inductions
+## Starting Induction Later
+> [!example]
+> ![](Basic_Induction.assets/image-20231213100252973.png)![](Basic_Induction.assets/image-20231213100301759.png)![](Basic_Induction.assets/image-20231213100308781.png)![](Basic_Induction.assets/image-20231213100315699.png)![](Basic_Induction.assets/image-20231213100349788.png)![](Basic_Induction.assets/image-20231213100356325.png)
 
 
 
-# 3 Strengthening Induction⭐⭐⭐⭐⭐
+## Why can we start later?
+> [!important]
+> ![](Basic_Induction.assets/image-20231213100422399.png)![](Basic_Induction.assets/image-20231213100431712.png)![](Basic_Induction.assets/image-20231213100436954.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 4 Strengthening Induction⭐⭐⭐⭐⭐
 ## Simple Example 1
 > ![image.png](./Basic_Induction.assets/20230914_1452075174.png)
 
@@ -184,19 +209,19 @@ $\sum_{i=1}^k\frac{1}{i^2}=1+\sum_{i=2}^k \frac{1}{i^2}<1+\sum_{i=2}^k\frac{1}{i
 > ![image.png](./Basic_Induction.assets/20230914_1452331461.png)
 
 
-# 4 Invariants⭐⭐⭐
+# 5 Invariants⭐⭐⭐
 ## What are invariants?
-:::info
-One of the most important uses of induction in computer science involves proving that a program or process preserves one or more desirable properties as it proceeds. **A property that is preserved through a series of operations or steps is known as an invariant. **
-Examples of desirable invariants include:
+> [!def]
+> One of the most important uses of induction in computer science involves proving that a program or process preserves one or more desirable properties as it proceeds. **A property that is preserved through a series of operations or steps is known as an invariant. **
+> Examples of desirable invariants include:
+> - A variable **never exceeding** a certain value
+> - The altitude of a plane **never dropping below** 1,000 feet without the wingflaps and landing gear being deployed
+> - The temperature of a nuclear reactor n**ever exceeding the threshold** for a meltdown.
+> 
+> **We typically use induction to prove that a proposition is an invariant.**
+> 
+> In particular, we show that the proposition is true at the beginning (this is the base case) and that if it is true after `t` steps have been taken, it will also be true after step t+1 (this is the inductive step). We can then use the induction principle to conclude that the proposition is indeed an invariant, namely, that it will always hold.  
 
-- A variable **never exceeding** a certain value
-- The altitude of a plane **never dropping below** 1,000 feet without the wingflaps and landing gear being deployed
-- The temperature of a nuclear reactor n**ever exceeding the threshold** for a meltdown.
-
-**We typically use induction to prove that a proposition is an invariant.**
-In particular, we show that the proposition is true at the beginning (this is the base case) and that if it is true after `t` steps have been taken, it will also be true after step t+1 (this is the inductive step). We can then use the induction principle to conclude that the proposition is indeed an invariant, namely, that it will always hold.  
-:::
 
 
 ## Diagonally-Moving Robot Example
@@ -282,7 +307,7 @@ In particular, we show that the proposition is true at the beginning (this is th
 
 
 
-# 5 Strong Induction⭐⭐⭐⭐⭐
+# 6 Strong Induction⭐⭐⭐⭐⭐
 ## Strong vs Ordinary Induction
 :::info
 ![image.png](./Basic_Induction.assets/20230914_1453139519.png)![image.png](./Basic_Induction.assets/20230914_1453159404.png)![image.png](./Basic_Induction.assets/20230914_1453171001.png)
@@ -324,7 +349,7 @@ In particular, we show that the proposition is true at the beginning (this is th
 **Theorem and Proof**![image.png](./Basic_Induction.assets/20230914_1453393995.png)![image.png](./Basic_Induction.assets/20230914_1453415695.png)
 
 
-# 6 False Proofs
+# 7 False Proofs
 ## A Bogus Proof⭐⭐⭐⭐⭐
 :::info
 ![image.png](./Basic_Induction.assets/20230914_1453434063.png)![image.png](./Basic_Induction.assets/20230914_1453441324.png)
