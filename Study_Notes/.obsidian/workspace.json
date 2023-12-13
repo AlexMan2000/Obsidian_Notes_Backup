@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,6 +207,7 @@
   },
   "active": "7a700c96992402d1",
   "lastOpenFiles": [
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204345916.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204336177.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204250316.png",
@@ -217,9 +218,7 @@
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203633243.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203617856.png",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203425416.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203413917.png",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.md",

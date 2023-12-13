@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Ch4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
+    },
+    {
       "basename": "Directed Graph",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "Graph_Theory",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "Ch4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
     },
     {
       "basename": "File System Design",
