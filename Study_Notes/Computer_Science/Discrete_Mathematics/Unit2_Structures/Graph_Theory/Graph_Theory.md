@@ -150,11 +150,13 @@
 
 # Graph Traversals - Path&Walk
 ## Paths and Walks
-> **Definition 5.4.1 Walk**
+> [!def] **Definition 5.4.1 Walk**
 > A **walk** in a graph, $G$, is a sequence of vertices$v_0, v_1, \ldots, v_k$and edges
 > $\left\{v_0, v_1\right\},\left\{v_1, v_2\right\}, \ldots,\left\{v_{k-1}, v_k\right\}$such that $\left\{v_i, v_{i+1}\right\}$ is an edge of $G$ for all $i$ where $0 \leq i<k$. 
 > The walk is said to start at $v_0$ and to end at $v_k$, and the length of the walk is defined to be $k$. An edge, $\{u, v\}$, is traversed $n$ times by the walk if there are $n$ different values of $i$ such that $\left\{v_i, v_{i+1}\right\}=\{u, v\}$. 
-> **Definition 5.4.1 Path and Walk**
+
+
+> [!def] **Definition 5.4.1 Path and Walk**
 > A **path** is a walk where all the $v_i$ 's are different, that is, $i \neq j$ implies $v_i \neq v_j$. For simplicity, we will refer to paths and walks by the sequence of vertices.
 > 🔔: 总的来说, `Path`就是一条没有重复节点的`Walk`。
 > ![image.png](Graph_Theory.assets/20231024_0841318619.png)![image.png](Graph_Theory.assets/20231024_0841336632.png)
@@ -255,67 +257,9 @@
 
 
 ## Summary-Path&Walk&Cycle&Tour
-> ![image.png](Graph_Theory.assets/20231024_0842396623.png)
+> [!summary]
+> ![](Graph_Theory.assets/image-20231211195916351.png)
 
-
-
-# Trees
-## Definition
-> ![image.png](Graph_Theory.assets/20231024_0842415041.png)![image.png](Graph_Theory.assets/20231024_0842427039.png)![image.png](Graph_Theory.assets/20231024_0842449739.png)
-
-
-
-## Equivalence of Definitions
-```ad-lem
-If v is degree 1 in connected graph G, G-v is connected.
-```
-```ad-proof
-![](Graph_Theory.assets/image-20231029212319098.png)
-
-
-```
-
-```ad-thm
-![](Graph_Theory.assets/image-20231029212338353.png)
-
-
-```
-```ad-proof
-![](Graph_Theory.assets/image-20231029212439021.png)
-
-
-```
-
-
-## Basic Properties
-```ad-prop
-![image.png](Graph_Theory.assets/20231024_0842506585.png)![image.png](Graph_Theory.assets/20231024_0842523835.png)
-```
-
-```ad-proof
-![image.png](Graph_Theory.assets/20231024_0842557408.png)![image.png](Graph_Theory.assets/20231024_0842562132.png)
-```
-
-
-## Tree Proofs
-### Binary Tree
-> [!def] Definition
-> ![](Graph_Theory.assets/image-20231029203531663.png)
-> **Definition of the perfect binary trees**:
-> ![](Graph_Theory.assets/image-20231029202048662.png)
-```ad-thm
-![](Graph_Theory.assets/image-20231029213510449.png)
-
-
-```
-> [!proof]
-> ![](Graph_Theory.assets/image-20231029213556837.png)
-
-
-
-
-### Tree's Falling Apart
-> ![image.png](Graph_Theory.assets/20231024_0842583912.png)
 
 
 
@@ -418,20 +362,46 @@ If v is degree 1 in connected graph G, G-v is connected.
 
 # Graph Connectivity
 ## Connectivity
-> ![image.png](Graph_Theory.assets/20231024_0843334367.png)
+> [!def]
+> ![](Graph_Theory.assets/20231024_0843334367.png)![](Graph_Theory.assets/image-20231212201341626.png)
 > 注意任意两点的`Connectivity`指的不是存在一条`Edge`直接相连，而是说存在一个`PATH`在两点之间。
 > **Connected Example:**
-> ![image.png](Graph_Theory.assets/20231024_0843358912.png)
+> ![](Graph_Theory.assets/20231024_0843358912.png)
 > **Disconnected Example:**
-> ![image.png](Graph_Theory.assets/20231024_0843368225.png)
+> ![](Graph_Theory.assets/20231024_0843368225.png)
+
+> [!important] Negation on the definition
+> We have two ways to negate the defintion, the first one is:
+> 
+> **There exists $u,v\in V$ such that $u\nleftrightarrow v$**
+> 
+> The second way, as we will introduce later, relies on a new concept: connected components.
+> 
+> **If the graph is not connected, then it must consist of several connected components.**
+
+
+
+
+## Connectivity Properties
+> [!property]
+> ![](Graph_Theory.assets/image-20231212201318180.png)
+
+
 
 
 
 ## Connected Components
-> ![image.png](Graph_Theory.assets/20231024_0843372205.png)![image.png](Graph_Theory.assets/20231024_0843388168.png)
-> **🔔: 注意，**`**Connected Components**`**是**`**Maximum Set of Connected Vertices**`**，这里的**`**Maximum**`**是重点。**
-> ![image.png](Graph_Theory.assets/20231024_0843399098.png)![image.png](Graph_Theory.assets/20231024_0843395106.png)![image.png](Graph_Theory.assets/20231024_0843397133.png)
+### Definition
+> [!def]
+> ![](Graph_Theory.assets/image-20231211191018068.png)
+> ![](Graph_Theory.assets/20231024_0843372205.png)![](Graph_Theory.assets/20231024_0843388168.png)
+> **🔔: 注意，**`Connected Components`**是**`Maximum Set of Connected Vertices`**，这里的**`Maximum`**是重点。**
+> ![](Graph_Theory.assets/20231024_0843399098.png)![](Graph_Theory.assets/20231024_0843395106.png)![](Graph_Theory.assets/20231024_0843397133.png)
 
+
+
+
+### Using DFS to find all connected components
 ```c
 function DFS(v, visited, graph):
     visited[v] = true
@@ -452,21 +422,132 @@ function computeConnectedComponents(graph):
     return count
 ```
 
-## K-Connected Graph
-> ![image.png](Graph_Theory.assets/20231024_0843403449.png)![image.png](Graph_Theory.assets/20231024_0843411727.png)
+
+### Each node -> At most One Conneced Component
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211191154314.png)![](Graph_Theory.assets/image-20231211191201294.png)
+
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231211191247647.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211191224078.png)
+
+
+### Each node -> At Least One Conneced Component
+> [!corollary] Corollary 1
+> Another way of thinking about the theorem above is the following: 
+> 
+> **No node in a graph can belong to more than one connected component. In other words, any node in a graph can belong to at most one connected component.**  
+> 
+> You can see this as follows – suppose that a node could actually be in two different connected components. But by the previous theorem, we know that the intersection of those connected components must be empty, contradicting the fact that our chosen node belongs to both connected components.
+
+> [!corollary] Corollary 2
+> Then following the corollary 1, we want to investigate the following property:
+> 
+> **Any node in a graph belongs to at least one connected component.**
+> ![](Graph_Theory.assets/image-20231211193628367.png)
+
+> [!proof] Proof Idea
+> ![](Graph_Theory.assets/image-20231211193556266.png)![](Graph_Theory.assets/image-20231211193612304.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211193638834.png)
+
+
+> [!corollary] Corollary 3
+> ![](Graph_Theory.assets/image-20231211193714452.png)
+
+
+
+# K-Connected Graphs
+## Motivation: Highway Break Downs
+> [!motiv] Why K-connected
+> ![](Graph_Theory.assets/image-20231211194029642.png)![](Graph_Theory.assets/image-20231211194035619.png)![](Graph_Theory.assets/image-20231211194042056.png)
+
+
+## Definition: K-Connectedness
+> [!def]
+> ![](Graph_Theory.assets/20231024_0843403449.png)![](Graph_Theory.assets/20231024_0843411727.png)
 > 1. $b$和$e$在删除掉了$\{b,c\}$和$\{b,h\}$之后整个就不再`Connected`, 所以是`2-edge connected`.
 > 2. $c$和$e$在删除掉了$\{b,c\},\{c,d\},\{c,e\}$之后就不再`Connected`, 所以是`3-edge connected`.
 > 3. $g$和$e$在删除掉了$\{f,g\}$之后就不再`Connected`, 所以是`1-edge connected`.
+> 
+> Intuitively, you can think of k-edge-connected graphs as graphs with the following property. 
+> 
+> Suppose that you have a collection of computers (nodes) linked together in a network by cables (edges). 
+> 
+> - Initially, each computer can communicate with each other computer either directly (because they are linked together), or indirectly (by routing messages through other computers). 
+> - Then a saboteur finds these computers, then chooses and cuts her choice of k – 1 of these cables, breaking the links. 
+> 	- If the graph of these computers is k-edgeconnected, then you don't need to worry about the cut cables. Every computer will still be able to reach every other computer.
+> 	- That said, if the saboteur were to cut one more cable, it's possible (though not guaranteed) that the network might end up disconnected.
 
+
+
+## Insights: 2-Edge-Connected Graphs⭐⭐⭐⭐⭐
+> [!example]
+> ![](Graph_Theory.assets/image-20231211194525374.png)![](Graph_Theory.assets/image-20231211194553210.png)
+
+
+### Bridges
+> [!important]
+> ![](Graph_Theory.assets/image-20231211194707136.png)![](Graph_Theory.assets/image-20231211194907094.png)
+> The above definition gives us a way to check if a graph is 2-edge-connected: we can check whether the graph is connected, and from there check each edge to see if it forms a bridge.
+
+
+### What 2-edge-connectedness mean?
+> [!concept]
+> ![](Graph_Theory.assets/image-20231211195316299.png)![](Graph_Theory.assets/image-20231211195450077.png)
+> Now, for a key insight. Suppose that we start off at u and take our initial path to v. We then take the secondary path from v back to u. This gives us a cycle that goes from u back to itself. It's not necessarily a cycle(could be a walk), though, since we might end up retracing some of the same nodes and edges. But nonetheless, this quick thought experiment shows that there is some kind of connection between 2-edge-connected graphs and cycles. 
+
+
+### Graph with Simple Cycles
+> [!concept]
+> ![](Graph_Theory.assets/image-20231211200635230.png)![](Graph_Theory.assets/image-20231211200652437.png)
+
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211200706088.png)
+
+> [!proof]
+> ![](Graph_Theory.assets/image-20231211200732568.png)
+
+> [!corollary]
+> ![](Graph_Theory.assets/image-20231211201117131.png)
+
+
+### Cycle => 2-edge-connectedness
+> [!concept]
+> ![](Graph_Theory.assets/image-20231211201804911.png)![](Graph_Theory.assets/image-20231211201814444.png)
+
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211201828295.png)
+
+
+
+### 2-edge-connectedness => cycle
+> [!important]
+> ![](Graph_Theory.assets/image-20231211202415015.png)![](Graph_Theory.assets/image-20231211202436114.png)
+
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211202457301.png)
+
+> [!proof] Proof Idea
+> ![](Graph_Theory.assets/image-20231211202507501.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211202520490.png)![](Graph_Theory.assets/image-20231211202525012.png)
 
 
 ## Minimum Edges in connected graph
-> ![image.png](Graph_Theory.assets/20231024_0843425741.png)
+> [!thm]
+> ![](Graph_Theory.assets/20231024_0843425741.png)
 > 证明的关键思路就是我们在`Inductive Step`的时候先删除了一个`Edge`回归到`Inductive Hypothesis`的状态。
 
-**Proof**![image.png](Graph_Theory.assets/20231024_0843448198.png)![image.png](Graph_Theory.assets/20231024_0843448858.png)
-> ![image.png](Graph_Theory.assets/20231024_0843468897.png)
+> [!proof]
+> ![](Graph_Theory.assets/20231024_0843448198.png)![](Graph_Theory.assets/20231024_0843448858.png)
+> ![](Graph_Theory.assets/20231024_0843468897.png)
 > 一个`Graph (with v vertices)`要想`Connected`, 则说明只有一个`Component`, 于是$e=1$, 所以是`v-1 edges`。
+
 
 
 
@@ -480,6 +561,216 @@ function computeConnectedComponents(graph):
 
 > [!success] Successful Proof
 > ![image.png](Graph_Theory.assets/20231024_0843553575.png)
+
+
+
+# Minimally-Connected Graphs(2-connected Graph)
+## Motivations: What is tree
+> [!motiv] From 2-edge-connectedness
+> Our discussion of 2-edge-connected graphs focused on graphs that were connected with some measure of redundancy. It is always possible to remove an edge from a 2-edge-connected graph without disconnecting that graph. 
+> 
+> In this section, we turn to the opposite extreme by focusing on the most fragile graphs possible – **graphs that are connected, but which have absolutely no redundancy at all.**
+
+
+
+## Acyclic Graphs
+> [!def]
+> ![](Graph_Theory.assets/image-20231211215656426.png)
+
+
+## Minimally Connected Graphs
+### Definition
+> [!def]
+> ![](Graph_Theory.assets/image-20231211203228809.png)![](Graph_Theory.assets/image-20231211203235946.png)![](Graph_Theory.assets/image-20231211203244902.png)
+> **Notes for Graph with Single Node:**
+> 
+> Notice that ==the graph of just a single node is considered to be minimally connected== because it is indeed connected (every node can reach every other node) and it is also true that removing any edge from the graph disconnects it. 
+> 
+> This second claim is true vacuously: there are no edges in the graph, so the claim “if any edge is the graph is removed, it disconnects the graph” is automatically true. We can thus think of a singlenode graph as a degenerate case of a minimally-connected graph.
+
+> [!important] Negation on the definition
+> Sometimes in the proof we may negate the statement so as to make progress. For minimally connectedness, the negation of definition should be:
+> 
+> **There exists an edge $\{u,v\}$, where $u\neq v$ such that when it is removed from the original graph $G=(V,E)$, the resulting graph $G'=(V,E')$ remains connected.**
+
+
+
+### Property
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211215907064.png)
+
+> [!proof]
+> ![](Graph_Theory.assets/image-20231211204306922.png)
+> The proof utilize the corollary under this section [Graph with Simple Cycles](Graph_Theory.md#Graph%20with%20Simple%20Cycles), which says that 
+> 
+> **If a graph is connected, undirected and contains a simple cycle, then removing any edges from this cycle won't disconnect the graph.**
+
+## Maximally Acyclic Graphs
+> [!def]
+> ![](Graph_Theory.assets/image-20231211220343592.png)![](Graph_Theory.assets/image-20231211220402468.png)![](Graph_Theory.assets/image-20231211215500204.png)
+
+
+## Connected Acyclic Graphs
+> [!thm]
+> ![](Graph_Theory.assets/image-20231211215534814.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211220451757.png)
+
+
+## Equivalent Statements ⭐⭐⭐⭐
+> [!important]
+> ![](Graph_Theory.assets/image-20231211220719985.png)
+> Is the converse true? It turns out, however, that all of the above definitions are completely equivalent to one another.
+> 
+> ![](Graph_Theory.assets/image-20231211220731130.png)
+
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231211221211108.png)![](Graph_Theory.assets/image-20231211221700126.png)![](Graph_Theory.assets/image-20231211221704624.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211221734160.png)![](Graph_Theory.assets/image-20231211221741256.png)
+
+
+
+## Summary
+> [!summary]
+> ![](Graph_Theory.assets/image-20231211221755863.png)
+
+
+
+# Trees
+## Several Definitions
+> [!def]
+> ![](Graph_Theory.assets/image-20231211222817292.png)[](Graph_Theory.assets/20231024_0842415041.png)![](Graph_Theory.assets/20231024_0842427039.png)![](Graph_Theory.assets/20231024_0842449739.png)
+
+
+## Unique Path between Nodes
+> [!thm]
+> The three properties we proved about trees – minimal connectivity, connectivity/acyclicity, and maximal acyclicity – give us a good intuition about many properties of trees. However, there is one property of trees that is in many cases even more useful than these three.
+> ![](Graph_Theory.assets/image-20231211223412495.png)
+
+
+### Forward Direction
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231211223653965.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211223713109.png)
+
+
+### Backward Direction
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231211224553833.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231211224625472.png)![](Graph_Theory.assets/image-20231211225134918.png)
+
+
+
+## Connectivity Properties of Trees
+### Remove Edges from Tree -> Two connected components
+> [!lemma]
+> If we remove any single edge, we will have the following observation:
+> ![](Graph_Theory.assets/image-20231212191344134.png)
+
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231212193426471.png)
+> This proof utilize the fact that there is unique path between any two nodes in a tree.
+
+
+> [!proof] Formal Proof(Hard)
+> ![](Graph_Theory.assets/image-20231212193641943.png)![](Graph_Theory.assets/image-20231212193648248.png)
+
+
+### Any subgraphs are tree
+> [!thm]
+> ![](Graph_Theory.assets/image-20231212194805969.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231212194822026.png)
+
+
+### |Edges| = |Nodes| - 1
+> [!thm]
+> ![](Graph_Theory.assets/image-20231212195347713.png)
+
+> [!proof] Proof Sketch
+> ![](Graph_Theory.assets/image-20231212195401392.png)
+
+> [!proof] Inductive Proof
+> ![](Graph_Theory.assets/image-20231212195412309.png)
+
+
+
+
+### Many Corollaries
+```ad-prop
+![](Graph_Theory.assets/20231024_0842506585.png)![](Graph_Theory.assets/20231024_0842523835.png)
+```
+
+```ad-proof
+![](Graph_Theory.assets/20231024_0842557408.png)![](Graph_Theory.assets/20231024_0842562132.png)
+```
+
+
+## Node Properties of Tree
+### Leaf Node and Internal Node
+> [!def]
+> ![](Graph_Theory.assets/image-20231212200100760.png)
+
+
+### Number of Leaf Nodes
+> [!overview]
+> ![](Graph_Theory.assets/image-20231212200146268.png)
+
+> [!thm]
+> ![](Graph_Theory.assets/image-20231212200158858.png)
+
+> [!proof] Proof Idea
+> ![](Graph_Theory.assets/image-20231212200212200.png)![](Graph_Theory.assets/image-20231212200219624.png)
+
+> [!proof] Formal Proof
+> ![](Graph_Theory.assets/image-20231212200742874.png)
+
+
+
+
+
+
+## Tree Proof Exercises
+### Degree One Node
+> [!lemma]
+> If v is degree 1 in connected graph G, G-v is connected.
+
+```ad-proof
+![](Graph_Theory.assets/image-20231029212319098.png)
+
+
+```
+
+### Binary Tree
+> [!def] Definition
+> ![](Graph_Theory.assets/image-20231029203531663.png)
+> **Definition of the perfect binary trees**:
+> ![](Graph_Theory.assets/image-20231029202048662.png)
+```ad-thm
+![](Graph_Theory.assets/image-20231029213510449.png)
+
+
+```
+> [!proof]
+> ![](Graph_Theory.assets/image-20231029213556837.png)
+
+
+
+
+### Tree's Falling Apart
+> [!thm]
+> ![](Graph_Theory.assets/20231024_0842583912.png)
+
+
+
 
 
 # Planar Graphs

@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b36739866896769f",
+        "id": "0d62e17dea0f6a63",
         "type": "tabs",
         "children": [
           {
-            "id": "61baf58451805f4b",
+            "id": "7a700c96992402d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "974d5b2c4c140bbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4d38a3e988390aea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "69261391f2c6a77a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
+                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5110321044922,
-    "collapsed": true
+    "width": 290.5110321044922
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -169,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
+                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
+                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 296.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,53 +205,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d38a3e988390aea",
+  "active": "7a700c96992402d1",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Enumeration_BackTracking.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211170036080.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211170029236.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211161803057.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.assets/image-20231211161746693.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204345916.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204336177.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212204250316.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203910837.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203859225.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203835935.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203640400.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203633243.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203617856.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203425416.png",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets/image-20231212203413917.png",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153317624.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153313226.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153243296.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153214396.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211153031146.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets/image-20231211152921589.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Components.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Untitled",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/6_Labs",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets",
+    "Computer_Science/Data_Structures_Algorithms/Stanford_CS161",
+    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Prop_Quantifiers.md",
+    "Computer_Science/Discrete_Mathematics/Related Resources.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Enumeration_BackTracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Control.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/CS61C_Labs",
     "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Data.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign3_Recursion_Backtracking.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/3_Recursion_Asymptotics/Lectures_Readings.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Stanford_CS111",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md",
-    "Computer_Science/Computer_Science_Tools",
-    "Computer_Science/Computer_Science_Tools/Docker",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Network_Programming",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Multithreading",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Multiprocessing",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
-    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md",
-    "image.jpg.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest Path.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic Programming.md",
     "未命名.canvas"
   ]
 }

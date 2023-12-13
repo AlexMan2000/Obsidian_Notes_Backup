@@ -154,7 +154,12 @@
 ## Example Computer
 > ![image.png](./OS_VM_I_O.assets/20231024_0927084457.png)
 
-## 
+
+## Summary
+> [!concept]
+> ![](OS_VM_I_O.assets/image-20231212140959467.png)
+
+
 
 
 # VM as Caching - Page Table

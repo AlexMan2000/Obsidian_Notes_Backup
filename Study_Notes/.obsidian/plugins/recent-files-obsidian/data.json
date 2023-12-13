@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "Relations_Partial_Orders",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
+    },
+    {
+      "basename": "Graph_Theory",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+    },
+    {
+      "basename": "Ch4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
+    },
+    {
+      "basename": "File System Design",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
+    },
+    {
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+    },
+    {
+      "basename": "Computer_Systems_A_Programmers_Perspective(3rd)",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf"
+    },
+    {
+      "basename": "File_System_Components",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Components.md"
+    },
+    {
+      "basename": "Generics_Function_Pointers",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
+    },
+    {
+      "basename": "Heap Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "OS_VM_I_O",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md"
+    },
+    {
+      "basename": "Assignment_1",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md"
+    },
+    {
+      "basename": "20231024_0843468897",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.assets/20231024_0843468897.png"
+    },
+    {
+      "basename": "Prop_Quantifiers",
+      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_1_Proof_Proposition/Prop_Quantifiers.md"
+    },
+    {
+      "basename": "Related Resources",
+      "path": "Computer_Science/Discrete_Mathematics/Related Resources.md"
+    },
+    {
+      "basename": "Computability",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability.md"
+    },
+    {
       "basename": "Sec4_Recursive_Backtracking",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md"
     },
@@ -13,20 +89,8 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md"
     },
     {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
-    },
-    {
-      "basename": "Generics_In_C",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_In_C.md"
-    },
-    {
-      "basename": "Ch4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
     },
     {
       "basename": "X86_Control",
@@ -39,14 +103,6 @@
     {
       "basename": "Code_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "File_System_Components",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/File_System_Components.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
       "basename": "Signals",
@@ -63,10 +119,6 @@
     {
       "basename": "Lectures_Readings",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/3_Recursion_Asymptotics/Lectures_Readings.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
     },
     {
       "basename": "Sorting_Searching",
@@ -147,58 +199,6 @@
     {
       "basename": "Functions and Lambdas",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
-    },
-    {
-      "basename": "Streams",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
-    },
-    {
-      "basename": "STD_Containers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STD_Containers.md"
-    },
-    {
-      "basename": "Iterators_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
-    },
-    {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md"
-    },
-    {
-      "basename": "_Assign4_Recursion_to_the_Rescue",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md"
-    },
-    {
-      "basename": "Stable Matching Problem",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
-    },
-    {
-      "basename": "Graph_Theory",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
-    },
-    {
-      "basename": "_Ch2_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "image-20231030095335264.png",
-      "path": "Stable Matching Problem.assets/image-20231030095335264.png.md"
-    },
-    {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
-    },
-    {
-      "basename": "QuadTrees_K-D_Trees",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/11_Tries_Quadtrees_Kd_Trees/QuadTrees_K-D_Trees.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     }
   ],
   "omittedPaths": [],

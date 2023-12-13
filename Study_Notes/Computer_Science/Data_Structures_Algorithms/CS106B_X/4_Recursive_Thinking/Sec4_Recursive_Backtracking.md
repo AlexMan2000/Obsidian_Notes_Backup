@@ -342,7 +342,7 @@ string closestApproximationTo(const string& word, const Set<string>& symbols) {
 ```
 
 
-# P3 Permutations
+# P3 Permutations(Medium)
 > [!important]
 > This problem is a permutation since we just have to try all the possible permutation of the points on the path and see if any path can fulfill the travelTime limit.
 ## Task 1: Find whether there is a solution
@@ -352,79 +352,86 @@ string closestApproximationTo(const string& word, const Set<string>& symbols) {
 
 
 ```c++
-/**
- * @brief travelTimeBetweenPoints
- * @param pt1: the first point instance, non-null
- * @param pt2: the second point instance, non-null
- * @return The euclidean distance between pt1 and pt2
- */
-double travelTimeBetweenPoints(const GPoint& pt1, const GPoint& pt2) {
-    double dx = pt1.x - pt2.x;
-    double dy = pt1.y - pt2.y;
 
+/**
+ * Given a list of sites to visit and a total travel time, plus the location of
+ * the last city visited, returns whether it's possible to visit all of those
+ * locations in the specified amount of time.
+ *
+ * @param sites The list of sites left to visit.
+ * @param timeAvailable How much time is left.
+ * @param last The last place we visited.
+ * @return Whether we can visit those sites starting at the given location.
+ */
+bool canVisitAllSitesRec(const Vector<GPoint>& sites, double timeAvailable,
+                         const GPoint& last);
+
+/**
+ * Given a Vector, returns a new Vector formed by removing the element at the
+ * specified index.
+ *
+ * @param sites The list of sites.
+ * @param index The index in question.
+ * @return That vector with that index removed.
+ */
+Vector<GPoint> removeAt(Vector<GPoint> sites, int index);
+
+bool canVisitAllSites(const Vector<GPoint>& sites, double timeAvailable) {
+    /* If there aren't any sites, we can always visit them all! */
+    if (sites.isEmpty()) return true;
+
+    /* Try all possible starting points and see if any of them work. */
+    for (int i = 0; i < sites.size(); i++) {
+        if (canVisitAllSitesRec(removeAt(sites, i), timeAvailable, sites[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * Returns the Euclidean distance between two points.
+ *
+ * @param one The first point.
+ * @param two The second point.
+ * @return The distance between them.
+ */
+double distanceBetween(const GPoint& one, const GPoint& two) {
+    double dx = one.x() - two.x();
+    double dy = one.y() - two.y();
     return sqrt(dx * dx + dy * dy);
 }
 
-
-
-/**
- * @brief canVisitAllSitesRec
- * @param sites: All the sites to be travelled
- * @param lastChoice: The last choice that was made, the last recursive call
- * @param timeAccu: The accumulated time util the current recursive step, used for termination
- * @param travelTimeAvailable: The total travel time allowed.
- * @param index: Indicating the level of recursion
- * @return whether a sequence can be a valid path.
- */
-bool canVisitAllSitesRec(const Vector<GPoint>& sites, const GPoint& lastChoice, double timeAccu, double travelTimeAvailable, int index) {
-    if (timeAccu > travelTimeAvailable) {
-        return false;
-    }
-
-    if (index >= sites.size()) {
+bool canVisitAllSitesRec(const Vector<GPoint>& sites, double timeAvailable,
+                         const GPoint& last) {
+    /* Base case: If no sites remain, we're done! */
+    if (sites.isEmpty()) {
         return true;
     }
-
-
-    for (int i = index; i < sites.size(); i++) {
-        GPoint current = sites.get(i);
-        double time = travelTimeBetweenPoints(current, lastChoice);
-        if (canVisitAllSitesRec(sites, sites.get(i), timeAccu + time, travelTimeAvailable, index + 1)) {
-            return true;
+    /* Recursive case: see where we go next. */
+    else {
+        for (int i = 0; i < sites.size(); i++) {
+            /* See how long this is going to take. If it's too far, then we
+             * can't go there next.
+             *
+             * We can actually be way more aggressive here due to the triangle
+             * inequality: the fastest way to a point is to go straight there.
+             * If we can't make it there from here in time, there's no alternate
+             * route we could take that would be any better. The only reason we
+             * didn't optimize the code this way was because in general you can't
+             * make assumptions like this.
+             */
+            double distance = distanceBetween(last, sites[i]);
+            if (distance <= timeAvailable &&
+                canVisitAllSitesRec(removeAt(sites, i), timeAvailable - dist,
+                                    sites[i])) {
+                return true;
+            }
         }
-    }
-    return false;
-}
 
-
-/*
- * Function: canVisitAllSites
- * ---------------------------
- * Write a function that takes as input a list of all the
- * sites you’d like to visit and an amount of free time
- * available to you and returns whether it’s possible to
- * visit all those sites in the allotted time (assume you’ve
- * already factored inthe cost of speaking at each site
- * and that you’re just concerned about the travel time.)
- */
-bool canVisitAllSites(const Vector<GPoint>& sites, double travelTimeAvailable) {
-    /* todo: remove these lines and implement this function! */
-    if (travelTimeAvailable < 0) {
+        /* Looks like no options worked. Oh well! */
         return false;
     }
-
-
-    if (sites.size() == 0) {
-        return true;
-    }
-
-
-    for (int i = 0; i < sites.size(); i++) {
-        if (canVisitAllSitesRec(sites, sites.get(i), 0, travelTimeAvailable, 1)) {
-            return true;
-        }
-    }
-    return false;
 }
 ```
 
@@ -435,12 +442,58 @@ bool canVisitAllSites(const Vector<GPoint>& sites, double travelTimeAvailable) {
 > ![](Sec4_Recursive_Backtracking.assets/image-20231211170036080.png)
 
 ```c++
+bool canVisitAllSites(const Vector<GPoint>& sites, double timeAvailable,
+                      Vector<GPoint>& result) {
+    /* If there aren't any sites, we can always visit them all! */
+    if (sites.isEmpty()) {
+        result.clear(); // Best option is the empty list.
+        return true;
+    }
 
+    /* Try all possible starting points and see if any of them work. */
+    for (int i = 0; i < sites.size(); i++) {
+        if (canVisitAllSitesRec(removeAt(sites, i), timeAvailable, sites[i],
+                                result) {
+            /* Prepend the starting city. */
+            result.insert(0, sites[i]);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool canVisitAllSitesRec(const Vector<GPoint>& sites, double timeAvailable,
+                         const GPoint& last, Vector<GPoint>& result) {
+    /* Base case: If no sites remain, we're done! */
+    if (sites.isEmpty()) {
+        result.clear(); // Empty list is the correct visit order here.
+        return true;
+    }
+    /* Recursive case: see where we go next. */
+    else {
+        for (int i = 0; i < sites.size(); i++) {
+            double distance = distanceBetween(last, sites[i]);
+            if (distance <= timeAvailable &&
+                canVisitAllSitesRec(removeAt(sites, i), timeAvailable – dist,
+                                    sites[i], result)) {
+                /* Result will have been filled in with the best sequence to use
+                 * given the remaining cities, so we just need to fill in this
+                 * particular city.
+                 */
+                result.insert(0, sites[i]);
+                return true;
+            }
+        }
+        /* Looks like no options worked. Oh well! */
+        return false;
+    }
+}
 ```
 
 
 
-# P4 Backtracking&Strings
+# P4 Pattern Matching(Hard)
+
 
 
 
