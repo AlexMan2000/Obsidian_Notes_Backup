@@ -250,37 +250,36 @@
 # Moore-Penrose Pseudoiniverse
 <a name="lw9FL"></a>
 ## Pseudoinverse Definition
-> ![image.png](./SVD_Pseudoinverse.assets/20230914_1515365295.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515382241.png)
+> [!def]
+> ![](./SVD_Pseudoinverse.assets/20230914_1515365295.png)![](./SVD_Pseudoinverse.assets/20230914_1515382241.png)
 
 
 
 
 <a name="Tlj0A"></a>
 ## Left/Right Inverses
+> [!important]
 > 1. 当$A\in \mathbb{R}^{m\times n}$列满秩时，即$r=Rank(A)=n\leq m$时:
 >    1. $A^{\dagger}A=(V_r\Sigma_r^{-1} U_r^{\top})(U_r\Sigma_r V_r^{\top})=V_rV_r^{\top}=V_nV_n^{\top}=I_n$
 >    2. $A^{\dagger}=(A^{\top}A)^{-1}A^{\top}$**(Left Inverse)**
-> 
-**推导:** $\begin{aligned}(A^{\top}A)^{-1}A^{\top}&=(V_r\Sigma_r^{\top}\Sigma_r V_r^{\top})^{-1}(U_r\Sigma_r V_r^{\top})^{\top}\\&=V_r(\Sigma_r^{\top}\Sigma_r)^{-1}V_r^{\top}V_r\Sigma_r^{\top}U_r^{\top}\\&=V_r(\Sigma_r^{\top}\Sigma_r)^{-1}\Sigma_r^{\top}U_r^{\top}\\&=V_r\Sigma_r^{-2}\Sigma_rU_r^{\top}\\&=V_r\Sigma_r^{-1}U_r^{\top}\\&=A^{\dagger}\end{aligned}$($V_r^{\top}=V_r^{-1}$, 因为$V_r=V_n$, 为方阵)
+> **推导:** $\begin{aligned}(A^{\top}A)^{-1}A^{\top}&=(V_r\Sigma_r^{\top}\Sigma_r V_r^{\top})^{-1}(U_r\Sigma_r V_r^{\top})^{\top}\\&=V_r(\Sigma_r^{\top}\Sigma_r)^{-1}V_r^{\top}V_r\Sigma_r^{\top}U_r^{\top}\\&=V_r(\Sigma_r^{\top}\Sigma_r)^{-1}\Sigma_r^{\top}U_r^{\top}\\&=V_r\Sigma_r^{-2}\Sigma_rU_r^{\top}\\&=V_r\Sigma_r^{-1}U_r^{\top}\\&=A^{\dagger}\end{aligned}$($V_r^{\top}=V_r^{-1}$, 因为$V_r=V_n$, 为方阵)
 >    3. $\Sigma^{\dagger}=(\Sigma^{\top}\Sigma)^{-1}\Sigma^{\top}$
-> 
-**推导:** $\begin{aligned}(A^{\top}A)^{-1}A^{\top}&=(V\Sigma^{\top}\Sigma V^{\top})^{-1}(U\Sigma V^{\top})^{\top}\\A^{\dagger}&=V(\Sigma^{\top}\Sigma)^{-1}V^{\top}V\Sigma^{\top}U^{\top}\\&=V(\Sigma^{\top}\Sigma)^{-1}\Sigma^{\top}U^{\top}\\&=V(\Sigma^{\top}\Sigma)^{-1}\Sigma^{\top}U^{\top}\\&=V\Sigma^{\dagger}U^{\top}\end{aligned}$
+> **推导:** $\begin{aligned}(A^{\top}A)^{-1}A^{\top}&=(V\Sigma^{\top}\Sigma V^{\top})^{-1}(U\Sigma V^{\top})^{\top}\\A^{\dagger}&=V(\Sigma^{\top}\Sigma)^{-1}V^{\top}V\Sigma^{\top}U^{\top}\\&=V(\Sigma^{\top}\Sigma)^{-1}\Sigma^{\top}U^{\top}\\&=V(\Sigma^{\top}\Sigma)^{-1}\Sigma^{\top}U^{\top}\\&=V\Sigma^{\dagger}U^{\top}\end{aligned}$
 >    4. 所有`Left Inverse`可以表示为$A^{li}=A^{\dagger}+Q^{\top}$, 其中$A^{\top}Q=0$($Q$列向量$\in Null(A^{\top})$)
 > 2. 当$A\in \mathbb{R}^{m\times n}$行满秩时，即$r=Rank(A)=m\leq n$时:
 >    1. $AA^{\dagger}=(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1} U_r^{\top})=U_rU_r^{\top}=U_mU_m^{\top}=I_m$
 >    2. $A^{\dagger}=A^{\top}(AA^{\top})^{-1}$**(Right Inverse)**
-> 
-**推导:** $\begin{aligned}A^{\top}(AA^{\top})^{-1}&=(U_r\Sigma_r V_r^{\top})^{\top}(U_r\Sigma_r\Sigma_r^{\top} U_r^{\top})^{-1}\\&=V_r\Sigma_r^{\top}U_r^{\top}U_r(\Sigma_r\Sigma_r^{\top})^{-1}U_r^{\top}\\&=V_r\Sigma_r^{\top}(\Sigma_r\Sigma_r^{\top})^{-1}U_r^{\top}\\&=V_r\Sigma_r\Sigma_r^{-2}U_r^{\top}\\&=V_r\Sigma_r^{-1}U_r^{\top}\\&=A^{\dagger}\end{aligned}$($U_r^{\top}=U_r^{-1}$, 因为$U_r=U_m$, 为方阵)
+> **推导:** $\begin{aligned}A^{\top}(AA^{\top})^{-1}&=(U_r\Sigma_r V_r^{\top})^{\top}(U_r\Sigma_r\Sigma_r^{\top} U_r^{\top})^{-1}\\&=V_r\Sigma_r^{\top}U_r^{\top}U_r(\Sigma_r\Sigma_r^{\top})^{-1}U_r^{\top}\\&=V_r\Sigma_r^{\top}(\Sigma_r\Sigma_r^{\top})^{-1}U_r^{\top}\\&=V_r\Sigma_r\Sigma_r^{-2}U_r^{\top}\\&=V_r\Sigma_r^{-1}U_r^{\top}\\&=A^{\dagger}\end{aligned}$($U_r^{\top}=U_r^{-1}$, 因为$U_r=U_m$, 为方阵)
 >    3. $\Sigma^{\dagger}=\Sigma^{\top}(\Sigma\Sigma^{\top})^{-1}$
-> 
-**推导:** $\begin{aligned}A^{\top}(AA^{\top})^{-1}&=(U\Sigma V^{\top})^{\top}(U\Sigma\Sigma^{\top} U^{\top})^{-1}\\A^{\dagger}&=V\Sigma^{\top}U^{\top}U(\Sigma\Sigma^{\top})^{-1}U^{\top}\\&=V\Sigma^{\top}(\Sigma\Sigma^{\top})^{-1}U^{\top}\\&=V\Sigma^{\dagger}U^{\top}\end{aligned}$
+> **推导:** $\begin{aligned}A^{\top}(AA^{\top})^{-1}&=(U\Sigma V^{\top})^{\top}(U\Sigma\Sigma^{\top} U^{\top})^{-1}\\A^{\dagger}&=V\Sigma^{\top}U^{\top}U(\Sigma\Sigma^{\top})^{-1}U^{\top}\\&=V\Sigma^{\top}(\Sigma\Sigma^{\top})^{-1}U^{\top}\\&=V\Sigma^{\dagger}U^{\top}\end{aligned}$
 >    4. 所有`Left Inverse`可以表示为$A^{ri}=A^{\dagger}+Q$, 其中$AQ=0$($Q$列向量$\in Null(A)$)
 
 
 
 <a name="rFSjc"></a>
 ## Misellaneous Properties
-> ![image.png](./SVD_Pseudoinverse.assets/20230914_1515409235.png)
+> [!property]
+> ![](./SVD_Pseudoinverse.assets/20230914_1515409235.png)
 > **还有一些常用性质, 假设**$A\in \mathbb{R}^{m\times n}$**:**
 > 1. $\Sigma\in \mathbb{R}^{m \times n}$, $\Sigma^{\dagger}\in \mathbb{R}^{n\times m}$
 > 2. 如果$A$列满秩，则$\Sigma^{\dagger}_{n\times m}=(\Sigma^{\top}\Sigma)^{-1}_{n\times n}\Sigma^{\top}_{n\times m}$。推导如上文。
@@ -290,7 +289,7 @@
 > **Proofs**(i): **如果$A$可逆，则$AA^{-1}=I$, $A=U_r\Sigma_r V_r^{\top}$, 所以$A^{-1}=(U_r\Sigma_r V_r^{\top})^{-1}=V_r\Sigma_r^{-1}U_r^{\top}=A^{\dagger}$<br />**(ii): **$(A^{\dagger})^{\dagger}=(V_r\Sigma_r^{-1}U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r^{-1}$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r V_r^{\top}=A$, 证毕。<br />**(iii):** $(A^{\top})^{\dagger}=(V_r\Sigma_r U_r^{\top})^{\dagger}$, 令$\widetilde{U}_r=V_r,\widetilde{V}_r=U_r,\widetilde{\Sigma}_r=\Sigma_r$, 即$(\widetilde{U}_r\widetilde{\Sigma}_r\widetilde{V}_r^{\top})^{\dagger}=\widetilde{V}_r\widetilde{\Sigma}_r^{-1}\widetilde{U}_r^{\top}=U_r\Sigma_r^{-1} V_r^{\top}=(V_r\Sigma_r^{-1}U_r^{\top})^{\top}=(A^{\dagger})^{\top}$<br />**(iv): **$(\alpha A)^{\dagger}=( U_r\alpha\Sigma_r V_r^{\top})^{\dagger}=V_r(\alpha\Sigma_r)^{\dagger}U_r^{\top}=V_r\alpha^{-1}\Sigma^{\dagger}U_r^{\top}=\alpha^{-1}A^{\dagger}$<br />**(v): **$AA^{\dagger}A=(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})=(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})=U_r\Sigma_r V_r^{\top}=A$<br />**(vi):**$A^{\dagger}AA^{\dagger}=(U_r\Sigma_r V_r^{\top})^{\dagger}(U_r\Sigma_r V_r^{\top})(U_r\Sigma_r V_r^{\top})^{\dagger}=(V_r\Sigma_r^{-1}U_r)(U_r\Sigma_r V_r^{\top})(V_r\Sigma_r^{-1}U_r^{\top})=V_r\Sigma_r U_r^{\top}=A^{\dagger}$<br />**(vii) 和 (viii) 见上文推导。**
 
 
-<a name="R9kUX"></a>
+
 ## Orthogonal Projectors
 > [!important]
 > 我们知道对于一个$d$维子空间$S$来说，存在一个`Basis`$\{\vec{b}_1,\vec{b}_2,\cdots, \vec{b}_d\}$, $\vec{b}_i\in \mathbb{R}^n$。

@@ -188,12 +188,14 @@
 
 
 ### Eigenvalues' Choice
+> [!example]
 > **Disc07B P1 Sp22**
-> ![image.png](./Stability_Feedback_Control.assets/20230722_0934588369.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934588465.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934582281.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934588607.png)![image.png](./Stability_Feedback_Control.assets/20230722_0934598198.png)
+> ![](./Stability_Feedback_Control.assets/20230722_0934588369.png)![](./Stability_Feedback_Control.assets/20230722_0934588465.png)![](./Stability_Feedback_Control.assets/20230722_0934582281.png)![](./Stability_Feedback_Control.assets/20230722_0934588607.png)![](./Stability_Feedback_Control.assets/20230722_0934598198.png)
 
 
 
 ## Summary
+> [!summary]
 > 对于一个离散系统$\vec{x}[i+1]=A\vec{x}[i]+B\vec{u}[i]$或者连续系统$\frac{d}{dt}\vec{x}(t)=A\vec{x}(t)+B\vec{u}(t)$来说，如果$A$有一些特征值$\lambda_k$(包括上三角化得到的)不满足`Stable`的条件，则我们可以对$\vec{u}[i]$做`Feedback Control`, 令$\vec{u}[i]=F\vec{x}[i]$, 此时我们可以得到一个新的系统:
 > $\vec{x}[i+1]=(A+BF)\vec{x}[i]$或者$\frac{d}{dt}\vec{x}(t)=(A+BF)\vec{x}(t)$
 > 令$A_{CL}=A+BF$, 我们定义了一个新的状态转移矩阵，我们期望通过改变$F$这个矩阵使得$A_{CL}$的特征值能够使得我们的系统稳定。

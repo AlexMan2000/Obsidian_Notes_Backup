@@ -218,6 +218,16 @@
 
 
 
+## Mean Value Theorem for Integrals
+> [!important]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231213212553866.png)
+
+> [!proof]
+> ![](L18_L19__Derivative__Differential_Rules.assets/image-20231213212603681.png)
+
+
+
+
 ## Monotonicity
 > [!thm]
 > ![image.png](L18_L19__Derivative__Differential_Rules.assets/20230302_1509258069.png)

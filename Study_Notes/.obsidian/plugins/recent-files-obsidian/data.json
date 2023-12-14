@@ -1,6 +1,102 @@
 {
   "recentFiles": [
     {
+      "basename": "Ch4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
+    },
+    {
+      "basename": "QCQPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
+    },
+    {
+      "basename": "Quadratic Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.md"
+    },
+    {
+      "basename": "Newton_Methods",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Newton_Methods.md"
+    },
+    {
+      "basename": "SDPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SDPs.md"
+    },
+    {
+      "basename": "SOCPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
+    },
+    {
+      "basename": "SVD_Pseudoinverse",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
+    },
+    {
+      "basename": "3.8_左逆右逆和伪逆_极分解",
+      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.8_左逆右逆和伪逆_极分解.md"
+    },
+    {
+      "basename": "Upper_Triangulation_Schur_Decomposition",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "Ch3_线性变换",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
+    },
+    {
+      "basename": "Ch1_向量空间与子空间",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
+    },
+    {
+      "basename": "Ch2_张成空间，维数和基",
+      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Linear Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Duality Theory",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Duality Theory.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "L18_L19__Derivative__Differential_Rules",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
+    },
+    {
+      "basename": "Sum&Asymptotics",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md"
+    },
+    {
       "basename": "Directed Graph",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
     },
@@ -21,36 +117,12 @@
       "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
     },
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
       "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convexity.md"
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/4_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/1_Linear_Algebra_Review/Structured_Matrices.md"
-    },
-    {
-      "basename": "Ch4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "Duality Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127/3_Convex_Optimization/Duality Theory.md"
     },
     {
       "basename": "Relations_Partial_Orders",
@@ -127,74 +199,6 @@
     {
       "basename": "Enumeration_BackTracking",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Enumeration_BackTracking.md"
-    },
-    {
-      "basename": "Sec3_Recursion_BackTracking",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec3_Recursion_BackTracking.md"
-    },
-    {
-      "basename": "X86_Control",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Control.md"
-    },
-    {
-      "basename": "X86_Data",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Data.md"
-    },
-    {
-      "basename": "Code_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "Assign3_Recursion_Backtracking",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign3_Recursion_Backtracking.md"
-    },
-    {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/3_Recursion_Asymptotics/Lectures_Readings.md"
-    },
-    {
-      "basename": "Sorting_Searching",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
-    },
-    {
-      "basename": "Drawing 2023-12-10 22.00.18.excalidraw",
-      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md"
-    },
-    {
-      "basename": "image.jpg",
-      "path": "image.jpg.md"
-    },
-    {
-      "basename": "Graphs",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md"
-    },
-    {
-      "basename": "Advanced Topics",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md"
-    },
-    {
-      "basename": "Numerics",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md"
-    },
-    {
-      "basename": "Shortest Path",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest Path.md"
-    },
-    {
-      "basename": "Dynamic Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic Programming.md"
-    },
-    {
-      "basename": "Hashing",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Hashing.md"
     }
   ],
   "omittedPaths": [],

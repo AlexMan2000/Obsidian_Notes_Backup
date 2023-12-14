@@ -1,4 +1,4 @@
-# Basic Definitions
+  # Basic Definitions
 ## Directedness
 > [!def]
 > ![](Directed%20Graph.assets/image-20231211230846730.png)
