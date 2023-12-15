@@ -484,26 +484,6 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 > 试想一个有尖点的凸集。
 
 
-# Schur Complement
-### Definition
-> ![image.png](Convexity.assets/20231023_2248057261.png)
-
-
-
-## Applications
-### Determinant
-> $det(X)=det(A)det(S)$
-> 
-
-
-
-### Solving Linear Systems
-> 
-
-
-
-# Disproving Convexity
-
 
 
 # Chapter Exercises

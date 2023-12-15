@@ -8,24 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7a700c96992402d1",
+            "id": "e9791f61260244a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e9791f61260244a6",
+            "id": "fa103728bbfdec0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5dc8442c5e4b538c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Jensen",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -155,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,45 +241,46 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7a700c96992402d1",
+  "active": "e9791f61260244a6",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Newton_Methods.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SDPs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.8_左逆右逆和伪逆_极分解.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214104820958.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214104805273.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214103528914.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214103028668.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214103023579.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets/image-20231214102733998.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231215000725589.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231215000714639.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231215000653297.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231215000602634.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231215000557219.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214234100846.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214234054886.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214230843591.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214230441623.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214230430859.png",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.assets/image-20231214222857661.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md",
-    "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.assets/image-20231214091930754.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.assets/image-20231214091926576.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.assets/image-20231214091809399.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear Programs.assets/image-20231214091807391.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Duality Theory.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
-    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md",
-    "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/高阶知识点和练习.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Multivariate_Gaussian_Analysis.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Multivariate_Gaussian_Analysis.assets",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/高阶知识点和练习.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/高阶知识点和练习.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/迭代期望与随机变量的和.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.assets",
@@ -276,7 +289,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.assets",
-    "Computer_Science/Data_Structures_Algorithms/Stanford_CS161",
     "未命名.canvas"
   ]
 }

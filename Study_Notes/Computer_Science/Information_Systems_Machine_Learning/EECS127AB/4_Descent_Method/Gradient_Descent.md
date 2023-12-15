@@ -46,12 +46,24 @@
 > ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231108111333971.png)
 
 > [!proof] Proof 12.1.3
-> The first part follows from the first order condition of a convex function and lemma 12.1.2 
-> The second part follows from 
+> The first part follows from the first order condition of a convex function.
+> The second part:
+> - The first inequality follows from 
+> - The second inequality follows from lemma 12.1.2 by applying it twice with $f(\vec{x})\leq f(\vec{y})+...$ and $f(\vec{y})\leq f(\vec{x})+...$ and add them up or we can use cauchy inequality for vectors.
 
 > [!proof] Proof 8.1.7
 > By lemma 12.1.2 we have:
 > ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231108111707483.png)
+
+
+### Gradient Bound 
+> [!thm]
+> ![](Gradient_Descent.assets/image-20231213205719519.png)
+
+> [!proof]
+> ![](Gradient_Descent.assets/image-20231213222730914.png)
+
+
 
 ## mu-Strongly Convexity
 ### Definition 1: Jensen's Inequality
@@ -69,15 +81,30 @@
 
 ### Definition 2: First-Order Condition
 > [!def]
-> ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222956395.png)![](../3_Convex_Optimization/Convex_Functions.assets/image-20231108102725005.png)![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222540926.png)![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104223000885.png)
+> ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222956395.png)![](../3_Convex_Optimization/Convex_Functions.assets/image-20231108102725005.png)![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222540926.png)
 > **Remarks:**
 > - 其中$\frac{\mu}{2}\|\vec{y}-\vec{x}\|^2=\frac{1}{2}(\vec{y}-\vec{x})^{\top}\begin{bmatrix} \mu&0&\cdots&0\\0&\mu&\cdots&0\\\vdots&0&\ddots&\vdots\\0&0&\cdots&\mu\end{bmatrix}(\vec{y}-\vec{x})$, 而我们知道$f(\vec{x})+\langle\nabla f(\vec{x}), \vec{y}-\vec{x}\rangle+\frac{\mu\|\vec{y}-\vec{x}\|^2}{2}$是一个`Quadratic Function`, 所以本质上如果对于可微函数$f$来说，我们能够找到一个`Quadratic Lower Bound Like this`, 那么这个函数是$\mu$-strongly convex的。 
 > - 和`Taylor Theorem`做一个对比: `Taylor Theorem`的目的是找到一个最接近原函数的下界$\begin{aligned} f(\vec{y}) \approx f(\vec{x})+\nabla^{\top}(\vec{x}) \cdot(\vec{y}-\vec{x})+\frac{1}{2}(\vec{y}-\vec{x})^{\top} \nabla^2 f(\vec{x})(\vec{y}-\vec{x})\end{aligned}$, 而$\mu$-strongly convex 只需要存在这样一个下界即可。
 > - 另外，`Taylor Theorem`中的$\nabla f(\vec{x})$在不同的$\vec{x}$下的值是不一样的，所以在不同的$\vec{x}$下这个`Quadratic Term`是会随$\vec{x}$的位置变化的，而`mu-strongly convex`的这个下界实际上是给海森矩阵规定了一个下界，使得`Hessian Matrix`在所有$\vec{x}$处都是这个下界。
 > 
 
-> [!proof]
-> ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222551310.png)
+> [!proof] Proof 8.1.5 
+> ![](Gradient_Descent.assets/image-20231214230430859.png)![](Gradient_Descent.assets/image-20231214230441623.png)
+
+> [!proof] Proof 8.1.7
+> Just apply theorem 8.1.5 on $g(x)=f(x)-\mu\frac{\|x\|^2}{2}$.
+
+
+### Gradient Bound
+> [!thm]
+> ![](Gradient_Descent.assets/image-20231214230843591.png)
+
+> [!proof] Proof 8.1.5 and 8.1.6
+> ![](../3_Convex_Optimization/Convex_Functions.assets/image-20231104222551310.png)![](Gradient_Descent.assets/image-20231214234100846.png)
+> Note that the gradient of $\nabla f(\vec{x})^{\top}(\vec{x}-\vec{y})+\frac{\mu}{2}\|\vec{x}-\vec{y}\|_2^2$ is $\nabla f(\vec{x})\cdot I+\frac{\mu}{2}\cdot I\cdot 2(\vec{y}-\vec{x})$, setting it to zero and we get $\vec{y}=\vec{x}-\frac{\nabla f(\vec{x})}{\mu}$, fitting it back to the objective function and we get the desired result.
+
+
+
 
 
 ## Important Properties
@@ -135,21 +162,25 @@
 
 
 
-# Versions of Gradient Descents
+# Unconstrained Gradient Descents
 > [!motiv] Motivation
-> ![](Gradient_Descent.assets/image-20231108095325288.png)
+> ![](Gradient_Descent.assets/image-20231108095325288.png)![](Gradient_Descent.assets/image-20231214220053728.png)
+
+
 
 
 ## First Order Descent Methods
 ### Algorithm Scheme
 > [!algo] Algorithm
-> ![](Gradient_Descent.assets/image-20231108095540460.png)
+> ![](Gradient_Descent.assets/image-20231108095540460.png)![](Gradient_Descent.assets/image-20231214220141260.png)
+
+
 
 
 
 ### Descent Directions
 > [!important]
-> ![](Gradient_Descent.assets/image-20231108095457055.png)
+> ![](Gradient_Descent.assets/image-20231214220128672.png)![](Gradient_Descent.assets/image-20231108095457055.png)
 
 
 
@@ -180,8 +211,31 @@
 
 
 ## Stochastic Gradient Descent
+### Algorithm Scheme
 > [!def]
+> ![](Gradient_Descent.assets/image-20231214215810431.png)![](Gradient_Descent.assets/image-20231214215909745.png)
 
+> [!example] Finding Centroid
+> ![](Gradient_Descent.assets/image-20231214220545511.png)![](Gradient_Descent.assets/image-20231214220551473.png)
+
+
+
+# Constained Gradient Descent
+## Motivations
+> [!motiv] Idea
+> ![](Gradient_Descent.assets/image-20231214220923332.png)
+
+
+## Projected Gradient Descent
+> [!def]
+> ![](Gradient_Descent.assets/image-20231214221002228.png)![](Gradient_Descent.assets/image-20231214221319887.png)
+
+
+
+
+## Conditional Gradient Descent - Frank-Wolfe Method
+> [!def]
+> ![](Gradient_Descent.assets/image-20231214222310704.png)![](Gradient_Descent.assets/image-20231214222321331.png)
 
 
 
@@ -229,18 +283,19 @@
 
 
 
-## Gradient Bound for L-Smooth Functions
+## Convergence Speed for Convex and  L-Smooth 
 > [!thm]
-> ![](Gradient_Descent.assets/image-20231213205719519.png)
+> ![](Gradient_Descent.assets/image-20231214222857661.png)
 
 > [!proof]
-> ![](Gradient_Descent.assets/image-20231213222730914.png)
+> ![](Gradient_Descent.assets/image-20231215000557219.png)![](Gradient_Descent.assets/image-20231215000602634.png)
 
 
 
 
 
-## Theorem - Any U-strongly&L-Smooth Functions
+
+## Convergence Speed for U-strongly&L-Smooth Functions
 ### Important Lemma
 > [!important]
 > 从 [Quadratic Bounds](../3_Convex_Optimization/Convex_Functions.md#Quadratic%20Bounds)  我们知道，对于一个$\mu$-strongly convex且$L$-Smooth的函数，我们有:
@@ -249,13 +304,25 @@
 > 这个`Lemma`暗含了这类函数的一个重要性质：如果我们在这类函数上进行梯度下降算法，则总是存在一个`Step Size` $\eta=\frac{1}{L}$使得梯度下降的过程收敛。
 
 
-### Main Theorem -Convergence Rate
+### Convergence Rate on Optimal Points
 > [!thm]
 > (Main thm)Given the gradient step:$$\overrightarrow{x_{t+1}}=\overrightarrow{x_t}-\eta \cdot \nabla f\left(\overrightarrow{x_t}\right)$$, we want to prove: $$\left\|\overrightarrow{x_{t+1}}-\overrightarrow{x_*}\right\|_2^2 \leq\left(1-\frac{\mu}{L}\right)^{t+1}\left\|\overrightarrow{x_0}-\overrightarrow{x_*}\right\|_2^2 \text {. }$$ for all $\mu$-strongly convex and $L$-smooth function for some $\mu$ and $L$.
 > 
+> Here, the bigger then $\frac{\mu}{L}$ is, the faster the convergence is, that is, the fewer steps that we need to get to the desired error bound.
+> 
+> In the language of matrix, the smaller the conditional number of a matrix $\frac{L}{\mu}$ is, the faster the convergence rate is.
 
 > [!proof]
 > ![](Gradient_Descent.assets/image-20231213223350182.png)![](Gradient_Descent.assets/image-20231213223354658.png)
+
+
+### Convergence Rate on Optimal Values
+> [!thm]
+> ![](Gradient_Descent.assets/image-20231215000714639.png)
+
+> [!proof]
+> ![](Gradient_Descent.assets/image-20231215000725589.png)
+
 
 
 

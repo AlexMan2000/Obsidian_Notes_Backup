@@ -40,6 +40,7 @@ static int find(int[] arr, int val) {
 
 > [!example] One Possible Specfication
 > The notion of behavioral equivalence is in the eye of the beholder — that is, the client. In order to make it possible to substitute one implementation for another, and to know when this is acceptable, we need a specification that states exactly what the client depends on.
+> 
 > In this case, a specification that would allow these two implementations to be behaviorally equivalent might be:
 > ![](Ch4_Specifications.assets/image-20231211110502572.png)
 > ![](Ch4_Specifications.assets/image-20231211110817814.png)![](Ch4_Specifications.assets/image-20231211110943505.png)![](Ch4_Specifications.assets/image-20231211113532230.png)![](Ch4_Specifications.assets/image-20231211113828569.png)

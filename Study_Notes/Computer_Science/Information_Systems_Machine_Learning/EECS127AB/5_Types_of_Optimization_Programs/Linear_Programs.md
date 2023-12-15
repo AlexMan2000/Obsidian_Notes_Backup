@@ -2,35 +2,35 @@
 
 ## General Form LPs
 > [!def]
-> ![](Linear%20Programs.assets/image-20231213224732929.png)
+> ![](Linear_Programs.assets/image-20231213224732929.png)
 
 
 
 
 ## Standard Form LPs - Conic Form
 > [!def]
-> ![](Linear%20Programs.assets/image-20231129122742640.png)![](Linear%20Programs.assets/image-20231213224640502.png)
+> ![](Linear_Programs.assets/image-20231129122742640.png)![](Linear_Programs.assets/image-20231213224640502.png)
 
 
 
 
 ## Converting LP to Stand Form
 > [!important] Method
-> ![](Linear%20Programs.assets/image-20231213231145503.png)![](Linear%20Programs.assets/image-20231213231150959.png)
-![](Linear%20Programs.assets/image-20231213231130399.png)![](Linear%20Programs.assets/image-20231213231408682.png)
+> ![](Linear_Programs.assets/image-20231213231145503.png)![](Linear_Programs.assets/image-20231213231150959.png)
+![](Linear_Programs.assets/image-20231213231130399.png)![](Linear_Programs.assets/image-20231213231408682.png)
 
 > [!example]
-> ![](Linear%20Programs.assets/image-20231129122836866.png)![](Linear%20Programs.assets/image-20231129122631591.png)![](Linear%20Programs.assets/image-20231129122638713.png)
+> ![](Linear_Programs.assets/image-20231129122836866.png)![](Linear_Programs.assets/image-20231129122631591.png)![](Linear_Programs.assets/image-20231129122638713.png)
 
 ### Any Linear Program is Convex Problem
 > [!property]
-> ![](Linear%20Programs.assets/image-20231129122926905.png)
+> ![](Linear_Programs.assets/image-20231129122926905.png)
 
 
 
 ## Dual of Standard Form Linear Program
 > [!important]
-> ![](Linear%20Programs.assets/image-20231129123000901.png)![](Linear%20Programs.assets/image-20231129123009603.png)![](Linear%20Programs.assets/image-20231129123017555.png)
+> ![](Linear_Programs.assets/image-20231129123000901.png)![](Linear_Programs.assets/image-20231129123009603.png)![](Linear_Programs.assets/image-20231129123017555.png)
 
 
 
@@ -41,16 +41,18 @@
 
 # Solving Linear Programs - Simplex Method Idea
 > [!motiv] Motivation
-> ![](Linear%20Programs.assets/image-20231129123051076.png)![](Linear%20Programs.assets/image-20231129123311347.png)
-> What simplex method is saying is that for linear programs there is at least one optimal solution that is extreme point. 
+> ![](Linear_Programs.assets/image-20231129123051076.png)![](Linear_Programs.assets/image-20231129123311347.png)
+> What simplex method is saying is that for **bounded** linear programs there is at least one optimal solution that is extreme point. 
 > 
-> It is not saying that all the optimal points are extreme points.
+> It is not saying that all the optimal points are extreme points, for example if the contour line of our objective function is parallel to the boundary of the polyhedra, under which case all the points(definitely including vertices) will be the optimal points.
+> 
+> But we will later show that for a bounded linear program, **all the optimal points must be on the boundary of the feasible set.**
 
 
 
 ## Extreme Point, Vertex
 > [!def]
-> ![](Linear%20Programs.assets/image-20231129123455006.png)
+> ![](Linear_Programs.assets/image-20231129123455006.png)
 
 > [!important] Counter-Definition
 > This definition seems weird, since it defines something by saying ... doesn't exist. So it's better to work with its counter definition, which goes like:
@@ -58,7 +60,7 @@
 > **If for any $\vec{y},\vec{z}\in K\backslash\{\vec{x}\}$ and $\theta\in \{0,1\}$ we have $\vec{x}=\theta\vec{y}+(1-\theta)\vec{z}$, then $\vec{x}$ is not a vertex of $K$**.
 
 > [!example]
-> ![](Linear%20Programs.assets/image-20231129180548947.png)
+> ![](Linear_Programs.assets/image-20231129180548947.png)
 
 
 ## Polyhedra
@@ -69,20 +71,20 @@
 > 
 > Bounded polyhedra is a polygon.
 > 
-> **In all, bounded polyhedra <=> Contains on line <=> Has a vertex <=> Is a polygon.**
+> **In all, bounded polyhedra <=> Contains no line <=> Has a vertex <=> Is a polygon.**
 
 
 
 
 ## Geometric Interpretation of LP
 > [!important]
-> ![](Linear%20Programs.assets/image-20231213225921701.png)![](Linear%20Programs.assets/image-20231213225928120.png)
+> ![](Linear_Programs.assets/image-20231213225921701.png)![](Linear_Programs.assets/image-20231213225928120.png)
 
 
 
 ## Main Theorem of Linear Programming
 > [!thm]
-> ![](Linear%20Programs.assets/image-20231213230052752.png)
+> ![](Linear_Programs.assets/image-20231213230052752.png)
 > Here we assume that the feasible set contains no line and thus has an extreme point.
 > 
 > Since LP's feasible set is always a polyhedra, the above condition ensures that our feasible set contains a vertex. 
@@ -109,10 +111,22 @@
 
 > [!proof] Formal Proof
 > To formalize the proof, we have the following derivations:
-> ![](Linear%20Programs.assets/image-20231213230655926.png)
+> ![](Linear_Programs.assets/image-20231213230655926.png)
 
 > [!important] Idea behind the theorem
-> ![](Linear%20Programs.assets/image-20231213230716233.png)
+> ![](Linear_Programs.assets/image-20231213230716233.png)
+
+
+## Bounded Feasible Set => All Optimals on the boundary
+> [!important] EECS127 Fa22 HW10 P2
+> ==Important==: Next we want to prove that for a bounded LP program, the optimal point must appear on the boundary, not the interior of the feasible set. That is, all the optimal points must 
+> ![](Linear_Programs.assets/image-20231214210428675.png)![](Linear_Programs.assets/image-20231214210435819.png)![](Linear_Programs.assets/image-20231214210444046.png)
+
+
+
+
+
+
 
 
 
@@ -120,13 +134,13 @@
 # Extreme Points, Vertices, BFS
 ## Extreme Points
 > [!def]
-> ![](Linear%20Programs.assets/image-20231214091704691.png)![](Linear%20Programs.assets/image-20231214091735938.png)
+> ![](Linear_Programs.assets/image-20231214091704691.png)![](Linear_Programs.assets/image-20231214091735938.png)
 
 
 
 ## Vertex
 > [!def]
-> ![](Linear%20Programs.assets/image-20231214091809399.png)![](Linear%20Programs.assets/image-20231214091930754.png)
+> ![](Linear_Programs.assets/image-20231214091809399.png)![](Linear_Programs.assets/image-20231214091930754.png)
 
 
 

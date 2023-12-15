@@ -335,6 +335,36 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 
+# Schur Complement
+### Definition
+> [!def]
+> ![](Convexity.assets/20231023_2248057261.png)
+
+
+## Theorem
+> [!thm]
+> ![](Convexity.assets/image-20231214201402903.png)
+
+> [!proof]
+> 
+
+
+
+
+
+## Applications
+### Determinant
+> $det(X)=det(A)det(S)$
+> 
+
+
+
+### Solving Linear Systems
+> 
+
+
+
+
 # Projection Matrices
 ## Definition
 > 
@@ -422,8 +452,6 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ## Applications: Spectral Clustering Algorithm
-
-
 
 ### Code
 ```python

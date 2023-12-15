@@ -7,7 +7,9 @@
 > [!proof] Prove Generalized Gensen's Inequality
 > ![](Convex_Functions.assets/image-20231103111850188.png)![](Convex_Functions.assets/image-20231103131039239.png)
 
-
+> [!property] Applications of Jensen's Inequality
+> 1. Show geometric Inequality: $\sqrt{ab}\leq \frac{a+b}{2}$, let $f(x)=-log(x)$, which is convex and $\theta=\frac{1}{2}$, we could prove the inequality.
+> 2. Show Cauchy Inequality: $n\left(\sum_{i=1}^n x_i^2\right) \geq\left(\sum_{i=1}^n x_i\right)^2$, let $f(x)=x^2$ and $\theta=\frac{1}{n}$
 
 
 ### Definition 2: Restricted to a line
@@ -99,14 +101,14 @@
 
 ## Epi/Hypo-graph of Functions
 > [!def]
-> ![image.png](Convex_Functions.assets/20231023_2245548465.png)![image.png](Convex_Functions.assets/20231023_2245568651.png)
+> ![](Convex_Functions.assets/20231023_2245548465.png)![](Convex_Functions.assets/20231023_2245568651.png)
 > 证明一个函数是否是凸函数的一个重要的方法是证明其`Epigraph`is convex set. 这个性质使得我们能可以在`Convex Function`和`Convex Set`之间互相转化。
 > **总的来说:**
 > 1. `Convex Function <=> Epigraph is Convex Set`.
 > 2. `Concave Function <=>  Hypograph is Convex Set`.
 
 > [!example] Matrix Fractional Function
-> ![image.png](Convex_Functions.assets/20231023_2245588951.png)
+> ![](Convex_Functions.assets/20231023_2245588951.png)
 
 
 ## Some common convex functions
@@ -175,9 +177,6 @@
 > ![](Convex_Functions.assets/image-20231105125740327.png)![](Convex_Functions.assets/image-20231105125751115.png)![](Convex_Functions.assets/image-20231105125807821.png)
 
 
-## Properties From Convexity
-> 
-
 
 # Operations Preserving Convexity
 ## Affine Mapping
@@ -220,9 +219,21 @@
 
 ## Pointwise Maximum
 ### Fundations
+> [!important]
 > ![](Convex_Functions.assets/image-20231101120344693.png)
+> The key logic is as follows(the pointwise maximum of a function):
+> $$\begin{align}\theta f_1(\vec{x})+(1-\theta)f_1(\vec{y})&\leq\theta maxf_1(\vec{x})+(1-\theta)maxf_1(\vec{y})\\&\leq \theta max\{f_1(\vec{x}),f_2(\vec{x})\}+(1-\theta)max\{f_1(\vec{y}),f_2(\vec{y})\}\end{align}$$
+> $$\begin{align}\theta f_2(\vec{x})+(1-\theta)f_2(\vec{y})&\leq\theta maxf_2(\vec{x})+(1-\theta)maxf_2(\vec{y})\\&\leq \theta max\{f_1(\vec{x}),f_2(\vec{x})\}+(1-\theta)max\{f_1(\vec{y}),f_2(\vec{y})\}\end{align}$$
+> Here we use the property of maximum function:
+> If $f_1(\vec{x}),f_2(\vec{x})\leq f_3(\vec{x})$, then $\max\{f_1(\vec{x}),f_2(\vec{x})\}\leq f_3(\vec{x})$
+> 
+> Or we could apply another logic about max: $max\{A+B,C+D\}\leq max\{A+C, B+D\}$, the proof is as follows:
+> 
+> 
+
+> [!proof]
 > Alternative Proof: Proof by Epigraph
-> ![image.png](Convex_Functions.assets/20231023_2246167709.png)
+> ![](Convex_Functions.assets/20231023_2246167709.png)
 
 
 

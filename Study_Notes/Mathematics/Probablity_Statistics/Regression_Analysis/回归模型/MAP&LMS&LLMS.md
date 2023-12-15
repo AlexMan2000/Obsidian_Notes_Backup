@@ -92,6 +92,15 @@
 
 
 
+## Example 4 - Database Error
+> [!example]
+> ![](MAP&LMS&LLMS.assets/image-20231214151759722.png)
+
+> [!solution]
+> ![](MAP&LMS&LLMS.assets/image-20231214151810099.png)![](MAP&LMS&LLMS.assets/image-20231214151815361.png)
+
+
+
 
 
 
