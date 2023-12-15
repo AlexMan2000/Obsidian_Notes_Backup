@@ -367,12 +367,15 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 # Projection Matrices
 ## Definition
+> [!important]
+> For a subspace $S$ with basis $B$, the projection matrix onto this subspace is $BB^{\top}$ and is denoted by $P_S$.
 > 
 
 
 
 ## Some Important Properties
-> 
+> [!important]
+> One can think projection matrix as a linear operator that sends the vector onto the subspace, so if $\vec{x}\in S$, then $P_S(\vec{x})=\vec{x}$. If $\vec{x}\in$ orthogonal complement of $S$, then $P_S(\vec{x})=\vec{0}$.
 
 
 
@@ -382,11 +385,23 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 
+
 ## Perron-Frobenius Theorem
 > 
 
 
+
+
 # Graphs and Graph Laplacian
+## Basic Definition of Graphs
+> [!def]
+> ![](Structured_Matrices.assets/image-20231215183203693.png)
+
+> [!property] Maximum Eigenvalue of Adjacency of degree x is x
+> ![](Structured_Matrices.assets/image-20231215184939558.png)![](Structured_Matrices.assets/image-20231215184952749.png)
+
+
+
 ## Laplacian Matrix
 ### Definition
 > [!def]
@@ -415,6 +430,8 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 > 因为add edges的最终结果一定会使得graph变成connected，即只有一个connected component, 此时$\lambda$从等于零变成大于零。
 > 下面是严格的证明:
 > ![](Structured_Matrices.assets/image-20231105141837881.png)
+> ![](Structured_Matrices.assets/image-20231215181244772.png)![](Structured_Matrices.assets/image-20231215181312059.png)
+
 
 > [!property] 4 Eigenvalues can scale with the number of vertices
 > 对于$A$这个对称矩阵来说，如果
@@ -446,8 +463,18 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ### Properties
-> [!property]
-> 
+> [!property] Smallest Eigenvalue is zero
+> ![](Structured_Matrices.assets/image-20231215181446518.png)![](Structured_Matrices.assets/image-20231215181512601.png)
+
+> [!property] Largest Eigenvalues is smaller than 2
+> ![](Structured_Matrices.assets/image-20231215181613937.png)![](Structured_Matrices.assets/image-20231215181627213.png)![](Structured_Matrices.assets/image-20231215181652014.png)
+
+
+> [!property] All Eigenvalues Fall between -1 and 1
+> ![](Structured_Matrices.assets/image-20231215181727916.png)
+
+
+
 
 
 

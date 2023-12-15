@@ -1,36 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
-    },
-    {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
-    },
-    {
-      "basename": "Linear_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md"
-    },
-    {
       "basename": "Structured_Matrices",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
     },
     {
       "basename": "Vector_OPT_Basics",
@@ -41,12 +17,40 @@
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
     },
     {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md"
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
     },
     {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md"
+    },
+    {
+      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
+    },
+    {
+      "basename": "Linear_Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md"
+    },
+    {
+      "basename": "Convexity",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md"
     },
     {
       "basename": "Convex_Problems",
@@ -195,10 +199,6 @@
     {
       "basename": "Graph_Theory",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "File System Design",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.md"
     }
   ],
   "omittedPaths": [],

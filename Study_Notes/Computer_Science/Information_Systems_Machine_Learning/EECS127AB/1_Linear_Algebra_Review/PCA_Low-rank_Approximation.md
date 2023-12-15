@@ -16,10 +16,27 @@
 
 
 ## Principal Component
-> ![image.png](PCA_Low-rank_Approximation.assets/20231023_2308171305.png)![image.png](PCA_Low-rank_Approximation.assets/20231023_2308199809.png)
+> [!def]
+> ![](PCA_Low-rank_Approximation.assets/20231023_2308171305.png)![](PCA_Low-rank_Approximation.assets/20231023_2308199809.png)
+> **Geometric Interpretation**
+> ![](PCA_Low-rank_Approximation.assets/20231023_2308219661.png)
+> ![](PCA_Low-rank_Approximation.assets/20231023_2308224828.png)
 
-**Geometric Interpretation**![image.png](PCA_Low-rank_Approximation.assets/20231023_2308219661.png)
-> ![image.png](PCA_Low-rank_Approximation.assets/20231023_2308224828.png)
+
+## Projected Dataset
+> [!important]
+> Suppose we have data matrix $X=\begin{bmatrix} \vec{x}_1^{\top}\\\vec{x}_2^{\top}\\\cdots\\\vec{x}_n^{\top}\end{bmatrix}\in\mathbb{R}^{n\times d}$ and $rk(A)=r$.
+> 
+> Let $A=U\Sigma V^{\top}$, then the first $k\leq r$ principal components should be the the first $k$ right singular vectors $\vec{v}_1,\cdots,\vec{v}_k$ of matrix $A$ and also the first k eigenvectors of matrix $A^{\top}A$.
+> 
+> Then each row of the projected dataset(interpreted as coordinates) $\vec{y}_i$ should be $V^{\top}\vec{x}_i$ or written as $\begin{bmatrix} \langle\vec{v}_1,\vec{x}_i\rangle\\\langle\vec{v}_2,\vec{x}_i\rangle\\\cdots\\\langle\vec{v}_k,\vec{x}_i\rangle\end{bmatrix}$
+
+
+
+
+## Recovered Dataset
+> [!important]
+> The recovered dataset is $VV^{\top}\vec{x}_i$ for each data point.
 
 
 

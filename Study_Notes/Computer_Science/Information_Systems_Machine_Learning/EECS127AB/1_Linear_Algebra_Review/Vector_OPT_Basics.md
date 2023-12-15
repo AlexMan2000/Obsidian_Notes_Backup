@@ -379,8 +379,8 @@
 
 <a name="U9iKe"></a>
 ## Projection onto Subspaces
-> ![image.png](Vector_OPT_Basics.assets/20230914_1535156939.png)![image.png](Vector_OPT_Basics.assets/20230914_1535169439.png)
-
+> [!important]
+> ![](Vector_OPT_Basics.assets/20230914_1535156939.png)![](Vector_OPT_Basics.assets/20230914_1535169439.png)
 
 
 
@@ -389,6 +389,15 @@
 > ![image.png](Vector_OPT_Basics.assets/20230914_1535183898.png)![image.png](Vector_OPT_Basics.assets/20230914_1535201780.png)
 
 
+## Pythagorean Theorem
+> [!important] 
+> If $\vec{x}\perp \vec{y}$ then $\|\vec{x}+\vec{y}\|_2=\|\vec{x}\|_2^2+\|\vec{y}\|_2^2$
+> If $\vec{x}^*$ is the projection of $\vec{x}$ onto subspace $S$, then $(\vec{x}-\vec{x}^*)\perp\vec{x}$ and $\|\vec{x}^*\|_2^2=\|\vec{x}^*-\vec{x}+\vec{x}\|_2^2=\|\vec{x}^*-\vec{x}\|_2^2+\|\vec{x}\|_2^2\geq\|\vec{x}\|_2^2$
+
+
+## Exercises
+> [!example]
+> ![](Vector_OPT_Basics.assets/image-20231215180458503.png)![](Vector_OPT_Basics.assets/image-20231215180404245.png)
 
 
 <a name="mG6rU"></a>
