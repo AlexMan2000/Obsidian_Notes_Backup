@@ -35,12 +35,13 @@
 ### Defintion 4: Second Order Condition
 > [!def] Second Order Condition
 > ![](Convex_Functions.assets/image-20231101091518411.png)![](Convex_Functions.assets/image-20231101095409365.png)
-> **注意:** 函数使用二阶条件必须满足函数在其定义域上处处二阶可导。
+> **注意:** 
+> 1. 函数使用二阶条件必须满足函数在其定义域上处处二阶可导。
+> 2. 对于Quadratic Function$f(\vec{x})=\vec{x}^{\top}H\vec{x}+\vec{b}^{\top}\vec{x}+c$来说，$\nabla f(\vec{x})\succ0$if and only if it is strictly convex, the proof is deferred to [Some common convex functions](#Some%20common%20convex%20functions)
+> 
 
 > [!proof]
 > ![](Convex_Functions.assets/image-20231115120848117.png)![](Convex_Functions.assets/image-20231115120853668.png)![](Convex_Functions.assets/image-20231115120906996.png)
-
-
 
 > [!example] Examples
 > ![](Convex_Functions.assets/20231023_2246106208.png)![](Convex_Functions.assets/20231023_2246102904.png)
@@ -67,6 +68,11 @@
 > 这样的定义方法保证了，如果$f$ 是凸函数，则$\tilde{f}$ 也是凸函数，而且是扩展了定义域之后的凸函数。
 > 读者可能会想，为什么我们要在$x\notin dom(f)$的时候取正无穷，本质上是因为如果不取正无穷，$\tilde{f}$ 就不一定能保持凸性了。
 > 对于$f$ 是concave的情况，我们一般定义$-\infty$。
+> 
+> ![](Convex_Functions.assets/image-20231218102751663.png)
+> 注意, 凸函数的扩展方式不唯一，取决于我们的问题类型。
+
+
 
 > [!important]
 > ![](Convex_Functions.assets/image-20231101084605534.png)
@@ -115,17 +121,34 @@
 ### Quadratic Functions
 > [!important] 
 > ![](Convex_Functions.assets/image-20231101095533452.png)
-> 二次函数是为数不多的，$\nabla^{2}f(\vec{x})\succ0\iff f~is~stritly~convex$ 的例子。
+> 二次函数是为数不多的，$\nabla^{2}f(\vec{x})\succ0\iff f~is~strictly~convex$ 的例子。
+> 
+> ![](Convex_Functions.assets/image-20231220114906283.png)
+
+> [!proof] Proof for if and only if for strictly convexity and P.D. Hessian Matrix.
+> We want to prove that if $f(\vec{x})=(1 / 2) x^T P x+q^T x+r$ is strictly convex, then $\nabla^2f(\vec{x})\succ0$。
+> First suppose that $f$ is strictly convex, then we have:
+> $\forall \vec{x} \neq \vec{y} \in R^n, \lambda \in(0,1)$, we have:$$
+> f(\lambda \vec{x}+(1-\lambda) \vec{y})<\lambda f(\vec{x})+(1-\lambda) f(\vec{y})$$
+> Then plug the expression of $f(\vec{x})$ in and we get;
+> $$\begin{aligned}&\left.\frac{1}{2}(\lambda \vec{x}+(1-\lambda) \vec{y})^{\top} P(\lambda \vec{x}+(1-\lambda) \vec{y})+\vec{q}^{\top}(\lambda \vec{x}+(1-\lambda))^y\right)+r<\lambda\left(\frac{1}{2} \vec{x}^{\top} P \vec{x}+\vec{q}^{\top} \vec{x}+r\right)+(1-\lambda)\left(\frac{1}{2} \vec{y}^{\top} P \vec{y}+\vec{q}^{\top} \vec{y}+r\right) \\& \frac{1}{2} \lambda^2 \vec{x}^{\top} P \vec{x}+\frac{1}{2}(1-\lambda)^2 \vec{y}^{\top} P \vec{y}+\lambda(1-\lambda) \vec{x}^{\top} P \vec{y}+\vec{q}^{\top}(\lambda \vec{x}+(1-\lambda) \vec{y})+r<\frac{1}{2} \lambda \vec{x}^{\top} P \vec{x}+\frac{1}{2}(1-\lambda) \vec{y}^{\top} P \vec{y}+\lambda \vec{q}^{\top} \vec{x}+(1-\lambda) \vec{q}^{\top} \vec{y}+r \\& \frac{1}{2} \lambda^2 \vec{x}^{\top} P \vec{x}+\frac{1}{2}(1-\lambda)^2 \vec{y}^{\top} P \vec{y}+\lambda(1-\lambda) \vec{x}^{\top} P \vec{y}<\frac{1}{2} \lambda \vec{x}^{\top} P \vec{x}+\frac{1}{2}(1-\lambda) \vec{y}^{\top} P \vec{y} \\&\left.\frac{1}{2}\left(\lambda-\lambda^2\right)^{\top} P \vec{x}+\frac{1}{2}(1-\lambda)-(1-\lambda)^2\right)^{\top} P \vec{y}-\lambda(1-\lambda) \vec{x}^{\top} P \vec{y}>0 \\& \frac{1}{2} \lambda(1-\lambda) \vec{x}^{\top} P \vec{x}+\frac{1}{2} \lambda(1-\lambda) \vec{y}^{\top} P \vec{y}-\lambda(1-\lambda) \vec{x}^{\top} P \vec{y}>0 \\& \frac{1}{2} \lambda(1-\lambda)(\vec{x}-\vec{y})^{\top} P(\vec{x}-\vec{y})>0 \\&(\vec{x}-\vec{y})^{\top} P(\vec{x}-\vec{y})>0 \\& \Rightarrow P>0\end{aligned}$$
+
+
+### More on Absolute/Power Function Differentiability
+> [!important]
+> ![](Convex_Functions.assets/image-20231219082202792.png)![](Convex_Functions.assets/image-20231219082253521.png)![](Convex_Functions.assets/image-20231219082303526.png)![](Convex_Functions.assets/image-20231219082828249.png)
+
+
 
 
 
 ### Functions on R
 > [!example] Examples
-> ![image.png](Convex_Functions.assets/20231023_2245592268.png)![image.png](Convex_Functions.assets/20231023_2246006779.png)
+> ![](Convex_Functions.assets/20231023_2245592268.png)![](Convex_Functions.assets/20231023_2246006779.png)
 > 1. **Exponential: **$(e^{ax})''=a^2e^{ax}\geq 0,\forall x\in dom(f)$
 > 2. **Powers:** $(x^a)''=a(a-1)x^{a-2}$, 于是当$a(a-1)\leq 0$时，$(x^a)''\leq 0$-> Concave，否则$(x^a)''\geq 0$-> Convex
 > 3. **Powers of absolute value:** 
->    1. 首先注意到，如果$p<0$, 则 $dom(f)$ 不是凸集，当$p=1$时，函数不可微，但是可以使用`Definition 1/2`判断其凸性。当$p=0$时，函数是常值函数，此时函数既是凸函数又是凹函数。当$0<p<1$时，函数既不是凸函数又不是凹函数。
+>    1. 首先注意到，如果$p<0$, 则 $dom(f)$ 不是凸集，当$p=1$时，函数不可微，但是可以使用`Definition 1/2`判断其凸性。当$p=0$时，函数是常值函数，此时函数既是凸函数又是凹函数。当$0<p<1$时，函数既不是凸函数又不是凹函数, 画图即可判断。
 >    2. 当$p\geq 2$时，函数处处二阶可微，所以我们可以用二阶条件判断凸性。
 > 	   1. $\forall x>0, (|x|^p)''=p(p-1)x^{p-2}$, when $p> 1$, we have $p(p-1)x^{p-2}\geq 0$
 > 	   2. $\forall x<0$, $(|x|^p)''=((-x)^p)^{''}=p(p-1)(-x)^{p-2}$, which is the same as above.
@@ -139,25 +162,25 @@
 
 ### Functions on R^n
 > [!example] Examples
-> ![image.png](Convex_Functions.assets/20231023_2246025766.png)![image.png](Convex_Functions.assets/20231023_2246036586.png)
+> ![](Convex_Functions.assets/20231023_2246025766.png)![](Convex_Functions.assets/20231023_2246036586.png)
 > 1. **Norm:** $\|\theta x+(1-\theta)y\|_p\leq \theta \|x\|_p+(1-\theta) \|y\|_p$ by triangle inequality and homogenity. 这里$p>0$，因为当$p=0$时$\|x\|_0$表示零范数，而零范数不是范数，因为不满足`homogenity`。
 > 2. **Max Function: **
 >    1. **Prove by Definition:** $\theta \vec{x_i} + (1-\theta)\vec{y_i}\leq \theta \max(\vec{x})+(1-\theta)\max(\vec{y}),\forall i=1,2,\cdots, n$, 所以$\max(\theta \vec{x}+(1-\theta)\vec{y})\leq \theta \max(\vec{x})+(1-\theta)\max(\vec{y})$
 >    2. **Prove by Epigragh:  Define **$f(\vec{x})=\max\{f_1(\vec{x}),f_2(\vec{x},\cdots, f_n(\vec{x}))\}$where **$f_i(\vec{x})=x_i$**, then:
 > $\begin{aligned}epi(f)&=\{(\vec{x},t)~~|~~\vec{x}\in dom(f),f(\vec{x})\leq t\}\\&=\{(\vec{x},t)~~|~~\vec{x}\in \bigcap_{i=1}^n dom(f_i),f_1(\vec{x}),\cdots, f_n(\vec{x})\leq t\}\\&=\bigcap_{i=1}^n\{(\vec{x},t)~~|~~\vec{x}\in dom(f_i),f_i(\vec{x})\leq t\}\\&=\bigcap_{i=1}^n epi(f_i)\end{aligned}$, since $f_i(\vec{x})$'s are all affine functions, which are guaranteed to be convex, thus we have $epi(f_i)$'s are convex set, and that $epi(f)$is convex.
 > 3. **Quadratic Over Linear Function:** 
-> ![image.png](Convex_Functions.assets/20231023_2246053673.png)
+> ![](Convex_Functions.assets/20231023_2246053673.png)
 > The last inequality comes from a very important property of dyad matrix $\vec{u}\vec{v}^{\top}$where if $\vec{u}=\vec{v}$, we have $\vec{v}\vec{v}^{\top}$is convex.
 > 4. **Log-Sum-Exp: **
 > 	这个函数是一个解析函数，性质较好，同时解析函数就是无穷可导的函数。
 > - 当$i\neq j$时，$\frac{\partial ^2f}{\partial x_ix_j}=\frac{-e^{x_i}e^{x_j}}{(e^{x_1}+e^{x_2}+\cdots+e^{x_n})^2}$
 > - 当$i= j$时，$\frac{\partial ^2f}{\partial x_i^2}=\frac{-e^{x_i}e^{x_i}+e^{x_i}(e^{x_1}+\cdots+e^{x_n})}{(e^{x_1}+e^{x_2}+\cdots+e^{x_n})^2}$
-> ![image.png](Convex_Functions.assets/20231023_2246063791.png)
+> ![](Convex_Functions.assets/20231023_2246063791.png)
 > 5. **Geometric Mean:**
-> ![image.png](Convex_Functions.assets/20231023_2246086478.png)
+> ![](Convex_Functions.assets/20231023_2246086478.png)
 > 其中，$\begin{aligned}\frac{\partial^2 f(x)}{\partial x_k\partial x_l}&=\frac{1}{n}(\frac{1}{n}-1)(\prod_{i=1}^n x_i)^{\frac{1}{n}-2}(\prod_{j\neq k}x_j)(\prod_{i\neq k,l}x_i)+\frac{1}{n}(\prod_{i=1}^n x_i)^{\frac{1}{n}-1}(\prod_{i\neq k,l}x_i)\\&=\frac{(\prod_{i=1}^nx_i)^{\frac{1}{n}}}{n^2x_kx_l}\end{aligned}$
 > 6. **Log-Determinant:**
-> ![image.png](Convex_Functions.assets/20231023_2246104253.png)
+> ![](Convex_Functions.assets/20231023_2246104253.png)
 > **推导中使用到了几个重要的性质：**
 > 	1. $det(ABC)=det(A)det(B)det(C)$
 > 	2. If $Z\in \mathbf{S}_{++}$, then $Z^{-\frac{1}{2}}$exists.
@@ -218,7 +241,7 @@
 
 
 ## Pointwise Maximum
-### Fundations
+### Theorem
 > [!important]
 > ![](Convex_Functions.assets/image-20231101120344693.png)
 > The key logic is as follows(the pointwise maximum of a function):
@@ -236,16 +259,17 @@
 > ![](Convex_Functions.assets/20231023_2246167709.png)
 
 
-
-### Piecewise Linear Function
+### Applications
+#### Piecewise Linear Function
+> [!example]
 > As an extension to point-wise maximum
-> ![image.png](Convex_Functions.assets/20231023_2246179087.png)![image.png](Convex_Functions.assets/20231023_2246184725.png)
+> ![](Convex_Functions.assets/20231023_2246179087.png)![](Convex_Functions.assets/20231023_2246184725.png)
 
 
 
-### NN Weighted Sum of r largest components
+#### Sum of r largest components
 > [!important]
-> ![image.png](Convex_Functions.assets/20231023_2246206555.png)![image.png](Convex_Functions.assets/20231023_2246223596.png)
+> ![](Convex_Functions.assets/image-20231218101044564.png)![BV Ch3](Convex_Functions.assets/20231023_2246206555.png)![Exercise 3.19](Convex_Functions.assets/20231023_2246223596.png)
 > **对于**$(a)$**来说:**
 > 
 > ![](Convex_Functions.assets/image-20231101121136772.png)![](Convex_Functions.assets/image-20231101121151361.png)
@@ -255,24 +279,50 @@
 
 
 
-### Matrix-2-Norm
+#### Matrix-2-Norm
 > [!example]
 > ![](Convex_Functions.assets/image-20231105125939453.png)![](Convex_Functions.assets/image-20231105130537508.png)
 
 
 
+#### Largest Eigenvalues
+> [!important]
+> ![](Convex_Functions.assets/image-20231218101124058.png)
+
+
+
+#### Norms Plus Linear
+> [!example]
+> ![](Convex_Functions.assets/image-20231218101217716.png)![](Convex_Functions.assets/image-20231218101358950.png)
+
+
 
 
 ## Pointwise Supremum
-### Definition
+### Definition of Sup and Inf(Sequence)
+> [!def]
+> ![](Convex_Functions.assets/image-20231218101852160.png)
+
+
+### Definition of Open/Closed Set
+> [!def]
+> ![](Convex_Functions.assets/image-20231218101909608.png)
+
+
+
+
+### Definition of Pointwise Supreme
 > [!def]
 > ![](Convex_Functions.assets/image-20231101122046683.png)
+> 注意这里是 for each y, can be though of as a sequence of function $\{f_1(x,y_1),f(x,y_2),\cdots,f_n(x,y_n)\}$ and finding the maximum of them and supreme of them when $n\to \infty$. Since each of these functions are a function about $x$, they are pointwise supreme of functions of $x$ and thus is convex.
 
 
 ### Maximum Eigenvalue
 > [!example]
 > ![](Convex_Functions.assets/image-20231101123141856.png)
-> 注意到这里 $\vec{y}^{\top}X\vec{y}$ 是一个关于 $X$ 的线性函数，因为$\vec{y}^{\top}X\vec{y}=\sum_{i=1}^{n}X_{ii}y_i^2+\sum_{i,j,i\neq j}y_iy_jX_{ij}$，而线性函数一定是凸函数。
+> 注意到这里对于任意$\vec{y}$, $\vec{y}^{\top}X\vec{y}$ 是一个关于 $X$ 的凸函数, 原因是根据定义:
+> $\forall X,Y\in\mathbb{R}^{n\times n}$, we have $$\begin{align}f(\theta X+(1-\theta)Y)&=\vec{y}^{\top}(\theta X+(1-\theta)Y)\vec{y}\\&=\theta\vec{y}^{\top}X\vec{y}+(1-\theta)\vec{y}^{\top}Y\vec{y}\\&=\theta f(X)+(1-\theta)f(Y)\\&\leq \theta f(X)+(1-\theta)f(Y)\end{align}$$
+> 所以$f(X)$是一个关于$X$的凸函数。
 
 
 
@@ -281,6 +331,7 @@
 ### Fundations - Composition
 > [!important] 
 > ![](Convex_Functions.assets/image-20231101124120692.png)
+> 即$g$的值域在$f$的定义域中。
 
 
 ### Scalar Composition (k=1)
@@ -307,10 +358,18 @@
 > 但是现在有个问题就是$g(\theta \vec{x}+(1-\theta)\vec{y})$不一定属于$dom(h)$, 我们需要证明$g(\theta \vec{x}+(1-\theta)\vec{y})\in dom(h)$。
 > 我们使用反证法，假设$g(\theta \vec{x}+(1-\theta)\vec{y})\notin dom(h)$, 因为$\tilde{h}$是不减的，所以$\tilde{h}(g(\theta \vec{x}+(1-\theta)\vec{y}))\leq \tilde{h}(\theta g(\vec{x})+(1-\theta)g(\vec{y}))$, 但我们知道，对于任意不属于$dom(h)$但属于$dom(\tilde{h})$的输入来说，其经过函数$h$的输出都是$+\infty$, 所以等式左边是$+\infty$, 而等式右边是`finite value`, 因为$\theta g(\vec{x})+(1-\theta)g(\vec{y})\in dom(h)$，所以推出了矛盾，所以原命题成立。
 > ![](Convex_Functions.assets/image-20231102154641878.png)
+> 这个函数的一种扩展方式是$0$扩展，但是因为其定义域的限制，我们无法保证其凸性。
 
-> [!example] Examples
+> [!example] Examples n=1 case
 > ![](Convex_Functions.assets/image-20231102131236831.png)
-> 其中第四点我们需要额外关注一下，此时$h(z)=z^p(z\geq 0)$，即$dom(h)=\mathbb{R}_+$, 于是我们需要扩展$h$, 但是如果扩展成$h(z)=\begin{cases} h(z)&z\in dom(h)\\\infty&z\notin dom(h)\end{cases}$, 则$\tilde{h}$并不是一个单调的函数，也就不能使用上面的四条规则来判断$f=h(g(x))$的凸性了。于是我们对于这个特殊的函数必须采用其他的扩展构造方法，其中一种是$h(z)=\begin{cases} h(z)&z\in dom(h)\\0&z\notin dom(h)\end{cases}$。
+> **Notes:**
+> 1. $h(z)=e^z$, 因为$h$的定义域是$\mathbb{R}$, 所以我们不需要扩展，使用性质2。
+> 2. $h(z)=log(z)$, 因为$h$的定义域是$\mathbb{R}_{++}$而不是$\mathbb{R}$, 所以我们需要做扩展，使用性质3。
+> 3. $h(z)=\frac{1}{z}$, 因为$h$的定义域是$\mathbb{R}_+$, 所以需要做扩展使得$h(\mathbb{R}_{--})=\infty$, 使用性质2。
+> 4. 其中第四点我们需要额外关注一下，此时$h(z)=z^p(z\geq 0)$，即$dom(h)=\mathbb{R}_+$, 于是我们需要扩展$h$:
+> 	1. 如果扩展成$h(z)=\begin{cases} h(z)&z\in dom(h)\\\infty&z\notin dom(h)\end{cases}$, 则$\tilde{h}$并不是一个单调的函数，也就不能使用上面的四条规则来判断$f=h(g(x))$的凸性了。
+> 	2. 如果扩展成$h(z)=\begin{cases} h(z)&z\in dom(h)\\-\infty&z\notin dom(h)\end{cases}$, 则$\tilde{h}$并不是一个凸函数，不符合函数保凸性质。
+> 	3. 于是我们对于这个特殊的函数必须采用其他的扩展构造方法，其中一种是$h(z)=\begin{cases} h(z)&z\in dom(h)\\0&z\notin dom(h)\end{cases}$, this is actually the relu activation function.
 
 
 
@@ -381,6 +440,11 @@
 ## Definition
 > [!def]
 > ![](Convex_Functions.assets/image-20231102152048131.png)![](Convex_Functions.assets/image-20231102152057357.png)
+> More rigorously we could define convex conjugate with extended value as follows:
+> 
+> ![](Convex_Functions.assets/image-20231218100658340.png)
+
+
 
 
 

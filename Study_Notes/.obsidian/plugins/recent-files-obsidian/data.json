@@ -1,28 +1,124 @@
 {
   "recentFiles": [
     {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+      "basename": "_Assign4_Recursion_to_the_Rescue",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md"
     },
     {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+      "basename": "Ch4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
     },
     {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+      "basename": "Algorithmic_Thinking",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
     },
     {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
+      "basename": "Numerics",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md"
+    },
+    {
+      "basename": "Stable Matching Problem",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
+    },
+    {
+      "basename": "Heap Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "Relations_Partial_Orders",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
+    },
+    {
+      "basename": "Ch3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md"
+    },
+    {
+      "basename": "Sec4_Recursive_Backtracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md"
+    },
+    {
+      "basename": "Graph_Theory",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+    },
+    {
+      "basename": "Computability_FSM",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.md"
+    },
+    {
+      "basename": "Introduction to Metric Space",
+      "path": "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md"
+    },
+    {
+      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
+    },
+    {
+      "basename": "image-20231209210129323.png",
+      "path": "Stable Matching Problem.assets/image-20231209210129323.png.md"
+    },
+    {
+      "basename": "1.6_Integrating_Factors",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.6_Integrating_Factors.md"
+    },
+    {
+      "basename": "3.6_Convolution",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md"
+    },
+    {
+      "basename": "3.1_Fourier_Series__Basics",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.1_Fourier_Series__Basics.md"
+    },
+    {
+      "basename": "2.7_Pure_Resonance",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/2.7_Pure_Resonance.md"
+    },
+    {
+      "basename": "3.7_Laplace_Transform",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
+    },
+    {
+      "basename": "3.8_Partial_Fractions",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.8_Partial_Fractions.md"
+    },
+    {
+      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
+    },
+    {
+      "basename": "L7_L8__Convergence_Sequences",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
+    },
+    {
+      "basename": "Probability Formulas and Theorems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
+    },
+    {
+      "basename": "Linear_Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md"
+    },
+    {
+      "basename": "L18_L19__Derivative__Differential_Rules",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
     },
     {
       "basename": "Methodology on Optimization",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
     },
     {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+      "basename": "Convex_Sets",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+    },
+    {
+      "basename": "Subgradient_Differentials",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md"
     },
     {
       "basename": "Convex_Functions",
@@ -30,175 +126,79 @@
     },
     {
       "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md"
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
     },
     {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
-    },
-    {
-      "basename": "Linear_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md"
-    },
-    {
-      "basename": "Convexity",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "Sum&Asymptotics",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/高阶知识点和练习.md"
-    },
-    {
-      "basename": "Multivariate_Gaussian_Analysis",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Multivariate_Gaussian_Analysis.md"
-    },
-    {
-      "basename": "Random_Vectors",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/高阶知识点和练习.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "泊松过程",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md"
-    },
-    {
-      "basename": "大数定律，中心极限定理和收敛定理",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
-    },
-    {
-      "basename": "高阶知识点和练习",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/高阶知识点和练习.md"
-    },
-    {
-      "basename": "迭代期望与随机变量的和",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/迭代期望与随机变量的和.md"
-    },
-    {
-      "basename": "衍生随机变量__贝叶斯公式变体__协方差",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/衍生随机变量__贝叶斯公式变体__协方差.md"
-    },
-    {
-      "basename": "MAP&LMS&LLMS",
-      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md"
-    },
-    {
-      "basename": "二元连续型变量",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/二元连续型变量.md"
-    },
-    {
-      "basename": "Ch4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
     },
     {
       "basename": "QCQPs",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
     },
     {
-      "basename": "Quadratic Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.md"
-    },
-    {
-      "basename": "Newton_Methods",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Newton_Methods.md"
-    },
-    {
-      "basename": "SDPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SDPs.md"
+      "basename": "Quadratic_Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
     },
     {
       "basename": "SOCPs",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
     },
     {
-      "basename": "3.8_左逆右逆和伪逆_极分解",
-      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.8_左逆右逆和伪逆_极分解.md"
+      "basename": "Analysis_of_LASSO",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
     },
     {
-      "basename": "Upper_Triangulation_Schur_Decomposition",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
+      "basename": "Important Applications Of Basic Probability",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
     },
     {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+      "basename": "Convergence Theory",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
     },
     {
-      "basename": "Ch3_线性变换",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch3_线性变换.md"
+      "basename": "Classification",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.md"
     },
     {
-      "basename": "Ch1_向量空间与子空间",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch1_向量空间与子空间.md"
+      "basename": "Unsupervised Learning",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Unsupervised Learning.md"
     },
     {
-      "basename": "Ch2_张成空间，维数和基",
-      "path": "Mathematics/Linear_Algebra/18.700_self_notes/Ch2_张成空间，维数和基.md"
+      "basename": "SVM",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/7_Applications/SVM.md"
     },
     {
-      "basename": "L18_L19__Derivative__Differential_Rules",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
+      "basename": "Kernel_Methods",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md"
     },
     {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+      "basename": "Newton's_Method",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md"
     },
     {
-      "basename": "Basic_Induction",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Basic_Induction.md"
+      "basename": "Coordinate_Descent",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.md"
     },
     {
-      "basename": "Structural_Induction",
-      "path": "Computer_Science/Discrete_Mathematics/Unit1_Proof/1_2_Induction/Structural_Induction.md"
+      "basename": "Interior_Point_Method",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Interior_Point_Method.md"
     },
     {
-      "basename": "Functions_Cardinality",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Functions_Cardinality.md"
+      "basename": "Drawing 2023-12-16 22.26.27.excalidraw",
+      "path": "Excalidraw/Drawing 2023-12-16 22.26.27.excalidraw.md"
     },
     {
-      "basename": "Counting_Rules",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Counting_Rules.md"
+      "basename": "Robust_Optimization_Models",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Robust_Optimization_Models.md"
     },
     {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+      "basename": "Correlation_GPS",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16A/3_Machine_Learning_Basics/Correlation_GPS.md"
     },
     {
-      "basename": "Relations_Partial_Orders",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
-    },
-    {
-      "basename": "Graph_Theory",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
+      "basename": "Geometric_Programming",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Geometric_Programming.md"
     }
   ],
   "omittedPaths": [],

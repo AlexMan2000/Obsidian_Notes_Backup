@@ -71,9 +71,8 @@
 # SVD - Algebraic Properties
 <a name="Mmqs5"></a>
 ## Important Lemma
-```ad-lem
-![image.png](./SVD_Pseudoinverse.assets/20230914_1514004989.png)
-```
+> [!lemma]
+> ![image.png](./SVD_Pseudoinverse.assets/20230914_1514004989.png)
 
 
 ## A^TA and AA^T
@@ -156,8 +155,6 @@
 > 或者先$\text{DIAGONALIZE}(AA^T)$, 得到$U$和$\Lambda$, 然后通过$\vec{v}_i=\frac{A^T \vec{u}_i}{\sqrt{\lambda_i}}$构造$V$, 选取参数数量较小的计算。
 
 
-
-<a name="BWQZG"></a>
 ## Uniqueness Theorem
 > ![image.png](./SVD_Pseudoinverse.assets/20230914_1515053703.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515073811.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515102139.png)![image.png](./SVD_Pseudoinverse.assets/20230914_1515123111.png)
 

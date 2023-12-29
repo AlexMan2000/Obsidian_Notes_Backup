@@ -8,55 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e9791f61260244a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fa103728bbfdec0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5dc8442c5e4b538c",
+            "id": "76604fc75542fa6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5b9cea26bbac550f",
+            "id": "70092f58d24be417",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "888556f25f3a8fc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Jensen",
+                "query": "tag:#Binary",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 301.5110321044922
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 217.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,54 +242,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fa103728bbfdec0e",
+  "active": "888556f25f3a8fc7",
   "lastOpenFiles": [
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215184952749.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215184939558.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215183203693.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181727916.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181652014.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181627213.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181613937.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181512601.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181446518.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181312059.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.assets/image-20231215181244772.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Method/Gradient_Descent.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204354098.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204245591.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204154106.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204139571.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204123651.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204114469.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228195150052.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228195142217.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194832325.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194758209.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194443480.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.assets",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.assets",
+    "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+    "Stable Matching Problem.assets/image-20231209210129323.png.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/1.6_Integrating_Factors.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.1_Fourier_Series__Basics.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/2.7_Pure_Resonance.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.8_Partial_Fractions.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convexity.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Sum&Asymptotics.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/联合连续随机变量/高阶知识点和练习.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Multivariate_Gaussian_Analysis.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Random_Vectors.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/4_多元随机变量/Multivariate_Gaussian_Analysis.assets",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/高阶知识点和练习.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/6_迭代期望_随机变量的和/高阶知识点和练习.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic Programs.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/Computer_Systems_A_Programmers_Perspective(3rd).pdf",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File System Design.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Untitled",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/6_Labs",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.assets",
+    "Mathematics/NYU_Master_Program/DS-GA-1001/Unsupervised Learning.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity",
     "未命名.canvas"
   ]
 }

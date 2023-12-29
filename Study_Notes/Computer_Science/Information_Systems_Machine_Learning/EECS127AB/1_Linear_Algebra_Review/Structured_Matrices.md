@@ -247,6 +247,34 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 
 
 
+## Eigens and Singulars Myth
+### Eigenvalues and Singular Values?
+> [!important]
+> **For symmetric matrices $A\in \mathbb{S}^{n\times n}$, we  have $\lambda_i(A^2)=\lambda_i(A)^2,\forall i=1,2\cdots,n$.** 
+> 
+> Suppose $A\vec{x}=\lambda\vec{x}$, then $A^{\top}A\vec{x}=A^2\vec{x}=\lambda A\vec{x}=\lambda^2\vec{x}$, which shows that if $\lambda$ is an eigenvalue of $A$, then $\lambda^2$ is an eigenvalue for $A^2$.
+> 
+> **Thus as a corollary, we have for all symmetric matrices $A\in\mathbb{S}^{n\times n}$, we have $\lambda_i(A^2)=\lambda_i(A)^2=\sigma_i(A)^2$.** 
+> 
+> Since $\sigma_i(A)=\sqrt{\lambda_i(A^{\top}A)}$, taking the square we get the result.
+> 
+> **For $A\in \mathbb{S}_{+}^{n\times n}$, we have $\lambda_i(A)=\sigma_i(A)$.**
+> 
+> Since $\sigma_i(A)$ for P.S.D. matrices are all greater than or equal to zero. Then taking the square root we get the desired result. Note that for P.D matrices, the above statement means that eigenvalues are equal to singular values and they are all non-zero.
+
+
+### Eigenvectors and Singular Vectors?
+> [!important]
+> ![](Structured_Matrices.assets/image-20231216151638873.png)![](Structured_Matrices.assets/image-20231216151644545.png)
+> The key intuition is that if $A$ is P.S.D, then $A^{\top}A$ and $AA^{\top}$ is the same and thus the eigenvectors of $A^{\top}A$(Right Singular Vectors) and eigenvectors of $AA^{\top}$(Left Singular Vectors) are the same. The reason why eigenvalues and singular values are the same is that singular values are defined to be non-negative and this is only possible why the square rooting operation is valid, which is when $\lambda_{i}(1)\geq 0,\forall i$, which means P.S.D.
+
+
+### Uniqueness 
+> [!important]
+> For $A\in \mathbb{S}_+^{n\times n}$, the SVD and Eigen-decomposition is unique if **all singular values of $A$(including zero singular values) are distinct**, if we constrain the length of eigenvectors to be one and don't care about the sign of singular vectors.
+
+
+
 ## Advanced Properties
 > [!property] 
 > 1.**半正定矩阵的和: **如果$A,B\in \mathbb{S}_+^n$, 则$A+B\in \mathbb{S}_+^n$。更一般的，如果$A_i\in \mathbb{S}_+^n$, 我们有$\sum_{i=1}^n A_i\in \mathbb{S}_+^n$。（Closed under addition）
@@ -264,17 +292,17 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 
 
 ## Congruence Transformation
-> ![image.png](Structured_Matrices.assets/20231023_2321571282.png)
+> [!thm]
+> ![](Structured_Matrices.assets/20231023_2321571282.png)
 
 > [!proof]
-> ![image.png](Structured_Matrices.assets/20231023_2321581365.png)
-> ![image.png](Structured_Matrices.assets/20231023_2321594761.png)
-
+> ![](Structured_Matrices.assets/20231023_2321581365.png)![](Structured_Matrices.assets/20231023_2321594761.png)
 
 
 
 ## Ellipsoid Shape
 ### Examples
+> [!example]
 > ![image.png](Structured_Matrices.assets/20231023_2322015403.png)
 > 回忆一下椭圆方程是$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$, 其中椭圆和$x$轴的交点是$(\pm a,0)$，和$y$轴的交点是$(0,\pm b)$。
 
@@ -338,30 +366,19 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 # Schur Complement
 ### Definition
 > [!def]
-> ![](Convexity.assets/20231023_2248057261.png)
+> ![](../3_Convex_Optimization/Convex_Sets.assets/20231023_2248057261.png)
 
 
 ## Theorem
 > [!thm]
-> ![](Convexity.assets/image-20231214201402903.png)
+> ![](../3_Convex_Optimization/Convex_Sets.assets/image-20231214201402903.png)![](Structured_Matrices.assets/image-20231216212213667.png)
 
 > [!proof]
-> 
-
-
-
+> We will need to use Congruence Transformation Theorem: [Congruence Transformation](Structured_Matrices.md#Congruence%20Transformation)
+> ![](Structured_Matrices.assets/image-20231216213214574.png)
 
 
 ## Applications
-### Determinant
-> $det(X)=det(A)det(S)$
-> 
-
-
-
-### Solving Linear Systems
-> 
-
 
 
 
@@ -397,8 +414,22 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 > [!def]
 > ![](Structured_Matrices.assets/image-20231215183203693.png)
 
-> [!property] Maximum Eigenvalue of Adjacency of degree x is x
+
+### Properties of Adjacency Matrix
+> [!property] Maximum Value of an Eigenvalue of Adjacency of degree x is x
 > ![](Structured_Matrices.assets/image-20231215184939558.png)![](Structured_Matrices.assets/image-20231215184952749.png)
+
+> [!property] The maximum eigenvalues is greater than average degree
+> ![](Structured_Matrices.assets/image-20231216154145054.png)
+> We follow from the definition of the maximum eigenvalue $\lambda_{max}(A)=\max_{\vec{v}\in \mathbb{R}^n}\vec{v}^{\top}A\vec{v}$ where $\|\vec{v}\|_2^2=1$. 
+> 
+> By definition of the quadratic form, we have $\max_{\vec{v}\in \mathbb{R}^{n}}\vec{v}^{\top}A\vec{v}\geq \sum\limits_{i}\sum\limits_{j}A_{ij}v_iv_j,\forall\vec{v}\in\mathbb{R}^n$ , if we pick $\vec{v}=\frac{1}{\sqrt{n}}\mathbb{1}$, then:
+> $$\begin{align}\sum\limits_{i}\sum\limits_{j}A_{ij}v_iv_j&=\sum\limits_{i}v_i\frac{deg(i)}{\sqrt{n}}\\&=\frac{1}{n}\sum\limits_{i=1}^ndeg(i)\\&=\overline{d}\end{align}$$
+
+> [!property] Regular Graph and Eigenvalues
+> ![](Structured_Matrices.assets/image-20231216154811287.png)
+> We know $|\lambda|\leq d_{max}$, so when the graph is d-regular, we know that $\sum\limits_jA_{ij}v_j=d_{max}v_j$ when $\vec{v}_i=1,\forall i$, thus we pick $\vec{v}=\mathbb{1}$ to be the corresponding eigenvector.
+
 
 
 

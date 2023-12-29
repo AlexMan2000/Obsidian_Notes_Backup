@@ -39,56 +39,8 @@
 
 
 ## Problem Transformation
-### Original Optimization Problem
-> [!def]
-> 假设我们有如下的优化问题:
-> ![](Convex_Problems.assets/image-20231105101428399.png)
-> 我们尝试将其转化为等价的优化问题。
-
-### Scaling
-> [!example]
-> ![](Convex_Problems.assets/image-20231105101410399.png)
-
-
-### Change of Variables
 > [!important]
-> ![](Convex_Problems.assets/image-20231105101806279.png)
-
-
-### Transformation of Objective and Constraints
-> [!important]
-> ![](Convex_Problems.assets/image-20231105101935888.png)
->
-
->[!example] L2 Norm
->![](Convex_Problems.assets/image-20231105102246839.png)
-
-
-
-
-### Slack Variables - 降维
-> [!important]
-> ![](Convex_Problems.assets/image-20231109110450166.png)![](Convex_Problems.assets/image-20231109110500417.png)
-
-
-
-
-
-
-### Elimiating Linear Equality Constraint
-> [!important]
-> ![](Convex_Problems.assets/image-20231105103649358.png)
-> 本质上这种等价方法是在给我们的优化问题降维。
-
-
-
-
-### Eliminating Equality Constraints
-> [!important]
-> ![](Convex_Problems.assets/image-20231105102408912.png)
-> 这种方法本质上是将$h_i(\vec{x})=0,i=1,2\cdots, m$看成是方程组，然后$\vec{x}=\phi(\vec{z})$表示我们可以用一个函数$\phi$来描述上述方程组的解集，这样我们就可以丢掉$h_i$这些等式约束。区别是现在的优化问题变成了和 $\vec{z}$ 相关的优化问题。这样一来如果我们在这个等价的优化问题上求出了$\vec{z}^*$, 则通过简单的函数变换得到$\vec{x}^*=\phi(\vec{z}^*)$。
-> - 有人可能会问，为什么我们能够找到这样的函数$\phi$, 设想一下我们在求解线性方程组时经常将其写成$A\vec{x}=\vec{z}$的形式，而$\vec{x}=A^{\dagger}\vec{z}+\mathcal{N}(A)$, 所以我们是可以找到一个线性函数满足$\vec{x}=\phi(\vec{z})$的。
-> - 当然上述的方法只适用于消除线性约束。
+> Details see [Problem Transformation with Examples](Methodology%20on%20Optimization.md#Problem%20Transformation%20with%20Examples) or BV 4.1.3 or C.E.G 8.3.4.4
 
 
 # Convex Problem
@@ -106,6 +58,10 @@
 
 
 
+## First Order Conditions
+> [!important]
+> ![](Convex_Problems.assets/image-20231218095549081.png)
+
 
 
 
@@ -121,19 +77,41 @@
 > EECS127 Sp23 Homework 5 P5
 
 > [!example]
-> ![](Convexity.assets/image-20231104164118268.png)![](Convexity.assets/image-20231104164129281.png)![](Convexity.assets/image-20231104164556058.png)![](Convex_Problems.assets/image-20231104164843443.png)
+> ![](Convex_Sets.assets/image-20231104164118268.png)![](Convex_Sets.assets/image-20231104164129281.png)![](Convex_Sets.assets/image-20231104164556058.png)![](Convex_Problems.assets/image-20231104164843443.png)
 
 
 
 
 # Uniqueness of Optimal Solution
+## Uniqueness of Strictly Convex Function Optimization
+> [!thm]
+> ![](Convex_Problems.assets/image-20231220122151084.png)
 
-## Constant Linear Function
+> [!proof]
+> ![](Convex_Problems.assets/image-20231220122158501.png)
+
+
+
+## Non-Constant Linear Function over Convex and Closed Set
 > [!thm]
 > ![](Convex_Problems.assets/image-20231117230142776.png)
 
 > [!proof]
 > ![](Convex_Problems.assets/image-20231117230207335.png)
+
+
+
+## Non-Constant Linear Function over Strictly Convex and Closed Set
+> [!thm]
+> ![](Convex_Problems.assets/image-20231220113214667.png)
+
+> [!proof]
+> ![](Convex_Problems.assets/image-20231220113222997.png)![](Convex_Problems.assets/image-20231220113227190.png)
+
+> [!example]
+> ![](Convex_Problems.assets/image-20231220164627658.png)
+
+
 
 
 

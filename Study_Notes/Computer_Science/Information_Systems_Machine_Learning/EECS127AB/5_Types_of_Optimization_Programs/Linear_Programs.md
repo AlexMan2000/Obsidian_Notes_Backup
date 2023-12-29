@@ -7,14 +7,14 @@
 
 
 
-## Standard Form LPs - Conic Form
+## Standard Conic Form
 > [!def]
 > ![](Linear_Programs.assets/image-20231129122742640.png)![](Linear_Programs.assets/image-20231213224640502.png)
 
 
 
 
-## Converting LP to Stand Form
+## Converting LP to Standard Conic Form
 > [!important] Method
 > ![](Linear_Programs.assets/image-20231213231145503.png)![](Linear_Programs.assets/image-20231213231150959.png)
 ![](Linear_Programs.assets/image-20231213231130399.png)![](Linear_Programs.assets/image-20231213231408682.png)
@@ -28,13 +28,69 @@
 
 
 
-## Dual of Standard Form Linear Program
+
+
+# Geometry of LP
+> B.T Introduction to Linear Optimization pp60
+
+
+## Extreme Points
+> [!def]
+> ![](Linear_Programs.assets/image-20231214091704691.png)![](Linear_Programs.assets/image-20231214091735938.png)
+
+
+
+## Vertex
+> [!def]
+> ![](Linear_Programs.assets/image-20231214091809399.png)![](Linear_Programs.assets/image-20231214091930754.png)
+> Another perspective of this definition is that $\vec{x}$ is the unique minimizer of $\vec{c}^{\top}\vec{x}$ over the set $P$.
+
+
+## Test for Vertices
+> [!important]
+> ![](Linear_Programs.assets/image-20231220182844517.png)![](Linear_Programs.assets/image-20231220182942819.png)![](Linear_Programs.assets/image-20231220183646457.png)
+
+> [!proof] Proof for Theorem 2.2
+> ![](Linear_Programs.assets/image-20231220183700235.png)![](Linear_Programs.assets/image-20231220183705130.png)
+
+
+
+## Basic Feasible Solutions
+> [!def]
+> ![](Linear_Programs.assets/image-20231220192850615.png)
+> **The difference between basic solutions and basic feasible solutions are that:**
+> 1. Basic solutions only require all the equality constraints to be active. In other words, for a point $x^*$, in order for it to be basic, it has to satisfy all the equality constraints. Since if equality constraints are satisfied, they are defined to be active.
+> 2. On top of this, basic solutions may activate some of the inequality constraints, it's just that not all of them. And the basic feasible solutions requires all of the constraints to be satisfied on top of the requirement of being basic.
+> 
+> ![](Linear_Programs.assets/image-20231220195311812.png)![](Linear_Programs.assets/image-20231220201257406.png)
+
+> [!example]
+> ![](Linear_Programs.assets/image-20231220201425897.png)
+
+
+
+
+## Vertex <=> Extreme Point <=> BFS
+> [!important]
+> ![](Linear_Programs.assets/image-20231220202916912.png)
+
+> [!proof]
+> ![](Linear_Programs.assets/image-20231220203435275.png)![](Linear_Programs.assets/image-20231220203344045.png)![](Linear_Programs.assets/image-20231220203352537.png)![](Linear_Programs.assets/image-20231220203422443.png)
+
+
+
+
+## Finite BFS
+> [!important]
+> ![](Linear_Programs.assets/image-20231220213903466.png)
+
+
+
+
+
+# LP Duality
 > [!important]
 > ![](Linear_Programs.assets/image-20231129123000901.png)![](Linear_Programs.assets/image-20231129123009603.png)![](Linear_Programs.assets/image-20231129123017555.png)
-
-
-
-
 
 
 
@@ -63,7 +119,8 @@
 > ![](Linear_Programs.assets/image-20231129180548947.png)
 
 
-## Polyhedra
+## Polyhedra Boundedness
+### Bounded Polyhedra
 > [!thm]
 > P has an extreme point, if and only if P contains no line. 
 > 
@@ -72,7 +129,14 @@
 > Bounded polyhedra is a polygon.
 > 
 > **In all, bounded polyhedra <=> Contains no line <=> Has a vertex <=> Is a polygon.**
+> 
 
+### Unbounded Polyhedra
+> [!bug] Unbounded Polyhedra
+> The definition of a bounded polyhedra could be obtained from its counter-definition:
+> 
+> Suppose we have an unbounded polyhedra $\mathcal{P}$, then for any points $\vec{x}_{0}\in\mathcal{P},\in \mathbb{R}^n$, we have a direction $\vec{v}\in\mathbb{R}^n$ such that $\vec{x}_0+\alpha\vec{v}\in\mathcal{P}$ when $\alpha\in [0,\infty)$. In other words, we have a line segment that is contained in the polyhedra, which violates "contains no line".
+> 
 
 
 
@@ -119,28 +183,12 @@
 
 ## Bounded Feasible Set => All Optimals on the boundary
 > [!important] EECS127 Fa22 HW10 P2
-> ==Important==: Next we want to prove that for a bounded LP program, the optimal point must appear on the boundary, not the interior of the feasible set. That is, all the optimal points must 
+> ==Important==: Next we want to prove that for a bounded LP program, the optimal point must appear on the boundary, not the interior of the feasible set. 
 > ![](Linear_Programs.assets/image-20231214210428675.png)![](Linear_Programs.assets/image-20231214210435819.png)![](Linear_Programs.assets/image-20231214210444046.png)
 
 
 
 
-
-
-
-
-
-
-# Extreme Points, Vertices, BFS
-## Extreme Points
-> [!def]
-> ![](Linear_Programs.assets/image-20231214091704691.png)![](Linear_Programs.assets/image-20231214091735938.png)
-
-
-
-## Vertex
-> [!def]
-> ![](Linear_Programs.assets/image-20231214091809399.png)![](Linear_Programs.assets/image-20231214091930754.png)
 
 
 

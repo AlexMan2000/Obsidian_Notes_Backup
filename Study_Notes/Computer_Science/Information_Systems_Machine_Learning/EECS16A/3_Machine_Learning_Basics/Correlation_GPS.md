@@ -329,7 +329,8 @@ def Gold_code_satellite(satellite_ID):
 ## Problem Settings
 > ![image.png](./Correlation_GPS.assets/20230722_0954533283.png)![image.png](./Correlation_GPS.assets/20230722_0954531526.png)![image.png](./Correlation_GPS.assets/20230722_0954537408.png)![image.png](./Correlation_GPS.assets/20230722_0954533018.png)
 
-**(a) Auto-correlation of gold code**```python
+**(a) Auto-correlation of gold code**
+```python
 def array_correlation(array1,array2):
     """ This function should return two arrays or a matrix with one row corresponding to 
     the offset and other to the correlation value. array1 and array2 do not have to be
@@ -355,7 +356,8 @@ plt.figure(figsize=(16,4))
 plt.stem(ind_10,self_10)
 ```
 ![image.png](./Correlation_GPS.assets/20230722_0954531813.png)![image.png](./Correlation_GPS.assets/20230722_0954537732.png)
-**(b) Cross Correlation of Golde Codes**```python
+**(b) Cross Correlation of Golde Codes**
+```python
 array_13 = Gold_code_satellite(13)
 (ind_10_13, cross_10_13) = array_correlation(array_10, array_13)#insert first agument, #insert second argument
 plt.figure(figsize=(16,4))
@@ -363,20 +365,23 @@ plt.stem(ind_10_13,cross_10_13)
 ```
 ![image.png](./Correlation_GPS.assets/20230722_0954537057.png)![image.png](./Correlation_GPS.assets/20230722_0954539110.png)![image.png](./Correlation_GPS.assets/20230722_0954544804.png)
 ![image.png](./Correlation_GPS.assets/20230722_0954548643.png)
-**(c) Cross Correlation of Golde Code with Integer Noise**```python
+**(c) Cross Correlation of Golde Code with Integer Noise**
+```python
 def integernoise_generator(length_of_noise):
     noise_array = np.random.randint(2, size = length_of_noise)
     noise_array = 2 * noise_array - np.ones(size(noise_array))
     return noise_array
 ```
 ![image.png](./Correlation_GPS.assets/20230722_0954543413.png)![image.png](./Correlation_GPS.assets/20230722_0954542530.png)
-**(d) Cross Correlation of Golde Code with Gaussian Noise**```python
+**(d) Cross Correlation of Golde Code with Gaussian Noise**
+```python
 def gaussiannoise_generator(length_of_noise):
     noise_array = np.random.normal(0,1,length_of_noise)
     return noise_array
 ```
 ![image.png](./Correlation_GPS.assets/20230722_0954541927.png)![image.png](./Correlation_GPS.assets/20230722_0954544296.png)
-**(e) Singal Detection with Noise**```python
+**(e) Singal Detection with Noise**
+```python
 ## THIS IS A HELPER FUNCTION FOR PART E, F AND G
 
 ## This function returns a 1 if peak (greater than threshold or less than -threshold) is found else it returns a 0.

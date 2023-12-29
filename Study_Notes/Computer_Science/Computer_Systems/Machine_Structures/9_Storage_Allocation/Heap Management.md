@@ -105,6 +105,10 @@
 ### First Fit
 > [!example]
 > ![](Heap%20Management.assets/image-20231212115149250.png)![](Heap%20Management.assets/image-20231212115027510.png)
+> **Here we have several bitwise operations:**
+> - `*p & 1` extracts the bit that indicates whether this block has been allocated.
+> - `*p & -2` extracts the current block size and `p + *p & -2` moves the pointer to the start of the next block.
+> 
 
 
 ### Next Fit

@@ -160,19 +160,52 @@
 > [!thm]
 > ![](Directed%20Graph.assets/image-20231213110732872.png)
 
+> [!proof] Proof Sketch
+> ![](Directed%20Graph.assets/image-20231221074948213.png)![](Directed%20Graph.assets/image-20231221074955815.png)
 
-
-
-
-
-
-
-
-
-
+> [!proof] Formal Proof
+> ![](Directed%20Graph.assets/image-20231221075034981.png)![](Directed%20Graph.assets/image-20231221075040780.png)
+> **Proof of the main theorem:**
+> 
+> ![](Directed%20Graph.assets/image-20231221075533522.png)
 
 
 # Tournament Graphs
+## Round-Robin Tournament
+> [!def]
+> ![](Directed%20Graph.assets/image-20231224172153272.png)![](Directed%20Graph.assets/image-20231224172157630.png)
+> The definition of the tournament graph goes like the following:
+> For every pair of nodes $u$ and $v$, either $u\rightarrow v$ or $u\leftarrow v$.
+
+
+
+
+
+
+## Finding Hamiltonian Path in a Tournament Graph
+> [!thm]
+> **Recall:** Hamiltonian Path is a path that traverses each node exactly once.
+> ![](Directed%20Graph.assets/image-20231224172225289.png)
+
+> [!proof]
+> ![](Directed%20Graph.assets/image-20231224172235585.png)![](Directed%20Graph.assets/image-20231224172241653.png)![](Directed%20Graph.assets/image-20231224172246705.png)
+
+
+## King Chicken Theorem
+> [!motiv] Motivation
+> ![](Directed%20Graph.assets/image-20231225124418634.png)![](Directed%20Graph.assets/image-20231225124427567.png)
+
+
+## Theorem - Largest Outdegree <=> King
+> [!thm]
+> ![](Directed%20Graph.assets/image-20231225125034564.png)
+
+> [!proof]
+> ![](Directed%20Graph.assets/image-20231225125159562.png)![](Directed%20Graph.assets/image-20231225125207712.png)
+
+
+
+
 
 
 
@@ -182,12 +215,4 @@
 
 
 # Communication Networks
-
-
-
-
-# Matchings
-
-
-
 

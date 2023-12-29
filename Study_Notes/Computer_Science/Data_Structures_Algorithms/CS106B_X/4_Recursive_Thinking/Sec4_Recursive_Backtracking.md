@@ -493,12 +493,150 @@ bool canVisitAllSitesRec(const Vector<GPoint>& sites, double timeAvailable,
 
 
 # P4 Pattern Matching(Hard)
+> [!task]
+> ![](Sec4_Recursive_Backtracking.assets/image-20231227100958288.png)
+> **Hints:**
+> 
+> The recursion here works by recursively consuming both the pattern and the text, but its base case is only for the case where the pattern is empty, since an empty pattern only matches the empty string while an empty string can match a nonempty pattern. So when we consider the base case, there are two choices. 
+> 
+> The first one is to stop when the string is empty. But this doesn't generally work since when string is empty we are not traversing all the pattern symbols and cannot say anything about whether the string matches the pattern symbols. We are not equipped to say that the string matches the pattern symbols.
+> 
+> The second one is to stop when the  pattern string is fully consumed, this is feasible since when we see all the pattern characters we are equipped to determine whether the string matches the pattern. 
+
+> [!code] Formal Solution - Unmemoized
+> The `textIndex` and `patternIndex` indicates the starting index where we want to match the text and pattern symbols.
+```C++
+bool matchesRec(const string& text, int textIndex,
+                const string& pattern, int patternIndex) {
+    /* Base case: If we've consumed the pattern, confirm we consumed the text. */
+    if (patternIndex == pattern.length()) {
+        return textIndex == text.length();
+    }
+    /* Recursive step: there's more pattern to match. See what to do here. */
+    /* Case 1: The next pattern character is a letter. */
+    else if (isalpha(pattern[patternIndex])) {
+        return textIndex != text.length() &&               // Text isn't empty
+               text[textIndex] == pattern[patternIndex] && // That char matches
+               matchesRec(text, textIndex + 1, pattern, patternIndex + 1);
+    }
+    /* Case 2: The next pattern character is a dot. */
+    else if (pattern[patternIndex] == '.') {
+        return textIndex != text.length() &&
+               matchesRec(text, textIndex + 1, pattern, patternIndex + 1);
+    }
+    /* Case 3: The next pattern character is a ?. */
+    else if (pattern[patternIndex] == '?') {
+        return matchesRec(text, textIndex, pattern, patternIndex + 1) ||
+               (textIndex != text.length() &&
+                matchesRec(text, textIndex + 1, pattern, patternIndex + 1));
+    }
+    /* Case 4: The next pattern character is a star. */
+    else if (pattern[patternIndex] == '*') {
+        return
+               (textIndex != text.length() &&
+                // Act like a fresh start
+                matchesRec(text, textIndex + 1, pattern, patternIndex)) ||
+                // Act like ?
+                matchesRec(text, textIndex, pattern, patternIndex + 1);
+    } else {
+        error("Unknown pattern character.");
+    }
+}
+
+bool matches(const string& text, const string& pattern) {
+    return matchesRec(text, 0, pattern, 0);
+}
+```
+
+> [!code] Formal Solution - Memoized
+```C++
+#include <iostream>
+#include "testing/SimpleTest.h"
+#include "testing/TextUtils.h"
+#include "set.h"
+#include "map.h"
+#include "grid.h"
+using namespace std;
+
+bool matchesRec(const string& text, int textIndex,
+                const string& pattern, int patternIndex,
+                Grid<bool>& memo) {
+
+    /* Base case: If we've consumed the pattern, confirm we consumed the text. */
+    if (patternIndex == pattern.length()) {
+        return textIndex == text.length();
+    }
+    /* Base case: If we've memoized the result, return it. */
+    else if (memo.isSet(textIndex, patternIndex)) {
+        return memo[textIndex][patternIndex];
+    }
+    /* Recursive step always has to write the answer down. We'll store that value
+     * in a variable that we write at the very end of the function.
+     */
+    bool answer;
+
+    /* Case 1: The next pattern character is a letter. */
+    if (isalpha(pattern[patternIndex])) {
+        answer = textIndex != text.length() &&
+                 text[textIndex] == pattern[patternIndex] &&
+                 matchesRec(text, textIndex + 1, pattern, patternIndex + 1, memo);
+    }
+    /* Case 2: The next pattern character is a dot. */
+    else if (pattern[patternIndex] == '.') {
+        answer = textIndex != text.length() &&
+                 matchesRec(text, textIndex + 1, pattern, patternIndex + 1, memo);
+    }
+    /* Case 3: The next pattern character is a ?. */
+    else if (pattern[patternIndex] == '?') {
+        answer = matchesRec(text, textIndex, pattern, patternIndex + 1, memo) ||
+                 (textIndex != text.length() &&
+                  matchesRec(text, textIndex + 1, pattern, patternIndex + 1, memo));
+    }
+    /* Case 4: The next pattern character is a star. */
+    else if (pattern[patternIndex] == '*') {
+        answer = matchesRec(text, textIndex, pattern, patternIndex + 1, memo) ||
+                 (textIndex != text.length() &&
+                  matchesRec(text, textIndex + 1, pattern, patternIndex, memo));
+    } else {
+        error("Unknown pattern character.");
+    }
+    memo[textIndex][patternIndex] = answer;
+    return answer;
+}
+
+
+bool matches(const string& text, const string& pattern) {
+    Grid<bool> memo(text.length() + 1, pattern.length() + 1);
+    return matchesRec(text, 0, pattern, 0, memo);
+}
+```
+
+
+
+# P5: Exponentials&Big-Oh
+> [!task]
+> ![](Sec4_Recursive_Backtracking.assets/image-20231228132811616.png)![](Sec4_Recursive_Backtracking.assets/image-20231228132821735.png)
+
+> [!solution]
+> ![](Sec4_Recursive_Backtracking.assets/image-20231228132829801.png)![](Sec4_Recursive_Backtracking.assets/image-20231228132838209.png)![](Sec4_Recursive_Backtracking.assets/image-20231228132845978.png)
 
 
 
 
-# P5: Big-Oh
 
 
 
-# P6: Big-Oh
+
+
+
+# P6: String Reversal&Big-Oh
+> [!task]
+> ![](Sec4_Recursive_Backtracking.assets/image-20231228133028768.png)![](Sec4_Recursive_Backtracking.assets/image-20231228133035438.png)
+
+> [!solution]
+> ![](Sec4_Recursive_Backtracking.assets/image-20231228133239944.png)![](Sec4_Recursive_Backtracking.assets/image-20231228133245986.png)
+
+
+
+
+
