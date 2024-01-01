@@ -1,16 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "_Assign4_Recursion_to_the_Rescue",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md"
+      "basename": "5_Designing_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
     },
     {
-      "basename": "Ch4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md"
+      "basename": "4_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md"
+    },
+    {
+      "basename": "Class_Operators",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md"
+    },
+    {
+      "basename": "Relations_Partial_Orders",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
+    },
+    {
+      "basename": "Sorting_Searching",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
+    },
+    {
+      "basename": "STL_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md"
     },
     {
       "basename": "Algorithmic_Thinking",
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
+    },
+    {
+      "basename": "STL_Containers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md"
+    },
+    {
+      "basename": "WikiRacer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/CS106L_Projects/WikiRacer.md"
+    },
+    {
+      "basename": "image-20231209224220608",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20231209224220608.png"
+    },
+    {
+      "basename": "Streams",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
+    },
+    {
+      "basename": "Iterators_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
+    },
+    {
+      "basename": "Advanced Topics",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "Generics_Function_Pointers",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "Multiprocessing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
+    },
+    {
+      "basename": "System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
+    },
+    {
+      "basename": "File_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Calls.md"
+    },
+    {
+      "basename": "File_System_Data_Structure",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.md"
+    },
+    {
+      "basename": "File_System_Design",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Design.md"
+    },
+    {
+      "basename": "Section_5_Class_Design_and_Dynamic_Memory_Allocation",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md"
+    },
+    {
+      "basename": "Assign4_Recursion_to_the_Rescue",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign4_Recursion_to_the_Rescue.md"
+    },
+    {
+      "basename": "Assign5_Recursion_OOP",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.md"
     },
     {
       "basename": "Numerics",
@@ -29,12 +113,8 @@
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
     },
     {
-      "basename": "Relations_Partial_Orders",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
-    },
-    {
-      "basename": "Ch3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md"
+      "basename": "3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
     },
     {
       "basename": "Sec4_Recursive_Backtracking",
@@ -119,86 +199,6 @@
     {
       "basename": "Subgradient_Differentials",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
-    },
-    {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
-    },
-    {
-      "basename": "QCQPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
-    },
-    {
-      "basename": "Quadratic_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
-    },
-    {
-      "basename": "SOCPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
-    },
-    {
-      "basename": "Analysis_of_LASSO",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
-    },
-    {
-      "basename": "Important Applications Of Basic Probability",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
-    },
-    {
-      "basename": "Convergence Theory",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
-    },
-    {
-      "basename": "Classification",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.md"
-    },
-    {
-      "basename": "Unsupervised Learning",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1001/Unsupervised Learning.md"
-    },
-    {
-      "basename": "SVM",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/7_Applications/SVM.md"
-    },
-    {
-      "basename": "Kernel_Methods",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md"
-    },
-    {
-      "basename": "Newton's_Method",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md"
-    },
-    {
-      "basename": "Coordinate_Descent",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.md"
-    },
-    {
-      "basename": "Interior_Point_Method",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Interior_Point_Method.md"
-    },
-    {
-      "basename": "Drawing 2023-12-16 22.26.27.excalidraw",
-      "path": "Excalidraw/Drawing 2023-12-16 22.26.27.excalidraw.md"
-    },
-    {
-      "basename": "Robust_Optimization_Models",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Robust_Optimization_Models.md"
-    },
-    {
-      "basename": "Correlation_GPS",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS16A/3_Machine_Learning_Basics/Correlation_GPS.md"
-    },
-    {
-      "basename": "Geometric_Programming",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Geometric_Programming.md"
     }
   ],
   "omittedPaths": [],

@@ -637,3 +637,93 @@ Profiling Test
 
 
 
+# Fractal Rendering - HW2 P1
+## Background
+> [!motiv] Background
+> ![](Algorithmic_Thinking.assets/image-20231231175008665.png)
+
+
+## Algorithm
+> [!algo]
+> ![](Algorithmic_Thinking.assets/image-20231231175114009.png)![](Algorithmic_Thinking.assets/image-20231231175118946.png)![](Algorithmic_Thinking.assets/image-20231231175149832.png)
+
+
+## P1: 3D Hardware Accelerated Rendering
+> [!example] Problem
+> ![](Algorithmic_Thinking.assets/image-20231231175354039.png)![](Algorithmic_Thinking.assets/image-20231231175436096.png)![](Algorithmic_Thinking.assets/image-20231231175422604.png)![](Algorithmic_Thinking.assets/image-20231231175449829.png)![](Algorithmic_Thinking.assets/image-20231231175457553.png)![](Algorithmic_Thinking.assets/image-20231231175606154.png)![](Algorithmic_Thinking.assets/image-20231231175612257.png)
+
+
+
+## P2: 2D Hardware Accelerated Rendering
+> [!example] Problem
+> ![](Algorithmic_Thinking.assets/image-20231231175933546.png)![](Algorithmic_Thinking.assets/image-20231231175942284.png)![](Algorithmic_Thinking.assets/image-20231231175947343.png)![](Algorithmic_Thinking.assets/image-20231231180301010.png)![](Algorithmic_Thinking.assets/image-20231231180347163.png)![](Algorithmic_Thinking.assets/image-20231231180402269.png)![](Algorithmic_Thinking.assets/image-20231231180410809.png)![](Algorithmic_Thinking.assets/image-20231231180419355.png)![](Algorithmic_Thinking.assets/image-20231231180438593.png)
+
+
+
+## P3: 2D Software Rendering
+> [!example] Problem
+> ![](Algorithmic_Thinking.assets/image-20231231180516131.png)![](Algorithmic_Thinking.assets/image-20231231180644520.png)![](Algorithmic_Thinking.assets/image-20231231180649281.png)![](Algorithmic_Thinking.assets/image-20231231180720220.png)![](Algorithmic_Thinking.assets/image-20231231180736812.png)![](Algorithmic_Thinking.assets/image-20231231180746126.png)![](Algorithmic_Thinking.assets/image-20231231180804666.png)![](Algorithmic_Thinking.assets/image-20231231180810803.png)![](Algorithmic_Thinking.assets/image-20231231180906508.png)![](Algorithmic_Thinking.assets/image-20231231180925232.png)
+
+
+
+## P4: 3D Software Rendering
+> [!example] Problem
+> ![](Algorithmic_Thinking.assets/image-20231231181008941.png)![](Algorithmic_Thinking.assets/image-20231231195815969.png)![](Algorithmic_Thinking.assets/image-20231231200013577.png)![](Algorithmic_Thinking.assets/image-20231231200017965.png)
+
+
+## Summary
+> [!summary]
+> To compute the asymptotics of a recursion tree, we will always follow the following guides:
+> 1. Determine the structure of the recursion tree, i.e. determine the number of branches of each node, height of the recursion tree etc.
+> 2. Compute the asymptotic of a single node of layer i.
+> 3. Compute the asymptotic of a single layer i.
+> 4. Summing up the asymptotics of all the layers in teh recursion tree.
+> 5. Simplify it with asymptotic notations.
+
+
+
+# Digital Circuit Simulation - HW2 P2
+> [!example] Problem 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

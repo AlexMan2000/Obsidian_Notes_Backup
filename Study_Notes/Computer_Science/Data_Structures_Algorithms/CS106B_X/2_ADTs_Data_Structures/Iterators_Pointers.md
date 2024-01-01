@@ -1,4 +1,4 @@
-# 2 Iterators
+# 1 Iterators
 ## Definition
 > [!def]
 > ![](Iterators_Pointers.assets/image-20231209222347345.png)
@@ -142,7 +142,7 @@ int main() {
 > ![image.png](./Iterators_Pointers.assets/20231114_1941541835.png)
 
 
-# 3 Iterator Types⭐⭐⭐⭐⭐
+# 2 Iterator Types⭐⭐⭐⭐⭐
 ## Overview
 > ![image.png](./Iterators_Pointers.assets/20231114_1941561942.png)
 > 上面的链条可以理解为继承链，表明链条右侧的`Iterator`比左侧的功能更强大。
@@ -152,13 +152,16 @@ int main() {
 
 
 
-## Input Iterators
+## Input Iterators - Read Only
+> [!important]
 > ![image.png](./Iterators_Pointers.assets/20231114_1942054025.png)
+> 简单说就是只读的`Iterator`。
 > 只能一次移动一个`index`, `can only increment by one`
 
 
 
-## Output Iterators
+## Output Iterators - Write Only
+> [!important]
 > ![image.png](./Iterators_Pointers.assets/20231114_1942075695.png)
 
 
@@ -179,10 +182,13 @@ int main() {
 
 
 ## Summary
-> ![image.png](./Iterators_Pointers.assets/20231114_1942153961.png)![image.png](./Iterators_Pointers.assets/20231114_1942174438.png)
+> [!summary]
+> ![](./Iterators_Pointers.assets/20231114_1942153961.png)![](./Iterators_Pointers.assets/20231114_1942174438.png)![](Iterators_Pointers.assets/image-20231231171310141.png)
 
 
-# 4 Pointers
+
+
+# 3 Pointers
 [lecture6_iterators_and_pointers_w23.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1693582435938-f8920744-26ae-4d52-b94f-0cdc990a063b.pdf)
 
 ## Memory
@@ -204,7 +210,7 @@ int main() {
 > ![image.png](./Iterators_Pointers.assets/20231114_1942247938.png)
 
 
-# 5 Structs Recap
+# 4 Structs Recap
 ## Initialization of Structs
 > ![image.png](./Iterators_Pointers.assets/20231114_1942277446.png)
 > 可以省略`struct keyword`

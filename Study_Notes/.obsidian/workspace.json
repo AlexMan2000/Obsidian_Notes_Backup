@@ -20,43 +20,19 @@
             }
           },
           {
-            "id": "76604fc75542fa6f",
+            "id": "daac81fe0c50c896",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "70092f58d24be417",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "888556f25f3a8fc7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,54 +218,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "888556f25f3a8fc7",
+  "active": "daac81fe0c50c896",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204354098.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204245591.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204154106.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204139571.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204123651.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228204114469.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228195150052.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228195142217.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194832325.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194758209.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.assets/image-20231228194443480.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/_Assign4_Recursion_to_the_Rescue.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch4_Specifications.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115334544.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115134101.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114747378.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114649091.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114632246.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114623948.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101113440249.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101113434584.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101112353080.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101112344954.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/CS106L_Projects/WikiRacer.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Design.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign4_Recursion_to_the_Rescue.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.assets",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
     "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Ch3_Testing_Debugging.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.assets",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.md",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.assets",
-    "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
-    "Stable Matching Problem.assets/image-20231209210129323.png.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/1.6_Integrating_Factors.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.1_Fourier_Series__Basics.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/2.7_Pure_Resonance.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.8_Partial_Fractions.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.assets",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Unsupervised Learning.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/6_Regularization_Sparsity",
     "未命名.canvas"
   ]
 }
