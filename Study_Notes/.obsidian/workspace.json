@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "daac81fe0c50c896",
+            "id": "9a125a4d84a30932",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
                 "mode": "source",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,29 +218,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "daac81fe0c50c896",
+  "active": "abd22396395eb00b",
   "lastOpenFiles": [
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.assets/image-20240102095945877.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.assets/image-20240102095943404.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094305795.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094240253.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094141097.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102093737110.png",
+    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115334544.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115134101.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114747378.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114649091.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114632246.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114623948.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101113440249.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101113434584.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101112353080.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101112344954.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/CS106L_Projects/WikiRacer.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.assets",
@@ -261,7 +261,6 @@
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.assets",
     "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.assets",
     "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.assets",
     "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.assets",

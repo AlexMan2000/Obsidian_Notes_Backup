@@ -235,14 +235,19 @@ void Car::DisplayInfo () {
 
 
 ## Unary Operators
+### +=
 > [!example] vector class +=
 > ![](Class_Operators.assets/image-20240101082415578.png)![](Class_Operators.assets/image-20240101082421047.png)![](Class_Operators.assets/image-20240101082427501.png)
 > **Notes:**
 > 
 > It is super important to return a reference type at the operator function. Since if we don't do it, we are returning a brand new object. Then if we call `("s" += "a") += "b"` and print `"s"`we will get `"sa"` instead of `"sab"`.
 
+
+### []
 > [!example] vector class []
-> ![](Class_Operators.assets/image-20240101092154619.png)
+> ![](Class_Operators.assets/image-20240101092154619.png)![](Class_Operators.assets/image-20240102093737110.png)
+
+
 
 
 
@@ -300,6 +305,16 @@ void Car::DisplayInfo () {
 > [!concept]
 > ![](Class_Operators.assets/image-20240101101847361.png)![](Class_Operators.assets/image-20240101101853169.png)![](Class_Operators.assets/image-20240101101856722.png)![](Class_Operators.assets/image-20240101101901155.png)
 
+
+# Iterator Class
+## Why we need iterators?
+> [!motiv] Motivation
+> ![](Class_Operators.assets/image-20240102094141097.png)
+
+
+## Iterator Must Support
+> [!important]
+> ![](Class_Operators.assets/image-20240102094240253.png)![](Class_Operators.assets/image-20240102094305795.png)
 
 
 

@@ -142,6 +142,7 @@ int main() {
 > ![image.png](./Iterators_Pointers.assets/20231114_1941541835.png)
 
 
+
 # 2 Iterator Types⭐⭐⭐⭐⭐
 ## Overview
 > ![image.png](./Iterators_Pointers.assets/20231114_1941561942.png)
@@ -163,6 +164,13 @@ int main() {
 ## Output Iterators - Write Only
 > [!important]
 > ![image.png](./Iterators_Pointers.assets/20231114_1942075695.png)
+
+
+
+## Single-pass vs Multi-pass
+> [!important]
+> ![](Iterators_Pointers.assets/image-20240102095943404.png)
+
 
 
 

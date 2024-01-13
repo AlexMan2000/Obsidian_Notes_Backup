@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Class_Operators",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md"
+    },
+    {
+      "basename": "Streams",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
+    },
+    {
+      "basename": "Iterators_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
+    },
+    {
+      "basename": "Relations_Partial_Orders",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
+    },
+    {
       "basename": "5_Designing_Specifications",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
     },
     {
       "basename": "4_Specifications",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md"
-    },
-    {
-      "basename": "Class_Operators",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md"
-    },
-    {
-      "basename": "Relations_Partial_Orders",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
     },
     {
       "basename": "Sorting_Searching",
@@ -39,14 +47,6 @@
     {
       "basename": "image-20231209224220608",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20231209224220608.png"
-    },
-    {
-      "basename": "Streams",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
-    },
-    {
-      "basename": "Iterators_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
     },
     {
       "basename": "Advanced Topics",
