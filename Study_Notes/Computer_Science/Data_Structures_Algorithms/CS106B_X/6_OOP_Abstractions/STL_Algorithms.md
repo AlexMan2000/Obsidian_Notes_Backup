@@ -166,6 +166,10 @@ combineTwoRangesAndPrint(vec1, vec2, sumVec); // 0 0 0 0 11 22 33 44
 # Search
 > [!concept]
 > **`std::search`**: This algorithm is used to find a subrange within a range. It searches for the first occurrence of the second sequence in the first sequence.
+> 
+> Note that `std::search` returns an iterator to the **first element** of the **first occurrence** of the subsequence to be searched. If not existent, `std::search` returns an iterator to the end of the sequence.
+> 
+> The type of the iterator that is returned from `std::search` is consistent with the type used as arguments in the function call.
 
 ## Find occurrence of subsequences
 > [!code]
@@ -243,8 +247,74 @@ int countOccurrences(const string& fileString, const string& text) {
 }
 ```
 
+
+## Find All the web links
+> [!important]
+> ![](STL_Algorithms.assets/image-20240117165102723.png)![](STL_Algorithms.assets/image-20240117165113191.png)
+
+> [!code]
+```c++
+
+```
+
+
+
+
 # Find
 > [!concept]
+> `std::find`  returns an iterator to the first element in the range that matches the value, or the end iterator if no such element is found.
+> 
+> The type of the iterator that is returned from `std::find` is consistent with the type used as arguments in the function call.
+> 
+```c++
+#include <algorithm> // std::find
+#include <vector>
+
+int main() {
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    auto it = std::find(vec.begin(), vec.end(), 3);
+    
+    if (it != vec.end()) {
+        // Element found
+    } else {
+        // Element not found
+    }
+}
+```
+
+
+
+
+# All_Of
+> [!concept]
+> `std::all_of` is a function template in the C++ Standard Library used to check if all elements in a range satisfy a specific condition. 
+> 
+> It takes three parameters: the start and end iterators of the range to be checked, and a **unary predicate** (a function or function object) that returns a `bool` indicating whether a given element satisfies the condition.
+
+> [!code]
+```c++
+#include <algorithm>
+#include <vector>
+
+bool isPositive(int n) {
+    return n > 0;
+}
+
+int main() {
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    bool allPositive = std::all_of(vec.begin(), vec.end(), isPositive);
+    
+    if (allPositive) {
+        // All elements are positive
+    } else {
+        // Not all elements are positive
+    }
+}
+```
+
+
+## Validate the HTML Links
+> [!code]
 > 
 
 
@@ -253,6 +323,16 @@ int countOccurrences(const string& fileString, const string& text) {
 > [!concept]
 > 
 
+
+
+# Equal
+> [!concept]
+> ![](STL_Algorithms.assets/image-20240121104025920.png)![](STL_Algorithms.assets/image-20240121104019167.png)
+
+
+# Lexicographical_compare
+> [!concept]
+> ![](STL_Algorithms.assets/image-20240121103328673.png)
 
 
 

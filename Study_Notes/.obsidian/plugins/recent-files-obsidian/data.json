@@ -1,24 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "Class_Operators",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md"
+      "basename": "GapBuffer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
+    },
+    {
+      "basename": "Template_Class_Design",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
+    },
+    {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
+    },
+    {
+      "basename": "Class_Construction_Static",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
+    },
+    {
+      "basename": "STL_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md"
+    },
+    {
+      "basename": "_Project_04__Scheme",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61A/4_Scheme_Functional_Programming/4_2_Scheme_Lists_Interpreters/_Project_04__Scheme.md"
     },
     {
       "basename": "Streams",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
     },
     {
-      "basename": "Iterators_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
     },
     {
-      "basename": "Relations_Partial_Orders",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
+      "basename": "AP-HW1-Matrix_Algebra",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md"
+    },
+    {
+      "basename": "Initialization_References",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Initialization_References.md"
+    },
+    {
+      "basename": "Assignment_1",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md"
+    },
+    {
+      "basename": "Problem_Set_1",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md"
+    },
+    {
+      "basename": "Disk&Buffer&Files",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Disk&Buffer&Files.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "Computer_Science/Important_Tools/Docker.md"
+    },
+    {
+      "basename": "Relation_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "6_Access_Mutability",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
     },
     {
       "basename": "5_Designing_Specifications",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
+    },
+    {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Project_0_Setup(Sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md"
+    },
+    {
+      "basename": "Cost Models",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md"
+    },
+    {
+      "basename": "Generics_Function_Pointers",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
+    },
+    {
+      "basename": "Iterators_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
+    },
+    {
+      "basename": "WikiRacer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/WikiRacer.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "Section_5_Class_Design_and_Dynamic_Memory_Allocation",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md"
+    },
+    {
+      "basename": "Section6_Class_Design_Hashing",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
+    },
+    {
+      "basename": "Assign8_Adventures_of_Links",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign8_Adventures_of_Links.md"
+    },
+    {
+      "basename": "Assign7_Hashing(Unfinished)",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign7_Hashing(Unfinished).md"
+    },
+    {
+      "basename": "Assign6_PQs&Binary_Heaps",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign6_PQs&Binary_Heaps.md"
+    },
+    {
+      "basename": "Assign5_Arrays",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign5_Arrays.md"
+    },
+    {
+      "basename": "Section8_Trees",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section8_Trees.md"
+    },
+    {
+      "basename": "Section7_Linked_Lists",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section7_Linked_Lists.md"
+    },
+    {
+      "basename": "Assign9_Huffman_Coding",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign9_Huffman_Coding.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "Relations_Partial_Orders",
+      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
     },
     {
       "basename": "4_Specifications",
@@ -29,10 +165,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
     },
     {
-      "basename": "STL_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md"
-    },
-    {
       "basename": "Algorithmic_Thinking",
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
     },
@@ -41,28 +173,12 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md"
     },
     {
-      "basename": "WikiRacer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/CS106L_Projects/WikiRacer.md"
-    },
-    {
       "basename": "image-20231209224220608",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20231209224220608.png"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20231209224220608.png"
     },
     {
       "basename": "Advanced Topics",
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md"
-    },
-    {
-      "basename": "Functions and Lambdas",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
-    },
-    {
-      "basename": "Generics_Function_Pointers",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
     },
     {
       "basename": "Multiprocessing",
@@ -83,122 +199,6 @@
     {
       "basename": "File_System_Design",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Design.md"
-    },
-    {
-      "basename": "Section_5_Class_Design_and_Dynamic_Memory_Allocation",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md"
-    },
-    {
-      "basename": "Assign4_Recursion_to_the_Rescue",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign4_Recursion_to_the_Rescue.md"
-    },
-    {
-      "basename": "Assign5_Recursion_OOP",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.md"
-    },
-    {
-      "basename": "Numerics",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md"
-    },
-    {
-      "basename": "Stable Matching Problem",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Stable Matching Problem.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
-    },
-    {
-      "basename": "3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
-    },
-    {
-      "basename": "Sec4_Recursive_Backtracking",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Sec4_Recursive_Backtracking.md"
-    },
-    {
-      "basename": "Graph_Theory",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Graph_Theory.md"
-    },
-    {
-      "basename": "Computability_FSM",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.md"
-    },
-    {
-      "basename": "Introduction to Metric Space",
-      "path": "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md"
-    },
-    {
-      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
-    },
-    {
-      "basename": "image-20231209210129323.png",
-      "path": "Stable Matching Problem.assets/image-20231209210129323.png.md"
-    },
-    {
-      "basename": "1.6_Integrating_Factors",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.6_Integrating_Factors.md"
-    },
-    {
-      "basename": "3.6_Convolution",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md"
-    },
-    {
-      "basename": "3.1_Fourier_Series__Basics",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.1_Fourier_Series__Basics.md"
-    },
-    {
-      "basename": "2.7_Pure_Resonance",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/2.7_Pure_Resonance.md"
-    },
-    {
-      "basename": "3.7_Laplace_Transform",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
-    },
-    {
-      "basename": "3.8_Partial_Fractions",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.8_Partial_Fractions.md"
-    },
-    {
-      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
-    },
-    {
-      "basename": "L7_L8__Convergence_Sequences",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
-    },
-    {
-      "basename": "Probability Formulas and Theorems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
-    },
-    {
-      "basename": "Linear_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Linear_Programs.md"
-    },
-    {
-      "basename": "L18_L19__Derivative__Differential_Rules",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L18_L19__Derivative__Differential_Rules.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
-    },
-    {
-      "basename": "Convex_Sets",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
-    },
-    {
-      "basename": "Subgradient_Differentials",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md"
     }
   ],
   "omittedPaths": [],

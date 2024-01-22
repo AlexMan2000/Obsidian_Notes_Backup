@@ -628,6 +628,12 @@ ofs << “this will though! It’s open again”; return 0;
 > ![image.png](./Streams.assets/20231114_1946096574.png)
 
 
+## iomanip library
+> [!important]
+> ![](Streams.assets/image-20240120083740252.png)
+
+
+
 ## setw
 > 在`<iomanip>`中定义, 通过`#include <iomanip>`引入头文件:
 > ![image.png](./Streams.assets/20231114_1946117591.png)

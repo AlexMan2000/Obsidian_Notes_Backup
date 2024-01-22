@@ -4,35 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "0d62e17dea0f6a63",
+        "id": "ba025a9316895f0e",
         "type": "tabs",
         "children": [
           {
-            "id": "fa103728bbfdec0e",
+            "id": "9e23673da09278c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS61A/4_Scheme_Functional_Programming/4_2_Scheme_Lists_Interpreters/_Project_04__Scheme.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9a125a4d84a30932",
+            "id": "644e347882499632",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c92f24b880b277e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b723c852416d133",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Binary",
+                "query": "member initial",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5110321044922
+    "width": 218.83333206176758
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -144,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 216.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,53 +242,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "abd22396395eb00b",
+  "active": "1c92f24b880b277e",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.assets/image-20240102095945877.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.assets/image-20240102095943404.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094305795.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094240253.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102094141097.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Operators.assets/image-20240102093737110.png",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115334544.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101115134101.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114747378.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.assets/image-20240101114649091.png",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.assets/image-20240121113621773.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.assets/image-20240121113617855.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.assets/image-20240121113435059.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.assets/image-20240121113319397.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/CS106L_Projects/WikiRacer.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111144400.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111130691.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111059026.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111050435.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111039306.png",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111034866.png",
+    "Computer_Science/Data_Structures_Algorithms/CS61A/4_Scheme_Functional_Programming/4_2_Scheme_Lists_Interpreters/_Project_04__Scheme.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md",
+    "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Initialization_References.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Disk&Buffer&Files.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.assets",
+    "Computer_Science/Important_Tools/Docker.md",
+    "Computer_Science/Important_Tools",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).assets",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes",
+    "Computer_Science/Software_Engineering/MIT_6031/Untitled",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
     "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template Functions.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Calls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Design.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/4_Recursive_Thinking/Assign4_Recursion_to_the_Rescue.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/5_Search_Sorting/Assign5_Recursion_OOP.assets",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Numerics.md",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.assets",
-    "Computer_Science/Discrete_Mathematics/Unit3_Counting/Computability_FSM.assets",
-    "Mathematics/NYU_Master_Program/DS-GA-1001/Classification.assets",
-    "Mathematics/NYU_Master_Program/DS-GA-1001/Unsupervised Learning.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x",
     "未命名.canvas"
   ]
 }
