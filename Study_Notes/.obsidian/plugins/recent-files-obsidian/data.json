@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "GapBuffer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
+      "basename": "6_Access_Mutability",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
+    },
+    {
+      "basename": "5_Designing_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
+    },
+    {
+      "basename": "RAII_Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
+    },
+    {
+      "basename": "Lectures_Readings_Study_Guides",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md"
+    },
+    {
+      "basename": "Lectures_Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/4_Packages_Exceptions_Iterations/Lectures_Readings.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
+    },
+    {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
     },
     {
       "basename": "Template_Class_Design",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
+    },
+    {
+      "basename": "GapBuffer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
     },
     {
       "basename": "Special Member Functions",
@@ -65,28 +93,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
     },
     {
-      "basename": "6_Access_Mutability",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
-    },
-    {
-      "basename": "5_Designing_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
-    },
-    {
-      "basename": "Move_Semantics",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
-    },
-    {
       "basename": "Project_0_Setup(Sp24)",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md"
     },
     {
       "basename": "Cost Models",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md"
-    },
-    {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
     },
     {
       "basename": "Lectures_Readings",
@@ -187,18 +199,6 @@
     {
       "basename": "System_Calls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
-    },
-    {
-      "basename": "File_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Calls.md"
-    },
-    {
-      "basename": "File_System_Data_Structure",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Data_Structure.md"
-    },
-    {
-      "basename": "File_System_Design",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/1_File_Systems/File_System_Design.md"
     }
   ],
   "omittedPaths": [],

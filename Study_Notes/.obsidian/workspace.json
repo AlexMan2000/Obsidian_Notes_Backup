@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
+                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,9 +242,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1c92f24b880b277e",
+  "active": "6b723c852416d133",
   "lastOpenFiles": [
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md",
+    "Computer_Science/Data_Structures_Algorithms/CS61B/4_Packages_Exceptions_Iterations/Lectures_Readings.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.assets/image-20240121113621773.png",
@@ -252,7 +259,6 @@
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.assets/image-20240121113435059.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.assets/image-20240121113319397.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111144400.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111130691.png",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20240121111059026.png",
@@ -274,19 +280,14 @@
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).assets",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes",
     "Computer_Science/Software_Engineering/MIT_6031/Untitled",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x",
     "未命名.canvas"
