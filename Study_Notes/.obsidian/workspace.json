@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,6 +244,18 @@
   },
   "active": "6b723c852416d133",
   "lastOpenFiles": [
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics",
+    "Mathematics/NYU_Master_Program/DS-GA-1011",
+    "Mathematics/NYU_Master_Program/DS-GA-1012",
+    "Mathematics/NYU_Master_Program/DS-GA-1004",
+    "Mathematics/NYU_Master_Program/DS-GA-1003",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
     "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md",
@@ -275,21 +287,9 @@
     "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Disk&Buffer&Files.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.assets",
-    "Computer_Science/Important_Tools/Docker.md",
-    "Computer_Science/Important_Tools",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md",
+    "Computer_Science/Computer_Science_Tools/Docker.md",
+    "Computer_Science/Computer_Science_Tools",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.assets",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).assets",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes",
-    "Computer_Science/Software_Engineering/MIT_6031/Untitled",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x",
     "未命名.canvas"
   ]
 }

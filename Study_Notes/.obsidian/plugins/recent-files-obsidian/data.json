@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Lecture_Notes",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md"
+    },
+    {
+      "basename": "Lecture_1_2024_0112",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
+    },
+    {
+      "basename": "Relation_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md"
+    },
+    {
+      "basename": "QCQPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
+    },
+    {
+      "basename": "Quadratic_Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
+    },
+    {
       "basename": "6_Access_Mutability",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
     },
@@ -82,11 +102,7 @@
     },
     {
       "basename": "Docker",
-      "path": "Computer_Science/Important_Tools/Docker.md"
-    },
-    {
-      "basename": "Relation_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md"
+      "path": "Computer_Science/Computer_Science_Tools/Docker.md"
     },
     {
       "basename": "Project1_SQL(sp24)",
@@ -183,22 +199,6 @@
     {
       "basename": "STL_Containers",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md"
-    },
-    {
-      "basename": "image-20231209224220608",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.assets/image-20231209224220608.png"
-    },
-    {
-      "basename": "Advanced Topics",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Advanced Topics.md"
-    },
-    {
-      "basename": "Multiprocessing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
-    },
-    {
-      "basename": "System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
     }
   ],
   "omittedPaths": [],
