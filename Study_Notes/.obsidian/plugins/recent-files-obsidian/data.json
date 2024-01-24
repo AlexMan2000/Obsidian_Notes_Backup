@@ -1,52 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "Project0_Setup(Sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
       "basename": "MapReduce&Spark",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Big_Data_Topics/MapReduce&Spark.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/MapReduce&Spark.md"
     },
     {
       "basename": "No_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Big_Data_Topics/No_SQL.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/No_SQL.md"
     },
     {
       "basename": "Data_Replication",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DB_Design/Data_Replication.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/Data_Replication.md"
     },
     {
       "basename": "DB_Design",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DB_Design/DB_Design.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/DB_Design.md"
     },
     {
       "basename": "Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Transaction&Recovery/Recovery.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Recovery.md"
     },
     {
       "basename": "Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Transaction&Recovery/Transactions.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Transactions.md"
     },
     {
       "basename": "Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Iterators&Joins.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Iterators&Joins.md"
     },
     {
       "basename": "Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Query_Optimization.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Query_Optimization.md"
     },
     {
       "basename": "Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Sorting&Hashing.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Sorting&Hashing.md"
     },
     {
       "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Relational_Algebra.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
     },
     {
       "basename": "Buffer_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Buffer_Management.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md"
     },
     {
       "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
     },
     {
       "basename": "Related_Resources",
@@ -62,7 +70,7 @@
     },
     {
       "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
     },
     {
       "basename": "AP-HW5-Inheritance",
@@ -87,10 +95,6 @@
     {
       "basename": "Exceptions",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
-    },
-    {
-      "basename": "Project1_SQL(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
     },
     {
       "basename": "Move_Semantics",
@@ -125,12 +129,8 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
     },
     {
-      "basename": "Project_0_Setup(Sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md"
-    },
-    {
       "basename": "Basic_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Basic_SQL.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
     },
     {
       "basename": "WikiRacer",
