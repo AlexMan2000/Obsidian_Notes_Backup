@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d90464671d472d9",
+        "id": "81ee83110bd446f7",
         "type": "tabs",
         "children": [
           {
-            "id": "22d314364581f735",
+            "id": "7a09b43821cd653d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,6 +31,7 @@
       {
         "id": "ac58ecdddeed7005",
         "type": "tabs",
+        "dimension": 65.43715846994536,
         "children": [
           {
             "id": "932953190040c9d5",
@@ -78,6 +79,7 @@
       {
         "id": "4f417f835f612f94",
         "type": "tabs",
+        "dimension": 34.56284153005464,
         "children": [
           {
             "id": "f58fc5649c2dc1e2",
@@ -91,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 200
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -131,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 292.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,54 +207,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "22d314364581f735",
+  "active": "7a09b43821cd653d",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124103151867.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124103132175.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124103112340.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124103052450.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102924262.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102913113.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102900174.png",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102852246.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102843455.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102737482.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124102721684.png",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/8_Balanced_Search_Trees/_HW2008__Red_Black_Trees.md.baiduyun.uploading.cfg",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.assets/image-20240124090752990.png.baiduyun.uploading.cfg",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/8_Balanced_Search_Trees/Binary_Search_Trees.assets/20230302_0954235194.png.baiduyun.uploading.cfg",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/8_Balanced_Search_Trees/Binary_Search_Trees.assets/20230302_0954233417.png.baiduyun.uploading.cfg",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/8_Balanced_Search_Trees/Binary_Search_Trees.assets/20230302_0954232483.png.baiduyun.uploading.cfg",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124150336307.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124150308596.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124150259808.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124145503359.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124145420327.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124145034442.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124144452195.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124143802066.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124143755633.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124143516577.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets/image-20240124142828828.png",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP",
+    "Mathematics/NYU_Master_Program/DS-GA-1015_Text_As_Data",
+    "Mathematics/NYU_Master_Program/DS-GA-1003",
+    "Mathematics/Untitled",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.assets",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.assets",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.assets",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
     "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW5-Inheritance.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Basic_SQL.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Indices&B+ Trees.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Disk&Buffer&Files.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Buffer_Management.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/WikiRacer.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW2-Network.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
     "未命名.canvas"
   ]
 }

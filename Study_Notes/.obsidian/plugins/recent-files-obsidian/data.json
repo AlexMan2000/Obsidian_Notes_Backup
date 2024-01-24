@@ -1,12 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "File_Index_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md"
+    },
+    {
+      "basename": "Lecture_1_2024_0112",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md"
+    },
+    {
       "basename": "Disk_Space_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md"
     },
     {
+      "basename": "AP-HW5-Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md"
+    },
+    {
+      "basename": "AP-HW4-Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md"
+    },
+    {
+      "basename": "AP-HW2-Network",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
+    },
+    {
+      "basename": "RAII_Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
+    },
+    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "Exceptions",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
     },
     {
       "basename": "Related_Resources",
@@ -29,24 +77,8 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
     },
     {
-      "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md"
-    },
-    {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
-    },
-    {
       "basename": "Class_Construction_Static",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
-    },
-    {
-      "basename": "AP-HW5-Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW5-Inheritance.md"
-    },
-    {
-      "basename": "Project1_SQL(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
     },
     {
       "basename": "Project_0_Setup(Sp24)",
@@ -62,27 +94,19 @@
     },
     {
       "basename": "WikiRacer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/WikiRacer.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L/WikiRacer.md"
     },
     {
       "basename": "GapBuffer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
-    },
-    {
-      "basename": "AP-HW2-Network",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW2-Network.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L/GapBuffer.md"
     },
     {
       "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md"
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
     },
     {
       "basename": "Lecture_Notes",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md"
-    },
-    {
-      "basename": "Lecture_1_2024_0112",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
     },
     {
       "basename": "QCQPs",
@@ -101,20 +125,12 @@
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
     },
     {
-      "basename": "RAII_Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
-    },
-    {
       "basename": "Lectures_Readings_Study_Guides",
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md"
     },
     {
       "basename": "Lectures_Readings",
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/4_Packages_Exceptions_Iterations/Lectures_Readings.md"
-    },
-    {
-      "basename": "Move_Semantics",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
     },
     {
       "basename": "Template_Class_Design",
@@ -183,22 +199,6 @@
     {
       "basename": "Section6_Class_Design_Hashing",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
-    },
-    {
-      "basename": "Assign8_Adventures_of_Links",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign8_Adventures_of_Links.md"
-    },
-    {
-      "basename": "Assign7_Hashing(Unfinished)",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign7_Hashing(Unfinished).md"
-    },
-    {
-      "basename": "Assign6_PQs&Binary_Heaps",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign6_PQs&Binary_Heaps.md"
-    },
-    {
-      "basename": "Assign5_Arrays",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign5_Arrays.md"
     }
   ],
   "omittedPaths": [],

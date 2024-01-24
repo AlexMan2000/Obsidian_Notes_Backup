@@ -1,16 +1,16 @@
 # Environment Setup
 > [!important]
 > Given a docker file, we can use `docker build. ` to set up the dev environment.
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240119171343616.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240119171343616.png)
 > Given a docker image, we can run the docker container as follows:
 > `docker run -it [imageName] bash`
 > 
 > Then we get the terminal:
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240119172138337.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240119172138337.png)
 > But we starting the docker image is not enough, we will want to mount our file system onto it, we could do it as follows:
 > `docker run -it -v <absolutepath on host>:/home/pathOnContainer imageName bash`
 > 
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240119173419168.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240119173419168.png)
 > For example, to run HW1 in the container, we can do:
 > ` docker run -it -v I:/A_Study_Notes_Backup/A-Computer-Science/Advanced_C++/AP1400-2-HW1:/home/AP-HW/HW1 hw1 bash`
 > 
@@ -31,30 +31,30 @@
 # Full Implementations
 ## zeros
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141801088.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120141933528.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141801088.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141933528.png)
 
 
 ## ones
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141810778.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120141938656.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141810778.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141938656.png)
 
 
 ## random
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141818784.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120141957496.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141818784.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141957496.png)
 
 
 
 ## show
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141824325.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142006752.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141824325.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142006752.png)
 
 
 
 
 ## multiply - scalar
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141830908.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142019185.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141830908.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142019185.png)
 
 
 
@@ -62,32 +62,32 @@
 
 ## multiply - matrix
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141842654.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142028061.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141842654.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142028061.png)
 
 
 
 ## sum - scalar
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141850922.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142037052.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141850922.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142037052.png)
 
 
 
 ## sum - matrix
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141857313.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142048087.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141857313.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142048087.png)
 
 
 
 ## transpose
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141903104.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142055031.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141903104.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142055031.png)
 
 
 
 
 ## minor
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141910248.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142120043.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141910248.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142120043.png)
 
 
 
@@ -96,7 +96,7 @@
 
 ## determinant
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141923510.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142131231.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141923510.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142131231.png)
 
 
 ## inverse
@@ -108,17 +108,17 @@
 > Thus the inverse can be computed as $A^{-1} = \frac{1}{det(A)}Adj(A)$.
 
 > [!algo] How to find cofactor matrix - 3x3
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120111009954.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120111016631.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120111009954.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120111016631.png)
 
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120142148941.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142148941.png)
 
 
 
 
 ## concatenate
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141628262.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141628262.png)
 ```c++
 /**
 
@@ -264,32 +264,32 @@
 
 ## ero_swap
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141530767.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142252478.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141530767.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142252478.png)
 
 
 
 ## ero_multiply
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141508978.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142300611.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141508978.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142300611.png)
 
 
 
 ## ero_sum
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120141517027.png)![](AP-HW1-Matrix_Algebra.assets/image-20240120142309007.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120141517027.png)![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142309007.png)
 
 
 
 ## upper_triangular
 > [!task]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120115527478.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120115527478.png)
 
 > [!code]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120142329369.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120142329369.png)
 
 
 
 ## Testing
 > [!test]
-> ![](AP-HW1-Matrix_Algebra.assets/image-20240120122013966.png)
+> ![](Advanced_Programming/AP-HW1-Matrix_Algebra.assets/image-20240120122013966.png)
 

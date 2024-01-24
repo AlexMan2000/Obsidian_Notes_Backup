@@ -12,10 +12,6 @@
 > [!concept]
 > ![](Disk_Space_Management.assets/image-20240123235250232.png)![](Disk_Space_Management.assets/image-20240123235255755.png)
 
-> [!quiz] True or False
-> 
-
-
 
 ## Flash(SSD)
 > [!concept]
@@ -219,7 +215,7 @@
 
 
 
-## Fixed Length Records - Header
+## Fixed Length Records - Page Header
 ### Packed Layout - Offset
 > [!concept]
 > ![](Disk_Space_Management.assets/image-20240124100353546.png)
@@ -257,9 +253,12 @@
 >
 >![](Disk_Space_Management.assets/image-20240124101617574.png)
 
+> [!quiz] Concept Check
+> **We usually use bitmaps for pages with fixed-length records. Why not just use a slotted page for pages with fixed-length records?**
+> 
+> Bitmaps have better space complexity since slotted pages use pointers which are addresses.
 
-
-## Variable Length Records 
+## Variable Length Records - Slotted Layout
 ### Page Footer
 > [!concept]
 > ![](Disk_Space_Management.assets/image-20240124101656958.png)![](Disk_Space_Management.assets/image-20240124101707576.png)
@@ -279,7 +278,12 @@
 > 
 > The footer starts from the bottom of the page rather than the top so that the slot directory has room to grow when records are inserted. 
 
-
+> [!quiz] True or False
+> Assuming integers take 4 bytes and pointers take 4 bytes, a slot directory that is 512 bytes can address 64 records in a page.
+> 
+> **False**, we have the free space pointer, which doesn’t fit after 64 * (4 + 4) = 512 bytes of per-record data in the slot directory.
+> 
+> Actually, we are only able to address $\frac{512 - 4 - 4}{4 + 4} = 63$ slots.
 
 
 ### Packed Layout
@@ -337,6 +341,11 @@
 > FLRs only contain fixed length fields (integer, boolean, date, etc.), and FLRs with the same schema consist of the same number of bytes
 > ![](Disk_Space_Management.assets/image-20240124102843455.png)
 
+> [!quiz] True or False
+> In a page containing fixed-length records with no nullable fields, the size of the bitmap never changes. 
+> 
+> **True**, the size of the records is fixed, so the number we can fit on a page is fixed.
+
 > [!example] Fa20 Note02 Practices Q2
 > ![](Disk_Space_Management.assets/image-20240124103052450.png)![](Disk_Space_Management.assets/image-20240124103112340.png)
 
@@ -349,11 +358,21 @@
 > VLRs contain both fixed length and variable length fields (varchar), resulting in each VLR of the same schema having a potentially different number of bytes. VLRs store all fixed length fields before variable length fields and use a record header that contains pointers to the end of the variable length fields.
 > ![](Disk_Space_Management.assets/image-20240124102852246.png)![](Disk_Space_Management.assets/image-20240124102900174.png)
 
-> [!example] Fawp Note02 Practices Q3
+> [!quiz] True or False
+> Is fragmentation an issue with variable length records on a slotted page?
+> 
+> **Yes.** Even if we periodically pack up the records. We cannot guarantee the packed state upon each deletion.
+> 
+
+> [!quiz] Concept Check
+> ![](Disk_Space_Management.assets/image-20240124103405056.png)![](Disk_Space_Management.assets/image-20240124103412803.png)
+
+> [!example] Fa20 Note02 Practices Q3
 > ![](Disk_Space_Management.assets/image-20240124103132175.png)![](Disk_Space_Management.assets/image-20240124103151867.png)
 
 > [!example] Fa20 Discussion2 P3
 > ![](Disk_Space_Management.assets/image-20240124083133406.png)
+
 
 
 
