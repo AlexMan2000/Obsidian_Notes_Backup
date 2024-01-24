@@ -38,7 +38,7 @@
 
 ## Sending Files between WSL and Windows
 > `cp -r /mnt/filepath_on_windows ~/home/filepath on WSL`
-> `cp -r /mnt/i/A_Study_Notes_Backup/A-Computer-Science/UCB_CS61C/csapp_labs/lab_name  ~/home/lab_name/`
+> `cp -r /mnt/f/Study_Notes/A-Computer-Science/UCB_CS61C/csapp_labs/lab_name  ~/home/lab_name/`
 
 
 

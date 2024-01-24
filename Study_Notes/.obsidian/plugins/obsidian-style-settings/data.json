@@ -28,7 +28,6 @@
   "Blue-Topaz-Codebox-Highlight@@code-line-number": false,
   "Blue-Topaz-Codebox-Highlight@@letter-space-code": 0,
   "Blue-Topaz-Codebox-Highlight@@blur-codebox-frosted-glass": 2,
-  "Blue-Topaz-Codebox-Highlight@@code-box-style-option": "codebox-frosted-glass",
   "blue-topaz-theme@@img-grid": true,
   "blue-topaz-theme@@transparent-setting-panel": false,
   "Blue-Topaz-Codebox-Highlight@@remove-language-type": false,
@@ -42,6 +41,5 @@
   "blue-topaz-theme@@rainbow-ordered-list": false,
   "blue-topaz-theme@@rainbow-checkbox": false,
   "blue-topaz-theme@@outline-style": "logseq-outline-style",
-  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-bt-default",
   "Blue-Topaz-Codebox-Highlight@@nowrap-edit-codebox": false
 }

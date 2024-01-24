@@ -1,16 +1,88 @@
 {
   "recentFiles": [
     {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
+    },
+    {
+      "basename": "Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
+    },
+    {
+      "basename": "Operating System Interfaces",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
+    },
+    {
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
+    },
+    {
+      "basename": "File_Index_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
+    },
+    {
+      "basename": "Class_Construction_Static",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
+    },
+    {
+      "basename": "AP-HW5-Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW5-Inheritance.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "Project_0_Setup(Sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md"
+    },
+    {
+      "basename": "Basic_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Basic_SQL.md"
+    },
+    {
+      "basename": "Buffer_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Buffer_Management.md"
+    },
+    {
+      "basename": "WikiRacer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/WikiRacer.md"
+    },
+    {
+      "basename": "GapBuffer",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
+    },
+    {
+      "basename": "AP-HW2-Network",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW2-Network.md"
+    },
+    {
+      "basename": "AP-HW1-Matrix_Algebra",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md"
+    },
+    {
       "basename": "Lecture_Notes",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md"
     },
     {
       "basename": "Lecture_1_2024_0112",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
-    },
-    {
-      "basename": "Relation_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Relation_SQL.md"
     },
     {
       "basename": "QCQPs",
@@ -41,10 +113,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/4_Packages_Exceptions_Iterations/Lectures_Readings.md"
     },
     {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
-    },
-    {
       "basename": "Move_Semantics",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
     },
@@ -53,16 +121,8 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
     },
     {
-      "basename": "GapBuffer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/GapBuffer.md"
-    },
-    {
       "basename": "Special Member Functions",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
-    },
-    {
-      "basename": "Class_Construction_Static",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
     },
     {
       "basename": "STL_Algorithms",
@@ -81,10 +141,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
     },
     {
-      "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/AP-HW1-Matrix_Algebra.md"
-    },
-    {
       "basename": "Initialization_References",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Initialization_References.md"
     },
@@ -97,24 +153,8 @@
       "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md"
     },
     {
-      "basename": "Disk&Buffer&Files",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Disk&Buffer&Files.md"
-    },
-    {
       "basename": "Docker",
       "path": "Computer_Science/Computer_Science_Tools/Docker.md"
-    },
-    {
-      "basename": "Project1_SQL(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
-    },
-    {
-      "basename": "Project_0_Setup(Sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project_0_Setup(Sp24).md"
-    },
-    {
-      "basename": "Cost Models",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Cost Models.md"
     },
     {
       "basename": "Lectures_Readings",
@@ -131,10 +171,6 @@
     {
       "basename": "Iterators_Pointers",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
-    },
-    {
-      "basename": "WikiRacer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/WikiRacer.md"
     },
     {
       "basename": "Functions and Lambdas",
@@ -163,42 +199,6 @@
     {
       "basename": "Assign5_Arrays",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign5_Arrays.md"
-    },
-    {
-      "basename": "Section8_Trees",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section8_Trees.md"
-    },
-    {
-      "basename": "Section7_Linked_Lists",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section7_Linked_Lists.md"
-    },
-    {
-      "basename": "Assign9_Huffman_Coding",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Assign9_Huffman_Coding.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
-    },
-    {
-      "basename": "Relations_Partial_Orders",
-      "path": "Computer_Science/Discrete_Mathematics/Unit3_Counting/Relations_Partial_Orders.md"
-    },
-    {
-      "basename": "4_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Specifications.md"
-    },
-    {
-      "basename": "Sorting_Searching",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
-    },
-    {
-      "basename": "Algorithmic_Thinking",
-      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
-    },
-    {
-      "basename": "STL_Containers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/STL_Containers.md"
     }
   ],
   "omittedPaths": [],
