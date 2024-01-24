@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "MapReduce&Spark",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Big_Data_Topics/MapReduce&Spark.md"
+    },
+    {
+      "basename": "No_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Big_Data_Topics/No_SQL.md"
+    },
+    {
+      "basename": "Data_Replication",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DB_Design/Data_Replication.md"
+    },
+    {
+      "basename": "DB_Design",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DB_Design/DB_Design.md"
+    },
+    {
+      "basename": "Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Transaction&Recovery/Recovery.md"
+    },
+    {
+      "basename": "Transactions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/Transaction&Recovery/Transactions.md"
+    },
+    {
+      "basename": "Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Iterators&Joins.md"
+    },
+    {
+      "basename": "Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Query_Optimization.md"
+    },
+    {
+      "basename": "Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Sorting&Hashing.md"
+    },
+    {
+      "basename": "Relational_Algebra",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Relational_Algebra.md"
+    },
+    {
+      "basename": "Buffer_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Buffer_Management.md"
+    },
+    {
       "basename": "File_Index_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/File_Index_Management.md"
     },
@@ -89,10 +133,6 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/SQL_Algebra/Basic_SQL.md"
     },
     {
-      "basename": "Buffer_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/DBMS_Architecture/Buffer_Management.md"
-    },
-    {
       "basename": "WikiRacer",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L/WikiRacer.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "Initialization_References",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Initialization_References.md"
-    },
-    {
-      "basename": "Assignment_1",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md"
-    },
-    {
-      "basename": "Problem_Set_1",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Problem_Set_1.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "Computer_Science/Computer_Science_Tools/Docker.md"
-    },
-    {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Lectures_Readings.md"
-    },
-    {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Lectures_Readings.md"
-    },
-    {
-      "basename": "Generics_Function_Pointers",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
-    },
-    {
-      "basename": "Iterators_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/2_ADTs_Data_Structures/Iterators_Pointers.md"
-    },
-    {
-      "basename": "Functions and Lambdas",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
-    },
-    {
-      "basename": "Section_5_Class_Design_and_Dynamic_Memory_Allocation",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Section_5_Class_Design_and_Dynamic_Memory_Allocation.md"
-    },
-    {
-      "basename": "Section6_Class_Design_Hashing",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
     }
   ],
   "omittedPaths": [],

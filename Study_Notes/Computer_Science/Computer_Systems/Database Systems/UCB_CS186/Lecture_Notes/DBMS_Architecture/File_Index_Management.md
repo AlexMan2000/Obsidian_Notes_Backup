@@ -54,7 +54,7 @@
 
 
 
-# B Plus Tree Operations
+# B-Plus Tree Operations
 ## Searching
 > [!important]
 > ![](File_Index_Management.assets/image-20240124150259808.png)![](File_Index_Management.assets/image-20240124150308596.png)![](File_Index_Management.assets/image-20240124150336307.png)
@@ -69,8 +69,49 @@
 
 
 ## Insertion
+> [!algo]
+> ![](File_Index_Management.assets/image-20240124151725331.png)
+> **Note:** we want to **COPY** leaf node data into the parent so that we don’t lose the data in the leaf node. Remember that every key that is in the table that the index is built on must be in the leaf nodes! Being in a inner node does not mean that key is actually still in the table. 
+> 
+> On the other hand, we can **MOVE** inner node data into parent nodes because the inner node does not contain the actual data, they are just a reference of which way to search when traversing the tree.
+> ![](File_Index_Management.assets/image-20240124151949827.png)![](File_Index_Management.assets/image-20240124151958799.png)
+
+> [!example]
+> ![](File_Index_Management.assets/image-20240124154028523.png)![](File_Index_Management.assets/image-20240124154038602.png)![](File_Index_Management.assets/image-20240124154049852.png)![](File_Index_Management.assets/image-20240124154057353.png)![](File_Index_Management.assets/image-20240124154136305.png)![](File_Index_Management.assets/image-20240124154221859.png)![](File_Index_Management.assets/image-20240124154228225.png)![](File_Index_Management.assets/image-20240124154236433.png)![](File_Index_Management.assets/image-20240124154245459.png)
+
+
+
+
+
 
 
 
 
 ## Deletion
+> [!concept]
+> ![](File_Index_Management.assets/image-20240124152104251.png)
+
+
+
+## Bulk Loading
+> [!motiv] Motivation
+> ![](File_Index_Management.assets/image-20240124153658249.png)![](File_Index_Management.assets/image-20240124153704544.png)
+
+> [!algo]
+> ![](File_Index_Management.assets/image-20240124153635293.png)
+
+> [!example] 
+> ![](File_Index_Management.assets/image-20240124153758360.png)![](File_Index_Management.assets/image-20240124153807741.png)![](File_Index_Management.assets/image-20240124153814790.png)
+
+
+
+# B-plus Tree Refinement
+
+
+
+
+
+
+
+
+
