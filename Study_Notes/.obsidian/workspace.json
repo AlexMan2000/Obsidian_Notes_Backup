@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,6 +209,10 @@
   },
   "active": "7ff9fc9aee69b18c",
   "lastOpenFiles": [
+    "image.jpg.md.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/eecs127_reader.pdf.baiduyun.uploading.cfg",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/cvxbook-solutions.pdf.baiduyun.uploading.cfg",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf.baiduyun.uploading.cfg",
@@ -219,9 +223,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309386541.png.baiduyun.uploading.cfg",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309379079.png.baiduyun.uploading.cfg",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309355780.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309335541.png.baiduyun.uploading.cfg",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets/image-20240124163859651.png",
     "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md",
@@ -229,7 +230,6 @@
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
     "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",

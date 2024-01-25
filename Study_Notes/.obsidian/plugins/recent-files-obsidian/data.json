@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Lab1_Notes",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md"
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Linear Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md"
     },
     {
       "basename": "Functions and Lambdas",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "Lab1_Notes",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md"
     },
     {
       "basename": "SOCPs",
@@ -35,10 +43,6 @@
     {
       "basename": "MLE&Multivariate Gaussian",
       "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
-    },
-    {
-      "basename": "Linear Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md"
     },
     {
       "basename": "AP-HW5-Inheritance",
@@ -111,10 +115,6 @@
     {
       "basename": "Related_Resources",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md"
-    },
-    {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
     },
     {
       "basename": "AP-HW4-Smart_Pointers",
