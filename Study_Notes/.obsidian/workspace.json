@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.50152587890625
+    "width": 200
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,17 +209,37 @@
   },
   "active": "7ff9fc9aee69b18c",
   "lastOpenFiles": [
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/eecs127_reader.pdf.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/cvxbook-solutions.pdf.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/BV_cvxbook.pdf.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309441598.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309422485.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309406607.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309386541.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309379079.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309355780.png.baiduyun.uploading.cfg",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309335541.png.baiduyun.uploading.cfg",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets/image-20240124163859651.png",
+    "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets/image-20240124163122715.png",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md",
+    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/MapReduce&Spark.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/No_SQL.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/Data_Replication.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/DB_Design.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Recovery.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Transactions.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Query_Optimization.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Sorting&Hashing.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
@@ -233,28 +253,8 @@
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154136305.png",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154127270.png",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154057353.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154049852.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154038602.png",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP",
-    "Mathematics/NYU_Master_Program/DS-GA-1015_Text_As_Data",
-    "Mathematics/NYU_Master_Program/DS-GA-1003",
-    "Mathematics/Untitled",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
     "未命名.canvas"
   ]
 }

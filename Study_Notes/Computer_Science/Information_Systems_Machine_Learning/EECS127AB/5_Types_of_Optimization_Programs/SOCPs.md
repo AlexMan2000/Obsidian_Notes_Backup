@@ -20,7 +20,7 @@
 > ![](SOCPs.assets/image-20231217081116015.png)
 > 
 > Now we could define the polyhedra cone on it, which looks like:
->  $$\left\{\begin{aligned}(\vec{x},t) \mid x \leq 2\cdot t, & x \geqslant-2\cdot t ,y  \leqslant 2\cdot t, y \geqslant-2\cdot t\end{aligned}\right\} .$$
+>  $$\left\{\begin{aligned}(\vec{x},t) \mid x \leq 2\cdot t, & x \geqslant-2\cdot t , y  \leqslant 2\cdot t,  y \geqslant-2\cdot t\end{aligned}\right\} .$$
 >  ![](SOCPs.assets/image-20231217081126797.png)
 >  Just a bunch of parallel polyhedra of different region area with respect to $t$.
 
@@ -64,6 +64,7 @@
 
 
 # Second Order Cone Program
+## Definition
 > [!def]
 > SECOND-ORDER CONE PROGRAMMING (SOCP) is a generalization of linear and quadratic programming that allows foraffine combinations of variables to be constrained inside a special convex set, called a second-order cone. 
 > 
@@ -90,6 +91,25 @@
 > The reason why the optimal points is the same as the original one is that we are minimizing the $\vec{b}$, which means if we pick $\vec{s}\geq\vec{0}$, then since $\vec{b}=A\vec{x}+\vec{s}$, we have $\vec{b}\leq A\vec{x}$. Since we are minizing over $\vec{b}$, so taking $\vec{b}$ to be as close as $A\vec{x}$ is more optimal, so the optimal points should be on the boundary.
 > 
 > Note that this kind of relaxing trick in most cases work but there are still some types of problem where this trick won't work as desired.
+
+
+## Applications
+### Sphere Enclosure
+> [!example] Fa22 Disc11 P2
+> To formulate an optimization problem, we first need to know the variables that we are optimizing on. Since we want to find a ball, we must find the center(denoted by $\vec{c}$) and the radius(denoted by $r$) of the ball.
+> 
+> Then, we need to find some constraints on $\vec{c}$ and $r$. And the only constraint here is the fact that the ball parametrized by $(\vec{c},r)$ should contain all the balls parametrized by $(\vec{x}_i,\rho_i)$. 
+> 
+> So how to connect these information:
+> 1. In order for $B_i$ to be inside of the Ball $B$, we have to ensure that all the points inside $B_i$ should be in $B$. At the corner case, when the $B_i$ is perpendicular to $B$, we get that $\|\vec{x}_i-\vec{c}\|_2=r-\rho_i$, as shown in the figure below:
+> 
+> ![](SOCPs.assets/image-20240124163859651.png)
+> 2. Given thus we know that the farthest point in the $B_i$ from $\vec{c}$ is the perpendicular point, and we claim that the farthest point in any $B_i$ should be within $B$ in order for $B$ to contain $B_i$.
+> 3. The next step is to get the expression for the farthest point of $B_i$ to $\vec{c}$, which is the step shown in the solution.
+> 
+> ![](SOCPs.assets/image-20240124163122715.png)
+
+
 
 
 # LP,QP,QCQP=>SOCP

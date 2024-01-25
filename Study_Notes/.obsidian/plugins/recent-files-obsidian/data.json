@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "Lab1_Notes",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "SOCPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+    },
+    {
+      "basename": "Drawing 2024-01-24 16.37.32.excalidraw",
+      "path": "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md"
+    },
+    {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/eecs127_reader.pdf"
+    },
+    {
+      "basename": "QCQPs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
+    },
+    {
+      "basename": "Quadratic_Programs",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
+    },
+    {
+      "basename": "MLE&Multivariate Gaussian",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
+    },
+    {
+      "basename": "Linear Regression",
+      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md"
+    },
+    {
+      "basename": "AP-HW5-Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md"
+    },
+    {
       "basename": "Project0_Setup(Sp24)",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md"
     },
@@ -71,10 +115,6 @@
     {
       "basename": "Disk_Space_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
-      "basename": "AP-HW5-Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md"
     },
     {
       "basename": "AP-HW4-Smart_Pointers",
@@ -149,14 +189,6 @@
       "path": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md"
     },
     {
-      "basename": "QCQPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
-    },
-    {
-      "basename": "Quadratic_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
-    },
-    {
       "basename": "6_Access_Mutability",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "Lectures_Readings_Study_Guides",
       "path": "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md"
-    },
-    {
-      "basename": "Lectures_Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/4_Packages_Exceptions_Iterations/Lectures_Readings.md"
-    },
-    {
-      "basename": "Template_Class_Design",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
-    },
-    {
-      "basename": "Special Member Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
-    },
-    {
-      "basename": "STL_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/STL_Algorithms.md"
-    },
-    {
-      "basename": "_Project_04__Scheme",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61A/4_Scheme_Functional_Programming/4_2_Scheme_Lists_Interpreters/_Project_04__Scheme.md"
-    },
-    {
-      "basename": "Streams",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Streams.md"
-    },
-    {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
-    },
-    {
-      "basename": "Initialization_References",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/1_C++_Basics/Initialization_References.md"
     }
   ],
   "omittedPaths": [],
