@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 218.50152587890625
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -102,7 +102,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 30,
+        "dimension": 46.01889338731444,
         "children": [
           {
             "id": "abd22396395eb00b",
@@ -125,7 +125,7 @@
       {
         "id": "ac5e674590e10608",
         "type": "tabs",
-        "dimension": 30.90277777777778,
+        "dimension": 26.99055330634278,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 39.09722222222222,
+        "dimension": 26.99055330634278,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -209,52 +209,52 @@
   },
   "active": "7ff9fc9aee69b18c",
   "lastOpenFiles": [
-    "image.jpg.md.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision",
+    "Computer_Science/Deep_Learning/NTU_Deep_Learning",
+    "Computer_Science/Deep_Learning",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164843078.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164837661.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164512417.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164504705.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164503724.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164446483.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164208230.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163618767.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163603164.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163235951.png",
+    "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Data_Structures_Algorithms/CS170/Ch1_Intro_Big-O.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
+    "Computer_Science/Machine_Learning/EECS188/4_Machine_Learning",
+    "Computer_Science/Machine_Learning/EECS188/3_Bayes_Nets",
+    "Computer_Science/Machine_Learning/EECS188/2_Reinforcement_Learning",
+    "Computer_Science/Information_Systems_Machine_Learning/EECS188/Multi-Agent-Search",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms",
+    "Computer_Science/Machine_Learning/EECS188",
+    "Computer_Science/Machine_Learning/EECS189/Linear Regression.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
     "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/eecs127_reader.pdf.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/cvxbook-solutions.pdf.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/BV_cvxbook.pdf.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309441598.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309422485.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309406607.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309386541.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309379079.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.assets/20231023_2309355780.png.baiduyun.uploading.cfg",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets/image-20240124163859651.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
     "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.assets/image-20240124163122715.png",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
+    "Computer_Science/Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/MapReduce&Spark.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/No_SQL.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/Data_Replication.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/4_DB_Design/DB_Design.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Recovery.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Transactions.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Query_Optimization.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Sorting&Hashing.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154245459.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154236433.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154228225.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154221859.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154204121.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154136305.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154127270.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.assets/image-20240124154057353.png",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md",
     "未命名.canvas"
   ]
 }

@@ -1,12 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "Recitation_1",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
+      "basename": "File_Index_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Drawing 2024-01-25 16.31.42.excalidraw",
+      "path": "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md"
+    },
+    {
+      "basename": "_Ch2_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Ch1_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS170/Ch1_Intro_Big-O.md"
+    },
+    {
+      "basename": "4_Multi-Agent_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
       "basename": "Disk_Space_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
     },
     {
       "basename": "Linear Regression",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/Linear Regression.md"
+      "path": "Computer_Science/Machine_Learning/EECS189/Linear Regression.md"
     },
     {
       "basename": "Functions and Lambdas",
@@ -18,11 +66,11 @@
     },
     {
       "basename": "SOCPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
       "basename": "Drawing 2024-01-24 16.37.32.excalidraw",
@@ -30,19 +78,19 @@
     },
     {
       "basename": "eecs127_reader",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/eecs127_reader.pdf"
+      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
     },
     {
       "basename": "QCQPs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
     },
     {
       "basename": "Quadratic_Programs",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
     },
     {
       "basename": "MLE&Multivariate Gaussian",
-      "path": "Computer_Science/Information_Systems_Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
+      "path": "Computer_Science/Machine_Learning/EECS189/MLE&Multivariate Gaussian.md"
     },
     {
       "basename": "AP-HW5-Inheritance",
@@ -101,20 +149,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md"
     },
     {
-      "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md"
-    },
-    {
       "basename": "Lecture_1_2024_0112",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md"
     },
     {
       "basename": "AP-HW4-Smart_Pointers",
@@ -163,42 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
-    },
-    {
-      "basename": "Class_Construction_Static",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
-    },
-    {
-      "basename": "Basic_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
-    },
-    {
-      "basename": "WikiRacer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L/WikiRacer.md"
-    },
-    {
-      "basename": "GapBuffer",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/CS106L/GapBuffer.md"
-    },
-    {
-      "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
-    },
-    {
-      "basename": "Lecture_Notes",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1004/Lecture_Notes.md"
-    },
-    {
-      "basename": "6_Access_Mutability",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Access_Mutability.md"
-    },
-    {
-      "basename": "5_Designing_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Designing_Specifications.md"
-    },
-    {
-      "basename": "Lectures_Readings_Study_Guides",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/3_Testing_OOP_HOFs/Lectures_Readings_Study_Guides.md"
     }
   ],
   "omittedPaths": [],
