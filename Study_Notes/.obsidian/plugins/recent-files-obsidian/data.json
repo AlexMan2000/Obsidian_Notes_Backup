@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Random_Process",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md"
+      "basename": "Concentration_Inequalities",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
+    },
+    {
+      "basename": "概率不等式",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
+    },
+    {
+      "basename": "Probability Formulas and Theorems",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
+    },
+    {
+      "basename": "Convergence Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
+    },
+    {
+      "basename": "Information_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
     },
     {
       "basename": "Important Applications Of Basic Probability",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
+    },
+    {
+      "basename": "Random_Process",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
       "basename": "Probability in EECS",
@@ -19,10 +43,6 @@
     {
       "basename": "4_SOCPs",
       "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
     },
     {
       "basename": "2_Quadratic_Programs",
@@ -179,26 +199,6 @@
     {
       "basename": "AP-HW2-Network",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
-    },
-    {
-      "basename": "RAII_Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/Related_Resources.md"
-    },
-    {
-      "basename": "Exceptions",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
-    },
-    {
-      "basename": "Move_Semantics",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
-    },
-    {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
     }
   ],
   "omittedPaths": [],

@@ -19,8 +19,16 @@
 
 > [!example] Fa23 Disc03 P2
 > ![](Random_Process.assets/image-20240125231255199.png)![](Random_Process.assets/image-20240125231302892.png)![](Random_Process.assets/image-20240125231310048.png)
-> Calculation Details:
-> $$\begin{aligned}\operatorname{Var}\left[X_n \mid X_{n-1}\right] & =E\left[\left(X_n-E\left[X_n \mid X_{n-1}\right]\right)^2 \mid X_{n-1}\right] \\& =E\left[\left(X_n-\mu X_{n-1}\right)^2 \mid X_{n-1}\right] \\& =E\left[X_n^2 \mid X_{n-1}\right]-2 E\left[X_n \mid X_{n-1}\right] \cdot X_{n-1} \cdot\mu \\&+\mu^2 X_{n-1}^2\\&=E\left[(\sum\limits_{j=1}^{X_{n-1}}\epsilon^j)^2 \mid X_{n-1}\right]-\mu^2 X_{n-1}^2\\&=E\left[\sum\limits_{j=1}^{X_{n-1}}(\epsilon^j)^2 \mid X_{n-1}\right]-\mu^2 X_{n-1}^2\\&=X_{n-1}E\left[\sum\limits_{j=1}^{X_{n-1}}(\epsilon^j)^2 \mid X_{n-1}\right]-\mu^2 X_{n-1}^2\\&=X_{n-1}E\left[\sum\limits_{j=1}^{X_{n-1}}(\epsilon^j)^2\right]-\mu^2 X_{n-1}^2 \\&=X_{n-1}(\sigma^2+\mu^2-\mu^2)\\&=\sigma^2X_{n-1}\end{aligned}$$
+> The calculation combines lots of details, it is worth mentioning:
+> 
+> For conditional variance $\mathbb{Var}[X_n|X_{n-1}]$, we can compute it as $\mathbb{E}[X_n^2|X_{n-1}]-\mathbb{E}[X_n|X_{n-1}]^2$
+> 
+> Calculation Details for conditional variance:
+> $$\begin{aligned}\operatorname{Var}\left[X_n \mid X_{n-1}\right] & =E\left[\left(X_n-E\left[X_n \mid X_{n-1}\right]\right)^2 \mid X_{n-1}\right] \\& =E\left(X_n^2-2 X_n E\left(X_n \mid X_{n-1}\right]+E\left[X_n \mid X_{n-1}\right]^2 \mid X_{n-1}\right] \\& =E\left[X_n^2 \mid X_{n-1}\right]-2 E\left[X_n \mid X_{n-1}\right]^2+E\left[X_n \mid X_{n-1}\right]^2 \\& =E\left[X_n^2 \mid X_{n-1}\right]-E\left[X_n \mid X_{n-1}\right]^2 \\& =E\left[\left(\sum_{j=1}^{X_{n-1}} \varepsilon^j\right)^2 \mid X_{n-1}\right]-\left(\mu X_{n-1}\right)^2 \\& =E\left[\sum_{j=1}^{X_{n-1}}\left(\varepsilon^j\right)^2+\sum_{i \neq j} \varepsilon^i \cdot \varepsilon^j \mid X_{n-1}\right]-\mu^2 X_{n-1}^2 \\& =\sum_{j=1} E\left(\left(\varepsilon^j\right)^2\right]+\sum_{i \neq j} E\left(\varepsilon^i \cdot \varepsilon^j\right]-\mu^2 X_{n-1}^2 \\& =X_{n-1} E\left[\varepsilon^2\right]+\sum_{i \neq j}\{\underbrace{\operatorname{cov}\left(\varepsilon^i, \varepsilon^j\right)}_0+E\left(\varepsilon^i\right] E\left[\varepsilon^j\right]\}-\mu^2 X_{n-1}^2 \\& =X_{n-1}\left(\sigma^2+\mu^2\right)+X_{n-1}\left(X_{n-1}-1\right) \cdot E[\varepsilon]^2-\mu^2 X_{n-1}^2 \\& =\sigma^2 X_{n-1}+\mu^2 X_{n-1}+\mu^2 X_{n-1}^2-\mu^2 X_{n-1}-\mu^2 X_{n-1}^2 \\& =\sigma^2 X_{n-1}\end{aligned}$$
+> 
+> For variance, we can calculate it on top of the conditional variance and use variance decomposition formula $Var[X_n]=Var[E[X_n|X_{n-1}]]+E[Var[X_n|X_{n-1}]]$
+> 
+ 
 
 
 

@@ -43,6 +43,8 @@
 > ![](Probability%20Formulas%20and%20Theorems.assets/image-20231217202045111.png)
 
 > [!proof] Proof from Textbook
+> Here i.o means infinitely many events occurred.
+> 
 > First note that
 > $$\left\{A_n \text {, i.o. }\right\}=\cap_n B_n=: B,$$where $B_n=\cup_{m \geq n} A_m$ is a decreasing sequence of sets. 
 > To see this, note that the outcome $\omega$ is in infinitely many sets $A_n$, i.e., that $\omega \in\left\{A_n\right.$, i.o. $\}$, if and only if for every $n$, the outcome $\omega$ is in some $A_m$ for $m \geq n$. 
@@ -57,7 +59,30 @@
 
 ## Borel-Cantelli => SLLN
 > [!thm] EECS126 Fa21 HW2 P4
-> ![](Convergence%20Theory.assets/image-20231119214025067.png)
+> ![](Convergence%20Theory.assets/image-20231119214025067.png)![](Probability%20Formulas%20and%20Theorems.assets/image-20240126160147729.png)
+> Note here we use several properties of independence:
+> 1. If $X,Y,Z$ are independent, then $p_{X,Y,Z}(x,y,z)=p_X(x)p_Y(y)p_Z(z)$
+> 2. If $X,Y,Z$ are independent, then $E[XYZ]=E[X]E[Y]E[Z]$ and we can prove it by definition.
+> 3. If $X,Y,Z$ are independent, then any function of $X,Y,Z$ are independent.
+> 4. If $X,Y,Z$ are independent, then any function of the subset of $X,Y,Z$ are independent of the remaining random variable.
+> 
+> So here $E[X_i^3X_j]=E[X_i^3]E[X_j]=0$, $E[X_i^2X_jX_k]=E[X_i^2]E[X_j]E[X_k]=0$ and $E[X_iX_jX_kX_l]=0$
+> ![](Probability%20Formulas%20and%20Theorems.assets/image-20240126160438269.png)
+> We also use some properties from combinatories when we are expanding out the $E[S_n^4]$. Basically, each term in the $(X_1+X_2+\cdots+X_n)^4$ is determined by choosing an element from $(X_1,X_2,\cdots,X_n)$ four times. Thus generally we will have $S_n^t=(X_1+\cdots+X_n)^t=\sum\limits_{1\leq i_1,i_2,\cdots,i_t\leq n}X_{i_1}X_{i_2}\cdots X_{i_t}$.
+> 
+> Back to this problem, we will have $E[S_n^4]=\sum\limits_{1\leq i,j,k,l\leq n}X_iX_jX_kX_l$.
+> 
+> Then we only have $E[\sum\limits_{i=1}^nX_i^4]+E[\sum\limits_{i\neq j}X_i^2X_j^2]$. Since $X_1,\cdots,X_n$ are i.i.d, we only need to figure out how many terms are there for the first and second pattern.
+> 
+> For the first one, clearly we have $n$ terms, for the second one, we have to pick $X_iX_jX_kX_l$ such that one of the following three scenario happens:
+> 1. $i=j, k=l, j\neq k$, we have $n\cdot 1\cdot (n-1)\cdot 1$
+> 2. $i=k,j=l,i\neq j$, we have $n\cdot (n-1)\cdot 1\cdot 1$
+> 3. $i=l,j=k,i\neq j$, we have $n\cdot (n-1)\cdot 1\cdot 1$
+> 
+> So in total, there are $3n(n-1)$ ways to find such terms, which means there are this many terms.
+
+
+
 
 
 
@@ -79,8 +104,6 @@
 
 > [!proof]
 > ![](Probability%20Formulas%20and%20Theorems.assets/image-20231217212130904.png)![](Probability%20Formulas%20and%20Theorems.assets/image-20231217212141097.png)
-
-
 
 
 

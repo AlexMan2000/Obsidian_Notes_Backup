@@ -10,14 +10,14 @@
 > **Note:**
 > `Convergence almost surely` is also called `Convergence with Probablity 1`
 
-### Main Theorem
+### Main Definition
 > [!thm] 
 > We say that a random sequence $(X_n)_{n\in \mathbb{N}}$ converges almost surely if:
 > ![](Convergence%20Theory.assets/image-20231109173519754.png)
 
 
 
-### Criterion Theorem
+### How to Show?
 > [!motiv] Motivation
 > Sometimes, going straight from the definition to determine whether a random sequence converge almost surely is difficult. 
 > Alternatively, we can utilize the theorem below to determine a.s. convergence:
@@ -39,9 +39,20 @@
 > ![](Convergence%20Theory.assets/image-20231109222948150.png)![](Convergence%20Theory.assets/image-20231109222953016.png)
 
 
-### SLLN
+
+#### SLLN
 > [!important]
-> ![](Convergence%20Theory.assets/image-20231110102910609.png)
+> ![](Convergence%20Theory.assets/image-20231110102910609.png)![](Convergence%20Theory.assets/image-20240126153933864.png)
+> Borel-Cantelli Lemma is used to show strong law of large number. See 
+
+
+#### Borel-Cantelli Lemma
+> [!thm]
+> ![](Convergence%20Theory.assets/image-20240126154051288.png)
+
+
+
+
 
 
 

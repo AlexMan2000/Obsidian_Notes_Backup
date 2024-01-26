@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 46.01889338731444,
+        "dimension": 46.018893387314435,
         "children": [
           {
             "id": "abd22396395eb00b",
@@ -125,7 +125,7 @@
       {
         "id": "ac5e674590e10608",
         "type": "tabs",
-        "dimension": 26.99055330634278,
+        "dimension": 26.990553306342782,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 26.99055330634278,
+        "dimension": 26.990553306342782,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -207,65 +207,40 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "869f8025a62116e0",
-    "type": "floating",
-    "children": [
-      {
-        "id": "b8f6fbd05b78a4a6",
-        "type": "window",
-        "children": [
-          {
-            "id": "486308c3b2082edd",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "70ae3c72dc8204ce",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1763,
-        "y": 32,
-        "width": 1025,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0.5
-      }
-    ]
-  },
   "active": "26636ed8ada6e02e",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231310048.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231302892.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231255199.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.assets/image-20240126160438269.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.assets/image-20240126160147729.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets/image-20240126154051288.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets/image-20240126153933864.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.assets/image-20240126150630798.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.assets",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126131627349.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126130817625.png",
+    "Computer_Science/Web_Development/Vue",
+    "Computer_Science/Web_Development/React",
+    "Computer_Science/Web_Development/CSS",
+    "Computer_Science/Web_Development/HTML",
+    "Computer_Science/Web_Development/JavaScript",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126101925885.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126101349013.png",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240125223337618.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240125223330143.png",
+    "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231310048.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets",
     "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.assets/image-20240125221400316.png",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.assets/image-20240125221350351.png",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.assets/image-20240125220929759.png",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.assets/image-20240125220920730.png",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/3_Geometric_Programming.md",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.assets/image-20240125220042479.png",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.assets/image-20240125215746652.png",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning",
@@ -273,23 +248,13 @@
     "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision",
-    "Computer_Science/Deep_Learning/NTU_Deep_Learning",
-    "Computer_Science/Deep_Learning",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
     "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
     "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/CS170/Ch1_Intro_Big-O.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Machine_Learning/EECS188/4_Machine_Learning",
-    "Computer_Science/Machine_Learning/EECS188/3_Bayes_Nets",
-    "Computer_Science/Machine_Learning/EECS189/Linear Regression.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
-    "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md",
     "未命名.canvas"
   ]
 }
