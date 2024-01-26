@@ -14,7 +14,7 @@
 > where we follow the direction connected by dots.
 > 
 > ![](Newton's_Method.assets/image-20231217103345806.png)
-> Also recall in the [Solving Uncontrained Quadratic Programs](../5_Types_of_Optimization_Programs/Quadratic_Programs.md#Solving%20Uncontrained%20Quadratic%20Programs), for an unconstrained quadratic program, we must have the following theorem, if $H\in \mathbb{S}_+$ and $\vec{c}\in\mathcal{R}(H)$, then:
+> Also recall in the [Solving Uncontrained Quadratic Programs](../5_Types_of_Optimization_Programs/2_Quadratic_Programs.md#Solving%20Uncontrained%20Quadratic%20Programs), for an unconstrained quadratic program, we must have the following theorem, if $H\in \mathbb{S}_+$ and $\vec{c}\in\mathcal{R}(H)$, then:
 > $$\begin{gathered}\frac{1}{2} \vec{x}^{\top} H \vec{x}+\vec{c}^{\top} \vec{x}+d \\x^*=-H^{-1} \vec{c} .\end{gathered}$$
 > 
 > So by pattern matching we should have the newton's direction as derived above.

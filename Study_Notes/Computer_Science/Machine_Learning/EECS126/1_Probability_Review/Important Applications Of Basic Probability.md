@@ -1,3 +1,5 @@
+
+
 # Balls In Bins
 ## Big Theorem - Collision
 > [!thm]
@@ -114,7 +116,19 @@
 > ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109141023921.png)![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231109141028697.png)
 
 
-# Clustering Coefficients
+# Conditional Probability
+## Clustering Coefficients
 > [!example]
 > ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20231119215406310.png)
+
+
+
+# Correlation
+## Uncorrelatedness and Independence
+> [!example] Fa23 Disc03 P1
+> ![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20240125223330143.png)![](Important%20Applications%20Of%20Basic%20Probability.assets/image-20240125223337618.png)
+> Note: Here there is a notion called Rademacher random variable, which is a type of discrete random variable that can take one of two values, typically +1 or -1 such that $P(X=1)=P(X=-1)=\frac{1}{2}$.
+> 
+> This kind of random variable is named after Hans Rademacher, a German mathematician known for his work in various areas of mathematics, including probability theory.
+
 

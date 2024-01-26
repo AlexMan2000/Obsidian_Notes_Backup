@@ -2,32 +2,31 @@
 
 ## General Form LPs
 > [!def]
-> ![](Linear_Programs.assets/image-20231213224732929.png)
+> ![](1_Linear_Programs.assets/image-20231213224732929.png)
 
 
 
 
 ## Standard Conic Form
 > [!def]
-> ![](Linear_Programs.assets/image-20231129122742640.png)![](Linear_Programs.assets/image-20231213224640502.png)
+> ![](1_Linear_Programs.assets/image-20231129122742640.png)![](1_Linear_Programs.assets/image-20231213224640502.png)![](1_Linear_Programs.assets/image-20240125215746652.png)
+
+
 
 
 
 
 ## Converting LP to Standard Conic Form
 > [!important] Method
-> ![](Linear_Programs.assets/image-20231213231145503.png)![](Linear_Programs.assets/image-20231213231150959.png)
-![](Linear_Programs.assets/image-20231213231130399.png)![](Linear_Programs.assets/image-20231213231408682.png)
+> ![](1_Linear_Programs.assets/image-20231213231145503.png)![](1_Linear_Programs.assets/image-20231213231150959.png)
+![](1_Linear_Programs.assets/image-20231213231130399.png)![](1_Linear_Programs.assets/image-20231213231408682.png)
 
 > [!example]
-> ![](Linear_Programs.assets/image-20231129122836866.png)![](Linear_Programs.assets/image-20231129122631591.png)![](Linear_Programs.assets/image-20231129122638713.png)
+> ![](1_Linear_Programs.assets/image-20231129122836866.png)![](1_Linear_Programs.assets/image-20231129122631591.png)![](1_Linear_Programs.assets/image-20231129122638713.png)
 
-### Any Linear Program is Convex Problem
+## Convexity of Linear Program
 > [!property]
-> ![](Linear_Programs.assets/image-20231129122926905.png)
-
-
-
+> ![](1_Linear_Programs.assets/image-20231129122926905.png)![](1_Linear_Programs.assets/image-20240125220042479.png)
 
 
 # Geometry of LP
@@ -36,53 +35,53 @@
 
 ## Extreme Points
 > [!def]
-> ![](Linear_Programs.assets/image-20231214091704691.png)![](Linear_Programs.assets/image-20231214091735938.png)
+> ![](1_Linear_Programs.assets/image-20231214091704691.png)![](1_Linear_Programs.assets/image-20231214091735938.png)
 
 
 
 ## Vertex
 > [!def]
-> ![](Linear_Programs.assets/image-20231214091809399.png)![](Linear_Programs.assets/image-20231214091930754.png)
+> ![](1_Linear_Programs.assets/image-20231214091809399.png)![](1_Linear_Programs.assets/image-20231214091930754.png)
 > Another perspective of this definition is that $\vec{x}$ is the unique minimizer of $\vec{c}^{\top}\vec{x}$ over the set $P$.
 
 
 ## Test for Vertices
 > [!important]
-> ![](Linear_Programs.assets/image-20231220182844517.png)![](Linear_Programs.assets/image-20231220182942819.png)![](Linear_Programs.assets/image-20231220183646457.png)
+> ![](1_Linear_Programs.assets/image-20231220182844517.png)![](1_Linear_Programs.assets/image-20231220182942819.png)![](1_Linear_Programs.assets/image-20231220183646457.png)
 
 > [!proof] Proof for Theorem 2.2
-> ![](Linear_Programs.assets/image-20231220183700235.png)![](Linear_Programs.assets/image-20231220183705130.png)
+> ![](1_Linear_Programs.assets/image-20231220183700235.png)![](1_Linear_Programs.assets/image-20231220183705130.png)
 
 
 
 ## Basic Feasible Solutions
 > [!def]
-> ![](Linear_Programs.assets/image-20231220192850615.png)
+> ![](1_Linear_Programs.assets/image-20231220192850615.png)
 > **The difference between basic solutions and basic feasible solutions are that:**
 > 1. Basic solutions only require all the equality constraints to be active. In other words, for a point $x^*$, in order for it to be basic, it has to satisfy all the equality constraints. Since if equality constraints are satisfied, they are defined to be active.
 > 2. On top of this, basic solutions may activate some of the inequality constraints, it's just that not all of them. And the basic feasible solutions requires all of the constraints to be satisfied on top of the requirement of being basic.
 > 
-> ![](Linear_Programs.assets/image-20231220195311812.png)![](Linear_Programs.assets/image-20231220201257406.png)
+> ![](1_Linear_Programs.assets/image-20231220195311812.png)![](1_Linear_Programs.assets/image-20231220201257406.png)
 
 > [!example]
-> ![](Linear_Programs.assets/image-20231220201425897.png)
+> ![](1_Linear_Programs.assets/image-20231220201425897.png)
 
 
 
 
 ## Vertex <=> Extreme Point <=> BFS
 > [!important]
-> ![](Linear_Programs.assets/image-20231220202916912.png)
+> ![](1_Linear_Programs.assets/image-20231220202916912.png)
 
 > [!proof]
-> ![](Linear_Programs.assets/image-20231220203435275.png)![](Linear_Programs.assets/image-20231220203344045.png)![](Linear_Programs.assets/image-20231220203352537.png)![](Linear_Programs.assets/image-20231220203422443.png)
+> ![](1_Linear_Programs.assets/image-20231220203435275.png)![](1_Linear_Programs.assets/image-20231220203344045.png)![](1_Linear_Programs.assets/image-20231220203352537.png)![](1_Linear_Programs.assets/image-20231220203422443.png)
 
 
 
 
 ## Finite BFS
 > [!important]
-> ![](Linear_Programs.assets/image-20231220213903466.png)
+> ![](1_Linear_Programs.assets/image-20231220213903466.png)
 
 
 
@@ -90,14 +89,14 @@
 
 # LP Duality
 > [!important]
-> ![](Linear_Programs.assets/image-20231129123000901.png)![](Linear_Programs.assets/image-20231129123009603.png)![](Linear_Programs.assets/image-20231129123017555.png)
+> ![](1_Linear_Programs.assets/image-20231129123000901.png)![](1_Linear_Programs.assets/image-20231129123009603.png)![](1_Linear_Programs.assets/image-20231129123017555.png)
 
 
 
 
 # Solving Linear Programs - Simplex Method Idea
 > [!motiv] Motivation
-> ![](Linear_Programs.assets/image-20231129123051076.png)![](Linear_Programs.assets/image-20231129123311347.png)
+> ![](1_Linear_Programs.assets/image-20231129123051076.png)![](1_Linear_Programs.assets/image-20231129123311347.png)
 > What simplex method is saying is that for **bounded** linear programs there is at least one optimal solution that is extreme point. 
 > 
 > It is not saying that all the optimal points are extreme points, for example if the contour line of our objective function is parallel to the boundary of the polyhedra, under which case all the points(definitely including vertices) will be the optimal points.
@@ -108,7 +107,7 @@
 
 ## Extreme Point, Vertex
 > [!def]
-> ![](Linear_Programs.assets/image-20231129123455006.png)
+> ![](1_Linear_Programs.assets/image-20231129123455006.png)
 
 > [!important] Counter-Definition
 > This definition seems weird, since it defines something by saying ... doesn't exist. So it's better to work with its counter definition, which goes like:
@@ -116,7 +115,7 @@
 > **If for any $\vec{y},\vec{z}\in K\backslash\{\vec{x}\}$ and $\theta\in \{0,1\}$ we have $\vec{x}=\theta\vec{y}+(1-\theta)\vec{z}$, then $\vec{x}$ is not a vertex of $K$**.
 
 > [!example]
-> ![](Linear_Programs.assets/image-20231129180548947.png)
+> ![](1_Linear_Programs.assets/image-20231129180548947.png)
 
 
 ## Polyhedra Boundedness
@@ -142,13 +141,13 @@
 
 ## Geometric Interpretation of LP
 > [!important]
-> ![](Linear_Programs.assets/image-20231213225921701.png)![](Linear_Programs.assets/image-20231213225928120.png)
+> ![](1_Linear_Programs.assets/image-20231213225921701.png)![](1_Linear_Programs.assets/image-20231213225928120.png)
 
 
 
 ## Main Theorem of Linear Programming
 > [!thm]
-> ![](Linear_Programs.assets/image-20231213230052752.png)
+> ![](1_Linear_Programs.assets/image-20231213230052752.png)
 > Here we assume that the feasible set contains no line and thus has an extreme point.
 > 
 > Since LP's feasible set is always a polyhedra, the above condition ensures that our feasible set contains a vertex. 
@@ -175,16 +174,16 @@
 
 > [!proof] Formal Proof
 > To formalize the proof, we have the following derivations:
-> ![](Linear_Programs.assets/image-20231213230655926.png)
+> ![](1_Linear_Programs.assets/image-20231213230655926.png)
 
 > [!important] Idea behind the theorem
-> ![](Linear_Programs.assets/image-20231213230716233.png)
+> ![](1_Linear_Programs.assets/image-20231213230716233.png)
 
 
 ## Bounded Feasible Set => All Optimals on the boundary
 > [!important] EECS127 Fa22 HW10 P2
 > ==Important==: Next we want to prove that for a bounded LP program, the optimal point must appear on the boundary, not the interior of the feasible set. 
-> ![](Linear_Programs.assets/image-20231214210428675.png)![](Linear_Programs.assets/image-20231214210435819.png)![](Linear_Programs.assets/image-20231214210444046.png)
+> ![](1_Linear_Programs.assets/image-20231214210428675.png)![](1_Linear_Programs.assets/image-20231214210435819.png)![](1_Linear_Programs.assets/image-20231214210444046.png)
 
 
 

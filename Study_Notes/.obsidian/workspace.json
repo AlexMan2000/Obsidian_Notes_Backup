@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "09e2d5737a212bdb",
+        "id": "66b8f33f9f40f2dc",
         "type": "tabs",
         "children": [
           {
-            "id": "7ff9fc9aee69b18c",
+            "id": "26636ed8ada6e02e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,28 +207,76 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7ff9fc9aee69b18c",
+  "floating": {
+    "id": "869f8025a62116e0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "b8f6fbd05b78a4a6",
+        "type": "window",
+        "children": [
+          {
+            "id": "486308c3b2082edd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "70ae3c72dc8204ce",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1763,
+        "y": 32,
+        "width": 1025,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0.5
+      }
+    ]
+  },
+  "active": "26636ed8ada6e02e",
   "lastOpenFiles": [
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231310048.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231302892.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231255199.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240125223337618.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240125223330143.png",
+    "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.assets/image-20240125221400316.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.assets/image-20240125221350351.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.assets/image-20240125220929759.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.assets/image-20240125220920730.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/3_Geometric_Programming.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.assets/image-20240125220042479.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.assets/image-20240125215746652.png",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision",
     "Computer_Science/Deep_Learning/NTU_Deep_Learning",
     "Computer_Science/Deep_Learning",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164843078.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164837661.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164512417.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164504705.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164503724.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164446483.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125164208230.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163618767.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163603164.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240125163235951.png",
     "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
     "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/CS170/Ch1_Intro_Big-O.md",
@@ -238,23 +286,10 @@
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Machine_Learning/EECS188/4_Machine_Learning",
     "Computer_Science/Machine_Learning/EECS188/3_Bayes_Nets",
-    "Computer_Science/Machine_Learning/EECS188/2_Reinforcement_Learning",
-    "Computer_Science/Information_Systems_Machine_Learning/EECS188/Multi-Agent-Search",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms",
-    "Computer_Science/Machine_Learning/EECS188",
     "Computer_Science/Machine_Learning/EECS189/Linear Regression.md",
     "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
     "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md",
     "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md",
-    "Computer_Science/Machine_Learning/EECS189/MLE&Multivariate Gaussian.md",
-    "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW5-Inheritance.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project0_Setup(Sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/MapReduce&Spark.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/5_Big_Data_Topics/No_SQL.md",
     "未命名.canvas"
   ]
 }

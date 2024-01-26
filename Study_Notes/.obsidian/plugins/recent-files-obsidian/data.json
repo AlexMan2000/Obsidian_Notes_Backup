@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Random_Process",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md"
+    },
+    {
+      "basename": "Important Applications Of Basic Probability",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
+    },
+    {
+      "basename": "Probability in EECS",
+      "path": "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf"
+    },
+    {
+      "basename": "File_Index_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
+    },
+    {
+      "basename": "4_SOCPs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+    },
+    {
+      "basename": "2_Quadratic_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md"
+    },
+    {
+      "basename": "3_Geometric_Programming",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/3_Geometric_Programming.md"
+    },
+    {
+      "basename": "1_Linear_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning/Related_Resources.md"
+    },
+    {
       "basename": "Recitation_1",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md"
     },
@@ -19,10 +59,6 @@
     {
       "basename": "3_Constraint_Statisfaction_Problems",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
-      "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
     },
     {
       "basename": "1_Uninformed_Search",
@@ -65,28 +101,12 @@
       "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lab_Notes/Lab1_Notes.md"
     },
     {
-      "basename": "SOCPs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/SOCPs.md"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
       "basename": "Drawing 2024-01-24 16.37.32.excalidraw",
       "path": "Excalidraw/Drawing 2024-01-24 16.37.32.excalidraw.md"
     },
     {
       "basename": "eecs127_reader",
       "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
-    },
-    {
-      "basename": "QCQPs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md"
-    },
-    {
-      "basename": "Quadratic_Programs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/Quadratic_Programs.md"
     },
     {
       "basename": "MLE&Multivariate Gaussian",
@@ -179,26 +199,6 @@
     {
       "basename": "Class_Inheritance",
       "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "Operating System Introduction",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
-    },
-    {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Labs/Lab01_Unix_Utilities.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/Related_Resources.md"
     }
   ],
   "omittedPaths": [],
