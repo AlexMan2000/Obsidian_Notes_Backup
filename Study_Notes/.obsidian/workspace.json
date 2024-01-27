@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "66b8f33f9f40f2dc",
+        "id": "13b1b80a3a92242b",
         "type": "tabs",
         "children": [
           {
-            "id": "26636ed8ada6e02e",
+            "id": "91bff7d994216169",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
+                "file": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.50152587890625
+    "width": 362.50152587890625
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
+                "file": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
+                "file": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,61 +200,61 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian-custom-frames:Open Notion": false,
       "obsidian-custom-frames:Open Google Calendar": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "26636ed8ada6e02e",
+  "active": "91bff7d994216169",
   "lastOpenFiles": [
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Transistors&Logics.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Complex_Arithmetic_I.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md",
+    "Computer_Science/Machine_Learning/EECS16B/Related_Resources.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/_Debugging_Circuits.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/_Motion_ S1XT33N.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/_Filters_Design.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_3_4.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_1_2.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/High_Order_DEs.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/_disc05B+disc06+HW6.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/_Rational_Transfer_Functions.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/_Circuit_Design_Principles.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/Resonant_Circuits.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/Filters&Bode_Plots.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/_AC_Circuit_Analysis.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC/Phasor&Transfer_Functions.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Circuit_State_Anaysis.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Vector_DEs.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Basic_DEs.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Transistors&Logics.assets",
+    "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/OpAmp_Basics.md",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-AC",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements",
+    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/DAC_ADC.md",
+    "Mathematics/Differential_Equations/MIT_18.031/Untitled.md",
+    "Mathematics/Differential_Equations/MIT_18.031",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126220854410.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126220850345.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126220132498.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126220124239.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126212941709.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126212724162.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126212714417.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126212651711.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets/image-20240126212536464.png",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.assets",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.assets/image-20240126160438269.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.assets/image-20240126160147729.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets/image-20240126154051288.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.assets/image-20240126153933864.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.assets/image-20240126150630798.png",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.assets",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126131627349.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126130817625.png",
     "Computer_Science/Web_Development/Vue",
     "Computer_Science/Web_Development/React",
-    "Computer_Science/Web_Development/CSS",
-    "Computer_Science/Web_Development/HTML",
-    "Computer_Science/Web_Development/JavaScript",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126101925885.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.assets/image-20240126101349013.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md",
-    "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets/image-20240125231310048.png",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.assets",
-    "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/QCQPs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/3_Geometric_Programming.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning/Related_Resources.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-    "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170/_Ch2_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Data_Structures_Algorithms/CS170/Ch1_Intro_Big-O.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
     "未命名.canvas"
   ]
 }

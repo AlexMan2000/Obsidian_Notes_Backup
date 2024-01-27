@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Capacitors&Inductors&OpAmp",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md"
+    },
+    {
+      "basename": "Transistors&Logics",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Transistors&Logics.md"
+    },
+    {
+      "basename": "Complex_Arithmetic_I",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Complex_Arithmetic_I.md"
+    },
+    {
+      "basename": "Upper_Triangulation_Schur_Decomposition",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
+      "basename": "3.7_Laplace_Transform",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
+    },
+    {
+      "basename": "OpAmp_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/OpAmp_Basics.md"
+    },
+    {
+      "basename": "DAC_ADC",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/DAC_ADC.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
+    },
+    {
       "basename": "Concentration_Inequalities",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
     },
@@ -163,42 +199,6 @@
     {
       "basename": "Recovery",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Recovery.md"
-    },
-    {
-      "basename": "Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/3_Transaction&Recovery/Transactions.md"
-    },
-    {
-      "basename": "Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Iterators&Joins.md"
-    },
-    {
-      "basename": "Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Query_Optimization.md"
-    },
-    {
-      "basename": "Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Sorting&Hashing.md"
-    },
-    {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
-    },
-    {
-      "basename": "Buffer_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md"
-    },
-    {
-      "basename": "Lecture_1_2024_0112",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Lecture_1_2024_0112.md"
-    },
-    {
-      "basename": "AP-HW4-Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md"
-    },
-    {
-      "basename": "AP-HW2-Network",
-      "path": "Computer_Science/Data_Structures_Algorithms/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
     }
   ],
   "omittedPaths": [],
