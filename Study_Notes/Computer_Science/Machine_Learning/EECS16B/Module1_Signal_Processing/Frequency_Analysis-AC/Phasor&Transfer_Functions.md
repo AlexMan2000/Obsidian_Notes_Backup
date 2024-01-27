@@ -25,7 +25,6 @@ $x(t)=x_0e^{\lambda t}+\int_0^t u(\tau) e^{\lambda(t-\tau)}d\tau$
 > 2. $Re(s)<0$, 则`Steady State Solution`$\vec{x}(t)$decays to zero.
 > 3. $Re(s)=0$, 则`Steady State Solution`$\vec{x}(t)$是周期函数, 使用`Euler Formula`可得。
 
-# 
 ## Sinusoidal Input
 > ![image.png](Phasor&Transfer_Functions.assets/b8b86d18d5dbc37e31d5d7475c69c235_MD5.png)
 > 其实`Sinusoidal Input`就可以看成是两个共轭的`Exponential Input`。
@@ -154,17 +153,20 @@ $v(0)=1$得到$A=2$
 
 # Impedance&Reactance
 ## Capacitor
-> ![image.png](Phasor&Transfer_Functions.assets/e9f7b4c00ffbad9b2a36117977b9c833_MD5.png)
+> [!thm]
+> ![](Phasor&Transfer_Functions.assets/a4063037901c166e45d5fd74a8d8a5b5_MD5.jpeg)![](Phasor&Transfer_Functions.assets/8f736b48a742a04c7d430fd68fd5c084_MD5.jpeg)![](Phasor&Transfer_Functions.assets/027a2986452e83faa4955ddd9861957d_MD5.jpeg)
 
 
 
 ## Resistor
-> ![image.png](Phasor&Transfer_Functions.assets/a04604e6f748873aacc1501c75027b2c_MD5.png)
+> [!thm]
+> ![](Phasor&Transfer_Functions.assets/d5d4e604da50ae214b5c324253a8b58f_MD5.jpeg)
 
 
 
 ## Inductor
-> ![image.png](Phasor&Transfer_Functions.assets/2c31168a50e2a76853194ea760a5d9ba_MD5.png)
+> [!thm]
+> ![](Phasor&Transfer_Functions.assets/Pasted%20image%2020240127114020.png)
 
 
 
@@ -184,9 +186,10 @@ $v(0)=1$得到$A=2$
 
 
 # Transfer Function&Gain
+> [!def]
 > 在`DC`电路中, 我们称$\frac{V_{out}}{V_{in}}$为`Gain`是一个常数。
 > , 而在`AC`电路中，我们在`Phasor Domain`中称$\frac{\tilde{V}_{out}}{\tilde{V}_{in}}$为`Transfer Function`，是一个`Complex Function`。
-> ![image.png](Phasor&Transfer_Functions.assets/906e3fa4bb9a791e651bbab9020de674_MD5.png)
+> ![](Phasor&Transfer_Functions.assets/906e3fa4bb9a791e651bbab9020de674_MD5.png)![](Phasor&Transfer_Functions.assets/image-20240127114149825.png)
 > `Output Phasor`和`Input Phasor`之间的比值$\frac{\tilde{V_{out}}}{\tilde{V_{in}}}$被定义为$H(jw)$。
 > 在`Time Domain`中，我们有:
 > $\begin{aligned}V_{out}(t)&=\tilde{V}_{out}e^{jwt}+\overline{\tilde{V}_{out}}e^{-jwt}\\&=|\tilde{V}_{out}|e^{j\angle \tilde{V}_{out}}\cdot e^{jwt}+|\tilde{V}_{out}|e^{-j\angle \tilde{V}_{out} }\cdot e^{-jwt}\\&=|\tilde{V}_{out}|e^{i(wt+\angle \tilde{V}_{out})}+|\tilde{V}_{out}|e^{-i(wt+\angle \tilde{V}_{out})}\\&=2|\tilde{V}_{out}|cos(wt+\angle \tilde{V}_{out}) \end{aligned} \tag{1}$

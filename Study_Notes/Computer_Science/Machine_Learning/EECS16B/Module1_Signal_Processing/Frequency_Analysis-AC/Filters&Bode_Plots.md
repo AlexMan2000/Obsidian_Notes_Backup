@@ -143,19 +143,19 @@ $\lim_{w\to \infty}H_{\mathrm{HP}}(\mathrm{j} \omega)=\lim_{w\to \infty}\frac{\m
 > 3. `Magnitude&Phase`:
 > 
 `Magnitude`相对容易，我们只需要求模即可。
-> $\begin{aligned}
+> $$\begin{aligned}
 |H(\mathrm{j} \omega)| & =\left|\frac{1}{1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}\right| \\
 & =\frac{|1|}{\left|1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)\right|} \\
 & =\frac{1}{\sqrt{\left(1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)\right)\left(1-\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)\right)}} \\
 & =\frac{1}{\sqrt{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}}
-\end{aligned}$
+\end{aligned}$$
 > `Phase`的求法由两种，一种是将$H(jw)$写成$H(jw)=X(w)+jY(w)$, 然后$\angle H(jw)=atan2(Y(w),X(w))$(或者$atan2(\frac{Y(w)}{X(w)},1)$)。另一种是将$H(jw)$看成$\frac{A(jw)}{B(jw)}$, 分别求出$\angle B(jw)$和$\angle B(jw)$, 然后$\angle H(jw)=\angle A(jw)-\angle B(jw)$
 > **方法一:**
 > $\begin{aligned}H(\mathrm{j} \omega) & =\frac{1}{1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)} \\& =\frac{1}{1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)} \times \frac{1-\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1-\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)} \\& =\frac{1-\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2} \\& =\frac{1}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}+\mathrm{j} \frac{-\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}\end{aligned}$
-> $\begin{aligned}\angle H(\mathrm{j} \omega) & =\operatorname{atan} 2\left(\frac{Y(\omega)}{X(\omega)}, 1\right) \\& =\operatorname{atan} 2\left(\frac{-\frac{-\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}}{\frac{1}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}}, 1\right)\\&\begin{aligned}
+> $$\begin{aligned}\angle H(\mathrm{j} \omega) & =\operatorname{atan} 2\left(\frac{Y(\omega)}{X(\omega)}, 1\right) \\& =\operatorname{atan} 2\left(\frac{-\frac{-\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}}{\frac{1}{1+\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)^2}}, 1\right)\\&\begin{aligned}
 & =\operatorname{atan} 2\left(\frac{-\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)}{1}, 1\right) \\
 & =-\operatorname{atan} 2\left(\omega \frac{L}{R}-\frac{1}{\omega R C}, 1\right)
-\end{aligned}\end{aligned}$
+\end{aligned}\end{aligned}$$
 > **方法二:**
 > $\begin{aligned}\angle H(\mathrm{j} \omega) & =\angle 1-\angle\left(1+\mathrm{j}\left(\omega \frac{L}{R}-\frac{1}{\omega R C}\right)\right) \\& =0-\operatorname{atan} 2\left(\omega \frac{L}{R}-\frac{1}{\omega R C}, 1\right) \\& =-\operatorname{atan} 2\left(\omega \frac{L}{R}-\frac{1}{\omega R C}, 1\right)\end{aligned}$
 > 4. **在**[**RLC Circuit Analysis**](https://www.yuque.com/alexman/edfboy/phq4yp791xcc8if9#HKhkx)**中我们已经分析过，根据**$R,L,C$**的相对大小关系电路会有四种状态:**
@@ -254,7 +254,6 @@ plot_tf(H_example(R, L, C), (-2, 15), phase=True)
 ### Higher Order
 > ![image.png](Filters&Bode_Plots.assets/648fa39298c4d433c55180c1a80b72a4_MD5.png)
 
-## 
 
 ## More Filters
 ### RCR Circuit
@@ -275,7 +274,7 @@ This circuit is like **a combination of a low-pass filter and a voltage divider*
 
 
 ## Choice of Scale for Plots
-### Log-Log Scale - Magnitude
+### Log-Log Scale - Amplitude Response
 > 上文中的`Transfer Function Plot`旨在探究$|H(jw)|$和$w$之间的关系，一般我们会选取`log-scale`进行绘制，即横轴选取$log(w)$, 纵轴选取$log|H(jw)|$。
 > ![image.png](Filters&Bode_Plots.assets/5130feb83998d244a9011c026b7dba2a_MD5.png)
 > 所以尽管横轴上的数值是$10^1, 10^2,\cdots, 10^6$的非等间距数值，但是`log`之后就是等间距排布。
@@ -284,7 +283,7 @@ This circuit is like **a combination of a low-pass filter and a voltage divider*
 
 
 
-### Semi-Log Scale - Phase
+### Semi-Log Scale - Phase Response
 > ![image.png](Filters&Bode_Plots.assets/7121c90e7325847ff686cde5f7dcb376_MD5.png)
 > 横轴上是`log-scale`, 纵轴上是`linear scale`。
 
@@ -298,10 +297,6 @@ This circuit is like **a combination of a low-pass filter and a voltage divider*
 
 
 
-
-
-
-# 
 
 
 # Resources

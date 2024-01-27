@@ -1,4 +1,18 @@
-Laplace Transformation
+# Laplace Transformation
+## Step and Delta Function
+
+
+
+## Definition
+> [!def]
+> ![](Concentration_Inequalities.assets/image-20240127115312776.png)![](Concentration_Inequalities.assets/image-20240127115349811.png)
+
+
+
+## Computing Examples
+> [!example]
+> 
+
 
 
 # Moment Generating Function

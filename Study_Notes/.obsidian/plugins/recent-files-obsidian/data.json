@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Concentration_Inequalities",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
+    },
+    {
+      "basename": "Convergence Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
+    },
+    {
+      "basename": "Rational_Transfer_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md"
+    },
+    {
+      "basename": "Phasor&Transfer_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md"
+    },
+    {
+      "basename": "Stability_Feedback_Control",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
+    },
+    {
+      "basename": "Filters&Bode_Plots",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md"
+    },
+    {
+      "basename": "Resonant_Circuits",
+      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Resonant_Circuits.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
+    },
+    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
     },
@@ -37,10 +69,6 @@
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_1_2.md"
     },
     {
-      "basename": "Phasor&Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md"
-    },
-    {
       "basename": "disc05B+disc06+HW6",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/disc05B+disc06+HW6.md"
     },
@@ -73,18 +101,6 @@
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Complex_Arithmetic_I.md"
     },
     {
-      "basename": "Filters&Bode_Plots",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md"
-    },
-    {
-      "basename": "Resonant_Circuits",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Resonant_Circuits.md"
-    },
-    {
-      "basename": "Rational_Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md"
-    },
-    {
       "basename": "AC_Circuit_Analysis",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/AC_Circuit_Analysis.md"
     },
@@ -95,10 +111,6 @@
     {
       "basename": "Upper_Triangulation_Schur_Decomposition",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
-    },
-    {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
     },
     {
       "basename": "3.7_Laplace_Transform",
@@ -113,24 +125,12 @@
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/DAC_ADC.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
-    },
-    {
-      "basename": "Concentration_Inequalities",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
-    },
-    {
       "basename": "概率不等式",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
     },
     {
       "basename": "Probability Formulas and Theorems",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
-    },
-    {
-      "basename": "Convergence Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
     },
     {
       "basename": "Information_Theory",
