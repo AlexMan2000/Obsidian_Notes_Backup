@@ -157,4 +157,47 @@
 
 
 
+
+
+
 # A\*-CSCS Algorithm
+
+
+
+
+# Design Examples: Maze
+> [!overview]
+> ![](2_Informed_Search.assets/image-20240129160313696.png)![](2_Informed_Search.assets/image-20240129160334447.png)
+
+> [!example] Sp18 Vitamin 1 Q6 Lonely Bug
+> ![](2_Informed_Search.assets/image-20240129160425415.png)![](2_Informed_Search.assets/image-20240129160443999.png)![](2_Informed_Search.assets/image-20240129160500122.png)![](2_Informed_Search.assets/image-20240129160513861.png)
+
+> [!example] Sp18 Vitamin 1 Q7 Swarm Movements
+> ![](2_Informed_Search.assets/image-20240129153647871.png)![](2_Informed_Search.assets/image-20240129153708872.png)![](2_Informed_Search.assets/image-20240129153722635.png)![](2_Informed_Search.assets/image-20240129153744551.png)
+> **Note that the choice of heuristics are a bit tricky in this example and we analyze each option one by one:**
+> 1. **Option 1 is false** and we should always pay extra attention to keyword `sum` since it may trigger problem for multi-object search problem. Here if each insect is only one step right to its target. Then since we can move all the insects simultaneously in one step, the true cost $h^*(n)=1$ but our heuristic $h(n)=1\cdot K=K$, which violates the admissibility condition $\forall n,0\leq h(n)\leq h^*(n)$.
+> 2. **Option 2** is false and the reasoning is the same as option 1. In other words, we just need to find a corner case to show it is wrong.
+> 3. **Option 3 is true.** The joint true cost to the joint goal could never be less than the cost of the furthest insect to its goal alone(if not obstructed by other insects). The joint true cost could only be bigger when that furthest insect is obstructed since we have to adjust the position of other insects in some cases in order to make the furthest one move.
+> 4. **Option 4 is true.** The same reasoning as above.
+> 5. **Option 5 is false.** Consider the scenario in case 1 where the heuristic gives K and the true cost is 1.
+
+> [!example] Sp18 Vitamin 1 Q8 Migrating Birds
+> ![](2_Informed_Search.assets/image-20240129161016098.png)![](2_Informed_Search.assets/image-20240129161032544.png)![](2_Informed_Search.assets/image-20240129161045653.png)![](2_Informed_Search.assets/image-20240129161101247.png)![](2_Informed_Search.assets/image-20240129161120796.png)![](2_Informed_Search.assets/image-20240129161135113.png)![](2_Informed_Search.assets/image-20240129161328099.png)
+
+> [!example] Sp18 Vitamin 1 Q9 Jumping Bugs
+> ![](2_Informed_Search.assets/image-20240129162208999.png)![](2_Informed_Search.assets/image-20240129162228628.png)![](2_Informed_Search.assets/image-20240129162246202.png)
+
+> [!example] Sp18 Vitamin 1 Q10 Lost at Night
+> ![](2_Informed_Search.assets/image-20240129162830937.png)![](2_Informed_Search.assets/image-20240129162847479.png)![](2_Informed_Search.assets/image-20240129162902346.png)
+> **Note 1:** Since we don't know the exact location of the insect, so we cannot rely on the 2d position of the insect to construct goal test and compute the successor. 
+> 
+> **Note 2:** The reason why we want to iterate through all the grid is that we don't actually know the current position of the insect. So we have to make assumptions about its position. If it is currently at (0,0) or it is currently at (0,1), ..., so for each grid (x,y) we have to assume that the insect is at (x+1, y) previously (because the insect is equally likely to be in any grid at a particular time step), which gives `bool_new[x][y]=bool[x+1][y]`. Moreover, since the insect would stay at the same position if WEST action leads to a wall. In this case, we have to consider if the insect is in the position (x,y) and head into a wall so that `bool_new[x][y]=bool[x][y] and is_wall(x-1,y)`. Connecting these two scenarios we get the final boolean expression.
+> 
+> ![](2_Informed_Search.assets/image-20240129164211544.png)
+
+
+> [!example] Sp18 Vitamin 1 Q11 Lost at Night
+> 
+
+
+

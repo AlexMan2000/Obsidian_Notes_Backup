@@ -285,3 +285,16 @@
 > [!important]
 > ![](Basic_SQL.assets/image-20240119154321594.png)
 
+
+## How to write max?
+> [!example]
+> Suppose we have the following schema called `countries`: (<u>country</u>, gdp) and we want to select the countries with the highest gdp, we have the following ways to write the SQL:
+> 1. Using ALL and max(if the country's gdp is bigger than any other ones'): 
+> 	`SELECT name FROM countries where gdp >= ALL(SELECT max(gdp) FROM countries)`
+> 1. Using Subqueries(if there is no countries with bigger gdp, then it is the max-gdp country): 
+>	`SELECT name FROM countries WHERE NOT EXISTS (SELECT name FROM countries as countries2 WHERE countries2.gdp>countries.gdp)`
+
+
+## How to write more than once?
+> [!example]
+> 

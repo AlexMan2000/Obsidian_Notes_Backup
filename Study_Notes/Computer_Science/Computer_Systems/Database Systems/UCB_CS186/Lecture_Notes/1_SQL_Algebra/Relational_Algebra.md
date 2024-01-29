@@ -2,6 +2,12 @@
 
 
 # Operators
+Projection
+
+
+Selection
+
+
 
 
 
