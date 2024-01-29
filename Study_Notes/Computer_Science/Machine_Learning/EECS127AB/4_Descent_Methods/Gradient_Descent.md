@@ -169,31 +169,9 @@
 
 
 
-## First Order Descent Methods
-### Algorithm Scheme
+## First Order Descent Method Scheme
 > [!algo] Algorithm
 > ![](Gradient_Descent.assets/image-20231108095540460.png)![](Gradient_Descent.assets/image-20231214220141260.png)
-
-
-
-
-
-### Descent Directions
-> [!important]
-> ![](Gradient_Descent.assets/image-20231214220128672.png)![](Gradient_Descent.assets/image-20231108095457055.png)
-
-
-
-### Stepsize Selection
-> [!important]
-> ![](Gradient_Descent.assets/image-20231108101711536.png)![](Gradient_Descent.assets/image-20231108101746906.png)
-
-
-
-### BackTracking Line Search
-> [!Algo] Algorithm
-> ![](Gradient_Descent.assets/image-20231108102015113.png)
-
 
 
 
@@ -203,9 +181,85 @@
 > ![](Gradient_Descent.assets/image-20231108102212825.png)
 
 
-### Search Direction
+### Descent Direction
 > [!thm]
 > ![](Gradient_Descent.assets/image-20231117220151969.png)![](Gradient_Descent.assets/image-20231117220200437.png)![](Gradient_Descent.assets/image-20231117220207277.png)
+
+> [!important]
+> ![](Gradient_Descent.assets/image-20231214220128672.png)![](Gradient_Descent.assets/image-20231108095457055.png)
+
+
+
+
+
+### Stepsize Selection
+#### Constant Step Size
+> [!example] Murphy pp282
+> ![](Gradient_Descent.assets/image-20240128201031395.png)![](Gradient_Descent.assets/image-20240128201803338.png)
+> The derivations of the upper bound of the step size is given in [Convergence Analysis of Steepest G.D.](Gradient_Descent.md#Convergence%20Analysis%20of%20Steepest%20G.D.)
+> 
+> Here, note that the book says that the largest eigenvalue of $A$ measures the steepest slope of the function, we give the derivation below:
+
+
+
+#### Line Search Termination Conditions
+> [!important] 
+> In practice, the initialization of the line-search and how to backtrack can significantly affect performance.
+> 
+> We now introduce the termination conditions for line search algorithm. When these conditions are met, the corresponding step size are considered to be acceptable.
+> 
+>  Note here we have a **sufficient decrease condition** called **Armijo-Golstein Test**:
+>  ![](Gradient_Descent.assets/image-20240128205147652.png)![](Gradient_Descent.assets/image-20240128204112705.png)
+>  Here $c$ is some constant $\in (0,1)$ and is conventionally set to $10^{-4}$.
+>  
+>   In other words, the reduction in f should be proportional to both the step length $α_k$ and the directional derivative $\nabla f_k^{\top}p_k$.
+>   
+>   Now we focus on the RHS of the inequality, with $l(\alpha)=f(x_k)+c_1\alpha\nabla f_k^{\top}p_k$ being an affine function in $\alpha$.
+>   
+>   Since we set the descent direction to be opposite of the gradient, we have that $\nabla f_k^{\top}p_k$ is negative, so $l(\alpha)$ has negative slope.
+>   
+>   The **sufficient decrease condition** states that α is acceptable only if $φ(α) ≤ l(α)$
+>   ![](Gradient_Descent.assets/image-20240128205608342.png)
+>   The sufficient decrease condition is not enough by itself to ensure that the algorithm makes reasonable progress because,as we see from Figure 3.3, it is satisfied for all sufficiently small values of α. 
+>   
+>   To rule out unacceptably short steps we introduce a second requirement, called **curvature condition**:
+>   
+>   ![](Gradient_Descent.assets/image-20240128205715547.png)![](Gradient_Descent.assets/image-20240128205738489.png)![](Gradient_Descent.assets/image-20240128211239344.png)![](Gradient_Descent.assets/image-20240128211418916.png)
+
+
+#### Wolfe Conditions
+> [!important] Wolfe Conditions
+> ![](Gradient_Descent.assets/image-20240128211250010.png)![](Gradient_Descent.assets/image-20240128211256563.png)![](Gradient_Descent.assets/image-20240128211302524.png)
+
+
+#### Goldstein Conditions
+> [!important]
+> 
+
+
+
+
+#### Exact Line Search
+> [!important]
+> ![](Gradient_Descent.assets/image-20240128205055924.png)
+
+> [!example] Murphy pp283 Exact Line Search
+> ![](Gradient_Descent.assets/image-20240128195838843.png)
+> Here we use a very important property of convex function, [Affine Composition](../3_Convex_Optimization/Convex_Functions.md#Operations%20Preserving%20Convexity#Affine%20Composition). This means that $\phi(\eta)$ is convex in $\eta$ and thus we could set the derivative of $\phi(\eta)$ to 0 and get the global minimum.
+> 
+> **Note:** Using the optimal step size is known as exact line search . However, it is not usually necessary to be so precise.
+
+
+#### Inexact Line Search
+> [!bug] Insufficient Reduction
+> ![](Gradient_Descent.assets/image-20240128205248037.png)
+
+> [!Algo] Armijo Backtracking Line Search Algorithm
+> We have mentioned that the sufficient decrease condition alone is not sufficient to ensure that the algorithm makes reasonable progress along the given search direction. 
+> 
+> However, if the line search algorithm chooses its candidate step lengths appropriately, by using a so-called backtracking approach, we can dispense with the extra condition  and use just the sufficient decrease condition to terminate the line search procedure. In its most basic form, backtracking proceeds as follows.
+> ![](Gradient_Descent.assets/image-20231108102015113.png)
+> The backtracking approach ensures either that the selected step length $α_k$ is some fixed value (the initial choice $\bar{\alpha}$), or else that it is short enough to satisfy the sufficient decrease condition but not too short. The latter claim holds because the accepted value $α_k$ is within a factor $ρ$ of the previous trial value, $\frac{α_k}{\rho}$, which was rejected for violating the sufficient decrease condition, that is, for being too long.
 
 
 
@@ -215,8 +269,22 @@
 > [!def]
 > ![](Gradient_Descent.assets/image-20231214215810431.png)![](Gradient_Descent.assets/image-20231214215909745.png)
 
-> [!example] Finding Centroid
+
+
+### Choosing the step size
+
+
+
+
+
+### Applications
+> [!example] Application: Finding Centroid
 > ![](Gradient_Descent.assets/image-20231214220545511.png)![](Gradient_Descent.assets/image-20231214220551473.png)
+
+
+
+
+
 
 
 
@@ -244,7 +312,7 @@
 ## Matrix Limit Perspective
 ### Version 1 - Control Problem
 > [!important]
-> Consider this function $f(\vec{x})=\|\vec{A} \vec{x}-\vec{b}\|$ and the umonstrained optimization problem$$\min _{\vec{x} \in R^n}\|A \vec{x}-\vec{b}\| \text {. }$$We want to show the condition that step size $\eta$ must fulfill in order for gradient descent to converge.
+> Consider this function $f(\vec{x})=\|A\vec{x}-\vec{b}\|$ and the umonstrained optimization problem$$\min _{\vec{x} \in R^n}\|A \vec{x}-\vec{b}\| \text {. }$$We want to show the condition that step size $\eta$ must fulfill in order for gradient descent to converge.
 > The single step strepest gradient descent goes like this:$$\vec{x}_{k+1}=\vec{x}_k-\eta \cdot \nabla f\left(\vec{x}_k\right), \eta>0$$So we want to compute the gradient of $f(\vec{x})$ :$$\begin{aligned}\|A \vec{x}-\vec{b}\|_2^2 & =\vec{x}^{\top} A^{\top} A \vec{x}-2 \vec{b}^{\top} A \vec{x}+\|\vec{b}\|_2^2 \\\nabla f(\vec{x}) & =2 A^{\top} A \vec{x}-2 A^{\top} \vec{b} . \\& =2 A^{\top}(A \vec{x}-\vec{b})\end{aligned}$$Thus $\vec{x}_{k+1}=\vec{x}_k-\eta \cdot 2 A^{\top}(A \vec{x}-\vec{b})$
 > In order for $\vec{x}_k$ to converge to our least-square solution we want to show that $\vec{x}_{k+1}-\vec{x}_* \rightarrow 0$ as $k \rightarrow \infty$, it's equivalent to show something like:
 > $\vec{x}_{k+1}-\vec{x}_*=C^{k+1}\left(\vec{x}_0-\vec{x}_*\right)$ where $C$ controls our convergence.$$\begin{aligned}\because \vec{x}_{k+1}-\vec{x}_* & =\vec{x}_{k+1}-\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\vec{x}_k-2 \eta A^{\top}\left(A \vec{x}_k-\vec{b}\right)-\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\vec{x}_k-2 \eta A^{\top} A \vec{x}_k+2 \eta A^{\top} \vec{b}-\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\vec{x}_k-2 \eta A^{\top} A \vec{x}_k+2 \eta\left(A^{\top} A\right)\left(A^{\top} A\right)^{-1} A^{\top} \vec{b}-\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\left(I_n-2 \eta A^{\top} A\right) \vec{x}_k+\left(2 \eta A^{\top} A-I_n\right)\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\left(I_n-2 \eta A^{\top} A\right) \vec{x}_k-\left(I_n-2 \eta A^{\top} A\right)\left(A^{\top} A\right)^{-1} A^{\top} \vec{b} \\& =\left(I_n-2 \eta A^{\top} A\right)\left(\vec{x}_k-\vec{x}_*\right)\end{aligned}$$Let $\vec{z}_{k+1}=\vec{x}_{k+1}-\vec{x}_*$Then we have the following recurrence equation:$$\vec{z}_{k+1}=\left(I_n-2 \eta A^{\top} A\right) \vec{z}_k$$Solve for it and we get:$$\vec{z}_{k+1}=\left(I_n-2 \eta A^{\top} A\right)^{k+1} \vec{z}_0$$By the knowledge from [Stability_Feedback_Control](../../EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md) for differential system we know that, in order for $\left\|\vec{z}_{k+1}\right\|$ to be bounded, the. eigenvalues of $I_n-2 \eta A^{\top} A$ should be between 0 and 1 . Thus the convergence condition requires.$$\begin{aligned}-1 & \leq 1-2 \eta \lambda_k\left(A^{\top} A\right) \leqslant 1 & \forall k=1,2, \cdots, n \\\Leftrightarrow & 0 \leq \eta \lambda_k\left(A^{\top} A\right) \leqslant 1 & \forall k=1,2, \cdots, n . \\\Leftrightarrow & 0 \leqslant \lambda_k\left(A^{\top} A\right) \leqslant \frac{1}{\eta} & \forall k=1,2, \cdots, n\end{aligned}$$

@@ -130,12 +130,13 @@
 > [!example] Fa20 Note02 Practice Q1
 > ![](Disk_Space_Management.assets/image-20240124095502941.png)![](Disk_Space_Management.assets/image-20240124095630698.png)
 
-
-
-
-
 > [!example] Fa20 Discussion2 P5
 > ![](Disk_Space_Management.assets/image-20240124083202582.png)
+
+> [!example] Concept Check
+> ![](Disk_Space_Management.assets/image-20240128165556545.png)
+> It requies $O(\#header ~pages)$ to look up.
+
 
 
 ## Sorted Files
@@ -357,6 +358,9 @@
 > [!concept]
 > VLRs contain both fixed length and variable length fields (varchar), resulting in each VLR of the same schema having a potentially different number of bytes. VLRs store all fixed length fields before variable length fields and use a record header that contains pointers to the end of the variable length fields.
 > ![](Disk_Space_Management.assets/image-20240124102852246.png)![](Disk_Space_Management.assets/image-20240124102900174.png)
+> **Summary:**
+> 1. Record headers contain pointers to the end of variable length fields
+> 2. Moving variable length fields to the end of a record is a useful optimization.
 
 > [!quiz] True or False
 > Is fragmentation an issue with variable length records on a slotted page?

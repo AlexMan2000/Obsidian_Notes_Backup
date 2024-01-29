@@ -69,8 +69,6 @@
 > ![](Convergence%20Theory.assets/image-20231109180010709.png)![](Convergence%20Theory.assets/image-20231109222932099.png)
 
 
-
-
 ## Convergence in Probability
 ### Motivation
 > [!motiv] Motivation
@@ -89,23 +87,52 @@
 
 ### WLLN
 > [!important]
-> ![](Convergence%20Theory.assets/image-20231110103100145.png)
+> ![](Convergence%20Theory.assets/image-20240127150434568.png)
+
+
 
 
 ### Examples
 #### P Convergence but not A.S. Convergence
 > [!important]
+> ![](Convergence%20Theory.assets/image-20240127155151342.png)
+> Note that here we need $\lim_\limits{n\to \infty}P(|Y_n|>\epsilon)=0,\forall\epsilon>0$. If $\epsilon\in(0,1)$, then $P(|Y_n|>\epsilon)=P(Y_n=1)$. If $\epsilon>1$, then $P(|Y_n|>\epsilon)=0$.
+> 
+> In either case, we have convergence in probabilty.
+> 
 > ![](Convergence%20Theory.assets/image-20231110103608173.png)
+
+
+#### Uniform Distribution
+> [!example] Uniform Distribution: Fa23 Disc05 P2
+> ![](Convergence%20Theory.assets/image-20240127161228451.png)
+> Here when $\epsilon>1$, we have $P(|X_n|>\epsilon^{\frac{1}{n}})=0$. So we only need to focus on the cases where $\epsilon\in (0,1)$.
+> 
+> We want to test whether:$$\begin{aligned}\lim _{n \rightarrow \infty} P\left(\left|Y_n-0\right|>\varepsilon\right) & =0 \\\Leftrightarrow \lim _{n \rightarrow \infty} P\left(\left|X_n\right|^n>\varepsilon\right) & =0\end{aligned}$$When $\mathcal{E}>1$, we have:$$\lim _{n \rightarrow \infty} P\left(\left|X_n\right|>\varepsilon^{\frac{1}{n}}\right)=0$$
+> 
+> When $0<\varepsilon \leqslant 1$, we have$$\begin{aligned}\lim _{n \rightarrow \infty} p\left(\left|x_n\right|>\varepsilon^{\frac{1}{n}}\right) & =\lim _{n \rightarrow \infty} P\left(\varepsilon^{\frac{1}{n}}<x_n<1\right)+P\left(-1<x_n<-\varepsilon^{\frac{1}{n}}\right) \\& =\lim _{n \rightarrow \infty} \frac{1-\varepsilon^{\frac{1}{n}}}{2} \cdot 2 \\& =\lim _{n \rightarrow \infty} 1-\varepsilon^{\frac{1}{n}} \\& =0\end{aligned}$$
 
 
 
 
 ## Convergence in Distribution
+> [!def]
+> ![](Convergence%20Theory.assets/image-20240127160427003.png)
 
 
 
-## Convergence in Expectation
+## Convergence in L1
+> [!def]
+> ![](Convergence%20Theory.assets/image-20240127160412423.png)
 
+
+
+## Convergence in Lp
+
+
+### Examples
+> [!example] Fa23 Disc05 P3
+> ![](Convergence%20Theory.assets/image-20240127162053591.png)
 
 
 
@@ -115,11 +142,21 @@
 > ![](Convergence%20Theory.assets/image-20231109223356198.png)
 
 
+## Lp => p
+> [!thm]
+> ![](Convergence%20Theory.assets/image-20240127162347485.png)
+
+
+## p => d
+> [!thm]
+> ![](Convergence%20Theory.assets/image-20240127162605105.png)
 
 
 
+# Integrated Exercises
+## On Almost Sure Convergence
+> [!example] Fa23 Disc05 P1
+> ![](Convergence%20Theory.assets/image-20240127155707492.png)![](Convergence%20Theory.assets/image-20240127155736066.png)
 
 
 
-
-# Continuous Mapping Theorem

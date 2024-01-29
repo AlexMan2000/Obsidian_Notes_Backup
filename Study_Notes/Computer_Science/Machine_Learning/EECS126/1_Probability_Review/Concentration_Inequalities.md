@@ -16,6 +16,14 @@
 
 
 # Moment Generating Function
+## Definition
+> [!def]
+> ![](Concentration_Inequalities.assets/image-20240127150840198.png)
+
+## Examples
+> [!example]
+> ![](Concentration_Inequalities.assets/image-20240127150916261.png)
+
 
 
 
@@ -49,6 +57,18 @@
 > [!def]
 > ![](Concentration_Inequalities.assets/image-20240126212536464.png)![](Concentration_Inequalities.assets/image-20240126220850345.png)![](Concentration_Inequalities.assets/image-20240126220854410.png)
 
+> [!example] Chernoff Mement Bound for Gaussian
+> ![](Concentration_Inequalities.assets/image-20240127151024751.png)![](Concentration_Inequalities.assets/image-20240127151141756.png)
+> **Derivations for 9.2:** 
+> 
+> Suppose we know the MGF of $X$, which is $M_x(s)$, then by markov inequality we have:
+> $$P\left(e^{-s x} \geqslant e^{s k}\right) \leqslant \frac{E\left[e^{-s x}\right]}{e^{s k}}$$
+> $\because f(x)=e^x$ is monotonically increasing.
+> 
+> $$\begin{aligned}\therefore P(x \leqslant-k) & \leqslant \frac{E\left[e^{-s x}\right]}{e^{s k}} \\& =\frac{M_x(-s)}{e^{s k}} \\& =\frac{e^{\frac{1}{2} s^2}}{e^{s k}}\end{aligned}$$
+> 
+> Minimizing $g(s)=e^{\frac{1}{2} s^2-k \cdot s}$ we get $g^*(s)=e^{-\frac{1}{2} k^2}$
+> $$\begin{aligned}\therefore P(X \leq-k) & \leq e^{-\frac{1}{2} k^2} \\\therefore P(|X| \geqslant k) & =P(X \geqslant k)+P(X \leq-k) \\& =2 e^{-\frac{1}{2} k^2}\end{aligned}$$
 
 
 

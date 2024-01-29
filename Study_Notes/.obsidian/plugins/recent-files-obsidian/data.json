@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "Concentration_Inequalities",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
+      "basename": "Relational_Algebra",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
+    },
+    {
+      "basename": "4_Multi-Agent_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Machine_Learning/EECS188/Related_Resources.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Machine_Learning/EECS189/Related_Resources.md"
+    },
+    {
+      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
+    },
+    {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
+    },
+    {
+      "basename": "File_Index_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Information_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
     },
     {
       "basename": "Convergence Theory",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
+    },
+    {
+      "basename": "Concentration_Inequalities",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
+    },
+    {
+      "basename": "Introduction to Metric Space",
+      "path": "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md"
     },
     {
       "basename": "Rational_Transfer_Functions",
@@ -31,14 +99,6 @@
     {
       "basename": "Untitled",
       "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
-    },
-    {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
       "basename": "Linearization",
@@ -133,72 +193,12 @@
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
     },
     {
-      "basename": "Information_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
-    },
-    {
       "basename": "Important Applications Of Basic Probability",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
     },
     {
       "basename": "Random_Process",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Random_Process.md"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "Probability in EECS",
-      "path": "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf"
-    },
-    {
-      "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
-    },
-    {
-      "basename": "4_SOCPs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/4_SOCPs.md"
-    },
-    {
-      "basename": "2_Quadratic_Programs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md"
-    },
-    {
-      "basename": "3_Geometric_Programming",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/3_Geometric_Programming.md"
-    },
-    {
-      "basename": "1_Linear_Programs",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Visualization_For_Machine_Learning/Related_Resources.md"
-    },
-    {
-      "basename": "Recitation_1",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Recitation_1.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Computer_Vision/Related_Resources.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Mathematics_for_Deep_Learning/Related_Resources.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Causal_Inference_in_Machine_Learning/Related_Resources.md"
-    },
-    {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
-      "basename": "Drawing 2024-01-25 16.31.42.excalidraw",
-      "path": "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md"
     }
   ],
   "omittedPaths": [],

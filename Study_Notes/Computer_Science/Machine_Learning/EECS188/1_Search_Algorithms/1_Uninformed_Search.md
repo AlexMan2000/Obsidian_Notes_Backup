@@ -48,6 +48,7 @@
 > ![](1_Uninformed_Search.assets/image-20240125153619401.png)
 
 
+
 ## State Space Graph
 > [!def]
 > ![](1_Uninformed_Search.assets/image-20240125153709300.png)![](1_Uninformed_Search.assets/image-20240125153759641.png)![](1_Uninformed_Search.assets/image-20240125153813844.png)
@@ -89,6 +90,7 @@
 > [!def]
 > Depth-first search (DFS) is a strategy for exploration that always selects the deepest frontier node from the start node for expansion.
 > ![](1_Uninformed_Search.assets/image-20240125163603164.png)
+> Depth-first search uses a LIFO queue(stack).
 
 
 
@@ -131,6 +133,7 @@
 > [!def]
 > Breadth-first search is a strategy for exploration that always selects the **shallowest** frontier node from the start node for expansion.
 > ![](1_Uninformed_Search.assets/image-20240125163618767.png)
+> Breadth-first-search uses a FIFO queue.
 
 
 
@@ -167,7 +170,24 @@
 > ![](1_Uninformed_Search.assets/image-20240125164446483.png)
 
 > [!property]
-> ![](1_Uninformed_Search.assets/image-20240125164503724.png)![](1_Uninformed_Search.assets/image-20240125164512417.png)
+> **Description** - Uniform cost search (UCS), our last strategy, is a strategy for exploration that always selects the lowest cost frontier node from the start node for expansion. 
+> 
+> **Frontier Representation** - To represent the frontier for UCS, the choice is usually a **heap-based priority queue**, where the priority for a given enqueued node v is the path cost from the start node to v, or the backward cost of v. Intuitively, a priority queue constructed in this manner simply reshuffles itself to maintain the desired ordering by path cost as we remove the current minimum cost path and replace it with its children.
+> ![](1_Uninformed_Search.assets/image-20240127172607668.png)
+> **Completeness** - Uniform cost search is complete **only** given that there is no path with infinite sequence of zero-cost or no negative cycles. Then if a goal state exists, it must have some finite length shortest path; hence, UCS must eventually find this shortest length path. 
+> 
+> **Optimality** - UCS is also optimal if we assume all edge costs are nonnegative. By construction, since we explore nodes in order of increasing path cost, we’re guaranteed to find the lowest-cost path to a goal state. The strategy employed in Uniform Cost Search is identical to that of **Dijkstra’s algorithm**, and the chief difference is that UCS terminates upon finding a solution state instead of finding the shortest path to all states. Note that having negative edge costs in our graph can make nodes on a path have decreasing length, ruining our guarantee of optimality. (See Bellman-Ford algorithm for a slower algorithm that handles this possibility) 
+> 
+> **Time Complexity** - Let us define the optimal path cost as $C^∗$ and the minimal cost between two nodes in the state space graph as $ε$. Then, we must roughly explore all nodes at depths ranging from 1 to $\frac{C^*}{\epsilon}$, leading to an runtime of $O(b^{\frac{C^∗}{ε}})$ 
+> 
+> **Space Complexity** - Roughly, the frontier will contain all nodes at the level of the cheapest solution, so the space complexity of UCS is estimated as $O(b^{\frac{C^∗}{ε}})$ 
+
+> [!example] Textbook pp84
+> ![](1_Uninformed_Search.assets/image-20240127172316154.png)![](1_Uninformed_Search.assets/image-20240127172324534.png)![](1_Uninformed_Search.assets/image-20240127172329693.png)
+
+
+
+
 
 
 
@@ -190,5 +210,22 @@
 
 
 # Bidirectional Search
+
+
+
+
+# Chapter Exercises
+> [!example] Pacman: Fa23 Exam Prep 1 P1
+> ![](1_Uninformed_Search.assets/image-20240127165110142.png)![](1_Uninformed_Search.assets/image-20240127165117126.png)![](1_Uninformed_Search.assets/image-20240127165128034.png)
+
+> [!example] Graph: Fa23 Exam Prep 1 P2
+> ![](1_Uninformed_Search.assets/image-20240127165301120.png)![](1_Uninformed_Search.assets/image-20240127165306096.png)![](1_Uninformed_Search.assets/image-20240127165311118.png)
+> **Remarks part (b):**
+> 
+> In part (b), we augment our state to include a  counting array for each state, recording the number of times each nodes have been visited, including the current node visit, so for **graph search, even if the node name is the same across multiple visits, the state is different since the counting array is different.** For example, the first time we visit $A$, the array is $[1,0,0,0,0]$, the second time we visit $A$, the array is $[2,1,1,1,1]$. So if we don't add this array, the graph search will never find the solution since it only has a `visited` array that can only count up to one visit for each node, which results in a false early stop in searching.
+> 
+> We have the DFS Tree Search procedure as follows, here the front of the frontier is the left most element.
+> ![](1_Uninformed_Search.assets/image-20240127170935503.png)
+
 
 
