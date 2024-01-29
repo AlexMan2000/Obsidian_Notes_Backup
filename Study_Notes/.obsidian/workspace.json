@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,8 +289,10 @@
       }
     ]
   },
-  "active": "932953190040c9d5",
+  "active": "f3fe83c26bcf4eaa",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
     "Computer_Science/Data_Science_Tools/DS-GA-1019",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129164211544.png",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129162902346.png",
@@ -303,10 +305,8 @@
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129161307697.png",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129161135113.png",
     "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
@@ -336,7 +336,6 @@
     "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/Linearization.assets",
     "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Complex_Arithmetic_II.assets",
     "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/System_ID_Applications.assets",
-    "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_3_4.assets",
     "未命名.canvas"
   ]
 }

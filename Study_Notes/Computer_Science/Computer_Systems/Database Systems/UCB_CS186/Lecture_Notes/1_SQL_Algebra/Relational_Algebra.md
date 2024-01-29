@@ -1,13 +1,35 @@
 > Note 5 Discussion 5
 
 
-# Operators
-Projection
+# Unary Operators
+## Projection
 
 
-Selection
+
+## Selection
 
 
+
+
+## Renaming
+
+
+
+
+# Binary Operators
+
+
+
+
+
+# Compound Operators
+
+
+
+
+
+
+# Extended Relational Operators
 
 
 
