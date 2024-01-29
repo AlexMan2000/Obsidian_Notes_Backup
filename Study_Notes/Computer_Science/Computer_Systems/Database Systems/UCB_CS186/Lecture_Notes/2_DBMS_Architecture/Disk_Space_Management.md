@@ -1,11 +1,8 @@
+> Note 2 Discussion 2
 # Resource Management
 ## Overview
 > [!overview]
 > ![](Disk_Space_Management.assets/image-20240123235623110.png)
-
-
-
-
 
 
 ## Disk
@@ -77,8 +74,6 @@
 > A heap file is a file type with no particular ordering of pages or of the records on pages and has two main implementations.
 > ![](Disk_Space_Management.assets/image-20240124091443308.png)
 
-
-
 > [!quiz] True or False
 > In a heap file, all pages must be filled to capacity except the last page.
 > 
@@ -88,6 +83,7 @@
 
 
 ### List Implementation
+#### Memory Layout
 > [!concept] Overview Layout
 > ![](Disk_Space_Management.assets/image-20240124082059200.png)
 > In this implementation, we have:
@@ -99,6 +95,18 @@
 > 	2. Free space tracker, could be a private member field, indicating whether there is free space on the page(in bytes).
 > 	3. Records.
 
+
+#### Look up Free Page
+> [!concept] Lookup Free Page
+> Read the header page first, then traverse the free page list to find the desired page.
+> 
+
+> [!example] Sp18 Vitamin 2 Q2
+> ![](Disk_Space_Management.assets/image-20240129092258215.png)
+
+
+
+#### Insert Records
 > [!concept] Insertion
 > When we insert a new record, we will follow the procedures as follow: 
 > 1. Since we don't have any ordering in our file structure(heap files), we have to traverse over the free-page **list** to find the first page with enough free space. This step involves **reading(I/O)** from the pages to get the free space information from page header/footer.
@@ -107,6 +115,8 @@
 > 	2. If after insertion, the page still has free space, then we are done. 
 > 3. If we cannot find a free page, we will have to ask for more from the disk and insert the allocated free page at the front of free-page list.
 
+
+#### Delete Records
 > [!concept] Deletion
 > When we delete a new record, we will follow the procedures as follow:
 > 1. Since we don't have any ordering in our file structure(heap files), we have to traverse over the free-page **list** to find the first page with enough free space. This step involves **reading(I/O)** from the pages to get the free space information from page header/footer.
@@ -126,12 +136,20 @@
 > **In this implementation, we have:**
 > 1. A header page that stores entries. Each entry contains a pointer(4 bytes on 32-bit machine) to the data page and the amount of free space(4 bytes int), so 8 bytes each entry.
 > 2. The header page also maintains a pointer to the next header page. So it is a singly linked list.
+> 
+> We have the following operations:
+> 1. **Find free page:** Look up all the page entries(including those pointing to the full page, since we don't have ordering) in the header page. Runtime is just $O(\#~header~pages)$.
+> 2. **Insert a record:** First find a free page(read I/O at header page), then read the data page(read I/O), write the record, and write back to disk(write I/O).
+> 3. **Delete a record:** First find the record(read I/O at header page+read I/O at data page), then write the record, and write back to disk(write I/O).
 
 > [!example] Fa20 Note02 Practice Q1
 > ![](Disk_Space_Management.assets/image-20240124095502941.png)![](Disk_Space_Management.assets/image-20240124095630698.png)
 
 > [!example] Fa20 Discussion2 P5
 > ![](Disk_Space_Management.assets/image-20240124083202582.png)
+
+> [!example] Sp18 Vitamin 2 Q2
+> ![](Disk_Space_Management.assets/image-20240129092827370.png)
 
 > [!example] Concept Check
 > ![](Disk_Space_Management.assets/image-20240128165556545.png)
@@ -148,6 +166,18 @@
 
 
 ## Efficiency Analysis
+### Assumptions
+> [!warning] 
+> For analysis, we will use the following assumptions:
+> - We are mostly concerned about the **average** case.
+> - The workload is **uniform random.**
+> - Inserts and deletes operate on **single records.**
+> - Equality selections will have **exactly one match.**
+> - Heap files always **insert to the end of the file.**
+> - Sorted files are always sorted according to search key.
+> - Packed files are compacted after deletions.
+
+
 ### Scan all records
 > [!concept]
 > ![](Disk_Space_Management.assets/image-20240124090301288.png)![](Disk_Space_Management.assets/image-20240124090308813.png)
@@ -191,11 +221,6 @@
 > ![](Disk_Space_Management.assets/image-20240124094544858.png)![](Disk_Space_Management.assets/image-20240124094553147.png)
 
 
-
-
-
-
-
 ### Deletion
 > [!concept]
 > **Deletion involves:**
@@ -204,6 +229,35 @@
 > 3. Write the page back to disk. (Write I/O, reason for +1)
 > 
 > ![](Disk_Space_Management.assets/image-20240124094611048.png)![](Disk_Space_Management.assets/image-20240124094617080.png)
+> For heap file, since we don't need to sort the file, upon deletion we don't have to rearrage the file records.
+> 
+> So deletion costs less than sorted files(under our assumptions).
+
+
+
+### Summary
+> [!summary]
+> Under our assumptions:
+> - We are mostly concerned about the **average** case.
+> - The workload is **uniform random.**
+> - Inserts and deletes operate on **single records.**
+> - Equality selections will have **exactly one match.**
+> - Heap files always **insert to the end of the file.**
+> - Sorted files are always sorted according to search key.
+> - Packed files are compacted after deletions.
+> 
+> We have the following runtime table.
+> ![](Disk_Space_Management.assets/image-20240129093000613.png)
+> The entry may change if we drop some of the assumptions.
+
+> [!example] When to use which?
+> ![](Disk_Space_Management.assets/image-20240129094319500.png)![](Disk_Space_Management.assets/image-20240129094326338.png)
+
+
+
+
+
+
 
 
 
@@ -282,10 +336,10 @@
 > [!summary]
 > The maximum number of records that can be stored in a page is equal to the page size divided by the minimum record size, rounded down to the nearest integer.
 > 
-> For slotted page, it would be the floor of (page size - 8 bytes) / (min record size + 8 bytes) due to the additional metadata needed.
+> For slotted page, it would be the floor of **(page size - page footer size) / (min record size + 8 bytes)** due to the additional metadata needed.
 > 
-> - Here the **min record size** is the minimum size of a record where all the variable length field is assumed to be null(0 bytes).
-> - **page size** need to minus 8 since we have to store the free record pointer(4 bytes) and slot directory size(4-byte-int).
+> - Here the **min record size + 8 bytes** is the minimum size a record may take up within the page, including 8 bytes in the slot directory entry and the record size with variable length field set to NULL(0 bytes).
+> - **page size** need to minus page footer size, since page footer are not used to store records. Typically, the size is 8 bytes since we have to store the free record pointer(4 bytes) and slot directory size(4-byte-int).
 
 > [!quiz] True or False
 > Assuming integers take 4 bytes and pointers take 4 bytes, a slot directory that is 512 bytes can address 64 records in a page.
@@ -294,6 +348,11 @@
 > 
 > Actually, we are only able to address $\frac{512 - 4 - 4}{4 + 4} = 63$ slots.
 
+> [!example] Sp18 Vitamin 2 Q4
+> ![](Disk_Space_Management.assets/image-20240129095137484.png)
+
+> [!example] Fa20 Note02 Practices Q3
+> ![](Disk_Space_Management.assets/image-20240124103132175.png)![](Disk_Space_Management.assets/image-20240124103151867.png)
 
 ### Packed Layout
 > [!important] Deletion Operation
@@ -366,9 +425,16 @@
 > [!concept]
 > VLRs contain both fixed length and variable length fields (varchar), resulting in each VLR of the same schema having a potentially different number of bytes. VLRs store all fixed length fields before variable length fields and use a record header that contains pointers to the end of the variable length fields.
 > ![](Disk_Space_Management.assets/image-20240124102852246.png)![](Disk_Space_Management.assets/image-20240124102900174.png)![](Disk_Space_Management.assets/image-20240129090841342.png)
-> **Summary:**
-> 1. Record headers contain pointers to the end of variable length fields
-> 2. Moving variable length fields to the end of a record is a useful optimization.
+> **Summary on variable length record:**
+> 1. Each record contains a record header
+> 2. Variable length fields are placed after fixed length fields
+> 3. Record header stores field offset indicating where each variable length field ends
+> 4. Record headers contain pointers to the end of variable length fields
+> 5. Moving variable length fields to the end of a record is a useful optimization.
+> 
+> **An aside: this is not actually sufficient for storing NULLs**
+> - Cannot distinguish between empty string (“”) and NULL
+> - Need some extra metadata (e.g. bitmap in record header or special char in field), which varies widely between different DBMS
 
 > [!quiz] True or False
 > Is fragmentation an issue with variable length records on a slotted page?
@@ -379,18 +445,36 @@
 > [!quiz] Concept Check
 > ![](Disk_Space_Management.assets/image-20240124103405056.png)![](Disk_Space_Management.assets/image-20240124103412803.png)
 
-> [!example] Fa20 Note02 Practices Q3
-> ![](Disk_Space_Management.assets/image-20240124103132175.png)![](Disk_Space_Management.assets/image-20240124103151867.png)
-
 > [!example] Fa20 Discussion2 P3
 > ![](Disk_Space_Management.assets/image-20240124083133406.png)
 
+> [!example] Sp18 Vitamin 2 Q4
+> ![](Disk_Space_Management.assets/image-20240129100003566.png)![](Disk_Space_Management.assets/image-20240129095955318.png)
+> Note that here record header is disjoint with the variable length field pointer.
 
 
 
 # Conclusion
 > [!summary]
 > ![](Disk_Space_Management.assets/image-20240124102913113.png)![](Disk_Space_Management.assets/image-20240124102924262.png)
+
+> [!example] Sp18 Vitamin 2 Q5
+> ![](Disk_Space_Management.assets/image-20240129101027343.png)![](Disk_Space_Management.assets/image-20240129101032551.png)
+> For heap file, insertions requires the least I/Os, just write to the end of the free data page. One read I/O and one write I/O. Select requires reading all the data pages.
+> Delete requires first reading all the data pages to find the record then delete the records and write to the disk.
+> 
+> ![](Disk_Space_Management.assets/image-20240129101327273.png)
+> For sorted file, deletion and insertion requires the same amount of time due to rearrangement(more than full scan). Select requires just a full scan.
+> 
+> ![](Disk_Space_Management.assets/image-20240129101436614.png)
+> When using fixed length records, VARCHAR(20) should be modified as CHAR(20), which always take up 20 bytes no matter how long the actual data is. So the answer is just 4 bytes $\times$ 3 + 20 bytes $\times$ 2 = 52 bytes.
+
+
+
+
+
+
+
 
 
 
