@@ -49,9 +49,16 @@
 
 
 
-## State Space Graph
+## State Space Graphs&Search Trees
 > [!def]
 > ![](1_Uninformed_Search.assets/image-20240125153709300.png)![](1_Uninformed_Search.assets/image-20240125153759641.png)![](1_Uninformed_Search.assets/image-20240125153813844.png)
+
+> [!example] Sp28 Vitamin 1 Q1
+> ![](1_Uninformed_Search.assets/image-20240128225041168.png)
+> The answer is 7.
+> 
+> ![](1_Uninformed_Search.assets/image-20240128225057325.png)
+
 
 
 ## Tree Search vs Graph Search
@@ -73,6 +80,32 @@
 > 1. **Handling of Repeated States**: The most significant difference is how they handle repeated states. Tree search may repeatedly explore the same state, while graph search avoids this through tracking.
 > 2. **Applicability**: Tree search is limited to tree structures or problems where cycles and revisits aren't an issue. Graph search is more general-purpose and can handle complex graph structures with cycles.
 > 3. **Efficiency**: Graph search is generally more efficient in terms of time and memory for complex structures, as it avoids redundant exploration of states.
+
+
+# Data Structure of Search Problem
+### Node
+> [!important]
+> ![](1_Uninformed_Search.assets/image-20240128225930020.png)![](1_Uninformed_Search.assets/image-20240128225943322.png)
+> Note that a node could be visited multiple times, but every time a node is visited, it could correspond to a different state. 
+> 
+> A node is a bookkeeping data structure used to represent the search tree. 
+> 
+> A state corresponds to a configuration of the world. Thus, nodes are on particular paths, as defined by P ARENT pointers, whereas states are not. Furthermore, two different nodes can contain the same world state if that state is generated via two different search paths.
+> 
+> **In short:**
+> 1. The objects that we expand are nodes, not states.
+> 2. The explored set contains the states. In the Dijkstra's algorithm, the state is just the vertices in the graph(i.e. A,B,C,...,G)
+> 3. The frontier contains the nodes, and thus indirectly contains states. In the Dijkstra's algorithm, the state is just the vertices in the graph(i.e. (A,5), (B,6), ..., (G, 11)).
+> 4. The node data structure has a STATE variable that corresponds to the state(i.e. A,B,C,...,G)
+> 5. Different nodes' STATE variables may point to the same state. It's just that different node's PATH_COST, PATH variable are generally different.
+
+
+## Fringe
+> [!important]
+> ![](1_Uninformed_Search.assets/image-20240128230152978.png)![](1_Uninformed_Search.assets/image-20240128230159573.png)
+
+
+
 
 
 
@@ -125,6 +158,11 @@
 > **Space Complexity(finite case)** - In the worst case, DFS maintains b nodes at each of m depth levels on the frontier. This is a simple consequence of the fact that once b children of some parent are enqueued, the nature of DFS allows only one of the subtrees of any of these children to be explored at any given point in time. Hence, the space complexity of DFS is $O(bm)$.
 > 
 
+> [!example] Sp18 Vitamin 1 Q2
+> ![](1_Uninformed_Search.assets/image-20240128225721317.png)![](1_Uninformed_Search.assets/image-20240128225807375.png)
+
+
+
 
 
 
@@ -164,6 +202,16 @@
 > 
 > **Space Complexity** - The frontier, in the worst case, contains all the nodes in the level corresponding to the shallowest solution. Since the shallowest solution is located at depth s, there are $O(b^s)$  nodes at this depth.
 
+> [!example] Sp18 Vitamin 1 Q3
+> ![](1_Uninformed_Search.assets/image-20240128230624695.png)![](1_Uninformed_Search.assets/image-20240128230630437.png)
+> **Note:** When we expand node B, we see that node C is in the frontier, but here expanding B add the state S->B->C to the frontier, and the node C already in the frontier has a different state S->C, so we still need to enqueue. This example is an illustration of the difference between node and state.
+
+
+
+
+
+
+
 
 # Uniform Cost Search(Dijkstra Algorithm)
 > [!algo] Algorithm on Graph
@@ -185,8 +233,12 @@
 > [!example] Textbook pp84
 > ![](1_Uninformed_Search.assets/image-20240127172316154.png)![](1_Uninformed_Search.assets/image-20240127172324534.png)![](1_Uninformed_Search.assets/image-20240127172329693.png)
 
-
-
+> [!example] Sp18 Vitamin 1 Q5
+> Here the state is just the A,B,C,...,G
+> 
+> The node contains the path from the source and the state.
+> ![](1_Uninformed_Search.assets/image-20240129082545108.png)![](1_Uninformed_Search.assets/image-20240129082552895.png)![](1_Uninformed_Search.assets/image-20240129082600105.png)![](1_Uninformed_Search.assets/image-20240129082611920.png)
+> The fringe representation is the node representation.
 
 
 
@@ -197,11 +249,6 @@
 
 > [!example] Fa23 Discussion 1 P2
 > ![](1_Uninformed_Search.assets/image-20240125164837661.png)![](1_Uninformed_Search.assets/image-20240125164843078.png)
-
-
-
-
-
 
 
 

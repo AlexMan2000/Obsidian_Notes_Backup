@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
       "basename": "4_Multi-Agent_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md"
     },
     {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+      "basename": "Relational_Algebra",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
     },
     {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
     },
     {
       "basename": "Related_Resources",
@@ -45,20 +53,12 @@
       "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
     },
     {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
     },
     {
       "basename": "File_Index_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Information_Theory",

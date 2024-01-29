@@ -279,6 +279,14 @@
 > 
 > The footer starts from the bottom of the page rather than the top so that the slot directory has room to grow when records are inserted. 
 
+> [!summary]
+> The maximum number of records that can be stored in a page is equal to the page size divided by the minimum record size, rounded down to the nearest integer.
+> 
+> For slotted page, it would be the floor of (page size - 8 bytes) / (min record size + 8 bytes) due to the additional metadata needed.
+> 
+> - Here the **min record size** is the minimum size of a record where all the variable length field is assumed to be null(0 bytes).
+> - **page size** need to minus 8 since we have to store the free record pointer(4 bytes) and slot directory size(4-byte-int).
+
 > [!quiz] True or False
 > Assuming integers take 4 bytes and pointers take 4 bytes, a slot directory that is 512 bytes can address 64 records in a page.
 > 
@@ -357,7 +365,7 @@
 ## Variable Length Record
 > [!concept]
 > VLRs contain both fixed length and variable length fields (varchar), resulting in each VLR of the same schema having a potentially different number of bytes. VLRs store all fixed length fields before variable length fields and use a record header that contains pointers to the end of the variable length fields.
-> ![](Disk_Space_Management.assets/image-20240124102852246.png)![](Disk_Space_Management.assets/image-20240124102900174.png)
+> ![](Disk_Space_Management.assets/image-20240124102852246.png)![](Disk_Space_Management.assets/image-20240124102900174.png)![](Disk_Space_Management.assets/image-20240129090841342.png)
 > **Summary:**
 > 1. Record headers contain pointers to the end of variable length fields
 > 2. Moving variable length fields to the end of a record is a useful optimization.

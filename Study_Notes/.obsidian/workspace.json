@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
+                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -290,34 +290,36 @@
       }
     ]
   },
-  "active": "5fd63470f8a6486f",
+  "active": "a3705b2e523d7125",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.assets/image-20240129090841342.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240129082611920.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240129082600105.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240129082552895.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240129082545108.png",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129081333614.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129081323703.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129081317079.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240129081311316.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240128230630437.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240128230624695.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
     "Computer_Science/Machine_Learning/EECS188/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
     "Computer_Science/Machine_Learning/EECS189/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
     "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211418916.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211302524.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211256563.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211250010.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211248453.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211239344.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128211232046.png",
     "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128205738489.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128205715547.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240128205608342.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md",
@@ -332,9 +334,7 @@
     "Mathematics/Differential_Equations/MIT_18.031/Untitled.md",
     "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/Linearization.md",
     "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md",
-    "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/_DFT.md",
     "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/Linearization.assets",
-    "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Complex_Arithmetic_II.md",
     "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Complex_Arithmetic_II.assets",
     "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/System_ID_Applications.assets",
     "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_3_4.assets",

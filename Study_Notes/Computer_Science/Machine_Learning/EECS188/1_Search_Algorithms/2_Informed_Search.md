@@ -36,6 +36,12 @@
 > [!property] When to terminate
 > ![](2_Informed_Search.assets/image-20240127182039688.png)
 
+> [!example] Sp18 Vitamin 1 Q4
+> ![](2_Informed_Search.assets/image-20240129081311316.png)![](2_Informed_Search.assets/image-20240129081317079.png)![](2_Informed_Search.assets/image-20240129081323703.png)![](2_Informed_Search.assets/image-20240129081333614.png)
+
+
+
+
 
 
 ## Optimality - Admissibility&Consistency
