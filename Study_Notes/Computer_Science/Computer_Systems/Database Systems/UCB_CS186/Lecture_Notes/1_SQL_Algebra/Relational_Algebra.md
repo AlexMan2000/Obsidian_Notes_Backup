@@ -1,6 +1,6 @@
 > Note 5 Discussion 5
 
-
+ 
 # Unary Operators
 ## Projection($\pi$)
 > Summary:

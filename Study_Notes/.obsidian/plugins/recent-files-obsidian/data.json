@@ -5,16 +5,16 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
     },
     {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+    },
+    {
       "basename": "Basic_SQL",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
     },
     {
       "basename": "2_Informed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
     },
     {
       "basename": "1_Uninformed_Search",
