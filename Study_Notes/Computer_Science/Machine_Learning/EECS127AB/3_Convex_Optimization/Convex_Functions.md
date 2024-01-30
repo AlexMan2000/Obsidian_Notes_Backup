@@ -117,7 +117,7 @@
 > ![](Convex_Functions.assets/20231023_2245588951.png)
 
 
-## Some common convex functions
+## Some useful convex functions
 ### Quadratic Functions
 > [!important] 
 > ![](Convex_Functions.assets/image-20231101095533452.png)
@@ -198,6 +198,34 @@
 > [!example]
 > 总的来说，`log-likelihood function`在$\mu$和$\frac{1}{\sigma^2}$上分别是`strictly concave`的(`partial strictly concave`), 但是在$(\mu, \frac{1}{\sigma^2})$上不是`strictly convex/concave`的（不是`jointly convex/concave`的）。
 > ![](Convex_Functions.assets/image-20231105125740327.png)![](Convex_Functions.assets/image-20231105125751115.png)![](Convex_Functions.assets/image-20231105125807821.png)
+
+
+### PDF of Exponential Family
+> [!example] Disc12 Fa22 P2
+> ![](Convex_Functions.assets/image-20240130140547313.png)
+> We will prove several useful properties:
+> 1. The normalization factor $b(\vec{\theta})$ is convex in $\vec{\theta}$.
+> 2. We model $\theta=X\vec{\beta}$ where $X\in \mathbb{R}^{n\times d}$ is the data matrix, where under this parameterization of $\vec{\theta}$, the exponential family is called a generalized linear model. Then $b(X\vec{\beta})$ is convex in $\vec{\beta}$.
+
+> [!proof] Proof for 1
+> The proof is tricky in higher dimension, but we try to provide one:
+> 
+> First, by the definition of integral, we have when $n=1$
+> ![](Convex_Functions.assets/image-20240130143947000.png)![](Convex_Functions.assets/image-20240130145702276.png)
+> So for higher dimension, we have similar arguments. But an alternative would be as follows:
+> 
+> ![](Convex_Functions.assets/image-20240130152234087.png)
+
+
+
+> [!proof] Proof for 2
+> ![](Convex_Functions.assets/image-20240130150152853.png)
+> This can be seem by the following proof:
+> If $b(\vec{\theta})$ is convex in $\theta$, then: $$b(\lambda \vec{\theta}_1+(1-\lambda)\vec{\theta}_2)\leq\lambda b(\vec{\theta_1})+(1-\lambda)b(\vec{\theta}_2)$$
+> This means:
+> $$\begin{aligned}b(X(\lambda \vec{\beta}_1+(1-\lambda)\vec{\beta}_2))&=b(\lambda X\vec{\beta}_1+(1-\lambda)X\vec{\beta}_2))\\&\leq\lambda b(X\vec{\beta}_1)+(1-\lambda)b(X\vec{\beta}_2)\end{aligned}$$, which implies that $b(X\vec{\beta})$ is convex in $\vec{\beta}$.
+
+
 
 
 

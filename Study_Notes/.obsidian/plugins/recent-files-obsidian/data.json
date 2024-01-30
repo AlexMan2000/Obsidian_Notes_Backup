@@ -1,28 +1,108 @@
 {
   "recentFiles": [
     {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "Random_Stuff",
+      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Information_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Convex_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
+    },
+    {
+      "basename": "Convex_Sets",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+    },
+    {
+      "basename": "Newton's_Method",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md"
+    },
+    {
+      "basename": "Exponential_Family",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md"
+    },
+    {
+      "basename": "Generalized Linear Model",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md"
+    },
+    {
+      "basename": "Bias_Variance_Tradeoff",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Bias_Variance_Tradeoff.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Related_Resources.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Analysis_of_LASSO",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
     },
     {
       "basename": "eecs127_reader",
       "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
     },
     {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "Relational_Algebra",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
+    },
+    {
       "basename": "Basic_SQL",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
     },
     {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
     },
     {
       "basename": "Disk_Space_Management",
@@ -45,28 +125,12 @@
       "path": "Computer_Science/Machine_Learning/EECS188/Related_Resources.md"
     },
     {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Machine_Learning/EECS189/Related_Resources.md"
     },
     {
       "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
       "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Information_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
     },
     {
       "basename": "Convergence Theory",
@@ -135,70 +199,6 @@
     {
       "basename": "disc05B+disc06+HW6",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/disc05B+disc06+HW6.md"
-    },
-    {
-      "basename": "Circuit_State_Anaysis",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Circuit_State_Anaysis.md"
-    },
-    {
-      "basename": "High_Order_DEs",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/High_Order_DEs.md"
-    },
-    {
-      "basename": "Vector_DEs",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Vector_DEs.md"
-    },
-    {
-      "basename": "Basic_DEs",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Basic_DEs.md"
-    },
-    {
-      "basename": "Transistors&Logics",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Transistors&Logics.md"
-    },
-    {
-      "basename": "Capacitors&Inductors&OpAmp",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md"
-    },
-    {
-      "basename": "Complex_Arithmetic_I",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Complex_Arithmetic_I.md"
-    },
-    {
-      "basename": "AC_Circuit_Analysis",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/AC_Circuit_Analysis.md"
-    },
-    {
-      "basename": "Circuit_Design_Principles",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Circuit_Design_Principles.md"
-    },
-    {
-      "basename": "Upper_Triangulation_Schur_Decomposition",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Upper_Triangulation_Schur_Decomposition.md"
-    },
-    {
-      "basename": "3.7_Laplace_Transform",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
-    },
-    {
-      "basename": "OpAmp_Basics",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/OpAmp_Basics.md"
-    },
-    {
-      "basename": "DAC_ADC",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Labs/DAC_ADC.md"
-    },
-    {
-      "basename": "概率不等式",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
-    },
-    {
-      "basename": "Probability Formulas and Theorems",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability Formulas and Theorems.md"
-    },
-    {
-      "basename": "Important Applications Of Basic Probability",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important Applications Of Basic Probability.md"
     }
   ],
   "omittedPaths": [],

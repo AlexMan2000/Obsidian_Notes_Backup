@@ -270,6 +270,12 @@
 > ![](Gradient_Descent.assets/image-20231214215810431.png)![](Gradient_Descent.assets/image-20231214215909745.png)
 
 
+### Step Size Constraints
+> [!important]
+> Suppose at a particular time $t$, the step size is $\eta_t$, we have to enforce the following two constraints:
+> 1. Not Summable: $\sum\limits_{i=1}^\infty\eta_i=\infty$. In real analysis [L11_L12__Absolute_Convergence_Tests_for_Series](../../../../Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md) we know that if the series is finite, the underlying sequence converges to zero. Since we don't want our step size to converge to zero, this condition is necessary. You can think of it as a lower bound on the step size.
+> 2. Square Summable: $\sum\limits_{i=1}^{\infty}\eta_i^2<\infty$. This prevents our step size from growing arbitrarily large. This is important because SGD incorporates a certain level of randomness due to the selection of a subset of data (mini-batch) at each iteration. As the algorithm proceeds, it's crucial to reduce the step size to dampen the effect of this randomness and to allow the algorithm to settle into a minimum.
+
 
 ### Choosing the step size
 
@@ -412,6 +418,36 @@
 ## Convergence of G.D. of Ridge Regression
 > [!example] EECS127 Fa22 HW08 P1
 > ![](Gradient_Descent.assets/image-20231213221553740.png)![](Gradient_Descent.assets/image-20231213221558255.png)![](Gradient_Descent.assets/image-20231213221604911.png)![](Gradient_Descent.assets/image-20231213221611671.png)![](Gradient_Descent.assets/image-20231213221621496.png)![](Gradient_Descent.assets/image-20231213221627679.png)![](Gradient_Descent.assets/image-20231213221634487.png)
+
+
+
+## Error Bound Analysis
+> [!example] EECS182 Sp23 HW1 P3
+> ![](Gradient_Descent.assets/image-20240130113232932.png)
+> This is the problem of having a conditional number that's too large. When we solve least square problem, we have the equation:
+> $$F\vec{w}=\vec{y}$$
+> But in reality what we observe is the follow equation:
+> $$F\vec{w}+\vec{\epsilon}=\vec{y}$$
+> , which is the same as we are perturbing the value of $\vec{y}$, so based on the perturbation analysis we have learned before, we have:
+> $$\frac{\|\delta_{\vec{w}}\|_2}{\|\vec{w}\|_2}\leq \mathbb{k}(F)\frac{\|\vec{\epsilon}\|_2}{\|\vec{y}\|_2}$$, which tells us that even when the error is very small in magnitude, if the conditional number of $F$(and thus the singular value of $F^{\top})$ is huge, then the error in our estimation for $\vec{w}$(denoted by $\|\delta_{\vec{w}}\|_2$)will be huge in magnitude.
+> So we want to use gradient descent to control the error within a bound:
+> 
+> ![](Gradient_Descent.assets/image-20240130114121614.png)![](Gradient_Descent.assets/image-20240130114144528.png)
+> **Note:** Here we use lots of important properties in matrix algebra:
+> 1. For any matrix $A$, we have $\|A\vec{x}\|_2\leq\|A\|_2\|\vec{x}\|_2$
+> 2. For any matrix $A\in \mathbb{S}^n$, we have $|\lambda_i(A)|=sigma_i(A)$
+> 3. For any matrix $A$, we have $\|A\|_2=\sigma_{max}(A)$
+> 4. For any two vectors of the same dimension, we have $\|\vec{x}+\vec{y}\|_2\leq\|\vec{x}\|_2+\|\vec{y}\|_2$
+> 
+> **Given the above lemma, we can prove the following:**
+> 1. By induction we have $\|\vec{w}_k\|_2\leq\|\vec{w}_0\|+k\eta\alpha\|\vec{y}\|_2=k\eta\alpha\|\vec{y}\|_2$
+> 2. By triangle inequality we have $\|\vec{w}_k-\vec{w}^*\|_2\leq\|\vec{w}_k\|_2+\|\vec{w}^*\|_2\leq k\eta \alpha\|\vec{y}\|_2+\|\vec{w}^*\|_2$ 
+> 
+> Thus, as is proved above, when we choose our step as fixed and satisfy convergence condition, our error is bounded above by a quadratic function in the optimal solution:
+> $$\|\vec{w}_k-\vec{w}^*\|_2\leq k\eta \alpha\|\vec{y}\|_2+\|\vec{w}^*\|_2$$
+
+
+
 
 
 

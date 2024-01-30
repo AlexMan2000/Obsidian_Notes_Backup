@@ -38,6 +38,16 @@
 > 1. Hessian Inversion can be expensive
 
 
+## Practical Examples
+### Choice of Initial Point
+> [!example] Fa22 Disc12 P1
+> ![](Newton's_Method.assets/image-20240130110055035.png)
+
+
+
+### Generalized Linear Model
+> [!example] Fa22 disc12 P2
+
 
 # Damped Newton's Method
 > [!algo]

@@ -27,6 +27,9 @@
 
 
 # Binary Operators
+Join
+
+
 
 
 
@@ -52,3 +55,5 @@ Intersect
 
 
 # Convert SQL to Relational Algebra
+
+

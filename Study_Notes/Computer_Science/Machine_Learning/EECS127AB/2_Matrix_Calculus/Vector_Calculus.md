@@ -53,8 +53,7 @@
 > $\begin{aligned}\frac{\partial f}{\partial x_i}&=\sum_{j\neq i}A_{ij}x_j+\sum_{j\neq i}A_{ji}x_i+2x_iA_{ii}\\&=\sum_{j}(A_{ij}+A_{ji})x_j\\&=\sum_jA_{ij}x_j+\sum_{j}A_{ji}x_j\end{aligned}$
 > 也就是$A$的第$i$行(用$A_{:,i}$表示)和$A^{\top}$的第$i$行(用$(A_{}^{\top})_{:,i}$表示)和$\vec{x}$的乘积
 > 所以:
-> $\nabla f(\vec{x})=\frac{\partial f}{\partial \vec{x}}=(A+A^{\
-\top})\vec{x}$,$\nabla^2f(\vec{x})=A+A^{\top}$
+> $$\nabla f(\vec{x})=\frac{\partial f}{\partial \vec{x}}=(A+A^{\\top})\vec{x}$,$\nabla^2f(\vec{x})=A+A^{\top}$$
 
 
 

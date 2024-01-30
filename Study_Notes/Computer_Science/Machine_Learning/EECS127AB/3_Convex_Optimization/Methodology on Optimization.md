@@ -329,6 +329,7 @@
 
 
 ## Method 1: Monotone Objective Transformation
+### Method Theory
 > [!important] C.E.G. 8.3.4.1
 > Suppose we have the original problem as follows:
 >$$p^*=\min _{x \in \mathbb{R}^n} f_0(x)$$subject to: $$\begin{align}f_i(x) \leq 0, i=1, \ldots, m\\h_i(x)=0, i=1, \ldots, q\end{align}$$ where it is not necessarily a convex optimization problem.
@@ -347,6 +348,13 @@
 > If $p$ is convex, then $g$ is also convex, provided that $\phi$ is both convex and strictly increasing.
 > 
 > **Proof:** Since $f_0$ is convex and $\phi$ is non-decreasing and convex, then by composition rule we have $\phi(f_0(\vec{x}))$ is convex. Since the domain if $\phi$ and $f_0$ are both full subspace, we don't have to consider the extended value function when we are using the criterion here.
+
+### Examples
+> [!example] Disc12 Fa22 P2
+> ![](Methodology%20on%20Optimization.assets/image-20240130152817615.png)![](Methodology%20on%20Optimization.assets/image-20240130152721582.png)
+
+
+
 
 
 ## Method 2: Monotone Constraint Transformation

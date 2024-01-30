@@ -261,6 +261,8 @@ $\begin{aligned} \vec{y}^{\top}(-A)\vec{y}&=\sum_{i=k}^n\lambda_i(-A)\zeta_i^2\\
 > **For $A\in \mathbb{S}_{+}^{n\times n}$, we have $\lambda_i(A)=\sigma_i(A)$.**
 > 
 > Since $\sigma_i(A)$ for P.S.D. matrices are all greater than or equal to zero. Then taking the square root we get the desired result. Note that for P.D matrices, the above statement means that eigenvalues are equal to singular values and they are all non-zero.
+> 
+> **For $A\in \mathbb{S}^n$, we have a weaker argument, which is $|\lambda_i(A)|=\sigma_i(A)$**, because we can imagine singular value as always taking the positive solution of $\sqrt{\lambda_i(A)^2}$.
 
 
 ### Eigenvectors and Singular Vectors?

@@ -193,8 +193,7 @@
 > 
 > **Note 2:** The reason why we want to iterate through all the grid is that we don't actually know the current position of the insect. So we have to make assumptions about its position. If it is currently at (0,0) or it is currently at (0,1), ..., so for each grid (x,y) we have to assume that the insect is at (x+1, y) previously (because the insect is equally likely to be in any grid at a particular time step), which gives `bool_new[x][y]=bool[x+1][y]`. Moreover, since the insect would stay at the same position if WEST action leads to a wall. In this case, we have to consider if the insect is in the position (x,y) and head into a wall so that `bool_new[x][y]=bool[x][y] and is_wall(x-1,y)`. Connecting these two scenarios we get the final boolean expression.
 > 
-> ![](2_Informed_Search.assets/image-20240129164211544.png)
-
+> ![](2_Informed_Search.assets/image-20240129164211544.png)![](2_Informed_Search.assets/image-20240130175819565.png)
 
 > [!example] Sp18 Vitamin 1 Q11 Lost at Night
 > 
