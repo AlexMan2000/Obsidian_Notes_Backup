@@ -203,15 +203,17 @@
 > 
 > **Space Complexity** - The frontier, in the worst case, contains all the nodes in the level corresponding to the shallowest solution. Since the shallowest solution is located at depth s, there are $O(b^s)$  nodes at this depth.
 
+## Example - 2nd Version
 > [!example] Sp18 Vitamin 1 Q3
+> The difference between A* star in 2nd and 3rd is that:
+> 1. In the 2nd Edition, when we expand the node, we insert all the child nodes into the fringe where we don't do any feasibility check to these child node. But we do feasibility check to the current node to see whether we should expand or not. In other words, we defer the process of determining whether to expand a node to the point where we pop it our from the fringe.
+> ![](1_Uninformed_Search.assets/image-20240131091905164.png)
+> 3. In the 3rd edition, when we expand the node, we do feasibility check of the child node to see whether it should be added to the fringed. In other words, we make early check on whether a child node should be expanded in the future.
+> ![](1_Uninformed_Search.assets/image-20240131091739294.png)
+> 
+> Now consider the following example:
 > ![](1_Uninformed_Search.assets/image-20240128230624695.png)![](1_Uninformed_Search.assets/image-20240128230630437.png)
 > **Note:** When we expand node B, we see that node C is in the frontier, but here expanding B add the state S->B->C to the frontier, and the node C already in the frontier has a different state S->C, so we still need to enqueue. This example is an illustration of the difference between node and state.
-
-
-
-
-
-
 
 
 # Uniform Cost Search(Dijkstra Algorithm)

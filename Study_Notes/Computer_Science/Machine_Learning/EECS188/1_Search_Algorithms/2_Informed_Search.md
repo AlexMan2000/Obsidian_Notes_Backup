@@ -83,7 +83,8 @@
 
 ### Consistency - Graph Search Optimality
 > [!bug] When admissibility fails in graph search
-> <p align="justify">Graph search is that it tends to ruin the optimality of A star, even under admissible heuristics.<p> <p align="justify">Consider the following simple state space graph and corresponding search tree, annotated with weights and heuristic values:</p>
+> <p align="justify">Graph search is that it tends to ruin the optimality of A star, even under admissible heuristics.<p><p align="justify">The reason is that tree search will guarantee to visit the optimal state before any suboptimal states since there is literally no restriction on whether a node can be expanded or not. But this is not true for graph search where we may fail to expand the node that has been expanded before, even if that node results in a better solution.</p>
+> <p align="justify">Consider the following simple state space graph and corresponding search tree, annotated with weights and heuristic values:</p>
 > 
 > ![](2_Informed_Search.assets/image-20240127223211727.png)
 > In the above example, it’s clear that the optimal route is to follow S → A →C → G, yielding a total path cost of 1+1+3 = 5. The only other path to the goal, S → B →C → G has a path cost of 1+2+3 = 6. However, because the heuristic value of node A is so much larger than the heuristic value of node B, node C is first expanded along the second, suboptimal path as a child of node B. It’s then placed into the "reached" set, and so A* graph search fails to reexpand it when it visits it as a child of A, so it never finds the optimal solution.
@@ -91,7 +92,12 @@
 > [!property] Consistency
 > Hence, to maintain optimality under A* graph search, we need an even stronger property than admissibility, consistency. 
 > 
-> The central idea of consistency is that we enforce not only that a heuristic underestimates the total distance to a goal from any given node, but also the cost/weight of each edge in the graph.
+> The central idea of consistency is that we enforce **not only that a heuristic underestimates the total distance** to a goal from any given node, **but also the cost/weight of each edge in the graph**.
+> What this condition says is that:
+> 
+> 1. Along any path to any node $n$, the total cost along that path is non-decreasing.
+> 2. Once we expand any node, the optimal path to that node has been found.
+> 3. Consistency implies admissibility.
 > 
 
 > [!thm] Theorem - Triangle Inequality
@@ -107,7 +113,15 @@
 > This stems simply from the fact that if no edge costs are overestimates (as guaranteed by consistency), the total estimated cost from any node to a goal will also fail to be an overestimate.
 > ![](2_Informed_Search.assets/image-20240127233026701.png)![](2_Informed_Search.assets/image-20240127233040543.png)
 
-
+> [!proof] Proof
+> The proof of this implication is easy:
+> For any node $n$, denote the heuristic of it to be $h(n)$, the estimated cost to the goal. Suppose $n'$ is the parent of $n$(if there is), then by consistency we have:
+> $$h(n')-h(n)\leq cost(n',n)$$
+> Then by rearranging terms we have:
+> $$h(n')\leq h(n)+cost(n',n)$$
+> Then we can use mathematical induction to show that if $h(n)$ is admissible, then $h(n')\leq h(n)+cost(n',n)\leq h^*(n)+cost(n',n)=h*(n')$.
+> 
+> By tracing the path backward we can show that admissibility holds for all nodes in the graph. 
 
 
 
@@ -123,26 +137,39 @@
 # Variants of A\* Graph Search Methods
 ## Early Goal Checking Graph Search
 > [!example] Sp18 Vitamin1 Q12
+> **In summary:**
+> 
+> 1. This method checks the goal before we expand the node.
+> 2. It doesn't break the completeness of the algorithm but breaks the optimality since the it stops at the goal before expanding the goal but the optimality is only guaranteed when we expand the node.
+> 
 > ![](1_Uninformed_Search.assets/image-20240130221848976.png)![](1_Uninformed_Search.assets/image-20240130221855968.png)![](1_Uninformed_Search.assets/image-20240130221903225.png)![](1_Uninformed_Search.assets/image-20240130221910347.png)![](1_Uninformed_Search.assets/image-20240130221917462.png)![](1_Uninformed_Search.assets/image-20240130221923989.png)![](1_Uninformed_Search.assets/image-20240130221932684.png)![](1_Uninformed_Search.assets/image-20240130221948838.png)
 
 
 
 ## Lookahead Graph Search
 > [!example] Sp18 Vitamin1 Q13
-> ![](1_Uninformed_Search.assets/image-20240130222050983.png)![](1_Uninformed_Search.assets/image-20240130222100539.png)![](1_Uninformed_Search.assets/image-20240130224359166.png)![](1_Uninformed_Search.assets/image-20240130224405895.png)![](2_Informed_Search.assets/image-20240130224640280.png)
+> In summary, this algorithm expand the node when first seen during expansion of the parent node. This method also, doesn't break the completeness but break the optimality.
+> 
+>![](1_Uninformed_Search.assets/image-20240130222050983.png)![](1_Uninformed_Search.assets/image-20240130222100539.png)![](1_Uninformed_Search.assets/image-20240130224359166.png)![](1_Uninformed_Search.assets/image-20240130224405895.png)![](2_Informed_Search.assets/image-20240130224640280.png)
 > **Note:** In this algorithm, once the state is added to `fringe-closed-set`, we will never add it again to the `fringe`, thus it will only be expanded once.
 
 
-## Memory Efficient Graph Search
+## Memory Efficient Graph Search - Edition 3 Version
 > [!example] Sp18 Vitamin1 Q14
-> ![](2_Informed_Search.assets/image-20240130224901797.png)![](2_Informed_Search.assets/image-20240130224914625.png)
+> In summary:
+> This method is generally adopted in the 3rd edition of Artificial intelligence. 
+> 
+> ![](2_Informed_Search.assets/image-20240130224901797.png)![](2_Informed_Search.assets/image-20240130224914625.png)![](2_Informed_Search.assets/image-20240131081154197.png)![](2_Informed_Search.assets/image-20240131081208824.png)
 
 
 
 ## A\*-CSCS Algorithm
-
-
-
+> [!example] Sp18 Vitamin1 Q15
+> ![](2_Informed_Search.assets/image-20240131081358010.png)![](2_Informed_Search.assets/image-20240131081414756.png)![](2_Informed_Search.assets/image-20240131090731238.png)![](2_Informed_Search.assets/image-20240131092315006.png)
+> Note: Recall the reason why we need consistency for graph search on top of admissibility is that:
+> 1. Admissibility requires that we actually have a chance to get to the optimal solution before suboptimal solution, so it's ok with tree search but not graph search.
+> 2. Consistency ensures that once we expand a node, it is on the optimal solution path. So even if we cannot expand the same node multiple times, the optimality is guaranteed.
+> 3. But in A\*-CSCS Algorithm, 
 
 
 

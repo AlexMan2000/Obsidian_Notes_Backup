@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Lecture_Jan_31_Representing_Text",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
+    },
+    {
       "basename": "2_Informed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
+      "basename": "5_Logic_Based_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md"
+    },
+    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Statistical_Inference",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1002/Statistical_Inference.md"
     },
     {
       "basename": "Random_Stuff",
@@ -187,18 +199,6 @@
     {
       "basename": "System_ID_Applications",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/System_ID_Applications.md"
-    },
-    {
-      "basename": "Homeworks_3_4",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_3_4.md"
-    },
-    {
-      "basename": "Homeworks_1_2",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Homeworks/Homeworks_1_2.md"
-    },
-    {
-      "basename": "disc05B+disc06+HW6",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/disc05B+disc06+HW6.md"
     }
   ],
   "omittedPaths": [],
