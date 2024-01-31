@@ -244,69 +244,28 @@
       "templater-obsidian:Templater": false
     }
   },
-  "floating": {
-    "id": "847df8b3e8251937",
-    "type": "floating",
-    "children": [
-      {
-        "id": "9b951ca613ace82a",
-        "type": "window",
-        "children": [
-          {
-            "id": "c4504527a58faac3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "bf96dac8db80e380",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
-                  }
-                }
-              },
-              {
-                "id": "defd1740db286fe8",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 340,
-        "y": 104,
-        "width": 1030,
-        "height": 806,
-        "maximize": false,
-        "zoom": 0.5
-      }
-    ]
-  },
   "active": "f3fe83c26bcf4eaa",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130175819565.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130224914625.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130224901797.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130224640280.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130224405895.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130224359166.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130222100539.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130222050983.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130221948838.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130221938999.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130221932684.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240130221923989.png",
     "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md",
     "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.assets/image-20240130152817615.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.assets/image-20240130152721582.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.assets/image-20240130152234087.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.assets/image-20240130150152853.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.assets/image-20240130145702276.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.assets/image-20240130143947000.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.assets/image-20240130140547313.png",
     "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md",
@@ -322,9 +281,6 @@
     "Computer_Science/Deep_Learning/UCB_EECS182",
     "Computer_Science/Deep_Learning/NTU_Deep_Learning",
     "Computer_Science/Deep_Learning",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240130114144528.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240130114121614.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240130113232932.png",
     "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
@@ -333,7 +289,6 @@
     "Computer_Science/Deep_Learning/EECS182",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md",
     "Computer_Science/Data_Science_Tools/DS-GA-1019",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets",

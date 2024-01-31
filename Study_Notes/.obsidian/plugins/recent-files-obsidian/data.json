@@ -5,6 +5,10 @@
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
       "basename": "Random_Stuff",
       "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
     },
@@ -99,10 +103,6 @@
     {
       "basename": "Basic_SQL",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Disk_Space_Management",

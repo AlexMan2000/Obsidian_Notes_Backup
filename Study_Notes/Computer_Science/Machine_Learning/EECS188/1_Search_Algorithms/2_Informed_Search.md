@@ -120,6 +120,33 @@
 
 
 
+# Variants of A\* Graph Search Methods
+## Early Goal Checking Graph Search
+> [!example] Sp18 Vitamin1 Q12
+> ![](1_Uninformed_Search.assets/image-20240130221848976.png)![](1_Uninformed_Search.assets/image-20240130221855968.png)![](1_Uninformed_Search.assets/image-20240130221903225.png)![](1_Uninformed_Search.assets/image-20240130221910347.png)![](1_Uninformed_Search.assets/image-20240130221917462.png)![](1_Uninformed_Search.assets/image-20240130221923989.png)![](1_Uninformed_Search.assets/image-20240130221932684.png)![](1_Uninformed_Search.assets/image-20240130221948838.png)
+
+
+
+## Lookahead Graph Search
+> [!example] Sp18 Vitamin1 Q13
+> ![](1_Uninformed_Search.assets/image-20240130222050983.png)![](1_Uninformed_Search.assets/image-20240130222100539.png)![](1_Uninformed_Search.assets/image-20240130224359166.png)![](1_Uninformed_Search.assets/image-20240130224405895.png)![](2_Informed_Search.assets/image-20240130224640280.png)
+> **Note:** In this algorithm, once the state is added to `fringe-closed-set`, we will never add it again to the `fringe`, thus it will only be expanded once.
+
+
+## Memory Efficient Graph Search
+> [!example] Sp18 Vitamin1 Q14
+> ![](2_Informed_Search.assets/image-20240130224901797.png)![](2_Informed_Search.assets/image-20240130224914625.png)
+
+
+
+## A\*-CSCS Algorithm
+
+
+
+
+
+
+
 # Heuristic Functions Design
 ## Effective Branching Factor
 
@@ -160,8 +187,6 @@
 
 
 
-# A\*-CSCS Algorithm
-
 
 
 
@@ -194,9 +219,9 @@
 > **Note 2:** The reason why we want to iterate through all the grid is that we don't actually know the current position of the insect. So we have to make assumptions about its position. If it is currently at (0,0) or it is currently at (0,1), ..., so for each grid (x,y) we have to assume that the insect is at (x+1, y) previously (because the insect is equally likely to be in any grid at a particular time step), which gives `bool_new[x][y]=bool[x+1][y]`. Moreover, since the insect would stay at the same position if WEST action leads to a wall. In this case, we have to consider if the insect is in the position (x,y) and head into a wall so that `bool_new[x][y]=bool[x][y] and is_wall(x-1,y)`. Connecting these two scenarios we get the final boolean expression.
 > 
 > ![](2_Informed_Search.assets/image-20240129164211544.png)![](2_Informed_Search.assets/image-20240130175819565.png)
-
-> [!example] Sp18 Vitamin 1 Q11 Lost at Night
-> 
-
+> **Note:** 
+> 1. For the first option: Since we don't know where the bug currently is. So the position is totally random. But no matter where it is, the true cost will never be less than the number of grids(i.e. the number of position that the bug could be).
+> 2. For the second option: Because we want to find a planning that guarantees to find a path from start to goal no matter where the bug is initially. So the true cost should at least take into consideration the furtherest location from the goal, which is the maximum manhattan distance. Since the bug may hit the wall, true cost can only increase. So the heuristic is admissible.
+> 3. For the third option, the reason is the same as the second one.
 
 

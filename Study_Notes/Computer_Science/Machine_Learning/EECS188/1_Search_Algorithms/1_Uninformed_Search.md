@@ -61,7 +61,7 @@
 
 
 
-## Tree Search vs Graph Search
+# Tree Search vs Graph Search
 > [!algo]
 > ![](1_Uninformed_Search.assets/image-20240125154056011.png)
 > **Tree Search**
@@ -80,6 +80,7 @@
 > 1. **Handling of Repeated States**: The most significant difference is how they handle repeated states. Tree search may repeatedly explore the same state, while graph search avoids this through tracking.
 > 2. **Applicability**: Tree search is limited to tree structures or problems where cycles and revisits aren't an issue. Graph search is more general-purpose and can handle complex graph structures with cycles.
 > 3. **Efficiency**: Graph search is generally more efficient in terms of time and memory for complex structures, as it avoids redundant exploration of states.
+
 
 
 # Data Structure of Search Problem
@@ -252,11 +253,24 @@
 
 
 
-# Depth Limit Search
 
 
 
-# Bidirectional Search
+
+
+
+
+
+
+
+
+
+# Augmented Search Methods
+## Depth Limit Search
+
+
+
+## Bidirectional Search
 
 
 
