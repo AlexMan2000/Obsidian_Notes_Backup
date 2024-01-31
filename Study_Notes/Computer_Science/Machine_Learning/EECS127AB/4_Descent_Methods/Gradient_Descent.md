@@ -270,6 +270,8 @@
 > ![](Gradient_Descent.assets/image-20231214215810431.png)![](Gradient_Descent.assets/image-20231214215909745.png)
 
 
+
+
 ### Step Size Constraints
 > [!important]
 > Suppose at a particular time $t$, the step size is $\eta_t$, we have to enforce the following two constraints:
@@ -283,7 +285,10 @@
 
 
 
+
+
 ### Applications
+### Finding Centroid
 > [!example] Application: Finding Centroid
 > ![](Gradient_Descent.assets/image-20231214220545511.png)![](Gradient_Descent.assets/image-20231214220551473.png)
 
@@ -470,6 +475,26 @@
 
 
 
+# Code Experiments
+## Theory
+> [!important] GD and SGD
+> Consider the following ridge regression loss function minimization problem:
+> $$\min _{\vec{x} \in \mathbb{R}^n} f_\lambda(\vec{x}) \quad \text { where } \quad f_\lambda(\vec{x}) \doteq \frac{1}{2}\left\{\frac{1}{m}\|A \vec{x}-\vec{y}\|_2^2+\lambda\|\vec{x}\|_2^2\right\} \text {. }$$
+> The gradient for the GD is computed using all the datapoints, which computes: $\nabla f(\vec{x})=\frac{1}{m}A^{\top}(A\vec{x}-\vec{y})+\lambda\cdot\vec{x}$ The derivation comes from using chain rule of Jacobian and then take the transpose.
+> 
+> The gradient for the SGD is computed by first sampling from the datapoints, select from one of them and compute the gradient with that particular data point. Suppose we sample the $i$-th datapoint, then we get: $\nabla f(\vec{x})=\vec{a}_i\cdot(\vec{a}_i^{\top}\vec{x}-\vec{y}_i)+\lambda\cdot\vec{x}$, notice that since $\vec{a}_i$ and $\vec{x}$ has the same dimension, it won't trigger any errors. Also notice that the regularization term $\lambda\|\vec{x}\|_2$ won't be affected by the sampling process, which means we first sample the $(A\vec{x}-\vec{y})_i$ and then apply the gradient of $\lambda\|\vec{x}\|_2$ to the previous result so **we don't need a multiplier $m$ in front.**
+> 
+> The code implementations are as follows:
+> ![](Gradient_Descent.assets/image-20240131131411223.png)![](Gradient_Descent.assets/image-20240131131358355.png)
+> Now we start to do our experiments
+> 
 
 
+## Experiments
+## n = 1
+
+
+n = 2
+
+n >> 2
 

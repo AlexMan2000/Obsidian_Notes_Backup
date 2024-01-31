@@ -268,8 +268,37 @@
 
 
 # Augmented Search Methods
-## Depth Limit Search
+## Depth Limit Search - pp88 3rd ed
+> [!algo]
+> This algorithm is proposed to early stop on depth first search for infinite state space or finite one with cycles.
+> ![](1_Uninformed_Search.assets/image-20240131154630616.png)![](1_Uninformed_Search.assets/image-20240131155417412.png)![](1_Uninformed_Search.assets/image-20240131155431920.png)
 
+> [!property]
+> **Completeness** - Since the solution may be at infinite depth, so early stopping on $l<d$ may introduce incompleteness.
+> 
+> **Optimality** - If we choose $l>d$, the solution may be non-optimal.
+> 
+> **Time Complexity** - $O(b^l)$, worst case we have to search all the points at depth $l$ to make sure there is no solution at depth $l$.
+> 
+> **Space Complexity** - $O(bl)$, same as DFS where we use stack as fringe.
+
+
+## Iterative Deepening Search
+> [!algo]
+> This algorithm finds the best depth limit by gradually increasing the limit—first 0, then 1, then 2, and so on—until a goal is found.
+> ![](1_Uninformed_Search.assets/image-20240131154651802.png)
+> 
+
+> [!property]
+> **Completeness** - Since the solution may be at infinite depth, so early stopping on $l<d$ may introduce incompleteness.
+> 
+> **Optimality** - If we choose $l>d$, the solution may be non-optimal.
+> 
+> **Time Complexity** - $N(\operatorname{IDS})=(d) b+(d-1) b^2+\cdots+(1) b^d=O(b^d)$ where $d$ is the depth of the shallowest solution.
+> 
+> There is some extra cost for generating the upper levels multiple times, but it is not large. For example, if $b=10$ and $d=5$, the numbers are:$$\begin{aligned}& N(\text { IDS })=50+400+3,000+20,000+100,000=123,450 \\& N(\text { BFS })=10+100+1,000+10,000+100,000=111,110 .\end{aligned}$$
+> 
+> **Space Complexity** - $O(bd)$, same as DFS where we use stack as fringe and $d$ is the depth of the shallowest solution.
 
 
 ## Bidirectional Search
@@ -277,7 +306,8 @@
 
 
 
-# Chapter Exercises
+# Design Examples
+## Pacman
 > [!example] Pacman: Fa23 Exam Prep 1 P1
 > ![](1_Uninformed_Search.assets/image-20240127165110142.png)![](1_Uninformed_Search.assets/image-20240127165117126.png)![](1_Uninformed_Search.assets/image-20240127165128034.png)
 

@@ -20,26 +20,24 @@
             }
           },
           {
-            "id": "05118145ff67f330",
+            "id": "f3fe83c26bcf4eaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
+                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f3fe83c26bcf4eaa",
+            "id": "06bfcecea05b4cfc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
               }
             }
           }
@@ -127,7 +125,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 46.018893387314435,
+        "dimension": 28.832951945080094,
         "children": [
           {
             "id": "abd22396395eb00b",
@@ -150,7 +148,7 @@
       {
         "id": "ac5e674590e10608",
         "type": "tabs",
-        "dimension": 26.990553306342782,
+        "dimension": 22.883295194508012,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -158,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
+                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
+                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +185,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 26.990553306342782,
+        "dimension": 48.2837528604119,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -232,26 +230,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "05118145ff67f330",
+  "active": "f3fe83c26bcf4eaa",
   "lastOpenFiles": [
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131155431920.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131155417412.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131154651802.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131154630616.png",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153859650.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153845502.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153832922.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153759082.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131151850501.png",
+    "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131145123266.png",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
     "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1003/Random_Stuff.md",
     "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131092315006.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131091905164.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131091739294.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131090731238.png",
     "Mathematics/NYU_Master_Program/DS-GA-1002/Statistical_Inference.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131081414756.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131081358010.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131081208824.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131081154197.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130224914625.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240130224901797.png",
     "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
@@ -268,14 +269,10 @@
     "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md",
     "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
     "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
     "Computer_Science/Deep_Learning/UCB_EECS182",
     "Computer_Science/Deep_Learning/NTU_Deep_Learning",
     "Computer_Science/Deep_Learning",
     "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
     "Computer_Science/Deep_Learning/EECS182",
     "Computer_Science/Data_Science_Tools/DS-GA-1019",
     "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",

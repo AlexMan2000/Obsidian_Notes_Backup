@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Lecture_Jan_31_Representing_Text",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
-    },
-    {
       "basename": "2_Informed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
-      "basename": "5_Logic_Based_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md"
-    },
-    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Drawing 2024-01-31 15.12.18.excalidraw",
+      "path": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Lecture_Jan_31_Representing_Text",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
+      "basename": "Random_Stuff",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1003/Random_Stuff.md"
+    },
+    {
+      "basename": "5_Logic_Based_Search",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md"
     },
     {
       "basename": "Statistical_Inference",
@@ -23,10 +39,6 @@
     {
       "basename": "Random_Stuff",
       "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
     },
     {
       "basename": "Information_Theory",
@@ -129,10 +141,6 @@
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md"
     },
     {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Machine_Learning/EECS188/Related_Resources.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "_DFT",
       "path": "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/_DFT.md"
-    },
-    {
-      "basename": "Complex_Arithmetic_II",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Complex_Arithmetic_II.md"
-    },
-    {
-      "basename": "System_ID_Applications",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/System_ID_Applications.md"
     }
   ],
   "omittedPaths": [],

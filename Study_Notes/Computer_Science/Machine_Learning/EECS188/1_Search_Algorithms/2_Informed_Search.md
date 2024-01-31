@@ -167,9 +167,27 @@
 > [!example] Sp18 Vitamin1 Q15
 > ![](2_Informed_Search.assets/image-20240131081358010.png)![](2_Informed_Search.assets/image-20240131081414756.png)![](2_Informed_Search.assets/image-20240131090731238.png)![](2_Informed_Search.assets/image-20240131092315006.png)
 > Note: Recall the reason why we need consistency for graph search on top of admissibility is that:
-> 1. Admissibility requires that we actually have a chance to get to the optimal solution before suboptimal solution, so it's ok with tree search but not graph search.
+> 1. Admissibility requires that we actually have a chance to get to the optimal solution before suboptimal solution, tree search certainly have a chance, but graph search, due to the special data structure, prevent certain nodes from being revisited, which cancels potential optimal path to be returned.
 > 2. Consistency ensures that once we expand a node, it is on the optimal solution path. So even if we cannot expand the same node multiple times, the optimality is guaranteed.
-> 3. But in A\*-CSCS Algorithm, 
+> 3. But in A\*-CSCS Algorithm, admissibility is enough, since even if a state have been added to the `closed set`, if later the same state is popped, as long as it has lower cost, it will be expanded again, this is similar to the tree search behavior. But tree search basically can revisit any node while the A\*-CSCS will only revisit those nodes that can potentially improve the path that we will find in the end.
+> 
+> ![](2_Informed_Search.assets/image-20240131141016719.png)![](2_Informed_Search.assets/image-20240131141304859.png)![](2_Informed_Search.assets/image-20240131141321050.png)
+
+
+
+
+
+
+# Proofs about Heuristic Functions
+## Proving Admissibility
+> [!example] Fa23 Exam Prep02 P1
+> 
+
+
+
+## Proving Consistency
+> [!example] Fa23 Exam Prep02 P1
+> 
 
 
 
@@ -217,7 +235,8 @@
 
 
 
-# Design Examples: Maze
+# Design Examples
+## Maze and Bugs - Sp18 Vitamin 1
 > [!overview]
 > ![](2_Informed_Search.assets/image-20240129160313696.png)![](2_Informed_Search.assets/image-20240129160334447.png)
 
@@ -250,5 +269,57 @@
 > 1. For the first option: Since we don't know where the bug currently is. So the position is totally random. But no matter where it is, the true cost will never be less than the number of grids(i.e. the number of position that the bug could be).
 > 2. For the second option: Because we want to find a planning that guarantees to find a path from start to goal no matter where the bug is initially. So the true cost should at least take into consideration the furtherest location from the goal, which is the maximum manhattan distance. Since the bug may hit the wall, true cost can only increase. So the heuristic is admissible.
 > 3. For the third option, the reason is the same as the second one.
+
+
+## Search and Heuristic - Fa23 Disc02 P1
+> [!example] 
+> ![](2_Informed_Search.assets/image-20240131143041965.png)
+> 
+> ![](2_Informed_Search.assets/image-20240131143051537.png)![](2_Informed_Search.assets/image-20240131143101262.png)![](2_Informed_Search.assets/image-20240131143112523.png)![](2_Informed_Search.assets/image-20240131143142503.png)
+> To justify (a), since we are only allowed to turn when our velocity is zero, and each turn action takes one timestep. And the true cost can only be more than that, since we need to accelerate from zero velocity and actually move to the goal.
+> 
+> ![](2_Informed_Search.assets/image-20240131143512253.png)![](2_Informed_Search.assets/image-20240131143607130.png)![](2_Informed_Search.assets/image-20240131143620242.png)
+
+## Pacmans and Ghosts - Fa23 Disc02 P2
+> [!example]
+> ![](2_Informed_Search.assets/image-20240131143754690.png)![](2_Informed_Search.assets/image-20240131144050710.png)
+> Note that here we don't need a variable for direction since it doesn't affect our ability to find successors of the current state.
+> 
+> ![](2_Informed_Search.assets/image-20240131145059003.png)![](2_Informed_Search.assets/image-20240131145111669.png)![](2_Informed_Search.assets/image-20240131145123266.png)
+> **(ii),(iii)** can be shown inadmissible by giving the following examples:
+> , for example we could have:
+> 
+> ![](2_Informed_Search.assets/image-20240131151850501.png)
+> We can easily find the assumption if we consider the next state to be on top of the current state.
+> 
+> **(iv)** could be proved by first proving consistency, then using consistency -> admissibility we have the `both` conclusion.
+> 
+> Consistency can be shown in the following way:
+> 
+> Denote arbitrary state $A$ and $C$, we have $cost(A,C)$ should at least be the number of ghosts eliminated along the way, since for each timestep, there can only be at most one ghosts eliminated. Thus we will always have $h(A) - h(C)\leq cost(A,C)$, which is the criterion for consistency.
+> ![](2_Informed_Search.assets/image-20240131153759082.png)![](2_Informed_Search.assets/image-20240131153832922.png)![](2_Informed_Search.assets/image-20240131153845502.png)![](2_Informed_Search.assets/image-20240131153859650.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
