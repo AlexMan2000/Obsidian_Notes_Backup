@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,24 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "06bfcecea05b4cfc",
+            "id": "de5d49c1006b6a03",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0919975b8d621861",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -72,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "方向导数",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +139,7 @@
       {
         "id": "a57d72b1463cfa44",
         "type": "tabs",
-        "dimension": 28.832951945080094,
+        "dimension": 28.82051282051282,
         "children": [
           {
             "id": "abd22396395eb00b",
@@ -148,7 +162,7 @@
       {
         "id": "ac5e674590e10608",
         "type": "tabs",
-        "dimension": 22.883295194508012,
+        "dimension": 44.41025641025641,
         "children": [
           {
             "id": "83c7969190d88bc2",
@@ -156,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +199,7 @@
       {
         "id": "2349a3933801eec4",
         "type": "tabs",
-        "dimension": 48.2837528604119,
+        "dimension": 26.769230769230766,
         "children": [
           {
             "id": "06e519aa4232ea63",
@@ -230,53 +244,88 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f3fe83c26bcf4eaa",
+  "floating": {
+    "id": "f2fc7390121cbbe1",
+    "type": "floating",
+    "children": [
+      {
+        "id": "783bf8366bd18ca3",
+        "type": "window",
+        "children": [
+          {
+            "id": "aaadaf6a67e07866",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a23bb21d64aac606",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 341,
+        "y": 133,
+        "width": 1025,
+        "height": 801,
+        "maximize": false,
+        "zoom": 0.5
+      }
+    ]
+  },
+  "active": "0919975b8d621861",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131155431920.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131155417412.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131154651802.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.assets/image-20240131154630616.png",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.assets/image-20240201231242948.png",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.assets",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets/image-20240201231025023.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets/image-20240201231020304.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets/image-20240201230137089.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets/image-20240201230130981.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets/image-20240201230123149.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets/image-20240201223159288.png",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets/image-20240201223127217.png",
+    "Computer_Science/Deep_Learning/Untitled",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets/image-20240201220524824.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153859650.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153845502.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153832922.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131153759082.png",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131151850501.png",
-    "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.assets/image-20240131145123266.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets/image-20240201210424770.png",
+    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets",
+    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
+    "Computer_Science/Data_Structures_Algorithms/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md",
+    "Computer_Science/Data_Structures_Algorithms/CS61A/2_Recursion_Data_Structures/2_1_Recursion/Lectures___Readings.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md",
+    "Computer_Science/Machine_Learning/EECS189/Maximum_Likelihood_Estimate.md",
+    "Computer_Science/Machine_Learning/EECS189/Multivariable_Gaussian.md",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
+    "Computer_Science/Machine_Learning/EECS189/Linear_Regression.md",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
+    "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md",
     "Mathematics/NYU_Master_Program/DS-GA-1003/Random_Stuff.md",
     "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data",
     "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1002/Statistical_Inference.md",
-    "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Bias_Variance_Tradeoff.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Related_Resources.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Deep_Learning/UCB_EECS182",
     "Computer_Science/Deep_Learning/NTU_Deep_Learning",
-    "Computer_Science/Deep_Learning",
-    "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
-    "Computer_Science/Deep_Learning/EECS182",
-    "Computer_Science/Data_Science_Tools/DS-GA-1019",
-    "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets",
     "未命名.canvas"
   ]
 }

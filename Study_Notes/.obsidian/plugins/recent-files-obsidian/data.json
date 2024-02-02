@@ -1,28 +1,96 @@
 {
   "recentFiles": [
     {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Word_Embedding",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "Shortest_Path",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.md"
+    },
+    {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.md"
+    },
+    {
       "basename": "2_Informed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "Algorithmic_Thinking",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
     },
     {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
-      "basename": "Drawing 2024-01-31 15.12.18.excalidraw",
-      "path": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
+      "basename": "Sorting_Searching",
+      "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md"
+    },
+    {
+      "basename": "Graphs_Traversals",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md"
+    },
+    {
+      "basename": "Buffer_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md"
+    },
+    {
+      "basename": "Lectures___Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/CS61A/2_Recursion_Data_Structures/2_1_Recursion/Lectures___Readings.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "Ch2_Overview_of_Statistical_Learning",
+      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
+    },
+    {
+      "basename": "Maximum_Likelihood_Estimate",
+      "path": "Computer_Science/Machine_Learning/EECS189/Maximum_Likelihood_Estimate.md"
+    },
+    {
+      "basename": "Multivariable_Gaussian",
+      "path": "Computer_Science/Machine_Learning/EECS189/Multivariable_Gaussian.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+    },
+    {
+      "basename": "Linear_Regression",
+      "path": "Computer_Science/Machine_Learning/EECS189/Linear_Regression.md"
     },
     {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
     },
     {
-      "basename": "Lecture_Jan_31_Representing_Text",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
+      "basename": "Drawing 2024-01-31 15.12.18.excalidraw",
+      "path": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
     },
     {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+      "basename": "Lecture_Jan_31_Representing_Text",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
     },
     {
       "basename": "Random_Stuff",
@@ -43,14 +111,6 @@
     {
       "basename": "Information_Theory",
       "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
     },
     {
       "basename": "Convex_Problems",
@@ -105,10 +165,6 @@
       "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
     },
     {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
     },
@@ -129,10 +185,6 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
     },
     {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
       "basename": "File_Index_Management",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
     },
@@ -143,62 +195,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Machine_Learning/EECS188/Related_Resources.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/EECS189/Related_Resources.md"
-    },
-    {
-      "basename": "CEG-Optimization Models - Giuseppe C. Calafiore",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/CEG-Optimization Models - Giuseppe C. Calafiore.pdf"
-    },
-    {
-      "basename": "Convergence Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence Theory.md"
-    },
-    {
-      "basename": "Concentration_Inequalities",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities.md"
-    },
-    {
-      "basename": "Introduction to Metric Space",
-      "path": "Mathematics/Analysis/18_S096_Metric_Space/Introduction to Metric Space.md"
-    },
-    {
-      "basename": "Rational_Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md"
-    },
-    {
-      "basename": "Phasor&Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md"
-    },
-    {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
-    },
-    {
-      "basename": "Filters&Bode_Plots",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md"
-    },
-    {
-      "basename": "Resonant_Circuits",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Resonant_Circuits.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
-    },
-    {
-      "basename": "Linearization",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/Linearization.md"
-    },
-    {
-      "basename": "SVD_Pseudoinverse",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/SVD_Pseudoinverse.md"
-    },
-    {
-      "basename": "_DFT",
-      "path": "Computer_Science/Machine_Learning/EECS16B/Module3_Machine_Learning/_DFT.md"
     }
   ],
   "omittedPaths": [],

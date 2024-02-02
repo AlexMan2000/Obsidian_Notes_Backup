@@ -216,8 +216,6 @@
 > 
 > ![](Convex_Functions.assets/image-20240130152234087.png)
 
-
-
 > [!proof] Proof for 2
 > ![](Convex_Functions.assets/image-20240130150152853.png)
 > This can be seem by the following proof:
