@@ -352,6 +352,11 @@
 ### Examples
 > [!example] Disc12 Fa22 P2
 > ![](Methodology%20on%20Optimization.assets/image-20240130152817615.png)![](Methodology%20on%20Optimization.assets/image-20240130152721582.png)
+> Note: Here by different choice of $b(\cdot)$, we can uncover different objectives for different types of questions.
+> 
+> For example, for linear regression, suppose our model is represented by $X\vec{\beta}$, then the optimization problem we try to solve is $\|X\vec{\beta}-\vec{y}\|_2^2$, which expands to $\vec{\beta}^{\top}X^{\top}X\vec{\beta}-\vec{y}^{\top}X\vec{\beta}$, if we compare with the above formulation, we know that by choosing $b(\vec{x})=\frac{1}{2}\|\vec{x}\|_2^2$, we can recover linear regression.
+> 
+> Moreover, the optimization problem for logistic regression is , 
 
 
 

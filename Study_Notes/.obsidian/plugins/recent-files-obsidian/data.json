@@ -1,16 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "5_Regression&Reparametrization",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Regression&Reparametrization.md"
+    },
+    {
+      "basename": "Hypothesis Testing",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Priors&Posteriors",
+      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
+    },
+    {
+      "basename": "1_Multivariable_Gaussian",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/2_MLE&MAP.md"
+    },
+    {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
+    },
+    {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Related_Resources.md"
+    },
+    {
+      "basename": "eecs127_reader",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+    },
+    {
+      "basename": "Analysis_of_LASSO",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
+    },
+    {
+      "basename": "3_Exponential_Family",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Exponential_Family.md"
+    },
+    {
+      "basename": "6_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/6_Classification.md"
+    },
+    {
+      "basename": "EECS189_Related_Resources",
+      "path": "Computer_Science/Machine_Learning/AI_ML/EECS189_Related_Resources.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "Generalized Linear Model",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md"
+    },
+    {
+      "basename": "Exponential_Family",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md"
     },
     {
       "basename": "Word_Embedding",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
     },
     {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
     },
     {
       "basename": "Shortest_Path",
@@ -22,7 +94,7 @@
     },
     {
       "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md"
     },
     {
       "basename": "Algorithmic_Thinking",
@@ -30,7 +102,7 @@
     },
     {
       "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Sorting_Searching",
@@ -57,28 +129,12 @@
       "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
     },
     {
-      "basename": "Maximum_Likelihood_Estimate",
-      "path": "Computer_Science/Machine_Learning/EECS189/Maximum_Likelihood_Estimate.md"
-    },
-    {
-      "basename": "Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/EECS189/Multivariable_Gaussian.md"
-    },
-    {
       "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
     },
     {
       "basename": "Convex_Functions",
       "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
-    },
-    {
-      "basename": "Linear_Regression",
-      "path": "Computer_Science/Machine_Learning/EECS189/Linear_Regression.md"
     },
     {
       "basename": "Gradient_Descent",
@@ -98,7 +154,7 @@
     },
     {
       "basename": "5_Logic_Based_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/5_Logic_Based_Search.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/5_Logic_Based_Search.md"
     },
     {
       "basename": "Statistical_Inference",
@@ -107,10 +163,6 @@
     {
       "basename": "Random_Stuff",
       "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
-    },
-    {
-      "basename": "Information_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Information_Theory.md"
     },
     {
       "basename": "Convex_Problems",
@@ -125,24 +177,12 @@
       "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md"
     },
     {
-      "basename": "Exponential_Family",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md"
-    },
-    {
-      "basename": "Generalized Linear Model",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md"
-    },
-    {
       "basename": "Bias_Variance_Tradeoff",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Bias_Variance_Tradeoff.md"
     },
     {
       "basename": "Related_Resources",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Related_Resources.md"
-    },
-    {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
     {
       "basename": "Vector_Calculus",
@@ -153,48 +193,12 @@
       "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md"
     },
     {
-      "basename": "Analysis_of_LASSO",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
-    },
-    {
       "basename": "Vector_OPT_Basics",
       "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
     },
     {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
-    },
-    {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Relational_Algebra.md"
-    },
-    {
-      "basename": "Basic_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/1_SQL_Algebra/Basic_SQL.md"
-    },
-    {
-      "basename": "File_Index_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/File_Index_Management.md"
-    },
-    {
-      "basename": "4_Multi-Agent_Search",
-      "path": "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/4_Multi-Agent_Search.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/EECS188/Related_Resources.md"
     }
   ],
   "omittedPaths": [],

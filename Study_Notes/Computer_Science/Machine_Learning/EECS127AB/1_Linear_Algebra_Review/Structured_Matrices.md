@@ -374,6 +374,8 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 ## Theorem
 > [!thm]
 > ![](../3_Convex_Optimization/Convex_Sets.assets/image-20231214201402903.png)![](Structured_Matrices.assets/image-20231216212213667.png)
+> Note that here we have a typo, where $S$ is actually called the schur complement of matrix $B$ in $M$.
+> 
 
 > [!proof]
 > We will need to use Congruence Transformation Theorem: [Congruence Transformation](Structured_Matrices.md#Congruence%20Transformation)
@@ -381,6 +383,10 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ## Applications
+### Inversion of partitioned matrix
+> [!important]
+> ![](Structured_Matrices.assets/image-20240202191754471.png)![](Structured_Matrices.assets/image-20240202191803501.png)![](Structured_Matrices.assets/image-20240202191809744.png)
+
 
 
 

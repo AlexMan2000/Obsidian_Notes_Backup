@@ -70,7 +70,8 @@
 
 
 
-# Analysis of LASSO Regression - Sparsity
+# Sparsity Analysis of LASSO Regression
+## Sparsity - 1d Case
 > [!important]
 > In this section we will solve the one-dimensional LASSO problem. The ideas generalize to the vector case directly, through a reduction of the vector LASSO problems to several one-dimensional LASSO problems, as we will show later.
 > ![](Analysis_of_LASSO.assets/image-20231216225518459.png)
@@ -79,11 +80,22 @@
 > ![](Analysis_of_LASSO.assets/image-20231216230207434.png)![](Analysis_of_LASSO.assets/image-20231216230217670.png)
 
 
+## Sparsity - nd Case
+> [!important] EECS189 Fa23 Disc2 P1
+> ![](Analysis_of_LASSO.assets/image-20240202170402326.png)![](Analysis_of_LASSO.assets/image-20240202170410434.png)![](Analysis_of_LASSO.assets/image-20240202170442591.png)![](Analysis_of_LASSO.assets/image-20240202170451677.png)
+
+
+
+
+
 
 
 # Geometry of LASSO Regression
 > [!important]
 > 
+
+
+
 
 
 
