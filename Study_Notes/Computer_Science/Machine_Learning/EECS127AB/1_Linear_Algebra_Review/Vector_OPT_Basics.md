@@ -382,10 +382,14 @@
 > [!important]
 > ![](Vector_OPT_Basics.assets/20230914_1535156939.png)![](Vector_OPT_Basics.assets/20230914_1535169439.png)
 
+> [!proof] Alternative Proof
+> ![](Vector_OPT_Basics.assets/image-20240204204505988.png)
+
 
 
 <a name="R9WeH"></a>
 ## Projection onto Affine Set
+> [!def]
 > ![image.png](Vector_OPT_Basics.assets/20230914_1535183898.png)![image.png](Vector_OPT_Basics.assets/20230914_1535201780.png)
 
 

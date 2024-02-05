@@ -13,62 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3fe83c26bcf4eaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/5_Regression&Reparametrization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57b7f04438034b70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "de5d49c1006b6a03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/2_MLE&MAP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0919975b8d621861",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/5_Regression&Reparametrization.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/5_Regression&Reparametrization.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -237,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 392.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,20 +212,20 @@
     "type": "floating",
     "children": [
       {
-        "id": "783bf8366bd18ca3",
+        "id": "ddcbbd8d464e3180",
         "type": "window",
         "children": [
           {
-            "id": "aaadaf6a67e07866",
+            "id": "7fb74e2ef7e0c71d",
             "type": "tabs",
             "children": [
               {
-                "id": "a23bb21d64aac606",
+                "id": "3e6bea6e5fec96ad",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
+                    "file": "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf"
                   }
                 }
               }
@@ -282,63 +233,62 @@
           }
         ],
         "direction": "vertical",
-        "x": 342,
-        "y": 134,
-        "width": 1024,
-        "height": 800,
+        "x": 2075,
+        "y": 225,
+        "width": 1025,
+        "height": 1008,
         "maximize": false,
         "zoom": 0.5
       }
     ]
   },
-  "active": "f3fe83c26bcf4eaa",
+  "active": "73cf5b6668a79adb",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/2_MLE&MAP.md",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204230404687.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204225838452.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204223341134.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222755728.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222751404.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222407781.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204215513307.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214729371.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214723861.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214059017.png",
+    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
+    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.assets",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md",
     "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Markov_Chain_Monte_Carlo(MCMC).md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Continuous_Time_Markov_Chain(CTMC).md",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Poisson_Process.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Other_Random_Processes.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md",
+    "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.assets",
+    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/2_MLE&MAP.md",
     "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/5_Regression&Reparametrization.md",
     "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets/image-20240202170451677.png",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets/image-20240202170450543.png",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets/image-20240202170442591.png",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets/image-20240202170410434.png",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.assets/image-20240202170402326.png",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/3_Exponential_Family.md",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/6_Classification.md",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Related_Resources.md",
     "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Neural_Networks",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/4_Generalized_Linear_Model.md",
     "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md",
-    "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.assets/image-20240202112816647.png",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.assets/image-20240202112617670.png",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.assets/image-20240202112541681.png",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.assets/image-20240202112403935.png",
     "Computer_Science/Machine_Learning/EECS126/2_Information_Theory",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.assets/image-20240201231242948.png",
     "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.assets",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Graphs.md",
     "Computer_Science/Deep_Learning/Untitled",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md",
-    "Computer_Science/Machine_Learning/EECS188/1_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.assets",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Shortest_Path.assets",
-    "Computer_Science/Data_Structures_Algorithms/MIT_6006/Sorting_Searching.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md",
-    "Computer_Science/Data_Structures_Algorithms/CS61A/2_Recursion_Data_Structures/2_1_Recursion/Lectures___Readings.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001",
-    "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf",
-    "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data",
     "未命名.canvas"
   ]
 }

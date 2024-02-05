@@ -1,8 +1,92 @@
 {
   "recentFiles": [
     {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
       "basename": "Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Learning_Basics.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "Convergence_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md"
+    },
+    {
+      "basename": "Least_Square_Regression",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
+    },
+    {
+      "basename": "Concentration_Inequalities&MGF",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
+    },
+    {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "Probability_Formulas_and_Theorems",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
+    },
+    {
+      "basename": "L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L5_L6__Properties_of_Real_Numbers__Sequence_and_Limits__Basic_Topology.md"
+    },
+    {
+      "basename": "L3_L4__实数集和LUBP",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md"
+    },
+    {
+      "basename": "Discrete_Time_Markov_Chain(DTMC)",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md"
+    },
+    {
+      "basename": "Continuous_Time_Markov_Chain(CTMC)",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Continuous_Time_Markov_Chain(CTMC).md"
+    },
+    {
+      "basename": "Poisson_Process",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Poisson_Process.md"
+    },
+    {
+      "basename": "Other_Random_Processes",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Other_Random_Processes.md"
+    },
+    {
+      "basename": "Important_Applications_Of_Basic_Probability",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md"
+    },
+    {
+      "basename": "Channel_Coding",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md"
+    },
+    {
+      "basename": "Probability in EECS",
+      "path": "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf"
+    },
+    {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
     },
     {
       "basename": "5_Regression&Reparametrization",
@@ -11,10 +95,6 @@
     {
       "basename": "Hypothesis Testing",
       "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
-    },
-    {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
     },
     {
       "basename": "Priors&Posteriors",
@@ -27,14 +107,6 @@
     {
       "basename": "2_MLE&MAP",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/2_MLE&MAP.md"
-    },
-    {
-      "basename": "Least_Square_Regression",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md"
-    },
-    {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
     },
     {
       "basename": "Related_Resources",
@@ -93,16 +165,8 @@
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Dynamic_Programming.md"
     },
     {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
       "basename": "Algorithmic_Thinking",
       "path": "Computer_Science/Data_Structures_Algorithms/MIT_6006/Algorithmic_Thinking.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Sorting_Searching",
@@ -121,10 +185,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/CS61A/2_Recursion_Data_Structures/2_1_Recursion/Lectures___Readings.md"
     },
     {
-      "basename": "Project1_SQL(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
-    },
-    {
       "basename": "Ch2_Overview_of_Statistical_Learning",
       "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
     },
@@ -139,66 +199,6 @@
     {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
-    },
-    {
-      "basename": "Drawing 2024-01-31 15.12.18.excalidraw",
-      "path": "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md"
-    },
-    {
-      "basename": "Lecture_Jan_31_Representing_Text",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1015-Text-As-Data/Lecture_Jan_31_Representing_Text.md"
-    },
-    {
-      "basename": "Random_Stuff",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1003/Random_Stuff.md"
-    },
-    {
-      "basename": "5_Logic_Based_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/5_Logic_Based_Search.md"
-    },
-    {
-      "basename": "Statistical_Inference",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1002/Statistical_Inference.md"
-    },
-    {
-      "basename": "Random_Stuff",
-      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
-    },
-    {
-      "basename": "Convex_Problems",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Problems.md"
-    },
-    {
-      "basename": "Convex_Sets",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
-    },
-    {
-      "basename": "Newton's_Method",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Newton's_Method.md"
-    },
-    {
-      "basename": "Bias_Variance_Tradeoff",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Bias_Variance_Tradeoff.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Modern_Topics_In_Statistical_Learning_Theory/Related_Resources.md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "Vector_OPT_Basics",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Related_Resources.md"
     }
   ],
   "omittedPaths": [],

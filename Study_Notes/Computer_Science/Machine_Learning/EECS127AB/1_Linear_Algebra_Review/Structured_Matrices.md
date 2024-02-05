@@ -399,8 +399,25 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ## Some Important Properties
-> [!important]
+> [!property] Property 1
 > One can think projection matrix as a linear operator that sends the vector onto the subspace, so if $\vec{x}\in S$, then $P_S(\vec{x})=\vec{x}$. If $\vec{x}\in$ orthogonal complement of $S$, then $P_S(\vec{x})=\vec{0}$.
+> 
+> $P^2=P$
+> 
+> $P=P^{\top}$
+> 
+> Eigenvalues of $P$ can only be $0,1$: Since $P^2=P$, we know that $P^2\vec{x}=\lambda^2\vec{x}=P\vec{x}=\lambda\vec{x}$ where we have $\lambda^2=\lambda,\lambda\geq0$, thus $\lambda=0,1$.
+> 
+> If $rank(P)=d$, then $Tr(P)=d$: Since $Tr(P)=Tr(UU^{\top})=Tr(U^{\top}U)=Tr(I_d)=d$(By cyclic property of trace).
+
+> [!property] Property 2
+> ![](Structured_Matrices.assets/image-20240204204233605.png)
+
+> [!proof]
+> **For the forward direction:** Since $P$ is symmetric, by spectrum theorem we have $P=V\Sigma V^{\top}$. Since $P^2=P$, we have $P=P^2=V\Sigma^2V^{\top}$. Thus we can pick $\Lambda=\Sigma_{:d}$(the first d column of $\Lambda$) and let $U=V\Lambda$ and we can construct $P=V\Lambda\Lambda^{\top}V^{\top}=UU^{\top}$. Meanwhile, we can verify that $U^{\top}U=I$ since the non-zero diagonal entries of $\Sigma$ are 1.
+> 
+> **For the backward direction:** If $P=UU^{\top}$, then $P=P^{\top}$ and $P^2=P$ immediately follows. Since $U^{\top}U=I$, we know that $U$ is orthogonal matrix where $rank(U)=d$. Thus we only have to prove $rank(U)=d$. Since we know that $rank(PU)\leq rank(P)$ and $rank(P)=rank(UU^{\top})\leq rank(U)$, we have $d=rank(UU^{\top}U)=rank(PU)\leq rank(P)\leq rank(U)=d$ where $rank(P)=d$.
+
 
 
 
@@ -412,6 +429,7 @@ $\begin{aligned}Rank(A+\vec{v}\vec{v}^{\top})-Rank(A)&=dim(\mathcal{R}(A+\vec{v}
 
 
 ## Perron-Frobenius Theorem
+[Periodicity and Stability](../../../../Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md#Periodicity%20and%20Stability)
 > 
 
 
