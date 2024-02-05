@@ -162,23 +162,120 @@
 > Generally we can solve the subproblems separately. But since subproblems are not guaranteed to be independent, the solution from the subproblems have to satisfy some constraints in order to be considered valid for the original CSP problem.
 
 
+
 # Local Search - Alternative to BT
-## Local Search Definition
+> [!overview]
+> Local Search works when the CSP is complete, and not necessarily optimal.
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093020310.png)
+
+
+
+## Idea - Iterative Improvement
+> [!def]
+> Local search works by iterative improvement - start with some random assignment to values then iteratively select a random conflicted variable and reassign its value to the one that violates the fewest constraints until no more constraint violations exist (a policy known as the min-conflicts heuristic).
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093222558.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205090954007.png)
+> 
+> In this 4-queen example, I start with a state where all 5 constraints are violated, then the iterative improvement will start with this state, pick one of these violating constraints, adjust it to make it satisfy. In fact, local search appears to run in almost constant time and have a high probability of success not only for N-queens with arbitrarily large N, but also for any randomly generated CSP.
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205091521938.png)
+> From the graph we can see most of the CSP problems are easy(two-tailed):
+> 
+> - When the number of constraints is high and the number of variables is low(right tail), this technique can greatly boost CSP's performance. Since the number of variables of low, the solution space cannot be big.
+> 
+> - When the number of constraints is low and the number of variables is high(left tail), this technique can also greatly boost CSP's performance. Like the sodoku problem where we have few rules, we can do whatever we want to not violate the constraints.
+> 
+> - But in reality, the CSP that we solve tend to have lots of variables and lots of constraints(middle spike), which may require us to find alternatives to backtracking algorithm for performance improvement.
+> 
+> However, despite these advantages, local search is both** incomplete** and **suboptimal** and so won’t necessarily converge to an optimal solution.
 
 
 
 ## Hill-Climbing Search
+> [!overview]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093046665.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205093108214.png)
+> The hill-climbing search algorithm (or **steepest-ascent**) moves from the current state towards a neighboring state that increases the objective value. 
+> 
+> The algorithm does not maintain a search tree but only the states and the corresponding values of the objective. The “greediness" of hill-climbing makes it vulnerable to being trapped in local maxima as locally those points appear as global maxima to the algorithm, and plateaux.
+
+> [!algo]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093657439.png)
+> Variants of hill-climbing:
+> - **Stochastic hill-climbing** which selects an action randomly among the uphill moves, have been proposed and has been shown in practice to converge to higher maxima at the cost of more iterations.
+> - **RandomRestart hill-climbing** which conducts a number of hill-climbing searches each time from a randomly chosen initial state, is trivially complete as at some point the randomly chosen initial state will coincide with the global maximum.
+
+> [!example] 8-queen problem
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205094649014.png)
 
 
 
 
 ## Simulated Annealing
+> [!algo]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093901608.png)
+> Simulated annealing aims to **combine random walk (randomly moves to nearby states) and hill-climbing** to obtain a complete and efficient search algorithm. In simulated annealing we allow moves to states that can decrease the objective. 
+> 
+> More specifically, the algorithm **at each state chooses a random move**. 
+> - If the move leads to higher objective it is always accepted. 
+> - If on the other hand it leads to smaller objectives then the move is accepted with some probability. This probability is determined by the **temperature parameter**, which initially is high (more “bad" moves allowed) and gets decreased according to some schedule. When the temperature is high, you are doing random selection, when temperature is low you are doing hill climbing.
+> - If temperature is decreased slowly enough then the simulated annealing algorithm will reach the global maximum with probability approaching 1.
+> 
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205094727069.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205094838952.png)
+
+
+
+
+
+
+
+## Local Beam Search
+> [!def]
+> Keeping just one node in memory might seem to be an extreme reaction to the problem of memory limitations. The local beam search algorithm keeps track of **k** states rather than 1. 
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205094848907.png)
+>  It begins with k randomly generated states. At each step, all the successors of all k states are generated. If any one is a goal, the algorithm halts. Otherwise, it selects the k best successors from the complete list and repeats.
+>  
+>  At first sight, a local beam search with k states might seem to be nothing more than running k random restarts in parallel instead of in sequence. In fact, the two algorithms are quite different. 
+>  - In a random-restart search, each search process runs **independently** of the others. 
+>  - In a local beam search, useful information is passed among the parallel search threads. In effect, the states that generate the best successors say to the others, the algorithm quickly abandons unfruitful searches and moves its resources to where the most progress is being made.
+>  
+>  ![](3_Constraint_Statisfaction_Problems.assets/image-20240205095114604.png)
+>  In its simplest form, local beam search can **suffer from a lack of diversity** among the k states—they can quickly become concentrated in a small region of the state space, making the search little more than an expensive version of hill climbing. 
+>  
+>  A variant called **stochastic beam search**, analogous to stochastic hill climbing, helps alleviate this problem. Instead of choosing the best k from the the pool of candidate successors, stochastic beam search chooses k successors at random, with the probability of choosing a given successor being an increasing function of its value. Stochastic beam search bears some resemblance to the process of natural selection, whereby the “successors” (offspring) of a “state” (organism) populate the next generation according to its “value” (fitness).
+
+> [!example]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205095150057.png)
+
 
 
 ## Genetic Algorithms
+> [!overview]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205100206017.png)
+> **Initital Step:** The algorithm begins with k randomly generated states. Eac state is called individual and they together form a population.
+> 
+> **Ranking Initial States:** The initial states should be ranked according to **fitness function**(for 8-queen problem it is the number of nonattacking pairs of queens).
+> 
+> **Choosing Next Generation:** We normalize the fitness score to obtain a probability for each individual, which is the probability of being choosed. For example, the probability of the first individual 24748552's probability of being chosen is $\frac{24}{24+23+20+11}\approx 31\%$。
+> 
+> **Pair the individuals:** After choosing the individual according to the probability, we may have some individual being discarded and some individuals being chosen multiple times. Then we pair up individuals at random.
+> 
+> **Merge the pair:** After pairing up, we **randomly choose a crossover point for each pair** and merge them according to the crossover point. The choice of crossover point could be made non-random and generally we want to choose in a way such that the result get the better half.
+> 
+> **Mutation:** Finally, each offspring is susceptible to some random mutation with independent probability.
+> 
 
+> [!algo]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205102050008.png)
+> Genetic algorithms try to move uphill while exploring the state space and exchanging information between threads. Their main advantage is the use of crossovers since this allows for large blocks of letters, that have evolved and lead to high valuations, to be combined with other such blocks and produce a solution with high total score.
+
+
+
+
+## Local Search in Continuous Space
+> [!def]
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205102257709.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205102302134.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205102309108.png)
 
 
 # Demo Website
 > [!example]
 > https://inst.eecs.berkeley.edu/~cs188/fa21/assets/demos/csp/csp_demos.html
+
+

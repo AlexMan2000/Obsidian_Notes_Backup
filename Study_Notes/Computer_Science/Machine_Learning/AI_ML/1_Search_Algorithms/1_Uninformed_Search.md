@@ -272,6 +272,7 @@
 > [!algo]
 > This algorithm is proposed to early stop on depth first search for infinite state space or finite one with cycles.
 > ![](1_Uninformed_Search.assets/image-20240131154630616.png)![](1_Uninformed_Search.assets/image-20240131155417412.png)![](1_Uninformed_Search.assets/image-20240131155431920.png)
+> **Note:** `cutoff` variable keep track of whether there are items that aresn't being explored because of the limit. If cutoff is false and the algorithm has exited, then no nodes were cutoff(not added to the fringe because of the limit). This scenario suggests that there is no solution.
 
 > [!property]
 > **Completeness** - Since the solution may be at infinite depth, so early stopping on $l<d$ may introduce incompleteness.

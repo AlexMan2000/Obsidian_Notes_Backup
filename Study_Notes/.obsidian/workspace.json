@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a97e30de29b861c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,20 +255,27 @@
       }
     ]
   },
-  "active": "73cf5b6668a79adb",
+  "active": "932953190040c9d5",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205102309108.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205102302134.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205102257709.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205102050008.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205102038789.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205100206017.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205095150057.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205095114604.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205095100921.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205094848907.png",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.assets/image-20240205094838952.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
     "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204230404687.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204225838452.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204223341134.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222755728.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222751404.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204222407781.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204215513307.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214729371.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214723861.png",
-    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.assets/image-20240204214059017.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting_Searching.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Related_Resources.md",
+    "Computer_Science/Data_Structures_Algorithms/Untitled",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures",
+    "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
     "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md",
@@ -279,16 +299,10 @@
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
     "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md",
     "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
     "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.assets",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/2_MLE&MAP.md",
-    "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory/5_Regression&Reparametrization.md",
-    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
     "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Neural_Networks",
     "Computer_Science/Machine_Learning/EECS189_Machine_Learning/Statistical_Learning_Theory",
     "Computer_Science/Machine_Learning/EECS126/2_Information_Theory",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.assets",
-    "Computer_Science/Deep_Learning/Untitled",
     "未命名.canvas"
   ]
 }

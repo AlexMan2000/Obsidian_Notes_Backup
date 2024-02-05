@@ -179,7 +179,24 @@
 
 ## Iterative Deepening A\* Search
 > [!example] Fa23 Exam Prep02 P2
-> 
+> ![](2_Informed_Search.assets/image-20240205084009760.png)![](2_Informed_Search.assets/image-20240205084022833.png)![](2_Informed_Search.assets/image-20240205084033689.png)![](2_Informed_Search.assets/image-20240205084049232.png)![](2_Informed_Search.assets/image-20240205084207013.png)![](2_Informed_Search.assets/image-20240205084740307.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Heuristic Design Principles
