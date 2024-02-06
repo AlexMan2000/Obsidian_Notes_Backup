@@ -192,7 +192,8 @@
 
 ## Graph Search
 > [!algo]
-> ![](1_Uninformed_Search.assets/image-20240125161201500.png)
+> ![](1_Uninformed_Search.assets/image-20240206101632860.png)![](1_Uninformed_Search.assets/image-20240125161201500.png)
+> We will compare the difference between these two correct implementation in [Comparison Between 2nd and 3rd](1_Uninformed_Search.md#Comparison%20Between%202nd%20and%203rd).
 
 > [!property]
 > **Completeness** - If a solution exists, then the depth of the shallowest node $s$ must be finite, so BFS must eventually search this depth. Hence, it’s complete.
@@ -203,12 +204,12 @@
 > 
 > **Space Complexity** - The frontier, in the worst case, contains all the nodes in the level corresponding to the shallowest solution. Since the shallowest solution is located at depth s, there are $O(b^s)$  nodes at this depth.
 
-## Example - 2nd Version
+## Comparison Between 2nd and 3rd
 > [!example] Sp18 Vitamin 1 Q3
 > The difference between A* star in 2nd and 3rd is that:
-> 1. In the 2nd Edition, when we expand the node, we insert all the child nodes into the fringe where we don't do any feasibility check to these child node. But we do feasibility check to the current node to see whether we should expand or not. In other words, we defer the process of determining whether to expand a node to the point where we pop it our from the fringe.
+> 1. In the 3rd Edition, when we expand the node, we do feasibility check of the child node to see whether it should be added to the fringed. In other words, we make early check on whether a child node should be expanded in the future. In other words, **we don't allow duplicate states to be on the fringe at any time.** May be more time-consuming.
 > ![](1_Uninformed_Search.assets/image-20240131091905164.png)
-> 3. In the 3rd edition, when we expand the node, we do feasibility check of the child node to see whether it should be added to the fringed. In other words, we make early check on whether a child node should be expanded in the future.
+> 3. In the 2nd edition, when we expand the node, we insert all the child nodes into the fringe where we don't do any feasibility check to these child node. But we do feasibility check to the current node to see whether we should expand or not. In other words, we prevent the same states from being expanded twice even if **we allow duplicate states to be on the fringe at the same time**. Without this statement, the algorithm is still optimal and complete(since the shortest path to the goal will be popped out from the queue quickier than any other paths), but we may expanded lots of wasted states along the way.
 > ![](1_Uninformed_Search.assets/image-20240131091739294.png)
 > 
 > Now consider the following example:

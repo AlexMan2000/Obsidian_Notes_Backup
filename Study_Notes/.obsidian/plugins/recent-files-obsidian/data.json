@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
       "basename": "Project1_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
+    },
+    {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Project2_Multi-Search",
@@ -49,20 +61,12 @@
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Advanced Topics.md"
     },
     {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
       "basename": "Sorting_Searching",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting_Searching.md"
     },
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Related_Resources.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Structured_Matrices",
@@ -195,10 +199,6 @@
     {
       "basename": "Generalized Linear Model",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md"
-    },
-    {
-      "basename": "Exponential_Family",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md"
     }
   ],
   "omittedPaths": [],
