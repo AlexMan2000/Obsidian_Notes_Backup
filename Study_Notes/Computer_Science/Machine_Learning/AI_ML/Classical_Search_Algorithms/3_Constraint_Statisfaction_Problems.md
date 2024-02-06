@@ -49,8 +49,14 @@
 
 #### AC-3 Algorithm
 > [!algo]
-> ![](3_Constraint_Statisfaction_Problems.assets/image-20240128142515222.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128142638391.png)
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240128142515222.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128142638391.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205134614074.png)
 > The logic is that, once we find an arc that is inconsistent, we delete the value that causes inconsistency from the tail of that arc(call it node $x$) and treat that tail as new head and update all the arcs that treat node $x$ as head to remain arc consistency over the entire CSP.
+> 
+> **The termination condition** is when the queue is empty or we detect some inconsistency due to zero value domain in the tail of the arc.
+> 
+> **Note** that we only enforce arc consistency on those tails that have not been assigned any value yet.
+
+
 
 > [!example] Map Coloring - Arc Consistency
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240128141904681.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128141911562.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128141931386.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128141939407.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128141944842.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128141950464.png)
@@ -75,7 +81,8 @@
 
 
 
-## Method 2: Ordering
+## Method 2: Ordering Heuristics
+> This method decides which variable to choose and what value to assign to that variable.
 ### Minimum Remaining Values(MRV)
 > [!def]
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240128140244206.png)
@@ -162,6 +169,32 @@
 > Generally we can solve the subproblems separately. But since subproblems are not guaranteed to be independent, the solution from the subproblems have to satisfy some constraints in order to be considered valid for the original CSP problem.
 
 
+# CSP Properties
+## Backtracking cannot be eliminated
+> [!property] BT is the bottomline
+> Even if we apply speeding up techniques like filtering and ordering, we still need backtracking to find the optimal solution. These techniques alone won't secure us even a solution. Consider the following example:
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205125128281.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205125139304.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205141851853.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205141903541.png)
+> The lesson is that arc consistency may work well when we have binary constraints. In this case, we may eliminate lots of unnecessary expansion paths and narrow down the backtracking search procedure but we cannot throw backtracking away.
+> 
+> The same argument holds with forward checking, which eliminates even fewer unnecessary paths.
+> 
+
+
+## Forward Checking and Arc Consistency Diverges
+> [!property] Forward Checking and Arc Consistency may diverge on solutions
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205140027565.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205140036175.png)
+
+
+## Arc Consistency and CSP Solutions
+> [!property]
+> We are given **a CSP with only binary constraints**. Assume we run backtracking search with arc consistency as follows. 
+> 
+> Initially, when presented with the CSP, one round of arc consistency is enforced. This first round of arc consistency will typically result in variables having pruned domains. 
+> 
+> Then we start a backtracking search using the pruned domains. In this backtracking search we use filtering through enforcing arc consistency after every assignment in the search.
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205142614763.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205142625075.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205142635137.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205142645034.png)
+
+
 
 # Local Search - Alternative to BT
 > [!overview]
@@ -172,7 +205,12 @@
 
 ## Idea - Iterative Improvement
 > [!def]
-> Local search works by iterative improvement - start with some random assignment to values then iteratively select a random conflicted variable and reassign its value to the one that violates the fewest constraints until no more constraint violations exist (a policy known as the min-conflicts heuristic).
+> Local search works by iterative improvement.
+> 
+> Also called min-conflicts algorithm, it attempts to solve CSPs iteratively. It starts by assigning some value to each of the variables, ignoring the constraints when doing so. Then, while at least one constraint is violated, it repeats the following: 
+> - (1) Randomly choose a variable that is currenly violating a constraint.
+> - (2) Assign to it the value in its domain such that after the assignment the total number of constraints violated is minimized (among all possible selections of values in its domain).
+> 
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240205093222558.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205090954007.png)
 > 
 > In this 4-queen example, I start with a state where all 5 constraints are violated, then the iterative improvement will start with this state, pick one of these violating constraints, adjust it to make it satisfy. In fact, local search appears to run in almost constant time and have a high probability of success not only for N-queens with arbitrarily large N, but also for any randomly generated CSP.
@@ -272,6 +310,28 @@
 ## Local Search in Continuous Space
 > [!def]
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240205102257709.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205102302134.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205102309108.png)
+
+
+
+# Design Examples
+## Trapped Pacman: CSP
+> [!example] Fa23 Disc03 P1
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205144017938.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205144031271.png)
+> Remember when we are doing CSP procedure, we will always first enforce **unary constraints**, then the constraints that immediately relate to the current assignment(if we use forward checking).
+> 1. Enforce unary constraints: $X_2,X_3,X_4$ cannot take $P$ now.
+> 2. Enforce related constraints w.r.t current assignment(**forward checking**): $X_2$ and $X_6$ must be $P$ now. So $X_2$ cannot be $G$ or $E$, thus $X_2$ has empty domain.
+> 3. We don't need any further checking since this is forward checking.
+>
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205145621289.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205145714797.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205145956694.png)
+
+## Course Scheduling
+> [!example] Fa23 Disc03 P1
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240205151227398.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205151237404.png)
+> For problem 1, unary constraints shrink the domain while the binary constraints enforce that a professor cannot split into two class at the same time.
+
+
+
+
 
 
 # Demo Website

@@ -1,16 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "Project1_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
+    },
+    {
+      "basename": "Project2_Multi-Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
+    },
+    {
+      "basename": "Project1_SQL(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project1_SQL(sp24).md"
+    },
+    {
+      "basename": "SQL_Programming",
+      "path": "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.md"
+    },
+    {
+      "basename": "DB_Design",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_DB_Design/DB_Design.md"
+    },
+    {
+      "basename": "image-20240205173208963",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project1_SQL(sp24).assets/image-20240205173208963.png"
+    },
+    {
+      "basename": "MapReduce&Spark",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Big_Data_Topics/MapReduce&Spark.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
+    },
+    {
+      "basename": "Project2",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2.md"
+    },
+    {
       "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
     },
     {
       "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
     {
+      "basename": "Advanced Topics",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Advanced Topics.md"
+    },
+    {
       "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/2_Informed_Search.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
     },
     {
       "basename": "Sorting_Searching",
@@ -22,7 +62,7 @@
     },
     {
       "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/1_Search_Algorithms/1_Uninformed_Search.md"
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
       "basename": "Structured_Matrices",
@@ -31,10 +71,6 @@
     {
       "basename": "Vector_OPT_Basics",
       "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
-    },
-    {
-      "basename": "Project1_SQL(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Projects/Project1_SQL(sp24).md"
     },
     {
       "basename": "离散马尔科夫链",
@@ -163,42 +199,6 @@
     {
       "basename": "Exponential_Family",
       "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Exponential_Family.md"
-    },
-    {
-      "basename": "Word_Embedding",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
-    },
-    {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
-      "basename": "Shortest_Path",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path.md"
-    },
-    {
-      "basename": "Dynamic_Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
-    },
-    {
-      "basename": "Algorithmic_Thinking",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md"
-    },
-    {
-      "basename": "Graphs_Traversals",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md"
-    },
-    {
-      "basename": "Buffer_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186/Lecture_Notes/2_DBMS_Architecture/Buffer_Management.md"
-    },
-    {
-      "basename": "Lectures___Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_1_Recursion/Lectures___Readings.md"
-    },
-    {
-      "basename": "Ch2_Overview_of_Statistical_Learning",
-      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
     }
   ],
   "omittedPaths": [],
