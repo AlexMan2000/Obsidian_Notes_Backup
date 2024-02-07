@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.50152587890625
+    "width": 272.50152587890625
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,19 +233,21 @@
   },
   "active": "9bebf6f64c142965",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206232635182.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206232607043.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206231203173.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206231141484.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206231116552.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206230121037.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206224920177.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206224829474.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240206224659353.png",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212932443.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212927406.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212704290.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212059821.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211903798.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211343132.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211316871.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211309417.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206210903273.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206210442282.png",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
@@ -271,7 +273,6 @@
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Advanced Topics.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting_Searching.md",
     "Computer_Science/Data_Structures_Algorithms/Untitled",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures",
     "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.assets",

@@ -15,23 +15,23 @@
 # Heap Sort
 ## Max Heapify
 > [!algo]
-> ![](Sorting_Searching.assets/image-20231210163927998.png)
+> ![](Sorting.assets/image-20231210163927998.png)
 
 
 ## Build Max Heap
 > [!algo]
-> ![](Sorting_Searching.assets/image-20231210163941616.png)![](Sorting_Searching.assets/image-20231210164110140.png)
+> ![](Sorting.assets/image-20231210163941616.png)![](Sorting.assets/image-20231210164110140.png)
 
 ## Main Algorithm
 > [!algo]
-> ![](Sorting_Searching.assets/image-20231210164237894.png)![](Sorting_Searching.assets/image-20231210164318043.png)
+> ![](Sorting.assets/image-20231210164237894.png)![](Sorting.assets/image-20231210164318043.png)
 
 
 
 # BST Sort
 ## Augmented BST - Rank
 > [!task]
-> ![](Sorting_Searching.assets/image-20231210165924310.png)![](Sorting_Searching.assets/image-20231210170532526.png)
+> ![](Sorting.assets/image-20231210165924310.png)![](Sorting.assets/image-20231210170532526.png)
 > But note that if the tree is spindly, the runtime would be $O(n)$ where n is the total number of tree nodes, which is sadly not efficient.
 
 ## Augmented BST - findMin/findMax
@@ -47,11 +47,11 @@
 > [!concept]
 > For a binary tree with n nodes, we call:
 > 1.  It is balanced tree if its height $h$ is $O(lgn)$
-> ![](Sorting_Searching.assets/image-20231210165420760.png)
+> ![](Sorting.assets/image-20231210165420760.png)
 > 3. The height of a node = length (# edges) of longest downward path to a leaf. Can be computed by $max(h(leftchild),h(rightChild))+1$
-> ![](Sorting_Searching.assets/image-20231210165608645.png)
+> ![](Sorting.assets/image-20231210165608645.png)
 > 
-> ![](Sorting_Searching.assets/image-20231210203535425.png)
+> ![](Sorting.assets/image-20231210203535425.png)
 
 
 
@@ -61,12 +61,12 @@
 ### Height Definition
 > [!concept]
 > **Balanced:** Require ==heights== of left and right children of ==every node== to differ by at most $\pm 1$。Due to the parity of the total number of nodes in the tree, it may be impossible to reach perfect balanace where the heights of left and right children perfectly match. But differing by 1 is totally possible.
-> ![](Sorting_Searching.assets/image-20231210172109581.png)
+> ![](Sorting.assets/image-20231210172109581.png)
 
 
 ### Boundary on the Height
 > [!proof] Proof: Think reversely
-> ![](Sorting_Searching.assets/image-20231210200208827.png)
+> ![](Sorting.assets/image-20231210200208827.png)
 > Here there are three relations that we need to verify:
 > 1. $N_h>F_h$, since for fibonacci sequence we have $F_h=F_{h-1}+F_{h-2}$, thus $H_h>F_h$ by 1 at each step. 
 > 2. $F_h\approx\frac{\phi^h}{\sqrt{5}}$, which can be deduced by solving the inhomogenous linear recurrence. So to approxmate $N_h$, we could actually write $N_{h}\approx\phi^{h}$
@@ -75,7 +75,7 @@
 
 ### Code Implementation
 > [!code]
-> ![](Sorting_Searching.assets/image-20231210210428596.png)
+> ![](Sorting.assets/image-20231210210428596.png)
 
 
 
@@ -103,7 +103,7 @@ def left_rotate(self, x):
 ```
 
 > [!example]
-> ![](Sorting_Searching.assets/image-20231210223442799.png)
+> ![](Sorting.assets/image-20231210223442799.png)
 
 
 
@@ -148,27 +148,27 @@ def rebalance(self, node):
 
 ## AVL Insertion
 > [!algo] Insertion Process
-> ![](Sorting_Searching.assets/image-20231210201607375.png)![](Sorting_Searching.assets/image-20231210201617794.png)
+> ![](Sorting.assets/image-20231210201607375.png)![](Sorting.assets/image-20231210201617794.png)
 > **Notes:**
 > 1. The rotation process is constant time, since we only need to change the parent pointer in the data structure.
 > 2. The in-order traversal is the same before and after the rotation.
 
 > [!example]
-> ![](Sorting_Searching.assets/image-20231210201636307.png)![](Sorting_Searching.assets/image-20231210201641195.png)
+> ![](Sorting.assets/image-20231210201636307.png)![](Sorting.assets/image-20231210201641195.png)
 
 
 
 
 ## AVL Sort Explained
 > [!important]
-> ![](Sorting_Searching.assets/image-20231210203316097.png)
+> ![](Sorting.assets/image-20231210203316097.png)
 
 
 
 
 ## ADTs
 > [!important]
-> ![](Sorting_Searching.assets/image-20231210203412863.png)![](Sorting_Searching.assets/image-20231210203417741.png)
+> ![](Sorting.assets/image-20231210203412863.png)![](Sorting.assets/image-20231210203417741.png)
 
 
 

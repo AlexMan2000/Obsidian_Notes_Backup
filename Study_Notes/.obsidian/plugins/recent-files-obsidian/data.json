@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
+      "basename": "Sorting",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md"
+    },
+    {
+      "basename": "Shortest_Path_On_Graph",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md"
+    },
+    {
       "basename": "4_Adverserial_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
     },
@@ -97,10 +109,6 @@
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Advanced Topics.md"
     },
     {
-      "basename": "Sorting_Searching",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting_Searching.md"
-    },
-    {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Related_Resources.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "1_Multivariable_Gaussian",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/2_MLE&MAP.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Related_Resources.md"
     }
   ],
   "omittedPaths": [],
