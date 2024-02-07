@@ -52,7 +52,7 @@
 
 # Compile&Test the Gitlet
 ## Compile the gitlet
-> **导航到**`**cs61b-21/proj2**`**目录下，运行:**
+> **导航到**`cs61b-21/proj2`**目录下，运行:**
 > 1. `javac gitlet/Main.java`
 > 2. `java gitlet/Main.java <cmd> args`
 
@@ -66,7 +66,8 @@
 # Command Implementations
 ## init
 ### Description
-> ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613488882.png)
+> [!def]
+> ![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613488882.png)
 
 
 ### Procedure
@@ -74,6 +75,7 @@
 ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613517698.png)
 
 ### Persistence
+> [!concept]
 > ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613538756.png)
 > `objects`目录下存放所有的`commits`和`blobs`
 > `refs`目录下存放所有的`Branch Head Pointers`
@@ -82,42 +84,49 @@
 
 
 ### Implementations&Testing
-**Writing Test for Init Command**> init
-<<<
-E .gitlet
-E .gitlet/commits
-E .gitlet/blobs
-E .gitlet/refs
-init
-A Gitlet version-control system already exists in the current directory.
-<<<
-
-**Debugging** 导航到`testing`目录，然后执行下列命令:
-`python runner.py --debug ./student_tests/test01-init.in`或者`python tester.py --debug ./student_tests/test01-init.in`
-**Python Tester**导航导`testing`目录，然后执行下列命令:
+> [!test]
+> **Writing Test for Init Command**
+> \> init
+> <<<
+> E .gitlet
+> E .gitlet/objects
+> E .gitlet/refs
+> E .gitlet/refs/heads
+> E .gitlet/refs/remotes
+> \> init
+> A Gitlet version-control system already exists in the current directory.
+> <<<
+> 
+> **Debugging** 导航到`testing`目录，然后执行下列命令:
+> `python runner.py --debug ./student_tests/test01-init.in`
+> 或者`python tester.py --debug ./student_tests/test01-init.in`
+> 
+> **Python Tester**导航导`testing`目录，然后执行下列命令:
 `python tester.py --verbose ./student_tests/test01-init.in`
 
 
 
 ## add
-> ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613555516.png)
+> [!task]
+> ![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613555516.png)![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613568413.png)![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613585753.png)![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614009960.png)
 
-![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613568413.png)
-![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613585753.png)
-![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614009960.png)
-> `**gitlet add f.txt**`**算法逻辑如下:**
+> [!algo]
+> `gitlet add f.txt`**算法逻辑如下:**
+> ![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614029040.png)
 
-![](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614029040.png)
-**Writing Test for Init Command**
-**Debugging** 导航到`testing`目录，然后执行下列命令:
-`python runner.py --debug ./student_tests/test01-init.in`或者`python tester.py --debug ./student_tests/test01-init.in`
-**Python Tester**导航导`testing`目录，然后执行下列命令:
+> [!test]
+> **Writing Test for Init Command**
+> 
+> **Debugging** 导航到`testing`目录，然后执行下列命令:
+> `python runner.py --debug ./student_tests/test01-init.in`或者`python tester.py --debug ./student_tests/test01-init.in`
+> 
+> **Python Tester**导航导`testing`目录，然后执行下列命令:
 `python tester.py --verbose ./student_tests/test01-init.in`
 
 
 ## rm
-> `**gitlet rm f.txt**`**主要用于将已经存在于暂存区或者版本库中的文件, 否则(未追踪的文件)就不删除。**
-> **总之都是删除哪些被版本追踪了的文件，也是为了让下次**`**commit**`**不追踪**`**f.txt**`**文件。**
+> `gitlet rm f.txt`**主要用于将已经存在于暂存区或者版本库中的文件, 否则(未追踪的文件)就不删除。**
+> **总之都是删除哪些被版本追踪了的文件，也是为了让下次**`commit`**不追踪**`f.txt`**文件。**
 > ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614034458.png)![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1614056596.png)
 > [https://zhuanlan.zhihu.com/p/533852291](https://zhuanlan.zhihu.com/p/533852291)
 > **算法逻辑如下:**

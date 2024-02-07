@@ -8,10 +8,10 @@
 > - **An underdetermined spec is typically implemented by a fully-deterministic implementation.**
 
 > [!example] Distinguished 
-> ![](5_Designing_Specifications.assets/image-20240119103403973.png)![](5_Designing_Specifications.assets/image-20240119103420630.png)
+> ![](6_Designing_Specifications.assets/image-20240119103403973.png)![](6_Designing_Specifications.assets/image-20240119103420630.png)
 
 > [!example] Over/under
-> ![](5_Designing_Specifications.assets/image-20240119103530488.png)![](5_Designing_Specifications.assets/image-20240119103536918.png)
+> ![](6_Designing_Specifications.assets/image-20240119103530488.png)![](6_Designing_Specifications.assets/image-20240119103536918.png)
 
 
 
@@ -23,7 +23,7 @@
 > - **One reason programmers sometimes lapse into operational specifications is because they’re using the spec comment to explain the implementation for a maintainer. Don’t do that. When it’s necessary, use comments within the body of the method, not in the spec comment.**
 
 > [!example] Joint Declaration
-> ![](5_Designing_Specifications.assets/image-20240119104638987.png)
+> ![](6_Designing_Specifications.assets/image-20240119104638987.png)
 
 
 # Stronger vs Weaker Specs
@@ -39,7 +39,7 @@
 > - S2’s **postcondition is stronger** than or equal to S1’s, for the states that satisfy S1’s precondition.
 
 > [!example]
-> ![](5_Designing_Specifications.assets/image-20240119110035821.png)![](5_Designing_Specifications.assets/image-20240119110113200.png)
+> ![](6_Designing_Specifications.assets/image-20240119110035821.png)![](6_Designing_Specifications.assets/image-20240119110113200.png)
 
 
 
@@ -48,52 +48,52 @@
 > You can imagine the specification as a circle in the space. The stronger the spec is, the larger the area it covers.
 > 
 > Each implementaion of the specification should be a point in the same space. If the implementation satisfy the spec, then this point goes into the spec circle.
-> ![](5_Designing_Specifications.assets/image-20240119110746290.png)![](5_Designing_Specifications.assets/image-20240119110751597.png)
+> ![](6_Designing_Specifications.assets/image-20240119110746290.png)![](6_Designing_Specifications.assets/image-20240119110751597.png)
 > As we see, strengthening the specification would limit of number of possible implementations, making the area of the circle smaller.
 
 > [!example] Bulking up
-> ![](5_Designing_Specifications.assets/image-20240119111038746.png)
+> ![](6_Designing_Specifications.assets/image-20240119111038746.png)
 
 > [!example] Strenghth is truth
-> ![](5_Designing_Specifications.assets/image-20240119111149053.png)
+> ![](6_Designing_Specifications.assets/image-20240119111149053.png)
 
 > [!example] Finding findExactlyOne
-> ![](5_Designing_Specifications.assets/image-20240119111412571.png)![](5_Designing_Specifications.assets/image-20240119111419270.png)
+> ![](6_Designing_Specifications.assets/image-20240119111412571.png)![](6_Designing_Specifications.assets/image-20240119111419270.png)
 
 > [!example] Finding findCanBeMissing
-> ![](5_Designing_Specifications.assets/image-20240119111452458.png)![](5_Designing_Specifications.assets/image-20240119111547649.png)
+> ![](6_Designing_Specifications.assets/image-20240119111452458.png)![](6_Designing_Specifications.assets/image-20240119111547649.png)
 
 > [!example] Found
-> ![](5_Designing_Specifications.assets/image-20240119111726561.png)![](5_Designing_Specifications.assets/image-20240119111743406.png)![](5_Designing_Specifications.assets/image-20240119111748870.png)
+> ![](6_Designing_Specifications.assets/image-20240119111726561.png)![](6_Designing_Specifications.assets/image-20240119111743406.png)![](6_Designing_Specifications.assets/image-20240119111748870.png)
 
 
 # Designing good specifications
 ## Coherent
 > [!def]
 > A coherent spec makes sense to its clients as a single, complete unit. The spec shouldn’t have lots of different cases. Long argument lists, boolean flags that enable or disable behavior, and intricate logic, are all signs of trouble.
-> ![](5_Designing_Specifications.assets/image-20240119113021442.png)
+> ![](6_Designing_Specifications.assets/image-20240119113021442.png)
 
 
 ## Infomative Results
 > [!def]
-> ![](5_Designing_Specifications.assets/image-20240119113039000.png)
+> ![](6_Designing_Specifications.assets/image-20240119113039000.png)
 
 
 ## Strong Enough
 > [!def]
-> ![](5_Designing_Specifications.assets/image-20240119113127612.png)
+> ![](6_Designing_Specifications.assets/image-20240119113127612.png)
 
 
 
 ## Weak Enough
 > [!def]
-> ![](5_Designing_Specifications.assets/image-20240119113134602.png)
+> ![](6_Designing_Specifications.assets/image-20240119113134602.png)
 
 
 
 ## Use Abstract Types
 > [!def]
-> ![](5_Designing_Specifications.assets/image-20240119113157093.png)
+> ![](6_Designing_Specifications.assets/image-20240119113157093.png)
 
 
 

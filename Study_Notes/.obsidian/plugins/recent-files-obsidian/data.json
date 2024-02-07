@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Advanced_Recursion",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md"
+    },
+    {
+      "basename": "2_Code_Review_Principles",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/2_Code_Review_Principles.md"
+    },
+    {
+      "basename": "Regular_Expressions_Grammars",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md"
+    },
+    {
+      "basename": "7_Mutability_Assertions",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
+    },
+    {
+      "basename": "4_Version_Control",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.md"
+    },
+    {
+      "basename": "5_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Specifications.md"
+    },
+    {
+      "basename": "3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
+    },
+    {
+      "basename": "6_Designing_Specifications",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md"
+    },
+    {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+    },
+    {
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+    },
+    {
       "basename": "Dynamic_Programming",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
     },
@@ -15,10 +55,6 @@
     {
       "basename": "4_Adverserial_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
-    },
-    {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
     },
     {
       "basename": "B+Tree_Indexing",
@@ -63,10 +99,6 @@
     {
       "basename": "Graphs_Traversals",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md"
-    },
-    {
-      "basename": "Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
     },
     {
       "basename": "Project2_Multi-Search",
@@ -167,38 +199,6 @@
     {
       "basename": "Other_Random_Processes",
       "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Other_Random_Processes.md"
-    },
-    {
-      "basename": "Important_Applications_Of_Basic_Probability",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md"
-    },
-    {
-      "basename": "Channel_Coding",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md"
-    },
-    {
-      "basename": "Probability in EECS",
-      "path": "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf"
-    },
-    {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "5_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Regression&Reparametrization.md"
-    },
-    {
-      "basename": "Hypothesis Testing",
-      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
-    },
-    {
-      "basename": "Priors&Posteriors",
-      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
-    },
-    {
-      "basename": "1_Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md"
     }
   ],
   "omittedPaths": [],
