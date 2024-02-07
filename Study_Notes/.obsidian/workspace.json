@@ -8,36 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a6f71941e04c1eff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9bebf6f64c142965",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d6797960bd39ca60",
+            "id": "f536a4b792548e78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5
+    "width": 321.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,49 +233,49 @@
   },
   "active": "9bebf6f64c142965",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets/image-20240206122819510.png",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets/image-20240206122810977.png",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets/image-20240206121124680.png",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212932443.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212927406.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212704290.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206212059821.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211903798.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211343132.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211316871.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206211309417.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206210903273.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240206210442282.png",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.assets/image-20240206101632860.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Minimum_Spanning_Trees.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
+    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project1_SQL(sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.md",
     "Computer_Science/Computer_Systems/Database Systems/4_DB_Design/DB_Design.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project1_SQL(sp24).assets/image-20240205173208963.png",
     "Computer_Science/Computer_Systems/Database Systems/5_Big_Data_Topics/MapReduce&Spark.md",
     "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Untitled.md",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.assets/image-20240205183414193.png",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.assets/image-20240205183342142.png",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.assets/image-20240205183232528.png",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.assets/image-20240205183209450.png",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.assets/image-20240205183200166.png",
     "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445_Projects",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Advanced Topics.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting_Searching.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Related_Resources.md",
     "Computer_Science/Data_Structures_Algorithms/Untitled",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
     "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.assets",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Least_Square_Regression.md",
     "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics",
-    "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Markov_Chain_Monte_Carlo(MCMC).md",
-    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
     "Computer_Science/Machine_Learning/EECS126/2_Random_Processes",
     "Computer_Science/Machine_Learning/EECS126/Probability in EECS.pdf",
     "未命名.canvas"

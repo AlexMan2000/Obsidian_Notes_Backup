@@ -6,6 +6,7 @@
 
 # Overview
 ## Basic Concepts
+> [!important]
 > ![image.png](_P2102__Gitlet⭐⭐⭐.assets/20231203_1613388935.png)
 > - 图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存区（stage/index），标记为 "master" 的是 master 分支所代表的目录树。
 > - 图中我们可以看出此时 "HEAD" 实际是指向 master 分支的一个"游标"。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。

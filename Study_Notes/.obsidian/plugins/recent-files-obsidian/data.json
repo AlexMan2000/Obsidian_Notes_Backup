@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "4_Adverserial_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
+    },
+    {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+    },
+    {
+      "basename": "B+Tree_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Memory_Mangement",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md"
+    },
+    {
+      "basename": "Storage_Models_Compressions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md"
+    },
+    {
+      "basename": "Hash_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
       "basename": "2_Informed_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
     },
@@ -9,12 +41,20 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
     },
     {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
-    },
-    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "Minimum_Spanning_Trees",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Minimum_Spanning_Trees.md"
+    },
+    {
+      "basename": "Graphs_Traversals",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md"
+    },
+    {
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
     },
     {
       "basename": "Project2_Multi-Search",
@@ -49,10 +89,6 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2.md"
     },
     {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
       "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
@@ -79,10 +115,6 @@
     {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
     },
     {
       "basename": "Convergence_Theory",
@@ -167,38 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Related_Resources.md"
-    },
-    {
-      "basename": "eecs127_reader",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/eecs127_reader.pdf"
-    },
-    {
-      "basename": "Analysis_of_LASSO",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
-    },
-    {
-      "basename": "3_Exponential_Family",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Exponential_Family.md"
-    },
-    {
-      "basename": "6_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/6_Classification.md"
-    },
-    {
-      "basename": "EECS189_Related_Resources",
-      "path": "Computer_Science/Machine_Learning/AI_ML/EECS189_Related_Resources.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/4_Generalized_Linear_Model.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
-    },
-    {
-      "basename": "Generalized Linear Model",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Applied_Statistics/Generalized Linear Model.md"
     }
   ],
   "omittedPaths": [],
