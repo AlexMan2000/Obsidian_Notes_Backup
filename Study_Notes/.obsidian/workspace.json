@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,6 +222,7 @@
   },
   "active": "6cf21fec3053a181",
   "lastOpenFiles": [
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150804394.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150612253.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150600313.png",
@@ -230,11 +231,9 @@
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150043992.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150032077.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/2_Code_Review_Principles.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145458954.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145449663.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145438142.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145425760.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md",

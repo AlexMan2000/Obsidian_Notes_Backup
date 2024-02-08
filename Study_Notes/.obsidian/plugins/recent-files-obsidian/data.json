@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Lectures___Readings",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md"
+    },
+    {
       "basename": "Advanced_Recursion",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Poisson_Process",
       "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Poisson_Process.md"
-    },
-    {
-      "basename": "Other_Random_Processes",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Other_Random_Processes.md"
     }
   ],
   "omittedPaths": [],
