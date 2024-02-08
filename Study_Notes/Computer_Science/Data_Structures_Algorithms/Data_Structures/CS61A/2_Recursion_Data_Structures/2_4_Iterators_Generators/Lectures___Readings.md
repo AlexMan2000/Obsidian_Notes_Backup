@@ -629,3 +629,118 @@ def yield_partitions(n, m):
 
 
 
+# Applications
+## Generate Permutations
+> [!code]
+```python
+from itertools import permutations
+
+def perm_generator_bottom_up(n):
+
+    # bottom up
+
+    def generate_perms(seq):
+
+        if not seq:
+
+            yield []
+
+        else:
+
+            for perm in generate_perms(seq[1:]):
+
+                for i in range(len(seq)):
+
+                    yield perm[:i] + [seq[0]] + perm[i:]
+
+  
+
+    return generate_perms(list(range(n)))
+
+  
+
+def perm_generator_top_down(n):
+
+    # Top down
+
+    def generate_perms(seq, path):
+
+        if len(path) == n:
+
+            yield path
+
+        else:
+
+            for i in range(len(seq)):
+
+                yield from generate_perms(seq[:i]+seq[i+1:], path + [seq[i]])
+
+    return generate_perms(list(range(n)),[])
+
+  
+
+n = 5
+
+assert len(list(perm_generator_bottom_up(n))) == len(list(permutations(range(n))))
+
+assert len(list(perm_generator_top_down(n))) == len(list(permutations(range(n))))
+```
+
+
+
+## Generate Combinations
+> [!code]
+```python
+from itertools import combinations
+
+def comb_generator_bottom_up(n, k):
+
+    def generate_combs(seq, k):
+
+        # Bottom Up Approach, need to take care of the length of the result generated
+
+        if not seq or k == 0:
+
+            yield []
+
+        else:
+
+            for combination in generate_combs(seq[1:], k - 1):
+
+                yield [seq[0]] + combination
+
+            yield from generate_combs(seq[1:], k)
+
+    for elem in generate_combs(list(range(n)), k):
+
+        if len(elem) == k:
+
+            yield elem
+
+def comb_generator_top_down(n, k):
+
+    def generate_combs(start, comb):
+
+        # Top Down Approach
+
+        if len(comb) == k:
+
+            yield comb
+
+        for i in range(start, n):
+
+            yield from generate_combs(i+1, comb+[i])
+
+    yield from generate_combs(0, [])
+
+n = 5
+
+k = 3
+
+  
+
+assert len(list(comb_generator_bottom_up(n, k))) == len(list(combinations(range(n), k)))
+
+assert len(list(comb_generator_top_down(n, k))) == len(list(combinations(range(n), k)))
+```
+

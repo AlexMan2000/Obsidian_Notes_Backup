@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,22 +209,27 @@
   },
   "active": "2eddbb4374b45529",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132145700.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132133371.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132119319.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131830948.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131819063.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131808574.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131602221.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131528960.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131355539.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131342907.png",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Discussion_06__Mutability__Iterators__Generators.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150804394.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150612253.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150600313.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150118591.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150105046.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150043992.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150032077.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/2_Code_Review_Principles.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145458954.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145449663.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207145438142.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md",
@@ -238,23 +243,17 @@
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Minimum_Spanning_Trees.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445_Projects",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445",
     "Computer_Science/Data_Structures_Algorithms/Untitled",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.assets",
     "未命名.canvas"
   ]
 }

@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Homework_5__Generators",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md"
+      "basename": "4_Adverserial_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
+    },
+    {
+      "basename": "Abstract_Data_Type",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
+    },
+    {
+      "basename": "Project1_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
     },
     {
       "basename": "Lectures___Readings",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md"
     },
     {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+      "basename": "Homework_5__Generators",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md"
     },
     {
-      "basename": "Project1_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
+      "basename": "Discussion_06__Mutability__Iterators__Generators",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Discussion_06__Mutability__Iterators__Generators.md"
+    },
+    {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
     },
     {
       "basename": "Project2_Multi-Search",
@@ -67,10 +79,6 @@
     {
       "basename": "Shortest_Path_On_Graph",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md"
-    },
-    {
-      "basename": "4_Adverserial_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
     },
     {
       "basename": "B+Tree_Indexing",
@@ -191,14 +199,6 @@
     {
       "basename": "L3_L4__实数集和LUBP",
       "path": "Mathematics/Analysis/18_100A_Real_Analysis/L3_L4__实数集和LUBP.md"
-    },
-    {
-      "basename": "Discrete_Time_Markov_Chain(DTMC)",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md"
-    },
-    {
-      "basename": "Continuous_Time_Markov_Chain(CTMC)",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Random_Processes/Continuous_Time_Markov_Chain(CTMC).md"
     }
   ],
   "omittedPaths": [],
