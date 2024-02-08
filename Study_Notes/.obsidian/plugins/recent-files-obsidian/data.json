@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "_P2102__Gitlet⭐⭐⭐",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
+    },
+    {
       "basename": "Lectures___Readings",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md"
+    },
+    {
+      "basename": "Project1_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
+    },
+    {
+      "basename": "Project2_Multi-Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
     },
     {
       "basename": "Advanced_Recursion",
@@ -35,10 +47,6 @@
     {
       "basename": "6_Designing_Specifications",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md"
-    },
-    {
-      "basename": "_P2102__Gitlet⭐⭐⭐",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md"
     },
     {
       "basename": "Statistical_Learning_Basics",
@@ -89,10 +97,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
     },
     {
-      "basename": "Project1_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
-    },
-    {
       "basename": "1_Uninformed_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
     },
@@ -103,10 +107,6 @@
     {
       "basename": "Graphs_Traversals",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md"
-    },
-    {
-      "basename": "Project2_Multi-Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
     },
     {
       "basename": "Project1_SQL(sp24)",

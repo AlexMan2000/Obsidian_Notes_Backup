@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6cf21fec3053a181",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,8 +207,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6cf21fec3053a181",
+  "active": "2eddbb4374b45529",
   "lastOpenFiles": [
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
+    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150804394.png",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets/image-20240207150612253.png",
@@ -256,10 +246,8 @@
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Minimum_Spanning_Trees.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Graphs_Traversals.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445_Projects",

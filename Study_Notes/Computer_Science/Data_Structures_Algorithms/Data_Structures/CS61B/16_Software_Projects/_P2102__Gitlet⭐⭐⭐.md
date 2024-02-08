@@ -102,7 +102,9 @@
 > 或者`python tester.py --debug ./student_tests/test01-init.in`
 > 
 > **Python Tester**导航导`testing`目录，然后执行下列命令:
-`python tester.py --verbose ./student_tests/test01-init.in`
+> `python tester.py --verbose ./student_tests/test01-init.in`
+> 
+> **注意**一定要导航到`testing`, 否则对于`tester.py`来说的`cwd`就不是`testing`了，因为`tester.py` 中的`copyfile` 方法依赖于`cwd`，所以会出现文件找不到的错误。
 
 
 
