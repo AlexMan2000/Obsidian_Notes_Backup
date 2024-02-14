@@ -18,10 +18,19 @@
 
 
 # Bellman Equation
+> [!thm]
+> ![](Markov_Decision_Process.assets/image-20240214173827373.png)![](Markov_Decision_Process.assets/image-20240214173845448.png)
+
 
 
 
 # Value Iteration
+## Value of States
+> [!def]
+> ![](Markov_Decision_Process.assets/image-20240214173630886.png)
+
+
+
 ## Value Iteration Procedure
 
 

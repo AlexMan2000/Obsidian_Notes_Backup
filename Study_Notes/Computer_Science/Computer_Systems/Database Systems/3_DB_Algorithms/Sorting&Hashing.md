@@ -84,15 +84,16 @@
 > What this is saying is that if we have data that occupies X pages, then in order to finish sorting these data **within two passes**, we will need **at least** $B=\sqrt{X}$-page-large buffer pool.
 > 
 > To calculate it precisely, we will follow the schema below:
-> Suppose we have $B$ pages in our buffer and we have to sort $X$ amount of data. Then within two passes, we can at most span $B(B-1)$ amount of memory, so we solve for the smallest integer $B$ that satisfies the inequality $$B(B-1)\geq X$$
+> Suppose we have $B$ pages in our buffer and we have to sort $X$ amount of data. Then within two passes, we have to make sure that the number of sorted run gets lower than 1 so that $$\frac{X}{B(B-1)}\leq 1$$
 > 
 > The following example shows the whole calculation process:
 
 > [!example] Practice Question
-> ![](Sorting&Hashing.assets/image-20240214135644041.png)
+> ![](Sorting&Hashing.assets/image-20240214135644041.png)[](Sorting&Hashing.assets/image-20240214135731066.png)![](Sorting&Hashing.assets/image-20240214165006018.png)
 
-> [!solution]
-> ![](Sorting&Hashing.assets/image-20240214135731066.png)
+> [!example] Fa20 Disc05 P1
+> ![](Sorting&Hashing.assets/image-20240214163317085.png)![](Sorting&Hashing.assets/image-20240214163329194.png)![](Sorting&Hashing.assets/image-20240214163339308.png)
+
 
 
 
@@ -142,6 +143,16 @@
 > 2. **Conquering** ensures the important property by hashing the same value to the same partition again. 
 > 3. Note that we choose $h_r$ as our hashing function(must be different from $h_p$) here since if we choose $h_p$ again we may risk hashing to a big partition again.
 
+> [!example] Maximum Number of Pages to Avoid Recursive Partitioning
+> ![](Sorting&Hashing.assets/image-20240214165601975.png)
+> The answer is 10.
+> 
+> If we have 10 buffer pages, then the during one pass we will have 9 partitions. If the hash function is such that it hashes the all input pages to the same partition. So in order to **guarantee** non-recursive partitioning we have to make sure the number of input pages won't be larger than 10.
+
+> [!example] Minimum Number of Pages to Trigger Recursive Partitioning
+> ![](Sorting&Hashing.assets/image-20240214170014380.png)
+> In the best case, the hash function is so uniform such that all the 20-1 = 19 partitions gets equal amount of pages that is not enough to trigger recursive partitioning. In the extreme case, each of the 19 partitions has 20 pages. Then by pigeonhole principle, if we has one more page, it will violate the on-recursive partitioning condition, thus the min number is $19\times 20 + 1 =381$.
+
 
 
 ### Duplicates - Termination Point
@@ -157,6 +168,9 @@
 > [!concept]
 > ![](Sorting&Hashing.assets/image-20240214145106001.png)
 
+> [!example] Fa20 Disc05 P2
+> ![](Sorting&Hashing.assets/image-20240214172130887.png)![](Sorting&Hashing.assets/image-20240214172147095.png)
+
 
 ## Analysis of Hashing
 > [!important]
@@ -164,17 +178,24 @@
 
 > [!example]
 > ![](Sorting&Hashing.assets/image-20240214155015452.png)
-
-> [!solution] Solution
+> For problem 1, we assume even hashing.
+> 
 > ![](Sorting&Hashing.assets/image-20240214155055930.png)![](Sorting&Hashing.assets/image-20240214155109604.png)
 
-
+> [!example] Fa20 Disc05 P2
+> ![](Sorting&Hashing.assets/image-20240214172212807.png)![](Sorting&Hashing.assets/image-20240214163925784.png)![](Sorting&Hashing.assets/image-20240214163935329.png)
 
 
 
 ## Easy Calculation
 > [!concept]
 > ![](Sorting&Hashing.assets/image-20240214145020845.png)
+
+> [!example] Vitamin
+> ![](Sorting&Hashing.assets/image-20240214171957546.png)
+
+
+
 
 
 ## Examples

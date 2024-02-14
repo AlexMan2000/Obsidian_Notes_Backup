@@ -84,15 +84,21 @@
 
 
 
-# Regression Models in GLM - 1d
+# Regression Models in GLM 
 ## Linear Regression
 > [!def]
 > 
 
 
+
+
+
 ## Logistic Regression
 > [!def]
 > 
+
+
+
 
 
 ## Possion Regression
@@ -102,6 +108,8 @@
 
 
 
-## Multi-nomial Regression
+## Multinomial Regression
 > [!def]
-> 
+
+
+
