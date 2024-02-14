@@ -49,13 +49,14 @@
 
 #### AC-3 Algorithm
 > [!algo]
-> ![](3_Constraint_Statisfaction_Problems.assets/image-20240128142515222.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128142638391.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205134614074.png)
-> The logic is that, once we find an arc that is inconsistent, we delete the value that causes inconsistency from the tail of that arc(call it node $x$) and treat that tail as new head and update all the arcs that treat node $x$ as head to remain arc consistency over the entire CSP.
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240128142515222.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240128142638391.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205134614074.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213153116109.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213153126124.png)
+> The logic is that, once we find an arc that is inconsistent, we delete the value that causes inconsistency from the tail of that arc(call it node $x$) and treat that tail as new head and update all the arcs that treat node $x$ as head to remain arc consistency over the entire CSP. 
+> 
+> Suppose we have $A,B,C,D,E$, we should enforce arc consistency by choosing a starting node. Let's say we choose $A$, then we check the arc consistency by $A\to B,A\to C, A\to D, A\to E,B\to A, B\to C,\cdots$, along the way if there is any tail of the arc that has domain shrinked, for example during $A\to C$, we shrink $A$'s domain, tehn we should append all the arcs that **previously** treated $A$ as the head, any arcs that are already in the queue will not be re-appended.
 > 
 > **The termination condition** is when the queue is empty or we detect some inconsistency due to zero value domain in the tail of the arc.
 > 
 > **Note** that we only enforce arc consistency on those tails that have not been assigned any value yet.
-
 
 
 > [!example] Map Coloring - Arc Consistency
@@ -72,6 +73,18 @@
 > In other words, arc consistency only looks at pair of nodes myopically instead of looking at triple nodes or more.
 > 
 > The above problems are the reason why `AC-3` still need backtracking as a guarantee to find solution. 
+
+
+
+### Modified AC-3 Algorithm
+> [!algo]
+>
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213153539598.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213153628321.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213153633368.png)
+
+
+
+
+
 
 
 
@@ -105,6 +118,8 @@
 > **Note:** This speed up happens after we have chosen the variable and want to **choose the value** to be assigned to it.
 
 
+
+
 ## Method 3: Structure
 > [!motiv] Motivation
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240128154602121.png)
@@ -128,6 +143,8 @@
 > 2. **Why is the runtime $O(nd^2)$?**
 > 	$n$ means we iterate through node $1$ to node $n$, $d^2$ means we are checking the pair of values in the domain of tail and head of an arc. More importantly, every time you see $d^2$ as a factor in the runtime, very likely we are checking the consistency of an arc.
 > 	
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213153925736.png)
+
 
 > [!proof] Proof Sketch
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240128160742049.png)
@@ -203,10 +220,10 @@
 
 
 
-## Idea - Iterative Improvement
+## Min-Conflicts Algorithm
 > [!def]
 > Local search works by iterative improvement.
-> 
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213155819427.png)
 > Also called min-conflicts algorithm, it attempts to solve CSPs iteratively. It starts by assigning some value to each of the variables, ignoring the constraints when doing so. Then, while at least one constraint is violated, it repeats the following: 
 > - (1) Randomly choose a variable that is currenly violating a constraint.
 > - (2) Assign to it the value in its domain such that after the assignment the total number of constraints violated is minimized (among all possible selections of values in its domain).
@@ -328,6 +345,32 @@
 > [!example] Fa23 Disc03 P1
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240205151227398.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240205151237404.png)
 > For problem 1, unary constraints shrink the domain while the binary constraints enforce that a professor cannot split into two class at the same time.
+
+
+
+
+## Air Traffic Control
+> [!example] Fa23 Exam Prep 4 P1
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213150427599.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213150431958.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213151624437.png)
+> **Note** that we pick $A$ as our starting point, so we start to check the consistency of the arc by $A\to B, A\to C, B\to A, B\to C,C\to A$, $C\to B, C\to D,D\to C, D\to E, E\to D$, along the way if any nodes' domain is shrinked, we append the arc into the queue if it's not already there.
+> 
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213152416164.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213152901698.png)
+
+
+
+## Digit CSP 
+> [!example] Fa23 Exam Prep 4 P2
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213155907745.png)![](3_Constraint_Statisfaction_Problems.assets/image-20240213155913090.png)
+
+
+## Complexity Analysis
+> [!example] Fa23 Exam Prep 4 P2
+> ![](3_Constraint_Statisfaction_Problems.assets/image-20240213160259047.png)
+
+
+
+
+
 
 
 

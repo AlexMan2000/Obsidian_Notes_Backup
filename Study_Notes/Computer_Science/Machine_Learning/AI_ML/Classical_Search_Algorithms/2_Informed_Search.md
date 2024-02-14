@@ -189,6 +189,8 @@
 ## Iterative Deepening A\* Search
 > [!example] Fa23 Exam Prep02 P2
 > ![](2_Informed_Search.assets/image-20240205084009760.png)![](2_Informed_Search.assets/image-20240205084022833.png)![](2_Informed_Search.assets/image-20240205084033689.png)![](2_Informed_Search.assets/image-20240205084049232.png)![](2_Informed_Search.assets/image-20240205084207013.png)![](2_Informed_Search.assets/image-20240205084740307.png)
+> **Remarks:**
+> 1. `cutoff` means current `limit` triggers early stop in our algorithm and any node that has priority bigger than `limit` won't be added to the queue so we will miss our solution. So if `cutoff` is true at the end of the loop, then we have to expand our search limit and do the search again.
 
 
 

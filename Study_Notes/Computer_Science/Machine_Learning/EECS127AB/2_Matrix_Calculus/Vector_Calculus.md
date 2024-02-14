@@ -64,15 +64,15 @@
 
 
 ### Log-Function Examples
-:::info
-![image.png](Vector_Calculus.assets/20231023_2250095583.png)
-:::
+> [!info]
+> ![image.png](Vector_Calculus.assets/20231023_2250095583.png)
+
 
 
 ### Exponential Function Examples
-:::success
-![image.png](Vector_Calculus.assets/20231023_2250118619.png)
-:::
+> [!success]
+> ![image.png](Vector_Calculus.assets/20231023_2250118619.png)
+
 
 
 ## Gradient of Least Square

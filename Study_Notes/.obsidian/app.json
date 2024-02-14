@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./4_Adverserial_Search.assets",
+  "attachmentFolderPath": "./Markov_Decision_Process.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

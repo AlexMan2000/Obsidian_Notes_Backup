@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2eddbb4374b45529",
+            "id": "189f8407848971c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b0d1bafb5b5c5bea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,53 +220,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2eddbb4374b45529",
+  "active": "b0d1bafb5b5c5bea",
   "lastOpenFiles": [
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132145700.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132133371.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208132119319.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131830948.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131819063.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131808574.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131602221.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131528960.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131355539.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240208131342907.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Discussion_06__Mutability__Iterators__Generators.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/_P2102__Gitlet⭐⭐⭐.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets/image-20240213210251684.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets/image-20240213210159320.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets/image-20240213210152560.png",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets/image-20240213205113941.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets/image-20240213205103422.png",
+    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets/image-20240213193830434.png",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets/image-20240213193829360.png",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets/image-20240213193619711.png",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/2_Code_Review_Principles.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.assets",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.assets",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets/image-20240213181046850.png",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets/image-20240213180801283.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.assets",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects",
-    "Computer_Science/Computer_Systems/Database Systems/CMU_15445_Projects",
-    "Computer_Science/Computer_Systems/Database Systems/CMU_15445",
-    "Computer_Science/Data_Structures_Algorithms/Untitled",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md",
+    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch4_Logistic_Regression.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
+    "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md",
+    "Untitled.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Exponential_Family.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Regression&Reparametrization.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Equality.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).assets",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md",
+    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_Ridge.md",
+    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_Ridge.assets",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/CS 186 Discussion 4.pdf",
+    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.assets",
+    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Relational_Algebra.assets",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Buffer_Management.assets",
+    "Computer_Science/Computer_Networks/Network_Architecture/Introduction.assets",
+    "Computer_Science/Web_Development/LiveStream",
     "未命名.canvas"
   ]
 }

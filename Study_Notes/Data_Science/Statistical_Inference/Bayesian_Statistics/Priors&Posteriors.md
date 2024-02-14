@@ -73,7 +73,7 @@
 ## Weighted Average of Prior and Data
 > [!important]
 > ![](Priors&Posteriors.assets/image-20240203160504368.png)
-> This correlates with the finding in n-d case in [Tug of War between Prior and Likelihood](../../../Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Regression&Reparametrization.md#Overview) 
+> This correlates with the finding in n-d case in [Tug of War between Prior and Likelihood](../../../Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Regression&Reparametrization.md#Overview) 
 > 
 > Generally, if we have a strong prior(the variance is small), then the MAP estimate will be close to the prior than to the data point(likelihood).
 
