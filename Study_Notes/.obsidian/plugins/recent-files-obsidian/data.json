@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/Sorting&Hashing.md"
+    },
+    {
       "basename": "Markov_Decision_Process",
       "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md"
     },
@@ -125,10 +129,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
     },
     {
-      "basename": "Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Sorting&Hashing.md"
-    },
-    {
       "basename": "Introduction",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/Introduction.md"
     },
@@ -198,7 +198,7 @@
     },
     {
       "basename": "Memory_Mangement",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_Transaction&Recovery/Memory_Mangement.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/Memory_Mangement.md"
     }
   ],
   "omittedPaths": [],
