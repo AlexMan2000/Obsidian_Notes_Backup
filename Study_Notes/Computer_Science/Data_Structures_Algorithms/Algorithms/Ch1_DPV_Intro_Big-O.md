@@ -134,6 +134,7 @@
 
 # Asymptotic Notations
 ## Basic Notations
+> [!def]
 > ![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950192693.png)![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950202896.png)
 > **我们以**$O$**为例, 令**$f(n)=O(g(n))$**:**
 > 1. `Quantifier Notations`: $\exists c,d>0, ~s.t.~~f(n)\leq c\cdot g(n)+d,\forall n\in \mathbb{N}$
@@ -143,20 +144,17 @@
 
 
 ## Common Properties
-> 1. $\forall b\geq a,n^a=O(n^b)$, 因为$\lim_{n\to \infty}\frac{n^a}{n^b}=\lim_{n\to \infty}n^{a-b}=\lim_{n\to \infty}\frac{1}{n^{b-a}}=0$
-> 
-比如$f(n)=n^2-2n+3$, 此时$f(n)=\Theta(n^2)$
+> [!property]
+> 1. $\forall b\geq a,n^a=O(n^b)$, 因为$\lim_{n\to \infty}\frac{n^a}{n^b}=\lim_{n\to \infty}n^{a-b}=\lim_{n\to \infty}\frac{1}{n^{b-a}}=0$，比如$f(n)=n^2-2n+3$, 此时$f(n)=\Theta(n^2)$
 > 2. $\forall b<c$, $b^n = O(c^n)$, 因为$\lim_{n\to \infty}\frac{b^n}{c^n}=\lim_{n\to \infty}(\frac{b}{c})^n=0$
-> 3. **Exponential Dominates Polynomials:**$\forall a>0,b>1,n^a=O(b^n)$, 因为$\lim_{n\to \infty}\frac{n^a}{b^n}=0$, 注意$b>1$, 否则$b^n\to 0$。
-> 
-比如$f(n)=n^{100}+1.01^n$, 此时$f(n)=\Theta(1.01^n)$。
-> 比如$f(n)=n^{100}+0.99^n$, 此时$f(n)=\Theta(n^{100})$。
-> 4. **Polynomials Dominates Logarithms: **$\forall a>0, b>0,log^b{n}=O(n^a)$, 因为$\lim_{n\to \infty}\frac{log^b{n}}{n^a}=\lim_{n\to \infty}\frac{(\frac{1}{n})^b}{an^{a-1}}=0$
-> 
-![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950225885.png)
+> 3. **Exponential Dominates Polynomials:**$\forall a>0,b>1,n^a=O(b^n)$, 因为$\lim_{n\to \infty}\frac{n^a}{b^n}=0$, 注意$b>1$, 否则$b^n\to 0$。比如$f(n)=n^{100}+1.01^n$, 此时$f(n)=\Theta(1.01^n)$。比如$f(n)=n^{100}+0.99^n$, 此时$f(n)=\Theta(n^{100})$。
+> 4. **Polynomials Dominates Logarithms: $\forall a>0, b>0,log^b{n}=O(n^a)$, 因为$\lim_{n\to \infty}\frac{log^b{n}}{n^a}=\lim_{n\to \infty}\frac{(\frac{1}{n})^b}{an^{a-1}}=0$
+> ![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950225885.png)
 > 5. 对于$\lim_{n\to \infty}\frac{f(n)}{g(n)}$，如果$\lim_{n\to \infty}f(n)=\infty$, $\lim_{n\to \infty}g(n)=\infty$, 则我们可以使用洛必达法则，即$\lim_{n\to\infty} \frac{f(n)}{g(n)}=\lim_{n\to \infty}\frac{f'(n)}{g'(n)}$
-> 
-![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950225312.png)
+> ![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950225312.png)
+> 6. Squeeze: ![](Ch1_DPV_Intro_Big-O.assets/image-20240214193747197.png)
+
+
 
 
 
@@ -176,6 +174,7 @@
 
 
 ## Complexity Comparison
+> [!important]
 > ![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950254584.png)
 > $f_3<f_{7}<f_2<f_5<f_4<f_9<f_8<f_6<f_1$
 > **总之记住，**`Constant<Logarithmic<Polynomial<Exponential**`**:**
@@ -188,8 +187,6 @@
 > $(i)$: 我们可以使用`Limit Rules`来判断。因为$log_3n=\frac{logn}{log3}$, $log_4n=\frac{logn}{log4}$, 所以$\lim_{n\to \infty}\frac{log_3n}{log_4n}=\lim_{n\to \infty}\frac{log4}{log3}=c$, 于是$f(n)=\Theta(g(n))$。
 > $(ii)$: $\lim_{n\to \infty}\frac{nlog(n^4)}{n^2log(n^3)}=\lim_{n\to \infty}\frac{4logn}{3nlogn}=\lim_{n\to \infty}\frac{4}{3n}=0$, 于是$f(n)=O(g(n))$。
 > ![image.png](Ch1_DPV_Intro_Big-O.assets/20231024_0950288577.png)
-
-
 
 
 

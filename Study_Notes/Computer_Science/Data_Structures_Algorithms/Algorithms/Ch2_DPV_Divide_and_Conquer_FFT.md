@@ -51,9 +51,11 @@
 # Master's Theorem
 ## Helpful Lemmas
 ### Geometric Series - 0.2
+> [!lemma]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950334139.png)
 
-**Solution**![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950337056.png)
+> [!proof]
+> ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950337056.png)
 
 
 ### Rounding Power - 2.2
@@ -63,11 +65,13 @@
 
 
 ## Theorems
+> [!thm]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950351850.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950379507.png)
 > **书上的定理:**
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950383953.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950392411.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950407660.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950422906.png)
 
-**Proof of the Theorem**![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950436151.png)
+> [!proof]
+> **Proof of the Theorem**![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950436151.png)
 ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950445077.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950469200.png)
 > 一个直观的解释:
 > 1. $b$控制的是`Divide`的粒度，$b$越大`Subproblem`的规模越小，算法复杂度就越小。
@@ -77,6 +81,7 @@
 
 ## Solving Recurrence Relations
 ### Using Master's Theorem
+> [!important]
 > **下面我们对于三种情况分别举例:**
 > 1. 对于$T(n)= T(\frac{n}{2})+O(n)$来说，我们使用主定理，此时$a=1,b=2,d=1$。因为$log_ba<d$, 所以$T(n)=O(n^1)=O(n)$。
 > 2. 对于$T(n)=2\cdot T(\frac{n}{2})+O(n)$来说，我们使用主定理，此时$a=2,b=2,d=1$。因为$log_ba=d$, 所以$T(n)=O(n^1logn)=O(nlogn)$。
@@ -85,6 +90,7 @@
 
 
 ### Using Expression Expansion
+> [!important]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950477150.png)
 > 对于$(a)$问来说，我们仿照上面的步骤:
 > $\begin{aligned} T(n)&\leq 3T(\frac{n}{2})+cn\\&\leq 3(3T(\frac{n}{4})+\frac{}{}c\frac{n}{2})+cn=9T(\frac{n}{4})+\frac{3}{2}cn+cn\\&\leq 9(3T(\frac{n}{8})+c\frac{n}{4})+\frac{3}{2}cn+cn =27\cdot T(\frac{n}{8})+\frac{9}{4}cn+\frac{3}{2}cn+cn\end{aligned}$
@@ -99,16 +105,15 @@
 
 
 ### Repeated Expansion
+> [!important]
 > 有些`Recurrence Relation`中我们无法使用主定理，需要使用`Repeated Expansion`的方法。
-> 1. $T(n)=2T(\sqrt{n})+3$**且**`**Base case**`**的**$T(2)=3$**, 我们不能直接使用主定理，于是需要**`**Repeated Expansion**`**:**
-> 
-$\begin{aligned}T(n)&=2T(n^{\frac{1}{2}})+3\\&=2(2T(n^{\frac{1}{4}})+3)+3=4T(n^{\frac{1}{4}})+2\times 3+3\\&=4(2T(n^{\frac{1}{8}})+3)+2\times 3+3=2^3T(n^{\frac{1}{2^3}})+(2^2+2+1)\times 3\end{aligned}$
+> 1. $T(n)=2T(\sqrt{n})+3$**且**`Base case`**的**$T(2)=3$**, 我们不能直接使用主定理，于是需要**`Repeated Expansion`**:**
+> $\begin{aligned}T(n)&=2T(n^{\frac{1}{2}})+3\\&=2(2T(n^{\frac{1}{4}})+3)+3=4T(n^{\frac{1}{4}})+2\times 3+3\\&=4(2T(n^{\frac{1}{8}})+3)+2\times 3+3=2^3T(n^{\frac{1}{2^3}})+(2^2+2+1)\times 3\end{aligned}$
 > 于是我们发现$T(n)=2^kT(n^{\frac{1}{2^k}})+\sum_{i=0}^{k-1}2^{i}\times 3$
 > 因为`Base Case`是$T(2)=3$, 我们要求$\frac{1}{2^k}=3$, 于是$2^k=log_2n$即$k=log_2(log_2n)$, 所以
 > $T(n)=\sum_{i=0}^{log_2(log_2n)}2^i\times 3=3\times O(2^{log_2(log_2n)})=O(log_2n)$(使用`Helpful Lemma`中的几何级数的性质，即对于$g(c)=1+c+c^2+\cdots+c^n$来说，如果$c>1$, 则$g(c)=\Theta(c^n)=O(c^n)$)。
-> 2. $T(n)=2T(\frac{n}{2})+nlogn$**，我们同样不能直接使用主定理，我们仍然使用**`**Repeated Expansion**`**:**
-> 
-$\begin{aligned}T(n)&=2(2T(\frac{n}{4})+\frac{n}{2}log\frac{n}c{2})+nlogn\\&=2^2T(\frac{n}{4})+2\times \frac{n}{2}log\frac{n}{2}+nlogn\\&=\cdots\\&=2^kT(\frac{n}{2^k})+\sum_{i=0}^{k-1}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})\\&=\sum_{i=0}^{k}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})\end{aligned}$
+> 2. $T(n)=2T(\frac{n}{2})+nlogn$**，我们同样不能直接使用主定理，我们仍然使用**`Repeated Expansion`**:**
+> $\begin{aligned}T(n)&=2(2T(\frac{n}{4})+\frac{n}{2}log\frac{n}c{2})+nlogn\\&=2^2T(\frac{n}{4})+2\times \frac{n}{2}log\frac{n}{2}+nlogn\\&=\cdots\\&=2^kT(\frac{n}{2^k})+\sum_{i=0}^{k-1}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})\\&=\sum_{i=0}^{k}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})\end{aligned}$
 > 我们要令$2^k=n$, 即$k=log_2n$, 所以$T(n)=\sum_{i=0}^{log_2n}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})$
 > $\begin{aligned} T(n)&=\sum_{i=0}^{log_2n}2^i\times(\frac{n}{2^i}log\frac{n}{2^i})\\&=\sum_{i=0}^{log_2n}n(log_2n-log_22^i)\\&=\sum_{i=0}^{log_2n}nlog_2n-ni\\&=n\sum_{i=0}^{log_2n}log_2n-i\\&=nlog_2^2n-n\sum_{i=1}^{log_2n}i\\&=nlog_2^2n-n\times \frac{(1+log_2n)log_2n}{2}\\&=\Theta(nlog_2^2n)\end{aligned}$
 
@@ -255,49 +260,53 @@ public List<Comparable> mergeSortIterative(List<Comparable> array) {
 
 
 ## Lower Bound for Comparison Sort
+> [!important]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950583423.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951003339.png)
 
 
 
 ## Computing Number of Inversions
+> [!important]
 > 如果我们的算法不仅仅要求我们能够对一个列表进行排序，还要求其在排序的过程中能够计算出原列表的`Inversion`的总数，则我们可以考虑下列算法（算法由`Merge Sort`改编而来，本质是一致的）:
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951025271.png)
 > 其中$locate(c(1,\cdots, \frac{n}{2}),j,b(i))$的含义是将$b$数组的$i$号索引插入到$c$数组的$j$索引位置中。
 > 因为选择插入位置的过程其实就是一个消除`Inversions`的过程，所以如果$b(i)$被插入到了$c(1,\cdots, \frac{n}{2})$的第$j$号索引当中，这说明原本$b(i)$比$c$中的$j-1$个元素都要大，也就是有$j$个`Inversion`。
 
 
+## Werewolf
+> [!example] Sp21 HW2 P4
+> ![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213523974.png)![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213530607.png)![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213536470.png)![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213547734.png)
 
 
 
 # Median Finding
 ## General Algorithm
+> [!algo]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951044173.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951068426.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951073690.png)
 > 算法复杂度根据`Master's Theorem`可得: $T(n)=O(n^1)=O(n)$。
 
 
 
 ## Efficiency Analysis
+> [!important]
 > **上述算法中我们看到，我们的**`Pivot Element`**(也就是**$v$**)的选取会影响我们的**`Recurrence Equation`**: 
 > 1. 如果我们的$v$将原来的大小为$n$的数组分割为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{\frac{4}{3}})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
 > 2. 如果我们的$v$将原来的大小为$n$的数组分割为$\frac{n}{8}$和$\frac{7n}{8}$的两个子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{\frac{8}{7}})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
 > 3. 如果我们的$v$将原来的大小为$n$的数组分割为两个大小为$\frac{n}{2}$的子数组的话，则我们的`Recurrence Relation`是: $T(n)\leq T(\frac{n}{2})+O(n)$, 我们通过主定理可得$T(n)=O(n)$。
 > 4. 但是如果我们的$v$是每个数组中最大的元素，则`Recurrence Relation`变成$T(n)\leq T(n-1)+O(n)$, 此时我们有$T(n)\leq 1+2+\cdots+n=\Theta(n^2)$, 所以$T(n)=O(n^2)$。这是`Worst-Case Runtime`。
 > 
-所以我们可以看到，这个算法复杂度永远是$O(n)$，那么我们是否可以随机选取$v$呢? 反正算法复杂度基本都是$O(n)$。答案是肯定的。
-> **现在假设**$T(n)$**是**`**Expected Time to find k-th smallest in n-elem array**`**, 此时我们可以这样思考: **
+> 所以我们可以看到，一般情况下这个算法复杂度都是$O(n)$，那么我们是否可以随机选取$v$呢? 反正算法复杂度基本都是$O(n)$。答案是肯定的。
+> **现在假设**$T(n)$**是**`Expected Time to find k-th smallest in n-elem array`**, 此时我们可以这样思考: **
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951086660.png)
-> 对于`Time to reduce array size to`$\frac{3n}{4}$**:
+> 对于`Time to reduce array size to`$\frac{3n}{4}$:
 > 1. 我们假设其为事件$A$：我们选取的元素$v$将原来的大小为$n$的数组分割为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组。在概率的视角下我们假设$P(A)=p$。
 > 2. 我们假设一个随机变量$X$表示选取到元素$v$(这个元素将大小为$n$的数组分割为长度为$\frac{n}{4}$和$\frac{3n}{4}$的两个子数组)所需要的时间，则$X$服从几何分布$Geo(p)$。我们知道$E[X]=\frac{1}{p}$, 于是$T(n) \leq T(\frac{3n}{4})+O(n)\cdot \frac{1}{p}$。
 > 3. 如果我们称那些位于`25-percentile`和`75-percentile`之间的$v$是好的$v$，则我们知道事件$A$为: `Time to reduce array size to between`$\frac{1}{4}n$`and`$\frac{3}{4}n$，且$P(A)=\frac{1}{2}$, 此时:$T(n)\leq T(\frac{n}{2})+O(n)\cdot \frac{1}{\frac{1}{2}}=T(\frac{n}{2})+2\cdot O(n)$, 此时$T(n)=O(n)$仍然成立。
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951113503.png)
 
 
-
-
 ## Extra Memory Implementation
-> **需要额外的**`**Memory Space**`**，算法逻辑如下: **
-
+> **需要额外的**`Memory Space`**，算法逻辑如下: 
 ```java
 public List<List<Integer>> selection(List<Integer> LL, int v) {
     List<Integer> smaller = new ArrayList<>();
@@ -321,9 +330,9 @@ public List<List<Integer>> selection(List<Integer> LL, int v) {
 ```
 
 ## Hoare Implementation
+> [!algo]
 > 不需要额外的`Memeory Space`:
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951132785.png)
-
 ```java
 public int[] selectionInPlace(int[] LL, int v) {
     int store = 0;
@@ -348,8 +357,21 @@ public int[] selectionInPlace(int[] LL, int v) {
 ```
 
 
+
+## Better Median Finding - O(n)
+> [!important]
+> 上述算法只能保证，总的算法复杂度的均值是$O(n)$, 如果我们一直随机到`worst-case`的话，算法复杂度仍然有可能是$O(n^2)$。
+> ![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214194652440.png)
+
+> [!property]
+> ![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214195838590.png)![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214195843510.png)
+
+
+
+
 # Peak Finding
 ## 1D Peak Finding
+> [!def]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951147837.png)
 > [Auxiliary Videos](https://www.youtube.com/watch?v=cl2G0QpuO5g)
 > **Lemma: There always exists a maximum element in our array and subarrays.**
@@ -359,7 +381,7 @@ public int[] selectionInPlace(int[] LL, int v) {
 
 
 
-## *2D Peak Finding
+## 2D Peak Finding
 > 
 
 
@@ -368,6 +390,7 @@ public int[] selectionInPlace(int[] LL, int v) {
 
 # Matrix Multiplication
 ## Naive Implementation
+> [!def]
 > 假设我们有两个矩阵$X=\begin{bmatrix} A&B\\C&D\end{bmatrix}$, $Y=\begin{bmatrix} E&F\\G&H\end{bmatrix}$，则他们的乘积是:
 > $XY=\begin{bmatrix} A&B\\C&D\end{bmatrix}\begin{bmatrix} E&F\\G&H\end{bmatrix}=\begin{bmatrix} AE+BG&AF+BH\\CE+DG&CF+DH\end{bmatrix}$
 > 规定`Cost Model`是四则运算，则`Recurrence Relation`是: $T(n)=8T(n/2)+O(n^2)$, 使用主定理得到$T(n)=O(n^{log_28})=O(n^3)$, 算法复杂度很高。
@@ -375,16 +398,20 @@ public int[] selectionInPlace(int[] LL, int v) {
 
 
 ## Strassen Implementation
+> [!def]
 > $X Y=\left[\begin{array}{cc}P_5+P_4-P_2+P_6 & P_1+P_2 \\P_3+P_4 & P_1+P_5-P_3-P_7\end{array}\right]$
 > **其中我们有:**
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951155132.png)
 > 规定`Cost Model`是四则运算, 此时`Recurrence Relation`, 则$T(n)=7 T(n / 2)+O\left(n^2\right)$，使用主定理得到$O(n^{log_27})\approx O(n^{2.81})$，相比上面的实现方式来说算法复杂度较低。
 
 
+## Hadamard Matrices
+
 
 
 # Complex Roots
 ## How to Compute
+> [!def]
 > **对于**$z^n=1$**这个方程来说，我们有两种求解技巧:**
 > 1. **代数法**: 令$z=re^{i\theta}$, $1=e^{2k\pi i}$, 则$z^n=1$可以化为$r^ne^{in\theta}=1\cdot e^{2k\pi i}$, 则 $r=1$, $\theta=\frac{2k\pi}{n}, k=0,1,\cdots, n-1$。于是$z=e^{i\frac{2k\pi}{n}}$。
 > 2. **二叉树法**，对于这棵二叉树来说：
@@ -396,6 +423,7 @@ public int[] selectionInPlace(int[] LL, int v) {
 
 
 ## Important Properties
+> [!property]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0951215139.png)
 > **假设我们的**`**n-th root of unity**`**是**$1,w,w^2,\cdots, w^{n-1}$**, 其中**$w=e^{\frac{2\pi i}{n}}$**, 如果**$n$**是偶数: **
 > 1. `n-th root of unity`是`Plus-minus Paired`。因为我们可以利用二叉树法，`n-th root of unity`相当于二叉树的`Level-log_2n`层，而`Level-`$log_2n$层就相当于$log_2(n-1)$层分叉后得到的结果，一定是`plus-minus paired`出现的。
@@ -691,7 +719,7 @@ def recursiveEval(w, coeffs):
 > - Thus we will have to zero pad the polynomial to degree $n$ in order to apply our FFT algorithm successfully.
 
 
-# Applications
+# FFT Applications
 ## Cubed Fourier
 > [!example]
 > ![](Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20231129230556806.png)

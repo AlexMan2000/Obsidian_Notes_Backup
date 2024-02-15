@@ -124,6 +124,11 @@
 ## Relaxation Operation is Safe
 > [!concept]
 > ![](Shortest_Path_On_Graph.assets/image-20240201203228883.png)
+> The term "safe" in "relaxation is safe" means that performing relaxation operations will not lead to an overestimation or underestimation of the true shortest path distances. 
+> 
+> It ensures that the algorithm (such as Dijkstra's or Bellman-Ford algorithm) will correctly find the shortest paths, assuming the algorithm's other conditions (such as no negative-weight cycles in the case of Dijkstra's algorithm) are met. 
+> 
+> This is a fundamental concept ensuring the algorithms' correctness and efficiency in solving shortest path problems.
 
 
 
@@ -184,8 +189,10 @@
 # Bellman Ford
 > [!algo]
 > When there is negative weights edge in the graph, Dijkstra's algorithm won't work. We opt for Bellman Ford if there is no negative cycles.
-> ![](Shortest_Path_On_Graph.assets/image-20240201205512409.png)![](Shortest_Path_On_Graph.assets/image-20240201220524824.png)
+> ![](Shortest_Path_On_Graph.assets/image-20240201205512409.png)![](Shortest_Path_On_Graph.assets/image-20240201220524824.png)![](Shortest_Path_On_Graph.assets/image-20240214220306784.png)
 > Runtime is $\Theta(VE)$.
+> 
+> Note that if the graph is a DAG, then there is no negative cycles.
 
 > [!thm]
 > ![](Shortest_Path_On_Graph.assets/image-20240201205607690.png)![](Shortest_Path_On_Graph.assets/image-20240201205611408.png)![](Shortest_Path_On_Graph.assets/image-20240201210424770.png)

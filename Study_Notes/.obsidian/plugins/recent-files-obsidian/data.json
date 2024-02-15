@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
+      "basename": "Shortest_Path_On_Graph",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/Numerical_Methods/Related_Resources.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Profiling",
+      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
+    },
+    {
       "basename": "5_Generalized_Linear_Model",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.md"
     },
     {
-      "basename": "Project2_B+_Tree(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
+      "basename": "Ch1_DPV_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
     },
     {
       "basename": "Markov_Decision_Process",
       "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md"
+    },
+    {
+      "basename": "Project2_B+_Tree(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
     },
     {
       "basename": "Sorting&Hashing",
@@ -175,30 +199,6 @@
     {
       "basename": "3_Testing_Debugging",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
-    },
-    {
-      "basename": "6_Designing_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md"
-    },
-    {
-      "basename": "Dynamic_Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
-    },
-    {
-      "basename": "Sorting",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md"
-    },
-    {
-      "basename": "Shortest_Path_On_Graph",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md"
-    },
-    {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
-      "basename": "Memory_Mangement",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/Memory_Mangement.md"
     }
   ],
   "omittedPaths": [],

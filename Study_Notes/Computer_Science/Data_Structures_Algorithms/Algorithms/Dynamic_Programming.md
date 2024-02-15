@@ -1,3 +1,8 @@
+# DP Formulation
+> [!important]
+> ![](Dynamic_Programming.assets/image-20240214225052055.png)![](Dynamic_Programming.assets/image-20240214225041101.png)![](Dynamic_Programming.assets/image-20240214225102209.png)
+
+
 # Fibonacci Number and DP
 ## Naive Algorithm
 > [!concept]
@@ -22,7 +27,7 @@
 
 
 
-# Graph Duplication
+# Shortest Path
 ## DAG DP
 > [!concept]
 > ![](Dynamic_Programming.assets/image-20240201171402110.png)![](Dynamic_Programming.assets/image-20240201171409172.png)
@@ -51,7 +56,32 @@
 
 
 
+# Text Justification
 
 
 
 
+# Subsequences
+
+
+
+
+# Edit Distance
+
+
+
+
+
+# Blackjack
+
+
+
+
+
+# Knapsack
+
+
+
+
+
+# Chain Matrix Multiplication
