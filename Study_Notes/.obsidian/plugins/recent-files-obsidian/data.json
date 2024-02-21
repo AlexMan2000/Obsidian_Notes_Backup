@@ -1,8 +1,136 @@
 {
   "recentFiles": [
     {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "4_Random_Forest",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md"
+    },
+    {
+      "basename": "3_Decision_Tree",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "1_Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
+    },
+    {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
+    },
+    {
+      "basename": "Channel_Coding",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Proximal_Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Proximal_Gradient_Descent.md"
+    },
+    {
+      "basename": "Subgradient_Differentials",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md"
+    },
+    {
+      "basename": "1_Linear_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md"
+    },
+    {
+      "basename": "2_Quadratic_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md"
+    },
+    {
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "Coordinate_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.md"
+    },
+    {
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "2_Gaussian_Discriminative_Analysis",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
+    },
+    {
+      "basename": "Linear_Regression",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
+    },
+    {
+      "basename": "1_Multivariable_Gaussian",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "3_Regression&Reparametrization",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
+    },
+    {
+      "basename": "Priors&Posteriors",
+      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
+    },
+    {
       "basename": "Dynamic_Programming",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
+      "basename": "Random_Stuff",
+      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
+    },
+    {
+      "basename": "Basic",
+      "path": "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md"
+    },
+    {
+      "basename": "Markov_Decision_Process",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md"
+    },
+    {
+      "basename": "4_Adverserial_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
+    },
+    {
+      "basename": "Geometry",
+      "path": "Computer_Science/Computer_Graphics/Geometry.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Graphics/Related_Resources.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/Introduction.md"
+    },
+    {
+      "basename": "Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/Routing.md"
     },
     {
       "basename": "Shortest_Path_On_Graph",
@@ -21,40 +149,16 @@
       "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
     },
     {
-      "basename": "5_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.md"
-    },
-    {
       "basename": "Ch1_DPV_Intro_Big-O",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
-    },
-    {
-      "basename": "Markov_Decision_Process",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md"
     },
     {
       "basename": "Project2_B+_Tree(sp24)",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
     },
     {
-      "basename": "Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/Sorting&Hashing.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
-    },
-    {
       "basename": "Vector_Calculus",
       "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "1_Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md"
     },
     {
       "basename": "Ch3_Linear_Regression",
@@ -67,10 +171,6 @@
     {
       "basename": "3_Constraint_Statisfaction_Problems",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
-      "basename": "4_Adverserial_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
     },
     {
       "basename": "B+Tree_Indexing",
@@ -89,20 +189,8 @@
       "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch4_Logistic_Regression.md"
     },
     {
-      "basename": "Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
-    },
-    {
-      "basename": "Priors&Posteriors",
-      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
-    },
-    {
       "basename": "Untitled",
       "path": "Untitled.md"
-    },
-    {
-      "basename": "3_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Regression&Reparametrization.md"
     },
     {
       "basename": "Equality",
@@ -111,94 +199,6 @@
     {
       "basename": "P2102__Gitlet",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
-    },
-    {
-      "basename": "Regular_Expressions_Grammars",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Regular_Expressions_Grammars.md"
-    },
-    {
-      "basename": "Analysis_of_Ridge",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_Ridge.md"
-    },
-    {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
-    },
-    {
-      "basename": "Analysis_of_LASSO",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
-    },
-    {
-      "basename": "Buffer_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Buffer_Management.md"
-    },
-    {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Relational_Algebra.md"
-    },
-    {
-      "basename": "Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Routing.md"
-    },
-    {
-      "basename": "Project1_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
-    },
-    {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Introduction.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md"
-    },
-    {
-      "basename": "Abstract_Data_Type",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
-    },
-    {
-      "basename": "Lectures___Readings",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Lectures___Readings.md"
-    },
-    {
-      "basename": "Homework_5__Generators",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Homework_5__Generators.md"
-    },
-    {
-      "basename": "Discussion_06__Mutability__Iterators__Generators",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/2_Recursion_Data_Structures/2_4_Iterators_Generators/Discussion_06__Mutability__Iterators__Generators.md"
-    },
-    {
-      "basename": "Advanced_Recursion",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md"
-    },
-    {
-      "basename": "2_Code_Review_Principles",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/2_Code_Review_Principles.md"
-    },
-    {
-      "basename": "7_Mutability_Assertions",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
-    },
-    {
-      "basename": "4_Version_Control",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.md"
-    },
-    {
-      "basename": "5_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Specifications.md"
-    },
-    {
-      "basename": "3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
     }
   ],
   "omittedPaths": [],

@@ -3,6 +3,8 @@
 > [!def]
 > ![](Entropies.assets/image-20240127163138806.png)![](Entropies.assets/image-20240127163613712.png)
 > Generally, the base of the logarithm is 2 and the entropy has units ’bits’. The expected number of bits needed to express the information in X is a natural choice to measure its uncertainty. It turns out that the expected number of bits required to describe the random variable is roughly the entropy H(X).
+> 
+> ![](Entropies.assets/image-20240219105110647.png)
 
 > [!property]
 > ![](Entropies.assets/image-20240127163738370.png)
@@ -78,6 +80,9 @@
 > ![](Entropies.assets/image-20240202112617670.png)
 
 > [!proof]
+> ![](Entropies.assets/image-20240219201343208.png)
+
+ 
 
 
 

@@ -67,13 +67,13 @@
 > ![](Priors&Posteriors.assets/image-20240203155933251.png)
 
 > [!proof]
-> 
+> Suppose we have datapoint $x_1, x_2, \cdots, x_n$ and a parameter $\theta$ if $f(\theta) \sim N\left(\mu_0, \sigma_0^2\right), f\left(x_i \mid \theta\right) \sim N\left(\theta, \sigma^2\right)$, then the posterior distribution is still gaussian:$$\begin{aligned}& f\left(\theta \mid x_1, x_2, \cdots, x_n\right)=\frac{f\left(x_1, x_2, \cdots x_n \mid \theta\right) f(\theta)}{f\left(x_1, x_2, \cdots, x_n\right)} \\& f\left(x_1, x_2, \cdots, x_n \mid \theta\right) f(\theta) \propto \prod_{i=1}^n \exp \left\{-\frac{1}{2 \sigma^2}\left(x_i-\theta\right)^2\right\} \exp \left\{-\frac{1}{2 \sigma_0^2}\left(\theta-\mu_0\right)^2\right\} \\& \alpha=-\left\{\frac{\sum_{i=1}^n\left(x_i-\theta\right)^2}{2 \sigma^2}+\frac{\left(\theta-\mu_0\right)^2}{2 \sigma_0^2}\right\} \\& =\frac{\sigma_0^2\left(\sum_{i=1}^n x_i^2-2 n \bar{x} \cdot \theta+n \theta^2\right)+\sigma^2\left(\theta^2-2 \mu_0 \cdot \theta+\mu_0^2\right)}{2 \sigma^2 \sigma_0^2} \\& =\frac{\left(n \sigma_0^2+\sigma^2\right) \theta^2-\left(2 n \sigma_0^2 \bar{x}+2 \mu_0 \sigma^2\right) \theta+\sigma_0^2 \sum_{i=1}^n x_i^2+\sigma^2 \mu_0^2}{2 \sigma^2 \sigma_0^2} \\& \therefore \mu_{\text {post }}=\frac{n \sigma_0^2 \bar{x}+\mu_0 \sigma^2}{n \sigma_0^2+\sigma^2} \quad \sigma_{\text {post }}^2=\frac{n \sigma_0^2+\sigma^2}{\sigma^2 \sigma_0^2} \\& =\frac{a \mu_0+b \bar{x}}{a+b}=\frac{1}{a+b} \\& \text { where } a=\frac{1}{\sigma_0^2}, b=\frac{n}{\sigma^2} \\&\end{aligned}$$
 
 
 ## Weighted Average of Prior and Data
 > [!important]
 > ![](Priors&Posteriors.assets/image-20240203160504368.png)
-> This correlates with the finding in n-d case in [Tug of War between Prior and Likelihood](../../../Computer_Science/Machine_Learning/AI_ML/Regression&Classification/3_Regression&Reparametrization.md#Overview) 
+> This correlates with the finding in n-d case in [Tug of War between Prior and Likelihood](../../../Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md#Overview) 
 > 
 > Generally, if we have a strong prior(the variance is small), then the MAP estimate will be close to the prior than to the data point(likelihood).
 

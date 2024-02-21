@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./Dynamic_Programming.assets",
+  "attachmentFolderPath": "./3_Query_Optimization.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

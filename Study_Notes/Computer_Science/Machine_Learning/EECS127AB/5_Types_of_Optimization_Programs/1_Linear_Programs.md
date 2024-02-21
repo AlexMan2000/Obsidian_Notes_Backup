@@ -190,7 +190,9 @@
 
 
 
-
+# Robust Linear Programming
+> [!def]
+> 
 
 
 

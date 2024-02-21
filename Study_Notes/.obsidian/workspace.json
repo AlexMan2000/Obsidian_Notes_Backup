@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.md",
+                "file": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "726ec6187fbb11f1",
+            "id": "3c053157618e4f7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 254.50152587890625
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,54 +220,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "726ec6187fbb11f1",
+  "active": "3c053157618e4f7b",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.assets/image-20240214225102209.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.assets/image-20240214225052055.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.assets/image-20240214225041101.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md",
-    "Mathematics/Numerical_Methods/Related_Resources.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
-    "Mathematics/Numerical_Methods/Untitled",
-    "Mathematics/Numerical_Methods",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.assets/image-20240214220306784.png",
-    "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213547734.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213536470.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213530607.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213523974.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213439310.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214213421508.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.assets/image-20240214195843510.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch3_Graph_Algorithms.md",
-    "Computer_Science/Computer_Science_Tools/Untitled 1.md",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools",
-    "Computer_Science/Computer_Science_Tools/Untitled.md",
-    "Computer_Science/Computer_Science_Tools/Python_Tools",
-    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/Sorting&Hashing.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/Sorting&Hashing.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.assets",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220200145058.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220194452351.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.assets/image-20240220174243947.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165626360.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165436910.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165430708.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165423283.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165047890.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165045200.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165035567.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165019453.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Proximal_Gradient_Descent.md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.assets",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Coordinate_Descent.md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/1_Multivariable_Gaussian.md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.md",
-    "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression&Classification/5_Generalized_Linear_Model.assets",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.assets",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md",
-    "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch4_Logistic_Regression.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).assets",
+    "Computer_Science/Machine_Learning/AI_ML/SVM",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering",
+    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+    "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+    "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md",
+    "Computer_Science/Deep_Learning/PyTorch_Tools",
+    "Computer_Science/Computer_Graphics",
     "未命名.canvas"
   ]
 }

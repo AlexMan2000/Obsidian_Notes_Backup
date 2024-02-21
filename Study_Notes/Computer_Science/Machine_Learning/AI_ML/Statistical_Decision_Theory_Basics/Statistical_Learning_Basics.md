@@ -109,4 +109,31 @@
 
 
 # Bias and Variance Decomposition
+## Generalization Error
+> [!def]
+> ![](Statistical_Learning_Basics.assets/image-20240219103920706.png)
+> Note that the generalization error is just defined by:
+> $$\mathbb{E}_{\mathcal{D},Y}[(h(\mathbf{x};\mathcal{D})-Y)^2]$$
+> where $h(\cdot)$ is our model, which is trained on a random data $\mathcal{D}$.
+
+
+
+ 
+
+## BV Decomposition
+> [!important]
+> ![](Statistical_Learning_Basics.assets/image-20240219103858369.png)
+> Here the irreducible error is the lower bound for our generalization error, which is the error that any model will not be able to get rid of, indicating the difficulty of this task.
+> 
+> ![](Statistical_Learning_Basics.assets/image-20240219104211581.png)![](Statistical_Learning_Basics.assets/image-20240219104218402.png)
+
+
+## Summary
+> [!summary] 
+> ![](Statistical_Learning_Basics.assets/image-20240219104306732.png)![](Statistical_Learning_Basics.assets/image-20240219104316356.png)
+
+
+
+
+
 

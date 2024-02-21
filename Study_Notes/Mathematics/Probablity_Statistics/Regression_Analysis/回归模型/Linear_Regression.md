@@ -212,14 +212,14 @@ Any pair of error terms are **uncorrelated: **$Cov(\epsilon_i,\epsilon_j)=E[\eps
 > 2. Hessian: $2A$ 
 > 
 **Loss Minimization by matrix calculus:**
-> $\begin{align} \nabla{\beta}&=\mathbf{\frac{\partial R_n(f)}{\partial \beta}}\mathbf{(Y-X\beta)^T(Y-X\beta)}\\&=\frac{\partial R_n(f)}{\partial \beta}\mathbf{Y^TY-Y^TX\beta-\beta^TX^TY+\beta^TX^TX\beta} \\&=\mathbf{-2X^TY+2X^TX\beta}=0 \end{align}$(Normal Equation)
-> Thus $\beta = \mathbf{(X^TX)^{-1}(X^TY)}$if $\mathbf{X^TX}$exists.
+> $\begin{align} \nabla{\beta}&=\mathbf{\frac{\partial R_n(f)}{\partial \beta}}\mathbf{(Y-X\beta)^T(Y-X\beta)}\\&=\frac{\partial R_n(f)}{\partial \beta}\mathbf{Y^TY-Y^TX\beta-\beta^TX^TY+\beta^TX^TX\beta} \\&=\mathbf{-2X^TY+2X^TX\beta}=0 \end{align}$  (Normal Equation)
+> Thus $\beta = \mathbf{(X^{T}X)^{-1}(X^{T}Y)}$if $\mathbf{X^TX}$exists.
 
 
 
 ### Unbiasedness
 :::info
-$\hat{\beta}=\mathbf{(X^TX)^{-1}X^TY}$, 我们知道$X_i$是已知的数据，$\epsilon_i$不能在数据中观测到，于是$Y_i$对我们来说就是一个随机变量，$\mathbb{E}[\hat{\beta}]=\mathbf{(X^TX)^{-1}X^T}\mathbb{E}[Y]=\mathbf{(X^TX)^{-1}(X^TX)\beta}=\beta$
+$\hat{\beta}=\mathbf{(X^TX)^{-1}X^TY}$, 我们知道$X_i$是已知的数据，$\epsilon_i$不能在数据中观测到，于是$Y_i$对我们来说就是一个随机变量，$\mathbb{E}[\hat{\beta}]=\mathbf{(X^{T}X)^{-1}X^T}\mathbb{E}[Y]=\mathbf{(X^{T}X)^{-1}(X^{T}X)\beta}=\beta$
 :::
 
 

@@ -349,7 +349,7 @@
 > 
 > **Proof:** Since $f_0$ is convex and $\phi$ is non-decreasing and convex, then by composition rule we have $\phi(f_0(\vec{x}))$ is convex. Since the domain if $\phi$ and $f_0$ are both full subspace, we don't have to consider the extended value function when we are using the criterion here.
 
-### Examples
+### GLM Examples
 > [!example] Disc12 Fa22 P2
 > ![](Methodology%20on%20Optimization.assets/image-20240130152817615.png)![](Methodology%20on%20Optimization.assets/image-20240130152721582.png)
 > Note: Here by different choice of $b(\cdot)$, we can uncover different objectives for different types of questions.
