@@ -128,7 +128,9 @@
 > 
 > 
 > ![](1_Sorting&Hashing.assets/image-20240214144339998.png)![](1_Sorting&Hashing.assets/image-20240214144804682.png)
-> Note that all the above operation assumes that each partitions from phase 1 is smaller than B pages(size of the buffer pool). If there are partitions larger than B pages, we will have to introduce the following recursive partitioning algorithm to chop the original partitions into smaller pieces so as to fit into the memory.
+> Note that **all the above operation assumes that each partitions from phase 1 is smaller than B pages**(size of the buffer pool). 
+> 
+> If there are partitions larger than B pages, we will have to introduce the following recursive partitioning algorithm to chop the original partitions into smaller pieces so as to fit into the memory.
 
 
 ### Recursive Partitioning
@@ -170,6 +172,7 @@
 
 > [!example] Fa20 Disc05 P2
 > ![](1_Sorting&Hashing.assets/image-20240214172130887.png)![](1_Sorting&Hashing.assets/image-20240214172147095.png)
+> If we are processing $B(B-1)$ pages, then after the dividing phase, if the hash function is uniform then within each partition there are $\frac{B(B-1)}{B-1}=B$ pages, under which scenario we don't have to do recursive partitioning. But uniform hashing is nearly impossible, so we will very likely to perform recursive partitioning.
 
 
 ## Analysis of Hashing

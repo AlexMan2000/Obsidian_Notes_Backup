@@ -114,8 +114,13 @@
 
 > [!algo]
 > ![](B+Tree_Indexing.assets/image-20240124153635293.png)
+> This algorithm is very similar to put operation, with a couple of differences:  
+> 1. **Leaf nodes** do not fill up to 2\*d+1 and split, but rather, fill up to be 1 record more than `fillFactor` full, then **"splits" by creating a right sibling that contains just one record (leaving the original node with the desired fill factor).**  
+> 2. **Inner nodes** should **repeatedly try to bulk load the rightmost child** until either the inner node is full (in which case it should split) or there is no more data and follow the split rule as in put operation.(d and d+1 partition).
+> 3. `fillFactor` should ONLY be used for determining how full leaf nodes are (not inner nodes), and calculations should round up, i.e. with d=5 and fillFactor=0.75, leaf nodes should be 8/10 full.
 
 > [!example] 
+> Bigger Example see [B+_Tree_Bulk_Load_Visualizations](B+_Tree_Bulk_Load_Visualizations.pdf)
 > ![](B+Tree_Indexing.assets/image-20240124153758360.png)![](B+Tree_Indexing.assets/image-20240124153807741.png)![](B+Tree_Indexing.assets/image-20240124153814790.png)
 
 
@@ -133,15 +138,17 @@
 
 
 
+
+
 # B\+ Tree Refinement
 ## Leaf Nodes Refinements
-### Leaf Nodes Store Actual Data
+### Alt 1
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184045344.png)
 > Here each entry of the leaf nodes store the actual data, we don't have to do translation between pointer and (pageID, slotID) as we have seen in [B-plus Tree Index (Reference)](B+Tree_Indexing.md#B-plus%20Tree%20Index%20(Reference)).
 
 
-### Leaf Nodes Store Pointers
+### Alt 2
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184105502.png)
 > We introduced it in [B-plus Tree Index (Reference)](B+Tree_Indexing.md#B-plus%20Tree%20Index%20(Reference)).
@@ -150,7 +157,7 @@
 
 
 
-### Leaf Nodes Store Reference List
+### Alt3
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184400796.png)
 > Bookkeeping here means if our reference list causes a block to be full and even spillover to a another block, then we have to record which portion of the reference list belongs to which block.
@@ -184,19 +191,21 @@
 
 
 ## File Organization Refinement
-### Clustered vs Unclustered Index
+### Clustered Index
 > [!def]
-> ![](B+Tree_Indexing.assets/image-20240206212059821.png)
+> ![](B+Tree_Indexing.assets/image-20240222160633201.png)
 
 
-### How to Build Clustered Index
+### Unclustered Index
+> [!def]
+> ![](B+Tree_Indexing.assets/image-20240222160946371.png)
+
+
+
+
+### Build Clustered Index
 > [!overview]
-> ![](B+Tree_Indexing.assets/image-20240206191133312.png)
-
-
-### Look Up Operation
-> [!def]
-> ![](B+Tree_Indexing.assets/image-20240206191228336.png)
+> ![](B+Tree_Indexing.assets/image-20240206191133312.png)![](B+Tree_Indexing.assets/image-20240206191228336.png)
 
 
 
@@ -206,15 +215,15 @@
 
 
 
-### Pros of Clustered Index
+### Pros/Cons of Clustered Index
 > [!important]
-> ![](B+Tree_Indexing.assets/image-20240206191533720.png)![](B+Tree_Indexing.assets/image-20240206191541212.png)
+> ![](B+Tree_Indexing.assets/image-20240206212059821.png)![](B+Tree_Indexing.assets/image-20240206191533720.png)![](B+Tree_Indexing.assets/image-20240206191541212.png)
 
 
 ## Integrated Example
 > [!example] Fa20 Disc03 P2
 > ![](B+Tree_Indexing.assets/image-20240206212927406.png)![](B+Tree_Indexing.assets/image-20240206212932443.png)
-> For (d), note that it is possible to not having only one records match, so we'd better search the full table. Moreover, since `grade_received` is not a primary key, nor is it an index, so we have to perform full table scan, which is different from (c) where we are searching based on the composite index (assignment_id, student_id).
+> For (d), note that it is possible to not having only one records match, so in the worst case it's equivalent to searching the full table. Moreover, since `grade_received` is not a primary key, nor is it an index, so we have to perform full table scan, which is different from (c) where we are searching based on the composite index (assignment_id, student_id).
 
 
 # B\+ Tree Operation Costs
@@ -267,6 +276,16 @@
 
 
 
+# B\+ Tree Encoding
+## S-Expression
+> [!def]
+> S-expressions (or sexps) are a compact way of encoding nested tree-like  structures (sort of like how JSON is a way of encoding nested dictionaries and lists). n.toSexp() returns an sexp encoding of the subtree rooted by n. 
+> 
+> For example, the following tree:
+> ![](B+Tree_Indexing.assets/image-20240222091341479.png)
+> has the following sexp  (((1 (1 1)) (2 (2 2))) 3 ((3 (3 3)) (4 (4 4)))) .
+> 
+> Here, (1 (1 1)) represents the mapping from key 1 to record id (1, 1).
 
 
 

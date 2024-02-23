@@ -1,8 +1,84 @@
 {
   "recentFiles": [
     {
+      "basename": "Cython",
+      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md"
+    },
+    {
+      "basename": "Project2_Multi-Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
+    },
+    {
+      "basename": "Project2_B+_Tree(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
+    },
+    {
+      "basename": "B+Tree_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
+    },
+    {
+      "basename": "4_Adverserial_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
+    },
+    {
+      "basename": "2_Types_of_RL",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
+    },
+    {
+      "basename": "1_Uninformed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "Project1_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
+    },
+    {
       "basename": "3_Query_Optimization",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "Profiling",
+      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "1_Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "11-iterators-joins-2",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Storage_Models_Compressions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md"
+    },
+    {
+      "basename": "Hash_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md"
+    },
+    {
+      "basename": "image-20240221121000831",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.assets/image-20240221121000831.png"
+    },
+    {
+      "basename": "1_Markov_Decision_Process",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
     },
     {
       "basename": "4_Random_Forest",
@@ -11,14 +87,6 @@
     {
       "basename": "3_Decision_Tree",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "1_Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
     },
     {
       "basename": "Entropies",
@@ -81,10 +149,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
     },
     {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
       "basename": "3_Regression&Reparametrization",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
     },
@@ -103,14 +167,6 @@
     {
       "basename": "Basic",
       "path": "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md"
-    },
-    {
-      "basename": "Markov_Decision_Process",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/Markov_Decision_Process.md"
-    },
-    {
-      "basename": "4_Adverserial_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
     },
     {
       "basename": "Related_Resources",
@@ -143,62 +199,6 @@
     {
       "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Profiling",
-      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
-    },
-    {
-      "basename": "Ch1_DPV_Intro_Big-O",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
-    },
-    {
-      "basename": "Project2_B+_Tree(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Ch3_Linear_Regression",
-      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.md"
-    },
-    {
-      "basename": "Project2_Multi-Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
-    },
-    {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
-      "basename": "B+Tree_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
-    },
-    {
-      "basename": "Ch2_Overview_of_Statistical_Learning",
-      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
-    },
-    {
-      "basename": "Statistical_Learning_Resources",
-      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md"
-    },
-    {
-      "basename": "Ch4_Logistic_Regression",
-      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch4_Logistic_Regression.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.md"
-    },
-    {
-      "basename": "Equality",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Equality.md"
-    },
-    {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
     }
   ],
   "omittedPaths": [],

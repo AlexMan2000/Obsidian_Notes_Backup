@@ -12,6 +12,8 @@
 > **In other words:**
 > - Streaming operator will return a result from its requestee immediately after it receives that result.
 > - Blocking operator will not return the results until the requestee has returned all the results. Like a greedy collector.
+> 
+> ![](2_Iterators&Joins.assets/image-20240221163032473.png)![](2_Iterators&Joins.assets/image-20240221163051566.png)![](2_Iterators&Joins.assets/image-20240221163144171.png)
 
 
 
@@ -52,9 +54,10 @@
 ## Schema&Costing 
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220103434028.png)
+> Another concept is inner relation and outer relation, the inner here means the relation that appears in the inner loop of our nested loop algorithms.
 
 
-## Simple Theta Join
+## SNLJ
 ### Simple Nested Loops Theta Join
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104035399.png)
@@ -65,22 +68,46 @@
 > ![](2_Iterators&Joins.assets/image-20240220104147463.png)
 
 
-## Page Nested Loop Join
+## PNLJ
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104606589.png)
 
 
 
-## Chunk Nested Loop Join
+## BNLJ
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104628252.png)
-> **Note:** B-2 = Buffer page size - input frame for S - buffer frame for output
+> **Note:**
+> - Here we need 1 buffer page for inner relation, 1 buffer for output, B - 2 buffer for outer relation. 
+> - B-2 = Buffer page size - input frame for S - buffer frame for output
 
 
-## Index Nested Loops Join
+## INLJ
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104647536.png)![](2_Iterators&Joins.assets/image-20240220104653362.png)
 > For unclustered index, since the pointer to RID is in random manner, in order to find all the matching records we have to traverse multiple pages while for clustered index, the record is clustered so we expect less page I/Os to happen.
+> 
+> Here for alt 2 index, the runtime is approximately computed as follows:
+> 1. For **clustered index**, we have: I/O = $log_F(num~of~leaves)$(height of the index) + 1(read leaf page) + $\lceil\frac{num~of~matching~tuples}{tuples~per~page}\rceil$
+> 2. For **unclustered index**, we have: I/O = $log_F(num~of~leaves)$(height of the index) + 1(read leaf page) + num of matching tuples
+
+
+
+## Comparison Example
+> [!example] Fa20 Disc06 P1
+> ![](2_Iterators&Joins.assets/image-20240221163459396.png)
+
+> [!algo] SNLJ
+> ![](2_Iterators&Joins.assets/image-20240221171047518.png)
+
+> [!algo] PNLJ
+> Assume that C is the outer relation, we have I/O = $50+50\times 100=5050~I/Os$
+
+> [!algo] BNLJ
+> ![](2_Iterators&Joins.assets/image-20240221171053392.png)
+
+> [!algo] INLJ 
+> ![](2_Iterators&Joins.assets/image-20240221171100935.png)![](2_Iterators&Joins.assets/image-20240221171115325.png)
 
 
 
@@ -96,13 +123,13 @@
 > Note that the final expression for the I/O cost is computed using the formula:
 > ![](2_Iterators&Joins.assets/image-20240220135653879.png)
 
-
-> [!example]
+> [!example] Example in Notes
 > ![](2_Iterators&Joins.assets/image-20240220133358784.png)![](2_Iterators&Joins.assets/image-20240220133406700.png)![](2_Iterators&Joins.assets/image-20240220133415612.png)
 
 
 
-## Comparisons
+
+## Optimizations
 ### Join First, Sort Later - NLJ + SMJ
 > [!algo]
 > ![](2_Iterators&Joins.assets/image-20240220135932083.png)![](2_Iterators&Joins.assets/image-20240220135946019.png)
@@ -120,12 +147,18 @@
 
 
 
-## Refinements
+### Refinements
 > [!concept]
 > In SMJ, we have two phases, we first sort $R$ and $S$ independently, then merge them using the algorithm.
 > 
 > But we could improve the runtime performance by doing the merging across $R$ and $S$ while sorting. In other words, each sorted run now contains both records from $R$ and $S$.
 > ![](2_Iterators&Joins.assets/image-20240220140206901.png)
+> Bascially the formula is: read and write at pass 0($2\times([R]+[S])$), read and merge at pass 1($[R]+[S]$), so in total the runtime is $3\times([R]+[S])$.
+
+
+## Examples
+> [!example] Fa20 Disc06 P1
+> ![](2_Iterators&Joins.assets/image-20240221171321378.png)![](2_Iterators&Joins.assets/image-20240221172004721.png)
 
 
 
@@ -154,19 +187,36 @@
 > [!def] Sketch
 > ![](2_Iterators&Joins.assets/image-20240220160758589.png)![](2_Iterators&Joins.assets/image-20240220161140234.png)![](2_Iterators&Joins.assets/image-20240220160808985.png)
 
-
-### Example
 > [!example]
 > See [11-iterators-joins-2](11-iterators-joins-2.pdf)
 > ![](2_Iterators&Joins.assets/image-20240220163046433.png)
-> Note that the only requirement of this method is that the partition of the smaller relation should fit into the B-2 buffers.
+> Note that the only requirement of this method is that the smaller relation partition inside an arbitrary partition should fit into the B-2 buffers.
 > 
 > If in some table for some attribute(like gender), we cannot partition it into small partitions that fit into the B-2 buffers, then we cannot use this method at all, there is no way to build in-memory hashtable.
 
 
+
+
+
 ### Cost of Grace Hash Join
 > [!code] Runtime Analysis
+> Note that the analysis here is simplified. Since typically for partitioning phase, we will have to write out at least as many pages as we read into the buffer. So the I/O given below is an underestimate.
 > ![](2_Iterators&Joins.assets/image-20240220163204185.png)![](2_Iterators&Joins.assets/image-20240220163854837.png)![](2_Iterators&Joins.assets/image-20240220163903834.png)
+
+> [!example] Fa20 Disc06 P2
+> ![](2_Iterators&Joins.assets/image-20240221181037384.png)
+> **Here the first partition steps goes like the following:**
+> - There are 100 + 50 pages for Catalog and Transaction table in total, we hash all these 150 pages of data using 1 input buffer and 10 - 1 = 9 output buffers.
+> - Since the hash function is uniform for both tables, this means for each output partition, it contains $\lceil\frac{150}{9}\rceil=17$ pages, inside of which roughly $\frac{50}{100+50}=\frac{1}{3}$ of them($\lceil\frac{17}{3}\rceil=6$) are from Transaction table.
+> - Since $6<B-2=8$, the smaller relation inside each partition can fit in the buffer, thus we do not need recursive partitioning.
+> 
+> ![](2_Iterators&Joins.assets/image-20240221181629276.png)![](2_Iterators&Joins.assets/image-20240221182300665.png)
+
+
+
+
+
+
 
 
 # Summary
