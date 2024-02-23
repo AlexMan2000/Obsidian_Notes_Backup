@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "794224d44eb212d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a63c248a95f5312",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,53 +232,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "096318356bddf7f0",
+  "active": "8a63c248a95f5312",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223164110532.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223164051327.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223164009489.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223164007327.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240220165436910.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223163243098.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223163218004.png",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md",
+    "Mathematics/Differential_Equations/MIT_18.031/Untitled.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223161251092.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223161240672.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223161228122.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240223161219275.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/Related_Resources.md",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240222160946371.png",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240222160633201.png",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+_Tree_Bulk_Load_Visualizations.pdf",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+_Tree_Bulk_Load_Visualizations.pdf.crdownload",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.assets/image-20240222091341479.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
-    "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md",
     "Computer_Science/Computer_Science_Tools/Python_Tools/CPython/spring2024_lecture05_part02.ipynb",
     "Computer_Science/Computer_Science_Tools/Python_Tools/CPython/未确认 322613.crdownload",
     "Computer_Science/Computer_Science_Tools/Python_Tools/CPython",
     "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221182300665.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221181629276.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221181037384.png",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221172004721.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221171321378.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221171115325.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets/image-20240221171100935.png",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md",
     "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.assets",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Channel_Coding.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Proximal_Gradient_Descent.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/1_Linear_Programs.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.assets",
     "未命名.canvas"
   ]

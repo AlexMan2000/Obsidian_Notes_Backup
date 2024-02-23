@@ -125,7 +125,11 @@
 > In System R:
 > 1. The **query parser** first checks for correctness and authorization (user permissions to access the table). It then generates a parse tree out of the query. This step is usually fairly straightforward, since it’s just breaking up the query into chunks that our programming language can understand, without having to make any decisions.
 > 2. Next, the **query rewriter** converts queries into even smaller query blocks (like a single WHERE clause), and flattens the views.
-> 3. Once the query is rewritten, it gets passed into the **query optimizer**. The primary goal of a query optimizer is to translate a simple query plan into a better query plan. A cost-based query optimizer processes one query block at a time (e.g. select, project, join, group by, order by)
+> 3. Once the query is rewritten, it gets passed into the **query optimizer**. The primary goal of a query optimizer **is to translate a simple query plan into a better query plan**. A cost-based query optimizer processes one query block at a time (e.g. select, project, join, group by, order by)
+
+> [!example] Concept Check
+> ![](3_Query_Optimization.assets/image-20240223145104044.png)
+
 
 
 ## Components of Query Optimizer
@@ -229,11 +233,106 @@
 ### System R Heuristics
 > [!def]
 > ![](3_Query_Optimization.assets/image-20240221161551051.png)![](3_Query_Optimization.assets/image-20240221161558692.png)
+> Note that the join plan space is exponential. But with left deep join assumption the plan space is permutation in $N$(i.e.$N!$) where $N$ is the number of relations to be joined. 
+> 
+> Since for we could permute the relation in the tree to get a different plan.
+> 
+> So even with left deep join heuristics, the join query plan space is still very huge.
 
 
-### Join: Enumeration of Left-Deep Plans
+
+
+### Principle of Optimality
+> [!important]
+> ![](3_Query_Optimization.assets/image-20240223164009489.png)![](3_Query_Optimization.assets/image-20240223164051327.png)
+
+
+
+
+### Selinger's Algorithm
+> [!overview]
+> ![](3_Query_Optimization.assets/image-20240223164110532.png)![](3_Query_Optimization.assets/image-20240221161509682.png)
+
+### Pass 1: Single Table Relation
 > [!def]
-> ![](3_Query_Optimization.assets/image-20240221161509682.png)
+> The first pass of System R determines how to access single tables optimally or interestingly.
+
+
+#### Scanning 
+> [!def]
+> ![](3_Query_Optimization.assets/image-20240223153801134.png)![](3_Query_Optimization.assets/image-20240223153829907.png)
+
+> [!important] Alt 1 Indexing Cost
+> ![](3_Query_Optimization.assets/image-20240223153920742.png)![](3_Query_Optimization.assets/image-20240223153933299.png)
+
+> [!important] Alt 2/3 Indexing Cost
+> ![](3_Query_Optimization.assets/image-20240223154037443.png)![](3_Query_Optimization.assets/image-20240223154050039.png)
+
+
+
+
+#### Advancing - Optimality&Interesting Orders
+> [!def]
+> ![](3_Query_Optimization.assets/image-20240223154108197.png)![](3_Query_Optimization.assets/image-20240223154121279.png)
+> **Several things to note:**
+> 1. Each 1-relation table plan need at least one plan to advance. For example if we are joining on three tables $A,B,C$, then we have to propose a plan for each of these tables for the return value of the base case.
+> 2. For each single table, we need to propose the best plan(in terms of I/O costs) and an interesting order plan. So there could be multiple plans being advanced from each base case.
+
+
+### Pass 2...n: Downstream Joins
+> [!def]
+> ![](3_Query_Optimization.assets/image-20240223154152173.png)![](3_Query_Optimization.assets/image-20240223154202511.png)![](3_Query_Optimization.assets/image-20240223154215143.png)
+> **Several things to note:**
+> 1. We don't consider those plans that are not left deep join. Like $A \bowtie (B\bowtie C)$
+> 2. We don't consider the plan that are not advanced from previous pass. For example in pass 1, we don't advance $A \bowtie B$ then in pass 2 we won't advance $(A \bowtie B)\bowtie C$ to pass 3.
+> 4. We will advance the best plan(in terms of I/O costs) and an interesting order plan for ORDER BY or GROUP BY since WHERE has been pushed down.
+> 
+> 
+
+> [!code] Pseudocode
+> ![](3_Query_Optimization.assets/image-20240223155932044.png)![](3_Query_Optimization.assets/image-20240223155940883.png)![](3_Query_Optimization.assets/image-20240223155857138.png)
+
+
+## Selinger Optimizer Cost
+> [!important]
+> ![](3_Query_Optimization.assets/image-20240223163218004.png)![](3_Query_Optimization.assets/image-20240223163243098.png)
+
+
+
+
+
+
+## Plan Searching Examples
+> [!example] Note09
+> ![](3_Query_Optimization.assets/image-20240223160040971.png)![](3_Query_Optimization.assets/image-20240223160057402.png)![](3_Query_Optimization.assets/image-20240223161038644.png)![](3_Query_Optimization.assets/image-20240223161052674.png)![](3_Query_Optimization.assets/image-20240223161105676.png)![](3_Query_Optimization.assets/image-20240223161116743.png)![](3_Query_Optimization.assets/image-20240223161130986.png)![](3_Query_Optimization.assets/image-20240223161141183.png)![](3_Query_Optimization.assets/image-20240223161152002.png)![](3_Query_Optimization.assets/image-20240223161205197.png)![](3_Query_Optimization.assets/image-20240223161219275.png)![](3_Query_Optimization.assets/image-20240223161228122.png)![](3_Query_Optimization.assets/image-20240223161240672.png)![](3_Query_Optimization.assets/image-20240223161251092.png)
+> Note that here the join is not SMJ, in other words, it is not a sorted join, so we will only consider the plan that has the lowest I/O cost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

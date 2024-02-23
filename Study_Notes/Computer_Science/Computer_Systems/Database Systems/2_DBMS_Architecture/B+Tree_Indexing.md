@@ -146,6 +146,7 @@
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184045344.png)
 > Here each entry of the leaf nodes store the actual data, we don't have to do translation between pointer and (pageID, slotID) as we have seen in [B-plus Tree Index (Reference)](B+Tree_Indexing.md#B-plus%20Tree%20Index%20(Reference)).
+> 
 
 
 ### Alt 2
@@ -226,13 +227,15 @@
 > For (d), note that it is possible to not having only one records match, so in the worst case it's equivalent to searching the full table. Moreover, since `grade_received` is not a primary key, nor is it an index, so we have to perform full table scan, which is different from (c) where we are searching based on the composite index (assignment_id, student_id).
 
 
+
+
 # B\+ Tree Operation Costs
 ## Index Assumptions
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206192627898.png)
 
 
-## Scanning All Records
+## Full Scan
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206193825139.png)
 > **Note:** 1.5 here since in order to hold the same amount of records in the heap file as the unclustered index case, we have to allocate more pages. Here the data blocks mean the total number of records, not pages.
@@ -245,6 +248,11 @@
 > Note here that the leaf will never be counted as part of the height of the index, as shown in [B Tree and Scale](B+Tree_Indexing.md#B%20Tree%20and%20Scale).
 > 
 > ![](B+Tree_Indexing.assets/image-20240206200115786.png)
+> In summary, the total number of I/O to find a record is:
+> (cost to reach level above leaf) + (num of leaf nodes read) + (num of data pages read).
+> 
+> For alt 1 indexing, the formula is: 
+> (cost to reach level above leaf) + (num of leaf nodes read).
 
 
 ## Range Search

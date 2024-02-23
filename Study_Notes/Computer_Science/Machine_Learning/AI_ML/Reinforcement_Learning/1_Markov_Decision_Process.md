@@ -36,7 +36,6 @@
 > ![](1_Markov_Decision_Process.assets/image-20240215134429484.png)![](1_Markov_Decision_Process.assets/image-20240215134439231.png)![](1_Markov_Decision_Process.assets/image-20240215141034808.png)
 
 
-
 > [!example] 
 > ![](1_Markov_Decision_Process.assets/image-20240215134703504.png)
 > For this value iteration, we can quickly determine which action the MDP will pick by observation:
@@ -108,12 +107,27 @@ for i in range(25):
 
 
 
-## Problem with Value Iteration
+## Quicker Computation of Convergence
+> [!example] 
+> ![](1_Markov_Decision_Process.assets/image-20240223132516176.png)![](1_Markov_Decision_Process.assets/image-20240223132535429.png)
+> Since the reward between states other than EXIT is zero, we don't can think of it the following way:
+> Suppose the bottom-right corner of the grid is state $M$, then we have:
+> 
+> $$V_{3}(A)=V_1(D)\times \frac{1}{2^(3-1)}=\frac{100}{4}=25$$
+> 
+> Now A converges at step 3, we compute for $B$, since we can easily see that $V_6(B)=V_3(A)\times \frac{1}{2^{6-3}}=\frac{25}{8}$, where $B$ converges at step 6.
+
+
+
+
+## Runtime Analysis
 > [!important]
 > ![](1_Markov_Decision_Process.assets/image-20240215140606806.png)
-> **Problem 1: It's slow – O(S^2A) per iteration**
+> **Problem 1: It's slow – O(S^2A) <font color="#d83931">per iteration</font>**
 > 
 > Suppose we have $S$ states, and for each state we have $A$ actions, so for each state $s$, we have to consider $A$ possible actions, and in order to determine which action to choose, for each action we have to compute its Q-value, which involves another $S$ states($s'$) to compute the expectimax, so overall it is $O(S\times A\times S)=O(S^{2}\times A)$.
+> 
+> In short, we have $S$ states, for each state, we have $A$ actions, for each action, we have to consider all $S$ states, so taking product yields $S\times A\times S = S^{2}\times A$
 > 
 > **Problem 2: The "max" at each state rarely changes**
 > 
@@ -180,7 +194,12 @@ for i in range(25):
 > Note that here $V^{\pi_i}$ at state 0 is calculated by Bellman's equation instead of value iteration.
 
 
-
+## Runtime Analysis
+> [!important]
+> The policy iteration contains two parts: policy evaluation and policy improvement.
+> - Policy evaluation is the same as solving a $S\times S$ linear system, which takes $O(S^3)$.
+> - Policy improvement takes roughly the same time as value iteration, which is $O(S^{2}\times A)$.
+> - Given that $|A|<<|S|$, we have run time $O(S^3)$ for policy iteration.
 
 
 # Q-Value Iteration
@@ -189,6 +208,7 @@ for i in range(25):
 
 > [!example]
 > See [Value Iteration and Q-Iteration](1_Markov_Decision_Process.md#Integrated%20Examples#Value%20Iteration%20and%20Q-Iteration)
+
 
 # MDP Properties
 ## Discount Factor
@@ -200,6 +220,25 @@ for i in range(25):
 ## Convergence Property
 > [!property]
 > ![](1_Markov_Decision_Process.assets/image-20240215145750876.png)
+
+
+
+## Optimal Policy and Reward Functions
+> [!property]
+> ![](1_Markov_Decision_Process.assets/image-20240223133013738.png)![](1_Markov_Decision_Process.assets/image-20240223133024877.png)![](1_Markov_Decision_Process.assets/image-20240223133038129.png)
+> For $R_2$, the optimal V values will certainly change but the optimal policy won't change. You could think that the transitional reward is much smaller than the exiting rewards, so instead of looping around and get small rewards, the agent will exit first.
+> 
+> For $R_4$, if all the rewards are negative, then the optimal policy for the agent at state A and B would be to go to the closest exit as soon as possible($A\to bottom$ and $B\to top$) instead of both going to the bottom exit in the previous settings.
+
+
+
+## Runtime Property
+> [!property]
+> ![](1_Markov_Decision_Process.assets/image-20240223130854044.png)
+> One iteration of value iteration takes $O(S^{2}\times A)$.
+> One iteration of policy iteration takes $O(S^3+S^{2} \times A)=O(S^3)$. 
+
+
 
 
 

@@ -78,6 +78,15 @@
 > [!def]
 > ![](2_Types_of_RL.assets/image-20240221115306496.png)
 
+> [!example] Fa23 Disc05 P2
+> ![](2_Types_of_RL.assets/image-20240223124156766.png)
+> Each transition can be regarded as a sample in the above figure:
+> - **Transition 1**: We will update $Q(D, east)$ to be $(1-0.5)\times 0+0.5\times (-1+\max_{a'}Q(E,a'))=0.5\times(-1)=-0,5$
+> - **Transition 2**: We will update $Q(E, east)$ to be $(1-0.5)\times 0+0.5\times (2+\max_{a'}Q(E,a'))=0.5\times(2+\max\{0\})=1$
+> - **Transition 3**: We will update $Q(E, west)$ to be $(1-0.5)\times 0+0.5\times (0+\max_{a'}Q(E,a'))=0.5\times(0+\max\{0\})=0$
+> - **Transition 4**: We will update $Q(D, east)$ to be $(1-0.5)\times (-0.5)+0.5\times (-1+\max_{a'}Q(E,a'))=0.5\times(-1+1)=-0.25$
+
+
 
 
 ## Q-Learning Properties
@@ -86,14 +95,16 @@
 
 
 
-
-
 # Exploration and Exploitation
 > [!motiv] Motivation
 > ![](2_Types_of_RL.assets/image-20240221121411797.png)
+> **Some differences:**
+> - Exploration means adventuring into new paths.
+> - Exploitation means taking actions repeatedly along the same or similar paths.
 
 
-## Method 1: ε-Greedy Polilcies
+
+## Method 1: ε-Greedy Policies
 > [!def]
 > ![](2_Types_of_RL.assets/image-20240221121757048.png)
 > If we choose $\epsilon$ to be too close to 1, then after many learning iterations, we are not using the learning results(i.e. the Q-values), instead we are still acting randomly. So we want to lower $\epsilon$ alongside our exploration process.

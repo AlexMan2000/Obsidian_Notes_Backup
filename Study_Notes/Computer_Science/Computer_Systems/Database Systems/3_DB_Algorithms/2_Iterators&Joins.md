@@ -72,6 +72,22 @@
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104606589.png)
 
+> [!example] Vitamin
+> Consider the join(R, S) on R.a = S.b, given the following information about the relations to be joined. The cost metric is the number of page I/Os unless otherwise noted, and the cost of writing out the result should be uniformly ignored. For join(R, S) assume R is the outer loop and S the inner loop.
+> - Relation R contains 10,000 tuples and has 10 tuples per page.
+> - Relation S contains 2000 tuples and also has 10 tuples per page.
+> - Attribute b of relation S is the primary key for S.
+> - Both relations are stored as simple heap files.
+> - Neither relation has any indexes built on it.
+> - 52 buffer pages are available.
+> 
+> **What is the cost of joining R and S using a page-oriented nested loop join?** 
+> 
+> Since $R$ is the outer relation, by the formula we have $[R]+[R]\times [S]=\frac{10000}{10}+\frac{10000}{10}\times\frac{2000}{10}=201000$
+> 
+> **What is the minimum number of buffer pages required for the cost of the above question to remain the same?**
+> 
+> We need 3 buffer pages at minimum, one for R input page, one for S input page, one for output buffer.
 
 
 ## BNLJ
@@ -82,6 +98,25 @@
 > - B-2 = Buffer page size - input frame for S - buffer frame for output
 
 
+> [!example] Vitamin
+> Consider the join(R, S) on R.a = S.b, given the following information about the relations to be joined. The cost metric is the number of page I/Os unless otherwise noted, and the cost of writing out the result should be uniformly ignored. For join(R, S) assume R is the outer loop and S the inner loop.
+> - Relation R contains 10,000 tuples and has 10 tuples per page.
+> - Relation S contains 2000 tuples and also has 10 tuples per page.
+> - Attribute b of relation S is the primary key for S.
+> - Both relations are stored as simple heap files.
+> - Neither relation has any indexes built on it.
+> - 52 buffer pages are available.
+> 
+> **What is the cost of joining R and S using a block nested loop join?** 
+> 
+> Since $R$ is the outer relation, by the formula we have $[R]+block_{num}\times [S]=\frac{10000}{10}+\frac{\frac{10000}{10}}{52-2}\times\frac{2000}{10}=5000$
+> 
+> **What is the minimum number of buffer pages required for the cost of the above question to remain the same?**
+> 
+> We need 52 buffer pages at minimum, 52-2 = 50 for R input block, one for S input page, one for output buffer.
+
+
+
 ## INLJ
 > [!def]
 > ![](2_Iterators&Joins.assets/image-20240220104647536.png)![](2_Iterators&Joins.assets/image-20240220104653362.png)
@@ -90,6 +125,13 @@
 > Here for alt 2 index, the runtime is approximately computed as follows:
 > 1. For **clustered index**, we have: I/O = $log_F(num~of~leaves)$(height of the index) + 1(read leaf page) + $\lceil\frac{num~of~matching~tuples}{tuples~per~page}\rceil$
 > 2. For **unclustered index**, we have: I/O = $log_F(num~of~leaves)$(height of the index) + 1(read leaf page) + num of matching tuples
+
+> [!example] Concept Check
+> ![](2_Iterators&Joins.assets/image-20240223154624887.png)![](2_Iterators&Joins.assets/image-20240223154641652.png)
+
+
+> 
+
 
 
 
@@ -147,7 +189,7 @@
 
 
 
-### Refinements
+### SMJ Refinements
 > [!concept]
 > In SMJ, we have two phases, we first sort $R$ and $S$ independently, then merge them using the algorithm.
 > 
@@ -156,10 +198,46 @@
 > Bascially the formula is: read and write at pass 0($2\times([R]+[S])$), read and merge at pass 1($[R]+[S]$), so in total the runtime is $3\times([R]+[S])$.
 
 
-## Examples
+## Cost Analysis
+> [!important] Runtime Cost
+> Suppose we have two relations $R$ and $S$ and $B$ buffer pages, we want to use SMJ to join them, then:
+> - Without optimization, we first sort $R$ and $S$ independently then merge them together. 
+> 	- Sorting $R$ and $S$ takes $2\times [R](1+log_{B-1}\lceil\frac{[R]}{B}\rceil)$ and $2\times [S](1+log_{B-1}\lceil\frac{[S]}{B}\rceil)$ respectively. If we enforce 2-pass requirement, then it is $2\times [R](1+1)=4\times [R]$ and $4\times [S]$ respectively.
+> 	- Merging steps requires reading both the pages from $R$ and $S$, so it is $[R]+[S]$ in total.
+> 	- Adding up we get $2\times [R](1+log_{B-1}\lceil\frac{[R]}{B}\rceil)+2\times [S](1+log_{B-1}\lceil\frac{[S]}{B}\rceil)+[R]+[S]$.
+> 	- Under 2-pass framework, we get $4\times ([R]+[S])+([R]+[S])=5\times([R]+[S])$.
+> - With optimization, we will sort $R$ and $S$ together at pass 0, and merge them as we have seen in [N-Way External Merge Sort](1_Sorting&Hashing.md#N-Way%20External%20Merge%20Sort), 
+> 	- The cost is thus $2\times([R]+[S])$(read and write) at pass 0. 
+> 	- At pass 1, 2, 3, ...., the total runtime is $2\times ([R]+[S])\times log_{B-1}\lceil\frac{[R]+[S]}{B}\rceil)-1$. The $-1$ since we don't need to materialize at the write stage of the last pass.
+> 	- If we enforce 2-pass requirement, then it is $2\times([R]+[S])\times(1+1)-1=3\times([R]+[S])$ in total.
+
+> [!important] Memory Cost
+> Suppose we have two relations $R$ and $S$ and $B$ buffer pages, we want to use SMJ to join them within $p$ passes, then assuming 2-pass requirement we have:
+> - Without optimization, we require $$\frac{\frac{[R]}{B}}{B-1}\leq 1$$ and $$\frac{\frac{[S]}{B}}{B-1}\leq 1$$, taking together we mean: $$\frac{\frac{max\{[R],[S]\}}{B}}{B-1}\leq 1$$ and thus $$B(B-1)\geq \max\{[R],[S]\}$$
+> - With optimization, we require $$\frac{\frac{[R]+[S]}{B}}{B-1}\leq 1$$ and thus $$B(B-1)\geq [R]+[S]$$
+
+
+## Analysis Examples
 > [!example] Fa20 Disc06 P1
 > ![](2_Iterators&Joins.assets/image-20240221171321378.png)![](2_Iterators&Joins.assets/image-20240221172004721.png)
 
+
+> [!example] Vitamin
+> Consider the join(R, S) on R.a = S.b, given the following information about the relations to be joined. The cost metric is the number of page I/Os unless otherwise noted, and the cost of writing out the result should be uniformly ignored. For join(R, S) assume R is the outer loop and S the inner loop.
+> - Relation R contains 10,000 tuples and has 10 tuples per page.
+> - Relation S contains 2000 tuples and also has 10 tuples per page.
+> - Attribute b of relation S is the primary key for S.
+> - Both relations are stored as simple heap files.
+> - Neither relation has any indexes built on it.
+> - 52 buffer pages are available.
+> 
+> **What is the cost of joining R and S using SMJ within 2-pass.** 
+> 
+> Since $R$ is the outer relation, by the formula we have $5\times([R]+[S])=6000$ I/Os.
+> 
+> **What is the minimum number of buffer pages required for the cost of the above question to remain the same(within 2 pass)?**
+> 
+> We need 33 buffers, which can be calculated as $B^{2}\geq B(B-1)\geq \max\{[R],[S]\}$ where $B\geq \frac{1+\sqrt{4001}}{2}=32.126\approx 33$.
 
 
 
@@ -190,11 +268,18 @@
 > [!example]
 > See [11-iterators-joins-2](11-iterators-joins-2.pdf)
 > ![](2_Iterators&Joins.assets/image-20240220163046433.png)
-> Note that the only requirement of this method is that the smaller relation partition inside an arbitrary partition should fit into the B-2 buffers.
+> Note that **the only requirement of this method is that the smaller relation partition inside an arbitrary partition should fit into the B-2 buffers.**
 > 
-> If in some table for some attribute(like gender), we cannot partition it into small partitions that fit into the B-2 buffers, then we cannot use this method at all, there is no way to build in-memory hashtable.
+> If in some table for some attribute(like gender), we cannot partition it into small partitions that fit into the B-2 buffers, then we cannot use this method at all, there is no way to build in-memory hash-table.
 
+> [!example] Partition Size
+> ![](2_Iterators&Joins.assets/image-20240223143246987.png)
 
+> [!example] Hash Function Choice
+> ![](2_Iterators&Joins.assets/image-20240223143409194.png)
+> The key reason is that the purpose of partition and probing is different:
+> - Partition aims to break the input pages into smaller partitions so that the tuples with the keys that have the same hash value will go to the same partition, forming some kind of grouping.
+> - Probing aims to associate the probing relation with the in-memory hash table, used for matching the output tuples.
 
 
 

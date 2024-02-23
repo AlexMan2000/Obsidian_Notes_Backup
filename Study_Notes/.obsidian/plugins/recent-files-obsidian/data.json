@@ -1,8 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "3.6_Convolution",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md"
+    },
+    {
+      "basename": "Probability_Formulas_and_Theorems",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
+    },
+    {
+      "basename": "3.7_Laplace_Transform",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
       "basename": "Cython",
       "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md"
+    },
+    {
+      "basename": "B+Tree_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
+    },
+    {
+      "basename": "1_Markov_Decision_Process",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/Related_Resources.md"
+    },
+    {
+      "basename": "2_Types_of_RL",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
     },
     {
       "basename": "Project2_Multi-Search",
@@ -13,16 +53,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
     },
     {
-      "basename": "B+Tree_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
-    },
-    {
       "basename": "4_Adverserial_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
-    },
-    {
-      "basename": "2_Types_of_RL",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
     },
     {
       "basename": "1_Uninformed_Search",
@@ -37,10 +69,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
     },
     {
-      "basename": "3_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
-    },
-    {
       "basename": "Profiling",
       "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
     },
@@ -51,10 +79,6 @@
     {
       "basename": "1_Sorting&Hashing",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
     },
     {
       "basename": "11-iterators-joins-2",
@@ -75,10 +99,6 @@
     {
       "basename": "image-20240221121000831",
       "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.assets/image-20240221121000831.png"
-    },
-    {
-      "basename": "1_Markov_Decision_Process",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
     },
     {
       "basename": "4_Random_Forest",
@@ -179,26 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Graphics/Related_Resources.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Introduction.md"
-    },
-    {
-      "basename": "Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Routing.md"
-    },
-    {
-      "basename": "Shortest_Path_On_Graph",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Shortest_Path_On_Graph.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Mathematics/Numerical_Methods/Related_Resources.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     }
   ],
   "omittedPaths": [],
