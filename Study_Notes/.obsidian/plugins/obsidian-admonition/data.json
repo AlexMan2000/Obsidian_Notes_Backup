@@ -249,6 +249,30 @@
       "injectColor": true,
       "noTitle": false,
       "copy": true
+    },
+    "link": {
+      "type": "link",
+      "color": "172, 35, 175",
+      "icon": {
+        "name": "link",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Link",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "story": {
+      "type": "story",
+      "color": "22, 172, 52",
+      "icon": {
+        "name": "history",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Story",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

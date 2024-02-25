@@ -1,7 +1,7 @@
 # Preparations
 ## gcc and objdump
 > 运行`objdump -d ctarget > ctarget_dumped.txt`得到反汇编结果。
-> **对于编写好的汇编语言文件**`**.s**`**, 我们可以使用如下步骤得到其反汇编文件:**
+> **对于编写好的汇编语言文件**`.s`**, 我们可以使用如下步骤得到其反汇编文件:**
 > 1. `gcc -c filename.s`得到`filename.o`。
 > 2. `objdump -d filename.o > filename.d`得到反汇编文件`filename.d`。
 
@@ -15,7 +15,7 @@
 
 
 ## gdb passing flags
-> **在使用**`**gdb**`**时，我们可以使用**`**flags**`**和**`**arguments**`**如下:**
+> **在使用**`gdb`**时，我们可以使用**`flags`**和**`arguments`**如下:**
 > 1. `gdb ctarget`
 > 2. `break getbuf`
 > 3. `run -q -i rawfile.txt`
@@ -70,37 +70,42 @@
 
 
 
-# Phase 2
+# Phase 2 - ROP
 ## Overview
+> [!overview]
 > ![image.png](./X86_Attack_Lab.assets/20231024_0930462218.png)
+> Also see [Attack 2 Return-oriented Programming](../../../../Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md#Attack%202%20Return-oriented%20Programming) and [X86_Advanced](../../3_X86_Assembly/X86_Advanced.md)
 
 
 
 ## Touch 2 - ROP (Medium)
 ### Problem
+> [!task]
 > ![image.png](./X86_Attack_Lab.assets/20231024_0930483375.png)
 
 
 ### Analysis
+> [!code]
 > ![image.png](./X86_Attack_Lab.assets/20231024_0930496732.png)
 > 我们的目标就是使用`gadgets`来构造出上面的汇编代码执行逻辑。
-> **和**`**Code Injection Attack**`**的辨析:**
+> **和**`Code Injection Attack`**的辨析:**
 > 1. 相同点在于我们都是利用了`Buffer Overflow`这一行为进行代码攻击。
 > 2. 不同点在于
 >    1. `Code Injection Attack`利用注入自行构建的代码片段(前提是栈帧地址都是已知的情况)，修改函数`ret`时的行为（即跳转地址）。而`Return Oriented Programming`则是利用程序已有的代码片段，从指令中抽取出诸如`mov % rax, %rdi; ret`或者`mov % rax, %rdi; nop; ret`之类的结构，利用`ret`指令会从栈上`pop`的行为使得每次`ret`之后都从一个`gadget`指向下一个`gadget`执行。
 >    2. 在编写注入字符串时，对于`Code Injection`来说，我们的`Injected Instructions`是从低地址到高地址连续执行的，所以我们不需要写完一行指令的二进制表示之后在后面补零成`8 bytes`。而对于`ROP`来说。如果我们使用`movq`指令，那么指令一次会读取`8 bytes`的数据，所以我们要保证下一条指令或者数据必须和其对齐，也就是我们必须在编写完当前指令的二进制形式之后在后面补零。对于`ret`指令来说，我们知道`ret`相当于`pop/jump`, 而`pop`的过程在`64-bit address machine`上也是一次性会`pop 8 bytes from stack`，所以我们也必须补零。
-> 
-![image.png](./X86_Attack_Lab.assets/20231024_0930506939.png)![image.png](./X86_Attack_Lab.assets/20231024_0930516714.png)![image.png](./X86_Attack_Lab.assets/20231024_0930533743.png)![image.png](./X86_Attack_Lab.assets/20231024_0930549546.png)
+> ![image.png](./X86_Attack_Lab.assets/20231024_0930506939.png)![image.png](./X86_Attack_Lab.assets/20231024_0930516714.png)![image.png](./X86_Attack_Lab.assets/20231024_0930533743.png)![image.png](./X86_Attack_Lab.assets/20231024_0930549546.png)
 
 
 
 ## Touch 3 - ROP (Hard)
 ### Review
+> [!overview]
 > ![image.png](./X86_Attack_Lab.assets/20231024_0930584534.png)![image.png](./X86_Attack_Lab.assets/20231024_0931003299.png)
 
 
 
 ### Analysis
+> [!code]
 > 本题的思路如下:
 > 1. 首先本题需要我们构造出下列指令
 >    1. `mov <cookie's stack address> <some register>`
@@ -116,7 +121,7 @@
 **继续我们的分析:**
 > 3. 但是要将`cookie string`放在哪里呢。我们需要细致地分析一下整个程序执行过程中的栈帧变化情况。
 >    1. 首先是`test`函数作为入口函数开始执行，函数在调用`getbuf()`之前先将返回地址放在栈上，然后修改`%rip`指针执行`getbuf()`，`getbuf()`分配`40 bytes`的空间作为`buffer`，用于获取用户输入的攻击字符串。于是我们首先需要让`getbuf()`不能返回到`test`函数中，而是跳转到我们的第一个`gadget`指令所在的内存地址处。
->    2. 那么**第一个**`**gadget**`**指令**应该是什么呢，根据上面的分析，因为我们要尽快将`%rsp`保存下来，开始攻击逻辑，所以**第一条指令就是**`**mov %rsp, %rax**`，然后我们在`gadget`中寻找，结合`Encoding of movq`我们发现有好多满足条件的指令，但是我们必须选取那些后边紧接着的是`nop`的指令，于是我们**可以选取**`**0x401a06/0x401aad**`**。**
+>    2. 那么**第一个**`gadget`**指令**应该是什么呢，根据上面的分析，因为我们要尽快将`%rsp`保存下来，开始攻击逻辑，所以**第一条指令就是**`**mov %rsp, %rax**`，然后我们在`gadget`中寻找，结合`Encoding of movq`我们发现有好多满足条件的指令，但是我们必须选取那些后边紧接着的是`nop`的指令，于是我们**可以选取**`**0x401a06/0x401aad**`**。**
 >    3. **第二条指令**按逻辑就是将`%rax`中的值放在`%rdi`中(即`mov %rax, %rdi`)，查表和反汇编可以得到`**4019c5/4019a2**`**满足条件**。
 >    4. **第三条指令**按照正常逻辑就应该是将`offset`放在`%rsi`中了，但是有两个问题，第一是`offset`大小是多少，第二是用什么指令。
 >       1. 第一个问题：因为我们要保证这个`%rsp+offset`得到的地址值在我们跳转到`touch3`之后仍然是合法的，也就是说我们的`cookie string`仍然可以被引用到，所以我们的`offset`必须等我们编写完剩下的所有`tcuch`参数分配逻辑后才能确定。
