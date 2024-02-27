@@ -371,9 +371,6 @@
 
 
 
-
-
-
 ## Convergence Speed for U-strongly&L-Smooth Functions
 ### Important Lemma
 > [!important]

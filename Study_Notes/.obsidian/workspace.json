@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c0743cdfc02b0c60",
+        "id": "8249b492583284f4",
         "type": "tabs",
         "children": [
           {
-            "id": "1c77e1f76f29ae01",
+            "id": "d6df7721fec6435d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44146c6ae739bee4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,54 +207,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1c77e1f76f29ae01",
+  "active": "d6df7721fec6435d",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets/image-20240225152650933.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets/image-20240225152644184.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets/image-20240225152637986.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.assets/image-20240225150835966.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.assets/image-20240225150828269.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.assets/image-20240225150821429.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.assets/image-20240225150814878.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.assets/image-20240225150758100.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets/image-20240225145113726.png",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets/image-20240225144904720.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240227090402619.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.assets/image-20240227084945869.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.assets/image-20240227084939422.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.assets/image-20240227084929174.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.assets",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240226233353411.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240226233341445.png",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
+    "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Backpropagation_Algorithms.md",
+    "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks",
+    "Computer_Science/Computer_Networks/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos/Environment Setup.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240226220750994.png",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240226220636014.png",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240226220443126.png",
+    "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240226215921218.png",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets",
     "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Project_1.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
     "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf",
-    "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md",
-    "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md",
-    "Computer_Science/Computer_Science_Tools/Big_Data_Tools/Map_Reduce.md",
+    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md",
+    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Project_1.assets",
+    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Advanced.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md",
+    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md",
+    "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Deep_Feedforward_Neural_Network.md",
+    "Computer_Science/Computer_Science_Tools/Big_Data_Tools/Map_Reduce.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md",
     "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/[CS161 SP24] Lecture 4_ Mitigating Memory Safety Vulnerabilities.pdf",
     "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Equality.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md",
     "Computer_Science/Computer_Science_Tools/Big_Data_Tools",
-    "Computer_Science/Computer_Graphics/Related_Resources.md",
-    "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md",
-    "Computer_Science/Computer_Graphics/1_Geometry.md",
     "Computer_Science/Computer_Graphics/1_Geometry.assets",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/[CS161 SP24] Lecture 3 Extra_ More Memory Safety Vulnerabilities.pdf",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch5_Network_Security",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Untitled",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch4_Web_Security",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/[CS161 SP24] Lecture 3_ Memory Safety Vulnerabilities.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
-    "Computer_Science/Computer_Networks/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/Network_Projects/Routing.md",
     "未命名.canvas"
   ]
 }

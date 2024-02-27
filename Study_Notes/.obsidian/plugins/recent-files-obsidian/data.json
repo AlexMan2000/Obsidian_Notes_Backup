@@ -1,48 +1,116 @@
 {
   "recentFiles": [
     {
-      "basename": "1_X86_Assembly_Call_Stack",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md"
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
     },
     {
-      "basename": "Memory_Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md"
+      "basename": "3_Regression&Reparametrization",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
     },
     {
-      "basename": "3_Mitigating_Vulnerabilities",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
+      "basename": "2_Gaussian_Discriminative_Analysis",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
     },
     {
-      "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "Backpropagation_Algorithms",
+      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Backpropagation_Algorithms.md"
+    },
+    {
+      "basename": "1_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
+    },
+    {
+      "basename": "Multiprocessing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Related_Resources.md"
+    },
+    {
+      "basename": "Environment Setup",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos/Environment Setup.md"
+    },
+    {
+      "basename": "Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
+    },
+    {
+      "basename": "Fundamental OS Concepts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
     },
     {
       "basename": "3_Routing",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
     {
+      "basename": "Analysis_of_LASSO",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
+    },
+    {
       "basename": "Project_1",
       "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Project_1.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
     },
     {
       "basename": "cheatsheet",
       "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
     },
     {
-      "basename": "Random_Stuff",
-      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Random_Stuff.md"
+      "basename": "3_Mitigating_Vulnerabilities",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
     },
     {
-      "basename": "Basic",
-      "path": "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md"
+      "basename": "1_X86_Assembly_Call_Stack",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md"
+    },
+    {
+      "basename": "X86_Attack_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md"
+    },
+    {
+      "basename": "2_Memory_Vulnerability",
+      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+    },
+    {
+      "basename": "Deep_Feedforward_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Deep_Feedforward_Neural_Network.md"
     },
     {
       "basename": "Map_Reduce",
       "path": "Computer_Science/Computer_Science_Tools/Big_Data_Tools/Map_Reduce.md"
     },
     {
-      "basename": "X86_Attack_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md"
+      "basename": "Memory_Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md"
+    },
+    {
+      "basename": "Basic",
+      "path": "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md"
     },
     {
       "basename": "X86_Advanced",
@@ -51,10 +119,6 @@
     {
       "basename": "Project3_Join&Optimization(sp24)",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
     },
     {
       "basename": "Project2_B+_Tree(sp24)",
@@ -87,10 +151,6 @@
     {
       "basename": "1_Geometry",
       "path": "Computer_Science/Computer_Graphics/1_Geometry.md"
-    },
-    {
-      "basename": "3_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
     },
     {
       "basename": "Security_Principles",
@@ -139,66 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/Related_Resources.md"
-    },
-    {
-      "basename": "2_Types_of_RL",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
-    },
-    {
-      "basename": "Project2_Multi-Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project2_Multi-Search.md"
-    },
-    {
-      "basename": "4_Adverserial_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md"
-    },
-    {
-      "basename": "1_Uninformed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/1_Uninformed_Search.md"
-    },
-    {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
-      "basename": "Project1_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/UCB_EECS188_Projects/Project1_Search.md"
-    },
-    {
-      "basename": "Profiling",
-      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Profiling.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "1_Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
-    },
-    {
-      "basename": "11-iterators-joins-2",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf"
-    },
-    {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
-      "basename": "Storage_Models_Compressions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md"
-    },
-    {
-      "basename": "Hash_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md"
-    },
-    {
-      "basename": "image-20240221121000831",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.assets/image-20240221121000831.png"
-    },
-    {
-      "basename": "4_Random_Forest",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md"
     }
   ],
   "omittedPaths": [],

@@ -72,10 +72,6 @@
 
 
 
-# Logistic Regression
-
-
-
 # Automatic Relevancy Determination(ARD)
 
 

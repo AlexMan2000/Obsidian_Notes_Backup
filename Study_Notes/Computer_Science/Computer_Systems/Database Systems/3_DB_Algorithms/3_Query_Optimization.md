@@ -293,8 +293,18 @@
 > ![](3_Query_Optimization.assets/image-20240223155932044.png)![](3_Query_Optimization.assets/image-20240223155940883.png)![](3_Query_Optimization.assets/image-20240223155857138.png)
 
 
-## Selinger Optimizer Cost
+## Selinger Optimizer
 > [!important]
+> Selinger Optimizer assmes all of the heuristics of system R:
+> 1. Consider only left deep join plan space.
+> 2. Unary operators like selection and projection are pushed down as far as possible.
+> 3. Do not consider cross join unless they are the only option.
+> 
+> Selinger Optimizer has the following properties:
+> 1. The Selinger optimizer doesn't output a globally optimal query plan since the optimal one may not be left-deep join.
+> 2. The Selinger optimizer output a globally optimal left-join query plan if the estimated cost is exactly the actual cost.
+> 
+> The plan space size of Selinger Optimizer:
 > ![](3_Query_Optimization.assets/image-20240223163218004.png)![](3_Query_Optimization.assets/image-20240223163243098.png)
 
 

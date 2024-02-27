@@ -37,6 +37,20 @@
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225093112136.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225093425340.png)
 
 
+## Important Example - RTL
+> [!example] Sp24 Exam Prep03 P1
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240226100730373.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100735554.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100741692.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100749264.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100756047.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Attack 2: Return-oriented Programming
@@ -124,12 +138,28 @@
 ### Attack
 > [!bug] Vulnerabilities
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225103604343.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225103613446.png)
+> The key idea of subverting ASLR mitigation is that we want to leak some values on the stack. There are typically three functions that is related this attack:
+> 1. `printf()`, which helps read or write things on the stack, if we terminate the string maliciously.
+> 2. `fgets()`, which prevents us from read extra bytes since it will put a `\x00` at the end of the input string.
+> 3. `strcpy()`, which prevents us from read extra bytes since it will put a `\x00` at the end of the input string.
+> 4. `char a = '0'` and `char a = 0` the first assignment doesn't put a null terminator, but the second one does. 
 
 
 ### Concept Check
 > [!quiz] Concept Check
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225145113726.png)
 >
+
+
+### Example
+> [!example] Sp24 Exam Prep 03 P2
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240226102308805.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102314980.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102325269.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102332766.png)
+
+
+
+
+
+
 
 
 

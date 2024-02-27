@@ -1,7 +1,6 @@
 > [[CS161 SP24] Lecture 2_ x86 Assembly and Call Stack]([CS161%20SP24]%20Lecture%202_%20x86%20Assembly%20and%20Call%20Stack.pdf)
 
 # C Memory Layout
-## Address Ordering
 > [!important]
 > Also see [C Memory Layout](../../../Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md#C%20Memory%20Layout)
 > - Stack grows downwards from higher addresses to lower ones.
@@ -45,14 +44,6 @@ int main() {
     return 0;
 }
 ```
-
-
-
-## C Stack Layout
-> [!important]
-> 
-
-
 
 
 # X86 CALL Procedures
@@ -193,6 +184,26 @@ foo:
 
 
 # Chapter Exercises
+## Registers and Addresses (GDB)
+> [!example] Win12 Homework 1
+> ![](1_X86_Assembly_Call_Stack.assets/image-20240226111101528.png)![](1_X86_Assembly_Call_Stack.assets/image-20240226111109219.png)![](1_X86_Assembly_Call_Stack.assets/image-20240226111118098.png)![](1_X86_Assembly_Call_Stack.assets/image-20240226111124969.png)![](1_X86_Assembly_Call_Stack.assets/image-20240226111131938.png)![](1_X86_Assembly_Call_Stack.assets/image-20240226111246900.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Code Analysis
 ### Stack Diagram
 > [!example] Sp24 Disc01 P2
