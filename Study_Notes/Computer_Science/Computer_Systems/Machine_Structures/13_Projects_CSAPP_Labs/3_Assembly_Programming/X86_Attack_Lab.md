@@ -74,7 +74,7 @@
 ## Overview
 > [!overview]
 > ![image.png](./X86_Attack_Lab.assets/20231024_0930462218.png)
-> Also see [Attack 2 Return-oriented Programming](../../../../Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md#Attack%202%20Return-oriented%20Programming) and [X86_Advanced](../../3_X86_Assembly/X86_Advanced.md)
+> Also see [Attack 2 Return-oriented Programming](../../../../Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md#Attack%202%20Return-oriented%20Programming) and [X86_Advanced](../../3_X86_Assembly/X86_Advanced.md)
 
 
 

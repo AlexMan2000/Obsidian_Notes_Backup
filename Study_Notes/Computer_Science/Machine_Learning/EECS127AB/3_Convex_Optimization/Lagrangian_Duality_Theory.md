@@ -217,6 +217,7 @@
 ## Dual Norm - Functional Analysis
 > [!def]
 > In functional analysis, the dual norm is a measure of size for a continuous linear function defined on a normed vector space.
+> ![](Lagrangian_Duality_Theory.assets/image-20240227141757525.png)
 
 
 ## Duality of L1 and L-inf

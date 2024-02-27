@@ -66,6 +66,10 @@
 
 
 
+## Categorical Model
+> [!def]
+> ![](4_Generalized_Linear_Model.assets/image-20240227133659062.png)![](4_Generalized_Linear_Model.assets/image-20240227133743759.png)![](4_Generalized_Linear_Model.assets/image-20240227133634137.png)![](4_Generalized_Linear_Model.assets/image-20240227133807898.png)
+> Here basically $\mu=N$, the number of training data points.
 
 
 # Properties of Exp Family

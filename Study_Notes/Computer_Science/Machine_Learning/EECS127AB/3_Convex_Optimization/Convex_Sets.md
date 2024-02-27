@@ -183,12 +183,25 @@
 
 ### Properties
 #### Distance between Parallel Hyperplane
+> [!important]
 > ![image.png](Convex_Sets.assets/20231023_2247052477.png)![image.png](Convex_Sets.assets/20231023_2247076082.png)
 > 换句话说，我们可以在$\vec{a}^{\top}\vec{x}=\vec{b}_1$和$\vec{a}^{\top}\vec{x}=\vec{b}_2$上各自任取一点，假设为$\vec{x}_1$和$\vec{x}_2$, 并假设$(\vec{x}_2-\vec{x}_1)\parallel\vec{a}$, 即$\vec{x}_2-\vec{x}_1=\lambda \vec{a}$。同时因为$\vec{a}^{\top}\vec{x}_1=\vec{b}_1$, $\vec{a}^{\top}\vec{x}_2=\vec{b}_2$, 所以$\vec{a}^{\top}(\vec{x}_1-\vec{x}_2)=\vec{b}_1-\vec{b}_2$, 所以$\vec{a}^{\top}\lambda \vec{a}=\vec{b}_1-\vec{b}_2$, 所以$\lambda=\frac{\vec{b}_1-\vec{b}_2}{\|\vec{a}\|_2^2}$, 所以我们要求的距离就是$\|\vec{x}_2-\vec{x}_1\|=\lambda \|\vec{a}\|$, 即$\frac{\vec{b}_1-\vec{b}_2}{\|\vec{a}\|_2}$。
 
- 
 
-## Halfspace
+#### Signed Distance from a point
+> [!important]
+> Suppose we have a hyperplane $\mathcal{H}=\{\vec{x}:\vec{a}^{\top}\vec{x}=\vec{b}\}$ and a point $\vec{x}_1$, the signed distance from $\vec{x}_1$ to the hyperplane is $$d(\vec{x}_1,\mathcal{H})=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2}$$ where:
+> - If the test point is in the opposite direction of normal vector(i.e. $\vec{a}^{\top}\vec{x}_1<0$), the distance is negative.
+> - If the test point is in the same direction of normal vector(i.e. $\vec{a}^{\top}\vec{x}_1>0$), the distance is positive.
+> 
+> Proof: Pick an arbitrary point $\vec{x}_0$ on the hyperplane that satisfy $\vec{a}^{\top}\vec{x}_0=\vec{b}$. The distance from $\vec{x}_1$ to $\mathcal{H}$ is $\|\vec{x}_1-\vec{x}_0\|$ assuming $(\vec{x}_1-\vec{x}_0)\parallel \vec{a}$.
+> 
+> Suppose $\vec{x}_1-\vec{x}_0=k\vec{a}$, then $$\vec{a}^{\top}(\vec{x}_1-\vec{x}_0)=\vec{a}^{\top}k\vec{a}=k\|\vec{a}\|_2^2=\vec{a}^{\top}\vec{x_1}$$
+> Thus $k=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2^2}$.
+> Finally the signed distance is $$\|\vec{x}_1-\vec{x}_0\|_2=k\|\vec{a}\|_2=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2}$$
+
+
+## Halfspaces
 ### Definition
 > ![image.png](Convex_Sets.assets/20231023_2247089061.png)![image.png](Convex_Sets.assets/20231023_2247103757.png)![image.png](Convex_Sets.assets/20231023_2247119089.png)
 > **Convexity:**
@@ -383,10 +396,17 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 
 ## Normal Cones
+> [!def]
 > ![image.png](Convex_Sets.assets/20231023_2247474993.png)
 > 
 > **Convexity:**
 > ![image.png](Convex_Sets.assets/20231023_2247483801.png)
+> What this graph is saying is that if we pick a point $\vec{x}\in C$, we have to find a vector $\vec{g}$(direction) such that the angle between $\vec{y}-\vec{x}$(a vector) and the $\vec{g}$ should be bigger then 90 degrees for all $\vec{y}\in C$.
+> - At the top left and middle$\vec{x}$ , there only exists one such $\vec{g}$.
+> - At the bottom right $\vec{x}$, there exists some $\vec{g}$.
+> 
+> **Note:**
+> Normal Cone is useful in subgradient analysis, which is detailed in [Subgradient_Differentials](Subgradient_Differentials.md)
 
 
 
@@ -467,6 +487,7 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 # Supporting and Separating Hyperplanes
 ## Separating Hyperplane  Theorem
 ### Theorem
+> [!thm]
 > ![image.png](Convex_Sets.assets/20231023_2247546432.png)
 > **Rephrase This:**
 > Let $C,D$be convex set and $C\land D=\emptyset$, then $\exists$hyperplane $\vec{a}^{\top}\vec{x}=b$such that $\forall \vec{x}\in C$ $\vec{a}^{\top}\vec{x}\geq b$and that $\forall \vec{y}\in D$, $\vec{a}^{\top}\vec{y}\leq b$。
@@ -476,6 +497,7 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 
 ### Proof by Contradiction
+> [!proof]
 > 假设存在$\vec{c}\in C$, $\vec{d}\in D$, $dist(C,D)=\inf\{\|\vec{c}-\vec{d}\|_2~|~\vec{c}\in C,\vec{d}\in D\}$, 即$\vec{c}$和$\vec{d}$是$C$和$D$中距离最近的两个点。
 > 我们证明存在性: 
 > Consider $\vec{d}-\vec{c}$as normal that passes through $\frac{\vec{d}+\vec{c}}{2}$, 我们想要套用`Hyperplane`的定义$\vec{a}^{\top}(\vec{x}-\vec{x}_0)$($\vec{x}_0$是`Hyperplane`上的一点)。于是我们考虑对$\vec{x}\in C\lor \vec{y}\in D$套用定义$(\vec{d}-\vec{c})^{\top}(\vec{x}-\frac{\vec{d}+\vec{c}}{2})$。
@@ -496,10 +518,12 @@ $\forall \vec{x},\vec{y}\in S, \theta\in [0,1]$, $\begin{aligned}\theta x_1 + (1
 
 ## Supporting Hyperplane Theorem
 ### Theorem
+> [!thm]
 > ![image.png](Convex_Sets.assets/20231023_2248035128.png)![image.png](Convex_Sets.assets/20231023_2248034773.png)![image.png](Convex_Sets.assets/20231023_2248042612.png)
 
 
 ### Proof By Applying Separating Theorem
+> [!proof]
 > 我们只需要对$\{x_0\}\subseteq\mathbf{bd}C$和$\mathbf{int}C$这两个`Convex Set`使用`Separating Hyperplane Theorem`就可以完成证明。
 
 

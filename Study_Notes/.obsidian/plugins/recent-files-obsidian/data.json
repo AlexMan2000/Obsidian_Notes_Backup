@@ -1,40 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
+      "basename": "Multiprocessing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
+    },
+    {
+      "basename": "Statistical_Learning_Resources",
+      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md"
+    },
+    {
+      "basename": "Ch3_Linear_Regression",
+      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.md"
+    },
+    {
+      "basename": "Ch2_Overview_of_Statistical_Learning",
+      "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md"
     },
     {
       "basename": "3_Regression&Reparametrization",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
     },
     {
-      "basename": "2_Gaussian_Discriminative_Analysis",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
+      "basename": "Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "1_Transactions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/Introduction.md"
+    },
+    {
+      "basename": "1_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Bayes_Networks.md"
+    },
+    {
+      "basename": "Analysis_of_LASSO",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
+    },
+    {
+      "basename": "Subgradient_Differentials",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md"
+    },
+    {
+      "basename": "Convex_Sets",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+    },
+    {
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
+      "basename": "Subgradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Subgradient_Descent.md"
     },
     {
       "basename": "Gradient_Descent",
       "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
     },
     {
-      "basename": "Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md"
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
+    },
+    {
+      "basename": "Vector_OPT_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md"
+    },
+    {
+      "basename": "2_Quadratic_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "2_Gaussian_Discriminative_Analysis",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
     },
     {
       "basename": "Backpropagation_Algorithms",
       "path": "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Backpropagation_Algorithms.md"
     },
     {
-      "basename": "1_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md"
-    },
-    {
       "basename": "System_Calls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
-    },
-    {
-      "basename": "Multiprocessing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
     },
     {
       "basename": "Related_Resources",
@@ -57,16 +117,8 @@
       "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
     {
-      "basename": "Analysis_of_LASSO",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md"
-    },
-    {
       "basename": "Project_1",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
     },
     {
       "basename": "3_Query_Optimization",
@@ -78,15 +130,15 @@
     },
     {
       "basename": "cheatsheet",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
     },
     {
       "basename": "3_Mitigating_Vulnerabilities",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
     },
     {
       "basename": "1_X86_Assembly_Call_Stack",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md"
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md"
     },
     {
       "basename": "X86_Attack_Lab",
@@ -94,7 +146,7 @@
     },
     {
       "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
     },
     {
       "basename": "Deep_Feedforward_Neural_Network",
@@ -147,58 +199,6 @@
     {
       "basename": "2_Sampling&Aliasing",
       "path": "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md"
-    },
-    {
-      "basename": "1_Geometry",
-      "path": "Computer_Science/Computer_Graphics/1_Geometry.md"
-    },
-    {
-      "basename": "Security_Principles",
-      "path": "Computer_Science/Computer_Networks/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md"
-    },
-    {
-      "basename": "2_Protocols&Layers",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md"
-    },
-    {
-      "basename": "1_Packets&Networks",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md"
-    },
-    {
-      "basename": "Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Network_Projects/Routing.md"
-    },
-    {
-      "basename": "1_Markov_Decision_Process",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
-    },
-    {
-      "basename": "3.6_Convolution",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md"
-    },
-    {
-      "basename": "Probability_Formulas_and_Theorems",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
-    },
-    {
-      "basename": "3.7_Laplace_Transform",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.7_Laplace_Transform.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/Untitled.md"
-    },
-    {
-      "basename": "Cython",
-      "path": "Computer_Science/Computer_Science_Tools/Python_Tools/Cython.md"
-    },
-    {
-      "basename": "B+Tree_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/Related_Resources.md"
     }
   ],
   "omittedPaths": [],

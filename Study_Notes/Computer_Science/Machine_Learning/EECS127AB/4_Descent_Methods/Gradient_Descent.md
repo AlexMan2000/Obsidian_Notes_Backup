@@ -299,7 +299,7 @@
 
 
 
-# Constained Gradient Descent
+# Constrained Gradient Descent
 ## Motivations
 > [!motiv] Idea
 > ![](Gradient_Descent.assets/image-20231214220923332.png)
@@ -364,10 +364,15 @@
 
 ## Convergence Speed for Convex and  L-Smooth 
 > [!thm]
-> ![](Gradient_Descent.assets/image-20231214222857661.png)
+> ![](Gradient_Descent.assets/image-20231214222857661.png)![](Gradient_Descent.assets/image-20240227140135803.png)
 
-> [!proof]
+> [!proof] Proof for proposition
 > ![](Gradient_Descent.assets/image-20231215000557219.png)![](Gradient_Descent.assets/image-20231215000602634.png)
+
+> [!proof] Proof for theorem 8.3.3
+> ![](Gradient_Descent.assets/image-20240227140210542.png)![](Gradient_Descent.assets/image-20240227140222686.png)![](Gradient_Descent.assets/image-20240227140233616.png)![](Gradient_Descent.assets/image-20240227140250242.png)
+
+
 
 
 
