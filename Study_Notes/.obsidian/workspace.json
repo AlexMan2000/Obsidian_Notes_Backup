@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
+                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Endian",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,54 +232,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9e8b8e5ac3b443aa",
+  "active": "ca860f954e087a42",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227224848609.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227222947475.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227222545139.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227220910596.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227220904359.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227220715364.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227215646693.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227215634812.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227215329622.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240227215312831.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.assets",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/CS106L/GapBuffer.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md",
     "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
     "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch3_Linear_Regression.md",
     "Computer_Science/Machine_Learning/Stanford_STATSX001/Ch2_Overview_of_Statistical_Learning.md",
     "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
     "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/Statistical_Learning_Basics.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/Introduction.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Bayes_Networks.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models",
     "Computer_Science/Machine_Learning/EECS127AB/6_Regularization_Sparsity/Analysis_of_LASSO.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227150559917.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227145428558.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227144145522.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227144011633.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227143714895.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.assets/image-20240227141757525.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets/image-20240227140442889.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Subgradient_Differentials.assets",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Subgradient_Descent.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240227140250242.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240227140233616.png",
-    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.assets/image-20240227140222686.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Vector_OPT_Basics.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.assets",
-    "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Backpropagation_Algorithms.md",
     "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Related_Resources.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos/Environment Setup.md",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets",
     "Computer_Science/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf",
     "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.assets",
-    "Computer_Science/Computer_Security/Ch2_Memory_Safety/[CS161 SP24] Lecture 4_ Mitigating Memory Safety Vulnerabilities.pdf",
-    "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.assets",
     "未命名.canvas"
   ]
 }

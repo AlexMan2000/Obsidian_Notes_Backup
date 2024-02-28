@@ -175,6 +175,18 @@
 
 
 
+# Printf Example
+> [!example]
+> ![](Generics_Function_Pointers.assets/image-20240227205541898.png)
+
+
+# C STL QSORT Example
+> [!example]
+> ![](Generics_Function_Pointers.assets/image-20240227210133531.png)![](Generics_Function_Pointers.assets/image-20240227210627948.png)![](Generics_Function_Pointers.assets/image-20240227210612314.png)
+> The type that is actually passed into the `compare_fn` is a pointer to the element in the `argv` list.
+> - If `argv[]` holds `char*`, then the `compare_fn` receive `char **`
+> - If `argv[]` holds `int`, then the `compare_fn` receive `int*`
+
 
 
 

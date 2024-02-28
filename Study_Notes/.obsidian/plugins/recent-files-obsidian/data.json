@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "Multiprocessing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
+      "basename": "Threads_and_Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md"
+    },
+    {
+      "basename": "Fundamental OS Concepts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
+    },
+    {
+      "basename": "Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
+    },
+    {
+      "basename": "Assignment_1",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "1_Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md"
+    },
+    {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
+    },
+    {
+      "basename": "Generics_Function_Pointers",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
+    },
+    {
+      "basename": "Heap Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "Class_Construction_Static",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
+    },
+    {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Template_Class_Design",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
+    },
+    {
+      "basename": "Exceptions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
+    },
+    {
+      "basename": "RAII_Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
+    },
+    {
+      "basename": "GapBuffer",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/CS106L/GapBuffer.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
     },
     {
       "basename": "Statistical_Learning_Resources",
       "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md"
+    },
+    {
+      "basename": "Multiprocessing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
     },
     {
       "basename": "Ch3_Linear_Regression",
@@ -27,14 +95,6 @@
     {
       "basename": "1_Transactions",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/Introduction.md"
-    },
-    {
-      "basename": "1_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography.md"
     },
     {
       "basename": "Bayes_Networks",
@@ -102,15 +162,7 @@
     },
     {
       "basename": "Environment Setup",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos/Environment Setup.md"
-    },
-    {
-      "basename": "Operating System Introduction",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
-    },
-    {
-      "basename": "Fundamental OS Concepts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos_Projects/Environment Setup.md"
     },
     {
       "basename": "3_Routing",
@@ -147,58 +199,6 @@
     {
       "basename": "2_Memory_Vulnerability",
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
-    },
-    {
-      "basename": "Deep_Feedforward_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Deep_Feedforward_Neural_Network.md"
-    },
-    {
-      "basename": "Map_Reduce",
-      "path": "Computer_Science/Computer_Science_Tools/Big_Data_Tools/Map_Reduce.md"
-    },
-    {
-      "basename": "Memory_Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md"
-    },
-    {
-      "basename": "Basic",
-      "path": "Computer_Science/Deep_Learning/PyTorch_Tools/Basic.md"
-    },
-    {
-      "basename": "X86_Advanced",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Advanced.md"
-    },
-    {
-      "basename": "Project3_Join&Optimization(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
-    },
-    {
-      "basename": "Project2_B+_Tree(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
-    },
-    {
-      "basename": "Equality",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Equality.md"
-    },
-    {
-      "basename": "Advanced_Recursion",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Advanced_Recursion.md"
-    },
-    {
-      "basename": "Abstract_Data_Type",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
-    },
-    {
-      "basename": "RISC-V_Instructions",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/4_RISC-V_Assembly/RISC-V_Instructions.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Graphics/Related_Resources.md"
-    },
-    {
-      "basename": "2_Sampling&Aliasing",
-      "path": "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md"
     }
   ],
   "omittedPaths": [],
