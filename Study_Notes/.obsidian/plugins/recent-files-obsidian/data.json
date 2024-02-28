@@ -1,24 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Threads_and_Processes",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Threads_and_Processes.md"
+      "basename": "4_Multiprocess_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_Multiprocess_Programming.md"
     },
     {
-      "basename": "Fundamental OS Concepts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Fundamental OS Concepts.md"
+      "basename": "3_Sockets_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.md"
     },
     {
-      "basename": "Operating System Introduction",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Operating System Introduction.md"
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
     },
     {
-      "basename": "Assignment_1",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/5_Assignments/Assignment_1.md"
+      "basename": "5_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_System_Calls.md"
+    },
+    {
+      "basename": "1_Threads_and_Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
+    },
+    {
+      "basename": "HW0",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/CS162_HWs/HW0.md"
+    },
+    {
+      "basename": "2_Memory_Vulnerability",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+    },
+    {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     },
     {
       "basename": "2_Symmetric_Cryptography",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "2_Files_IOs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
+    },
+    {
+      "basename": "2_Fundamental OS Concepts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md"
+    },
+    {
+      "basename": "1_Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/1_Operating System Introduction.md"
     },
     {
       "basename": "1_Introduction",
@@ -71,10 +99,6 @@
     {
       "basename": "Statistical_Learning_Resources",
       "path": "Computer_Science/Machine_Learning/Stanford_STATSX001/Statistical_Learning_Resources.md"
-    },
-    {
-      "basename": "Multiprocessing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/Multiprocessing.md"
     },
     {
       "basename": "Ch3_Linear_Regression",
@@ -153,16 +177,8 @@
       "path": "Computer_Science/Deep_Learning/UCB_EECS182/Training_Neural_Networks/Backpropagation_Algorithms.md"
     },
     {
-      "basename": "System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Standford_CS110/2_Multiprocessing/System_Calls.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Related_Resources.md"
-    },
-    {
       "basename": "Environment Setup",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/UCB_CS162/Pintos_Projects/Environment Setup.md"
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Pintos_Projects/Environment Setup.md"
     },
     {
       "basename": "3_Routing",
@@ -171,34 +187,6 @@
     {
       "basename": "Project_1",
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "3_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "cheatsheet",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
-    },
-    {
-      "basename": "3_Mitigating_Vulnerabilities",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
-    },
-    {
-      "basename": "1_X86_Assembly_Call_Stack",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/1_X86_Assembly_Call_Stack.md"
-    },
-    {
-      "basename": "X86_Attack_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md"
-    },
-    {
-      "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
     }
   ],
   "omittedPaths": [],
