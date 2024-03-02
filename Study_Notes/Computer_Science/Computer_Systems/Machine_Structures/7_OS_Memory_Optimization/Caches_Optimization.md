@@ -105,6 +105,17 @@
 
 
 
+
+# Cache (Re)placement Policy
+> [!important]
+> Cache Organizations and Where to Place Data:
+> 1. **Direct-Mapped Cache**: In a direct-mapped cache, each block of memory can only be cached in one specific place. The cache is divided into slots, and each memory block maps to exactly one slot based on some bits of its address (often the middle bits following the block offset). In the case of a compulsory miss, you simply place the data into the slot to which it maps, potentially evicting whatever was there if the slot was already filled.
+> 2. **Fully Associative Cache**: A fully associative cache allows a block of memory to be stored in any cache line. This flexibility means that when a compulsory miss occurs, the cache controller can choose any available line for the new data. If the cache is full, it will use a replacement policy (such as Least Recently Used (LRU), Random, or FIFO) to decide which existing entry to replace.
+> 3. **Set-Associative Cache**: This is a compromise between direct-mapped and fully associative caches. The cache is divided into sets, and each set contains multiple lines (like a small fully associative cache). A block of memory can be placed in any line within a specific set, which is determined based on the memory block's address. Upon a compulsory miss, if there is an empty line within the set, the data is placed there. If the set is full, a replacement policy within the set determines which line's data is evicted.
+
+
+
+
 # Three Types of Cache
 ## Type 1: Fully-Associative Cache
 ### Memory Address Breakdown

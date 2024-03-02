@@ -62,6 +62,8 @@
 
 ## std::move
 > [!important]
+> Inside `<utility>` library.
+> 
 > Consider the following implementation of move assignment member function, we see some inefficiencies here:
 > ![](Move_Semantics.assets/image-20240118213220013.png)![](Move_Semantics.assets/image-20240118213230098.png)![](Move_Semantics.assets/image-20240118213315164.png)
 > One way of doing this is using casting:

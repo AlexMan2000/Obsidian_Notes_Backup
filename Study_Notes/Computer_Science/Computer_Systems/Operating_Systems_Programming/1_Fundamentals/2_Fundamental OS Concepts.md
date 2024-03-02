@@ -44,7 +44,10 @@
 > [!concept]
 > ![](2_Fundamental%20OS%20Concepts.assets/image-20231206225314297.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206225325095.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206225334688.png)
 > **Remarks:**
-> 1.  What is the importance of address translation?
+> 1.  **What is the importance of address translation?**
+> 	- Address translation is necessary for the idea of **virtual memory** which provides an **isolation abstraction.** 
+> 	- This **gives the illusion that each process is the sole user of the address space.** 
+> 	- It also provides **protection between different processes** since virtual addresses will not translate to the same physical address, preventing processes from accessing and potentially corrupting each other’s memory.
 > 2. 
 
 
@@ -82,6 +85,8 @@
 
 
 
+
+
 # Concept 4: Dual Mode Operation
 ## Kernel and User Mode
 > [!concept]
@@ -106,6 +111,14 @@
 > 
 
 
+## Calling Convention
+> [!quiz] 
+> **Similar to what’s done in the prologue at calling convention, what needs to happen before a mode transfer occurs?**
+> 
+> The processor’s state (e.g. registers) need to be saved in the thread control block (TCB) because the kernel may overwrite the registers when it executes its own code.
 
 
+## Linux /dev/kmem file
+> [!quiz]
+> ![](2_Fundamental%20OS%20Concepts.assets/image-20240229163029614.png)
 

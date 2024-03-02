@@ -6,6 +6,18 @@
 > [!example]
 > ![](Exceptions&Processes.assets/image-20231027094307998.png)
 
+> [!quiz] Trigger SIGINT and SIGQUIT
+> Normally, using keyboard interrupt, to trigger `SIGINT`, we can type `CTRL + C`. To trigger `SIGQUIT`, we can type `CTRL + \`
+> ![](Signals.assets/image-20240229170722703.png)
+
+
+
+
+## Process Lifecycle
+> [!def]
+> ![](Signals.assets/image-20240228213703979.png)
+
+
 
 
 ## Process Group
@@ -35,7 +47,6 @@
 
 > [!code] Sending Signals from Keyboard
 > ![](Exceptions&Processes.assets/image-20231027100221551.png)![](Exceptions&Processes.assets/image-20231027100329803.png)
-
 
 
 > [!code] Sending Signals with kill() function
@@ -72,8 +83,11 @@
 
 
 
-## Signal Handler - Changing Default Behaviors
-### Overview&Example
+# Signal Handler
+## Definition
+> [!def]
+> ![](Signals.assets/image-20240228213826554.png)![](Signals.assets/image-20240228213836873.png)
+
 > [!info]
 > - 所有的进程在`receive signal`的情况下，取决于信号的类型，会有默认的行为。比如所有收到且没有`block SIGKILL`的进程会被操作系统直接结束称为僵尸进程。所有收到`SIGCHLD`的进程不会有任何行为，这个信号仅仅是通知父进程，有子进程被`terminated/stopped`了。
 > - 我们可以通过`signal()`函数来改变`calling process`收到信号的进程的默认行为，但是要注意，`SIGKILL`和`SIGSTOP`的默认行为无法更改。
@@ -82,30 +96,55 @@
 > ![](Exceptions&Processes.assets/image-20231027151434973.png)
 
 
-
+## Overriding Signal Handlers
 > [!code] 
 > 下面的函数用于修改某个信号的默认行为：
 > ![](Exceptions&Processes.assets/image-20231027141156455.png)
 > , 其中：
 > 
-> ![](Exceptions&Processes.assets/image-20231027141256566.png)
+> ![](Exceptions&Processes.assets/image-20231027141256566.png)![](Signals.assets/image-20240229165521823.png)![](Signals.assets/image-20240229165851654.png)
 
 > [!example]
 > ![](Exceptions&Processes.assets/image-20231027141725427.png)
 
-### Installing Signal Handler
+
+
+## Installing Signal Handler
+### Installing Procedures
 > [!info]
 > ![](Exceptions&Processes.assets/image-20231027142059345.png)
 
 
+### SIGCHLD Example - Reaping Child Processes
+> [!code]
+> - Whenever a child process **changes state**—that is, it exits, crashes, stops, or resumes from a stopped state, the kernel sends a `SIGCHLD` signal to the process's parent.
+> 	- By default, the signal is ignored. In fact, we've ignored it until right now and gotten away with it.
+> 	- This particular signal type is instrumental to allowing forked child processes to run in the background while the parent process moves on to do its own work without blocking on a `waitpid` call, which is synchronous reaping.
+> 	- The parent process, however, is still required to reap child processes, so the parent will typically register a custom `SIGCHLD` handler to be asynchronously invoked whenever a child process changes state.
+> 	- These custom `SIGCHLD` handlers almost always include calls to `waitpid`, which can be used to surface the pids of child processes that've changed state. If the child process of interest actually terminated, either normally or abnormally, the `waitpid` also culls the zombie the relevant child process has become.
+> 	- `WNOHANG` is super useful when we implement the signal handler since it makes it non-blocking and simple. 
+> - In Unix-like operating systems, when a signal is caught by a handler, the default behavior is to block further occurrences of that signal until the signal handler returns. This means that, yes, while a signal handler is executing, all other signals of the same type are typically blocked from being delivered to the process. This behavior prevents a signal from interrupting its own handler, potentially causing a recursive loop that could lead to stack overflow and process crash.
+> 
+> ![](Signals.assets/image-20240228224045457.png)
+```c
 
-### Signal Handler as Logic Flow
+```
+
+
+
+
+
+
+
+
+
+## Signal Handler as Logic Flow
 > [!info]
 > ![](Exceptions&Processes.assets/image-20231027142228137.png)![](Exceptions&Processes.assets/image-20231027142330727.png)
 
 
 
-### Nested Signal Handlers
+## Nested Signal Handlers
 > [!important] 
 > ![](Exceptions&Processes.assets/image-20231027141806079.png)
 > ![](Exceptions&Processes.assets/image-20231027141755738.png)

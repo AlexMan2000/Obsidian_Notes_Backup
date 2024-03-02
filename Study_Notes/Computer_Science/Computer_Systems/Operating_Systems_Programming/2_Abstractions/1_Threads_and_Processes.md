@@ -82,12 +82,11 @@
 
 ## Synchronizations
 > [!def]
-> ![](1_Threads_and_Processes.assets/image-20240228101433433.png)
+> ![](1_Threads_and_Processes.assets/image-20240228101433433.png)![](1_Threads_and_Processes.assets/image-20240229095604877.png)![](1_Threads_and_Processes.assets/image-20240229095614449.png)![](1_Threads_and_Processes.assets/image-20240229095627810.png)
 > **More details of :**
 > 1. Synchonization: 
 > 2. Critical Section:
 > 3. Lock: 
-
 
 
 
@@ -118,6 +117,7 @@
 
 
 # Processes
+Also in [Exceptions&Processes](../../Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md)
 ## Process Management APIs
 > [!def]
 > ![](1_Threads_and_Processes.assets/image-20240228102712606.png)
@@ -132,7 +132,11 @@
 ### fork
 > [!def]
 > ![](1_Threads_and_Processes.assets/image-20240228102811864.png)
-> But parent and child have different address spaces.
+> We say copying, we mean copy everything except PID, for example:
+> 1. Copy the **address space(virtual memory)**, so that when we print the address of the same variable on teh address space, we get the same virtual address. But thanks to address translation techniques, parent and child have different physical address spaces so that process-level protection/isolation is guaranteed.
+> 2. Copy the register(`%ESP, %EIP, %EAX`).
+> 3. Copy the memory segment(Stack, Heap, Static, Code).
+> 4. In short, it copies the caller's memory, registers and open files.
 > 
 > ![](1_Threads_and_Processes.assets/image-20240228103105503.png)
 > The calls to sleep() only affects the behavior of each process, making them slower in execution. In may change the interleaving a little bit, but the outcome is not affected.
@@ -161,7 +165,46 @@ if (cpid > 0) {
 > ![](1_Threads_and_Processes.assets/image-20240228104753647.png)
 
 
+
+
+
+
 ### fork-exec 
+
+
+
+
+### waitpid
+
+
+
+
+### wait
+> [!def]
+> 
+
+
+
+## Process Control Block
+> [!def]
+> An OS needs to run many programs, meaning there will be many processes. As a result, basic mechanisms such as switching between user processes and the kernel, switching among user processes through the kernel, and protecting the OS from user processes and among themselves need to be present in an operating system. 
+> 
+> To accomplish this, the kernel represents each process with a **process control block (PCB)**, a data structure that keeps track of the various properties of a process including (but not limited to) status, register state, process id (pid). 
+> 
+> The kernel scheduler allocates the CPU to different processes by maintaining a data structure containing the aforementioned PCBs. Other resources, such as memory and I/O, need to be managed and allocated as well, though not necessarily by the kernel scheduler.
+
+
+
+## Concept Checks
+> [!quiz] Sp24 Disc01 P2.1
+> ![](1_Threads_and_Processes.assets/image-20240229164039249.png)
+> Here since the copied address space is virtual, so print gives the same result.
+> 
+> The file descriptor of the two processes are pointing to the same `vnode` of the openfile table in the system so they will be reading the same file possibly with different offset within file.
+
+> [!quiz] Sp24 Disc01 P2.2
+> ![](1_Threads_and_Processes.assets/image-20240229164240082.png)![](1_Threads_and_Processes.assets/image-20240229164514784.png)![](1_Threads_and_Processes.assets/image-20240229164703170.png)![](1_Threads_and_Processes.assets/image-20240229165031172.png)
+
 
 
 
