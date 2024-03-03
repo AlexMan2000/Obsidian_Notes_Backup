@@ -1,12 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Security/Related_Resources.md"
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
     },
     {
       "basename": "Shell_Lab",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "Exceptions&Processes",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "2_Memory_Vulnerability",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+    },
+    {
+      "basename": "Project_1",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
+    },
+    {
+      "basename": "3_Mitigating_Vulnerabilities",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
+    },
+    {
+      "basename": "cheatsheet",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
+    },
+    {
+      "basename": "image-20240226144812787",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.assets/image-20240226144812787.png"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Security/Related_Resources.md"
     },
     {
       "basename": "Lab02_Syscalls",
@@ -29,32 +61,16 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     },
     {
-      "basename": "Project_1",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
       "basename": "2_Files_IOs",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
       "basename": "1_Threads_and_Processes",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
     },
     {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
       "basename": "Cache Lab",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
     },
     {
       "basename": "Move_Semantics",
@@ -157,10 +173,6 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
     },
     {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
-    },
-    {
       "basename": "1_Introduction",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "Exceptions",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
-    },
-    {
-      "basename": "RAII_Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
-    },
-    {
-      "basename": "GapBuffer",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/CS106L/GapBuffer.md"
     }
   ],
   "omittedPaths": [],

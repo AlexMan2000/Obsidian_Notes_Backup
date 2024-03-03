@@ -316,6 +316,7 @@ int main() {
 > - The parent process creates a child process using `fork()`. 
 > - The parent then waits for any child process to change state using `waitpid()` with the first argument as `-1`. 
 > - The `status` variable is used to store the exit status of the terminated child process. 
+> - Return `-1` if there is no child processes unterminated.
 > - The `waitpid()` will not return until any one of the child processes of the calling process terminates.
 > - The `WIFEXITED()` macro checks if the child process exited normally, and `WEXITSTATUS()` retrieves the exit status.
 ```c
@@ -386,46 +387,27 @@ int main() {
 > [!code]
 > 下面的代码中， 我们通过传递`options`参数修改了`waitpid`函数的默认行为。因为在默认状态下，函数`waitpid()`在子进程没有`terminate`的情况下是不会立即返回的，而是会一直等待到子进程`terminate`才返回子进程的`pid`。但是如果将`options`设置为`WNOHANG`，则函数`waitpid()`会立即返回`0`，这样的好处是我们可以在等待子进程`terminate`的过程中干一些其他事情。
 ```c
-#include <stdio.h> 
-#include <stdlib.h> 
-#include <sys/types.h> 
-#include <sys/wait.h> 
-#include <unistd.h> 
-int main() { 
-	pid_t pid, wpid; 
-	int status; 
-	pid = fork(); 
-	if (pid == 0) { 
-		// This block will be executed by the child process 
-		printf("Child process: I'm the child, going to sleep for 5 seconds\n"); 
-		sleep(5); 
-		printf("Child process: I'm done sleeping. Exiting!\n"); 
-		exit(0); 
-	} else if (pid < 0) { 
-		// Fork failed 
-		perror("fork"); 
-		exit(EXIT_FAILURE); 
-	} else { 
-		// This block will be executed by the parent process 
-		do { 
-			wpid = waitpid(pid, &status, WNOHANG); 
-			if (wpid == 0) { 
-				printf("Parent process: child is still running...\n"); 
-				sleep(1); 
-			} else if (wpid < 0) { 
-				perror("waitpid"); 
-				exit(EXIT_FAILURE); 
-			} 
-		} while (wpid == 0); 
-			
-		if (WIFEXITED(status)) { 
-			printf("Parent process: child exited with status %d\n", WEXITSTATUS(status)); 
-		} else if (WIFSIGNALED(status)) { 
-			printf("Parent process: child killed by signal %d\n", WTERMSIG(status)); 
-		} 
-	} 
-	return 0; 
+// job-list-broken.c
+static void reapProcesses(int sig) {
+  while (true) {
+    pid_t pid = waitpid(-1, NULL, WNOHANG);
+    if (pid <= 0) break;
+    printf("Job %d removed from job list.\n", pid);
+  }
 }
+
+char * const kArguments[] = {"date", NULL};
+int main(int argc, char *argv[]) {
+  signal(SIGCHLD, reapProcesses);
+  for (size_t i = 0; i < 3; i++) {
+    pid_t pid = fork();
+    if (pid == 0) execvp(kArguments[0], kArguments);
+    sleep(1); // force parent off CPU
+    printf("Job %d added to job list.\n", pid);
+  }
+  return 0;
+}
+
 ```
 
 

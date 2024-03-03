@@ -113,6 +113,7 @@
 ### Installing Procedures
 > [!info]
 > ![](Exceptions&Processes.assets/image-20231027142059345.png)
+> When a process calls `fork()`, the child process inherits copies of the parent's set of signal handlers. At the time of the `fork()`, any signal handlers that the parent has installed are also established for the child process. This means that if the parent has installed a specific handler for certain signals (other than the default handlers provided by the system), the child process will inherit these handlers.
 
 
 ### SIGCHLD Example - Reaping Child Processes
@@ -125,12 +126,75 @@
 > 	- `WNOHANG` is super useful when we implement the signal handler since it makes it non-blocking and simple. 
 > - In Unix-like operating systems, when a signal is caught by a handler, the default behavior is to block further occurrences of that signal until the signal handler returns. This means that, yes, while a signal handler is executing, all other signals of the same type are typically blocked from being delivered to the process. This behavior prevents a signal from interrupting its own handler, potentially causing a recursive loop that could lead to stack overflow and process crash.
 > 
-> ![](Signals.assets/image-20240228224045457.png)
+> 
+
+
+#### Attempt 1: Waitpid(-1, NULL, 0) w.o. Loop
+> [!bug] Multiple Signals At Once
+> ![](Signals.assets/image-20240302221312075.png)
 ```c
+static const size_t kNumChildren = 5;
+static size_t numDone = 0;
+
+int main(int argc, char *argv[]) {
+  printf("Let my five children play while I take a nap.\n");
+  signal(SIGCHLD, reapChild);
+  for (size_t kid = 1; kid <= 5; kid++) {
+    if (fork() == 0) {
+      sleep(3 * kid); // sleep emulates "play" time
+      printf("Child #%zu tired... returns to dad.\n", kid);
+      return 0;
+    }
+  }
+    // code below is a continuation of that presented on the previous slide
+  while (numDone < kNumChildren) {
+    printf("At least one child still playing, so dad nods off.\n");
+    snooze(5); // our implementation -- does not wake up upon signal
+    printf("Dad wakes up! ");
+  }
+  printf("All children accounted for.  Good job, dad!\n");
+  return 0;
+}
+
+// Signal Handler
+static void reapChild(int unused) {
+  waitpid(-1, NULL, 0);
+  numDone++;
+}
+```
+> [!bug] Caveats
+> ![](Signals.assets/image-20240302221418590.png)
+
+
+
+#### Attempt 2: WNOHANG
+> [!success] 
+> ![](Signals.assets/image-20240302221439863.png)
+```c
+// job-list-broken.c
+static void reapProcesses(int sig) {
+  while (true) {
+    pid_t pid = waitpid(-1, NULL, WNOHANG);
+    if (pid <= 0) break;
+    printf("Job %d removed from job list.\n", pid);
+  }
+}
+
+char * const kArguments[] = {"date", NULL};
+int main(int argc, char *argv[]) {
+  signal(SIGCHLD, reapProcesses);
+  for (size_t i = 0; i < 3; i++) {
+    pid_t pid = fork();
+    if (pid == 0) execvp(kArguments[0], kArguments);
+    sleep(1); // force parent off CPU
+    printf("Job %d added to job list.\n", pid);
+  }
+  return 0;
+}
 
 ```
-
-
+> [!code] Output
+> ![](Signals.assets/image-20240302221552644.png)
 
 
 
@@ -215,6 +279,111 @@
 > ![](Signals.assets/image-20231027153119396.png)![](Signals.assets/image-20231027153131333.png)
 
 
+# Blocking and Unblock Signals
+## Basics
+> [!important]
+> ![](Signals.assets/image-20240302214838580.png)![](Signals.assets/image-20240302214901543.png)
+
+
+## Job List Management
+> [!bug] Job List Broken Example
+> ![](Signals.assets/image-20240302222143135.png)
+```c
+// job-list-broken.c
+static void reapProcesses(int sig) {
+  while (true) {
+    pid_t pid = waitpid(-1, NULL, WNOHANG);
+    if (pid <= 0) break;
+    printf("Job %d removed from job list.\n", pid);
+  }
+}
+
+char * const kArguments[] = {"date", NULL};
+int main(int argc, char *argv[]) {
+  signal(SIGCHLD, reapProcesses);
+  for (size_t i = 0; i < 3; i++) {
+    pid_t pid = fork();
+    if (pid == 0) execvp(kArguments[0], kArguments);
+    sleep(1); // force parent off CPU
+    printf("Job %d added to job list.\n", pid);
+  }
+  return 0;
+}
+
+```
+
+> [!success] Job List Fixed Example
+> - The implementation of `reapProcesses` is the same as before, so I didn't reproduce it.
+> - The updated parent programmatically defers its obligation to handle signals until it returns from its `printf`—that is, it's added the pid to the job list.
+> - As it turns out, a **`fork`ed process inherits blocked signal sets**, so it needs to lift the block via its own call to `sigprocmask(SIG_UNBLOCK, ...)`.
+> - An interesting question is that: Whether the _child's_ signal handler could get called if the program that the child launched with **`execvp`** had a child of its own, and that child ended. Once the original child starts another program with **`execvp`** all of the original code is gone. Therefore, the signal handler cannot be called, because it doesn't exist any longer. 
+> - So even if the child process inherits the signal handler from its parent process, this exact signal handler will never get called since `execvp` will replace all the memory execution stack, making the reference to the original signal handler invalid.
+> - In general, you want the stretch of time that signals are blocked to be as narrow as possible, since you're overriding default signal handling behavior and want to do that as infrequently as possible.
+```c
+#include <unistd.h>
+#include <stdio.h>
+#include <signal.h>
+#include <errno.h>
+#include <sys/wait.h>
+#include "exit-utils.h"
+#include "sleep-utils.h"
+
+static const int kForkFailed = 1;
+static const int kExecFailed = 2;
+static const int kWaitFailed = 4;
+static const int kSignalFailed = 8;
+
+static void reapChild(int sig) {
+  pid_t pid;
+  while (true) {
+    pid = waitpid(-1, NULL, WNOHANG);
+    if (pid <= 0) break;
+    printf("Job %d removed from job list.\n", pid);
+  }
+  exitUnless(pid == 0 || errno == ECHILD, kWaitFailed,
+	     stderr, "waitpid failed within reapChild sighandler.\n");
+}
+
+int main(int argc, char *argv[]) {
+  exitIf(signal(SIGCHLD, reapChild) == SIG_ERR, kSignalFailed,
+	 stderr, "signal function failed.\n");
+  sigset_t mask;
+  sigemptyset(&mask);
+  sigaddset(&mask, SIGCHLD);
+  for (size_t i = 0; i < 3; i++) {
+	// Parent block SIGCHILD
+    sigprocmask(SIG_BLOCK, &mask, NULL);
+    pid_t pid = fork();
+    exitIf(pid == -1, kForkFailed,
+	   stderr, "fork function failed.\n");
+    if (pid == 0) {
+      sigprocmask(SIG_UNBLOCK, &mask, NULL);
+      char *listArguments[] = {"date", NULL};
+      exitIf(execvp(listArguments[0], listArguments) == -1, 
+	     kExecFailed, stderr, "execvp function failed.\n");
+    }
+    
+    sleep(1); // Force parent off CPU
+    printf("Job %d added to job list.\n", pid);
+    sigprocmask(SIG_UNBLOCK, &mask, NULL);
+  }
+  
+  return 0;
+}
+
+```
+
+
+
+## Masking Signals and Deferring Handlers
+> [!important]
+> ![](Signals.assets/image-20240302220529940.png)
+
+
+
+
+
+
 # Synchronize the Flows
 ## Race Error
 > [!bug] Buggy Example - Race
@@ -228,7 +397,9 @@
 
 ## Fix 2 - Explicitly Waiting for Signals
 > [!success] Fix
-> 
+> ![](Signals.assets/image-20240302214427543.png)
+
+
 
 
 

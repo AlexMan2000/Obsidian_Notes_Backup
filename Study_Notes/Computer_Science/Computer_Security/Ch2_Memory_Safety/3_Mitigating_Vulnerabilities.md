@@ -92,8 +92,10 @@
 > [!quiz] Concept Check
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225144709429.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225144904720.png)
 
-### Example
 
+### Example
+> [!example]
+> See [Example](#ASLR%20-%20Step%202#Example)
 
 ## Pointer Authentication - Step 3
 ### PAC
@@ -153,18 +155,11 @@
 
 ### Example
 > [!example] Sp24 Exam Prep 03 P2
-> ![](3_Mitigating_Vulnerabilities.assets/image-20240226102308805.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102314980.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102325269.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102332766.png)
-
-
-
-
-
-
-
-
-
-
-
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240302180207003.png)![](3_Mitigating_Vulnerabilities.assets/image-20240302180347307.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102308805.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102314980.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102325269.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226102332766.png)
+> **Note that:**
+> 1. `alias` is `int8_t`, which means it will overflow when `alias > 127` and round back to `-128`. So when `counter = 255`, `alias = -1`.
+> 2. Line 21 basically mean we cannot inject `A` as padding.
+> 3. `strcpy()` and `fgets()` will add a null at the end when possible. If `fgets(target, size, src)`, no matter how long your input string is, it only reads `size` to the `target`(including the `\0` at the end, automatically appended).
 
 
 

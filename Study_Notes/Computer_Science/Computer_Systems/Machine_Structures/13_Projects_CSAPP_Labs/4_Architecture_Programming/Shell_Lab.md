@@ -21,12 +21,8 @@
 > ![](Shell_Lab.assets/image-20240302092452953.png)
 
 
-
-
-
-   
-
 # Phase 1: eval
+
 
 
 
@@ -34,7 +30,12 @@
 # Phase 2: builtin_cmd
 
 
+
+
 # Phase 3: do_bgfg
+
+
+
 
 
 # Phase 4: sigchld_handler

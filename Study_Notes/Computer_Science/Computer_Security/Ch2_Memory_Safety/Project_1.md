@@ -224,11 +224,74 @@ SHELLCODE = \ '\x6a\x32\x58\xcd\x80\x89\xc3\x89\xc1\x6a' \ '\x47\x58\xcd\x80\x31
 > `password`: tolearn
 > 
 > For this question, **stack canaries are enabled**. You need to make sure the value of the canary isn’t changed when the function returns, but you still need to overwrite the RIP.
+> 
+> More detail see [Interactive Stack Canary Example](3_Mitigating_Vulnerabilities.md#Stack%20Canaries%20-%20Step%203#Example)
+
+
+## File Structure
+> [!def]
+> **Exploit Executable:**
+> ![](Project_1.assets/image-20240302172130264.png)
+> This file will invoke `interact`, which send inputs and receive output from `dehexify` executable.
+> 
+> So if we run `./exploit`, `interact` python script will be executed.
+
+
 
 
 ## Vulnerable Code
 > [!code]
+> 
+```c
+#include <stdio.h>
+#include <string.h>
 
+#define BUFLEN 16
+
+/* Hint: No memory safety errors in this function */
+int nibble_to_int(char nibble) {
+    if ('0' <= nibble && nibble <= '9') {
+        return nibble - '0';
+    } else {
+        return nibble - 'a' + 10;
+    }
+}
+
+void dehexify(void) {
+    struct {
+        char answer[BUFLEN];
+        char buffer[BUFLEN];
+    } c;
+    int i = 0, j = 0;
+
+	// Will append \0 at the end
+    gets(c.buffer); // Vulnerability, get input from stdin
+
+    while (c.buffer[i]) {
+        if (c.buffer[i] == '\\' && c.buffer[i+1] == 'x') {
+            int top_half = nibble_to_int(c.buffer[i+2]);
+            int bottom_half = nibble_to_int(c.buffer[i+3]);
+            c.answer[j] = top_half << 4 | bottom_half;
+            i += 3;
+        } else {
+            c.answer[j] = c.buffer[i];
+        }
+        i++; j++;
+    }
+
+    c.answer[j] = 0; // Trick here, need to get rid of 0
+    printf("%s\n", c.answer);
+    fflush(stdout);
+}
+
+int main(void) {
+    while (!feof(stdin)) {
+         dehexify();
+    }
+    return 0;
+}
+
+```
 
 
 
@@ -243,22 +306,33 @@ SHELLCODE = \ '\x6a\x32\x58\xcd\x80\x89\xc3\x89\xc1\x6a' \ '\x47\x58\xcd\x80\x31
 
 ## Magic Numbers
 > [!code]
-
-
+> ![](Project_1.assets/image-20240302170810347.png)![](Project_1.assets/image-20240302171012401.png)
+> We know that `buffer` is 24 bytes below the stack canary.
+> - Start address of `buffer`:`0xffffd7cc` .
+> - Start address of `stack canary`: `0xffffd7e4` .
+> - Making difference we get `24` bytes in total.
 
 
 
 ## Exploit Structure
 > [!code]
+> ![](Project_1.assets/image-20240302173430868.png)
+   We want to first pad from buffer 24 bytes to reach stack canary: 
+
+   
 
 ## Exploit GDB Output
 > [!code]
+
+
 
 ## Solution Interact
 > [!code]
 
 
 # Q4 Off-by-one Attack
+> [!overview]
+> See [Off-By-One Vulnerabilities(Fencepost)](2_Memory_Vulnerability.md#Off-By-One%20Vulnerabilities(Fencepost))
 
 ## Vulnerable Code
 
@@ -274,7 +348,7 @@ SHELLCODE = \ '\x6a\x32\x58\xcd\x80\x89\xc3\x89\xc1\x6a' \ '\x47\x58\xcd\x80\x31
 ## Exploit GDB Output
 
 
-# Q5
+# Q5 
 ## Vulnerable Code
 
 

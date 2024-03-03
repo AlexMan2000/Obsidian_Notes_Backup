@@ -22,7 +22,7 @@
 > [!def]
 > _The messages M0 and M1 must be the same length._ 
 > ![](2_Symmetric_Cryptography.assets/image-20240227222545139.png)
-> Remarks:
+> **Remarks:**
 > 1. If we want to hide message length from the attacker, then we must incorporate message length as a component of our encryption scheme. For example, shorter plaintext may result in shorter ciphertext as a result, which gives the attacker some clue about your encryption scheme. So the more you try to hide from the attack, the more dimension you are giving your attackers to infiltrate your encryption system. In practice, if you want to hide message length, then all the plaintext should have the same length for simplicity and efficiency considerations. But this is not practical, as shown in the graph above.
 > 2. If we didn’t force M0 and M1 to be the same length, then our game would incorrectly mark some IND-CPA secure schemes as insecure. In particular, if a scheme leaks the plaintext length, it can still be considered IND-CPA secure. However, Eve would win the IND-CPA game with this scheme, since she can send a short message and a long message, see if Alice sends back a short or long ciphertext, and distinguish which message was sent. To account for the fact that cryptosystems can leak plaintext length, we use equal-length messages in the IND-CPA game. **In other words**, we want IND-CPA definition of confidentiality to match with the real-world cryptographic system where plaintext length is allowed to leak(i.e. length doesn't give attacker any information, so better leak to them since they are useless anyway). So by enforcing M0 and M1 to be of the same length, we consider into the fact that plaintext length doesn't give attacker new information.
 > 3. Simply input, in reality, leaking plaintext length is secure. If we don't enforce len(M0) == len(M1), then in order for IND-CPA definition to work, even if we leak len(M0) and len(M1), attacker cannot have more information. But by the game scheme, message length could give attacker more information, classifying the supposed secure encryption as insecure. 
@@ -45,16 +45,9 @@
 > ![](2_Symmetric_Cryptography.assets/image-20240227224848609.png)
 
 
-
-
-
-
-
-
-
-
-
 ## XOR Review
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240302223519182.png)![](2_Symmetric_Cryptography.assets/image-20240302223527127.png)
 
 
 
@@ -66,7 +59,7 @@
 
 
 # One-Time Pad Scheme
-
+> [!algo]
 
 
 
