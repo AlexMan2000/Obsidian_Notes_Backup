@@ -39,7 +39,7 @@
 
 ### Edge Case 3:  Negligible Advantage
 > [!def]
-> _Eve only wins if she has a non-negligible advantage._ Consider a scheme where Eve can correctly which message was sent with probability $1/2+1/2^{128}$. This number is greater than $1/2^{128}$, but Eve’s advantage is $1/2^{128}$, which is astronomically small. In this case, we say that Eve has _negligible_ advantage–the advantage is so small that Eve cannot use it to mount any practical attacks. For example, the scheme might use a 128-bit key, and Eve can break the scheme if she guesses the key (with probability $1/2^{128}$). 
+> _Eve only wins if she has a non-negligible advantage._ Consider a scheme where Eve can correctly tell which message was sent with probability $1/2+1/2^{128}$. This number is greater than $1/2^{128}$, but Eve’s advantage is $1/2^{128}$, which is astronomically small. In this case, we say that Eve has _negligible_ advantage–the advantage is so small that Eve cannot use it to mount any practical attacks. For example, the scheme might use a 128-bit key, and Eve can break the scheme if she guesses the key (with probability $1/2^{128}$). 
 > 
 > Although this is theoretically a valid attack, the odds of guessing a 128-bit key are so astronomically small that we don’t need to worry about it. The exact definition of negligible is beyond the scope of this class, but in short, Eve only wins the IND-CPA game if she can guess which message was sent with probability greater than 1/2+n, where n is some non-negligible probability.
 > ![](2_Symmetric_Cryptography.assets/image-20240227224848609.png)
@@ -59,8 +59,57 @@
 
 
 # One-Time Pad Scheme
+## Algorithm
+> [!overview]
+> ![](2_Symmetric_Cryptography.assets/image-20240302224557688.png)
+
 > [!algo]
+> ![](2_Symmetric_Cryptography.assets/image-20240302224745543.png)![](2_Symmetric_Cryptography.assets/image-20240302224654308.png)![](2_Symmetric_Cryptography.assets/image-20240302224702161.png)
+
+
+
+
+## Correctness
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240302224840237.png)
+
+
+
+## Security
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240302224910773.png)![](2_Symmetric_Cryptography.assets/image-20240302225003575.png)
+
+
+
+
+
+## Issues - Reuse of Key
+> [!bug] Caveats
+> ![](2_Symmetric_Cryptography.assets/image-20240302225311740.png)![](2_Symmetric_Cryptography.assets/image-20240302225320254.png)![](2_Symmetric_Cryptography.assets/image-20240302225329604.png)![](2_Symmetric_Cryptography.assets/image-20240302230906119.png)
+> The reason why we choose $M_0=0^k$ is that $M_{0}\oplus K=K$ and $K$ is reused across multiple queries. So if you send $M_0$ again you will get the same encryption due to the deterministic essence of the algorithm.
+> 
+> Because IND-CPA requires the reuse of key, OTP is insecure under this definition.
+> 
+> ![](2_Symmetric_Cryptography.assets/image-20240302230947692.png)
+
+
+ 
+
+
+
+## Impractibility
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240302225503514.png)
+
+
+
+
+
+
+
 
 
 
 # Block Cipher Scheme
+> [!algo]
+> 

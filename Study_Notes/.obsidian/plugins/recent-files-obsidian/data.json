@@ -5,6 +5,10 @@
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
     },
     {
+      "basename": "3_Assymmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Assymmetric_Cryptography.md"
+    },
+    {
       "basename": "Shell_Lab",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Class_Inheritance",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
-    },
-    {
-      "basename": "Exceptions",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
     }
   ],
   "omittedPaths": [],
