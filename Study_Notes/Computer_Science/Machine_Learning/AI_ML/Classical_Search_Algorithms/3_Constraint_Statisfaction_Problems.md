@@ -144,6 +144,7 @@
 > 	$n$ means we iterate through node $1$ to node $n$, $d^2$ means we are checking the pair of values in the domain of tail and head of an arc. More importantly, every time you see $d^2$ as a factor in the runtime, very likely we are checking the consistency of an arc.
 > 	
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240213153925736.png)
+> See [Solving CSP with Bayesian Network](../Graphical_Models/1_Bayes_Networks.md#Solving%20CSP%20with%20Bayesian%20Network)
 
 
 > [!proof] Proof Sketch
@@ -304,11 +305,11 @@
 ## Genetic Algorithms
 > [!overview]
 > ![](3_Constraint_Statisfaction_Problems.assets/image-20240205100206017.png)
-> **Initital Step:** The algorithm begins with k randomly generated states. Eac state is called individual and they together form a population.
+> **Initital Step:** The algorithm begins with k randomly generated states. Each state is called individual and they together form a population.
 > 
 > **Ranking Initial States:** The initial states should be ranked according to **fitness function**(for 8-queen problem it is the number of nonattacking pairs of queens).
 > 
-> **Choosing Next Generation:** We normalize the fitness score to obtain a probability for each individual, which is the probability of being choosed. For example, the probability of the first individual 24748552's probability of being chosen is $\frac{24}{24+23+20+11}\approx 31\%$。
+> **Choosing Next Generation:** We normalize the fitness score to obtain a probability for each individual, which is the probability of being choosed. For example, the probability of the first individual's probability of being chosen is $\frac{24}{24+23+20+11}\approx 31\%$。
 > 
 > **Pair the individuals:** After choosing the individual according to the probability, we may have some individual being discarded and some individuals being chosen multiple times. Then we pair up individuals at random.
 > 

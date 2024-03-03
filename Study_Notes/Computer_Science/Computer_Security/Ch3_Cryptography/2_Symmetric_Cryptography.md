@@ -93,9 +93,6 @@
 > ![](2_Symmetric_Cryptography.assets/image-20240302230947692.png)
 
 
- 
-
-
 
 ## Impractibility
 > [!important]
@@ -103,13 +100,61 @@
 
 
 
-
-
-
-
-
-
-
 # Block Cipher Scheme
-> [!algo]
+## Motivation
+> [!motiv] Motivation
+> As we’ve just seen, generating new keys for every encryption is difficult and expensive. Instead, in most symmetric encryption schemes, Alice and Bob share a secret key and use this single key to repeatedly encrypt and decrypt messages. The **block cipher** is a fundamental building block in implementing such a **symmetric encryption** scheme.
+
+
+## Block Cipher
+> [!def]
+> Intuitively, a block cipher transforms a fixed-length, n-bit input into a fixed-length n-bit output. The block cipher has $2^k$ different settings for scrambling, so it also takes in a k-bit key as input to determine which scrambling setting should be used. Each key corresponds to a different scrambling setting. The idea is that an attacker who doesn’t know the secret key won’t know what mode of scrambling is being used, and thus won’t be able to decrypt messages encrypted with the block cipher.
 > 
+> A block cipher has two operations: encryption takes in an n-bit plaintext and a k-bit key as input and outputs an n-bit ciphertext. Decryption takes in an n-bit ciphertext and a k-bit key as input and outputs an n-bit plaintext. 
+> 
+> **Question: why does the decryption require the key as input?**
+> 
+> The key is needed to determine which scrambling setting was used to generate the ciphertext. If decryption didn’t require a key, any attacker would be able to decrypt encrypted messages!
+> ![](2_Symmetric_Cryptography.assets/image-20240303121419899.png)
+> 
+> Given a fixed scrambling setting (key), the block cipher encryption must map each of the $2^n$ possible plaintext inputs to a different ciphertext output. In other words, given a specific key, the block cipher encryption must be able to map every possible input to a unique output. 
+> 
+> If the block cipher mapped two plaintext inputs to the same ciphertext output, there would be no way to decrypt that ciphertext back into plaintext, since that ciphertext could correspond to multiple different plaintexts. This means that the block cipher must also be _deterministic_. Given the same input and key, the block cipher should always give the same output.
+> 
+> In mathematical notation, the block cipher can be described as follows. There is an encryption function $E:\{0,1\}^k×\{0,1\}^n→\{0,1\}^n$.
+> 
+> This notation means we are mapping a k-bit input (the key) and an n-bit input (the plaintext message) to an n-bit output (the ciphertext). Once we fix the key K, we get a function mapping n bits to n bits: $E_{K}:\{0,1\}^n→\{0,1\}^n$ defined by $E_K(M)=E(K,M)$. $E_K$ is required to be a _permutation_ on the n-bit strings, in other words, it must be an invertible (bijective) function. 
+> 
+> The inverse mapping of this permutation is the decryption algorithm $D_K$. In other words, decryption is the reverse of encryption: $D_K(E_K(M))=M$.
+> 
+> The block cipher as defined above is a category of functions, meaning that there are many different implementations of a block cipher. Today, the most commonly used block cipher implementation is called **Advanced Encryption Standard** (AES). It was designed in 1998 by Joan Daemen and Vincent Rijmen, two researchers from Belgium, in response to a competition organized by NIST.
+
+
+
+## Correctness
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240303121925474.png)
+> Proof by contrapositive and contradiction technique used here.
+
+
+
+## Security
+> [!bug] IND-CPA Insecurity
+> Block ciphers, including AES, are not IND-CPA secure on their own because they are deterministic. In other words, encrypting the same message twice with the same key produces the same output twice. The strategy that an adversary, Eve, uses to break the security of AES is exactly the same as the strategy from the one-time pad with key reuse. Eve sends $M_0$ and $M_1$ to the challenger and receives either $E(K,M_0)$ or $E(K,M_1)$. She then queries the challenger for the encryption of $M_0$ and receives $E(K,M_0)$. 
+> 
+> If the two encryptions she receives from the challenger are the same, then Eve knows the challenger encrypted $M_0$ and sent $E(K,M_0)$. 
+> 
+> If the two encryptions are different, then Eve knows the challenger encrypted $M_1$ and sent $E(K,M_1)$. Thus Eve can win the IND-CPA game with probability 100% >1/2, and the block cipher is not IND-CPA secure.
+> 
+
+> [!important] Computationally Indistinguishable from Random Permutation
+> Although block ciphers are not IND-CPA secure, they have a desirable security property that will help us build IND-CPA secure symmetric encryption schemes: namely, a block cipher is _computationally indistinguishable_ from a random permutation. In other words, for a fixed key K�, EK�� “behaves like” a random permutation on the n�-bit strings.
+> 
+> A random permutation is a function that maps each n�-bit input to exactly one random n�-bit output. One way to generate a random permutation is to write out all 2n2� possible inputs in one column and all 2n2� possible outputs in another column, and then draw 2n2� random lines connecting each input to each output. Once generated, the function itself is not random: given the same input twice, the function gives the same output twice. However, the choice of which output is given is randomly determined when the function is created.
+> ![](2_Symmetric_Cryptography.assets/image-20240303121933937.png)
+
+
+
+
+
+

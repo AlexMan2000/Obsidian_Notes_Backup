@@ -5,6 +5,30 @@
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
     },
     {
+      "basename": "3_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "3_Constraint_Statisfaction_Problems",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "2_Decision_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
+    },
+    {
+      "basename": "5_Logic_Based_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md"
+    },
+    {
       "basename": "3_Assymmetric_Cryptography",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Assymmetric_Cryptography.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
-    },
-    {
-      "basename": "1_Introduction",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md"
-    },
-    {
-      "basename": "Special Member Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "Class_Construction_Static",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
-    },
-    {
-      "basename": "Template_Class_Design",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
-    },
-    {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
     }
   ],
   "omittedPaths": [],
