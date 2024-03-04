@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,11 +234,11 @@
   },
   "active": "0f8eb6ffb7472226",
   "lastOpenFiles": [
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
     "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
     "Computer_Science/Machine_Learning/EECS126/Graphical_Models",
     "Computer_Science/Machine_Learning/EECS126/Untitled.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222353178.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222346041.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222110071.png",

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
       "basename": "3_Hidden_Markov_Model",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "4_Kalman_Filters",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
     },
     {
       "basename": "2_Symmetric_Cryptography",
