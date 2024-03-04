@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "366b585b8d37ed5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a985eb3636cf365c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "move_semantics",
+                "query": "Priors and posteriors",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +237,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,23 +258,30 @@
   },
   "active": "0f8eb6ffb7472226",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304152337320.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304152315589.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304151232523.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304151209688.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304150450484.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304150056869.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304145841731.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304145808268.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304145421088.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304145315837.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets/image-20240304144833285.png",
+    "Untitled 1.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
+    "Computer_Science/Machine_Learning/AI_ML/Sampling_Algorithms",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
+    "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md",
     "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
     "Computer_Science/Machine_Learning/EECS126/Graphical_Models",
     "Computer_Science/Machine_Learning/EECS126/Untitled.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222353178.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222346041.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222110071.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222047068.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222002928.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221949962.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221752097.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221719392.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221604926.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303220543630.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
     "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
     "Computer_Science/Computer_Compilers",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
@@ -271,15 +302,8 @@
     "Computer_Science/Computer_Security/Ch2_Memory_Safety/Rust.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Stanford_CS110_HWs/HW1_C_C++.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.assets",
     "未命名.canvas"
   ]
 }

@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "1_Transactions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
+    },
+    {
       "basename": "1_Bayes_Networks",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
     },
     {
       "basename": "3_Hidden_Markov_Model",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "Priors&Posteriors",
+      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
     },
     {
       "basename": "Kalman_Filters",
@@ -183,22 +195,6 @@
     {
       "basename": "Basic_C_Features",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Basic_C_Features.md"
-    },
-    {
-      "basename": "HW0_C_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md"
-    },
-    {
-      "basename": "1_Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
-    },
-    {
-      "basename": "Multiprocess_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multiprocess_Programming.md"
-    },
-    {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
     }
   ],
   "omittedPaths": [],

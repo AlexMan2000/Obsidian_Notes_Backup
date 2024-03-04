@@ -28,7 +28,7 @@
 > ![](3_Hidden_Markov_Model.assets/image-20240303214258319.png)![](3_Hidden_Markov_Model.assets/image-20240303214346414.png)![](3_Hidden_Markov_Model.assets/image-20240303214415339.png)![](3_Hidden_Markov_Model.assets/image-20240303214520383.png)
 
 > [!bug] Time Complexity
-> ![](3_Hidden_Markov_Model.assets/image-20240303214855641.png)
+> ![](3_Hidden_Markov_Model.assets/image-20240304125608545.png)![](3_Hidden_Markov_Model.assets/image-20240303214855641.png)
 
 
 

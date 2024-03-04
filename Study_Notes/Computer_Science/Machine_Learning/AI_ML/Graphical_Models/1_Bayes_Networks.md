@@ -246,6 +246,82 @@
 > See [Tree-Structured CSP](../Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md#Tree-Structured%20CSP)
 
 
+
+# Bayesian Network Modeling
+## Polynomial Regression Model
+> [!def]
+> If we have training data $\mathbf{x}=(x_1,x_{2,\cdots,}x_n)$ where $x_{i}\in\mathbb{R}$, and observed output data $\mathbf{t}=(t_1,t_{2,\cdots,}t_n)$ and polynomial regression  coefficients $\mathbf{w}=(w_1,w_{2,\cdots,}w_n)$.
+> 
+> Assume now we are using $l_2$ regularization on the polynomial regression where the prior of $\mathbf{w}$ is parametrized by $\alpha$, then it suffices to get the posterior distribution of $\mathbf{w}$ given $\mathbf{t},\mathbf{x},\sigma^2,\alpha$, mathematically it is: $$p(\mathbf{w}|\mathbf{t},\mathbf{x},\sigma^2,\alpha)$$
+> 
+> Recall that in polynomial regression the model is of the form: $$t_i=f(x_i,\mathbf{w})+z_i$$ where $z_{i}\sim \mathcal{N}(0,\sigma^2)$ where $f$ is the interaction term. Notice that the interaction is not linear since we are interacting between $\mathbf{w}$ and some transformed feature of $\mathbf{x}$. So polynomial regression doesn't necessarily belong to GLM(except when $n=1$ where the feature only has first-order term of $x$).
+> 
+> Given this we know $t_i$ is dependent on $x_i,\mathbf{w},\sigma^2$, and $\mathbf{w}$ is dependent on $\alpha$, we could use the following bayesian network to represent the model compactly:
+> ![](1_Bayes_Networks.assets/image-20240304111447616.png)
+> where the _plate_(in blue rectangular) represents ($x_{i}\to t_{i}$ connection $\forall i=1,2\cdots, n$). 
+> 
+> Then in order to compute the posterior distribution mentioned earlier, we use bayes rule:
+>$$\begin{aligned}p(\mathbf{w}|\mathbf{t},\mathbf{x},\sigma^{2},\alpha)&\propto p(\mathbf{t}|\mathbf{w},\mathbf{x},\sigma^2)p(\mathbf{w}|\alpha)\end{aligned}$$
+> 
+> Finally we get: $$\begin{aligned}p(\mathbf{t}|\mathbf{w},\mathbf{x},\sigma^2)p(\mathbf{w}|\alpha)=\prod_{i=1}^{N}p(t_i|\mathbf{w},x_i,\sigma^2)p(\mathbf{w}|\alpha)\end{aligned}$$
+> 
+> We can maximize this posterior probability across all parameters to find the MAP estimator for our polynomial regression model.
+> 
+> Now suppose we want to predict $\widehat{t}$ given a new test point $\widehat{x}$, we have:
+> ![](1_Bayes_Networks.assets/image-20240304115305171.png)![](1_Bayes_Networks.assets/image-20240304115321926.png)
+> Derivations of (8.8) is based on the first independence rule of [Bayes Net Independence](1_Bayes_Networks.md#Bayes%20Net%20Independence).
+
+
+
+## Generative Models
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240304130141114.png)![](1_Bayes_Networks.assets/image-20240304130205465.png)
+
+
+
+
+
+
+
+## Construct Joint Distributions
+> [!overview]
+> Suppose we want to construct a distribution of a random variable $\mathbf{x}\sim cat(\vec{\mu})$(categorical distribution), since we know its pdf, we can construct it as ![](1_Bayes_Networks.assets/image-20240304122323450.png)
+
+> [!algo]
+> ![](1_Bayes_Networks.assets/image-20240304122350031.png)![](1_Bayes_Networks.assets/image-20240304122413049.png)![](1_Bayes_Networks.assets/image-20240304122423102.png)![](1_Bayes_Networks.assets/image-20240304122434996.png)![](1_Bayes_Networks.assets/image-20240304122600577.png)![](1_Bayes_Networks.assets/image-20240304122611003.png)
+
+
+
+## Linear Gaussian Models
+> [!overview]
+> We show how a multivariate Gaussian can be expressed as a directed graph corresponding to a linear-Gaussian model over the component vari- ables. 
+> 
+> This allows us to impose interesting structure on the distribution, with the general Gaussian and the diagonal covariance Gaussian representing opposite extremes.
+
+
+### Definition
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240304123134640.png)
+
+
+### Mean and Variance
+> [!important] Recursive Computation of Parameters
+> ![](1_Bayes_Networks.assets/image-20240304123204762.png)![](1_Bayes_Networks.assets/image-20240304123325580.png)![](1_Bayes_Networks.assets/image-20240304123358421.png)![](1_Bayes_Networks.assets/image-20240304124510675.png)
+
+
+
+
+### Extreme Cases - No links
+> [!def]
+> 
+
+
+
+
+
+
+
+
 # Bayesian Network Sampling
 ## Prior Sampling
 

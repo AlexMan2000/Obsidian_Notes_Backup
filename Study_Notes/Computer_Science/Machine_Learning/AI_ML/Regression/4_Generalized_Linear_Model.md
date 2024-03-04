@@ -1,5 +1,10 @@
 # Generalized Linear Models
-## Exponential Family Distrubution
+> [!important]
+> GLMs are a class of models that generalize linear regression to models for a response variable Y that has an error distribution other than a normal distribution. 
+> 
+> GLMs allow for the response variable to have a distribution from the exponential family (e.g., normal, binomial, Poisson), a **linear predictor** (η=Xβ), and a link function (g) that relates the mean of the distribution of Y to the linear predictor.
+
+## Exponential Family Distribution
 > [!def]
 > Suppose we have $\mathcal{D}=\{(\vec{x}_1,y_1),(\vec{x}_2,y_2),\cdots, (\vec{x}_n,y_n)\}$ where $\vec{x}_i\in\mathbb{R}^p$.
 > 
