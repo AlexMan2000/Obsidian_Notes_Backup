@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
-    },
-    {
       "basename": "3_Hidden_Markov_Model",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
     },
     {
+      "basename": "Kalman_Filters",
+      "path": "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md"
+    },
+    {
+      "basename": "4_Kalman_Filters",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
+    },
+    {
       "basename": "1_Bayes_Networks",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
     },
     {
       "basename": "3_Constraint_Statisfaction_Problems",
@@ -191,14 +199,6 @@
     {
       "basename": "Thread_Level_Parallelism",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Thread_Level_Parallelism.md"
-    },
-    {
-      "basename": "Process_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Concurrent_Programming/Process_Level_Parallelism.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
     }
   ],
   "omittedPaths": [],

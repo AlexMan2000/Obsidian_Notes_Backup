@@ -104,9 +104,26 @@
 > ![](1_Bayes_Networks.assets/image-20240303094358176.png)
 
 
-### Examples
+### Simple Examples
 > [!example] Apply D-Separation Algorithm
 > ![](1_Bayes_Networks.assets/image-20240303095424703.png)![](1_Bayes_Networks.assets/image-20240303095506873.png)![](1_Bayes_Networks.assets/image-20240303095511367.png)
+
+
+
+### Complicated Examples
+> [!example] Vitamin 6 P7
+> ![](1_Bayes_Networks.assets/image-20240303200808275.png)![](1_Bayes_Networks.assets/image-20240303200826524.png)![](1_Bayes_Networks.assets/image-20240303200833608.png)![](1_Bayes_Networks.assets/image-20240303200841319.png)![](1_Bayes_Networks.assets/image-20240303200857557.png)![](1_Bayes_Networks.assets/image-20240303200905905.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Topology and Distributions
@@ -117,6 +134,21 @@
 > **The reasons are that:**
 > 1. Some bayes net structure is computationally easier then others.
 > 2. Some causal effects are more suitable to be represented by some specific structures. For example, if there is a chained causal relationship, then it's better to use causal chain model instead of common cause model.
+
+
+## Examples
+### Calculating Probabilities
+> [!example] Vitamin 6 P5
+> ![](1_Bayes_Networks.assets/image-20240303203823324.png)![](1_Bayes_Networks.assets/image-20240303203833461.png)![](1_Bayes_Networks.assets/image-20240303203840866.png)
+
+
+
+
+### Modeling Hypothesis
+> [!example] Vitamin 6
+> ![](1_Bayes_Networks.assets/image-20240303204503941.png)![](1_Bayes_Networks.assets/image-20240303204512120.png)![](1_Bayes_Networks.assets/image-20240303204519390.png)
+
+
 
 
 

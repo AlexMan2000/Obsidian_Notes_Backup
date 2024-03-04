@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,28 +232,32 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "01299753fe31033d",
+  "active": "0f8eb6ffb7472226",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240303121933937.png",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240303121925474.png",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.assets/image-20240303121419899.png",
+    "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
+    "Computer_Science/Machine_Learning/EECS126/Graphical_Models",
+    "Computer_Science/Machine_Learning/EECS126/Untitled.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222353178.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222346041.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222110071.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222047068.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303222002928.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221949962.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221752097.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221719392.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303221604926.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets/image-20240303220543630.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.assets",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303120237914.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303120227538.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
     "Computer_Science/Computer_Compilers",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303115847968.png",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303114936795.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303114802837.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303113756391.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303113750669.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240303113423900.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
     "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md",
     "Computer_Science/Computer_Security/Ch3_Cryptography/3_Assymmetric_Cryptography.md",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
@@ -276,10 +280,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Stanford_CS110_HWs/HW1_C_C++.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.assets",
     "未命名.canvas"
   ]
 }
