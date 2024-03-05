@@ -1,4 +1,4 @@
-# Transactions
+ # Transactions
 ## Dangerous Operations on DB
 > [!motiv] Motivation
 > Many users can make requests to a database at a time which can cause concurrency issues. What happens when one user writes and then another user reads from the same resource? 

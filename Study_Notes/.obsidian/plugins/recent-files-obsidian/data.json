@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "3_Cryptographic_Hashes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "Security_Principles",
+      "path": "Computer_Science/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md"
+    },
+    {
+      "basename": "1_Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md"
+    },
+    {
+      "basename": "2_Memory_Vulnerability",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
+    },
+    {
+      "basename": "3_Mitigating_Vulnerabilities",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
+    },
+    {
       "basename": "1_Transactions",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "Project_1",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
     },
     {
       "basename": "1_Bayes_Networks",
@@ -29,10 +61,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
     },
     {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
-    },
-    {
       "basename": "3_Constraint_Statisfaction_Problems",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
     },
@@ -49,32 +77,12 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md"
     },
     {
-      "basename": "3_Assymmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Assymmetric_Cryptography.md"
-    },
-    {
       "basename": "Shell_Lab",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
     },
     {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
-      "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
-    },
-    {
-      "basename": "Project_1",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "3_Mitigating_Vulnerabilities",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
     },
     {
       "basename": "cheatsheet",
@@ -191,10 +199,6 @@
     {
       "basename": "Memory_Management",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md"
-    },
-    {
-      "basename": "Basic_C_Features",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Basic_C_Features.md"
     }
   ],
   "omittedPaths": [],

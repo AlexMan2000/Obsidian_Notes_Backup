@@ -28,6 +28,7 @@
 > [!def]
 > This method prevents our codes from executing the malicious code by setting the page segments that store the malicious code to be non-executable.
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225091957542.png)
+> If non-executable pages are enabled, you cannot execute any code that you write into memory. **The exploit involves writing shellcode into memory, so it would no longer work.**
 
 > [!bug] Vulnerability
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225092245959.png)
@@ -37,7 +38,7 @@
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225093112136.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225093425340.png)
 
 
-## Important Example - RTL
+### Important Example - RTL
 > [!example] Sp24 Exam Prep03 P1
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240226100730373.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100735554.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100741692.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100749264.png)![](3_Mitigating_Vulnerabilities.assets/image-20240226100756047.png)
 
@@ -86,16 +87,25 @@
 
 ### Attacks
 > [!bug] Vulnerabilities
-> ![](3_Mitigating_Vulnerabilities.assets/image-20240225100909440.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225100925770.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225100934244.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225101824614.png)
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240225100909440.png)
+> Remember, since stack canary is basically 32 random bits, with the lowest byte being null terminator, which prevents attacks like `printf("%s", buf)` to leak the stack canary. But if there is [Format String Vulnerabilities](2_Memory_Vulnerability.md#Format%20String%20Vulnerabilities) like `print(buf)`, then since format string vulnerability can read and write to any location in the memory, stack canary's null byte defense mechanism won't work.
+> 
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240225100925770.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225100934244.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225101824614.png)
+> Or if there is `printf(buf)` in the code, we can use format string vulnerabilty to attack, since format strings can write to arbitrary locations in the code. Stack canaries only defend against exploits that write continuously from the vulnerable buffer to the rip.
 
 ### Concept Check
 > [!quiz] Concept Check
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225144709429.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225144904720.png)
+> 4. Suppose the stack canary is 32-bit random bits, then what's the probability that user can successfully leak the value of it by padding the local variables below it.
+> 
+> ![](3_Mitigating_Vulnerabilities.assets/image-20240305080349067.png)
 
 
 ### Example
 > [!example]
 > See [Example](#ASLR%20-%20Step%202#Example)
+
+
 
 ## Pointer Authentication - Step 3
 ### PAC

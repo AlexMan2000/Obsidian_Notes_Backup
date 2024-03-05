@@ -127,7 +127,9 @@
 > 
 > The inverse mapping of this permutation is the decryption algorithm $D_K$. In other words, decryption is the reverse of encryption: $D_K(E_K(M))=M$.
 > 
-> The block cipher as defined above is a category of functions, meaning that there are many different implementations of a block cipher. Today, the most commonly used block cipher implementation is called **Advanced Encryption Standard** (AES). It was designed in 1998 by Joan Daemen and Vincent Rijmen, two researchers from Belgium, in response to a competition organized by NIST.
+> The block cipher as defined above is a category of functions, meaning that there are many different implementations of a block cipher. 
+> 
+> Today, the most commonly used block cipher implementation is called **Advanced Encryption Standard** (AES). It was designed in 1998 by Joan Daemen and Vincent Rijmen, two researchers from Belgium, in response to a competition organized by NIST.
 
 
 
@@ -138,20 +140,233 @@
 
 
 
-## Security
-> [!bug] IND-CPA Insecurity
-> Block ciphers, including AES, are not IND-CPA secure on their own because they are deterministic. In other words, encrypting the same message twice with the same key produces the same output twice. The strategy that an adversary, Eve, uses to break the security of AES is exactly the same as the strategy from the one-time pad with key reuse. Eve sends $M_0$ and $M_1$ to the challenger and receives either $E(K,M_0)$ or $E(K,M_1)$. She then queries the challenger for the encryption of $M_0$ and receives $E(K,M_0)$. 
+## Not IND-CPA Secure
+> [!bug] IND-CPA Insecurity - Due to Determinism
+> **Block ciphers, including AES, are not IND-CPA secure on their own because they are deterministic.** In other words, encrypting the same message twice with the same key produces the same output twice. 
+> 
+> The strategy that an adversary, Eve, uses to break the security of AES is exactly the same as the strategy from the one-time pad with key reuse. Eve sends $M_0$ and $M_1$ to the challenger and receives either $E(K,M_0)$ or $E(K,M_1)$. She then queries the challenger for the encryption of $M_0$ and receives $E(K,M_0)$. 
 > 
 > If the two encryptions she receives from the challenger are the same, then Eve knows the challenger encrypted $M_0$ and sent $E(K,M_0)$. 
 > 
 > If the two encryptions are different, then Eve knows the challenger encrypted $M_1$ and sent $E(K,M_1)$. Thus Eve can win the IND-CPA game with probability 100% >1/2, and the block cipher is not IND-CPA secure.
 > 
+> **In short, Block ciphers are not IND-CPA secure because they are deterministic.** In IND-CPA game, K is required to be the same across multiple queries. This means under this game setting, block cipher behaves deterministically. Beacuse the randomnmess in $K$ is what makes block cipher random.
 
-> [!important] Computationally Indistinguishable from Random Permutation
-> Although block ciphers are not IND-CPA secure, they have a desirable security property that will help us build IND-CPA secure symmetric encryption schemes: namely, a block cipher is _computationally indistinguishable_ from a random permutation. In other words, for a fixed key K�, EK�� “behaves like” a random permutation on the n�-bit strings.
-> 
-> A random permutation is a function that maps each n�-bit input to exactly one random n�-bit output. One way to generate a random permutation is to write out all 2n2� possible inputs in one column and all 2n2� possible outputs in another column, and then draw 2n2� random lines connecting each input to each output. Once generated, the function itself is not random: given the same input twice, the function gives the same output twice. However, the choice of which output is given is randomly determined when the function is created.
+> [!bug] Limitations
+> ![](2_Symmetric_Cryptography.assets/image-20240305092959967.png)
+> There are two main reasons AES by itself cannot be a practical IND-CPA secure encryption scheme. 
+> - The first is that we’d like to encrypt arbitrarily long messages, but the block cipher only takes fixed-length inputs. 
+> - The other is that if the same message is sent twice, the ciphertext in the two transmissions is the same with AES (i.e. it is deterministic).
+
+
+
+
+## Brute Force Attacks - Impossible
+> [!bug] Brute-force Attacks Impossible
+> ![](2_Symmetric_Cryptography.assets/image-20240305091732368.png)![](2_Symmetric_Cryptography.assets/image-20240305091752594.png)
+
+
+## Efficiency
+> [!property]
+> ![](2_Symmetric_Cryptography.assets/image-20240305091816686.png)
+
+
+
+# Block Cipher Implementation - AES
+## AES Definition
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305092122288.png)![](2_Symmetric_Cryptography.assets/image-20240305092350296.png)
+
+
+
+
+## IND-Random-Permutation
+> [!property] Computationally Indistinguishable from Random Permutation
+> ![](2_Symmetric_Cryptography.assets/image-20240305085946653.png)
 > ![](2_Symmetric_Cryptography.assets/image-20240303121933937.png)
+> Note that the random permutation is just a random function $\mathbf{f}:\{0,1\}^n\to\{0,1\}^n$. After we randomly generate a function $f\sim \mathbf{f}$, the mapping $f:\{0,1\}^n\to\{0,1\}^n$ is not random(Supplying the same input twice gives the same output).
+> 
+> In block cipher case, we can think of random permutation as a random bijection.
+
+
+
+## Copmutationally IND
+> [!concept]
+> ![](2_Symmetric_Cryptography.assets/image-20240305092658027.png)
+
+
+
+## AES Algorithms
+> [!algo]
+> ![](2_Symmetric_Cryptography.assets/image-20240305092725323.png)![](2_Symmetric_Cryptography.assets/image-20240305092744843.png)![](2_Symmetric_Cryptography.assets/image-20240305092749761.png)![](2_Symmetric_Cryptography.assets/image-20240305092756232.png)![](2_Symmetric_Cryptography.assets/image-20240305092803880.png)
+
+
+
+
+# Block Cipher Modes of Operation
+> [!overview] Goal
+> To build an encryption system that fixes the [Block Cipher Limitations](2_Symmetric_Cryptography.md#Not%20IND-CPA%20Secure):
+> 1. We want to encrypt message of arbitrary length.
+> 2. We want the scheme to be non-deterministic.
+
+
+
+## Block Cipher and Stream Cipher
+> [!def] 
+> ![](2_Symmetric_Cryptography.assets/image-20240305123558795.png)
+
+
+
+
+## AES-ECB Mode - Block
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305093948569.png)![](2_Symmetric_Cryptography.assets/image-20240305093957646.png)
+> This scheme turns out to be **not IND-CPA secure** since it is still deterministic, given the same output, we have same output.
+
+
+
+## AES-CBC Mode - Block
+### Definition
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094418214.png)
+
+
+### Correctness
+> [!property] Correctness
+> ![](2_Symmetric_Cryptography.assets/image-20240305094653479.png)
+
+
+### Efficency&Parallelism
+> [!property] Efficency
+> ![](2_Symmetric_Cryptography.assets/image-20240305094708127.png)![](2_Symmetric_Cryptography.assets/image-20240305102025316.png)
+
+
+
+### Security
+> [!property]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094830641.png)![](2_Symmetric_Cryptography.assets/image-20240305115934213.png)![](2_Symmetric_Cryptography.assets/image-20240305115948333.png)
+
+
+### Need for Padding
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094746814.png)![](2_Symmetric_Cryptography.assets/image-20240305094753470.png)
+> PKCS stands for Public Key Cryptography Standards.
+
+
+
+## AES-CFB Mode - Stream
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094510552.png)![](2_Symmetric_Cryptography.assets/image-20240305122647296.png)
+
+
+
+## AES-OFB Mode - Stream
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094525867.png)
+
+
+
+
+## AES-CTR Mode - Stream
+### Definition
+> [!def]
+> ![](2_Symmetric_Cryptography.assets/image-20240305094534064.png)
+
+
+### Efficiency&Parallelism
+> [!property]
+> ![](2_Symmetric_Cryptography.assets/image-20240305120502405.png)
+
+
+
+### Security
+> [!property]
+> ![](2_Symmetric_Cryptography.assets/image-20240305120612182.png)
+
+
+### Lack of Integrity and Authenticity
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240305122729299.png)![](2_Symmetric_Cryptography.assets/image-20240305122733526.png)![](2_Symmetric_Cryptography.assets/image-20240305122739368.png)![](2_Symmetric_Cryptography.assets/image-20240305122746913.png)![](2_Symmetric_Cryptography.assets/image-20240305122754626.png)
+> In short, given the definition of CTR we have $C_{i}=P_{i}\oplus Z_{i}$ where $Z_{i}=E_K(IV+i)$, without knowing the encryption scheme, we can just solve for the $j$-th byte of $Z_{i}$ and modify that byte, after that we compute the modified $Z_{i}$ and XOR with $C_{i}$ to get the modified $P_{i}$.
+
+
+
+
+
+
+
+
+
+
+
+
+### No Padding
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240305120550427.png)
+> Since the plaintext/ciphertext never pass the encryption block(which requires fixed length of input) in encryption and decryption phase, we don't have to pad.
+
+
+## Comparisons of Modes
+> [!important]
+> ![](2_Symmetric_Cryptography.assets/image-20240305121027366.png)![](2_Symmetric_Cryptography.assets/image-20240305121349323.png)![](2_Symmetric_Cryptography.assets/image-20240305122519050.png)![](2_Symmetric_Cryptography.assets/image-20240305123628832.png)
+
+
+
+
+
+
+
+
+# Padding
+## PKCS\#7
+> [!motiv] Motivation
+> Recall that block ciphers can only encrypt messages of a fixed size, which is called the _block size_. We know that we can use block chaining modes (e.g. CBC mode) to deal with messages that are longer than the block size, but they don't solve the problem of messages whose lengths aren't an integer multiple of the block size. So how do we make do? We add _padding_. For this question, we'll assume that the block cipher we're using is AES, which uses 16-byte blocks.
+
+> [!property]
+> **We summarizes the properties of PKCS7 padding scheme:**
+> 1. If we want to pad 1 byte, we write C[15] to be 1. For any message, making C[15] to be 1 will always be a valid PKCS padding.
+> 2. Writing n bytes of n will always make the message a valid padding of length n.
+> 3. If we want to pad n bytes, we write from the end n byte of n.
+
+> [!example]
+> ![](2_Symmetric_Cryptography.assets/image-20240305111307400.png)
+> Any message that ends in 0s' will be truncated. Any message that doesn't end in 0s' will get correct de-padded text.
+> 
+> ![](2_Symmetric_Cryptography.assets/image-20240305111404712.png)
+> Any message that ends in S will be truncated.  Any message that doesn't end in S will get correct de-padded text.
+> 
+> ![](2_Symmetric_Cryptography.assets/image-20240305111546918.png)![](2_Symmetric_Cryptography.assets/image-20240305111603291.png)
+> The above example shows the second property of PKCS.
+> 
+> ![](2_Symmetric_Cryptography.assets/image-20240305112508637.png)
+> This is an application of property 1 of PKCS.
+
+
+
+
+## Padding Oracle
+> [!def]
+> A padding oracle is a black-box function which takes as its input some ciphertext `c`, and returns `True` if the (decrypted) ciphertext is properly padded and `False` otherwise. Note that the padding oracle has access to the secret key $k$ used for encryption and decryption.
+
+> [!example]
+> ![](2_Symmetric_Cryptography.assets/image-20240305113015234.png)
+> Our goal for this question is to modify the ciphertext so that its plaintext decryption has valid padding no matter what. One way to do this is to modify the last byte of $C_1$​, which we will denote as $C_1[15]$.
+> 
+> **Which modified value of $C_1​[15]$ will cause the padding oracle to always report that the decryption has valid padding?**
+> 
+> We can choose $C_1[15]=T_2[15]\oplus0x1$. Since we can first deduce that $P_n=C_{n-1}\oplus T_n$(which is an expression that doesn't involve intermediate encryption steps)
+> 
+> Then by XOR algebra we know that in order to make $P_2[15]=1$, we have to set $C_1[15]$ to be different as $T_2[15]$, in which case $C_1[15]\oplus T_2[15]=0x1$. 
+> 
+> Thus we know that $C_1[15]=T_2[15]\oplus0x1$ since $\oplus 0x1$ is the same to say flipping the bit(making something different from current bit).
+> 
+> **Let $C_1[15]$ denote the modified ciphertext byte in the previous part that always results in correct padding.**
+> 
+> **Which of these expressions evaluates to the value of $P_2​[15]$, the last byte of $P_2$​?**
+> ![](2_Symmetric_Cryptography.assets/image-20240305114149959.png)![](2_Symmetric_Cryptography.assets/image-20240305114611972.png)![](2_Symmetric_Cryptography.assets/image-20240305114616620.png)![](2_Symmetric_Cryptography.assets/image-20240305114652393.png)
+
+
+
 
 
 

