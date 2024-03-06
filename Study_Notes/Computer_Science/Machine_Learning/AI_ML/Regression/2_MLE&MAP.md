@@ -22,8 +22,16 @@
 > [!important]
 > ![](2_MLE&MAP.assets/image-20231129171934452.png)![](2_MLE&MAP.assets/image-20231129172007882.png)
 
- 
-# MAP Basics
+
+# MLE and KL-Divergence
+> [!def]
+> ![](2_MLE&MAP.assets/image-20240305181132641.png)![](2_MLE&MAP.assets/image-20240305181148978.png)
+
+
+
+
+
+
 
 
 

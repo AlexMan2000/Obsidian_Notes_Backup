@@ -18,7 +18,7 @@
 > 	 - **Risk Function**: $R(h)=\mathbb{E}_{X,Y\sim p}[L(h(X),Y)]$
 > 	 - **Empirical Risk Function**: $\widehat{R}_n(h)=\frac{1}{n}\sum_{i=1}^nL(h(x_i),y_i)$
 > 	 - By WLLN, $\widehat{R}_{n}(h)\to R(h)$. So in practice we just minimize the empirical risk function.
->  6. Bayes Decision Rule / Classifier: $h^*$ : The decision rule/classifier that minimizers the risk function.
+>  6. **Bayes Decision Rule / Classifier**: $h^*$ : The decision rule/classifier that minimizers the risk function.
 
 
 

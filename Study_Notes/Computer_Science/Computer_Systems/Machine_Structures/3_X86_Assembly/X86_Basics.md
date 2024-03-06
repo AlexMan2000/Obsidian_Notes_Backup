@@ -51,16 +51,19 @@
 
 
 ### Summary
+> [!summary]
 > ![image.png](./X86_Basics.assets/20231023_2318588418.png)![image.png](./X86_Basics.assets/20231023_2318598769.png)
 
 
 
 ## Address Computation Instructions
+> [!important]
 > ![image.png](./X86_Basics.assets/20231023_2318598375.png)
 
 
 
 ## Arithmetic Instructions
+> [!important]
 > ![image.png](./X86_Basics.assets/20231023_2319017592.png)![image.png](./X86_Basics.assets/20231023_2319025056.png)![image.png](./X86_Basics.assets/20231023_2319042192.png)
 
 

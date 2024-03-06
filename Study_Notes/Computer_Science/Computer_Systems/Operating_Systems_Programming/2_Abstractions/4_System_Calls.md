@@ -62,10 +62,6 @@
 
 
 
-
-
-
-
 ## Syscall Handler
 > [!def]
 >![](4_System_Calls.assets/image-20240229155246755.png) 

@@ -1,8 +1,124 @@
 {
   "recentFiles": [
     {
+      "basename": "Abstract_Data_Type",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
+    },
+    {
+      "basename": "7_Mutability_Assertions",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
+    },
+    {
+      "basename": "Multithreading",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Untitled.md"
+    },
+    {
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+    },
+    {
+      "basename": "3_Sockets_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.md"
+    },
+    {
+      "basename": "X86_Basics",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/3_X86_Assembly/X86_Basics.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "1_Threads_and_Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
+    },
+    {
+      "basename": "Monitors_Reader_Writers",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Monitors_Reader_Writers.md"
+    },
+    {
+      "basename": "Locks_Atmoicity",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md"
+    },
+    {
+      "basename": "Queues_Message_Passing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
+    },
+    {
+      "basename": "Concurrency",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Concurrency.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Compilers/Related_Resources.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
       "basename": "3_Cryptographic_Hashes",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "Shell_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "Operating System Interfaces",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
+    },
+    {
+      "basename": "Exceptions&Processes",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "2_Decision_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
+    },
+    {
+      "basename": "3_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "2_Types_of_RL",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "1_Multivariable_Gaussian",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
+    },
+    {
+      "basename": "3_Regression&Reparametrization",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
+    },
+    {
+      "basename": "1_Transactions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
     },
     {
       "basename": "2_Symmetric_Cryptography",
@@ -25,28 +141,8 @@
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
     },
     {
-      "basename": "1_Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
       "basename": "Project_1",
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
-    },
-    {
-      "basename": "3_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
     },
     {
       "basename": "Priors&Posteriors",
@@ -69,20 +165,8 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
     },
     {
-      "basename": "2_Decision_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
-    },
-    {
       "basename": "5_Logic_Based_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
     {
       "basename": "cheatsheet",
@@ -109,96 +193,8 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Stanford_CS110_HWs/HW1_C_C++.md"
     },
     {
-      "basename": "3_Sockets_IPCs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
-    },
-    {
       "basename": "2_Files_IOs",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
-    },
-    {
-      "basename": "1_Threads_and_Processes",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "Move_Semantics",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
-    },
-    {
-      "basename": "Functions and Lambdas",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
-    },
-    {
-      "basename": "HW2_Shell",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW2_Shell.md"
-    },
-    {
-      "basename": "HW1_Pintos_Lists",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
-    },
-    {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
-    },
-    {
-      "basename": "Malloc_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "Caches_Optimization",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
-    },
-    {
-      "basename": "Lab07_Cache",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab07_Cache.md"
-    },
-    {
-      "basename": "OS_VM_I_O",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md"
-    },
-    {
-      "basename": "File_System_Design",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Design.md"
-    },
-    {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/4_System_Calls.md"
-    },
-    {
-      "basename": "CALL",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
-    },
-    {
-      "basename": "2_Fundamental OS Concepts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md"
-    },
-    {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "1_Operating System Introduction",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/1_Operating System Introduction.md"
-    },
-    {
-      "basename": "Generics_Function_Pointers",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Generics_Function_Pointers.md"
-    },
-    {
-      "basename": "Memory_Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/1_C_Language/Memory_Management.md"
     }
   ],
   "omittedPaths": [],

@@ -36,21 +36,26 @@
 
 
 
-## Sending Signals
+## Sending Signals between Processes
+### Concept
 > [!def]
 > ![](Exceptions&Processes.assets/image-20231027094729282.png)
 
+
+### Sending Signals with Kill
 > [!code] Sending Signals with /bin/kill Program
 > ![](Exceptions&Processes.assets/image-20231027095902051.png) 
 > 注意这里写出`kill`的`full path`, 原因是系统中可能有很多`kill`程序，而我们需要的是系统自带的`bin/kill`, 其实是为了防止错误。
 
 
-> [!code] Sending Signals from Keyboard
-> ![](Exceptions&Processes.assets/image-20231027100221551.png)![](Exceptions&Processes.assets/image-20231027100329803.png)
-
-
 > [!code] Sending Signals with kill() function
 > ![](Exceptions&Processes.assets/image-20231027100737252.png)![](Exceptions&Processes.assets/image-20231027100638238.png)
+
+
+
+### Sending Signals with Keyboard Interrupt
+> [!code] Sending Signals from Keyboard
+> ![](Exceptions&Processes.assets/image-20231027100221551.png)![](Exceptions&Processes.assets/image-20231027100329803.png)
 
 > [!important] 
 > 1. **SIGINT (Signal Interrupt)**
@@ -62,6 +67,8 @@
 > 	- **Purpose**: Its primary purpose is to force the termination of a process. It's a surefire way to kill a process when other methods are ineffective.
 > 	- **Handling**: `Unlike SIGINT, the SIGKILL signal cannot be caught, blocked, or ignored by the process.` When a process receives a SIGKILL, the operating system terminates it immediately without giving it a chance to perform cleanup operations, which means it becomes a valid zombie process waiting to be reaped by other processes.
 
+
+### Sending Signals with alarm
 > [!code] Sending with alarm() function
 > ![](Exceptions&Processes.assets/image-20231027101848585.png)
 
@@ -69,6 +76,7 @@
 
 
 ## Receiving Signals
+### Procedures
 > [!def]
 > ![](Exceptions&Processes.assets/image-20231027094934980.png)
 > 总的来说，`pending bits`是用于标记那些已经被发送/送达目标`process`但是因为`blocking bits`仍然生效从而导致信号无法被接收的情况。
@@ -78,8 +86,13 @@
 > 注意到`bit mask set`中每个信号只有一个bit来表示，所以如果有多个同类信号到达进程A且被blocked了，那这个bit只会表示有没有信号在`pending`的状态，而不会记录有多少个同类信号在`pending`的状态。
 > ![](Exceptions&Processes.assets/image-20231027145920303.png)
 > 
-> ![](Exceptions&Processes.assets/image-20231027094804742.png)
-> 
+> ![](Exceptions&Processes.assets/image-20231027094804742.png)![](Signals.assets/image-20240305171833872.png)
+
+
+### Examples
+> [!example] Signal is not queued
+> ![](Signals.assets/image-20240305171355944.png)![](Signals.assets/image-20240305171409492.png)![](Signals.assets/image-20240305171415691.png)![](Signals.assets/image-20240305171626687.png)
+
 
 
 
@@ -96,6 +109,12 @@
 > ![](Exceptions&Processes.assets/image-20231027151434973.png)
 
 
+## Default Actions
+> [!def]
+> ![](Signals.assets/image-20240305171945901.png)
+
+
+
 ## Overriding Signal Handlers
 > [!code] 
 > 下面的函数用于修改某个信号的默认行为：
@@ -110,10 +129,39 @@
 
 
 ## Installing Signal Handler
-### Installing Procedures
 > [!info]
 > ![](Exceptions&Processes.assets/image-20231027142059345.png)
 > When a process calls `fork()`, the child process inherits copies of the parent's set of signal handlers. At the time of the `fork()`, any signal handlers that the parent has installed are also established for the child process. This means that if the parent has installed a specific handler for certain signals (other than the default handlers provided by the system), the child process will inherit these handlers.
+
+
+## Blocking Signals
+> [!info]
+> ![](Exceptions&Processes.assets/image-20231027142500643.png)![](Exceptions&Processes.assets/image-20231027142602762.png)
+
+> [!example] Temporarily Blocking Signals
+> ![](Exceptions&Processes.assets/image-20231027142906828.png)
+
+
+## Waitpid and signals
+> [!property]
+> Blocking signals in a parent process does not prevent `waitpid` from being able to catch terminated child processes. The `waitpid` system call is used to wait for state changes in a child of the calling process, such as termination. **The functionality of `waitpid` is not directly influenced by the signal mask of the parent process because it deals with the state of child processes at the system level rather than through signal delivery.**
+> 
+> Signals are typically used for asynchronous event notifications between processes or between the kernel and a process. For example, the `SIGCHLD` signal is sent to a parent process when a child process terminates. However, the delivery of this signal to the parent process can be blocked or the signal can be ignored. Even if you block `SIGCHLD` or other signals in the parent process, `waitpid` can still be used to wait for child processes to change state (e.g., to terminate).
+> 
+> **When a child process terminates, the kernel retains some information about the process (such as its exit status) so that the parent can retrieve this information using `waitpid` or similar functions.** This mechanism ensures that a parent process has the opportunity to collect the termination status of its children, which also helps the system to release all resources associated with the child process.
+
+> [!important]
+> 1. **When a child process is stopped:** The child process sends a `SIGSTOP` signal (or another signal that stops the process, such as `SIGTSTP`, `SIGTTIN`, or `SIGTTOU`) to the parent process. This signal indicates that the child process has been stopped, usually because it has received a stop signal itself. However, it's important to note that the stopped state is not typically communicated directly to the parent process as an explicit message. Instead, the parent process can become aware of the stop event through the `waitpid` system call with options set to return if a child has stopped (e.g., `WUNTRACED`).
+> 2. **When a child process is terminated:** The child process sends a `SIGCHLD` signal to the parent process. This signal indicates that a child process has stopped or exited. The termination of a child process can occur due to various reasons, such as normal exit after completing its execution, being killed by a signal, or exiting due to an error.
+
+
+
+## Signals are not queued
+### Counting with Signals Example
+> [!example]
+> ![](Signals.assets/image-20240305173009960.png)
+> The parent process create 10 child processes. If all the child processes terminate at the same time, kernel will send 10 `SIGCHLD` to parent process, but since signals are not queued, we will in the worst case only execute `counter++` once, and the while loop in the parent process will never end.
+
 
 
 ### SIGCHLD Example - Reaping Child Processes
@@ -215,18 +263,9 @@ int main(int argc, char *argv[]) {
 > ![](Exceptions&Processes.assets/image-20231027142356996.png)
 
 
-## Blocking Signals
-> [!info]
-> ![](Exceptions&Processes.assets/image-20231027142500643.png)![](Exceptions&Processes.assets/image-20231027142602762.png)
-
-> [!example] Temporarily Blocking Signals
-> ![](Exceptions&Processes.assets/image-20231027142906828.png)
-
-> [!summary] Detailed Explanations
-> ![](Exceptions&Processes.assets/image-20231027143319442.png)![](Exceptions&Processes.assets/image-20231027143344646.png)
 
 
-# Writing Signal Handlers
+# Proper Signal Handling
 ## Async-Signal-Safe Functions
 > [!info]
 > ![](Exceptions&Processes.assets/image-20231027143819637.png)
@@ -271,7 +310,7 @@ int main(int argc, char *argv[]) {
 
 
 
-# Portable Signal Handling
+## Portable Signal Handling
 > [!warning] 
 > ![](Exceptions&Processes.assets/image-20231027152803824.png)
 
@@ -279,13 +318,27 @@ int main(int argc, char *argv[]) {
 > ![](Signals.assets/image-20231027153119396.png)![](Signals.assets/image-20231027153131333.png)
 
 
-# Blocking and Unblock Signals
-## Basics
+# Synchronize the Flows
+## Race Error
+> [!bug] Buggy Example - Race
+> ![](Signals.assets/image-20231027153912905.png)![](Signals.assets/image-20231027153935320.png)![](Signals.assets/image-20231027154021114.png)![](Signals.assets/image-20231027154035888.png)
+
+
+## Fix 1 - Block Signals
+> [!success] Fix
+> ![](Signals.assets/image-20231027154212827.png)![](Signals.assets/image-20231027154228051.png)
+
+
+## Fix 2 - Explicitly Waiting for Signals
+> [!success] Fix
+> ![](Signals.assets/image-20240302214427543.png)
+
+
+
+## Job List Management Example
 > [!important]
 > ![](Signals.assets/image-20240302214838580.png)![](Signals.assets/image-20240302214901543.png)
 
-
-## Job List Management
 > [!bug] Job List Broken Example
 > ![](Signals.assets/image-20240302222143135.png)
 ```c
@@ -372,34 +425,6 @@ int main(int argc, char *argv[]) {
 }
 
 ```
-
-
-
-## Masking Signals and Deferring Handlers
-> [!important]
-> ![](Signals.assets/image-20240302220529940.png)
-
-
-
-
-
-
-# Synchronize the Flows
-## Race Error
-> [!bug] Buggy Example - Race
-> ![](Signals.assets/image-20231027153912905.png)![](Signals.assets/image-20231027153935320.png)![](Signals.assets/image-20231027154021114.png)![](Signals.assets/image-20231027154035888.png)
-
-
-## Fix 1 - Block Signals
-> [!success] Fix
-> ![](Signals.assets/image-20231027154212827.png)![](Signals.assets/image-20231027154228051.png)
-
-
-## Fix 2 - Explicitly Waiting for Signals
-> [!success] Fix
-> ![](Signals.assets/image-20240302214427543.png)
-
-
 
 
 

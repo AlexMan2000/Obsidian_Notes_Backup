@@ -264,6 +264,11 @@ int main() {
 }
 ```
 
+
+
+
+
+
 ## Process Graph
 > [!def]
 > - When you are first learning about the fork function, it is often helpful to sketch the process graph, which is a simple kind of precedence graph that captures the partial ordering of program statements.
@@ -302,11 +307,12 @@ int main() {
 
 
 ### Use waitpid() to reap
+#### Property of waitpid()
 > [!info]
 > The `waitpid()` function is used to **wait for a specific child process to change its state**. It provides various options to control the behavior of the wait operation. 
 > - `pid`设置为大于零的数, 则父进程只会等待`pid`所指的子进程的状态发生变化。
 > - `pid`设置为-1，则会等待所有子进程直到其中有一个子进程的状态发生变化。
-> ![](Exceptions&Processes.assets/image-20231026183109973.png)![](Exceptions&Processes.assets/image-20231026214613707.png)![](Exceptions&Processes.assets/image-20231026214627665.png)![](Exceptions&Processes.assets/image-20231026221224770.png)
+> ![](Exceptions&Processes.assets/image-20231026183109973.png)![](Exceptions&Processes.assets/image-20231026214613707.png)![](Exceptions&Processes.assets/image-20231026214627665.png)![](Exceptions&Processes.assets/image-20231026221224770.png)![](Exceptions&Processes.assets/image-20240305173839198.png)
 > Here are some concrete examples showing each use case:
 
 
@@ -555,27 +561,6 @@ int main() {
 > ![](Exceptions&Processes.assets/image-20231026222500031.png)![](Exceptions&Processes.assets/image-20231026222503637.png)![](Exceptions&Processes.assets/image-20231026222518876.png)![](Exceptions&Processes.assets/image-20231026222525703.png)
 
 
-
-
-## Shell Program
-### Linux Process Hierarchy
-> ![](Exceptions&Processes.assets/image-20231026222947082.png)
-
-
-
-
-### Simple Shell Programs
-> [!def]
-> ![](Exceptions&Processes.assets/image-20231026222957990.png)
-
-> [!code]
-> ![](Exceptions&Processes.assets/image-20231026223024144.png)![](Exceptions&Processes.assets/image-20231026223030546.png)
-
-
-
-### Problem with Simple Shell Example
-> [!important]
-> ![](Exceptions&Processes.assets/image-20231026223309026.png)![](Exceptions&Processes.assets/image-20231026230828055.png)
 
 
 

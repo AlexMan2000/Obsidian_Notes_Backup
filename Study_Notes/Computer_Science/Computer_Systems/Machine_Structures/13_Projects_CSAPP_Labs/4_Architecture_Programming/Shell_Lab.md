@@ -1,5 +1,6 @@
 # Preliminaries
-## Overview of a Unix Shell
+## Shell Program
+### Linux Process Hierarchy
 > [!overview]
 > The command line is a sequence of ASCII text words delimited by whitespace. The first word in the command line is either the name of a **built-in command** or the **pathname of an executable file**. The remaining words are command-line arguments. 
 > - If the first word is a built-in command, the shell immediately executes the command in the current process. 
@@ -9,6 +10,23 @@
 > If the command line ends with an ampersand ”&”, then the job runs in the background, which means that the shell **does not wait for** the job to terminate before printing the prompt and awaiting the next command line. 
 > 
 > Otherwise, the job runs in the foreground, which means that the shell **waits for** the job to terminate before awaiting the next command line. Thus, at any point in time, at most one job can be running in the foreground. However, **an arbitrary number of jobs can run in the background.**
+> ![](Exceptions&Processes.assets/image-20231026222947082.png)
+
+
+
+
+### Simple Shell Programs
+> [!def]
+> ![](Exceptions&Processes.assets/image-20231026222957990.png)
+
+> [!code]
+> ![](Exceptions&Processes.assets/image-20231026223024144.png)![](Exceptions&Processes.assets/image-20231026223030546.png)
+
+
+
+### Problem with Simple Shell Example
+> [!important]
+> ![](Exceptions&Processes.assets/image-20231026223309026.png)![](Exceptions&Processes.assets/image-20231026230828055.png)
 
 
 

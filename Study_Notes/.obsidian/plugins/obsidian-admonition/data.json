@@ -273,6 +273,31 @@
       "title": "Story",
       "injectColor": true,
       "noTitle": false
+    },
+    "exp": {
+      "type": "exp",
+      "color": "34, 191, 36",
+      "icon": {
+        "name": "internet-explorer",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Explanations",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "tips": {
+      "type": "tips",
+      "color": "199, 63, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-sticky-note"
+      },
+      "command": false,
+      "title": "Tips",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
     }
   },
   "syntaxHighlight": false,
