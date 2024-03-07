@@ -53,7 +53,20 @@
 
 
 # Move Semantics
+## Motivation
+> [!motiv] Motivation
+
+
+
+
+
+
 ## Key Idea
+> [!important]
+> 
+
+
+
 > [!important]
 > ![](Move_Semantics.assets/image-20240118210913753.png)![](Move_Semantics.assets/image-20240118211702175.png)
 > By moving from obj2 to obj1, we are promising not to use the name obj2 ever and obj1 takes control of the variable.
@@ -61,6 +74,9 @@
 
 
 ## std::move
+> [!def]
+> ![](Move_Semantics.assets/image-20240307153550861.png)
+
 > [!important]
 > Inside `<utility>` library.
 > 
@@ -77,24 +93,37 @@
 > ![](Move_Semantics.assets/image-20240118213725557.png)![](Move_Semantics.assets/image-20240118213737328.png)![](Move_Semantics.assets/image-20240118213752982.png)
 
 
+## Move Construct/Assign
+> [!def]
+> ![](Move_Semantics.assets/image-20240307153906169.png)
+> Note that here there is no `const` for the parameter.
 
 
 
-## Move Constructor
+### Move Constructor
+> [!def]
+> ![](Move_Semantics.assets/image-20240307154251295.png)![](Move_Semantics.assets/image-20240307154451448.png)
+> An equivalent way of setting up `pi` field is to use `std::exchange`:
+> 
+> ![](Move_Semantics.assets/image-20240307154501840.png)
+> `ptr(std::exchange(new_ptr, null_ptr))`, set `ptr` to `new_ptr` and `new_ptr` to `nul_ptr`.
+
 > [!important]
-> It creates new from existing rvalue.
+> It creates new from existing rvalue. Note that r-value reference is an l-value.
 > 
 > The inefficient implementation would be:
 > ![](Move_Semantics.assets/image-20240118213543381.png)
 > Using `std::move` we have:
 > 
 > ![](Move_Semantics.assets/image-20240118213609556.png)
+> 
+> Note that here we are using initializer list syntax.
 
 
 
 
 
-## Move Assignment
+### Move Assignment
 > [!important]
 > It overwrites existing from existing r-value.
 > ![](Move_Semantics.assets/image-20240118213539165.png)
@@ -103,6 +132,28 @@
 > ![](Move_Semantics.assets/image-20240118213627265.png)
 
 
+## Core Guideline C.64 - Valid State
+> [!def]
+> ![](Move_Semantics.assets/image-20240307160306227.png)![](Move_Semantics.assets/image-20240307160336392.png)![](Move_Semantics.assets/image-20240307160759811.png)
+> If field `pi` is using `unique_ptr`, then phase 2 can be omitted:
+> 
+> ![](Move_Semantics.assets/image-20240307160845957.png)
+
+
+
+
+
+
+
+
+### Core Guideline C.66 - noexcept
+> [!def]
+> ![](Move_Semantics.assets/image-20240307154706946.png)
+> ![](Move_Semantics.assets/image-20240307155250506.png)
+> `noexcept` basically means no exception. Adding it will not affect the correctness of the code while improve the performance.
+> 
+> ![](Move_Semantics.assets/image-20240307155437287.png)
+> Here `push_back` gives you **strong exception safety guarantee** such that if any exceptions is thrown from `push_back` function, it acts like nothing has happened at all. Much like the rolling back of commit in database.
 
 
 ## Quick Quiz

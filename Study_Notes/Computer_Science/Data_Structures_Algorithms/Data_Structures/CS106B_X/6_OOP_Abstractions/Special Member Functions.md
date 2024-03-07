@@ -45,6 +45,12 @@
 
 
 # Copy Assignment
+> [!def]
+> ![](Special%20Member%20Functions.assets/image-20240307151517032.png)
+
+
+
+
 ## Write good assignment operator
 > [!important]
 > There are three things we need to pay attention when writing assignment operator:

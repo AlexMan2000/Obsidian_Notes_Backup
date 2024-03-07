@@ -4,34 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "823f626398133840",
+        "id": "f3899c7c9a7692c2",
         "type": "tabs",
         "children": [
           {
-            "id": "2e5176d3f6a00be5",
+            "id": "d3c3cac97078572d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "302f1841ba75721e",
+            "id": "9f39d05a4a91eba8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
+                "file": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4a4e243d75cac9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,23 +232,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2e5176d3f6a00be5",
+  "active": "d4a4e243d75cac9a",
   "lastOpenFiles": [
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306170655844.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306170632906.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306170625502.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306170150514.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163518388.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163209185.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163159582.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163153711.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163124627.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306163117813.png",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.assets/image-20240306162742375.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.assets/image-20240307163531299.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.assets/image-20240307163358756.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.assets/image-20240307163209883.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.assets/image-20240307161308927.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307160845957.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307160759811.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307160336392.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307160306227.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307155437287.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307155250506.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.assets/image-20240307154706946.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md",
     "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstraction_Function_Rep_Invariants.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Untitled.md",
     "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
     "Computer_Science/Java_Language/Java_Spring",
@@ -250,20 +274,9 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/System_Calls.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Monitors_Reader_Writers.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multiprocessing.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Concurrency.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.assets",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md",
-    "Computer_Science/Computer_Compilers/Related_Resources.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
     "Computer_Science/Computer_Systems/Database Systems/CMU_15445_Projects",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
     "Computer_Science/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.assets",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.assets",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Algorithms",

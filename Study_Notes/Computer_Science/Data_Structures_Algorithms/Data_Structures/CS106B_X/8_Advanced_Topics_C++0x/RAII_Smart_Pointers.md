@@ -1,4 +1,20 @@
 # RAII
+## Definition
+> [!def]
+> ![](RAII_Smart_Pointers.assets/image-20240307163209883.png)
+
+
+
+## Exception Safety
+> [!example] Bad Example
+> ![](RAII_Smart_Pointers.assets/image-20240307163358756.png)
+
+> [!example] Fix
+> ![](RAII_Smart_Pointers.assets/image-20240307163531299.png)
+
+
+
+
 ## Principles
 > [!concept]
 > ![](Exceptions.assets/image-20240124123615482.png)![](Exceptions.assets/image-20240124123635344.png)
@@ -19,6 +35,15 @@
 
 
 ## std::unique_ptr
+### Exclusive Ownership
+> [!def]
+> ![](RAII_Smart_Pointers.assets/image-20240307161308927.png)
+
+
+
+
+
+
 > [!concept]
 > ![](RAII_Smart_Pointers.assets/image-20240124125033237.png)
 > If we are able to copy, it will cause double free problem:

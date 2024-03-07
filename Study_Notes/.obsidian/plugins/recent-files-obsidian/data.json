@@ -1,16 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "RAII_Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
+    },
+    {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
+    },
+    {
+      "basename": "AP-HW4-Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md"
+    },
+    {
+      "basename": "AP-HW1-Matrix_Algebra",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
+    },
+    {
+      "basename": "AP-HW2-Network",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
+    },
+    {
       "basename": "Abstract_Data_Type",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
     },
     {
-      "basename": "7_Mutability_Assertions",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
+      "basename": "Heap Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "Malloc_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
+    },
+    {
+      "basename": "3_Cryptographic_Hashes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "Locks_Atmoicity",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md"
     },
     {
       "basename": "Multithreading",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.md"
+    },
+    {
+      "basename": "Shell_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "7_Mutability_Assertions",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
     },
     {
       "basename": "Untitled",
@@ -45,10 +89,6 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Monitors_Reader_Writers.md"
     },
     {
-      "basename": "Locks_Atmoicity",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md"
-    },
-    {
       "basename": "Queues_Message_Passing",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
     },
@@ -63,14 +103,6 @@
     {
       "basename": "3_Routing",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "3_Cryptographic_Hashes",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
     },
     {
       "basename": "Operating System Interfaces",
@@ -167,34 +199,6 @@
     {
       "basename": "5_Logic_Based_Search",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md"
-    },
-    {
-      "basename": "cheatsheet",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/cheatsheet.pdf"
-    },
-    {
-      "basename": "image-20240226144812787",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.assets/image-20240226144812787.png"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Security/Related_Resources.md"
-    },
-    {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
-    },
-    {
-      "basename": "HW1_C_C++",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Stanford_CS110_HWs/HW1_C_C++.md"
-    },
-    {
-      "basename": "2_Files_IOs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
     }
   ],
   "omittedPaths": [],

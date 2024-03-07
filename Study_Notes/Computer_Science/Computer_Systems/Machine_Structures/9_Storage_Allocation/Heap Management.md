@@ -122,6 +122,13 @@
 
 
 
+### Comparison
+> [!important]
+> ![](Heap%20Management.assets/image-20240306191416928.png)
+
+
+
+
 ## Splitting Free Blocks
 > [!concept]
 > ![](Heap%20Management.assets/image-20231212120432716.png)
@@ -161,18 +168,77 @@
 
 
 
-
-### Clear Flags and Coalescing Free Blocks
+### Forward Coalesce
 > [!success]
 > ![](Heap%20Management.assets/image-20231212145949829.png)
 
 
 
-### Bidirectional Coalescing
+### Bidirectional/Constant Time Coalescing
 > [!concept]
+> Knuth developed a clever and general technique, known as boundary tags, that allows for constant-time coalescing of the previous block. 
 > 
+> The idea is to add a footer (the boundarytag)at the end of each block, where the footer is a replica of the header. If each block includes such a footer, then the allocator can determine the starting location and status of the previous block by inspecting its footer, which is always one word away from the start of the current block.
+> ![](Heap%20Management.assets/image-20240306191300017.png)![](Heap%20Management.assets/image-20240306194938209.png)![](Heap%20Management.assets/image-20240306194943733.png)![](Heap%20Management.assets/image-20240306194950110.png)![](Heap%20Management.assets/image-20240306194957292.png)![](Heap%20Management.assets/image-20240306195002988.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Optimization on Bidirectional Coalescing
+> [!def]
+> Actually we don't need boundary tag for allocated block since the existence of the boundary tag is to boost the efficiency of the coalescing of adjacent free blocks. Having a footer tag for free block can enable backward coalescing and forward one(thus bidirectional one).
+>  
+> But for allocated block, we only need the location of the next block and that's enough.
+> ![](Heap%20Management.assets/image-20240306194840635.png)![](Heap%20Management.assets/image-20240306195222244.png)![](Heap%20Management.assets/image-20240306195226759.png)![](Heap%20Management.assets/image-20240306195233134.png)![](Heap%20Management.assets/image-20240306195238956.png)
 
 
 
 
 # Explicit Free Lists
+## Block Design
+> [!def]
+> ![](Heap%20Management.assets/image-20240306200132733.png)
+
+
+Linked List Layout
+> [!def]
+> ![](Heap%20Management.assets/image-20240306200632973.png)
+
+
+## Allocation
+> [!def]
+> ![](Heap%20Management.assets/image-20240306200705140.png)
+
+
+
+## Freeing
+> [!def]
+> ![](Heap%20Management.assets/image-20240306200732627.png)
+
+
+### LIFO Policy
+> [!def]
+> ![](Heap%20Management.assets/image-20240306200924714.png)![](Heap%20Management.assets/image-20240306200930636.png)![](Heap%20Management.assets/image-20240306200937566.png)![](Heap%20Management.assets/image-20240306200944389.png)
+
+
+
+## ImplementationTricks
+> [!important]
+> ![](Heap%20Management.assets/image-20240306201646214.png)
+
+
+
+## Summary
+> [!summary]
+> ![](Heap%20Management.assets/image-20240306201709932.png)
+

@@ -950,8 +950,8 @@ public class PinballSimulator {
 > So in order to be confident that an immutable data type is threadsafe without locks, we need a stronger definition of immutability. A type is ==_threadsafe immutable_== if it has:
 > - No mutator methods
 > - All fields declared `private` and `final`
-> - No [representation exposure](http://web.mit.edu/6.031/www/sp21/classes/11-abstraction-functions-rep-invariants/#invariants)
-> - No mutation whatsoever of mutable objects in the rep – not even [beneficent mutation](http://web.mit.edu/6.031/www/sp21/classes/11-abstraction-functions-rep-invariants/#beneficent_mutation)
+> - No [Representation Exposure](../../../Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md#Rep%20Exposure/Independence)
+> - No mutation whatsoever of mutable objects in the rep – not even benefit mutation.
 
 
 
