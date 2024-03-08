@@ -5,6 +5,10 @@
 > 
 > What if both users try to write to the same resource? There are several problems we can run into when several users are using the database at the same time if we’re not careful:
 > ![](1_Transactions.assets/image-20240304133420825.png)
+> **Note:**
+> 1. **Inconsistent Reads** means we have two transactions A and B, B reads from the database while A is still updating(transaction A not finished yet).
+> 2. **Lost Update** is like two transactions first read the same value from database at the same time, then one of the update overwrite the other's.
+> 3. **Dirty Read** means even if I read the updated value from the database(different from inconsistent read), the update is then rolled back due to internal errors.
 
 
 ### Inconsistent Reads
@@ -163,6 +167,75 @@
 > ![](1_Transactions.assets/image-20240304152315589.png)![](1_Transactions.assets/image-20240304152337320.png)
 
 
+## Summary
+> [!summary]
+> ![](1_Transactions.assets/image-20240308115045475.png)
 
-# Implementing Isolation
-## Two Phase Locking
+
+
+
+# Locking Mechanism
+## Use locks to change CG
+> [!motiv] Motivations
+> ![](1_Transactions.assets/image-20240308115150518.png)
+> We have seen some non conflict serializable schedules, but using locks we can change the direction of the edges in our conflict dependency graph to make it a DAG.
+> 
+> But note, simply using lock won't be a panacea, as we will see in the following examples:
+
+> [!example] Success
+>  ![](1_Transactions.assets/image-20240308114102121.png)
+>  In this example, think of $L_i(T)$ as a function call that will block if the lock on $T$ is not yet released.
+>  
+>  Without locking, the dependency graph looks like the following, we see that it is cyclic:
+>  
+>  ![](1_Transactions.assets/image-20240308114333829.png)
+>  But with locking, we effectively make `WRITE(B)` in `T1` to appear before `READ(B)` in `T2`, making the dependency graph look like the following:
+>  
+>  ![](1_Transactions.assets/image-20240308114445488.png)
+>  This is an example of successfully serialize a non-conflict serializable schedule with lock mechanism.
+
+> [!bug] Failed Attempt
+> ![](1_Transactions.assets/image-20240308114541104.png)![](1_Transactions.assets/image-20240308114610925.png)
+> This failed attempt shows that simply using lock won't save our lives, and we have to enforce some rules when using locking to ensure conflict serializability.
+
+
+## Lock Types
+> [!important]
+> ![](1_Transactions.assets/image-20240308115225029.png)
+
+
+## 2PL Rules
+### Definition
+> [!def]
+> Two phase locking (2PL) is a scheme that **ensures the database uses conflict serializable schedules.** The two rules for 2PL are:
+> - Transactions must obtain a S (shared) lock before reading, and an X (exclusive) lock before writing.
+> - Transactions cannot get new locks after releasing any locks – this is the key to enforcing serializability through locking!
+> 
+> ![](1_Transactions.assets/image-20240308115916704.png)
+> 
+> Phase 1 here means if a transaction involves reading or writing data from some tables, then it should acquire all the locks at the beginning of a transaction before any transaction operations are executed.
+> 
+> Phase 2 means that after the last operation on each table has finished execution, we should release the lock on that table before commit. As is shown in the 2PL Abortion example.
+> 
+> 
+> ![](1_Transactions.assets/image-20240308120013463.png)![](1_Transactions.assets/image-20240308120022546.png)
+
+> [!example]
+> ![](1_Transactions.assets/image-20240308120126539.png)
+
+
+### Cascading Aborts
+> [!bug] Cascading Aborts
+> ![](1_Transactions.assets/image-20240308120205242.png)![](1_Transactions.assets/image-20240308120154308.png)![](1_Transactions.assets/image-20240308120818826.png)![](1_Transactions.assets/image-20240308120835496.png)
+> What this example shows is an example of dirty reads from T2 on T1. Since T2 already read the updated value from A, but since A aborts and has to roll back all the updates. But B got the updated value, so in order for B not to leak that value, we have to abort B in a cascading way.
+
+
+
+
+## Strict 2PL Rules
+> [!def]
+> 
+
+
+
+

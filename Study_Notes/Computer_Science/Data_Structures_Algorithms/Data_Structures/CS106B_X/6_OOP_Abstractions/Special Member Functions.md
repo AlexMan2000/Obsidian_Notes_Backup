@@ -4,6 +4,10 @@
 
 
 # Copy Construction
+> [!def]
+> The reason for copy constructor is to avoid double freeing problem in C++. Also part of the Rule of Three. 
+
+
 ## Default Copy Constructor
 > [!important]
 > If we don't provide our own copy constructor, C++ *__sometimes__* will create a default one for us. But **the default one only do shallow copy**, which means it only copies the primitive types correctly, as shown below:
@@ -46,6 +50,7 @@
 
 # Copy Assignment
 > [!def]
+> Copy assignment is used to deal with both double freeing and resource freeing.
 > ![](Special%20Member%20Functions.assets/image-20240307151517032.png)
 
 

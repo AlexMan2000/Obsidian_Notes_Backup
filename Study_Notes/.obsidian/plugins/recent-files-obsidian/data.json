@@ -5,16 +5,16 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
     },
     {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
+    },
+    {
       "basename": "RAII_Smart_Pointers",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
     },
     {
       "basename": "Move_Semantics",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
-    },
-    {
-      "basename": "Special Member Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
     },
     {
       "basename": "AP-HW4-Smart_Pointers",
