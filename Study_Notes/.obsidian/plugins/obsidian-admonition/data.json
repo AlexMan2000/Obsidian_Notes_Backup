@@ -298,6 +298,18 @@
       "injectColor": true,
       "noTitle": false,
       "copy": true
+    },
+    "design": {
+      "type": "design",
+      "color": "18, 76, 211",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-lightbulb"
+      },
+      "command": false,
+      "title": "Design",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

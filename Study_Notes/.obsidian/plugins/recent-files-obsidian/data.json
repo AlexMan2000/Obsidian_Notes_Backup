@@ -1,12 +1,128 @@
 {
   "recentFiles": [
     {
-      "basename": "1_Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions.md"
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.md"
     },
     {
-      "basename": "Special Member Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
+      "basename": "Basic_Sampling_Algorithms",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Basic_Sampling_Algorithms.md"
+    },
+    {
+      "basename": "Bivariate_Multivariate_Distributions",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
+    },
+    {
+      "basename": "Matrix_Algebra_and_Random_Vectors",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Matrix_Algebra_and_Random_Vectors.md"
+    },
+    {
+      "basename": "__经验函数和插入估计量",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md"
+    },
+    {
+      "basename": "Lab01_Storage",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
+    },
+    {
+      "basename": "Project2_B+_Tree(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
+    },
+    {
+      "basename": "Tweeter",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md"
+    },
+    {
+      "basename": "3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
+    },
+    {
+      "basename": "3_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md"
+    },
+    {
+      "basename": "8_Abstract_Data_Type",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md"
+    },
+    {
+      "basename": "Project3_Join&Optimization(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
+    },
+    {
+      "basename": "Lab06_Rollback_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab06_Rollback_Recovery.md"
+    },
+    {
+      "basename": "Lab05_B+Tree_Index",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab05_B+Tree_Index.md"
+    },
+    {
+      "basename": "Lab04_Transactions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab04_Transactions.md"
+    },
+    {
+      "basename": "Lab03_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab03_Query_Optimization.md"
+    },
+    {
+      "basename": "Lab02_Operators",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
+    },
+    {
+      "basename": "SimpleDB_Design",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/SimpleDB_Design.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md"
+    },
+    {
+      "basename": "4_Message_Authentication_Codes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md"
+    },
+    {
+      "basename": "1_Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md"
+    },
+    {
+      "basename": "Malloc_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
+    },
+    {
+      "basename": "Locks_Synchronization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
+    },
+    {
+      "basename": "Concurrency",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency.md"
+    },
+    {
+      "basename": "Heap Management",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "3_Cryptographic_Hashes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "Important_Applications_Of_Basic_Probability",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md"
+    },
+    {
+      "basename": "4_Memory_Mangement",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/4_Memory_Mangement.md"
     },
     {
       "basename": "RAII_Smart_Pointers",
@@ -15,6 +131,10 @@
     {
       "basename": "Move_Semantics",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
     },
     {
       "basename": "AP-HW4-Smart_Pointers",
@@ -27,30 +147,6 @@
     {
       "basename": "AP-HW2-Network",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
-    },
-    {
-      "basename": "Abstract_Data_Type",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Abstract_Data_Type.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "Malloc_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
-    },
-    {
-      "basename": "3_Cryptographic_Hashes",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/3_Cryptographic_Hashes.md"
-    },
-    {
-      "basename": "Locks_Atmoicity",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Atmoicity.md"
-    },
-    {
-      "basename": "Multithreading",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Multithreading.md"
     },
     {
       "basename": "Shell_Lab",
@@ -99,106 +195,6 @@
     {
       "basename": "Concurrency",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/Concurrency.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Compilers/Related_Resources.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
-    },
-    {
-      "basename": "2_Decision_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
-    },
-    {
-      "basename": "3_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "2_Types_of_RL",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
-    },
-    {
-      "basename": "1_Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
-    },
-    {
-      "basename": "3_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
-    },
-    {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Symmetric_Cryptography.md"
-    },
-    {
-      "basename": "Security_Principles",
-      "path": "Computer_Science/Computer_Security/Ch1_Secutiry_Principles/Security_Principles.md"
-    },
-    {
-      "basename": "1_Introduction",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Introduction.md"
-    },
-    {
-      "basename": "2_Memory_Vulnerability",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/2_Memory_Vulnerability.md"
-    },
-    {
-      "basename": "3_Mitigating_Vulnerabilities",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/3_Mitigating_Vulnerabilities.md"
-    },
-    {
-      "basename": "Project_1",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "Priors&Posteriors",
-      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
-    },
-    {
-      "basename": "Kalman_Filters",
-      "path": "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md"
-    },
-    {
-      "basename": "4_Kalman_Filters",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
-    },
-    {
-      "basename": "3_Constraint_Statisfaction_Problems",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/3_Constraint_Statisfaction_Problems.md"
-    },
-    {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
-      "basename": "5_Logic_Based_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/5_Logic_Based_Search.md"
     }
   ],
   "omittedPaths": [],

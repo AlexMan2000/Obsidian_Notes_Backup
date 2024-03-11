@@ -208,8 +208,8 @@
 > 	- Under 2-pass framework, we get $4\times ([R]+[S])+([R]+[S])=5\times([R]+[S])$.
 > - With optimization, we will sort $R$ and $S$ together at pass 0, and merge them as we have seen in [N-Way External Merge Sort](1_Sorting&Hashing.md#N-Way%20External%20Merge%20Sort), 
 > 	- The cost is thus $2\times([R]+[S])$(read and write) at pass 0. 
-> 	- At pass 1, 2, 3, ...., the total runtime is $2\times ([R]+[S])\times log_{B-1}\lceil\frac{[R]+[S]}{B}\rceil)-1$. The $-1$ since we don't need to materialize at the write stage of the last pass.
-> 	- If we enforce 2-pass requirement, then it is $2\times([R]+[S])\times(1+1)-1=3\times([R]+[S])$ in total.
+> 	- At pass 1, 2, 3, ...., the total runtime is $([R]+[S])\times(2\times log_{B-1}\lceil\frac{[R]+[S]}{B}\rceil-1)$. The $-1$ since we don't need to materialize at the write stage of the last pass.
+> 	- If we enforce 2-pass requirement, then it is $([R]+[S])(2\times(1+1)-1)=3\times([R]+[S])$ in total.
 
 > [!important] Memory Cost
 > Suppose we have two relations $R$ and $S$ and $B$ buffer pages, we want to use SMJ to join them within $p$ passes, then assuming 2-pass requirement we have:

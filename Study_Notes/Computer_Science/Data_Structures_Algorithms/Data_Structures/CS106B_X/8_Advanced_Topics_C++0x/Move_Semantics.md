@@ -156,6 +156,13 @@
 > Here `push_back` gives you **strong exception safety guarantee** such that if any exceptions is thrown from `push_back` function, it acts like nothing has happened at all. Much like the rolling back of commit in database.
 
 
+
+## Vector Example
+> [!code]
+> ![](Move_Semantics.assets/image-20240308201636524.png)
+
+
+
 ## Quick Quiz
 > [!problem]
 > ![](Move_Semantics.assets/image-20240118214037725.png)![](Move_Semantics.assets/image-20240118220552262.png)![](Move_Semantics.assets/image-20240118220558632.png)![](Move_Semantics.assets/image-20240118220617001.png)
