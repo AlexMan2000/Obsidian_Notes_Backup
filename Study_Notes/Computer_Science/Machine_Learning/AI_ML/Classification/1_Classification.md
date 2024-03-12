@@ -42,19 +42,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Simple Classifiers
 ## Centroid Method
 > [!algo] Centroid Method: A Simple Classifier
