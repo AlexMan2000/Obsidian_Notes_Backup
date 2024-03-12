@@ -1,24 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
     },
     {
-      "basename": "3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
+      "basename": "Hypothesis Testing",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
+    },
+    {
+      "basename": "Priors&Posteriors",
+      "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
+    },
+    {
+      "basename": "Bootstrap_Estimation",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.md"
+    },
+    {
+      "basename": "无参Bootstrap",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf"
     },
     {
       "basename": "无参Bootstrap",
       "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md"
     },
     {
-      "basename": "Variational_Inference",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md"
+      "basename": "3_Testing_Debugging",
+      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
     },
     {
-      "basename": "无参Bootstrap",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf"
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Variational_Inference",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md"
     },
     {
       "basename": "__经验函数和插入估计量",
@@ -55,10 +71,6 @@
     {
       "basename": "markov_chains",
       "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/markov_chains.pdf"
-    },
-    {
-      "basename": "Bootstrap_Estimation",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Bootstrap_Methods/Bootstrap_Estimation.md"
     },
     {
       "basename": "1_Classification",
@@ -187,18 +199,6 @@
     {
       "basename": "AP-HW1-Matrix_Algebra",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
-    },
-    {
-      "basename": "AP-HW2-Network",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "7_Mutability_Assertions",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/7_Mutability_Assertions.md"
     }
   ],
   "omittedPaths": [],

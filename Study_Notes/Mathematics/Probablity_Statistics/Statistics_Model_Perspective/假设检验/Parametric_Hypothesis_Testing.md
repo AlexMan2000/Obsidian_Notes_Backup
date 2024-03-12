@@ -76,30 +76,38 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 
 
 ## 1.3 Type I/II Error
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227388599.png)
 > `Type I/II Error` 取决于我们的`Rejection Region`的大小。
 > `Hypothesis Testing`的目的本质上是使两种`Errors`发生的概率尽可能的小。但是同时控制两种误差都很小实际上是有些困难的。所以实际上，我们一般只会尽量使得`Type I Error`尽可能小, 然后才会去考虑使得`Type II Error`尽可能小。
 > **换句话说:**
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227382063.png)
 
-**Examples**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227381314.png)
-![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227389592.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227393292.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395970.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395998.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227391442.png)
+> [!example]
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227381314.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227389592.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227393292.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395970.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395998.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227391442.png)
 
 
-## 1.4 Size&Significance&Power
-### Significance Level
+## 1.4 Size&Significance&Power 
+### Significance Level/Type I Error
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395049.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227397734.png)
 > 我们常常使用$\alpha$来表示`Significance Level`
 
 
-
 ### Power
+> [!def]
 > `The probability that the test statistics is in the rejection region of`$H_0$`when`$H_A$`is true`。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227399661.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227391692.png)
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395174.png)
 
-**Example**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395174.png)
+> [!example]
+> ![](Hypothesis%20Testing.assets/image-20240203211240679.png)
+
+
+
 
 ### High/Low Power Test
+> [!def]
 > **High Power Test:**
 > 一般而言是当$H_0$的条件概率分布和$H_A$的条件概率分布相差比较远的情况。我们来简单解释一下: 首先`Power`的定义就是我们在$H_A$是正确的情况下还能够正确`Reject`$H_0$的概率(能力)，而下图中的情况就是我们极有可能观测到$x_1$这个样本数据，而$x_1$在$H_0$的`Rejection Region`中，换句话说我们极有可能在$H_A$是正确的情况下观测到$x_1$, 且正确拒绝$H_0$。也就是我们极有可能做出正确的决策，这对应着`High Power Test`。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227402469.png)
@@ -113,6 +121,7 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 > 本小节所有的讨论计算都是基于`Simple Hypothesis`的。
 
 ### Definition
+> [!def]
 > 有了上面的铺垫, 我们可以介绍一个新的概念，称为`Power Function`。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227409006.png)
 > **我们对这个定义进行解读:**
@@ -127,26 +136,28 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 
 
 ### Size of the test
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227405661.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227404708.png)
 > 当我们的`Hypothesis`是`Simple`的时候, $\alpha=\beta(\theta_0)$
-> 换句话说，我们有when 
+> 换句话说，我们有 $\beta(\theta)\leq \alpha$ when $\theta\in \mathbf{\Theta_0}$
 
 
 ### How to Calculate
+> [!important]
 > 如果我们的假设检验是: $H_0: \mu=\mu_0, H_1:\mu\neq \mu_0$, 我们的`Rejection Region`一般选取为$\{x:|x-\mu_0|\geq c\}$
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227404405.png)
 
 
 ### Represent the Errors
+> [!def]
 > 1. **Type I Error**
-> 
-$\mu_0$表示的就是`Null Hypothesis`（我们假定真正的参数是$\mu_0$）, 真实的参数是$\mu$, 令$\mu=\mu_0$代入`Power Function`中我们就可以计算出`Type I Error`的大小。
+> $\mu_0$表示的就是`Null Hypothesis`（我们假定真正的参数是$\mu_0$）, 真实的参数是$\mu$, 令$\mu=\mu_0$代入`Power Function`中我们就可以计算出`Type I Error`的大小。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227401787.png)
-> 2. ** Type II Error**
+> 2. **Type II Error**
+> $\mu_0$表示`Null Hypothesis`的假设, $\mu_A$表示`Alternative Hypothesis`的假设, 假设$\mu\in H_A$(即$H_A$是正确的且$\mu\neq \mu_0$)。
 > 
-$\mu_0$表示`Null Hypothesis`的假设, $\mu_A$表示`Alternative Hypothesis`的假设, 假设$\mu\in H_A$(即$H_A$是正确的且$\mu\neq \mu_0$)。
 > $\beta(\mu)=\mathbb{P}_{\mu}(|\overline{X}_n-\mu_0|>c)$, 就是假设`Alternative Hypothesis`是正确的前提下我拒绝了`Null Hypothesis`的概率，此时$1-\beta(\mu)$就表示我在$H_A$正确的前提下没有拒绝$H_0$, 也就是`Type II Error`的定义。
-> 所以`Type II Error`就是$1-\beta(\mu)=\Phi(\frac{\sqrt{n}(c-\mu+\mu_0)}{\sigma})-\Phi(\frac{\sqrt{n}(-c-\mu+\mu_0)}{\sigma})$
+> 所以`Type II Error`就是$$1-\beta(\mu)=\Phi(\frac{\sqrt{n}(c-\mu+\mu_0)}{\sigma})-\Phi(\frac{\sqrt{n}(-c-\mu+\mu_0)}{\sigma})$$
 
 
 
@@ -361,7 +372,7 @@ In other words, reject $H_0$if $\hat{\theta_n}\leq c$, $\frac{\hat{\theta_n}-\th
 
 # 4 P-Value
 ## 4.1 Definition
-> For a size $\alpha$test, we have a testing statistics $T(X)$ and $C_{\alpha}$, $\mathbb{P}(T(X)\in C_{\alpha})\leq \alpha$
+> For a size $\alpha$ test, we have a testing statistics $T(X)$ and $C_{\alpha}$, $\mathbb{P}(T(X)\in C_{\alpha})\leq \alpha$
 > Suppose we observe $T(\overline{X})$, observed the sample of $T(X)$
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227446793.png)
 > It is the smallest size that you will reject the null hypothesis.
@@ -445,54 +456,67 @@ p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 
 
 # 5 Likelihood-Ratio Test
 ## 5.1 Definition
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227447196.png)
-> $\Theta$is the full parameter space
-> $\Theta_0$is all the value for null hypothesis parameter.
-> 换句话说: $\hat{\theta}=\argmax_{\theta\in \Theta}l(\theta)$, $\hat{\theta_0}=\argmax_{\theta\in \Theta_0}l(\theta)$
+> $\Theta$ is the full parameter space
+> $\Theta_0$ is all the value for null hypothesis parameter.
+> 换句话说: $\hat{\theta}=argmax_{\theta\in \Theta}l(\theta)$, $\hat{\theta_0}=argmax_{\theta\in \Theta_0}l(\theta)$
+> 
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448098.png)
 > 第二点说的是，因为$\hat{\theta_n}\stackrel{P}\to \theta_{true}\in \Theta_0$, so $\lambda(X)$is small. Reject $H_0$ if $\lambda(x)$is too large.
 
 
 ## 5.2 Construct Rejection Region
+> [!def]
 > Claim: t-test, z-test, are children of LRT(Likelihood Ratio Test)
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227456922.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227456053.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227456657.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227459422.png)
 
-**Question 1 **Question: $\lambda(\overline{X})$is observed, how to compute the p-value?
-我们只需要求满足$\lambda(\overline{X})=\chi_{1,1-\alpha^*}^2$的$\alpha^*$作为`P-value`即可, 所以$\alpha^*=\mathbb{P}(\chi_1^2\geq \lambda(\overline{X}))$
-**Question 2**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227452796.png)
-**Question 3 Wald Test**$W(X)=\frac{\sqrt{n}(\overline{X}_n-\mu_0)}{\sigma}$, $R=\{X| |\frac{\sqrt{n}(\overline{X}_n-\mu_0)}{\sigma}|>C_{\alpha}\}$
-**Question 4 Gaussian Parameter - Likelihood Ratio Test**$l(\mu,\sigma^2)=-\frac{n}{2}log\sigma^2 -\frac{1}{2\sigma^2}\sum_{i=1}^n(X_i-\mu)^2$, $\hat{\mu}=\overline{X}_n$
-$l(\hat{\mu},\hat{\sigma^2})=$
-$l(\hat{\mu},\hat{\sigma_0^2})=$
-$\lambda(X)=log(\frac{\sigma_0^2}{\hat{\sigma^2}})+\frac{\hat{\sigma^2}}{\sigma_0^2}>c$
-$\frac{\sigma_0^2}{\hat{\sigma^2}}>\alpha$or $\frac{\hat{\sigma^2}}{\sigma_0^2}>b\implies b<\frac{\hat{\sigma^2}}{\sigma_0^2}<\frac{1}{\alpha}$
-Compare it with wald test.
+> [!quiz] **Question 1**
+> Question: $\lambda(\overline{X})$is observed, how to compute the p-value?
+> 我们只需要求满足$\lambda(\overline{X})=\chi_{1,1-\alpha^*}^2$的$\alpha^*$作为`P-value`即可, 所以$\alpha^*=\mathbb{P}(\chi_1^2\geq \lambda(\overline{X}))$
+
+> [!quiz] **Question 2**
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227452796.png)
+
+> [!quiz]
+> **Question 3 Wald Test**
+> $W(X)=\frac{\sqrt{n}(\overline{X}_n-\mu_0)}{\sigma}$, $R=\{X| |\frac{\sqrt{n}(\overline{X}_n-\mu_0)}{\sigma}|>C_{\alpha}\}$
+
+> [!quiz] **Question 4 Gaussian Parameter - Likelihood Ratio Test**
+> $l(\mu,\sigma^2)=-\frac{n}{2}log\sigma^2 -\frac{1}{2\sigma^2}\sum_{i=1}^n(X_i-\mu)^2$, $\hat{\mu}=\overline{X}_n$$l(\hat{\mu},\hat{\sigma^2})=$
+> $l(\hat{\mu},\hat{\sigma_0^2})=$
+> $\lambda(X)=log(\frac{\sigma_0^2}{\hat{\sigma^2}})+\frac{\hat{\sigma^2}}{\sigma_0^2}>c$
+> $\frac{\sigma_0^2}{\hat{\sigma^2}}>\alpha$or $\frac{\hat{\sigma^2}}{\sigma_0^2}>b\implies b<\frac{\hat{\sigma^2}}{\sigma_0^2}<\frac{1}{\alpha}$
+> Compare it with wald test.
 
 
 ## 5.3 Asymptoticity of LRT Statistics
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227459886.png)这个结论只对`Simple Hypotheses`成立，对于`Composite Hypotheses`来说视情况而定。但是这种思想提供了一种构造`Rejection Region`$\{\lambda(X)\geq c\}$的方法。
 
-**Proof**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227456970.png)
-因为$l''(\theta)=\sum_{i=1}^n\frac{d^2}{d\theta^2}logf(x;\theta)$, 所以$\frac{l''(\theta)}{n}=\frac{1}{n}\sum_{i=1}^n\frac{d^2}{d\theta^2}logf(x;\theta)\stackrel{P}\to I(\theta_0)$if $H_0$is true.
-因为$\hat{\theta_n}\stackrel{P}\to\theta_0$, then by CMT $I(\hat{\theta_n})\stackrel{P}\to I(\theta_0)$due to consistency
-By asym of MLE:
-$\sqrt{n}(\hat{\theta_n}-\theta_0) \rightsquigarrow N(0,\frac{1}{I(\theta_0)})$
-于是我们可以根据Delta Method构造CI
-
-## 5.4 Joint Hypothesis
+> [!proof]
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227456970.png)
+> 因为$l''(\theta)=\sum_{i=1}^n\frac{d^2}{d\theta^2}logf(x;\theta)$, 所以$\frac{l''(\theta)}{n}=\frac{1}{n}\sum_{i=1}^n\frac{d^2}{d\theta^2}logf(x;\theta)\stackrel{P}\to I(\theta_0)$if $H_0$is true.
 > 
+> 因为$\hat{\theta_n}\stackrel{P}\to\theta_0$, then by CMT $I(\hat{\theta_n})\stackrel{P}\to I(\theta_0)$due to consistency
+> 
+> By asym of MLE:$\sqrt{n}(\hat{\theta_n}-\theta_0) \rightsquigarrow N(0,\frac{1}{I(\theta_0)})$
+> 于是我们可以根据Delta Method构造CI
 
 
-## 5.5 LRT in Multinomial 
+## 5.4 LRT in Multinomial 
+> [!thm]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227454477.png)
 > - $r$是degree of freedom in $\Theta$(dimension)
 > - $q$是degree of freedom in $\Theta_0$
 > 
-Then under $H_0$, $\lambda(X)\rightsquigarrow \chi_{r-q}^2$
+> Then under $H_0$, $\lambda(X)\rightsquigarrow \chi_{r-q}^2$
 
-**Gaussian Data Examples**
-1.  $\Theta_0=\{(\mu,\sigma^2):\mu\in \mathbb{R}, \sigma^2=\sigma_0^2\}$. $\bf dim \Theta_0=1, dim \Theta=2, \lambda(X)\rightsquigarrow \chi_{1}^2$
-2. $\Theta_0=\{(\mu,\sigma^2):\mu\in \mu_0, \sigma^2=\sigma_0^2\}$. $\bf dim \Theta_0=0, dim \Theta=2, \lambda(X)\rightsquigarrow \chi_{2}^2$
+> [!example]
+> **Gaussian Data Examples**
+> 1. $\Theta_0=\{(\mu,\sigma^2):\mu\in \mathbb{R}, \sigma^2=\sigma_0^2\}$. $\bf dim \Theta_0=1, dim \Theta=2, \lambda(X)\rightsquigarrow \chi_{1}^2$
+> 2. $\Theta_0=\{(\mu,\sigma^2):\mu\in \mu_0, \sigma^2=\sigma_0^2\}$. $\bf dim \Theta_0=0, dim \Theta=2, \lambda(X)\rightsquigarrow \chi_{2}^2$
+> 
 > $H_0:\vec{\theta}=\vec{\theta_0}, H_1:\vec{\theta}\neq\vec{\theta_0}, \theta\in \mathbb{R}^d$
 > The theorem implies $\lambda(X)\rightsquigarrow \chi_{d}^2$
 > Asymptotic normality of MLE:
@@ -500,56 +524,70 @@ Then under $H_0$, $\lambda(X)\rightsquigarrow \chi_{r-q}^2$
 > $I_{ij}(\theta)=\mathbb{E}[\frac{\partial l^2(\theta)}{\partial \theta_i\partial \theta_j}], where~~ l(\theta)=logf(x;\theta)$
 > $\lambda(X)=2(l(\hat{\theta_n}-l(\theta_0))\stackrel{Taylor ~~Expansion} \approx (\hat{\theta_n}-\theta_0)^Tl''(\theta_0)(\hat{\theta_n}-\theta_0)\approx \chi_d^2$ 
 
-**Mendal's Pea(Multinomial Example)**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227468532.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227469055.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227469399.png)
-**MLE Derivation:**
-$L(\mathbf{p})=(_{n_1,\cdots, n_k}^n)p_1^{n_1}\cdots p_k^{n_k}$($\sum_{i=1}^k p_i=1, p_i\geq 0$)
-Aim: $\sup_{p}L(\mathbf{p})$, $\mathbf{p}\in \mathbf{R^k}$
-而$\sup_{\mathbf{p}}L(p)=\sup_{\mathbf{p}}l(p)=n_1logp_1+\cdots+n_klogp_k$with constraint $\sum_{i=1}^k p_i=1, p_i\geq 0$
-$n_1logp_1+\cdots+n_klogp_k=\sum_{l=1}^{k-1}n_llogp_l+n_klog(1-\sum_{l=1}^{k-1}p_l)=f(p_l)$
-所以$\frac{\partial f(p_l)}{\partial p_l}=\frac{n_l}{p_l}+n_l\cdot \frac{-1}{1-\sum_{l=1}^{k-1}p_l}=\frac{n_l}{p_l}-\frac{n_k}{p_k}=0$
-所以$\begin{cases}\frac{n_l}{p_l}&=\frac{n_k}{p_k}&1\leq l \leq k-1 \\\sum_l p_l&=1,\sum_l n_l=n\end{cases}$, 如果$\frac{a}{b}=\frac{c}{d}$, 则$\frac{a+c}{b+d}=\frac{a}{b}$
-所以$\frac{n_l}{p_l}=\frac{n_k}{p_k}=n$$p_l=\frac{n_l}{n}$(empirical frequency)
-![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227467994.png)
-实际上`General LRT`算的是KL Divergence between empirical distribution and null hypothesis distribution. Divergence过大就会拒绝$H_0$。
+> [!example]
+> **Mendal's Pea(Multinomial Example)**
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227468532.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227469055.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227469399.png)
+> 
+> **MLE Derivation:**$L(\mathbf{p})=(_{n_1,\cdots, n_k}^n)p_1^{n_1}\cdots p_k^{n_k}$($\sum_{i=1}^k p_i=1, p_i\geq 0$)
+> 
+> Aim: $\sup_{p}L(\mathbf{p})$, $\mathbf{p}\in \mathbf{R^k}$ 而$\sup_{\mathbf{p}}L(p)=\sup_{\mathbf{p}}l(p)=n_1logp_1+\cdots+n_klogp_k$with constraint $\sum_{i=1}^k p_i=1, p_i\geq 0$ 
+> 
+> $n_1logp_1+\cdots+n_klogp_k=\sum_{l=1}^{k-1}n_llogp_l+n_klog(1-\sum_{l=1}^{k-1}p_l)=f(p_l)$
+> 
+> 所以$\frac{\partial f(p_l)}{\partial p_l}=\frac{n_l}{p_l}+n_l\cdot \frac{-1}{1-\sum_{l=1}^{k-1}p_l}=\frac{n_l}{p_l}-\frac{n_k}{p_k}=0$
+> 
+> 所以$\begin{cases}\frac{n_l}{p_l}&=\frac{n_k}{p_k}&1\leq l \leq k-1 \\\sum_l p_l&=1,\sum_l n_l=n\end{cases}$, 如果$\frac{a}{b}=\frac{c}{d}$, 则$\frac{a+c}{b+d}=\frac{a}{b}$
+> 
+> 所以$\frac{n_l}{p_l}=\frac{n_k}{p_k}=n$$p_l=\frac{n_l}{n}$(empirical frequency)
+> 
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227467994.png)
+> 
+> 实际上`General LRT`算的是KL Divergence between empirical distribution and null hypothesis distribution. Divergence过大就会拒绝$H_0$。
+> 
 > **总的来说:**
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227462579.png)
 
 
 
 ## 5.6 How to test Composite Hypothesis
+> [!important]
 > 1. 当$\theta\in \mathbb{R}^1$:
-> 
-$H_0:\theta\in \{\theta_0,\theta_1\},H_1:\theta\notin \{\theta_0,\theta_1\}$,
+> $H_0:\theta\in \{\theta_0,\theta_1\},H_1:\theta\notin \{\theta_0,\theta_1\}$,
 > $H_0^0:\theta=\theta_0;H_0^1: \theta=\theta_1$, $\lambda^1(x), \lambda^0(x)$
 > $H_0: \theta\leq \theta_0$
 > 2. 当$\theta\in \mathbb{R}^2$:
-> 
-$H_0:\vec{\theta}=\vec{\theta_0}$, $H_1:\vec{\theta}\neq \vec{\theta_0}$
+> $H_0:\vec{\theta}=\vec{\theta_0}$, $H_1:\vec{\theta}\neq \vec{\theta_0}$
 > $\vec{\theta_0}=(\theta_{0,1},\cdots, \theta_{0,k})\in \mathbb{R}^k$
 > $\lambda(X)=2[l(\hat{\theta_n})-l(\vec{\theta_0})]$, $\lambda(X)\rightsquigarrow \chi_{r-q}^2$
 > 3. $H_0:\vec{p}=\vec{p_0}, H_1:\vec{p}\neq \vec{p_0}$
-> 
-$\vec{p_0}=\{p_{0,1},\cdots, p_{0,k}\}$
+> $\vec{p_0}=\{p_{0,1},\cdots, p_{0,k}\}$
 > $\lambda(X)=2n\sum_{i=1}^n \hat{p_i}log\frac{\hat{p_i}}{p_{0,i}}$(KL-Divergence)
 
-**Example**$H_0;\sigma^2=\sigma_0^2$, $H_1:\sigma^2\neq \sigma_0^2$, $X_1,\cdots, X_n\sim N(\mu,\sigma^2)$
-$\vec{\theta}:r=2$, $\vec{\theta_0}=(\mu,\sigma^2)$($\sigma^2$is fixed), $q=1$
-所以$\lambda(X)\rightsquigarrow \chi_{1}^2$
+> [!example]
+> **Example**$H_0;\sigma^2=\sigma_0^2$, $H_1:\sigma^2\neq \sigma_0^2$, $X_1,\cdots, X_n\sim N(\mu,\sigma^2)$
+> 
+> $\vec{\theta}:r=2$, $\vec{\theta_0}=(\mu,\sigma^2)$($\sigma^2$is fixed), $q=1$
+> 
+> 所以$\lambda(X)\rightsquigarrow \chi_{1}^2$
 
 ## 5.7 Construct Confidence Interval 
+> [!def]
 > 既然是一个`Sample Statistic`, 而且我们也知道其渐进分布，我们当然可以对原参数构造一个`Confidence Interval`出来，使用`Inverting LRT`的方法即可，我们用一个例子来说明。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227468452.png)
 > 本质上`Confidence Interval`就是`Null Hypothesis`下的`Acceptance Region`, 所以我们首先需要找到在`Null Hypothesis`下的`Rejection Region`, 所以我们需要先求出`LRT`是什么:
-> 
+> $$\lambda(X)=2*(\sup_{p\in \mathbb{R}}l(p)-\sup_{p\in H_0}(p))=2n*(\overline{X}_nlog\frac{\overline{X}_n}{p_0}+(1-\overline{X}_n)log\frac{1-\overline{X}_n}{1-p_0})\rightsquigarrow\chi^2_{1}$$
 > 然后我们计算其`Rejection Region`():
-> 
+> $$R(p_0)=\{X:2n*(\overline{X}_nlog\frac{\overline{X}_n}{p_0}+(1-\overline{X}_n)log\frac{1-\overline{X}_n}{1-p_0})>\chi^{2}_{1,1-\alpha}\}$$
+> $$\mathbb{P}_{p_0}(\lambda(X)\in R(p_0))=\alpha$$
 > 
 > 所以其`Acceptance Region`就是:
-> 
+> $$A(p_0)=\{X:2n*(\overline{X}_nlog\frac{\overline{X}_n}{p_0}+(1-\overline{X}_n)log\frac{1-\overline{X}_n}{1-p_0})<\chi^{2}_{1,1-\alpha}\}$$
 > 
 > 接下来我们只需要反解出即可:
-> 
+> $$C(X)=\{p_0:2n*(\overline{X}_nlog\frac{\overline{X}_n}{p_0}+(1-\overline{X}_n)log\frac{1-\overline{X}_n}{1-p_0})<\chi_{1,1-\alpha}^2\}$$
 
+
+## 5.8 Code Example
 
 
 # 6 Goodness of Fit Test
@@ -560,14 +598,16 @@ $\vec{\theta}:r=2$, $\vec{\theta_0}=(\mu,\sigma^2)$($\sigma^2$is fixed), $q=1$
 
 
 ## 6.0 Motivation
+> [!motiv] Motivation
 > **Motivation:** Given $X_1,\cdots, X_n$, ask if the data are samples from a given distribution?
+> 
 > **Two-sample tests**
 > - Sample1 :$X_1,\cdots, X_n$
 > - Sample 2: $Y_1,\cdots, Y_n$
 > 
-We want to know whether $X_i, Y_j$are from the same distribution?
+> We want to know whether $X_i, Y_j$are from the same distribution?
 > **Setup: **Suppose $X_1,\cdots, X_n\sim F_X$(We don't know $F_X$)
-> $H_0: F_X=F_0, H_1:F_X\neq F_0$
+> $$H_0: F_X=F_0, H_1:F_X\neq F_0$$
 > **Non-parametric Methods:**
 > 1. Likelihood Ratio Test: 
 > 2. $\chi^2-test$:
@@ -577,10 +617,13 @@ We want to know whether $X_i, Y_j$are from the same distribution?
 
 ## 6.1 Likelihood Ratio Test
 ### Multinomial Example
+> [!example]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227462472.png)
 
-**LRT-Statistics**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227462216.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227473364.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227475172.png)
-**Derive Chi-squared Test**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227474431.png)
+> [!solution]
+> **LRT-Statistics**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227462216.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227473364.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227475172.png)
+> 
+> **Derive Chi-squared Test**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227474431.png)
 
 
 ### Possion Example

@@ -4,35 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "f3899c7c9a7692c2",
+        "id": "fa5a105313e6ef1f",
         "type": "tabs",
         "children": [
           {
-            "id": "d3c3cac97078572d",
+            "id": "65be6b91623456d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
+                "file": "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1956e5ab9ca431c3",
+            "id": "b0a923625cf305ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+                "file": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d08004f3a48c9cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,17 +232,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1956e5ab9ca431c3",
+  "active": "6d08004f3a48c9cd",
   "lastOpenFiles": [
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
-    "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
+    "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
+    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf.crdownload",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 953209.crdownload",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 635616.crdownload",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 406314.crdownload",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.md",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md",
@@ -252,21 +268,18 @@
     "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/markov_chains.pdf",
     "Computer_Science/Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
     "Computer_Science/Machine_Learning/EECS126/2_PageRank/DTMCs.md",
-    "Computer_Science/Machine_Learning/AI_ML/Bootstrap_Methods/Bootstrap_Estimation.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
     "Computer_Science/Machine_Learning/AI_ML/Mixture_Models_EM",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.assets/image-20240311121318711.png",
-    "Computer_Science/Machine_Learning/AI_ML/Bootstrap_Methods/Bootstrap_Estimation.assets",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.assets",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Matrix_Algebra_and_Random_Vectors.md",
-    "Computer_Science/Machine_Learning/AI_ML/Bootstrap_Methods",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Methods",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Advanced_Sampling_Algorithms.md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
     "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md",
     "Computer_Science/Machine_Learning/AI_ML/Untitled.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md",
     "未命名.canvas"
   ]
 }
