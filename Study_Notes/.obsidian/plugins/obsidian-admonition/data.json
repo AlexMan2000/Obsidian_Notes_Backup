@@ -117,12 +117,14 @@
       "type": "motiv",
       "color": "245, 147, 10",
       "icon": {
-        "name": "dumbbell",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-infinity"
       },
       "command": false,
+      "title": "Motivation",
       "injectColor": true,
-      "noTitle": false
+      "noTitle": false,
+      "copy": true
     },
     "overview": {
       "type": "overview",

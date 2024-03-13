@@ -87,7 +87,7 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227381314.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227389592.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227393292.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395970.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395998.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227391442.png)
 
 
-## 1.4 Size&Significance&Power 
+## 1.4 Significance&Power 
 ### Significance Level/Type I Error
 > [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395049.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227397734.png)
@@ -150,73 +150,84 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 
 ### Represent the Errors
 > [!def]
-> 1. **Type I Error**
+> 1. When $\mu=\mu_0$, $\beta(\mu)$ is **Type I Error**
 > $\mu_0$表示的就是`Null Hypothesis`（我们假定真正的参数是$\mu_0$）, 真实的参数是$\mu$, 令$\mu=\mu_0$代入`Power Function`中我们就可以计算出`Type I Error`的大小。
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227401787.png)
-> 2. **Type II Error**
+> 2. When $\mu\neq \mu_0$, $\beta(\mu)$ is **Type II Error**
 > $\mu_0$表示`Null Hypothesis`的假设, $\mu_A$表示`Alternative Hypothesis`的假设, 假设$\mu\in H_A$(即$H_A$是正确的且$\mu\neq \mu_0$)。
 > 
+> **Intuitions:**
 > $\beta(\mu)=\mathbb{P}_{\mu}(|\overline{X}_n-\mu_0|>c)$, 就是假设`Alternative Hypothesis`是正确的前提下我拒绝了`Null Hypothesis`的概率，此时$1-\beta(\mu)$就表示我在$H_A$正确的前提下没有拒绝$H_0$, 也就是`Type II Error`的定义。
 > 所以`Type II Error`就是$$1-\beta(\mu)=\Phi(\frac{\sqrt{n}(c-\mu+\mu_0)}{\sigma})-\Phi(\frac{\sqrt{n}(-c-\mu+\mu_0)}{\sigma})$$
 
 
 
 ### Minimizing the Errors
+> [!important]
 > 沿用之前的数据集$X_1,\cdots,X_n\sim N(\mu,\sigma^2)$
-> 1. **最小化**`**Type I Error**`**:**
 > 
-假设我们现在有个要求，就是想让`Type I Error`的`Level`小于等于$\alpha$。且$H_0: \mu=\mu_0, H_1:\mu\neq \mu_0$
+> **最小化**`Type I Error`**:**
+> 假设我们现在有个要求，就是想让`Type I Error`的`Level`小于等于$\alpha$。且$$H_0: \mu=\mu_0, H_1:\mu\neq \mu_0$$
 > 首先我们求出这个假设检验的`Type I Error`: 
-> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227404143.png)
-> 方法就是我们令$2(1-\Phi(\frac{\sqrt{n}c}{\sigma}))=\alpha$, 就可以得到: $\Phi(\frac{\sqrt{n}c}{\sigma})=1-\frac{\alpha}{2}$, 于是$c=\frac{(z_{1-\alpha/2})\sigma}{\sqrt{n}}$, 因为这样我们的$\beta(\mu_0)=\mathbb{P}_{\mu_0}(|\overline{X}_n-\mu_0|\geq c)\leq \alpha$, 满足条件
-> 1. **最小化**`**Type II Error**`**:**
 > 
-因为$1-\beta(\mu)=\Phi(\frac{\sqrt{n}(c-\mu+\mu_0)}{\sigma})-\Phi(\frac{\sqrt{n}(-c-\mu+\mu_0)}{\sigma})$, 通过一些代数运算我们知道当$\mu=\mu_0$时候，$1-\beta(\mu)$取到最大值$\Phi(\frac{\sqrt{n}c}{\sigma})-\Phi(-\frac{\sqrt{n}c}{\sigma})=1-\beta(\mu_0)$, 也就是说$sup_{\mu\neq \mu_0}(1-\beta(\mu))=1-\beta(\mu_0)$, 所以我们发现，如果`Type I Error`越小，似乎对应的`Type II Error`就会越大，于是我们不能同时控制两个`Errors`使他们同时都很小。但是我们更倾向于先让`Type I Error`尽可能小，然后再控制`Type II Error`的大小。
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227404143.png)
+> 方法就是我们令$$2(1-\Phi(\frac{\sqrt{n}c}{\sigma}))=\alpha$$, 就可以得到: $$\Phi(\frac{\sqrt{n}c}{\sigma})=1-\frac{\alpha}{2}$$, 于是$c=\frac{(z_{1-\alpha/2})\sigma}{\sqrt{n}}$, 因为这样我们的$\beta(\mu_0)=\mathbb{P}_{\mu_0}(|\overline{X}_n-\mu_0|\geq c)\leq \alpha$, 满足条件
+> 
+> **最小化**`**Type II Error**`**:**
+> 因为$$1-\beta(\mu)=\Phi(\frac{\sqrt{n}(c-\mu+\mu_0)}{\sigma})-\Phi(\frac{\sqrt{n}(-c-\mu+\mu_0)}{\sigma})$$, 通过一些代数运算我们知道当$\mu=\mu_0$时候，$1-\beta(\mu)$取到最大值$$\Phi(\frac{\sqrt{n}c}{\sigma})-\Phi(-\frac{\sqrt{n}c}{\sigma})=1-\beta(\mu_0)$$, 也就是说$sup_{\mu\neq \mu_0}(1-\beta(\mu))=1-\beta(\mu_0)$, 所以我们发现:
+> 
+> **如果`Type I Error`越小，似乎对应的`Type II Error`就会越大，于是我们不能同时控制两个`Errors`使他们同时都很小。但是我们更倾向于先让`Type I Error`尽可能小，然后再控制`Type II Error`的大小。**
 
 
 
 ### Calculating the Power Function
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227405819.png)
 
-**HA: mu=108**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227405940.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412529.png)
-**HA: mu=112**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412753.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227411147.png)
-**HA: mu=116**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227414904.png)
+> [!example]
+> **HA: mu=108**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227405940.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412529.png)
+> **HA: mu=112**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412753.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227411147.png)
+> **HA: mu=116**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227414904.png)
 > **通过上面的例子我们可以发现:**
 > - `Power`取决于$H_A$中的$\mu_A$，会随着$\mu_A$(其实就是真实的参数)的变化而变化，实际上后面我们会看到`Power`是$\mu$(`True Parameter`)的函数。
 > - 当$H_A$中的$\mu_A$和$H_0$中的$\mu_0$相距越远，则`Power`的值就会越大。
 
-**Graphical Illustration**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412119.png)
+> [!example]
+> **Graphical Illustration**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227412119.png)
 
 
 ### Summary
+> [!summary]
 > 上文我们得到了`Type I Error`的表达式:
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227419924.png)
 > 所以我们有如下结论:
 > 1. 随着$c$增大，我们越来越倾向于保留`Null Hypothesis`而不拒绝，也就是`Rejection Region`变小了。于是`Type I Error`变小。但是此时`Type II Error`增大。
 > 2. 随着$n$增大，`Type I Error`也会变小。
 > 
-所以如果我们想要控制`Type 1 Error`尽可能小，我们需要选取一个适当的`Rejection Region`。
+所以如果我们想要控制`Type I Error`尽可能小，我们需要选取一个适当的`Rejection Region`。
 
 
 ### Exercises
-**1. 同时限制Type I/II Errors**$H_0:\mu=0$, $H_1:\mu=1$。人为规定一个`Rejection Region` $\{\overline{X}_n:\overline{X}_n\geq c\},c>0$使得即便我观测到了$\overline{X}_n=0$我也仍然接受`Null Hypothesis`。
-于是我们计算这个`Hypothesis Test`的`Power Function`:
-$\begin{aligned}\beta(\mu)&=\mathbb{P}_{\mu}(\overline{X}_n\geq c)\\&=\mathbb{P}_{\mu}(\frac{\sqrt{n}(\overline{X}_n-\mu)}{\sigma}\geq \frac{\sqrt{n}(c-\mu)}{\sigma})\\&=1-\Phi(\sqrt{n}(c-\mu))\end{aligned}$$\mu$是真实的参数
-
-1. **计算**`**Type I Error**`**令**$\mu=0$**:**
-
- $\beta(0)=1-\Phi(\sqrt{n}c)$
-
-2. **计算**`**Type II Error**`**令**$\mu=1$**:**
-
- $1-\beta(1)=\Phi(\sqrt{n}(c-1))$
-
-3. **最小化**`**Errors**`**:**
-
-此时如果我们增大$c$的值, `Type-I Error`是变小了，但是对应的`Type-II Error`变大了。
-于是我们希望$1-\Phi(\sqrt{n}c)\leq \alpha$和$\Phi(\sqrt{n}(c-1))\leq \alpha$同时成立。
-于是$c \geq \frac{z_{ 1-\alpha}}{\sqrt{n}}$, $c\leq \frac{z_{\alpha}}{\sqrt{n}}+1=-\frac{z_{1-\alpha}}{\sqrt{n}}+1$
-只要$\frac{z_{ 1-\alpha}}{\sqrt{n}}\leq 1-\frac{z_{1-\alpha}}{\sqrt{n}}$, 且$\exists c, \frac{z_{ 1-\alpha}}{\sqrt{n}}\leq c\leq 1-\frac{z_{1-\alpha}}{\sqrt{n}}$就可以。
+> [!example]
+> 同时限制Type I/II Errors**$H_0:\mu=0$, $H_1:\mu=1$。人为规定一个`Rejection Region` $\{\overline{X}_n:\overline{X}_n\geq c\},c>0$使得即便我观测到了$\overline{X}_n=0$我也仍然接受`Null Hypothesis`。
+> 
+> 于是我们计算这个`Hypothesis Test`的`Power Function`:$\begin{aligned}\beta(\mu)&=\mathbb{P}_{\mu}(\overline{X}_n\geq c)\\&=\mathbb{P}_{\mu}(\frac{\sqrt{n}(\overline{X}_n-\mu)}{\sigma}\geq \frac{\sqrt{n}(c-\mu)}{\sigma})\\&=1-\Phi(\sqrt{n}(c-\mu))\end{aligned}$$\mu$是真实的参数
+> 
+> **计算**`**Type I Error**`**令**$\mu=0$**:**
+> $$\beta(0)=1-\Phi(\sqrt{n}c)$$
+> 
+> **计算**`**Type II Error**`**令**$\mu=1$**:**
+> $$1-\beta(1)=\Phi(\sqrt{n}(c-1))$$
+> 
+> **最小化`Errors`:**
+> 
+> 此时如果我们增大$c$的值, `Type-I Error`是变小了，但是对应的`Type-II Error`变大了.
+> 
+> 于是我们希望$1-\Phi(\sqrt{n}c)\leq \alpha$和$\Phi(\sqrt{n}(c-1))\leq \alpha$同时成立。
+> 
+> 于是$c \geq \frac{z_{ 1-\alpha}}{\sqrt{n}}$, $c\leq \frac{z_{\alpha}}{\sqrt{n}}+1=-\frac{z_{1-\alpha}}{\sqrt{n}}+1$
+> 
+> 只要$\frac{z_{ 1-\alpha}}{\sqrt{n}}\leq 1-\frac{z_{1-\alpha}}{\sqrt{n}}$, 且$\exists c, \frac{z_{ 1-\alpha}}{\sqrt{n}}\leq c\leq 1-\frac{z_{1-\alpha}}{\sqrt{n}}$就可以。
 
 
 ## 1.6 Composite Hypotheses
@@ -372,6 +383,7 @@ In other words, reject $H_0$if $\hat{\theta_n}\leq c$, $\frac{\hat{\theta_n}-\th
 
 # 4 P-Value
 ## 4.1 Definition
+> [!def]
 > For a size $\alpha$ test, we have a testing statistics $T(X)$ and $C_{\alpha}$, $\mathbb{P}(T(X)\in C_{\alpha})\leq \alpha$
 > Suppose we observe $T(\overline{X})$, observed the sample of $T(X)$
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227446793.png)
@@ -387,17 +399,20 @@ Compute the $\alpha^*$
 $\begin{aligned}|\overline{X}_n-\mu_0|&=z_{1-\alpha^*/2}\cdot \sigma\\1-\frac{\alpha^*}{2}&=\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma})\\\alpha^*&=2(1-\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma}))\end{aligned}$
 
 ## 4.2 Insight
+> [!important]
 > **What does p-value mean?**
-Suppose $H_0$is true, then what is the probability of observing another sample that is more extreme or equally extreme than the observed one?
+> Suppose $H_0$ is true, then what is the probability of observing another sample that is more extreme or equally extreme than the observed one?
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227449422.png)
 > P-value is a measure of how extreme the observed data is under $H_0$
 > Small p-value means more extreme occurency for the observed data, which means we are more likely to reject the null hypothesis $H_0$
 
-**Illustration**![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448547.png)
+> [!example] **Illustration**
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448547.png)
 
 ## 4.3 Summary
+> [!summary]
 > **P-value means:**
-> 1. The smallest size that we reject the null hypothesis.
+> 1. The smallest size that we reject the null hypothesis. The smaller the p value is, the more evidence we have to reject the null hypothesis, and thus it is easier to find such $\alpha$ as $\inf\{\alpha:T(X\in R_{\alpha})\}$(Starting from 0).
 > 2. The probability of observing a more extreme sample than the observed sample.
 
 
@@ -420,39 +435,56 @@ $\mu_0\notin 1-\alpha-CI$interval($\mu_0: \overline{x}_n\pm z_{1-\alpha/2}\cdot\
 $\iff$p-value is smaller than $\alpha$
 
 ## 4.5 Compute P-value
+> [!code]
 > **Left-tailed test:** p-value = cdf(x)
 > **Right-tailed test:** p-value = 1 - cdf(x)
 > **Two-tailed test:** p-value = 2 * min{cdf(x) , 1 - cdf(x)}
-
+> 
 > $\{T(X)||T(X)|>|T(x)|\}$for two-sided test, 
 > 本质上是$p-value=2*(1-\Phi(|T(x)|))$, $T(x)$是从数据集算出来的那个`t-statistic`
 
 
+## 4.6 Distribution of P-Values
 
-## 4.6 Exercises
+
+
+
+
+
+
+
+## 4.7 Exercises
 ### E1 Bernoulli 
+> [!def]
 > Calculate the p-value: 
 > Test:$H_0:\theta\leq \frac{1}{2}, H_1:\theta>\frac{1}{2}$
 > Data: $7$success out of 10 trials of Bernoulli trials $Ber(\theta)$
 
-**Key**P-value= $\alpha^*=\sup_{\theta\leq \frac{1}{2}}\mathbb{P}_{\theta}(\frac{\sqrt{n}(0.7-\theta)}{\sqrt{\theta(1-\theta)}}\geq\frac{\sqrt{n}(c-\theta)}{\sqrt{\theta(1-\theta)}})=1-\Phi(\frac{\sqrt{n}(c-\theta)}{\theta})$when $n$is large.
-When $n$is small, we have $T(X)=\sum_{i=1}^{10} X_i \sim Binomial(10,\theta)$
-p-value=$\alpha^*=\sup_{\theta\leq \frac{1}{2}}P_{\theta}(T(X)\geq 7)$, and we know that when $\theta=\frac{1}{2}$, $P_{\theta}(T(X)\leq 7)$is the largest, so $\alpha^*=\sum_{k=7}^{10}(_k^{10})(\frac{1}{2})^k(\frac{1}{2})^{10-k}=\sum_{i=7}^{10}(_k^{10})(\frac{1}{2})^{10}$
+> [!important]
+> **Key**
+> P-value= $\alpha^*=\sup_{\theta\leq \frac{1}{2}}\mathbb{P}_{\theta}(\frac{\sqrt{n}(0.7-\theta)}{\sqrt{\theta(1-\theta)}}\geq\frac{\sqrt{n}(c-\theta)}{\sqrt{\theta(1-\theta)}})=1-\Phi(\frac{\sqrt{n}(c-\theta)}{\theta})$when $n$is large.
+> 
+> When $n$is small, we have $T(X)=\sum_{i=1}^{10} X_i \sim Binomial(10,\theta)$, p-value=$\alpha^*=\sup_{\theta\leq \frac{1}{2}}P_{\theta}(T(X)\geq 7)$, and we know that when $\theta=\frac{1}{2}$, $P_{\theta}(T(X)\leq 7)$is the largest, so $\alpha^*=\sum_{k=7}^{10}(_k^{10})(\frac{1}{2})^k(\frac{1}{2})^{10-k}=\sum_{i=7}^{10}(_k^{10})(\frac{1}{2})^{10}$
 
 ### E2 Poisson 1
+> [!example]
 > $H_0:\lambda\leq 1, H_1:\lambda>1$, $X=3$, $X\sim Poisson(\lambda)$
 > Calculate the p-value.
-
-**Key**Let $T(X)=X$
-p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq3)=\sup_{\lambda\leq 1}\sum_{k=3}^{\infty}\frac{\lambda^k e^{-\lambda}}{k!}=\sum_{k=3}^{\infty}\frac{e^{-\lambda}}{k!}$(obtained when $\lambda=1$)
+> 
+> **Key**
+> Let $T(X)=X$
+> p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq3)=\sup_{\lambda\leq 1}\sum_{k=3}^{\infty}\frac{\lambda^k e^{-\lambda}}{k!}=\sum_{k=3}^{\infty}\frac{e^{-\lambda}}{k!}$(obtained when $\lambda=1$)
 
 
 ### E3 Poisson 2
+> [!example]
 > $H_0:\lambda\leq 1, H_1:\lambda>1$, $X_1=5,X_2=3,X_3=1$, $X\sim Poisson(\lambda)$
 > Calculate the p-value.
+> 
+> **Key**
+> Let $T(X)=\sum_{i=1}^3X_i=5+3+1=9\sim Possion(3\lambda)$p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 1}\sum_{k=9}^{\infty}\frac{(3\lambda)^k e^{-3\lambda}}{k!}=\sum_{k=9}^{\infty}\frac{e^{-3\lambda}}{k!}\approx 0.0038$(obtained when $\lambda=1$)
 
-**Key**Let $T(X)=\sum_{i=1}^3X_i=5+3+1=9\sim Possion(3\lambda)$
-p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 1}\sum_{k=9}^{\infty}\frac{(3\lambda)^k e^{-3\lambda}}{k!}=\sum_{k=9}^{\infty}\frac{e^{-3\lambda}}{k!}\approx 0.0038$(obtained when $\lambda=1$)
+
 
 # 5 Likelihood-Ratio Test
 ## 5.1 Definition
@@ -569,6 +601,7 @@ p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 
 > $\vec{\theta}:r=2$, $\vec{\theta_0}=(\mu,\sigma^2)$($\sigma^2$is fixed), $q=1$
 > 
 > 所以$\lambda(X)\rightsquigarrow \chi_{1}^2$
+
 
 ## 5.7 Construct Confidence Interval 
 > [!def]

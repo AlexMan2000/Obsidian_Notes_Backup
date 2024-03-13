@@ -155,11 +155,12 @@
 
 
  
-## Selectivity Estimation wit Formulas
+## Selectivity Estimation with Formulas
 > [!overview]
 > Since the number of rows in our output depends heavily on the data and what selections we make out of it, we need a way to estimate the size of outputs after each operation. This is known as **selectivity estimation.**
 > 
-> Like evaluating query cost, selectivity estimation is very rough and generally prioritizes speed over accuracy- so much so that **if we don’t have enough information, we just assign an operation the arbitrary selectivity value of** 1/101/101/10 (meaning that the the output has 1/10 of the number of rows as the input).
+> Like evaluating query cost, selectivity estimation is very rough and generally prioritizes speed over accuracy- so much so that **if we don’t have enough information, we just assign an operation the arbitrary selectivity value of** 1/10 (meaning that the the output has 1/10 of the number of rows as the input).
+
 
 
 ### Common Formulas
@@ -182,7 +183,11 @@
 
 ### Practice Examples
 > [!example] Fa20 Disc07 P1
-> 
+> ![](3_Query_Optimization.assets/image-20240312205508019.png)![](3_Query_Optimization.assets/image-20240312205514462.png)
+
+
+
+
 
 
 
@@ -215,30 +220,33 @@
 
 
 
-
-## Cost Estimation
-> [!overview]
-> ![](3_Query_Optimization.assets/image-20240221161234420.png)
-
-> [!def]
-> ![](3_Query_Optimization.assets/image-20240221161240752.png)
-
-> [!example]
-> ![](3_Query_Optimization.assets/image-20240221161250473.png)
-
-
-
-
-## Search Algorithms
+# Selinger Algorithm
+## Algorithm Assumptions
 ### System R Heuristics
 > [!def]
 > ![](3_Query_Optimization.assets/image-20240221161551051.png)![](3_Query_Optimization.assets/image-20240221161558692.png)
 > Note that the join plan space is exponential. But with left deep join assumption the plan space is permutation in $N$(i.e.$N!$) where $N$ is the number of relations to be joined. 
 > 
+> ![](3_Query_Optimization.assets/image-20240312220254246.png)
+> 
 > Since for we could permute the relation in the tree to get a different plan.
 > 
 > So even with left deep join heuristics, the join query plan space is still very huge.
 
+
+### Selinger Optimizer
+> [!important]
+> Selinger Optimizer assmes all of the heuristics of system R:
+> 1. Consider only left deep join plan space.
+> 2. Unary operators like selection and projection are pushed down as far as possible.
+> 3. Do not consider cross join unless they are the only option.
+> 
+> Selinger Optimizer has the following properties:
+> 1. The Selinger optimizer doesn't output a globally optimal query plan since the optimal one may not be left-deep join.
+> 2. The Selinger optimizer output a globally optimal left-join query plan if the estimated cost is exactly the actual cost.
+> 
+> The plan space size of Selinger Optimizer:
+> ![](3_Query_Optimization.assets/image-20240223163218004.png)![](3_Query_Optimization.assets/image-20240223163243098.png)
 
 
 
@@ -248,19 +256,42 @@
 
 
 
+### Interesting Orders
+> [!def]
+> ![](3_Query_Optimization.assets/image-20240312220508863.png)
 
-### Selinger's Algorithm
+
+
+## Algorithm Procedures
 > [!overview]
 > ![](3_Query_Optimization.assets/image-20240223164110532.png)![](3_Query_Optimization.assets/image-20240221161509682.png)
 
-### Pass 1: Single Table Relation
+### Pass 1: Single Table Access Plan
 > [!def]
 > The first pass of System R determines how to access single tables optimally or interestingly.
 
 
-#### Scanning 
+#### Phase 1: Scanning 
 > [!def]
 > ![](3_Query_Optimization.assets/image-20240223153801134.png)![](3_Query_Optimization.assets/image-20240223153829907.png)
+> **Advantages of Full Scan:**
+> - A full table scan is straightforward and does not depend on the existence or condition of any indexes.
+> - When a query needs to access a significant portion of the rows in a table, a full table scan can be more efficient than using an index. This is because it involves sequential disk reads, which are faster than the random reads required for accessing data through an index in some cases.
+> 
+> **Advantages of Index Scan:**
+> - Indexes can be designed to support specific query operations like ordering and grouping more efficiently than a full table scan would.
+> - Index scans are advantageous for selective queries where only a small subset of rows needs to be fetched based on specific column values.
+> 
+> **Use an Index Scan when**:
+> - The query affects a small portion of the table.
+> - There's a well-designed index that matches the query conditions.
+> - You need to quickly locate specific rows.
+> 
+> **Consider a Full Table Scan when**:
+> - The query needs to access a large portion of the table.
+> - There's no suitable index available.
+> - The cost of using an index (such as disk I/O for random access) outweighs the benefits for the specific query workload.
+> 
 
 > [!important] Alt 1 Indexing Cost
 > ![](3_Query_Optimization.assets/image-20240223153920742.png)![](3_Query_Optimization.assets/image-20240223153933299.png)
@@ -271,7 +302,7 @@
 
 
 
-#### Advancing - Optimality&Interesting Orders
+#### Phase 2: Advancing - Optimality&Interesting Orders
 > [!def]
 > ![](3_Query_Optimization.assets/image-20240223154108197.png)![](3_Query_Optimization.assets/image-20240223154121279.png)
 > **Several things to note:**
@@ -293,35 +324,77 @@
 > ![](3_Query_Optimization.assets/image-20240223155932044.png)![](3_Query_Optimization.assets/image-20240223155940883.png)![](3_Query_Optimization.assets/image-20240223155857138.png)
 
 
-## Selinger Optimizer
-> [!important]
-> Selinger Optimizer assmes all of the heuristics of system R:
-> 1. Consider only left deep join plan space.
-> 2. Unary operators like selection and projection are pushed down as far as possible.
-> 3. Do not consider cross join unless they are the only option.
+### Summary
+> [!overview]
+> ![](3_Query_Optimization.assets/image-20240221161234420.png)
+
+> [!def]
+> ![](3_Query_Optimization.assets/image-20240221161240752.png)
+
+
+
+# Query Plan Searching Examples
+## Methodology
+> [!important] 
+> Suppose we have the following three relations: 
+> - R(a,c)
+> 	- R has 1000 data pages, and 10000 records
+> 	- R.a has a 2-level alt2 unclustered index
+> 		- Uniform between [1, 10]
+> 		- 50 leaf pages
+> 	- R.c has a 2-level **alt1** index
+> 		- Uniform between [1,20]
+> 		- 1000 leaf pages/data pages
+> - S(b,c)
+> 	- S has 2000 data pages and 40000 records
+> 	- S.b has a 3-level alt2 clustered index
+> 		- Unknown value distribution.
+> 		- 120 leaf pages
+> 	- S.c has a 4-level alt2 unclustered index
+> 		- Unknown value distribution.
+> 		- 300 leaf pages
+> - T(a,c) 
+> 	- T has 3000 data pages and 30000 records
+> 	- T.c has a 3-level alt2 clustered index
+> 		- Unknown value distribution.
+> 		- 150 leaf pages
 > 
-> Selinger Optimizer has the following properties:
-> 1. The Selinger optimizer doesn't output a globally optimal query plan since the optimal one may not be left-deep join.
-> 2. The Selinger optimizer output a globally optimal left-join query plan if the estimated cost is exactly the actual cost.
+> and now we are joining them together with the following join clause:
+> `SELECT R.a, S.b FROM R join S on R.b = S.b join T on S.c = T.c WHERE R.a > = 5 AND T.c <= 20 GROUP BY T.c ORDER BY R.a`
 > 
-> The plan space size of Selinger Optimizer:
-> ![](3_Query_Optimization.assets/image-20240223163218004.png)![](3_Query_Optimization.assets/image-20240223163243098.png)
+> We first consider the single table access pattern, we have to calculate the following:
+> - For R, we have the following access patterns:
+> 	- **Full scan** on R, which has I/O cost: 1000 I/Os.
+> 	- **Index Scan** on R.a, 
+> 		- Selectivity: We first push down the `R.a >= 5` predicate, calculate its selectivity, which is $\frac{1}{2}$.
+> 		- I/O cost: 
+> 			- Alt 2 unclustered index, cost = height of index + (num of leaf pages + num of records) * selectivity
+> 			- $2+(50 + 10000) \times \frac{1}{2}=5027$ IOs.
+> 	- Index Scan on R.c:
+> 		- Selectivity: No predicate on this column, selectivity is 1.
+> 		- I/O Cost: 
+> 			- Alt 1 index, cost = height of index + num of leaf pages * selectivity
+> 			- $2+ 1000=1002$ IOs.
+> 	- **The number of records passed on to the next operator** is $1000\times \frac{1}{2}=500$ pages.
 
 
 
 
-
-
-## Plan Searching Examples
+## Example 1: Integrated Example
 > [!example] Note09
 > ![](3_Query_Optimization.assets/image-20240223160040971.png)![](3_Query_Optimization.assets/image-20240223160057402.png)![](3_Query_Optimization.assets/image-20240223161038644.png)![](3_Query_Optimization.assets/image-20240223161052674.png)![](3_Query_Optimization.assets/image-20240223161105676.png)![](3_Query_Optimization.assets/image-20240223161116743.png)![](3_Query_Optimization.assets/image-20240223161130986.png)![](3_Query_Optimization.assets/image-20240223161141183.png)![](3_Query_Optimization.assets/image-20240223161152002.png)![](3_Query_Optimization.assets/image-20240223161205197.png)![](3_Query_Optimization.assets/image-20240223161219275.png)![](3_Query_Optimization.assets/image-20240223161228122.png)![](3_Query_Optimization.assets/image-20240223161240672.png)![](3_Query_Optimization.assets/image-20240223161251092.png)
 > Note that here the join is not SMJ, in other words, it is not a sorted join, so we will only consider the plan that has the lowest I/O cost.
 
 
+## Example 2 Single Table Access Plan
+> [!example] Fa20 Disc07 P2 - Single Table Access Plans
+> ![](3_Query_Optimization.assets/image-20240312213239156.png)![](3_Query_Optimization.assets/image-20240312213244912.png)
 
 
 
-
+## Example 3: Multi-table Plan
+> [!example] Fa20 Disc07 P2 - Multi-Table Plan
+> ![](3_Query_Optimization.assets/image-20240312220931229.png)![](3_Query_Optimization.assets/image-20240312220947156.png)
 
 
 

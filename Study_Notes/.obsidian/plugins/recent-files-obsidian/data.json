@@ -1,16 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "Parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
+      "basename": "3_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
+    },
+    {
+      "basename": "Convex_Sets",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+    },
+    {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Sampling_Algorithms",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md"
+    },
+    {
+      "basename": "2_Binary_Decision_Rules",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md"
     },
     {
       "basename": "Hypothesis Testing",
       "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
     },
     {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
+    },
+    {
+      "basename": "Binary_Testing",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Testing.md"
+    },
+    {
+      "basename": "1_Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/1_Statistical_Learning_Basics.md"
+    },
+    {
       "basename": "Priors&Posteriors",
       "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
+    },
+    {
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
     },
     {
       "basename": "Bootstrap_Estimation",
@@ -45,10 +89,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.md"
     },
     {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md"
-    },
-    {
       "basename": "1_Bayes_Networks",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
     },
@@ -73,10 +113,6 @@
       "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/markov_chains.pdf"
     },
     {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
-    },
-    {
       "basename": "Bivariate_Multivariate_Distributions",
       "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
     },
@@ -95,10 +131,6 @@
     {
       "basename": "Tweeter",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md"
-    },
-    {
-      "basename": "3_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md"
     },
     {
       "basename": "8_Abstract_Data_Type",
@@ -137,10 +169,6 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
     },
     {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
       "basename": "2_Concurrency_Control_Theory",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "3_Cryptographic_Hashes",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
-    },
-    {
-      "basename": "Important_Applications_Of_Basic_Probability",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md"
-    },
-    {
-      "basename": "4_Memory_Mangement",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/4_Memory_Mangement.md"
-    },
-    {
-      "basename": "RAII_Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
-    },
-    {
-      "basename": "Move_Semantics",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
-    },
-    {
-      "basename": "Special Member Functions",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Special Member Functions.md"
-    },
-    {
-      "basename": "AP-HW4-Smart_Pointers",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md"
-    },
-    {
-      "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
     }
   ],
   "omittedPaths": [],

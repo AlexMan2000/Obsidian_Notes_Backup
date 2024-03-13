@@ -190,15 +190,15 @@
 
 #### Signed Distance from a point
 > [!important]
-> Suppose we have a hyperplane $\mathcal{H}=\{\vec{x}:\vec{a}^{\top}\vec{x}=\vec{b}\}$ and a point $\vec{x}_1$, the signed distance from $\vec{x}_1$ to the hyperplane is $$d(\vec{x}_1,\mathcal{H})=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2}$$ where:
+> Suppose we have a hyperplane $\mathcal{H}=\{\vec{x}:\vec{a}^{\top}\vec{x}=\vec{b}\}$ and a point $\vec{x}_1$, the signed distance from $\vec{x}_1$ to the hyperplane is $$d(\vec{x}_1,\mathcal{H})=\frac{\vec{a}^{\top}\vec{x}_1-b}{\|\vec{a}\|_2}$$ where:
 > - If the test point is in the opposite direction of normal vector(i.e. $\vec{a}^{\top}\vec{x}_1<0$), the distance is negative.
 > - If the test point is in the same direction of normal vector(i.e. $\vec{a}^{\top}\vec{x}_1>0$), the distance is positive.
 > 
 > Proof: Pick an arbitrary point $\vec{x}_0$ on the hyperplane that satisfy $\vec{a}^{\top}\vec{x}_0=\vec{b}$. The distance from $\vec{x}_1$ to $\mathcal{H}$ is $\|\vec{x}_1-\vec{x}_0\|$ assuming $(\vec{x}_1-\vec{x}_0)\parallel \vec{a}$.
 > 
-> Suppose $\vec{x}_1-\vec{x}_0=k\vec{a}$, then $$\vec{a}^{\top}(\vec{x}_1-\vec{x}_0)=\vec{a}^{\top}k\vec{a}=k\|\vec{a}\|_2^2=\vec{a}^{\top}\vec{x_1}$$
+> Suppose $\vec{x}_1-\vec{x}_0=k\vec{a}$, then $$\vec{a}^{\top}(\vec{x}_1-\vec{x}_0)=\vec{a}^{\top}k\vec{a}=k\|\vec{a}\|_2^2=\vec{a}^{\top}\vec{x_1}-b$$
 > Thus $k=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2^2}$.
-> Finally the signed distance is $$\|\vec{x}_1-\vec{x}_0\|_2=k\|\vec{a}\|_2=\frac{\vec{a}^{\top}\vec{x}_1}{\|\vec{a}\|_2}$$
+> Finally the signed distance is $$\|\vec{x}_1-\vec{x}_0\|_2=k\|\vec{a}\|_2=\frac{\vec{a}^{\top}\vec{x}_1-b}{\|\vec{a}\|_2}$$
 
 
 ## Halfspaces

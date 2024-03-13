@@ -66,13 +66,8 @@
 
 
 
-## Max-Margin Classifiers
-### Terminologies
-> [!overview]
-> - **Margin**: The margin of a **linear classifier** is the distance from the decision boundary to the nearest training point.
-> - 
-
-
+## Max-Margin Classifiers 
+See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM) 
 
 # Generative Models
 ## Modeling Ideas
@@ -122,6 +117,11 @@
 # SVM Models
 ## Hard-Margin SVM
 
+### Terminologies
+> [!overview]
+> - **Margin**: The margin of a **linear classifier** is the distance from the decision boundary to the nearest training point.
+> - 
+ 
 
 
 
