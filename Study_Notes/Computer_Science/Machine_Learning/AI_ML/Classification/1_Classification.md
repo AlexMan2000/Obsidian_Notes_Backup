@@ -115,23 +115,69 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 
 
 # SVM Models
-## Hard-Margin SVM
-
+## Hard-Margin SVM-Separable Case
 ### Terminologies
 > [!overview]
 > - **Margin**: The margin of a **linear classifier** is the distance from the decision boundary to the nearest training point.
-> - 
- 
+> 
+
+
+### Optimization Problem
+> [!def]
+> Suppose we have labelled data $\mathcal{D}=\{(\vec{x}_1,y_1),(\vec{x}_2,y_2),\cdots, (\vec{x}_n,y_n)\}$, we want to find a binary classifier $\delta(\vec{x}):\mathbb{R}^d\to\{0,1\}$.
+> ![](1_Classification.assets/image-20240313162136289.png)
+> The decision boundary is given by a hyperplane with $\vec{w}^{\top}\vec{x}+b=0$ and the decision rule is:
+> - If $\vec{w}^{\top}\vec{x}+b\geq1$, classify to 1.
+> - If $\vec{w}^{\top}\vec{x}+b\leq-1$, classify to 0.
+> 
+> We want to maximize the margin of the classifier, which is calculated by $\min_i\frac{1}{\|\vec{w}\|}|\vec{w}^{\top}\vec{x}_{i}+b|=\frac{1}{\|\vec{w}\|}$. (Here we define the minimum absolute value of the signed distance from the hyperplane to be 1 by proper scaling $\vec{w}$ and $b$).
+> 
+> So the objective should be $\max_{\vec{w},b}\frac{1}{\|\vec{w}\|}$, but such objective is hard to optimize, so we use two monotone transformations
+> - First make it $\min_{\vec{w},b}\|\vec{w}\|$. (The monotone function is $f(x)=x^{-1}$ over positive values.)
+> - Then taking power(The monotone function is $f(x)=\frac{1}{2}x^2$).
+> 
+> The optimization problem thus becomes:
+> $$\begin{aligned}&\min_{\vec{w},b}\frac{1}{2}\|\vec{w}\|^{2}\\\textbf{s.t.}\quad&y_i(\vec{w}^{\top}\vec{x}_{i}-b)\geq1\quad\forall i=1,2\cdots, n\end{aligned}$$
+>
+>This is a quadratic program with $d+1$ dimensions($d$ for $\vec{w}$ and 1 for $b$) and $n$ constraints. We know this program has unique solution since the quadratic matrix $I_d$ is positive definite.
+>
+>However, if the data points are not linearly separable, the QP has no solution.
+
+
+
+### Dual Program
+> [!def]
+> For each constraint $y_i\left(\left\langle\boldsymbol{w}, \boldsymbol{x}_i\right\rangle+b\right) \geq 1$, we assign a dual variable $\alpha_i \geq 0$, the Lagrangian function is given by$$\begin{aligned}L\left(\boldsymbol{w}, b, \alpha_i\right) & =\frac{1}{2}\|\boldsymbol{w}\|^2-\sum_{i=1}^n \alpha_i\left(y_i\left(\left\langle\boldsymbol{w}, \boldsymbol{x}_i\right\rangle+b\right)-1\right), \\& =\frac{1}{2}\|\boldsymbol{w}\|^2-\left\langle\boldsymbol{w}, \sum_{i=1}^n \alpha_i y_i \boldsymbol{x}_i\right\rangle-b \sum_{i=1}^n \alpha_i y_i+\sum_{i=1}^n \alpha_i .\end{aligned}$$
+> 
+> As long as $\boldsymbol{w}$ and $b$ are feasible, i.e., satisfying the affine constraints, it holds$$L\left(\boldsymbol{w}, b, \alpha_i\right) \leq \frac{1}{2}\|\boldsymbol{w}\|^2$$
+> 
+> Note that for any $\alpha_i$, the Lagrangian function is a quadratic function w.r.t. $\boldsymbol{w}$ and $b$. We minimize the Lagrangian function over the primal variables, i.e., $\inf _{\boldsymbol{w}, b} L\left(\boldsymbol{w}, b, \alpha_i\right)$. It suffices to obtain the critical points:$$\begin{aligned}\frac{\partial L}{\partial \boldsymbol{w}} & =\boldsymbol{w}-\sum_{i=1}^n \alpha_i y_i \boldsymbol{x}_i=0 \\\frac{\partial L}{\partial b} & =-\sum_{i=1}^n \alpha_i y_i=0\end{aligned}$$
+> 
+> Since the lagrangian function is affine in $b$, if $\alpha_i$ does not satisfy the second equation, the minimum $L$ is negative infinite, which leads to an uninformative lower bound. 
+> 
+> Substituting the FOC into lagrangian function, we have$$\inf _{\boldsymbol{w}, b} L\left(\boldsymbol{w}, b, \alpha_i\right)=-\frac{1}{2}\left\|\sum_{i=1} \alpha_i y_i \boldsymbol{x}_i\right\|^2+\sum_{i=1}^n \alpha_i \leq p^*$$where $p^*$ is the optimal value to the primal program (6.1.1), for any $\alpha_i$ satisfying$$\sum_{i=1}^n \alpha_i y_i=0, \quad \alpha_i \geq 0 .$$
+> 
+> This gives rise to the dual program:$$\max _{\alpha_i}-\frac{1}{2}\left\|\sum_{i=1} \alpha_i y_i \boldsymbol{x}_i\right\|^2+\sum_{i=1}^n \alpha_i \quad \text { s.t. } \quad \sum_{i=1}^n \alpha_i y_i=0, \alpha_i \geq 0$$where$$\left\|\sum_{i=1} \alpha_i y_i \boldsymbol{x}_i\right\|^2=\sum_{i, j} \alpha_i \alpha_j y_i y_j\left\langle\boldsymbol{x}_i, \boldsymbol{x}_j\right\rangle .$$
+> 
+> The dual program is essentially also a convex program (by adding a negative sign to the objective function).
+
+
+### KKT Conditions
+> [!important]
+> ![](1_Classification.assets/image-20240313170357740.png)![](1_Classification.assets/image-20240313170411068.png)![](1_Classification.assets/image-20240313170626564.png)![](1_Classification.assets/image-20240313170727637.png)
+
+
+
+## Soft-Margin SVM - Non Separable Case
+### Optimization Problem
+> [!def]
+> On top of the hard margin SVM, we coudl add a slack variable $\epsi$
 
 
 
 
-## Soft-Margin SVM
 
-
-
-
-
+## Kernel Tricks
 
 
 

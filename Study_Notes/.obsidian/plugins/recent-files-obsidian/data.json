@@ -5,24 +5,68 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md"
     },
     {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md"
+    },
+    {
+      "basename": "Set",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/Set.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md"
+    },
+    {
       "basename": "1_Classification",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
     },
     {
-      "basename": "Convex_Sets",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "Kernel_Methods",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md"
+    },
+    {
+      "basename": "2_Quadratic_Programs",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md"
+    },
+    {
+      "basename": "Project4_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md"
+    },
+    {
+      "basename": "Project3_Join&Optimization(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
     },
     {
       "basename": "3_Query_Optimization",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
     },
     {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+      "basename": "11-iterators-joins-2",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf"
     },
     {
       "basename": "2_Iterators&Joins",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Project2_B+_Tree(sp24)",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
+    },
+    {
+      "basename": "Convex_Sets",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
     },
     {
       "basename": "Sampling_Algorithms",
@@ -125,20 +169,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
     },
     {
-      "basename": "Project2_B+_Tree(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md"
-    },
-    {
       "basename": "Tweeter",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md"
     },
     {
       "basename": "8_Abstract_Data_Type",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md"
-    },
-    {
-      "basename": "Project3_Join&Optimization(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
     },
     {
       "basename": "Lab06_Rollback_Recovery",
@@ -163,42 +199,6 @@
     {
       "basename": "SimpleDB_Design",
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/SimpleDB_Design.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "1_Introduction",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md"
-    },
-    {
-      "basename": "Malloc_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
-    },
-    {
-      "basename": "Locks_Synchronization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
-    },
-    {
-      "basename": "Concurrency",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "3_Cryptographic_Hashes",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
     }
   ],
   "omittedPaths": [],

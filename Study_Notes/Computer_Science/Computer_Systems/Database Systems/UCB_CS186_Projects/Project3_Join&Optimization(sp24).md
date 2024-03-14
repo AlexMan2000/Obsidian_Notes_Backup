@@ -677,18 +677,360 @@ private class DataComparator implements Comparator<T> {
 
 
 
-
-
 # Query Optimization
 ## Task 5: Single Table Access Selection
+> [!task]
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313111439741.png)
+> For a column to be eligible for index scan, it has to satisfy the following:
+> 1. There is index built on that column.
+> 2. The selection operator on that column should not be `NOT_EQUAL`
+> 
+> Suppose we have a relation $R(a,b,c)$ and we are doing a index scan on column b with selection predicate b >= 4 AND a < 5, then:
+> 1. The indexscan operator spits out records with b >= 4 one by one on-the-fly.
+> 2. For each record produced by indexscan operator, apply SelectOperator with predicate a < 5 to the record. If the predicate returns true, keep it, otherwise drop it.
+> 3. The I/O cost of SelectorOperator is defined to be the same as the source Operator that produces the records.
+> 
+
+> [!code]
+```java
+// Task 5: Single Table Access Selection
+
+    /**
+     * Gets all select predicates for which there exists an index on the column
+     * referenced in that predicate for the given table and where the predicate
+     * operator can be used in an index scan.
+     *
+     * @return a list of indices of eligible selection predicates in
+     * this.selectPredicates
+     */
+    private List<Integer> getEligibleIndexColumns(String table) {
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < this.selectPredicates.size(); i++) {
+            SelectPredicate p = this.selectPredicates.get(i);
+            // ignore if the selection predicate is for a different table
+            if (!p.tableName.equals(table)) continue;
+            boolean indexExists = this.transaction.indexExists(table, p.column);
+            // indexScan not supported for != predicate
+            boolean canScan = p.operator != PredicateOperator.NOT_EQUALS;
+            if (indexExists && canScan) result.add(i);
+        }
+        return result;
+    }
+
+    /**
+     * Applies all eligible select predicates to a given source, except for the
+     * predicate at index except. The purpose of except is because there might
+     * be one select predicate that was already used for an index scan, so
+     * there's no point applying it again. A select predicate is represented as
+     * an element in this.selectPredicates. `except` corresponds to the index
+     * of the predicate in that list.
+     *
+     * @param source a source operator to apply the selections to
+     * @param except the index of a selection to skip. You can use the value -1
+     *               if you don't want to skip anything.
+     * @return a new query operator after select predicates have been applied
+     */
+    private QueryOperator addEligibleSelections(QueryOperator source, int except) {
+        for (int i = 0; i < this.selectPredicates.size(); i++) {
+            if (i == except) continue;
+            SelectPredicate curr = this.selectPredicates.get(i);
+            try {
+                String colName = source.getSchema().matchFieldName(curr.tableName + "." + curr.column);
+                source = new SelectOperator(
+                        source, colName, curr.operator, curr.value
+                );
+            } catch (RuntimeException err) {
+                /* do nothing */
+            }
+        }
+        return source;
+    }
+
+    /**
+     * Finds the lowest cost QueryOperator that accesses the given table. First
+     * determine the cost of a sequential scan for the given table. Then for
+     * every index that can be used on that table, determine the cost of an
+     * index scan. Keep track of the minimum cost operation and push down
+     * eligible select predicates.
+     *
+     * If an index scan was chosen, exclude the redundant select predicate when
+     * pushing down selects. This method will be called during the first pass of
+     * the search algorithm to determine the most efficient way to access each
+     * table.
+     *
+     * @return a QueryOperator that has the lowest cost of scanning the given
+     * table which is either a SequentialScanOperator or an IndexScanOperator
+     * nested within any possible pushed down select operators. Ties for the
+     * minimum cost operator can be broken arbitrarily.
+     */
+    public QueryOperator minCostSingleAccess(String table) {
+        QueryOperator minOp = new SequentialScanOperator(this.transaction, table);
+
+        // TODO(proj3_part2): implement
+        // Even if the full scan will always cost <num_of_pages> I/Os to run, we have to apply selection
+        // operator to it in order to pass the test.
+        minOp = addEligibleSelections(minOp, -1);
+        int bestIOCost = minOp.estimateIOCost();
+        int currIOCost;
+
+        // Get the index of the column that has index built on it and the select operator on that column
+        // is not !=
+        List<Integer> tableIndices = getEligibleIndexColumns(table);
+
+        /* For each column with index built on it, calculate the I/O costs of performing indexScan
+        *  If there is selection operator that's pushed down on that column, ignore it since index scan
+        *  is using that selection operator, we don't want to count for its I/Os twice(one for selection, one for indexScan)
+        * */
+        for (Integer index: tableIndices) {
+            // Get the select predicate for current index scan, we want to exclude this select predicate
+            SelectPredicate sp = this.selectPredicates.get(index);
+            QueryOperator indexScanOp = new IndexScanOperator(this.transaction,
+                    table,
+                    sp.column,
+                    sp.operator,
+                    sp.value);
+            indexScanOp = addEligibleSelections(indexScanOp, index);
+            currIOCost = indexScanOp.estimateIOCost();
+            if (currIOCost < bestIOCost) {
+                bestIOCost = currIOCost;
+                minOp = indexScanOp;
+            }
+        }
+
+        return minOp;
+    }
+```
+> [!code] Test Output
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313113458161.png)
+
+
 
 
 
 ## Task 6: Join Selection
+> [!task]
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313113522480.png)![](3_Query_Optimization.assets/image-20240223164110532.png)
+> For pass 1....n, the function takes in the optimal results from pass i-1 and spit out the optimal result at pass i.
+> 
+> For example, `prevMap` could be:
+> `{{A,B}: SMJ, {A,C}: SNLJ, {B,C}: BNLJ, {B,T}: GHJ, {A,T}: SNLJ}`
+> 
+> And `result` could be:
+> `{{A,B,T}: PNLJ, {A,B,C}: INLJ, {B,C,T}: SMJ, {A,B,T}: SNLJ, {A,C,T}: SNLJ}`
+
+> [!code]
+```java
+// Task 6: Join Selection //////////////////////////////////////////////////
+
+    /**
+     * Given a join predicate between left and right operators, finds the lowest
+     * cost join operator out of join types in JoinOperator.JoinType. By default
+     * only considers SNLJ and BNLJ to prevent dependencies on GHJ, Sort and SMJ.
+     *
+     * Reminder: Your implementation does not need to consider cartesian products
+     * and does not need to keep track of interesting orders.
+     *
+     * @return lowest cost join QueryOperator between the input operators
+     */
+    private QueryOperator minCostJoinType(QueryOperator leftOp,
+                                          QueryOperator rightOp,
+                                          String leftColumn,
+                                          String rightColumn) {
+        QueryOperator bestOperator = null;
+        int minimumCost = Integer.MAX_VALUE;
+        List<QueryOperator> allJoins = new ArrayList<>();
+        allJoins.add(new SNLJOperator(leftOp, rightOp, leftColumn, rightColumn, this.transaction));
+        allJoins.add(new BNLJOperator(leftOp, rightOp, leftColumn, rightColumn, this.transaction));
+        for (QueryOperator join : allJoins) {
+            int joinCost = join.estimateIOCost();
+            if (joinCost < minimumCost) {
+                bestOperator = join;
+                minimumCost = joinCost;
+            }
+        }
+        return bestOperator;
+    }
+
+    /**
+     * Iterate through all table sets in the previous pass of the search. For
+     * each table set, check each join predicate to see if there is a valid join
+     * with a new table. If so, find the minimum cost join. Return a map from
+     * each set of table names being joined to its lowest cost join operator.
+     *
+     * Join predicates are stored as elements of `this.joinPredicates`.
+     *
+     * @param prevMap  maps a set of tables to a query operator over the set of
+     *                 tables. Each set should have pass number - 1 elements.
+     * @param pass1Map each set contains exactly one table maps to a single
+     *                 table access (scan) query operator.
+     * @return a mapping of table names to a join QueryOperator. The number of
+     * elements in each set of table names should be equal to the pass number.
+     */
+    public Map<Set<String>, QueryOperator> minCostJoins(
+            Map<Set<String>, QueryOperator> prevMap,
+            Map<Set<String>, QueryOperator> pass1Map) {
+        Map<Set<String>, QueryOperator> result = new HashMap<>();
+        // TODO(proj3_part2): implement
+        // We provide a basic description of the logic you have to implement:
+        // For each set of tables in prevMap
+        //   For each join predicate listed in this.joinPredicates
+        //      Get the left side and the right side of the predicate (table name and column)
+        //
+        //      Case 1: The set contains left table but not right, use pass1Map
+        //              to fetch an operator to access the rightTable
+        //      Case 2: The set contains right table but not left, use pass1Map
+        //              to fetch an operator to access the leftTable.
+        //      Case 3: Otherwise, skip this join predicate and continue the loop.
+        //
+        //      Using the operator from Case 1 or 2, use minCostJoinType to
+        //      calculate the cheapest join with the new table (the one you
+        //      fetched an operator for from pass1Map) and the previously joined
+        //      tables. Then, update the result map if needed.
+        for (Map.Entry<Set<String>, QueryOperator> pair: prevMap.entrySet()) {
+            // { A,B } SNLJ  {B, C} SMJ  {A, C} BNLJ, {B,T} SNLJ, .... all are optimal plans
+            Set<String> tablePairSet = pair.getKey();
+            QueryOperator leftOp = pair.getValue();
+            for (JoinPredicate jp: this.joinPredicates) {
+                String leftTable = jp.leftTable;
+                String leftColumn = jp.leftColumn;
+                String rightTable = jp.rightTable;
+                String rightColumn = jp.rightColumn;
+
+                QueryOperator rightOp;
+                QueryOperator minCostOp;
+                Set<String> probeKey= new HashSet<>();
+                Set<String> resultKey = new HashSet<>(tablePairSet);
+
+                if (!tablePairSet.contains(leftTable) && tablePairSet.contains(rightTable)) {
+                    probeKey.add(leftTable);
+                    rightOp = pass1Map.get(probeKey);
+                    /*
+                        Be careful with the order here, suppose the join predicate is
+                            JOIN ON A.aid = B.bid
+                            - leftTable = A
+                            - rightTable = B
+                        But the current set is {B,C}, then B is in the set but A is not.
+                        So we want to join B and A where {B,C} is leftOp and A is rightOp
+
+                        B has rightColumn, but has to be on the left, so we pass in rightColumn first.
+                     */
+                    minCostOp = minCostJoinType(leftOp, rightOp, rightColumn, leftColumn);
+                    resultKey.add(leftTable);
+                } else if (tablePairSet.contains(leftTable) && !tablePairSet.contains(rightTable)){
+                    probeKey.add(rightTable);
+                    rightOp = pass1Map.get(probeKey);
+                    minCostOp = minCostJoinType(leftOp, rightOp, leftColumn, rightColumn);
+                    resultKey.add(rightTable);
+                } else {
+                    /*
+                        3. If both exists, then this join must have been evaluated
+                        and optimized in previous pass, don't have to evaluate it again, skip
+                        4. If neither exists, then skip.
+                     */
+                    continue;
+                }
+
+                int minCost = minCostOp.estimateIOCost();
+                if (result.containsKey(resultKey)) {
+                    if (minCost < result.get(resultKey).estimateIOCost()) {
+                        result.put(resultKey, minCostOp);
+                    }
+                } else {
+                    result.put(resultKey, minCostOp);
+                }
+            }
+        }
+
+        // {A,B,C} SMJ, {A,B,T} SNLJ ... all optimal plans
+        return result;
+    }
+```
+> [!test] Test Output
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313132102608.png)
 
 
 
 ## Task 7: Optimal Plan Selection
+> [!task]
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313131550582.png)
+
+> [!code]
+```java
+// Task 7: Optimal Plan Selection //////////////////////////////////////////
+
+    /**
+     * Finds the lowest cost QueryOperator in the given mapping. A mapping is
+     * generated on each pass of the search algorithm, and relates a set of tables
+     * to the lowest cost QueryOperator accessing those tables.
+     *
+     * @return a QueryOperator in the given mapping
+     */
+    private QueryOperator minCostOperator(Map<Set<String>, QueryOperator> map) {
+        if (map.size() == 0) throw new IllegalArgumentException(
+                "Can't find min cost operator over empty map"
+        );
+        QueryOperator minOp = null;
+        int minCost = Integer.MAX_VALUE;
+        for (Set<String> tables : map.keySet()) {
+            QueryOperator currOp = map.get(tables);
+            int currCost = currOp.estimateIOCost();
+            if (currCost < minCost) {
+                minOp = currOp;
+                minCost = currCost;
+            }
+        }
+        return minOp;
+    }
+
+    /**
+     * Generates an optimized QueryPlan based on the System R cost-based query
+     * optimizer.
+     *
+     * @return an iterator of records that is the result of this query
+     */
+    public Iterator<Record> execute() {
+        this.transaction.setAliasMap(this.aliases);
+        // TODO(proj3_part2): implement
+        // Pass 1: For each table, find the lowest cost QueryOperator to access
+        // the table. Construct a mapping of each table name to its lowest cost
+        // operator.
+        int joinSize = tableNames.size();
+        Map<Set<String>, QueryOperator> pass1Map = new HashMap<>();
+        Map<Set<String>, QueryOperator> prevMap = pass1Map;
+        for (String tableName: tableNames) {
+            QueryOperator minCostOp = minCostSingleAccess(tableName);
+            Set<String> mapKey = new HashSet<>();
+            mapKey.add(tableName);
+            pass1Map.put(mapKey, minCostOp);
+        }
+        // Pass i: On each pass, use the results from the previous pass to find
+        // the lowest cost joins with each table from pass 1. Repeat until all
+        // tables have been joined.
+        int currSize = 1;
+        while (currSize < joinSize) {
+            prevMap = minCostJoins(prevMap, pass1Map);
+            currSize++;
+        }
+
+        // Set the final operator to the lowest cost operator from the last
+        // pass, add group by, project, sort and limit operators, and return an
+        // iterator over the final operator.
+
+        this.finalOperator = minCostOperator(prevMap);
+        this.addGroupBy();
+        this.addProject();
+        this.addSort();
+        this.addLimit();
+
+        return this.finalOperator.iterator();
+    }
+```
+> [!test] Test Output
+> ![](Project3_Join&Optimization(sp24).assets/image-20240313143459459.png)
+
+
+
+
 
 
 

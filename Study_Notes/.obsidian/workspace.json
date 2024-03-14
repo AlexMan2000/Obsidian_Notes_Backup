@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "65be6b91623456d8",
+            "id": "6b2f4dc9831a92b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d8c0054daad0cf3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,21 +220,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "65be6b91623456d8",
+  "active": "9d8c0054daad0cf3",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/Set.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures",
+    "Computer_Science/Leetcode_Bank",
+    "Untitled",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240313170727637.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240313170626564.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240313170411068.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240313170357740.png",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
+    "Computer_Science/Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md",
+    "Computer_Science/Machine_Learning/EECS127AB/7_Applications/SVM.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.assets/image-20240313162136289.png",
+    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).assets/image-20240313143459459.png",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312220947156.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312220931229.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).assets/image-20240313132102608.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).assets/image-20240313131550582.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312220508863.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312220254246.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312213244912.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312213239156.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312205514462.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.assets/image-20240312205508019.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).assets/image-20240313113522480.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).assets/image-20240313113458161.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
     "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md",
     "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md",
     "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md",
@@ -232,29 +263,11 @@
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
     "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf.crdownload",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 953209.crdownload",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 635616.crdownload",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 406314.crdownload",
-    "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.md",
     "Computer_Science/Machine_Learning/AI_ML/Variational_Methods",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20240311171628189.png",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.assets/image-20240311171349669.png",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md",
-    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md",
-    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/markov_chains.pdf",
-    "Computer_Science/Machine_Learning/EECS126/3_Multiplexing/CTMCs.md",
-    "Computer_Science/Machine_Learning/AI_ML/Mixture_Models_EM",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Estimation.assets",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Bootstrap_Methods",
     "未命名.canvas"
   ]
 }
