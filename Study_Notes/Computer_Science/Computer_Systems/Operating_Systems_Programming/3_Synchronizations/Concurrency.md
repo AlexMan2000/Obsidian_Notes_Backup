@@ -991,7 +991,7 @@ scenaio 2:      ┌────────┐          ┌─────
 > [!bug] CS186
 > Two operations _conflict_ if they are part of different transactions, involve the same variable, and at least one of them is a write. There is a WW conflict between thread 1 & 2, and in scenario 2, that conflict caused a problem. The second scenario is a bad schedule.
 > 
-> See [CS186:Conflict Operations](../../Database%20Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md#Conflict%20Operations) for more information.
+> See [CS186:Conflict Operations](../../Database%20Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md#Conflict%20Operations) for more information.
 
 
 

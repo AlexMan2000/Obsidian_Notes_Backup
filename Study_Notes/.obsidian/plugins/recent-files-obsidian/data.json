@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "3_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/3_Recovery.md"
+      "basename": "DB_Design",
+      "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
+    },
+    {
+      "basename": "1_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
+    },
+    {
+      "basename": "Methodology on Optimization",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
+    },
+    {
+      "basename": "Shell_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "Memory_Mangement",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md"
     },
     {
       "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/2_Concurrency_Control_Theory.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
     {
       "basename": "Set",
@@ -14,7 +30,7 @@
     },
     {
       "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Recovery/1_Transactions_Concurrency.md"
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
     },
     {
       "basename": "1_Classification",
@@ -23,10 +39,6 @@
     {
       "basename": "Lagrangian_Duality_Theory",
       "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
     },
     {
       "basename": "Kernel_Methods",
@@ -187,18 +199,6 @@
     {
       "basename": "Lab04_Transactions",
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab04_Transactions.md"
-    },
-    {
-      "basename": "Lab03_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab03_Query_Optimization.md"
-    },
-    {
-      "basename": "Lab02_Operators",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
-    },
-    {
-      "basename": "SimpleDB_Design",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/SimpleDB_Design.md"
     }
   ],
   "omittedPaths": [],

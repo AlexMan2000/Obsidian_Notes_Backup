@@ -38,7 +38,7 @@
 > ![](SQL_Programming.assets/image-20231205215554402.png)![](SQL_Programming.assets/image-20231205215559989.png)
 > Also, in first normal form, we don't allow duplicate rows, we add to add extra fields to distinguish that.
 > 
-> More on this topic [DB_Design](../5_DB_Design/DB_Design.md)
+> More on this topic [DB_Design](../6_DB_Design/DB_Design.md)
 
 
 
