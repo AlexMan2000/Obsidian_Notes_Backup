@@ -94,6 +94,12 @@
 > Here since the hessian of $b(\vec{\theta})$ is PSD, so $b(\vec{\theta})$ is convex in $\vec{\theta}$.
 
 
+### Summary
+> [!summary]
+> ![](4_Generalized_Linear_Model.assets/image-20240314221412168.png)
+
+
+
 
 ## Repeated Sampling
 > [!property]
@@ -112,6 +118,10 @@
 > $$\begin{aligned}f\left(\vec{y} \mid \vec{\theta}, \vec{y} \in \vec{\mathcal{Y}}_0\right) & =\frac{f(\vec{y}) \cdot \mathbb{1}\left\{\vec{y} \in \vec{\mathcal{Y}}_0\right\}}{P_{\vec{\theta}}\left(\vec{y} \in \vec{\mathcal{Y}}_0\right)} \\& =\frac{e^{\vec{\theta}^{\top} \vec{y}-b(\vec{\theta})} f_0(\vec{y}) \cdot \mathbb{1}\left\{\vec{y} \in \vec{\mathcal{Y}}_0\right\}}{P_{\vec{\theta}}\left(\vec{y} \in \vec{\mathcal{Y}}_0\right)} \\& =e^{\vec{\theta}^{\top} \vec{y}-b(\vec{\theta})-\log P_{\vec{\theta}}\left(\vec{y} \in \vec{\mathcal{Y}}_0\right) }\cdot f_0(\vec{y}) \mathbb{1}\left\{\vec{y} \in \vec{\mathcal{Y}}_0\right\} \\& =e^{\vec{\theta}^{\top} \vec{y}-\tilde{b}(\vec{\theta})} \cdot \tilde{f}_0(\vec{y})\end{aligned}$$ where $\tilde{f}_0(\vec{y})=f_0(\vec{y})\cdot\mathbb{1}\left\{\vec{y} \in \vec{\mathcal{Y}}_0\right\}$ and $\tilde{b}(\vec{\theta})=b(\vec{\theta})-\log P_{\vec{\theta}}(\vec{y} \in \vec{\mathcal{Y}}_0)$
 
 
+
+### Convexity of NLL
+> [!important]
+> ![](4_Generalized_Linear_Model.assets/image-20240314221600488.png)![](4_Generalized_Linear_Model.assets/image-20240314221605791.png)
 
 
 ## Conjugate Prior
@@ -148,8 +158,12 @@
 
 
 ## Possion Regression - Poisson GLM
+### Theory
 > [!def]
+> ![](4_Generalized_Linear_Model.assets/image-20240314221154139.png)![](4_Generalized_Linear_Model.assets/image-20240314221200481.png)![](4_Generalized_Linear_Model.assets/image-20240314221207100.png)
 
+### Coding
+> [!code]
 
 
 

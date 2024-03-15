@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Non-parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Binary_Decision_Rules",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Decision_Rules.md"
+    },
+    {
+      "basename": "Hypothesis_Testing",
+      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
+      "basename": "Memory_Mangement",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md"
+    },
+    {
+      "basename": "Features",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.md"
+    },
+    {
+      "basename": "Variational_Inference",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md"
+    },
+    {
+      "basename": "4_Generalized_Linear_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
+    },
+    {
       "basename": "DB_Design",
       "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
     },
@@ -17,10 +57,6 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
     },
     {
-      "basename": "Memory_Mangement",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md"
-    },
-    {
       "basename": "2_Concurrency_Control_Theory",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
@@ -31,14 +67,6 @@
     {
       "basename": "1_Transactions_Concurrency",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
-    },
-    {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
     },
     {
       "basename": "Kernel_Methods",
@@ -85,20 +113,8 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md"
     },
     {
-      "basename": "2_Binary_Decision_Rules",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md"
-    },
-    {
-      "basename": "Hypothesis Testing",
-      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md"
-    },
-    {
       "basename": "Entropies",
       "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "Binary_Testing",
-      "path": "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Testing.md"
     },
     {
       "basename": "1_Statistical_Learning_Basics",
@@ -107,10 +123,6 @@
     {
       "basename": "Priors&Posteriors",
       "path": "Data_Science/Statistical_Inference/Bayesian_Statistics/Priors&Posteriors.md"
-    },
-    {
-      "basename": "Parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
     },
     {
       "basename": "Bootstrap_Estimation",
@@ -131,10 +143,6 @@
     {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Variational_Inference",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md"
     },
     {
       "basename": "__经验函数和插入估计量",
@@ -187,18 +195,6 @@
     {
       "basename": "8_Abstract_Data_Type",
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md"
-    },
-    {
-      "basename": "Lab06_Rollback_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab06_Rollback_Recovery.md"
-    },
-    {
-      "basename": "Lab05_B+Tree_Index",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab05_B+Tree_Index.md"
-    },
-    {
-      "basename": "Lab04_Transactions",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab04_Transactions.md"
     }
   ],
   "omittedPaths": [],

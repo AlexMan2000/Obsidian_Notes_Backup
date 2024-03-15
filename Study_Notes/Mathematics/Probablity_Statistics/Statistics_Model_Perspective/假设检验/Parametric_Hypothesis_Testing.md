@@ -1,34 +1,42 @@
 # 1 Basics
 ## 1.1 Null/Alternative Hypothesis
 ### Elements
-:::info
-![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227373218.png)
-:::
+> [!def]
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227373218.png)
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227373118.png)
 > **Key Elements:**
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227376171.png)
 
-**Example**There is a salt paking machine, producing bags of salt, with average weight of 0.5 $kg$, std. 0.015 kg. Weight $X\sim N(\mu,\sigma^2)$, we want to check whether this machine is working properly.
-Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.518, 0.498, 0.511, 0.520, 0.515, 0.512. 
-
-1. Data, $X_i,i=1,2,\cdots, 9$
-2. Hypothesis: $X_i\sim N(\mu,\sigma^2)\sim N(\mu,0.015^2)$。$H_0=0.5kg$, $H_0:\mu=\mu_0=0.5$, $H_1:\mu\neq \mu_0$
-3. Test: $\hat{\mu}=\overline{X}_n$, criteria to reject or not.
-
-一种测试的方法是: 只要$\hat{\mu}= \mu_0$我们就`accept null hypothesis`, 否则就`Reject`, 但是这样就会导致基本上所有$\hat{\mu}$都被拒绝。
-另一种更好的测试方法是: $|\hat{\mu}-\mu_0|>c,c>0$, 才reject.
-
-4. How to determine $c$, we want $c$can provide certain level of accuracy of out test.
+> [!example]
+> **Example**There is a salt paking machine, producing bags of salt, with average weight of 0.5 $kg$, std. 0.015 kg. Weight $X\sim N(\mu,\sigma^2)$, we want to check whether this machine is working properly.
+> 
+> Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.518, 0.498, 0.511, 0.520, 0.515, 0.512. 
+> 1. Data, $X_i,i=1,2,\cdots, 9$
+> 2. Hypothesis: $X_i\sim N(\mu,\sigma^2)\sim N(\mu,0.015^2)$。$H_0=0.5kg$, $H_0:\mu=\mu_0=0.5$, $H_1:\mu\neq \mu_0$
+> 3. Test: $\hat{\mu}=\overline{X}_n$, criteria to reject or not
+> 
+> 一种测试的方法是: 只要$\hat{\mu}= \mu_0$我们就`accept null hypothesis`, 否则就`Reject`, 但是这样就会导致基本上所有$\hat{\mu}$都被拒绝。
+> 
+> 另一种更好的测试方法是: $|\hat{\mu}-\mu_0|>c,c>0$, 才reject.
+> 
+> How to determine $c$, we want $c$can provide certain level of accuracy of out test.
 
 
 ### Simple/Composite Hypothesis
+> [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227374931.png)
 > `Simple hypothesis`的意思就是**在这个假设的前提**下，我们的数据的分布情况**可以用唯一的概率分布来完整描述**。
-> 比如: $H_0:\theta=\theta_0$
+> 
+> 比如: $$H_0:\theta=\theta_0$$
+> 
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227377284.png)
+> 
 > `Composite hypothesis`的意思就是**在这个假设的前提**下，我们的数据的分布情况**不能用唯一的概率分布来完整描述**。
-> 比如:$H_0:\theta\in \Theta_0$vd $H_1:\theta\in \Theta_A$,$\Theta_0$表示假设的参数集合(`Null Hypothesis`)，集合的`Cardinality`大于等于一。$\Theta_A$表示`Alternative Hypothesis`的参数集合。
-> 比如$H_0:\theta\leq 0$
+> 
+> 比如:$$H_0:\theta\in \Theta_{0}\quad vs\quad H_1:\theta\in \Theta_A\quad\Theta_0$$表示假设的参数集合(`Null Hypothesis`)，集合的`Cardinality`大于等于一。$\Theta_A$表示`Alternative Hypothesis`的参数集合。
+> 
+> 比如$$H_0:\theta\leq 0$$
+> 
 > **总结:**
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227375578.png)
 
@@ -101,7 +109,7 @@ Now we sample from the population and get the data of 9 bags: 0.497, 0.506, 0.51
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395174.png)
 
 > [!example]
-> ![](Hypothesis%20Testing.assets/image-20240203211240679.png)
+> ![](../../../../Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis_Testing.assets/image-20240203211240679.png)
 
 
 
@@ -329,6 +337,26 @@ Which one is better as rejection region?
 
 
 # 3 Wald Test
+## Wald Statistics
+> $1000$coins, $560$H, $440$T
+> $H_0:\theta_0=\frac{1}{2}$, $H_1:\theta\neq \frac{1}{2}$
+> $\hat{\theta_n}=\overline{X}_n=0.56$
+> $\begin{cases}T_1(\overline{X}_n)= \frac{\sqrt{n}(\hat{\theta_n}-\theta_0)}{\sqrt{\theta_0(1-\theta_0)}}\approx3.79\\T_2(\overline{X}_n)= \frac{\sqrt{n}(\hat{\theta_n}-\theta_0)}{\sqrt{\overline{X}_n(1-\overline{X}_n)}}\approx 3.82\end{cases}$
+> Reject  $|\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}|\geq z_{1-\alpha/2}$
+> Substitute $|\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}|$by either $T_1$or $T_2$
+> Compute the P-value
+> $\alpha^*=2(1-\Phi(\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}))=2(1-\Phi(\frac{\sqrt{1000}(0.56-0.5)}{0.5}))=2(1-0.378)<0.001$
+> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448000.png)
+> Thus we have strong evidence against $H_0:\theta=\frac{1}{2}$。
+
+**Remark**$X_1,\cdots X_n\sim N(\mu,\sigma^2)$, size-$\alpha=\{\overline{x}_n||\overline{x}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$
+Confidence Interval, size $\alpha$rejection, p-value
+$\mu_0\notin 1-\alpha-CI$interval($\mu_0: \overline{x}_n\pm z_{1-\alpha/2}\cdot\sigma$)$\iff$reject the null of size $\alpha$
+$\iff$p-value is smaller than $\alpha$
+
+
+
+
 ## Two-sided
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227427098.png)
 
@@ -389,14 +417,16 @@ In other words, reject $H_0$if $\hat{\theta_n}\leq c$, $\frac{\hat{\theta_n}-\th
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227446793.png)
 > It is the smallest size that you will reject the null hypothesis.
 
-**Example**$X_1,\cdots, X_n\sim N(\mu,\sigma^2)$, $\sigma^2$is known.
-$H_0:\mu=\mu_0, H_1:\mu\neq \mu_0$
-$T(X)=\overline{X}_n$
-$C_{\alpha}=\{\overline{X}_n||\overline{X}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$, which is **a function of **$\alpha$, when $\alpha$gets smaller, $z_{1-\alpha/2}$becomes bigger.
-Suppose that we observe $T(\overline{X})=\overline{X}_n$
-p-value:=$inf_{\alpha}\{\overline{X}_n||\overline{X}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$
-Compute the $\alpha^*$
-$\begin{aligned}|\overline{X}_n-\mu_0|&=z_{1-\alpha^*/2}\cdot \sigma\\1-\frac{\alpha^*}{2}&=\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma})\\\alpha^*&=2(1-\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma}))\end{aligned}$
+> [!example]
+> **Example**
+> $X_1,\cdots, X_n\sim N(\mu,\sigma^2)$, $\sigma^2$is known.$$H_0:\mu=\mu_0, H_1:\mu\neq \mu_0$$ $T(X)=\overline{X}_n$, $C_{\alpha}=\{\overline{X}_n||\overline{X}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$, which is **a function of **$\alpha$, when $\alpha$gets smaller, $z_{1-\alpha/2}$becomes bigger.
+> 
+> Suppose that we observe $T(X)=\overline{X}_n$
+> 
+> p-value:=$inf_{\alpha}\{\alpha:|\overline{X}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$
+> 
+> Compute the $\alpha^*$
+> $\begin{aligned}|\overline{X}_n-\mu_0|&=z_{1-\alpha^*/2}\cdot \sigma\\1-\frac{\alpha^*}{2}&=\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma})\\\alpha^*&=2(1-\Phi(\frac{|\overline{X}_n-\mu_0|}{\sigma}))\end{aligned}$
 
 ## 4.2 Insight
 > [!important]
@@ -409,7 +439,6 @@ $\begin{aligned}|\overline{X}_n-\mu_0|&=z_{1-\alpha^*/2}\cdot \sigma\\1-\frac{\a
 > [!example] **Illustration**
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448547.png)
 
-## 4.3 Summary
 > [!summary]
 > **P-value means:**
 > 1. The smallest size that we reject the null hypothesis. The smaller the p value is, the more evidence we have to reject the null hypothesis, and thus it is easier to find such $\alpha$ as $\inf\{\alpha:T(X\in R_{\alpha})\}$(Starting from 0).
@@ -417,24 +446,8 @@ $\begin{aligned}|\overline{X}_n-\mu_0|&=z_{1-\alpha^*/2}\cdot \sigma\\1-\frac{\a
 
 
 
-## 4.4 Wald Statistics
-> $1000$coins, $560$H, $440$T
-> $H_0:\theta_0=\frac{1}{2}$, $H_1:\theta\neq \frac{1}{2}$
-> $\hat{\theta_n}=\overline{X}_n=0.56$
-> $\begin{cases}T_1(\overline{X}_n)= \frac{\sqrt{n}(\hat{\theta_n}-\theta_0)}{\sqrt{\theta_0(1-\theta_0)}}\approx3.79\\T_2(\overline{X}_n)= \frac{\sqrt{n}(\hat{\theta_n}-\theta_0)}{\sqrt{\overline{X}_n(1-\overline{X}_n)}}\approx 3.82\end{cases}$
-> Reject  $|\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}|\geq z_{1-\alpha/2}$
-> Substitute $|\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}|$by either $T_1$or $T_2$
-> Compute the P-value
-> $\alpha^*=2(1-\Phi(\frac{\sqrt{n}(\overline{X}_n-\theta)}{\sqrt{\theta(1-\theta)}}))=2(1-\Phi(\frac{\sqrt{1000}(0.56-0.5)}{0.5}))=2(1-0.378)<0.001$
-> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227448000.png)
-> Thus we have strong evidence against $H_0:\theta=\frac{1}{2}$。
 
-**Remark**$X_1,\cdots X_n\sim N(\mu,\sigma^2)$, size-$\alpha=\{\overline{x}_n||\overline{x}_n-\mu_0|\geq z_{1-\alpha/2}\cdot \sigma\}$
-Confidence Interval, size $\alpha$rejection, p-value
-$\mu_0\notin 1-\alpha-CI$interval($\mu_0: \overline{x}_n\pm z_{1-\alpha/2}\cdot\sigma$)$\iff$reject the null of size $\alpha$
-$\iff$p-value is smaller than $\alpha$
-
-## 4.5 Compute P-value
+## 4.3 Compute P-value
 > [!code]
 > **Left-tailed test:** p-value = cdf(x)
 > **Right-tailed test:** p-value = 1 - cdf(x)
@@ -444,16 +457,95 @@ $\iff$p-value is smaller than $\alpha$
 > 本质上是$p-value=2*(1-\Phi(|T(x)|))$, $T(x)$是从数据集算出来的那个`t-statistic`
 
 
-## 4.6 Distribution of P-Values
+
+## 4.4 P-Value Function
+> [!def]
+> Suppose $\tilde{t}_{\theta_{0}}\sim \mathcal{H}_0$, then:
+> 1. The one sided p-value function is defined as $$pv(t)=sup_{\theta\in\mathbf{\Theta_0}}P(\tilde{t}_{\theta_{0}}\geq t)$$ where $\mathbf{\Theta}_0$ is the composite null hypothesis.
+> 2. The two sided p-value function is defined as $$pv(t)=sup_{\theta\in\mathbf{\Theta_0}}P(|\tilde{t}_{\theta_{0}}|\geq t)$$ where $\mathbf{\Theta}_0$ is the composite null hypothesis.
+> 3. The p-value is defined by evaluating the pvalue function at $t_{data}$ where $t_{data}$ is the test statistics that we observed from data.
+
+> [!example]
+> ![](Parametric_Hypothesis_Testing.assets/image-20240315110558897.png)![](Parametric_Hypothesis_Testing.assets/image-20240315110606579.png)![](Parametric_Hypothesis_Testing.assets/image-20240315110904982.png)
+
+
+## 4.5 Distribution of P-Values
+### Under Null Hypothesis
+> [!important]
+> Since $t_{data}$ is a random variable, calculated from the samples, p-value is also a random variable.
+> 
+> If we repeatedly draw samples from null distribution(assume null distribution is true) and calculate the $t_{data}$ and evaluate the pvalue function to get the p-value, we would get a pvalue for each $t_{data}$.
+> 
+> **If $\tilde{t}_{data}$ is continuous, then we have:**
+> 
+> Now suppose $\tilde{t}_{data}\sim T(\mathcal{H}_0)$(which means test statistic is parametrized by the transformation of the parameters from $\mathcal{H}_0$) and its CDF of $F_{\tilde{t}}$, then we know from [Inverse Method](../../../../Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md#Inverse%20Method) that $F_{\tilde{t}}(\tilde{t}_{data})\sim\text{Uniform}(0,1)$, so $\tilde{p}=P_0(\tilde{t}\geq \tilde{t}_{data})=1-F_{\tilde{t}}(\tilde{t}_{data})$, then we compute the CDF of $\tilde{p}$(p-value), which is $$\begin{aligned}F_{\tilde{p}}(u)&=P(\tilde{p}\leq u)\\&=P(1-F_{\tilde{t}}(\tilde{t}_{data})\leq u)\\&=P(F_{\tilde{t}}(\tilde{t}_{data})\leq 1-u)\\&=\int_{1-u}^11dz\\&=u\end{aligned}$$, taking the derivative we get $$f_{\tilde{p}}(p)=1$$, which means $\tilde{p}$ is uniformly distributed acrosss $[0,1]$.
+> 
+> **If $\tilde{t}_{data}$ is discrete, then we have:**
+> $$P(\tilde{t}\geq t_{data})=P(\tilde{t}\geq t_j)<P(\tilde{t}\geq t_i)\quad\forall t_i<t_{data}\leq t_j$$
+> Define $u_i=P(\tilde{t}\geq t_i)$ and $u_j=P(\tilde{t}\geq t_j)$, we have $$P(\tilde{p}\leq u)=P(\tilde{t}\geq t_{data})=u_j$$ where $u_{j}\leq u<u_i$. Here you can think of $u$ as a partner with $t_{data}$.
+> ![](Parametric_Hypothesis_Testing.assets/image-20240315120653601.png)
+
+
+
+### Under Alternative Hypothesis
+> [!important]
+> If null hypothesis is not true, then the distribution of p-value will be biased towards 0.
 
 
 
 
+### Code Example
+> [!code]
+```python
+def calculate_p_value(X):
+    """
+    Calculates the P-values for the point X
+    
+    Inputs:
+        X: data point
+    
+    Outputs:
+        p_value: P(X)
+    """
+    p_value = 1- scipy.stats.norm.cdf(X)
+    return(p_value)
+
+
+rs = np.random.RandomState(0)
+n = 10000
+
+# roughly 80% of the data comes from the null distribution
+# true_values is an n-dimensional array of indicators, where "1" means that x is from the alternative 
+true_values = rs.binomial(1, 0.2, n)
+
+# null distribution is N(0, 1) and alternative distribution is N(2, 1)
+x_obs = rs.randn(n) + 2*true_values
+
+sns.histplot(x_obs[np.where(true_values == 0)],  label="samples from null $H_0$ distribution", kde=False, color='orange')
+sns.histplot(x_obs[np.where(true_values == 1)],  label="samples from alt. $H_1$ distribution", kde=False, color='blue')
+
+plt.title("Histogram of simulated draws from the null and alternative hypothesis")
+plt.xlabel("x")
+plt.ylabel("frequency")
+plt.legend(bbox_to_anchor=(1,1));
+
+# Draw the distribution
+p_values = calculate_p_value(x_obs)
+
+bins = np.linspace(0,1,num=20)
+sns.histplot(p_values[np.where(true_values == 0)],  label="samples from null $H_0$ distribution", kde=False, bins=bins, color='orange')
+sns.histplot(p_values[np.where(true_values == 1)],  label="samples from alt. $H_1$ distribution", kde=False, bins=bins)
+plt.legend(bbox_to_anchor=(1,1))
+plt.title("Histogram of p-values of simulated draws")
+plt.xlabel("p-value")
+plt.ylabel("frequency")
+```
+> [!code] Output
+> ![](Parametric_Hypothesis_Testing.assets/image-20240315121646814.png)![](Parametric_Hypothesis_Testing.assets/image-20240315121801890.png)
 
 
 
-
-## 4.7 Exercises
+## 4.6 Exercises
 ### E1 Bernoulli 
 > [!def]
 > Calculate the p-value: 

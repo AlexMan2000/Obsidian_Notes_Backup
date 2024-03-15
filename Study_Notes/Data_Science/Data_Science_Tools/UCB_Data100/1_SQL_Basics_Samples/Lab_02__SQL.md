@@ -2,11 +2,11 @@
 
 
 # Q1 Donations
-> ![image.png](./Lab_02__SQL.assets/20230302_2122096193.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122096193.png)
 
 
 ## Q1a LIKE Trump
-> ![image.png](./Lab_02__SQL.assets/20230302_2122098828.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122098828.png)
 
 ```python
 query_q1a='''
@@ -22,10 +22,10 @@ AND name LIKE '%DONALD%'
 res_q1a = pd.read_sql(query_q1a, engine)
 res_q1a
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122091055.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122091055.png)
 
 ## Q1b NOT LIKE President
-> ![image.png](./Lab_02__SQL.assets/20230302_2122094193.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122094193.png)
 
 ```python
 query_q1b = '''
@@ -42,11 +42,11 @@ AND name NOT LIKE '%PRESIDENT%'
 res_q1b = pd.read_sql(query_q1b, engine)
 res_q1b
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122105401.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122105401.png)
 
 
 ## Q1c Aggregation
-> ![image.png](./Lab_02__SQL.assets/20230302_2122106608.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122106608.png)
 
 ```python
 query_q1c = '''
@@ -67,11 +67,11 @@ DESC
 res_q1c = pd.read_sql(query_q1c, engine)
 res_q1c
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122103811.png)
-![image.png](./Lab_02__SQL.assets/20230302_2122108976.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122103811.png)
+![image.png](Lab_02__SQL.assets/20230302_2122108976.png)
 
 ## Q1d Join& Nested Queries⭐⭐⭐
-> ![image.png](./Lab_02__SQL.assets/20230302_2122103709.png)![image.png](./Lab_02__SQL.assets/20230302_2122109821.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122103709.png)![image.png](Lab_02__SQL.assets/20230302_2122109821.png)
 > **本题提供两种解法:**
 > 1. 使用`JOIN`建立从`cmte_id`到`cmte_nm`的映射。
 > 2. 使用`subqueries`找出符合`cmte_id`的`cmte_nm`。
@@ -119,12 +119,12 @@ DESC
 res_q1d = pd.read_sql(query_q1d, engine)
 res_q1d
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122108292.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122108292.png)
 
 
 # Q2 Candidates
 ## Q2a Community Ending in 5
-> ![image.png](./Lab_02__SQL.assets/20230302_2122105957.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122105957.png)
 
 ```python
 query_q2a='''
@@ -144,10 +144,10 @@ LIMIT 5
 res_q2a = pd.read_sql(query_q2a, engine)
 res_q2a
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122107334.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122107334.png)
 
 ## Q2b INNER JOIN
-> ![image.png](./Lab_02__SQL.assets/20230302_2122116575.png)![image.png](./Lab_02__SQL.assets/20230302_2122113145.png)![image.png](./Lab_02__SQL.assets/20230302_2122116202.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122116575.png)![image.png](Lab_02__SQL.assets/20230302_2122113145.png)![image.png](Lab_02__SQL.assets/20230302_2122116202.png)
 
 ```python
 query_q2b='''
@@ -162,11 +162,11 @@ LIMIT 5
 res_q2b = pd.read_sql(query_q2b, engine)
 res_q2b
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122116353.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122116353.png)
 
 
 ## Q2c LEFT JOIN
-> ![image.png](./Lab_02__SQL.assets/20230302_2122115907.png)
+> ![image.png](Lab_02__SQL.assets/20230302_2122115907.png)
 
 ```python
 query_q2c='''
@@ -181,4 +181,4 @@ LIMIT 5
 res_q2c = pd.read_sql(query_q2c, engine)
 res_q2c
 ```
-**SQL Output**![image.png](./Lab_02__SQL.assets/20230302_2122112950.png)
+**SQL Output**![image.png](Lab_02__SQL.assets/20230302_2122112950.png)

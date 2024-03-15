@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9d8c0054daad0cf3",
+            "id": "c1784384b4e29963",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md",
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f7b42a9108eddf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Decision_Rules.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "risk ",
+                "query": "Kernel Method",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
+                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,23 +244,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d07230af8274c481",
+  "active": "c1784384b4e29963",
   "lastOpenFiles": [
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.assets/image-20240315123818511.png",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.assets/image-20240315123612386.png",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Decision_Rules.md",
+    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
+    "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis_Testing.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315121801890.png",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315121646814.png",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315120653601.png",
+    "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110904982.png",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110606579.png",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110558897.png",
+    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.assets/image-20240314222939373.png",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.assets/image-20240314221605791.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.assets/image-20240314221600488.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
+    "Computer_Science/Machine_Learning/AI_ML/Model_Evaluation",
+    "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172540240.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172238034.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172225640.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172220085.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172213824.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172137338.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314172046032.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314171939574.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314171910798.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240314171905711.png",
     "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets",
     "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/Set.md",
@@ -256,8 +284,6 @@
     "Computer_Science/Leetcode_Bank",
     "Untitled",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
     "Computer_Science/Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md",
     "Computer_Science/Machine_Learning/EECS127AB/7_Applications/SVM.md",
     "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
@@ -265,20 +291,7 @@
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project2_B+_Tree(sp24).md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Convex_Sets.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis Testing.md",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Testing.md",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/1_Statistical_Learning_Basics.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf.crdownload",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 953209.crdownload",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/未确认 635616.crdownload",
     "未命名.canvas"
   ]
 }

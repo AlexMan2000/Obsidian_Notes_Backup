@@ -1,1 +1,0 @@
-See [2_Binary_Decision_Rules](../../../Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md)

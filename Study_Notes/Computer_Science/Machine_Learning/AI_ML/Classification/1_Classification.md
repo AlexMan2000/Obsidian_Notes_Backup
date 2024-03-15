@@ -106,6 +106,16 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 
 
 ## Gaussian LDA
+> [!example] EECS189 Fa23 Disc02
+> ![](1_Classification.assets/image-20240314203414587.png)![](1_Classification.assets/image-20240314203421209.png)
+
+
+
+
+
+
+
+
 
 
 ## Least Square SVM
@@ -137,7 +147,7 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 > - Then taking power(The monotone function is $f(x)=\frac{1}{2}x^2$).
 > 
 > The optimization problem thus becomes:
-> $$\begin{aligned}&\min_{\vec{w},b}\frac{1}{2}\|\vec{w}\|^{2}\\\textbf{s.t.}\quad&y_i(\vec{w}^{\top}\vec{x}_{i}-b)\geq1\quad\forall i=1,2\cdots, n\end{aligned}$$
+> $$\begin{aligned}&\min_{\vec{w},b}\frac{1}{2}\|\vec{w}\|^{2}\\\textbf{s.t.}\quad&y_i(\vec{w}^{\top}\vec{x}_{i}+b)\geq1\quad\forall i=1,2\cdots, n\end{aligned}$$
 >
 >This is a quadratic program with $d+1$ dimensions($d$ for $\vec{w}$ and 1 for $b$) and $n$ constraints. We know this program has unique solution since the quadratic matrix $I_d$ is positive definite.
 >
@@ -168,10 +178,39 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 
 
 
+### Support Vectors
+#### Definition
+> [!def]
+> The support vectors are those training data points $\vec{x}_i$ such that $$\alpha_i(y_i(\vec{w}^{\top}\vec{x}_i+b)-1)=0$$ where $\alpha_i>0$ and $y_i(\vec{w}^{\top}\vec{x}_i+b)-1=0$
+> 
+> When we are evaluating the decision rule on a new test point $\vec{x}$: $$\vec{w_{*}}^{\top}\vec{x}+b_{*}$$, we could fit in the expression $$\vec{w_{*}}=\sum\limits_{i=1}^n\alpha_iy_i\vec{x}_i$$ and evaluate $$\sum\limits_{i=1}^n\alpha_iy_i\vec{x}_i^{\top}\vec{x}+\alpha^*$$ to see if it is bigger or smaller than 0.
+> 
+> Since $\alpha_i>0$ only for those support vectors, we only need to evaluate the sum at those support vectors, which simplifies our calculations.
+> 
+>  In practice, we frequently encounter training data sets for which the support vectors are a small minority of thetraining points, especially when the number of training points is much larger than the number of features.
+
+
+#### Existence Theorem
+> [!important]
+> **Assume that training points $\vec{x}_i$ and labels $y_i$ are linearly separable, using  the original SVM formulation (not the dual) prove that there is at least one support vector for each class, +1 and −1.**
+> 
+> Suppose for class 1 , none of training points are support vector, then$$\vec{\omega}^{\top} \vec{x}_i+b>1 \quad \forall i \in\left\{i: y_i=1\right\}$$ let $\vec{\omega}^{\top} \vec{x}_{min}+b=1+\varepsilon>1$ where $\vec{x}_{min}$ is the closest training point(but not support vector) to the hyperplane 
+> 
+> We want to choose $\vec{w}^{\prime}=1 /\left(1+\frac{\varepsilon}{2}\right) \vec{\omega}$ and corresponding $\alpha$ such that$$\vec{w}^{\prime} \vec{x}_{min}+b^{\prime}=1 \quad \exists i \in\left\{i: y_i=1\right\}$$
+> 
+> Solve for$$\begin{aligned}&\left\{\begin{array}{l}\vec{w}^{\top} \vec{x}_{min}+b=1+\varepsilon \\\vec{w}^{\prime} \vec{x}_{min}+b^{\prime}=1\end{array}\right. \\& \Rightarrow b^{\prime}=\frac{b-\varepsilon / 2}{1+\varepsilon / 2}\end{aligned}$$
+> 
+> Thus we can always rescale $\vec{w}$ and $b$ such that $\vec{w}'$ and $b'$ are still feasible and can achieve lower cost of objective function.
+> 
+> In other words, if you get a hard margin SVM model(parametrized by $\vec{w}$ and $b$), where there is no support vectors. Then it means that you can find another classifier(with lower objective and bigger margin) such that there exists at least one support vectors and thus the original hard margin SVM that you have obtained is not optimal.
+
+
+
+
 ## Soft-Margin SVM - Non Separable Case
 ### Optimization Problem
 > [!def]
-> On top of the hard margin SVM, we coudl add a slack variable $\epsi$
+> On top of the hard margin SVM, we could add a slack variable $\epsi$
 
 
 

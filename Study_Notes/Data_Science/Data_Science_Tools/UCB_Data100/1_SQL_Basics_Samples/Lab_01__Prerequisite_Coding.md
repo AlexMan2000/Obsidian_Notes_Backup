@@ -4,12 +4,12 @@
 
 # Q1 Prerequisites
 ## Q1a summation
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122065406.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122065406.png)
 
 
 
 ## Q1b zip
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122062125.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122062125.png)
 
 ```python
 def elementwise_list_sum(list_1, list_2):
@@ -24,7 +24,7 @@ def elementwise_list_sum(list_1, list_2):
 
 
 ## Q1c variance
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122069469.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122069469.png)
 
 ```python
 def mean(population):
@@ -54,14 +54,14 @@ def variance(population):
 
 
 # Q2 Numpy
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122066694.png)![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122071273.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122066694.png)![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122071273.png)
 
 
 
 # Q3 Numpy Arrays
 [NumpyReview.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1673581003284-78f85217-9632-42dc-8289-ba3058f9a821.pdf)
 ## Q3a Boolean Indexing
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122075875.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122075875.png)
 
 ```python
 np.random.seed(42)
@@ -70,7 +70,7 @@ valid_values = random_arr[2 * random_arr ** 4 > 1]
 ```
 
 ## Q3b Numpy Operations
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122077341.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122077341.png)
 
 ```python
 def elementwise_array_sum(list_1, list_2):
@@ -83,15 +83,15 @@ def elementwise_array_sum(list_1, list_2):
     assert len(list_1) == len(list_2), "both args must have the same number of elements"
     return np.power(np.array(list_1), 2) + np.power(np.array(list_2), 3)
 ```
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122074267.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122074267.png)
 
 
 
 
 # Q4 Plotting
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122071478.png)![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122073344.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122071478.png)![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122073344.png)
 
-**Solution to Q4a and Q4b**![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122083982.png)
+**Solution to Q4a and Q4b**![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122083982.png)
 ```python
 def f(x):
     return np.square(np.array(x))
@@ -117,14 +117,14 @@ plot(f, df)
 
 # Q5 Random Sampling
 ## Q5a Coin Toss
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122086877.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122086877.png)
 
-**Solution**![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122081825.png)
+**Solution**![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122081825.png)
 
 
 
 ## Q5b MLE
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122081667.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122081667.png)
 
 ```python
 p_hat = 0.4  # From the graph
@@ -133,18 +133,18 @@ p_hat
 
 
 # Q6 Comments
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122085689.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122085689.png)
 > [add_subplots](https://blog.csdn.net/You_are_my_dream/article/details/53439518)(...), 第一个参数是几行，第二个参数是几列，第三个参数是第几个子图。
 
-**Solution**![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122097101.png)
+**Solution**![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122097101.png)
 
 # Q7 Open Question(Skipped)
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122092545.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122092545.png)
 
 
 
 # Q8 Trignometric Waves
-> ![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122095623.png)![image.png](./Lab_01__Prerequisite_Coding.assets/20230302_2122091827.png)
+> ![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122095623.png)![image.png](Lab_01__Prerequisite_Coding.assets/20230302_2122091827.png)
 > 如果有版本冲突导致`axes.set_xticks(ticks, labels)`的`labels`参数无效时，可以尝试下面的两行代码解决:
 > `pip install --upgrade matplotlib`
 > `pip install matplotlib --force-reinstall --user`
