@@ -18,15 +18,19 @@
 > ![](4_Random_Forest.assets/image-20240219154010882.png)
 
 
-### Aggregation
+### Aggregation/OOB
 > [!def]
 > ![](4_Random_Forest.assets/image-20240219154203359.png)![](4_Random_Forest.assets/image-20240219154208518.png)
 > Derivations about why $\frac{1}{3}$ of the original training data points will be left out:
 > 
 > ![](4_Random_Forest.assets/image-20240219160430165.png)
 
+
+
+
+### Creating Ensemble of DTs
 > [!algo]
-> ![](4_Random_Forest.assets/image-20240219153749042.png)
+> ![](4_Random_Forest.assets/image-20240318153506689.png)![](4_Random_Forest.assets/image-20240219153749042.png)
 
 
 ### Issue with Bagging
@@ -37,6 +41,7 @@
 ## Feature Randomization
 > [!def]
 > ![](4_Random_Forest.assets/image-20240219155229536.png)![](4_Random_Forest.assets/image-20240219155321386.png)
+> Reducing $k$ can reduce the correlation between any pair of trees in the ensemble, and reduce the variance of the average.
 
 
 
@@ -156,12 +161,19 @@
 
 
 # Evaluation of Random Forests
-## Margin Function
+## Margin Function/Error Function
 > [!def]
 > ![](4_Random_Forest.assets/image-20240219114632196.png)
 > The larger the margin, the more confidence in the classification
 > 
+> ![](4_Random_Forest.assets/image-20240318151701421.png)
+> By WLLN:
 > 
+> ![](4_Random_Forest.assets/image-20240318152113342.png)
+
+
+
+
 
 
  
@@ -169,16 +181,39 @@
 > [!def]
 > ![](4_Random_Forest.assets/image-20240219114800253.png)
 > $mg(X,Y)<0$ means that on average there are more trees that are predicting incorrectly.
+> 
+> ![](4_Random_Forest.assets/image-20240318151752240.png)![](4_Random_Forest.assets/image-20240318151804117.png)
+> By WLLN:
+> 
+> ![](4_Random_Forest.assets/image-20240318152132300.png)
 
-> [!thm]
-> Overfitting is not a problem:
-> ![](4_Random_Forest.assets/image-20240219114751693.png)
 
-> [!proof]
+
+## Strength of Random Forest
+> [!def]
 > ![](4_Random_Forest.assets/image-20240220174243947.png)
 
 
+## Variance Decomposition
+> [!def]
+> ![](4_Random_Forest.assets/image-20240318152605160.png)![](4_Random_Forest.assets/image-20240318152617954.png)![](4_Random_Forest.assets/image-20240318152631868.png)![](4_Random_Forest.assets/image-20240318152638443.png)
 
+> [!important] Important Identity
+> ![](4_Random_Forest.assets/image-20240318160031220.png)
+
+
+
+
+
+
+## GE Bound for Random Forests
+> [!def]
+> ![](4_Random_Forest.assets/image-20240318152659889.png)
+
+
+
+
+# Very Random Forest(VRF)
 
 
 

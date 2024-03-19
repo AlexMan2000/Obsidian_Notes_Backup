@@ -27,15 +27,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 ## Entropy Reduction
 > [!def]
 > This definition is for random variables, but in practice we work with data. The distribution is empirically defined by our training points $\left\{\left(\mathbf{x}_i, y_i\right)\right\}_{i=1}^n$. Concretely, the probability of class $k$ is the proportion of datapoints having class $k$ :$$P(Y=k)=\frac{\left|\left\{i \mid y_i=k\right\}\right|}{n}$$
@@ -49,7 +40,17 @@
 > 
 > This quantity $H\left(Y \mid X_{j, v}\right)$ is known as the [Conditional Entropy](../../EECS126/2_Information_Theory/Entropies.md#Joint/Conditional%20Entropy) of $Y$ given $X_{j, v}$. An equivalent way of seeing this is that we want to maximize the information we've learned, which is represented by how much entropy is reduced after learning whether or not $x_j<v$ :$$\operatorname{maximize} I\left(X_{j, v} ; Y\right):=H(Y)-H\left(Y \mid X_{j, v}\right)$$
 > 
-> This quantity $I\left(X_{j, v} ; Y\right)$ is known as the [Mutual Information](../../EECS126/2_Information_Theory/Entropies.md#Mutual%20Information) between $X_{j, v}$ and $Y$. It is always nonnegative, and it's zero iff the resulting sides of the split have the same distribution of classes as the original set of points. Let's say you were using a decision tree to classify emails as spam and ham. For example, you gain no information if you take a set of (20 ham, 10 spam) and split it on some feature to give you sets of (12 ham, 6 spam); ( 8 ham, 4 spam) because the empirical distribution of those two resulting sets is equal to the original one.
+> This quantity $I\left(X_{j, v} ; Y\right)$ is known as the [Mutual Information](../../EECS126/2_Information_Theory/Entropies.md#Mutual%20Information) between $X_{j, v}$ and $Y$. It is always nonnegative, and it's zero iff the resulting sides of the split have the same distribution of classes as the original set of points. 
+> ![](3_Decision_Tree.assets/image-20240317111854250.png)
+> 
+> In some literatures, this process is also called information gain maximization.
+> 
+> Let's see an example:
+> ![](3_Decision_Tree.assets/image-20240317110501632.png)![](3_Decision_Tree.assets/image-20240317110617004.png)
+
+
+
+
 
 
 
@@ -58,10 +59,30 @@
 > ![](3_Decision_Tree.assets/image-20240219110604561.png)
 
 
+# Learning a Decision Tree
+## Algorithm Step
+> [!algo]
+> ![](3_Decision_Tree.assets/image-20240317110655391.png)
 
-# Stopping Criteria
+
+
+
+## Stopping Criteria
 > [!def]
-> ![](3_Decision_Tree.assets/image-20240219113705438.png)![](3_Decision_Tree.assets/image-20240219154616407.png)
+> ![](3_Decision_Tree.assets/image-20240219113705438.png)![](3_Decision_Tree.assets/image-20240219154616407.png)![](3_Decision_Tree.assets/image-20240317111206232.png)
+
+
+
+
+### Base Case 1
+> [!important]
+> ![](3_Decision_Tree.assets/image-20240317111216907.png)
+
+
+### Base Case 2
+> [!important]
+> ![](3_Decision_Tree.assets/image-20240317111415321.png)
+
 
 
 

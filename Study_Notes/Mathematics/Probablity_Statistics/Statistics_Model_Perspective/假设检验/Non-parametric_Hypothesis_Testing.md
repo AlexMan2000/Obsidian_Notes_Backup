@@ -10,17 +10,30 @@
 > ![](Non-parametric_Hypothesis_Testing.assets/image-20240315123612386.png)![](Non-parametric_Hypothesis_Testing.assets/image-20240315123818511.png)
 
 
-
-
-
-
 ## P-Value of the Test
 > [!def]
-> 
+> ![](Non-parametric_Hypothesis_Testing.assets/image-20240315175410691.png)![](Non-parametric_Hypothesis_Testing.assets/image-20240315175421700.png)
+
+
+## Exchangeability
+> [!property]
+> ![](Non-parametric_Hypothesis_Testing.assets/image-20240315175823130.png)
+
+
+
+## P-Value under exchangeability
+> [!def]
+> ![](Non-parametric_Hypothesis_Testing.assets/image-20240315180558178.png)![](Non-parametric_Hypothesis_Testing.assets/image-20240315180605542.png)![](Non-parametric_Hypothesis_Testing.assets/image-20240315180610741.png)
 
 
 
 
+
+## Permutation Test via Monte Carlo Method
+> [!def]
+> ![](Non-parametric_Hypothesis_Testing.assets/image-20240315181146781.png)
+
+  
 
 
 

@@ -35,6 +35,22 @@
 
 
 
+# MLE Modeling
+> [!important] Important: Fa23 Disc02 P2
+> ![](2_MLE&MAP.assets/image-20240318171604917.png)![](2_MLE&MAP.assets/image-20240318171703594.png)
+
+
+
+
+
+
+
+# MAP Modeling
+> [!important] Important: Fa23 Disc02 P3
+> ![](2_MLE&MAP.assets/image-20240318171713301.png)![](2_MLE&MAP.assets/image-20240318171720346.png)
+
+
+
 
 
 

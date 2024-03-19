@@ -80,17 +80,45 @@
 
 
 
-
-
-
-
-# Hoeffding Bounds
+# Hoeffding/Chernoff Bounds
 ## Hoeffding's Lemma
 > [!lemma]
 > ![](Concentration_Inequalities&MGF.assets/image-20240126220124239.png)
 
 > [!proof]
 > ![](Concentration_Inequalities&MGF.assets/image-20240126220132498.png)
+
+
+
+
+## Hoeffding Bound
+> [!def]
+> ![](Concentration_Inequalities&MGF.assets/image-20240315224137932.png)
+
+
+
+# Chernoff Bounds
+## Chernoff Bound for Bounded R.V.
+> [!def]
+> ![](Concentration_Inequalities&MGF.assets/image-20240315224049086.png)![](Concentration_Inequalities&MGF.assets/image-20240315224116039.png)![](Concentration_Inequalities&MGF.assets/image-20240315224121063.png)
+> Alternative Representation is:
+> 
+> ![](Concentration_Inequalities&MGF.assets/image-20240316123440549.png)
+
+
+
+
+
+## Chernoff Bounds for Bernoulli Sum
+> [!def]
+> ![](Concentration_Inequalities&MGF.assets/image-20240316122806791.png)
+
+> [!proof] Proof
+> ![](Concentration_Inequalities&MGF.assets/image-20240316123350271.png)![](Concentration_Inequalities&MGF.assets/image-20240316123402131.png)![](Concentration_Inequalities&MGF.assets/image-20240316123408548.png)![](Concentration_Inequalities&MGF.assets/image-20240316123413420.png)
+
+> [!example] Coin Tossing
+> ![](Concentration_Inequalities&MGF.assets/image-20240316123007440.png)
+
 
 
 

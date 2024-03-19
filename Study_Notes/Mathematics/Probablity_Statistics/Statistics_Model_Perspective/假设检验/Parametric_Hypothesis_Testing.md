@@ -109,7 +109,7 @@
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227395174.png)
 
 > [!example]
-> ![](../../../../Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis_Testing.assets/image-20240203211240679.png)
+> ![](../../../../Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.assets/image-20240203211240679.png)
 
 
 

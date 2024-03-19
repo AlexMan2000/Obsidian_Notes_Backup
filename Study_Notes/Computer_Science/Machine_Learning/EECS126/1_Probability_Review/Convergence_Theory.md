@@ -113,8 +113,44 @@
 
 
 ## Convergence in Distribution
+### Definition
 > [!def]
-> ![](Convergence_Theory.assets/image-20240127160427003.png)
+> ![](Convergence_Theory.assets/image-20240127160427003.png)![](Convergence_Theory.assets/image-20240316204424786.png)
+
+
+
+
+### Converge to a constant
+> [!property] Converge in distribution to constant
+> ![](Convergence_Theory.assets/image-20240315220845043.png)![](Convergence_Theory.assets/image-20240315220346293.png)![](Convergence_Theory.assets/image-20240315220406779.png)
+> In simpler terms, as n becomes very large, the probability that $X_n$ takes a value less than any number less than $c$ goes to 0, and the probability that $X_n$ takes a value less than or equal to any number greater than or equal to c goes to 1. Effectively, this means that $X_n$​ "concentrates" around c, and for practical purposes, $X_n$​ can be thought of as becoming the constant c in a probabilistic sense as n approaches infinity. 
+> 
+> Another way to write this theorem is(from all of statistics):
+> ![](Convergence_Theory.assets/image-20240315221123692.png)
+
+
+
+### CL!T -> WLLN
+> [!important]
+> ![](Convergence_Theory.assets/image-20240315221312500.png)
+> To prove this, we need to use Slutsky's Theorem:
+> 
+> ![](Convergence_Theory.assets/image-20240315222439415.png)
+> From CLT we know 
+> $$\frac{\sqrt{n}}{\sigma}\left(\frac{1}{n} \sum_{i=1}^n X_i-\mu\right) \xrightarrow{\mathrm{d}} Z \sim \mathcal{N}(0,1)$$
+> We let $X_{n}=\frac{\sqrt{n}}{\sigma}\left(\frac{1}{n} \sum_{i=1}^n X_i-\mu\right)$ and $Y_n=\frac{\sigma}{\sqrt{n}}$ where $Y_n \xrightarrow{P} 0$.
+> 
+> Then by slutsky's theorem we have:
+> $$X_nY_n\xrightarrow{d}0\times Z$$
+> Thus we have:
+> $$\frac{1}{n} \sum_{i=1}^n X_i-\mu \xrightarrow{\mathrm{d}} 0$$
+> or stated another way
+> $$\frac{1}{n} \sum_{i=1}^n X_i \xrightarrow{\mathrm{d}} \mu$$
+> 
+> Finally using Part (a) we can conclude that
+> $$\frac{1}{n} \sum_{i=1}^n X_i \xrightarrow{P} \mu$$
+
+
 
 
 
@@ -125,8 +161,6 @@
 
 
 ## Convergence in Lp
-
-
 ### Examples
 > [!example] Fa23 Disc05 P3
 > ![](Convergence_Theory.assets/image-20240127162053591.png)
@@ -154,10 +188,22 @@
 
 
 
+
 # Integrated Exercises
 ## On Almost Sure Convergence
 > [!example] Fa23 Disc05 P1
 > ![](Convergence_Theory.assets/image-20240127155707492.png)![](Convergence_Theory.assets/image-20240127155736066.png)
+
+
+
+
+## Confidence Intervals
+> [!important] Fa20 HW6 P2
+> ![](Convergence_Theory.assets/image-20240315225023968.png)![](Convergence_Theory.assets/image-20240315223019086.png)![](Convergence_Theory.assets/image-20240315225301701.png)![](Convergence_Theory.assets/image-20240315225307830.png)![](Convergence_Theory.assets/image-20240315225316690.png)
+
+
+
+
 
 
 

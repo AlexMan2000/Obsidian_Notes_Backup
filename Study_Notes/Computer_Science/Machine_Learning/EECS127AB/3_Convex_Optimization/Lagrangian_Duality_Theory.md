@@ -1,4 +1,4 @@
-#  Motivation for Lagrangian
+# Motivation for Lagrangian
 ## Primal Problem
 > [!def]
 > ![](Lagrangian_Duality_Theory.assets/image-20231119092014229.png)

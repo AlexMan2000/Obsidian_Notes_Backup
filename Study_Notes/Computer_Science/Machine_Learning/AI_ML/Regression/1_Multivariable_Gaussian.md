@@ -7,6 +7,23 @@
 > ![](1_Multivariable_Gaussian.assets/image-20240202202945458.png)![](1_Multivariable_Gaussian.assets/image-20240202204448181.png)![](1_Multivariable_Gaussian.assets/image-20240202204459308.png)
 
 
+
+## Formal Definitions
+> [!def]
+> ![](1_Multivariable_Gaussian.assets/image-20240318170856892.png)![](1_Multivariable_Gaussian.assets/image-20240318170906864.png)![](1_Multivariable_Gaussian.assets/image-20240318170914807.png)![](1_Multivariable_Gaussian.assets/image-20240318170922840.png)![](1_Multivariable_Gaussian.assets/image-20240318170929943.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Correlatedness and  Independence
 > [!important]
 > Generally, for two Gaussian RVs $X_1$ and $X_2$, we have:

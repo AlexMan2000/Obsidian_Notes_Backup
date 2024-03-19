@@ -80,8 +80,10 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 
 
 
+## Gaussian LDA
+> [!example] EECS189 Fa23 Disc02
+> ![](1_Classification.assets/image-20240314203414587.png)![](1_Classification.assets/image-20240314203421209.png)
 
-## GDA
 
 
 
@@ -105,16 +107,9 @@ See [Hard-Margin SVM](1_Classification.md#Hard-Margin%20SVM)
 > ![](3_Regression&Reparametrization.assets/image-20240226233341445.png)![](3_Regression&Reparametrization.assets/image-20240226233353411.png)
 
 
-## Gaussian LDA
-> [!example] EECS189 Fa23 Disc02
-> ![](1_Classification.assets/image-20240314203414587.png)![](1_Classification.assets/image-20240314203421209.png)
 
 
-
-
-
-
-
+## K Nearest Neighbours
 
 
 

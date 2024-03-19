@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Decision_Rules.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/Randomized_Structures/Random_Graph.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "032239854a83e58e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c8a5a06aceb5f91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
+                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
+                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,54 +268,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c1784384b4e29963",
+  "active": "9c8a5a06aceb5f91",
   "lastOpenFiles": [
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.assets/image-20240315123818511.png",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.assets/image-20240315123612386.png",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Binary_Decision_Rules.md",
-    "Computer_Science/Machine_Learning/AI_ML/Statistical_Decision_Theory_Basics/2_Binary_Decision_Rules.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
-    "Data_Science/Statistical_Inference/Frequentist_Statistics/Hypothesis_Testing.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315121801890.png",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315121646814.png",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315120653601.png",
-    "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110904982.png",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110606579.png",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.assets/image-20240315110558897.png",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.md",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.assets/image-20240314222939373.png",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.assets/image-20240314221605791.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.assets/image-20240314221600488.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.assets/image-20240319130332758.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.assets/image-20240319130316823.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.assets",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Initialization.md",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Initialization.assets/image-20240319130248258.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Initialization.assets",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/RELU.md",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Deep_Feedforward_Neural_Network.md",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.md",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets/image-20240319125458122.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets/image-20240319125451870.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets/image-20240319125414581.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets/image-20240319125409976.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets/image-20240319125356923.png",
+    "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.assets",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.md",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.assets/image-20240319121634565.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.assets/image-20240319121622914.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.assets/image-20240319121615088.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.assets",
     "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
-    "Computer_Science/Machine_Learning/AI_ML/Model_Evaluation",
-    "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
-    "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/Set.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures",
-    "Computer_Science/Leetcode_Bank",
-    "Untitled",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
-    "Computer_Science/Machine_Learning/EECS127AB/7_Applications/Kernel_Methods.md",
-    "Computer_Science/Machine_Learning/EECS127AB/7_Applications/SVM.md",
-    "Computer_Science/Machine_Learning/EECS127AB/5_Types_of_Optimization_Programs/2_Quadratic_Programs.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.pdf",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks",
+    "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering",
+    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
+    "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md",
+    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
+    "Computer_Science/Machine_Learning/AI_ML/Learning_Theory",
+    "Computer_Science/Machine_Learning/EECS126/Randomized_Structures/Randomized_Linear_Algebra.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.assets",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md",
+    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Poisson_Process.md",
     "未命名.canvas"
   ]
 }
