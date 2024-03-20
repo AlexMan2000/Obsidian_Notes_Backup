@@ -1,40 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Backpropagation_Algorithms",
-      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md"
+      "basename": "Descent_Mechanisms",
+      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.md"
     },
     {
-      "basename": "RELU",
-      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/RELU.md"
+      "basename": "Activation_Function_Analysis",
+      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Activation_Function_Analysis.md"
     },
     {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Gradient_Descent.md"
-    },
-    {
-      "basename": "Convolution",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.md"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md"
-    },
-    {
-      "basename": "1_Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md"
-    },
-    {
-      "basename": "4_Random_Forest",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md"
-    },
-    {
-      "basename": "Binary_Decision_Rules",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
+      "basename": "Gaussian_Process",
+      "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.md"
     },
     {
       "basename": "3_Regression&Reparametrization",
@@ -45,20 +21,72 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
     },
     {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
-    },
-    {
-      "basename": "Priors&Posteriors",
-      "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md"
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
     },
     {
       "basename": "1_Multivariable_Gaussian",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
     },
     {
+      "basename": "Priors&Posteriors",
+      "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
+    },
+    {
       "basename": "2_Gaussian_Discriminative_Analysis",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
+    },
+    {
+      "basename": "Linear_Regression",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
+    },
+    {
+      "basename": "Signals",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md"
+    },
+    {
+      "basename": "Features_Hilbert_Space",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
+    },
+    {
+      "basename": "Kernel_Tricks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Tricks.md"
+    },
+    {
+      "basename": "Backpropagation_Algorithms",
+      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md"
+    },
+    {
+      "basename": "Backprogation_Autodifferentiation",
+      "path": "Computer_Science/Deep_Learning/Training_Neural_Networks/Backprogation_Autodifferentiation.pdf"
+    },
+    {
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
+    },
+    {
+      "basename": "Multivariable_Calculus_Review",
+      "path": "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md"
+    },
+    {
+      "basename": "1_Statistical_Learning_Basics",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md"
+    },
+    {
+      "basename": "Convolution",
+      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.md"
+    },
+    {
+      "basename": "4_Random_Forest",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md"
+    },
+    {
+      "basename": "Binary_Decision_Rules",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
     },
     {
       "basename": "3_Decision_Tree",
@@ -165,32 +193,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md"
     },
     {
-      "basename": "Features",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features.md"
-    },
-    {
       "basename": "Variational_Inference",
       "path": "Computer_Science/Machine_Learning/AI_ML/Variational_Methods/Variational_Inference.md"
     },
     {
       "basename": "1_Recovery",
       "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
-      "basename": "Methodology on Optimization",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Methodology on Optimization.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "Set",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/Set.md"
     }
   ],
   "omittedPaths": [],

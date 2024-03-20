@@ -46,6 +46,7 @@
 
 
 # MAP Modeling
+Also See [Priors&Posteriors](../../../../Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md)
 > [!important] Important: Fa23 Disc02 P3
 > ![](2_MLE&MAP.assets/image-20240318171713301.png)![](2_MLE&MAP.assets/image-20240318171720346.png)
 

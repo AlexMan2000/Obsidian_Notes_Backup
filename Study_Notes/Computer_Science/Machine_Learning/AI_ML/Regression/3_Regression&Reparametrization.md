@@ -66,11 +66,64 @@
 
 
 
-# Conditional Gaussian Modeling
-## Modeling Details
-> [!example] Example: Conditional Gaussian Modeling
->
-> ![](3_Regression&Reparametrization.assets/image-20240318171808940.png)
+# Gausian Process Regression
+Also see:
+https://www.youtube.com/watch?v=4vGiHC35j9s
+https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote15.html
+
+## Gaussian Process Definition
+See [Gaussian_Process](../../EECS126/3_Random_Processes/Gaussian_Process.md)
+
+## Noiseless GP Regression
+### Centered Version
+> [!important]
+> ![](3_Regression&Reparametrization.assets/image-20240320122953007.png)![](3_Regression&Reparametrization.assets/image-20240320122958574.png)![](3_Regression&Reparametrization.assets/image-20240320123004944.png)
+
+
+### Generalized Version
+> [!algo]
+> ![](3_Regression&Reparametrization.assets/image-20240320123315291.png)
+
+
+
+
+### Choice of Kernel
+> [!def]
+> ![](3_Regression&Reparametrization.assets/image-20240320123341894.png)
+> Here the prediction function is in red while the true function is in blue.
+> 
+> Note that the smaller the bandwidth of the exponential kernel, the more squiggly the prediction function would be, indicating that we only consider the points near the data points.
+> 
+> In other words, we control the smoothing of our prediction.
+
+
+
+
+## Noisy GP Regression
+> [!algo]
+> ![](3_Regression&Reparametrization.assets/image-20240320123751574.png)![](3_Regression&Reparametrization.assets/image-20240320123801108.png)
+
+
+
+
+
+## Noise GP and Ridge
+> [!algo]
+> ![](3_Regression&Reparametrization.assets/image-20240320123822584.png)![](3_Regression&Reparametrization.assets/image-20240320123829523.png)
+
+
+
+
+
+## Learning the Kernel Parameters
+> [!important]
+> ![](3_Regression&Reparametrization.assets/image-20240320123855725.png)
+
+
+
+
+
+
 
 
 

@@ -81,12 +81,26 @@
 
 
 
+## Independence
+> [!example]
+> ![](1_Multivariable_Gaussian.assets/image-20240319191036580.png)
+
+
+
+## Conditional Examples
+> [!example] ST843 HW1 P4.7
+> See https://www.stt.msu.edu/users/pszhong/STT843-HW1-Solution-YiChen.pdf
+> ![](1_Multivariable_Gaussian.assets/image-20240319191337074.png)![](1_Multivariable_Gaussian.assets/image-20240319191514336.png)
+
+> [!example] ST843 HW1 P4.16
+> ![](1_Multivariable_Gaussian.assets/image-20240319191621415.png)
+
+
+
 # Bayes Rule for Gaussian - Posterior
 > [!def]
 > ![](1_Multivariable_Gaussian.assets/image-20240215193655688.png)
 
 > [!important] Deriving Posterior
 > ![](1_Multivariable_Gaussian.assets/image-20240215193916860.png)
-
-
 

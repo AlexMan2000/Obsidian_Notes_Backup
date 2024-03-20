@@ -1,4 +1,4 @@
-# RELU SCD Visualization
+# RELU SGD Visualization
 
 
 

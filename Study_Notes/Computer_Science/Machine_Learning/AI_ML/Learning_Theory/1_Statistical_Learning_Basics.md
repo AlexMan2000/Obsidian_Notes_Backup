@@ -146,7 +146,13 @@
 
 
 
-# Bias-Variance Tradeoff and Regularization
+## Bias and Variance of Estimators
+> [!important]
+> ![](1_Statistical_Learning_Basics.assets/image-20240319152845540.png)
+
+
+
+## Bias-Variance Tradeoff and Regularization
 > [!example] DS-GA-1003 Sp24 P5 / EECS189 Fa23 HW5 P1
 > ![](1_Statistical_Learning_Basics.assets/image-20240319110344044.png)![](1_Statistical_Learning_Basics.assets/image-20240319110348880.png)![](1_Statistical_Learning_Basics.assets/image-20240319110357655.png)![](1_Statistical_Learning_Basics.assets/image-20240319110402703.png)![](1_Statistical_Learning_Basics.assets/image-20240319110413484.png)![](1_Statistical_Learning_Basics.assets/image-20240319110420811.png)![](1_Statistical_Learning_Basics.assets/image-20240319110429089.png)
 

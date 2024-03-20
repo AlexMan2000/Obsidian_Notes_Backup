@@ -40,6 +40,7 @@
 
 
 ## Quadratic Form Explanations
+> [!important]
 > 对于$f(\vec{x})=\vec{x}^{\top}A\vec{x}$来说，我们有:
 > $f(\vec{x})=\sum_{i}\sum_{j}x_iA_{ij}x_j$
 > $\nabla f(\vec{x})=\begin{bmatrix} \frac{\partial f}{\partial x_1}\\\vdots\\\frac{\partial f}{\partial x_n}\end{bmatrix}$，$\frac{\partial f}{\partial x_i}$的求法思路如下:
@@ -101,13 +102,21 @@ $\begin{aligned}\nabla g(\vec{w})&=\nabla(X\vec{w}-\vec{y})^{\top}(X\vec{w}-\vec
 
 
 #### Entire Data Set
-:::success
-![image.png](Vector_Calculus.assets/20231023_2250199987.png)
-:::
-**Solution**![image.png](Vector_Calculus.assets/20231023_2250218424.png)![image.png](Vector_Calculus.assets/20231023_2250229112.png)
+> [!success]
+> ![image.png](Vector_Calculus.assets/20231023_2250199987.png)
+> **Solution**
+> ![image.png](Vector_Calculus.assets/20231023_2250218424.png)![image.png](Vector_Calculus.assets/20231023_2250229112.png)
 
 
-## Gradients w.r.t Matrices
+# Gradients w.r.t Matrices
+> [!def]
+> ![](Vector_Calculus.assets/image-20240319155614934.png)![](Vector_Calculus.assets/image-20240319154454966.png)
+
+> [!example]
+> ![](Vector_Calculus.assets/image-20240319154741807.png)![](Vector_Calculus.assets/image-20240319154749545.png)
+
+  
+
 
 
 
@@ -125,50 +134,69 @@ $\begin{aligned}\nabla g(\vec{w})&=\nabla(X\vec{w}-\vec{y})^{\top}(X\vec{w}-\vec
 > 4. Chain Rule: $D(f\circ g)=D(f(g))\cdot D(g)$
 
 
-## Jacobian&Gradient
+## Chain Rule for Vector Functions
 > [!important]
 > ![](Vector_Calculus.assets/image-20231213214649572.png)
 
 > [!example]
 > ![](Vector_Calculus.assets/image-20231213214705494.png)
 
+> [!example]
+> ![](Vector_Calculus.assets/image-20240319154120805.png)
+> We use the chain rule, first calculate the $Df(\vec{y})$ then $Dg(\vec{x})$.
+> $$Df(\vec{y})=2\vec{y}^{\top}=2(A\vec{x})^{\top}$$
+> Then 
+> $$Dg(\vec{x})=A^{\top}$$
+> So $Df(g(\vec{x}))=2(A^{\top}\vec{x})^{\top}A^{\top}$
+> 
+> The gradient is just the transpose of it, which is $2AA^{\top}\vec{x}$
+
 
 
 
 ## Jacobian of vector-valued functions
+> [!def]
 > ![image.png](Vector_Calculus.assets/20231023_2250268157.png)
 
-**Example**![image.png](Vector_Calculus.assets/20231023_2250274572.png)
+> [!example]
+> ![image.png](Vector_Calculus.assets/20231023_2250274572.png)
 
 
 ## Jacobian of Matrix Exponential
-:::success
-![image.png](Vector_Calculus.assets/20231023_2250297429.png)![image.png](Vector_Calculus.assets/20231023_2250303358.png)
-计算$D\vec{f}(\vec{x})$时，除了按照定义将矩阵$D\vec{f}(\vec{x})$的$D\vec{f}(\vec{x})_{ij}$逐个算出以外，我们还可以直接按照列的方向来计算，即$D \vec{f}(\vec{x})=\left[\begin{array}{lll}\frac{\partial \vec{f}}{\partial x_1}(\vec{x}) & \cdots & \frac{\partial \vec{f}}{\partial x_n}(\vec{x})\end{array}\right]$。
-:::
-**Solution**![image.png](Vector_Calculus.assets/20231023_2250312957.png)
+> [!example]
+> ![image.png](Vector_Calculus.assets/20231023_2250297429.png)![image.png](Vector_Calculus.assets/20231023_2250303358.png)
+> 计算$D\vec{f}(\vec{x})$时，除了按照定义将矩阵$D\vec{f}(\vec{x})$的$D\vec{f}(\vec{x})_{ij}$逐个算出以外，我们还可以直接按照列的方向来计算，即$D \vec{f}(\vec{x})=\left[\begin{array}{lll}\frac{\partial \vec{f}}{\partial x_1}(\vec{x}) & \cdots & \frac{\partial \vec{f}}{\partial x_n}(\vec{x})\end{array}\right]$。
+> 
+> **Solution**![image.png](Vector_Calculus.assets/20231023_2250312957.png)
 
 
 ## Jacobian of Linear Maps⭐⭐⭐⭐⭐
-:::success
-![image.png](Vector_Calculus.assets/20231023_2250322084.png)
-一般我们采用的思路就是先分别对$g(\vec{x})$的每一行$g_i(\vec{x})$求$Dg_i(\vec{x})$。
-:::
-**Solution i**$g_i(\vec{x})=\vec{a}_i^{\top}\vec{x}$(其中$\vec{a}_i$是$A$的第$i$行)，所以$Dg_i(\vec{x})=\vec{a}_i$, 所以$Dg(\vec{x})=\begin{bmatrix} -\vec{a}_1-\\-\vec{a}_2-\\\vdots\\-\vec{a}_n-\end{bmatrix}=A$
-**Solution ii**$g_i(\vec{x})=f(\vec{x})\cdot x_i$, 于是$Dg_i(\vec{x})=Df(\vec{x})\cdot x_i+f(\vec{x})=\nabla f(\vec{x})^{\top}\cdot x_i+f(\vec{x})$
-所以$Dg(\vec{x})=\begin{bmatrix} \nabla f(\vec{x})^{\top}\cdot x_1+f(\vec{x})\\\nabla f(\vec{x})^{\top}\cdot x_2+f(\vec{x})\\\vdots\\\nabla f(\vec{x})^{\top}\cdot x_n+f(\vec{x})\end{bmatrix}=\begin{bmatrix} \nabla f(\vec{x})^{\top}\cdot x_1\\\nabla f(\vec{x})^{\top}\cdot x_2\\\vdots\\\nabla f(\vec{x})^{\top}\cdot x_n\end{bmatrix} +\begin{bmatrix}f(\vec{x})\\f(\vec{x})\\\vdots\\f(\vec{x})\end{bmatrix}$
-即$Dg(\vec{x})=\vec{x}\nabla f(\vec{x})^{\top}+f(\vec{x})I$
-**Solution iii**![image.png](Vector_Calculus.assets/20231023_2250334718.png)
-**我们也可以使用**`**Product Rule**`**:**
-$\begin{aligned}D(f(A\vec{x}+\vec{b})\vec{x})&=\vec{x}Df(A\vec{x}+\vec{b})+D\vec{x}f(A\vec{x}+\vec{b})\\&=\vec{x}\nabla f(A\vec{x}+\vec{b})^{\top}D(A\vec{x}+\vec{b})+If(A\vec{x}+\vec{b})\\&=\vec{x}\nabla f(A\vec{x}+\vec{b})^{\top}A+If(A\vec{x}+\vec{b})\end{aligned}$
+> [!important]
+> ![image.png](Vector_Calculus.assets/20231023_2250322084.png)
+> 一般我们采用的思路就是先分别对$g(\vec{x})$的每一行$g_i(\vec{x})$求$Dg_i(\vec{x})$。
+> 
+> **Solution i**$g_i(\vec{x})=\vec{a}_i^{\top}\vec{x}$(其中$\vec{a}_i$是$A$的第$i$行)，所以$Dg_i(\vec{x})=\vec{a}_i$, 所以$Dg(\vec{x})=\begin{bmatrix} -\vec{a}_1-\\-\vec{a}_2-\\\vdots\\-\vec{a}_n-\end{bmatrix}=A$
+> 
+> **Solution ii**$g_i(\vec{x})=f(\vec{x})\cdot x_i$, 于是$Dg_i(\vec{x})=Df(\vec{x})\cdot x_i+f(\vec{x})=\nabla f(\vec{x})^{\top}\cdot x_i+f(\vec{x})$
+> 
+> 所以$Dg(\vec{x})=\begin{bmatrix} \nabla f(\vec{x})^{\top}\cdot x_1+f(\vec{x})\\\nabla f(\vec{x})^{\top}\cdot x_2+f(\vec{x})\\\vdots\\\nabla f(\vec{x})^{\top}\cdot x_n+f(\vec{x})\end{bmatrix}=\begin{bmatrix} \nabla f(\vec{x})^{\top}\cdot x_1\\\nabla f(\vec{x})^{\top}\cdot x_2\\\vdots\\\nabla f(\vec{x})^{\top}\cdot x_n\end{bmatrix} +\begin{bmatrix}f(\vec{x})\\f(\vec{x})\\\vdots\\f(\vec{x})\end{bmatrix}$
+> 
+> 即$Dg(\vec{x})=\vec{x}\nabla f(\vec{x})^{\top}+f(\vec{x})I$
+> 
+> **Solution iii**![image.png](Vector_Calculus.assets/20231023_2250334718.png)
+> 
+> **我们也可以使用**`**Product Rule**`**:**$\begin{aligned}D(f(A\vec{x}+\vec{b})\vec{x})&=\vec{x}Df(A\vec{x}+\vec{b})+D\vec{x}f(A\vec{x}+\vec{b})\\&=\vec{x}\nabla f(A\vec{x}+\vec{b})^{\top}D(A\vec{x}+\vec{b})+If(A\vec{x}+\vec{b})\\&=\vec{x}\nabla f(A\vec{x}+\vec{b})^{\top}A+If(A\vec{x}+\vec{b})\end{aligned}$
 
 
 ## Concrete Example
+> [!example]
 > ![image.png](Vector_Calculus.assets/20231023_2250357145.png)
-
-**P1: Rearranging**![image.png](Vector_Calculus.assets/20231023_2250367560.png)
-**P2: Gradient**![image.png](Vector_Calculus.assets/20231023_2250383489.png)
-**P3: Vanishing Gradient**![image.png](Vector_Calculus.assets/20231023_2250394571.png)
+> 
+> **P1: Rearranging**![image.png](Vector_Calculus.assets/20231023_2250367560.png)
+> 
+> **P2: Gradient**![image.png](Vector_Calculus.assets/20231023_2250383489.png)
+> 
+> **P3: Vanishing Gradient**![image.png](Vector_Calculus.assets/20231023_2250394571.png)
 > ![image.png](Vector_Calculus.assets/20231023_2250417907.png)![image.png](Vector_Calculus.assets/20231023_2250428492.png)
-
-**P4: Jacobian of the Gradient & Hessian**![image.png](Vector_Calculus.assets/20231023_2250459124.png)
+> 
+> **P4: Jacobian of the Gradient & Hessian**![image.png](Vector_Calculus.assets/20231023_2250459124.png)
