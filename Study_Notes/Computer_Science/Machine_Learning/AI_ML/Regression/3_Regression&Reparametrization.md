@@ -75,6 +75,7 @@ https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote15.html
 See [Gaussian_Process](../../EECS126/3_Random_Processes/Gaussian_Process.md)
 
 ## Noiseless GP Regression
+> GP Model is non-parametric!
 ### Centered Version
 > [!important]
 > ![](3_Regression&Reparametrization.assets/image-20240320122953007.png)![](3_Regression&Reparametrization.assets/image-20240320122958574.png)![](3_Regression&Reparametrization.assets/image-20240320123004944.png)

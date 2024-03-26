@@ -28,6 +28,10 @@
 > 我们使用函数的角度证明这个等式。我们可以定义这样一个函数$g:\mathbb{R}\to \mathbb{R}$and $dom(g)=\{t\in\mathbb{R}|\vec{x}+t\vec{v}\in dom(f)\}$,and$g(t)=f(\vec{x}+t\vec{v})$，则$\lim_{t\to 0}\frac{f(\vec{x}+t\vec{v})-f(\vec{x})}{t}=\lim_{t\to 0}\frac{g(t)-g(0)}{t-0}=g'(0)$。而我们知道$g'(t)$是一个`Scalar`, 所以`By chain rule`:$g'(t)=D f(\vec{u})D\vec{u}(t)=\begin{bmatrix} \frac{\partial f}{\partial u_1} &  \frac{\partial f}{\partial u_2}&\cdots& \frac{\partial f}{\partial u_n}\end{bmatrix}\begin{bmatrix} \frac{\partial u_1}{\partial t} \\ \frac{\partial u_2}{\partial t}\\\vdots\\ \frac{\partial u_n}{\partial t}\end{bmatrix}=\nabla f(\vec{x}+t\vec{v})^{\top}\vec{v}$。如果我们令$t=0$, 则$g'(0)=\nabla f(\vec{x})^{\top}\vec{v}$。
 
 
+## Vector Derivatives - 分子布局
+> [!def]
+> ![](Vector_Calculus.assets/e0647cfdce98474bfd1b950e2aae04fc_MD5.jpeg)![](Vector_Calculus.assets/a7581d0d9033e442a768a8fb9ed1304c_MD5.jpeg)
+
 
 
 [Vector_Matrix_Differentiation.pdf](https://www.yuque.com/attachments/yuque/0/2023/pdf/12393765/1694016786593-f0c7df8a-f356-4c4e-b552-371107cc5378.pdf)

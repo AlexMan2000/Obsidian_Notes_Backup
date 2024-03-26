@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "fa5a105313e6ef1f",
+        "id": "488c17d86ad73dd3",
         "type": "tabs",
         "children": [
           {
-            "id": "6b2f4dc9831a92b3",
+            "id": "fdaa4806a29bc149",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d07230af8274c481",
+            "id": "3f27cd8e79b3c74a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
+                "file": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Kernel Method",
+                "query": "Confidence Interval",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,54 +219,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "932953190040c9d5",
+  "active": "fdaa4806a29bc149",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Neural_Basics",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Activation_Function_Analysis.md",
-    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
-    "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123855725.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123829523.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123822584.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123801108.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123751574.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123341894.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123315291.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320123004944.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320122958574.png",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20240320122953007.png",
-    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md",
-    "Computer_Science/Machine_Learning/AI_ML/Gaussian_Analysis",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md",
-    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Tricks.md",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.md",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.md",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backprogation_Autodifferentiation.pdf",
-    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165345740.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165339350.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165203811.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163816727.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163752228.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163657908.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163604972.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163543967.png",
     "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md",
-    "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md",
-    "Computer_Science/Deep_Learning/Matrix_Calculus_Review",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Backpropagation_Algorithms.assets",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Initialization.md",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Initialization.assets",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Deep_Feedforward_Neural_Network.md",
-    "Computer_Science/Deep_Learning/Training_Neural_Networks/Descent_Mechanisms.assets",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.md",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks",
-    "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md",
+    "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.assets/image-20240326161636263.png",
+    "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.assets/image-20240326161626939.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Descent_Mechanisms.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
+    "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
+    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
+    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md",
+    "Computer_Science/Deep_Learning/Diffusion_Models/Diffusion_Model.md",
+    "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+    "Computer_Science/Deep_Learning/WaveNet",
+    "Computer_Science/Computer_Vision/Related_Resources.md",
     "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md",
-    "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md",
+    "Computer_Science/Computer_Vision",
+    "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md",
+    "Computer_Science/Machine_Learning/AI_ML/Tree_Models",
+    "Computer_Science/Deep_Learning/Overparametrization",
+    "Computer_Science/Deep_Learning/Diffusion_Models",
+    "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/未确认 449007.crdownload",
+    "Computer_Science/Deep_Learning/Neural_Basics",
+    "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.md",
     "未命名.canvas"
   ]
 }

@@ -3,6 +3,12 @@
 > ![](Probability_Formulas_and_Theorems.assets/image-20240204104538979.png)
 
 
+# Variance of the Product
+> [!thm]
+> For independent variable $X$ and $Y$, we have:
+> $$\operatorname{Var}(X Y)=E[X]^2 \operatorname{Var}(Y)+\operatorname{Var}(X) E[Y]^2+\operatorname{Var}(X) \operatorname{Var}(Y)$$
+> 
+
 
 
 # Tail Sum Formula

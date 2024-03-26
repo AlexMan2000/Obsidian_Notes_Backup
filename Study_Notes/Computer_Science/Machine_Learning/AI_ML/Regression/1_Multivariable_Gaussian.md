@@ -33,7 +33,7 @@
 > ![](1_Multivariable_Gaussian.assets/image-20240202204911653.png)
 
 
-## Linear Transformation of Random Vector
+## Linear Transformation
 > [!important]
 > Suppose $Z=VX$ where $V\in \mathbb{R}^{2\times 2}$ and $X\sim \mathcal{N}(\vec{0},I_2)$, then we have: $E[Z]=0$ and $\Sigma_Z=V\Sigma_XV^{\top}$ and the derivations are as follows:
 > ![](1_Multivariable_Gaussian.assets/image-20240202205844546.png)
