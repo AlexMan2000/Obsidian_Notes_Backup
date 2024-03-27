@@ -223,6 +223,10 @@ See [Backprogation_Autodifferentiation](Backprogation_Autodifferentiation.pdf)
 
 ### Tanh - Xavier Normal Initialization
 > [!def]
+> The goal of Xavier Initialization is to initialize the weights such that the variance of the activations are the same across every layer. 
+> 
+> This constant variance helps prevent the gradient from exploding or vanishing.
+> 
 > The recommended initialization is Xavier initialization (or one of its derived methods), for every layer $l$:
 > $$\begin{aligned}W^{[l]} & \sim \mathcal{N}\left(\mu=0, \sigma^2=\frac{1}{n^{[l-1]}}\right) \\b^{[l]} & =0\end{aligned}$$
 > 

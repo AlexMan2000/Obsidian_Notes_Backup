@@ -1,24 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "T-SNE",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
+    },
+    {
+      "basename": "PCA",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md"
+    },
+    {
+      "basename": "Global_Explanation",
+      "path": "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md"
+    },
+    {
+      "basename": "Local_Explanation",
+      "path": "Computer_Science/Deep_Learning/Explainable_AI/Local_Explanation.md"
+    },
+    {
       "basename": "Network_Implementation",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
     },
     {
-      "basename": "BP_Init_Optim",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
+      "basename": "Activation_Function_Analysis",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
     },
     {
-      "basename": "Probability_Formulas_and_Theorems",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
+      "basename": "Vector_Calculus",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
     },
     {
       "basename": "Multivariable_Calculus_Review",
       "path": "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md"
     },
     {
-      "basename": "Activation_Function_Analysis",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
+      "basename": "BP_Init_Optim",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
+    },
+    {
+      "basename": "LLM_Training",
+      "path": "Data_Science/Prompt_Engineering/LLM_Training.md"
+    },
+    {
+      "basename": "Network_Structure",
+      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Network_Structure.md"
+    },
+    {
+      "basename": "Convolution_Operation",
+      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md"
+    },
+    {
+      "basename": "Probability_Formulas_and_Theorems",
+      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
     },
     {
       "basename": "Convergence_Theory",
@@ -85,10 +117,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
     },
     {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
       "basename": "Kernel_Methods",
       "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
     },
@@ -127,10 +155,6 @@
     {
       "basename": "1_Statistical_Learning_Basics",
       "path": "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md"
-    },
-    {
-      "basename": "Convolution",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution.md"
     },
     {
       "basename": "4_Random_Forest",
@@ -175,26 +199,6 @@
     {
       "basename": "DB_Design",
       "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
-    },
-    {
-      "basename": "Non-parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Random_Graph",
-      "path": "Computer_Science/Machine_Learning/EECS126/Randomized_Structures/Random_Graph.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Monte_Carlo_Methods.md"
-    },
-    {
-      "basename": "Kalman_Filters",
-      "path": "Computer_Science/Machine_Learning/EECS126/Graphical_Models/Kalman_Filters.md"
     }
   ],
   "omittedPaths": [],
