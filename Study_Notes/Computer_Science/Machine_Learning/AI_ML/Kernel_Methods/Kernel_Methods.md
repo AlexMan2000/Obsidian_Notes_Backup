@@ -20,39 +20,71 @@
 
 
 ## Types of Kernel
-> 
-
+### Polynomial Kernel
+> [!def]
+> ![](Kernel_Methods.assets/image-20240328122112163.png)
 
 
 
 
 # Preserving Kernel Properties
 ## Summation Tricks
+> [!important]
 > 1. $\sum_{i}(a_i\sum_{j}b_j)=\sum_{i}\sum_{j}a_ib_j=\sum_{j}\sum_{i}a_ib_j=\sum_{i,j}a_ib_j$, 只要求和符号下面的下标是`Independent`的，就可以交换顺序。
 > 2. $(\sum_{i}a_i)(\sum_{j}b_j)=\sum_{i}\sum_{j}a_ib_j=\sum_{i,j}a_ib_j$, 这个只要展开就可以证明，也很常用
 > 3. $\sum_{i,j}a_ib_j=(\sum_{i}a_i)(\sum_{j}b_j)$, 作为结论`(2)`的逆命题也成立。
-> 
-这些技巧在证明`Kernel Properties`的时候很有用。
+> 这些技巧在证明`Kernel Properties`的时候很有用。
 
 
-## Properties&Proofs
+## Properties
+> [!property]
 > ![image.png](Kernel_Methods.assets/22df208323b6c653a2edb6388d1c6803_MD5.png)
 
-**Proof**
-
 ### Sums of Kernels
+> [!thm]
 > ![image.png](Kernel_Methods.assets/498e77ca9dc040fa6f5a3a2791401c83_MD5.png)
 
 
 ### Products of Kernels
+> [!thm]
 > ![image.png](Kernel_Methods.assets/3142c205913224096467008bc1b2bdeb_MD5.png)
 
 
 
+
+# Kernel Perceptrons
+> [!def]
+> ![](Kernel_Methods.assets/image-20240328122245764.png)
+
+
+# Kernel Logistic Regression
+> [!def]
+> ![](Kernel_Methods.assets/image-20240328122253369.png)
+
+
+
+
+
+
+
 # Kernel Ridge Regression
+## Lemma
+> [!lemma]
 > ![image.png](Kernel_Methods.assets/06f2150c419fddddea881013ba3095ae_MD5.png)
 
-**Proof**![image.png](Kernel_Methods.assets/f24b069fdc98baed35fe9d359bb964ee_MD5.png)
+> [!proof]
+> ![image.png](Kernel_Methods.assets/f24b069fdc98baed35fe9d359bb964ee_MD5.png)
+
+
+## Algorithm
+> [!algo]
+> ![](Kernel_Methods.assets/image-20240328121436154.png)![](Kernel_Methods.assets/image-20240328121643854.png)
+
+
+
+
+
+
 
 ## Implementations
 ```python

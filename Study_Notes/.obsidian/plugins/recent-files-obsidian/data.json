@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "Convolution_Operation",
+      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md"
+    },
+    {
+      "basename": "Batch_Normalization",
+      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Batch_Normalization.md"
+    },
+    {
+      "basename": "Regularization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
+    },
+    {
+      "basename": "BP_Init_Optim",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
+    },
+    {
+      "basename": "Activation_Function_Analysis",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Kernel_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
+    },
+    {
+      "basename": "Features_Hilbert_Space",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
+    },
+    {
       "basename": "T-SNE",
       "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
     },
@@ -17,14 +53,6 @@
       "path": "Computer_Science/Deep_Learning/Explainable_AI/Local_Explanation.md"
     },
     {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Activation_Function_Analysis",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
-    },
-    {
       "basename": "Vector_Calculus",
       "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
     },
@@ -33,20 +61,8 @@
       "path": "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md"
     },
     {
-      "basename": "BP_Init_Optim",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
-    },
-    {
       "basename": "LLM_Training",
       "path": "Data_Science/Prompt_Engineering/LLM_Training.md"
-    },
-    {
-      "basename": "Network_Structure",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Network_Structure.md"
-    },
-    {
-      "basename": "Convolution_Operation",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md"
     },
     {
       "basename": "Probability_Formulas_and_Theorems",
@@ -117,10 +133,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
     },
     {
-      "basename": "Kernel_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
-    },
-    {
       "basename": "Gaussian_Process",
       "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.md"
     },
@@ -135,18 +147,6 @@
     {
       "basename": "Linear_Regression",
       "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals.md"
-    },
-    {
-      "basename": "Features_Hilbert_Space",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
-    },
-    {
-      "basename": "Kernel_Tricks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Tricks.md"
     },
     {
       "basename": "Backprogation_Autodifferentiation",

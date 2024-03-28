@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md",
+                "file": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a12c1d996bf22df1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,35 +232,43 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fdaa4806a29bc149",
+  "active": "a12c1d996bf22df1",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Batch_Normalization.md",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175950372.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175904806.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175854749.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175833823.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175826893.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175815139.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175704108.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175603898.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175556697.png",
+    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175518832.png",
+    "Computer_Science/Deep_Learning/Transformers",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md",
+    "Computer_Science/Large_Language_Models",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.assets",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Tricks.md",
+    "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md",
     "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md",
+    "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md",
     "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md",
     "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction",
     "Computer_Science/Deep_Learning/Explainable_AI/Local_Explanation.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
     "Computer_Science/Deep_Learning/Explainable_AI",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327140026985.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327134541426.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327134535759.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327134435556.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327132922920.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240327132916919.png",
     "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
     "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
     "Data_Science/Prompt_Engineering/LLM_Training.md",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Network_Structure.md",
     "Data_Science/Prompt_Engineering",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md",
-    "Computer_Science/Deep_Learning/ChatGPT",
+    "Computer_Science/Large_Language_Models/ChatGPT",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165345740.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165339350.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326165203811.png",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240326163816727.png",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Descent_Mechanisms.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets",
     "Computer_Science/Deep_Learning/Neural_Network_Basics",
@@ -258,15 +279,6 @@
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
     "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md",
-    "Computer_Science/Deep_Learning/Diffusion_Models/Diffusion_Model.md",
-    "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
-    "Computer_Science/Deep_Learning/WaveNet",
-    "Computer_Science/Computer_Vision",
-    "Computer_Science/Machine_Learning/AI_ML/Tree_Models",
-    "Computer_Science/Deep_Learning/Overparametrization",
     "未命名.canvas"
   ]
 }
