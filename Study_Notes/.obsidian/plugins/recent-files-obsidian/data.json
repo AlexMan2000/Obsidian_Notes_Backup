@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+    },
+    {
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "Convolution_Operation",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md"
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
     },
     {
-      "basename": "Batch_Normalization",
-      "path": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Batch_Normalization.md"
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "Regularization",
@@ -191,14 +199,6 @@
     {
       "basename": "Other_Random_Processes",
       "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Other_Random_Processes.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "DB_Design",
-      "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
     }
   ],
   "omittedPaths": [],

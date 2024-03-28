@@ -39,6 +39,18 @@
 
 
 
+## Weight Sharing
+> [!def]
+> ![](Convolution_Operation.assets/image-20240328182900107.png)
+
+
+
+
+## Padding
+> [!def]
+> ![](Convolution_Operation.assets/image-20240328182935933.png)
+
+
 
 
 # Convolution Kernels/Filters
@@ -53,27 +65,31 @@
 > ![](Convolution_Operation.assets/image-20240328175556697.png)![](Convolution_Operation.assets/image-20240328175603898.png)![](Convolution_Operation.assets/image-20240328175704108.png)
 
 
+## Down Sampling
+> [!def]
+> ![](Convolution_Operation.assets/image-20240328183128298.png)![](Convolution_Operation.assets/image-20240328183135186.png)
 
-## Strided Convolution
+
+### Strided Convolution
 > [!def]
 > ![](Convolution_Operation.assets/image-20240328175815139.png)
 
 
 
-## Pooling
+### Pooling
 > [!def]
 > ![](Convolution_Operation.assets/image-20240328175833823.png)
 
 
 
-### Max Pooling
+#### Max Pooling
 > [!def]
 > ![](Convolution_Operation.assets/image-20240328175854749.png)
 
 
 
 
-### Average Pooling
+#### Average Pooling
 > [!def]
 > ![](Convolution_Operation.assets/image-20240328175904806.png)
 

@@ -1,21 +1,48 @@
 Lecture 1~2
 # System Types
 ## Memory
+> [!def]
+> A system is called memoryless if its output at a given time depends on the input only at that time.
+> 
+> The moving average filter $y[n]=\frac{1}{3}(x[n-1]+x[n]+x[n+1])$ is not memoryless since it depends on the input at times that are not the current time($n+1$ and $n-1$).
 
 
 ## Causality
+> [!def]
+> A system is called causal if its output depends on the input at present and past times only, not on future times.
+> ![](Signals_LTI_Systems.assets/image-20240328181143714.png)
+> This is causal, since it only depends on current time, not the future times. It is also memoryless.
+> 
+> The **moving average filter** $y[n]=\frac{1}{3}(x[n-1]+x[n]+x[n+1])$ is **not causal** since it depends on the input at times that are not the current time($n+1$ and $n-1$).
+
+
+
 
 
 ## Stability
+> [!def]
+> A system is called stable if all bounded inputs generate bounded outputs. It is unstable if not stable; that is, if there exists a bounded input for which the output grows unbounded.
+> ![](Signals_LTI_Systems.assets/image-20240328182022936.png)
+> 
+> More on this see [Stability_Feedback_Control](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md)
+
 
 
 ## Linearity
+> [!def]
+> ![](Signals_LTI_Systems.assets/image-20240328181344757.png)![](Signals_LTI_Systems.assets/image-20240328181351950.png)![](Signals_LTI_Systems.assets/image-20240328181357466.png)![](Signals_LTI_Systems.assets/image-20240328181402738.png)
 
 
 
 ## Time Invariance
-> 
+> [!def]
+> ![](Signals_LTI_Systems.assets/image-20240328181411912.png)
 
+
+## Identification Exercises
+> [!example] EECS120 Fa19 Disc01 P1
+> Suppose the system input is $x(n)$ and output is $y(n)$.
+> ![](Signals_LTI_Systems.assets/image-20240328182122730.png)![](Signals_LTI_Systems.assets/image-20240328182127248.png)
 
 
 

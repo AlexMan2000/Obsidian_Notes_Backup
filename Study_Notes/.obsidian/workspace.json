@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md",
+                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,21 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3f27cd8e79b3c74a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,20 +219,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a12c1d996bf22df1",
+  "active": "fdaa4806a29bc149",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.md",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Batch_Normalization.md",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175950372.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175904806.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175854749.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175833823.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175826893.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175815139.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175704108.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175603898.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175556697.png",
-    "Computer_Science/Deep_Learning/Convolutional_Neural_Networks/Convolution_Operation.assets/image-20240328175518832.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328183135186.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328183128298.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328182935933.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328182900107.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182127248.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182122730.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182022936.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181411912.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181402738.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181357466.png",
     "Computer_Science/Deep_Learning/Transformers",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md",
     "Computer_Science/Large_Language_Models",
@@ -277,8 +267,6 @@
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md",
     "未命名.canvas"
   ]
 }
