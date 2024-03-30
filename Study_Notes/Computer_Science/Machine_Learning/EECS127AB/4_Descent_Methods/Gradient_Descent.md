@@ -422,7 +422,7 @@
 
 
 
-## Convergence of G.D. of Ridge Regression
+## Optimal Learning Rate of G.D.
 > [!example] EECS127 Fa22 HW08 P1
 > ![](Gradient_Descent.assets/image-20231213221553740.png)![](Gradient_Descent.assets/image-20231213221558255.png)![](Gradient_Descent.assets/image-20231213221604911.png)![](Gradient_Descent.assets/image-20231213221611671.png)![](Gradient_Descent.assets/image-20231213221621496.png)![](Gradient_Descent.assets/image-20231213221627679.png)![](Gradient_Descent.assets/image-20231213221634487.png)
 

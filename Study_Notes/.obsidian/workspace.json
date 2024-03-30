@@ -30,8 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1bffd6c5ae23adb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4608769e6ecea174",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,28 +244,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fdaa4806a29bc149",
+  "active": "a12c1d996bf22df1",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240329123754304.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240329123744985.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240329123730317.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240329123722289.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240329123546513.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+    "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104833888.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104824570.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104818157.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104811920.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104803942.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240329104754314.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328183135186.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328183128298.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328182935933.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.assets/image-20240328182900107.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182127248.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182122730.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328182022936.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181411912.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181402738.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240328181357466.png",
     "Computer_Science/Deep_Learning/Transformers",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md",
     "Computer_Science/Large_Language_Models",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.assets",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.assets",
@@ -265,8 +292,6 @@
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
     "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
     "未命名.canvas"
   ]
 }

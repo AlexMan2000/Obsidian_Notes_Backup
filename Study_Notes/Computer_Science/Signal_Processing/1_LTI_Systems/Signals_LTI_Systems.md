@@ -24,7 +24,7 @@ Lecture 1~2
 > A system is called stable if all bounded inputs generate bounded outputs. It is unstable if not stable; that is, if there exists a bounded input for which the output grows unbounded.
 > ![](Signals_LTI_Systems.assets/image-20240328182022936.png)
 > 
-> More on this see [Stability_Feedback_Control](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md)
+> More on this see [Stability_Feedback_Control](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md) though the definition here is a bit different.
 
 
 
@@ -42,7 +42,23 @@ Lecture 1~2
 ## Identification Exercises
 > [!example] EECS120 Fa19 Disc01 P1
 > Suppose the system input is $x(n)$ and output is $y(n)$.
-> ![](Signals_LTI_Systems.assets/image-20240328182122730.png)![](Signals_LTI_Systems.assets/image-20240328182127248.png)
+> ![](Signals_LTI_Systems.assets/image-20240328182122730.png)![](Signals_LTI_Systems.assets/image-20240328182127248.png)![](Signals_LTI_Systems.assets/image-20240329123546513.png)![](Signals_LTI_Systems.assets/image-20240329123722289.png)![](Signals_LTI_Systems.assets/image-20240329123730317.png)![](Signals_LTI_Systems.assets/image-20240329123744985.png)![](Signals_LTI_Systems.assets/image-20240329123754304.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

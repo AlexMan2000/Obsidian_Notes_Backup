@@ -147,7 +147,43 @@ See [Backprogation_Autodifferentiation](Backprogation_Autodifferentiation.pdf)
 
 
 
+## Convergence and Optimal LR
+> [!important]
+> ![](BP_Init_Optim.assets/image-20240329104754314.png)![](BP_Init_Optim.assets/image-20240329104803942.png)![](BP_Init_Optim.assets/image-20240329104811920.png)![](BP_Init_Optim.assets/image-20240329104818157.png)![](BP_Init_Optim.assets/image-20240329104824570.png)![](BP_Init_Optim.assets/image-20240329104833888.png)
+> The notion of optimal learning rate is detailed in this problem [Optimal Learning Rate of G.D.](../../Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md#Optimal%20Learning%20Rate%20of%20G.D.)
+
+
 ## Momentum
+> [!def]
+> The idea of momentum is finding a safe way to make the $η$ bigger.
+
+
+### Exponentially Weighted Averages(EWA)
+> [!def]
+> Suppose we have a time series data, $\theta_1,\theta_{2,\cdots,}\theta_t$ where $v_i$ represents the temperature on day $i$.
+> 
+> The exponentially weighted average model for these temperatures are defined as the following recurrence function:
+> $$v_{t}=\beta v_{t-1}+(1-\beta)\theta_{t}$$ where $v_t$ is the exponentially weighted average of the temperature up until time step $t$.
+> 
+> We can think of $v_t$ as a smoothing operation over $\theta_t$, where $\theta_t$ is oscillating across $t$ while $v_t$ is trying to average the past and present information about the temperature.
+> 
+> To solve for this recurrence, we use recursion and could get:
+> $$v_{t}=\beta^{t}v_0+\sum\limits_{i=1}^{t}(1-\beta)\beta^{t-i}\theta_{i}$$
+> which can be viewed as an inner product between an exponential decaying function $f(x)=\beta^x$ and $\theta_i$.
+> 
+> Recall in calculus we have $\lim_{n\to \infty}(1+\frac{1}{n})^n=e$, if we replace $n$ by $\frac{1}{\epsilon}$ we have $\lim_{\epsilon\to 0}(1+\epsilon)^{\frac{1}{\epsilon}}=e$. Thus we have:
+> $$\lim_{\epsilon\to 0}(1-\epsilon)^{\frac{1}{\epsilon}}=\frac{1}{e}$$ where the role $\epsilon$ plays can be viewed as the same as $1-\beta$. 
+> 
+> We can interpret it as if $\beta=0.9$, it will take $\frac{1}{1-0.9}=10$ steps away from the current step to make the weight to decay to $\frac{1}{e}\approx \frac{1}{3}$.
+ 
+
+
+### Bias Correction of EWA
+> [!property]
+
+
+
+
 
 
 
