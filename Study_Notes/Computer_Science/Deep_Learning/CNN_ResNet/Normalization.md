@@ -12,7 +12,10 @@
 
 
 
-# Weight Normalization
+
+
+
+# Parameter Normalization
 
 
 

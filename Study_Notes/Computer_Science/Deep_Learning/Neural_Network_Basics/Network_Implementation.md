@@ -5,7 +5,7 @@
 
 
 
-# Neural Network Implementation - Numpy
+# NN Implementation - Numpy EECS189
 > In this chapter, we implement the NN with pure numpy.
 
 
@@ -114,7 +114,7 @@ def forward(self, X: np.ndarray) -> np.ndarray:
 > - If we choose Softmax, then  $\frac{\partial L}{\partial z_i}=\sum\limits_{j=1}^k\frac{\partial L}{\partial y_j}\frac{\partial y_j}{\partial z_i}$ where $\frac{\partial y_j}{\partial z_i}=\begin{cases} \sigma(z_i)(1-\sigma(z_j)) &i=j\\-\sigma(z_i)\sigma(z_{j})&i\neq j\end{cases}$
 > 
 > Next $$\begin{align}\frac{\partial L}{\partial x}&=\frac{\partial L}{\partial z}\frac{\partial z}{\partial x}\\&=\frac{\partial L}{\partial z}\begin{bmatrix}\frac{\partial z_{1}}{\partial x_{1}}&\frac{\partial z_{1}}{\partial x_{2}}&\cdots&\frac{\partial z_{1}}{\partial x_{d}} \\\frac{\partial z_{2}}{\partial x_{1}}&\frac{\partial z_{2}}{\partial x_{2}}&\cdots&\frac{\partial z_{2}}{\partial x_{d}} \\\vdots&\ddots&&\vdots\\\frac{\partial z_{k}}{\partial x_{1}}&\frac{\partial z_{k}}{\partial x_{2}}&\cdots&\frac{\partial z_{k}}{\partial x_{d}}\end{bmatrix}\\&=\frac{dL}{dz}W^{\top}\end{align}$$
-> and that  $$\begin{align}\frac{\partial L}{\partial W}&=\frac{\partial L}{\partial z}\frac{\partial z}{\partial W}\\&=\sum\limits_{i=1}^k\frac{\partial L}{\partial z_i}\frac{\partial z_i}{\partial W}\\&=\sum\limits_{i=1}^k\begin{bmatrix}\frac{\partial z_{i}}{\partial W_{11}}&\frac{\partial z_{i}}{\partial W_{12}}&\cdots&\frac{\partial z_{i}}{\partial W_{1k}} \\\frac{\partial z_{i}}{\partial W_{21}}&\frac{\partial z_{i}}{\partial W_{22}}&\cdots&\frac{\partial z_{i}}{\partial W_{2k}} \\\vdots&\ddots&&\vdots\\\frac{\partial z_{i}}{\partial W_{d1}}&\frac{\partial z_{i}}{\partial W_{d2}}&\cdots&\frac{\partial z_{i}}{\partial x_{dk}}\end{bmatrix}\frac{\partial L}{\partial z_i}\\&=\begin{bmatrix}x^{\top}\frac{\partial L}{\partial z_1}&x^{\top}\frac{\partial L}{\partial z_2}&\cdots&x^{\top}\frac{\partial L}{\partial z_k}\end{bmatrix}\\&=x^{\top}\frac{\partial L}{\partial z}\end{align}$$ where $x$ is the single data points.
+> and that  $$\begin{align}\frac{\partial L}{\partial W}&=\frac{\partial L}{\partial z}\frac{\partial z}{\partial W}\\&=\sum\limits_{i=1}^k\frac{\partial L}{\partial z_i}\frac{\partial z_i}{\partial W}\\&=\sum\limits_{i=1}^k\begin{bmatrix}\frac{\partial z_{i}}{\partial W_{11}}&\frac{\partial z_{i}}{\partial W_{12}}&\cdots&\frac{\partial z_{i}}{\partial W_{1k}} \\\frac{\partial z_{i}}{\partial W_{21}}&\frac{\partial z_{i}}{\partial W_{22}}&\cdots&\frac{\partial z_{i}}{\partial W_{2k}} \\\vdots&\ddots&&\vdots\\\frac{\partial z_{i}}{\partial W_{d1}}&\frac{\partial z_{i}}{\partial W_{d2}}&\cdots&\frac{\partial z_{i}}{\partial x_{dk}}\end{bmatrix}\frac{\partial L}{\partial z_i}\\&=\begin{bmatrix}x^{\top}\frac{\partial L}{\partial z_1}&x^{\top}\frac{\partial L}{\partial z_2}&\cdots&x^{\top}\frac{\partial L}{\partial z_k}\end{bmatrix}\\&=x^{\top}\frac{\partial L}{\partial z}\end{align}$$ where $x$ is the single data points and $x^{\top}\frac{\partial L}{\partial z}$ is basically an outer product.
 > 
 > Finally we have $$\begin{align}\frac{\partial L}{\partial b}&=\frac{\partial L}{\partial z}\frac{\partial z}{\partial b}\\&=\frac{\partial L}{\partial z}I\\&=\frac{\partial L}{\partial z}\end{align}$$
 > 
@@ -516,6 +516,16 @@ class NeuralNetwork(ABC):
 
 
 
-# PyTorch Usage
+# NN Implementation - Numpy EECS182
+## Preliminaries
+> [!important]
+> `%load_ext autoreload` is used to reload the .py module everytime you execute a cell in jupyter notebook.
+> ![](Network_Implementation.assets/image-20240330201832252.png)
+
+
+
+## Fully Connected Layer
+> [!code]
+
 
 

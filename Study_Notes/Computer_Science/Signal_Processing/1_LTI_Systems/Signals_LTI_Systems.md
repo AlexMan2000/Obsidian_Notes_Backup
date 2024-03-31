@@ -46,6 +46,14 @@ Lecture 1~2
 
 
 
+## Drawing Signals
+> [!example] EECS120 Fa19 Disc01 P2
+> ![](Signals_LTI_Systems.assets/image-20240330163227866.png)![](Signals_LTI_Systems.assets/image-20240330163234273.png)![](Signals_LTI_Systems.assets/image-20240330163240913.png)
+
+
+
+
+
 
 
 
@@ -97,6 +105,13 @@ Lecture 1~2
 ### Associative 
 > [!property]
 > ![](Signals_LTI_Systems.assets/image-20240316220926474.png)
+
+
+
+
+## Computing Exercises
+> [!example] EECS120 Fa19 Disc01 P3
+> ![](Signals_LTI_Systems.assets/image-20240330163437776.png)![](Signals_LTI_Systems.assets/image-20240330163442722.png)![](Signals_LTI_Systems.assets/image-20240330163447594.png)![](Signals_LTI_Systems.assets/image-20240330163453736.png)![](Signals_LTI_Systems.assets/image-20240330163500505.png)![](Signals_LTI_Systems.assets/image-20240330163815968.png)![](Signals_LTI_Systems.assets/image-20240330163830195.png)
 
 
 

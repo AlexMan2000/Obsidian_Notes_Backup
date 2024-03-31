@@ -1,32 +1,112 @@
 {
   "recentFiles": [
     {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Response_to_Exponential",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
     },
     {
       "basename": "BP_Init_Optim",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
     },
     {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+      "basename": "Fourier_Transform",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transform.md"
     },
     {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+      "basename": "Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md"
     },
     {
-      "basename": "Residual_Networks",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
+      "basename": "Attention",
+      "path": "Computer_Science/Deep_Learning/Transformers/Attention.md"
+    },
+    {
+      "basename": "Positional_Encoding",
+      "path": "Computer_Science/Deep_Learning/Transformers/Positional_Encoding.md"
+    },
+    {
+      "basename": "GRU",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/GRU.md"
+    },
+    {
+      "basename": "LSTM",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/LSTM.md"
     },
     {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
+      "basename": "T-SNE",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
+    },
+    {
       "basename": "Convolution_Operation",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "image-20240319152128498",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240319152128498.png"
+    },
+    {
+      "basename": "4_Kalman_Filters",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
+    },
+    {
+      "basename": "3_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "2_Decision_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
+    },
+    {
+      "basename": "Structured_Matrices",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
+    },
+    {
+      "basename": "Binary_Decision_Rules",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
+    },
+    {
+      "basename": "5_Decision_Theory",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/5_Decision_Theory.md"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md"
+    },
+    {
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+    },
+    {
+      "basename": "Mixture_of_Gaussian",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian.md"
+    },
+    {
+      "basename": "K-Means",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/K-Means.md"
+    },
+    {
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
     },
     {
       "basename": "Regularization",
@@ -37,20 +117,12 @@
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
     },
     {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
       "basename": "Kernel_Methods",
       "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
     },
     {
       "basename": "Features_Hilbert_Space",
       "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
-    },
-    {
-      "basename": "T-SNE",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
     },
     {
       "basename": "PCA",
@@ -127,78 +199,6 @@
     {
       "basename": "2_MLE&MAP",
       "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
-    },
-    {
-      "basename": "3_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Vision/Related_Resources.md"
-    },
-    {
-      "basename": "3_Decision_Tree",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/3_Decision_Tree.md"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/1_Classification.md"
-    },
-    {
-      "basename": "Gaussian_Process",
-      "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Gaussian_Process.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
-    },
-    {
-      "basename": "2_Gaussian_Discriminative_Analysis",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/2_Gaussian_Discriminative_Analysis.md"
-    },
-    {
-      "basename": "Linear_Regression",
-      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
-    },
-    {
-      "basename": "Backprogation_Autodifferentiation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Backprogation_Autodifferentiation.pdf"
-    },
-    {
-      "basename": "1_Statistical_Learning_Basics",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Learning_Theory/1_Statistical_Learning_Basics.md"
-    },
-    {
-      "basename": "4_Random_Forest",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification/4_Random_Forest.md"
-    },
-    {
-      "basename": "Binary_Decision_Rules",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
-    },
-    {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "Randomized_Linear_Algebra",
-      "path": "Computer_Science/Machine_Learning/EECS126/Randomized_Structures/Randomized_Linear_Algebra.md"
-    },
-    {
-      "basename": "Stability_Feedback_Control",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md"
-    },
-    {
-      "basename": "Capacitors&Inductors&OpAmp",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md"
-    },
-    {
-      "basename": "泊松过程",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/泊松过程.md"
-    },
-    {
-      "basename": "Poisson_Process",
-      "path": "Computer_Science/Machine_Learning/EECS126/3_Random_Processes/Poisson_Process.md"
     }
   ],
   "omittedPaths": [],
