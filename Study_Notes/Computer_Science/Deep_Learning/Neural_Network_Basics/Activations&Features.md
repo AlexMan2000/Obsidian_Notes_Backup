@@ -548,11 +548,31 @@ for w in widths:
 
 
 # RELU Variants
+## RELU
+> [!def]
+> ![](Activations&Features.assets/image-20240331224026448.png)
+
+> [!example]
+> ![](Activations&Features.assets/image-20240331224035348.png)![](Activations&Features.assets/image-20240331224041721.png)
+
+
 ## Leaky RELU
+> [!def]
+> ![](Activations&Features.assets/image-20240331224052055.png)
+
 
 
 
 ## Exponential Linear Unit(ELU)
+> [!def]
+> ![](Activations&Features.assets/image-20240331224101744.png)
+
+
+
+
+## Comparisons
+> [!important]
+> ![](Activations&Features.assets/image-20240331224123192.png)
 
 
 

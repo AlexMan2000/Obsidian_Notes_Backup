@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "BP_Init_Optim",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
     },
     {
       "basename": "Regularization",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
     },
     {
+      "basename": "Back_Propagation_Algorithm",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
+    },
+    {
+      "basename": "Initialization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
+    },
+    {
       "basename": "Activations&Features",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
+    },
+    {
+      "basename": "1_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "PCA_Low-rank_Approximation",
@@ -25,16 +41,8 @@
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
     },
     {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
       "basename": "Residual_Networks",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
-    },
-    {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
     },
     {
       "basename": "1_Transactions_Concurrency",
@@ -90,7 +98,7 @@
     },
     {
       "basename": "image-20240319152128498",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240319152128498.png"
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.assets/image-20240319152128498.png"
     },
     {
       "basename": "4_Kalman_Filters",
@@ -191,14 +199,6 @@
     {
       "basename": "Parametric_Hypothesis_Testing",
       "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Hypothesis_Testing",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
-    },
-    {
-      "basename": "无参Bootstrap",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md"
     }
   ],
   "omittedPaths": [],
