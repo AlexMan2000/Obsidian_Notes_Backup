@@ -189,6 +189,8 @@ See [Backprogation_Autodifferentiation](Backprogation_Autodifferentiation.pdf)
 ### Theory
 > [!example] EECS182 HW2 P2 - Least Square Example
 > More on stability [Stability_Feedback_Control](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md)
+> 
+> Here the $1-2\eta X^{\top}X$ is the weight decay parameter, controlling how fast our parameters are converging to optimal point.
 > ![](BP_Init_Optim.assets/image-20240330135451710.png)![](BP_Init_Optim.assets/image-20240330135458785.png)![](BP_Init_Optim.assets/image-20240330135504961.png)![](BP_Init_Optim.assets/image-20240330135514396.png)![](BP_Init_Optim.assets/image-20240330135522815.png)![](BP_Init_Optim.assets/image-20240330135531740.png)![](BP_Init_Optim.assets/image-20240330135541263.png)![](BP_Init_Optim.assets/image-20240330135549485.png)![](BP_Init_Optim.assets/image-20240330135558573.png)![](BP_Init_Optim.assets/image-20240330135615946.png)![](BP_Init_Optim.assets/image-20240330135630102.png)
 
 
@@ -478,6 +480,15 @@ plt.show()
 > ![](BP_Init_Optim.assets/image-20240326165345740.png)
 
 
+
+## RELU Elbow Distribution
+> [!important]
+> ![](BP_Init_Optim.assets/image-20240331175851106.png)![](BP_Init_Optim.assets/image-20240331175900012.png)
+
+
+
+
+
 ## Proper Initialization Values
 ### Rules of Thumb
 > [!important]
@@ -496,6 +507,9 @@ plt.show()
 
 ### Tanh - Xavier Normal Initialization
 > [!def]
+> ![](BP_Init_Optim.assets/image-20240331173731165.png)![](BP_Init_Optim.assets/image-20240331174014930.png)
+> **Theory:**
+> 
 > The goal of Xavier Initialization is to initialize the weights such that the variance of the activations are the same across every layer. 
 > 
 > This constant variance helps prevent the gradient from exploding or vanishing.
@@ -503,7 +517,7 @@ plt.show()
 > The recommended initialization is Xavier initialization (or one of its derived methods), for every layer $l$:
 > $$\begin{aligned}W^{[l]} & \sim \mathcal{N}\left(\mu=0, \sigma^2=\frac{1}{n^{[l-1]}}\right) \\b^{[l]} & =0\end{aligned}$$
 > 
-> In other words, all the **weights** of layer $l$ are picked randomly from a normal distribution with mean $\mu=0$ and variance $\sigma^2=\frac{1}{n^{l-1]}}$ where $n^{[l-1]}$ is the number of neuron in layer $l-1$. 
+> In other words, all the **weights** of layer $l$ are picked randomly from a normal distribution with mean $\mu=0$ and variance $\sigma^2=\frac{1}{n^{[l-1]}}$ where $n^{[l-1]}$ is the number of neuron in layer $l-1$. 
 > 
 > **Biases are initialized with zeros.**
 
@@ -520,8 +534,8 @@ plt.show()
 > 
 > Moreover, $z^{[l]}=W^{[l]} a^{[l-1]}+b^{[l]}=\operatorname{vector}\left(z_1^{[l]}, z_2^{[l]}, \ldots, z_n^{[l]}\right)$ where $z_k^{[l]}=\sum_{j=1}^{n^{[l-1]}} w_{k j}^{[l]} a_j^{[l-1]}+b_k^{[l]}$. For simplicity, let's assume that $b^{[l]}=0$ (it will end up being true given the choice of initialization we will choose).
 > 
-> Thus, looking element-wise at the previous equation $\operatorname{Var}\left(a^{[l-1]}\right)=\operatorname{Var}\left(a^{[l]}\right)$ now gives:$$\operatorname{Var}\left(a_k^{[l]}\right)=\operatorname{Var}\left(z_k^{[l]}\right)=\operatorname{Var}\left(\sum_{j=1}^{n[-1]} w_{k j}^{[l]} a_j^{[l-1]}\right)$$
-> A common math trick is to extract the summation outside the variance. To do this, we must make the following three assumptions ${ }^6$ :
+> Thus, looking element-wise at the previous equation $\operatorname{Var}\left(a^{[l-1]}\right)=\operatorname{Var}\left(a^{[l]}\right)$ now gives:$$\operatorname{Var}\left(a_k^{[l]}\right)=\operatorname{Var}\left(z_k^{[l]}\right)=\operatorname{Var}\left(\sum_{j=1}^{n[l-1]} w_{k j}^{[l]} a_j^{[l-1]}\right)$$
+> A common math trick is to extract the summation outside the variance. To do this, we must make the following three assumptions:
 > 1. Weights are independent and identically distributed
 > 2. Inputs are independent and identically distributed
 > 3. Weights and inputs are mutually independent
@@ -558,10 +572,16 @@ plt.show()
 
 
 
+### Dead RELU Problem
+> [!important]
+> ![](BP_Init_Optim.assets/image-20240331175027675.png)![](BP_Init_Optim.assets/image-20240331175042534.png)
+> More about Leaky RLU/ELU on [Activations&Features](Activations&Features.md)
+
+
 
 ### Relu - He Initialization
 > [!def]
-
+> ![](BP_Init_Optim.assets/image-20240331175138787.png)
 
 > [!code] Implementation
 ```python
@@ -569,5 +589,10 @@ plt.show()
 
 ```
 
+
+
+### Bias Initialization
+> [!def]
+> ![](BP_Init_Optim.assets/image-20240331175157919.png)
 
 

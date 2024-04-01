@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2bd607bed25fb058",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c288df4cd4de6b63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ffff4fdbb3bb097e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,54 +256,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a12ae3eaff62eee1",
+  "active": "2bd607bed25fb058",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets/image-20240330201832252.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175900012.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175851106.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175157919.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175138787.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175042534.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331175027675.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331174014930.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.assets/image-20240331173731165.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.assets/image-20240331171802955.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.assets/image-20240331171759455.png",
+    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Local_Linearization.md",
+    "Computer_Science/Deep_Learning/Pytorch Tutorial 1.pdf",
+    "Computer_Science/Deep_Learning/Pytorch Tutorial 1.pdf.crdownload",
+    "Computer_Science/Deep_Learning/Pytorch Tutorial 2.pdf",
+    "Computer_Science/Deep_Learning/Pytorch Tutorial 2.pdf.crdownload",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.assets",
+    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
     "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transform.md",
     "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md",
     "Computer_Science/Deep_Learning/Transformers/Attention.md",
     "Computer_Science/Deep_Learning/Transformers/Positional_Encoding.md",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/GRU.md",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/LSTM.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
     "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163830195.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163815968.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163500505.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163453736.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163447594.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163442722.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163437776.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163240913.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163234273.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.assets/image-20240330163227866.png",
     "Computer_Science/Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md",
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
-    "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/5_Decision_Theory.md",
-    "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian.md",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/K-Means.md",
     "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.assets",
     "Computer_Science/Deep_Learning/Transformers",
     "Computer_Science/Large_Language_Models",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.assets",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction",
-    "Computer_Science/Deep_Learning/Explainable_AI",
-    "Data_Science/Prompt_Engineering",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.assets",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.assets",
     "未命名.canvas"
   ]
 }

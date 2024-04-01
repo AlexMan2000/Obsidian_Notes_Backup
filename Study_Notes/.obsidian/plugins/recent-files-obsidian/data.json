@@ -1,16 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "BP_Init_Optim",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
+    },
+    {
       "basename": "Network_Implementation",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
     },
     {
-      "basename": "Response_to_Exponential",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
+      "basename": "Regularization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
     },
     {
-      "basename": "BP_Init_Optim",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/BP_Init_Optim.md"
+      "basename": "Activations&Features",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "Modular_Codes",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
+    },
+    {
+      "basename": "1_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
+    },
+    {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
+    },
+    {
+      "basename": "Response_to_Exponential",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
     },
     {
       "basename": "Fourier_Transform",
@@ -35,10 +71,6 @@
     {
       "basename": "LSTM",
       "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/LSTM.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "T-SNE",
@@ -105,18 +137,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/K-Means.md"
     },
     {
-      "basename": "Residual_Networks",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
-    },
-    {
-      "basename": "Regularization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
-    },
-    {
-      "basename": "Activation_Function_Analysis",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activation_Function_Analysis.md"
-    },
-    {
       "basename": "Kernel_Methods",
       "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "无参Bootstrap",
       "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/无参Bootstrap.md"
-    },
-    {
-      "basename": "Bootstrap_Estimation",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
-    },
-    {
-      "basename": "Diffusion_Model",
-      "path": "Computer_Science/Deep_Learning/Diffusion_Models/Diffusion_Model.md"
-    },
-    {
-      "basename": "Priors&Posteriors",
-      "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md"
-    },
-    {
-      "basename": "1_Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
     }
   ],
   "omittedPaths": [],

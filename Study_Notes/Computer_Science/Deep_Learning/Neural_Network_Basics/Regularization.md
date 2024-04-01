@@ -6,16 +6,17 @@
 
 
 # Data and Feature Augmentation
-## Adding Extra Data
+## Data Augmentation
 > [!def]
 > ![](Regularization.assets/image-20240328172805080.png)
 
 
 
 
-## Adding Extra Features
+## Feature Augmentation
 > [!def]
 > ![](Regularization.assets/image-20240328173308227.png)
+
 
 
 
