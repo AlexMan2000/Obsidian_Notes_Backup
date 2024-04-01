@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+    },
+    {
+      "basename": "Modular_Codes",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
+    },
+    {
+      "basename": "Convolution_Operation",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "3_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
+    },
+    {
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+    },
+    {
+      "basename": "Initialization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
+    },
+    {
       "basename": "Optimizer",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
     },
     {
       "basename": "Regularization",
@@ -13,10 +49,6 @@
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
     },
     {
-      "basename": "Initialization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
       "basename": "Activations&Features",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
     },
@@ -25,24 +57,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
     },
     {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
       "basename": "PCA_Low-rank_Approximation",
       "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "Modular_Codes",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
-    },
-    {
-      "basename": "Residual_Networks",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
     },
     {
       "basename": "1_Transactions_Concurrency",
@@ -85,10 +101,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
     },
     {
-      "basename": "Convolution_Operation",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
-    },
-    {
       "basename": "Signals_LTI_Systems",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
@@ -103,10 +115,6 @@
     {
       "basename": "4_Kalman_Filters",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md"
-    },
-    {
-      "basename": "3_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
     },
     {
       "basename": "1_Bayes_Networks",
@@ -131,10 +139,6 @@
     {
       "basename": "1_Classification",
       "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md"
-    },
-    {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
     },
     {
       "basename": "Mixture_of_Gaussian",
@@ -195,10 +199,6 @@
     {
       "basename": "大数定律，中心极限定理和收敛定理",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
-    },
-    {
-      "basename": "Parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
     }
   ],
   "omittedPaths": [],

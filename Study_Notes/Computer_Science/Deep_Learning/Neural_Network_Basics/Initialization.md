@@ -70,6 +70,22 @@
 > $$\begin{aligned}a^{[l-1\rfloor} & =g^{[l-1\rfloor}\left(z^{[l-1\rfloor}\right) \\z^{[l]} & =W^{[l]} a^{[l-1]}+b^{[l]} \\a^{[l]} & =g^{[l]}\left(z^{[l]}\right)\end{aligned}$$
 > 
 > We would like the following to hold ${ }^2$ :$$\begin{aligned}E\left[a^{[l-1]}\right] & =E\left[a^{[l]}\right] \\\operatorname{Var}\left(a^{[l-1]}\right) & =\operatorname{Var}\left(a^{[l]}\right)\end{aligned}$$
+> 
+> Training your neural network requires specifying an initial value of the weights. A well chosen initialization method will help learning.
+> 
+> **A well chosen initialization can:**
+> - Speed up the convergence of gradient descent
+> - Increase the odds of gradient descent converging to a lower training (and generalization) error
+> 
+> We will use three different initilization methods to illustrate this concept:
+> - **Zero Initialization:** This initializes the weights to 0 .
+> - **Random Initialization:** This initializes the weights drawn from a distribution with manually specified scales. In this homework, we use normal distribution with the weight_scale argument in fc_net. py as its std.
+> - **He/Xavier/Glorot Initialization:** This is a special case for random initialization, where the scaling factor is set so that the std of each parameter is gain / sqrt (fan_mode). gain is determined by the activation function. For example, linear activation has gain $=1$ and ReLU activation has gain $=$ sqrt (2). There are three types of fan mode:
+> 	- **Fan in**: `fan_mode = in_dim`, i.e., the width of the preceding layer, preserving the magnitude in forward pass. This is what you need to implement below and also the default in PyTorch.
+> 	- **Fan out**: `fan_mode = out_dim`, i.e., the width of the succeeding layer, preserving the magnitude in backpropagation.
+> 	- **Average**: `fan_mode = (in_dim + out_dim) / 2`
+> 	
+> 	When the std is determined, another choice is between normal distribution or uniform distribution. In this homework we use normal distribution for initialization.
 
 
 
@@ -140,7 +156,7 @@
 
 
 
-### Dead RELU Problem
+## Dead RELU Problem
 > [!important]
 > ![](Back_Propagation_Algorithm.assets/image-20240331175027675.png)![](Back_Propagation_Algorithm.assets/image-20240331175042534.png)
 > More about Leaky RLU/ELU on [Activations&Features](Activations&Features.md)
@@ -154,8 +170,7 @@
 
 > [!code] Implementation
 ```python
-
-
+self.params['W%d' % (i + 1)] = np.random.normal(0, np.sqrt(2/ fan_in), size = (fan_in, fan_out))
 ```
 
 

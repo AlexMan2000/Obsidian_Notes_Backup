@@ -44,11 +44,22 @@
 
 
 ## Bias Correction of EWA
-> [!property]
+> [!motiv]
+> Bias correction in the context of exponentially weighted averages (also known as moving averages) addresses an initial bias that occurs due to the initialization of the moving average. 
+> 
+> Typically, when you start calculating an exponentially weighted average, you initialize the moving average (V) to 0. This can introduce a bias towards lower values at the start of the calculation, especially when the actual data points are significantly different from 0.
+> 
+> The reason for this bias is that the moving average relies on its previous values to calculate current and future values. At the beginning, when the moving average is initialized to 0, it "pulls" the average down, making it smaller than it should be. This effect diminishes over time as more data points are included, but the initial estimates can be significantly biased, especially in the first few steps.
+> ![](Optimizer.assets/image-20240401111606767.png)
+> Bias correction will move the purple line to the green line to prevent underestimation at the first few iteration steps.
+
+>[!algo]
+> ![](Optimizer.assets/image-20240401111428168.png)
 
 
 
-# GD with Momentum
+
+# GD with Momentum - LS Example
 ## Theory
 > [!example] EECS182 HW2 P2 - Least Square Example
 > More on stability [Stability_Feedback_Control](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Stability_Feedback_Control.md)
@@ -283,12 +294,503 @@ plt.show()
 
 
 
+
+# GD with Momentum - Neural Network
+## Training with SGD
+> [!code] Code for SGD Optimizer
+```python
+def sgd(w, dw, config=None):
+    """
+    Performs vanilla stochastic gradient descent.
+
+    config format:
+    - learning_rate: Scalar learning rate.
+    """
+    if config is None: config = {}
+    config.setdefault('learning_rate', 1e-2)
+
+    w -= config['learning_rate'] * dw
+    return w, config
+
+```
+
+> [!code] Code for Network Training
+> Neural Network Code See [MultiLayerNet](Network_Implementation.md#MultiLayerNet)
+> ![](Optimizer.assets/image-20240401101308390.png)
+```python
+## Use a five-layer Net to overfit 50 training examples.
+
+num_train = 50
+small_data = {
+  'X_train': data['X_train'][:num_train],
+  'y_train': data['y_train'][:num_train],
+  'X_val': data['X_val'],
+  'y_val': data['y_val'],
+}
+
+weight_scale = 1e-1
+learning_rate = 1e-3
+model = FullyConnectedNet([100, 100, 100, 100],
+                weight_scale=weight_scale, dtype=np.float64)
+
+solver = Solver(model, small_data,
+                print_every=10, num_epochs=20, batch_size=25,
+                update_rule='sgd',
+                optim_config={
+                  'learning_rate': learning_rate,
+                }
+         )
+solver.train()
+
+plt.subplot(3, 1, 1)
+plt.plot(solver.loss_history, 'o')
+plt.title('Training loss history')
+plt.xlabel('Iteration')
+plt.ylabel('Training loss')
+
+plt.subplot(3, 1, 2)
+plt.plot(solver.train_acc_history, 'o')
+plt.title('Training Accuracy history')
+plt.xlabel('Iteration')
+plt.ylabel('Training Accuracy')
+
+plt.subplot(3, 1, 3)
+plt.plot(solver.val_acc_history, 'o')
+plt.title('Validation Accuracy history')
+plt.xlabel('Iteration')
+plt.ylabel('Validation Accuracy')
+plt.gcf().set_size_inches(15, 15)
+
+plt.show()
+```
+
+
+
+## Training with SGDM
+> [!def]
+> ![](Optimizer.assets/image-20240401103243929.png)
+
+> [!code] Code for SGDM Optimizer
+```python
+def sgd_momentum(w, dw, config=None):
+    """
+    Performs stochastic gradient descent with momentum.
+
+    config format:
+    - learning_rate: Scalar learning rate.
+    - momentum: Scalar between 0 and 1 giving the momentum value.
+      Setting momentum = 0 reduces to sgd.
+    - velocity: A numpy array of the same shape as w and dw used to store a moving
+      average of the gradients.
+    """
+    if config is None: config = {}
+    config.setdefault('learning_rate', 1e-2)
+    config.setdefault('momentum', 0.9)
+    v = config.get('velocity', np.zeros_like(w))
+
+    next_w = None
+    #############################################################################
+    # TODO: Implement the momentum update formula. Store the updated value in 
+    # the next_w variable. You should also use and update the velocity v.     #############################################################################
+    v = config["momentum"] * v + dw
+    next_w = w - config["learning_rate"] * v
+    config['velocity'] = v
+
+    return next_w, config
+```
+
+> [!code] Code for Training Neural Network
+> We can see how SGD+Momentum is conceptually giving you a larger "effective batch size" by increase the batch size used in the SGD above. In this way, SGD+Momentum can significantly speed up training.
+> ![](Optimizer.assets/image-20240401102517534.png)![](Optimizer.assets/image-20240401102538099.png)
+
+```python
+num_train = 4000
+small_data = {
+  'X_train': data['X_train'][:num_train],
+  'y_train': data['y_train'][:num_train],
+  'X_val': data['X_val'],
+  'y_val': data['y_val'],
+}
+
+solvers = {}
+
+for update_rule in ['sgd', 'sgd_momentum']:
+    print ('running with ', update_rule)
+    model = FullyConnectedNet([100, 100, 100, 100, 100], weight_scale=5e-2)
+
+    solver = Solver(model, small_data,
+                  num_epochs=5, batch_size=100,
+                  update_rule=update_rule,
+                  optim_config={
+                    'learning_rate': 1e-2,
+                  },
+                  verbose=True)
+    solvers[update_rule] = solver
+    solver.train()
+    os.makedirs("submission_logs", exist_ok=True)
+    solver.record_histories_as_npz("submission_logs/optimizer_experiment_{}".format(update_rule))
+    print
+
+plt.subplot(3, 1, 1)
+plt.title('Training loss')
+plt.xlabel('Iteration')
+
+plt.subplot(3, 1, 2)
+plt.title('Training accuracy')
+plt.xlabel('Epoch')
+
+plt.subplot(3, 1, 3)
+plt.title('Validation accuracy')
+plt.xlabel('Epoch')
+
+for update_rule, solver in solvers.items():
+    plt.subplot(3, 1, 1)
+    plt.plot(solver.loss_history, 'o', label=update_rule)
+
+    plt.subplot(3, 1, 2)
+    plt.plot(solver.train_acc_history, '-o', label=update_rule)
+
+    plt.subplot(3, 1, 3)
+    plt.plot(solver.val_acc_history, '-o', label=update_rule)
+
+for i in [1, 2, 3]:
+    plt.subplot(3, 1, i)
+    plt.legend(loc='upper center', ncol=4)
+plt.gcf().set_size_inches(15, 15)
+plt.show()
+```
+
+
+
+
+## Effective Batchsize
+> [!important]
+> As we discussed above, we can see how SGD+Momentum is conceptually giving you a larger "effective batch size" by increase the batch size used in the SGD above. In this way, SGD+Momentum can significantly speed up training.
+
+> [!code]
+```python
+#############################################################################
+# TODO: Tune the batch size for the SGD below until you observe             #
+# similar end of iteration training performance.                            #
+# It means rel_error(train_acc) < 0.04                                      #
+#############################################################################
+batch_sizes = {
+  'sgd_momentum': 100,
+  'sgd': 600,  # tune the batch size of SGD (must be multiples of 100)
+}
+
+num_train = 6000
+small_data = {
+  'X_train': data['X_train'][:num_train],
+  'y_train': data['y_train'][:num_train],
+  'X_val': data['X_val'],
+  'y_val': data['y_val'],
+}
+
+solvers = {}
+total_acc = {}
+
+labels = {
+  'sgd_momentum': 'sgd_momentum',
+  'sgd': 'sgd_large_bsz',
+}
+
+for update_rule in ['sgd', 'sgd_momentum']:
+    print ('running with', update_rule, ' ; seed =', seed)
+    # set the epochs so that we have the same number of steps for both rules
+    training_epochs = 5 * int(batch_sizes[update_rule]/100)
+    solvers[update_rule] = {}
+    total_acc[update_rule] = 0
+
+    for seed in [100, 200, 300]:
+        torch.manual_seed(seed)
+        np.random.seed(seed)
+        model = FullyConnectedNet([100, 100, 100, 100, 100], weight_scale=5e-2)
+
+        solver = Solver(
+            model, small_data,
+            num_epochs=training_epochs,
+            batch_size=batch_sizes[update_rule],
+            update_rule=update_rule,
+            optim_config={
+                'learning_rate': 1e-2,  # please do not change the learning rate
+            },
+            verbose=True,
+            log_acc_iteration=True)
+
+        solvers[update_rule][seed] = solver
+        solver.train()
+        solver.record_histories_as_npz(
+            "submission_logs/sgd_momentum_compare_{}_{}"
+            .format(update_rule, seed)
+        )
+
+        total_acc[update_rule] += solvers[update_rule][seed].train_acc_history[-1]
+
+print('Average Training Acc for sgd:', total_acc['sgd'] / 3)
+print('Average Training Acc for sgd_momentum:', total_acc['sgd_momentum'] / 3)
+print('Train Acc Difference: ',
+       rel_error(total_acc['sgd'] / 3,
+                 total_acc['sgd_momentum'] / 3))
+
+def plot_solver_seeds(solver_s, x_field, y_field, seeds, label):
+    a = np.array([getattr(solver_s[seed], y_field) for seed in seeds])
+    if x_field is None:
+        plt_x = np.arange(a.shape[1]) + 1
+    else:
+        plt_x = getattr(solver_s[seeds[0]], x_field)
+    plt.plot(plt_x, a.mean(axis=0), label=label)
+    plt.fill_between(plt_x, a.min(axis=0), a.max(axis=0), alpha=0.4)
+
+plt.subplot(3, 1, 1)
+plt.title('Training loss')
+plt.xlabel('Iteration')
+
+plt.subplot(3, 1, 2)
+plt.title('Training accuracy')
+plt.xlabel('Iteration')
+
+plt.subplot(3, 1, 3)
+plt.title('Validation accuracy')
+plt.xlabel('Iteration')
+
+for update_rule, solver_s in solvers.items():
+    plt.subplot(3, 1, 1)
+    # plt.plot(solver.loss_history, 'o', label=labels[update_rule])
+    plot_solver_seeds(solver_s, None, 'loss_history',
+                      [100, 200, 300], labels[update_rule])
+
+    plt.subplot(3, 1, 2)
+    # plt.plot(solver.log_acc_iteration_history, solver.train_acc_history, '-o', label=labels[update_rule])
+    plot_solver_seeds(solver_s, 'log_acc_iteration_history', 'train_acc_history',
+                      [100, 200, 300], labels[update_rule])
+
+    plt.subplot(3, 1, 3)
+    # plt.plot(solver.log_acc_iteration_history, solver.val_acc_history, '-o', label=labels[update_rule])
+    plot_solver_seeds(solver_s, 'log_acc_iteration_history', 'val_acc_history',
+                      [100, 200, 300], labels[update_rule])
+
+for i in [1, 2, 3]:
+    plt.subplot(3, 1, i)
+    plt.legend(loc='upper center', ncol=4)
+plt.gcf().set_size_inches(15, 15)
+plt.show()
+```
+
+> [!code] Output for comparison of effective batchsize
+> ![](Optimizer.assets/image-20240401103636400.png)![](Optimizer.assets/image-20240401103620966.png)
+
+ 
+
+
+
 # GD with RMSProp
+## Algorithm
+> [!algo]
+> On iteration $t$:
+> Compute $dW, db$ on current mini-batch:
+> $$\begin{aligned}S_{dw}&=\beta S_{dw}+(1-\beta)dW^{2}\\S_{db}&=\beta S_{db}+(1-\beta)db^2\\w&=w-\alpha\frac{dw}{\sqrt{S_{dw}+\epsilon}}\\b&=b-\alpha\frac{db}{\sqrt{S_{db}+\epsilon}}\end{aligned}$$
+> 
+> This algorithm makes sure that the gradient is roughly updating in the same speed on each direction to mitigate the oscillation effects.
+> 
+> For numerical stability, we want to add an $\epsilon$ at the denominator. Conventionally, we can set $\epsilon=10^{-8}$.
+
+
+## Implementations
+> [!code]
+```python
+
+def rmsprop(w, dw, config=None):
+    """
+    Uses the RMSProp update rule, which uses a moving average of squared gradient
+    values to set adaptive per-parameter learning rates.
+
+    config format:
+    - learning_rate: Scalar learning rate.
+    - decay_rate: Scalar between 0 and 1 giving the decay rate for the squared
+      gradient cache.
+    - epsilon: Small scalar used for smoothing to avoid dividing by zero.
+    - cache: Moving average of second moments of gradients.
+    """
+    if config is None: config = {}
+    config.setdefault('learning_rate', 1e-2)
+    config.setdefault('decay_rate', 0.99)
+    config.setdefault('epsilon', 1e-8)
+    config.setdefault('cache', np.zeros_like(w))
+
+    next_w = None
+    #############################################################################
+    # TODO: Implement the RMSprop update formula, storing the next value of x 
+    # in the next_w variable. Don't forget to update cache value stored in    
+    # config['cache'].                                                        ##############################################################################
+    momentum = config["decay_rate"]
+    lr = config["learning_rate"]
+    epsilon = config["epsilon"]
+    sw = momentum * config["cache"] + (1 - momentum) * dw ** 2
+    next_w = w - lr * dw / np.sqrt(sw + epsilon)
+    config["cache"] = sw
+    
+    return next_w, config
+```
+
+
+
 
 
 
 
 # GD with Adam
+## Algorithm
+> [!algo]
+> How does Adam work?
+> 1. It calculates an exponentially weighted average of past gradients, and stores it in variables $v$ (before bias correction) and $m^{\text {corrected }}$ (with bias correction).
+> 2. It calculates an exponentially weighted average of the squares of the past gradients, and stores it in variables $s$ (before bias correction) and $v^{\text {corrected }}$ (with bias correction).
+> 3. It updates parameters in a direction based on combining information from "1" and "2".
+> $$\left\{\begin{array}{l}m_{d w}=\beta_1 m_{d w}+\left(1-\beta_1\right) \frac{\partial \mathcal{J}}{\partial W} \\m_{d w}^{c o r r e c t e d}=\frac{m_{d w}}{1-\left(\beta_1\right)^t} \\v_{d w}=\beta_2 v_{d w}+\left(1-\beta_2\right)\left(\frac{\partial \mathcal{J}}{\partial W}\right)^2 \\v_{d w}^{c o r r e c t e d}=\frac{v_{d w}}{1-\left(\beta_2\right)^t} \\w=w-\alpha \frac{m_{d w}^{c o c r e c t e d}}{\sqrt{v_{d w}^{c o r r e c t e}}+ \varepsilon}\end{array}\right.$$
+> 
+> where:
+> - $\mathbf{t}$ counts the number of steps taken of Adam
+> - $\beta_1$ and $\beta_2$ are hyperparameters that control the two exponentially weighted averages.
+> - $\alpha$ is the learning rate
+> - $\varepsilon$ is a very small number to avoid dividing by zero
+
+## Implementation
+> [!code]
+```python
+def adam(w, dw, config=None):
+    """
+    Uses the Adam update rule, which incorporates moving averages of both the
+    gradient and its square and a bias correction term.
+
+    config format:
+    - learning_rate: Scalar learning rate.
+    - beta1: Decay rate for moving average of first moment of gradient.
+    - beta2: Decay rate for moving average of second moment of gradient.
+    - epsilon: Small scalar used for smoothing to avoid dividing by zero.
+    - m: Moving average of gradient.
+    - v: Moving average of squared gradient.
+    - t: Iteration number.
+    """
+    if config is None: config = {}
+    config.setdefault('learning_rate', 1e-3)
+    config.setdefault('beta1', 0.9)
+    config.setdefault('beta2', 0.999)
+    config.setdefault('epsilon', 1e-8)
+    config.setdefault('m', np.zeros_like(w))
+    config.setdefault('v', np.zeros_like(w))
+    config.setdefault('t', 0)
+
+    next_w = None
+    #############################################################################
+    # TODO: Implement the Adam update formula, storing the next value of x in 
+    # the next_w variable. Don't forget to update the m, v, and t variables   
+    # stored in config.                                                       ##############################################################################
+    lr = config["learning_rate"]
+    beta1 = config["beta1"]
+    beta2 = config["beta2"]
+    epsilon = config["epsilon"]
+    m = config["m"]
+    v = config["v"]
+    t = config["t"]
+
+    """
+    This detail is crucial because at the very beginning (first iteration), 
+    t is initialized to 0, which makes beta1 ** t and beta2 ** t equal to 1,
+     and thus their bias correction terms (1 - beta1 ** t and 1 - beta2 ** t) 
+     incorrectly become 0, leading to a division by zero error.
+    """
+    t += 1
+
+    m = beta1 * m + (1 - beta1) * dw
+    mb = m / (1 - beta1 ** t)
+
+    v = beta2 * v + (1 - beta2) * dw ** 2
+    vb = v / (1 - beta2 ** t)
+
+    next_w = w - lr * mb / (np.sqrt(vb) + epsilon)
+
+    config["m"] = m
+    config["v"] = v
+    config["t"] = t
+    return next_w, config
+
+
+```
+
+
+## Comparisons
+> [!code]
+> ![](Optimizer.assets/image-20240401114958846.png)
+```python
+num_train = 4000
+small_data = {
+  'X_train': data['X_train'][:num_train],
+  'y_train': data['y_train'][:num_train],
+  'X_val': data['X_val'],
+  'y_val': data['y_val'],
+}
+
+learning_rates = {'rmsprop': 1e-4, 'adam': 1e-3, 'sgd': 1e-2, 'sgd_momentum': 1e-2}
+for update_rule in ['sgd', 'sgd_momentum', 'adam', 'rmsprop']:
+    print ('running with ', update_rule)
+
+    torch.manual_seed(0)
+    np.random.seed(0)
+
+    model = FullyConnectedNet([100, 100, 100, 100, 100], weight_scale=5e-2)
+
+    solver = Solver(model, small_data,
+                  num_epochs=5, batch_size=100,
+                  update_rule=update_rule,
+                  optim_config={
+                    'learning_rate': learning_rates[update_rule]
+                  },
+                  verbose=True,)
+    solvers[update_rule] = solver
+    solver.train()
+    solver.record_histories_as_npz("submission_logs/optimizer_experiment_{}".format(update_rule))
+    print
+
+plt.subplot(3, 1, 1)
+plt.title('Training loss')
+plt.xlabel('Iteration')
+
+plt.subplot(3, 1, 2)
+plt.title('Training accuracy')
+plt.xlabel('Epoch')
+
+plt.subplot(3, 1, 3)
+plt.title('Validation accuracy')
+plt.xlabel('Epoch')
+
+for update_rule, solver in solvers.items():
+    plt.subplot(3, 1, 1)
+    plt.plot(solver.loss_history, label=update_rule)
+
+    plt.subplot(3, 1, 2)
+    plt.plot(solver.train_acc_history, '-o', label=update_rule)
+
+    plt.subplot(3, 1, 3)
+    plt.plot(solver.val_acc_history, '-o', label=update_rule)
+
+for i in [1, 2, 3]:
+    plt.subplot(3, 1, i)
+    plt.legend(loc='upper center', ncol=4)
+plt.gcf().set_size_inches(15, 15)
+plt.show()
+```
+
+
+# Learning Rate Decay
+> [!def]
+> 1. **Epoch-based decay**: $$\eta_t = \frac{1}{1+\text{decay rate*epoch num}}\eta_0$$
+> 2. **Exponential Decay**: $$\eta_t=\eta_{0}\times e^{-\text{decay rate}\times\text{epoch}}$$
+> 3. **Polynomial Decay**: $$\eta_t=0.95^{\text{epoch}}\times \eta_0$$
+> 4. **Staircase Decay:** Similar to epoch-based decay but the learning rate changes at specific epochs, and the change can be non-uniform. It is a more generalized form of step decay where the intervals and factors of reduction can vary.
+> 5. **Square Root Decay**: $$\eta_t=\frac{k}{\sqrt{\text{epoch}}}\times \eta_0$$ where $k$ is constant.
+
+
+
 
 
 
