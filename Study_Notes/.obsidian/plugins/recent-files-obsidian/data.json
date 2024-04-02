@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Untitled.md"
+    },
+    {
+      "basename": "Locks_Synchronization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
+    },
+    {
       "basename": "1_Recovery",
       "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "Hypothesis_Testing",
       "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Locks_Synchronization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
     },
     {
       "basename": "Lab01_Unix_Utilities",
@@ -195,10 +199,6 @@
     {
       "basename": "2_Decision_Networks",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
-    },
-    {
-      "basename": "Structured_Matrices",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
     }
   ],
   "omittedPaths": [],

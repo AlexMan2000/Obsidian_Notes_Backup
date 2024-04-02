@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md",
+                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
+                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
+                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -268,8 +268,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "96c03fcdd7660fbb",
+  "active": "9f6b51568eb3cdb7",
   "lastOpenFiles": [
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md",
+    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402105240098.png",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402105229583.png",
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf",
@@ -282,16 +285,13 @@
     "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402093127779.png",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets/image-20240402091143161.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets/image-20240402091135284.png",
     "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency.md",
     "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md",
     "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
     "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md",
     "Data_Science/Statistical_Inference/Causal_Inference",
     "Data_Science/Prompt_Engineering/LLM_Training.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
