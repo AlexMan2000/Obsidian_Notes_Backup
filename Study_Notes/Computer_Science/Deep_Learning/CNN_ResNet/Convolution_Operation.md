@@ -55,25 +55,6 @@
 > 3. **Same Padding**: Ensure that the output feature map after the convolution has the same spatial dimensions (i.e., width and height) as the input feature map. This is particularly useful for deep networks, allowing for the design of deeper architectures without worrying about the shrinking size of the feature maps through the layers.
 
 
-# Convolution as Linear Operator
-> [!example] EECS182 Sp23 Disc04 P1
-> ![](Convolution_Operation.assets/image-20240401124655464.png)![](Convolution_Operation.assets/image-20240401124702439.png)![](Convolution_Operation.assets/image-20240401130249997.png)![](Convolution_Operation.assets/image-20240401133130845.png)![](Convolution_Operation.assets/image-20240401134110424.png)![](Convolution_Operation.assets/image-20240401133901588.png)![](Convolution_Operation.assets/image-20240401134235407.png)![](Convolution_Operation.assets/image-20240401135336162.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -306,6 +306,11 @@ print("Test Error:", test_mse)
 ```
 
 
+# RELU with Different Optimizers
+> [!example] EECS182 Sp23 Disc04 P2
+> ![](Activations&Features.assets/image-20240401195744308.png)![](Activations&Features.assets/image-20240401195810934.png)![](Activations&Features.assets/image-20240401195815550.png)![](Activations&Features.assets/image-20240401195938317.png)![](Activations&Features.assets/image-20240401200002369.png)
+
+
 
 
 # RELU Features Visualization

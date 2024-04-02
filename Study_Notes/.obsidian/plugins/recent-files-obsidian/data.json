@@ -1,12 +1,68 @@
 {
   "recentFiles": [
     {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+      "basename": "Locks_Synchronization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
+    },
+    {
+      "basename": "Concurrency",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency.md"
+    },
+    {
+      "basename": "Shell_Scripts",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
+    },
+    {
+      "basename": "Shell_Lab",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "Environment Setup",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md"
+    },
+    {
+      "basename": "List",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Pintos_Doc/List.pdf"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
+    },
+    {
+      "basename": "Operating System Interfaces",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
+    },
+    {
+      "basename": "HW0_C_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md"
+    },
+    {
+      "basename": "HW1_Pintos_Lists",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
+    },
+    {
+      "basename": "Monitors_Reader_Writers",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Monitors_Reader_Writers.md"
+    },
+    {
+      "basename": "Queues_Message_Passing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
+    },
+    {
+      "basename": "Activations&Features",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
     },
     {
       "basename": "Modular_Codes",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
     },
     {
       "basename": "Convolution_Operation",
@@ -15,6 +71,10 @@
     {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Initialization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
     },
     {
       "basename": "3_Hidden_Markov_Model",
@@ -29,16 +89,8 @@
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
     },
     {
-      "basename": "Initialization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
       "basename": "Optimizer",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
     },
     {
       "basename": "Regularization",
@@ -47,10 +99,6 @@
     {
       "basename": "Back_Propagation_Algorithm",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
-    },
-    {
-      "basename": "Activations&Features",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
     },
     {
       "basename": "1_Recovery",
@@ -151,54 +199,6 @@
     {
       "basename": "Kernel_Methods",
       "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
-    },
-    {
-      "basename": "Features_Hilbert_Space",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
-    },
-    {
-      "basename": "PCA",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md"
-    },
-    {
-      "basename": "Global_Explanation",
-      "path": "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md"
-    },
-    {
-      "basename": "Local_Explanation",
-      "path": "Computer_Science/Deep_Learning/Explainable_AI/Local_Explanation.md"
-    },
-    {
-      "basename": "Vector_Calculus",
-      "path": "Computer_Science/Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md"
-    },
-    {
-      "basename": "Multivariable_Calculus_Review",
-      "path": "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Multivariable_Calculus_Review.md"
-    },
-    {
-      "basename": "LLM_Training",
-      "path": "Data_Science/Prompt_Engineering/LLM_Training.md"
-    },
-    {
-      "basename": "Probability_Formulas_and_Theorems",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
-    },
-    {
-      "basename": "Convergence_Theory",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Convergence_Theory.md"
-    },
-    {
-      "basename": "Concentration_Inequalities&MGF",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
-    },
-    {
-      "basename": "Important_Applications_Of_Basic_Probability",
-      "path": "Computer_Science/Machine_Learning/EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md"
-    },
-    {
-      "basename": "大数定律，中心极限定理和收敛定理",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
     }
   ],
   "omittedPaths": [],

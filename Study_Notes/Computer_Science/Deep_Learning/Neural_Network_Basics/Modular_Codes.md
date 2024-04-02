@@ -130,6 +130,46 @@ def plot_test_train_errors(history):
     plt.show();
 
 
+TRANS = [0, 1, -1]
+
+def plot_with_error_bar(
+        list_of_history, 
+        optim='', 
+        plot_test=False, 
+        plot_train=False,
+        idx=0
+    ):
+    sample_points = np.array(list(list_of_history[0].keys()))
+    etrain = [[hist[s]['train_error'] for s in hist] for hist in list_of_history]
+    etest = [[hist[s]['test_error'] for s in hist] for hist in list_of_history]
+    etrain, etest = np.array(etrain), np.array(etest)
+    med_etrain, lower_train, upper_train \
+        = np.median(etrain, axis=0), np.percentile(etrain, q=0.75, axis=0), np.percentile(etrain, q=0.25, axis=0)
+    med_etest, lower_test, upper_test \
+        = np.median(etest, axis=0), np.percentile(etest, q=0.75, axis=0), np.percentile(etest, q=0.25, axis=0)
+    
+    quantile_train = np.row_stack((lower_train, upper_train))
+    quantile_test = np.row_stack((lower_test, upper_test))
+    
+    if plot_train:
+        plt.errorbar(
+            sample_points / 1e3 + 0.2 * TRANS[idx], med_etrain, 
+            yerr=quantile_train, fmt='-o', 
+            label=f'Train Error {optim}', capsize=5
+        )
+    if plot_test:
+        plt.errorbar(
+            sample_points / 1e3 + 0.2 * TRANS[idx], med_etest, 
+            yerr=quantile_test, fmt='-o', 
+            label=f'Test Error {optim}', capsize=5
+        )
+    
+    plt.xlabel("Iterations (1000's)")
+    plt.ylabel("MSE")
+    plt.yscale('log')
+    plt.legend()
+
+
 def make_iter_slider(iters):
     # print(iters)
     return widgets.SelectionSlider(

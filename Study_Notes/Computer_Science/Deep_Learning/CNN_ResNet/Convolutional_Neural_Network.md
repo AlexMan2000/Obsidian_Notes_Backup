@@ -1,13 +1,4 @@
 # CNN Properties
-## Translational Invariance
-> [!important]
-
-
-
-
-
-
-# CNN and MLP
 > [!example] EECS182 Sp23 DISC04 P2
 > Why does CNN perform better than MLP (Multilayer Perceptron) in various modalities? The three most distinct features that differentiate CNN from MLP are as follows:
 > 1. **Sparse interactions** : Unlike the MLP model, which had to calculate the interactions between all neurons using matrix multiplication, CNN has sparse interactions. This is achieved by using smaller kernels in comparison to the resolution of the input image. This means that CNN can greatly reduce the amount of computation and memory requirements and improve statistical efficiency. This is also called sparse connectivity or sparse weights. 
@@ -15,9 +6,26 @@
 > 3. **Translational equivariance** : Parameter sharing in convolution operation makes the convolution layer equivariant to translation of given input. When a function is equivariant to some operation, it means that when the input changes as much as the given operation, the output of the function also changes in the same way. To explain it more formally, if a function $f(x)$ is equivariant to a transformation $g(x)$, then $f(g(x)) = g(f(x))$. In the case of convolution, $g(x)$ is the translation of the input $x$. While **convolution is equivariant to translation**, it is not equivariant to other transformations such as rotation, scale, or warping. Therefore, various regularizations such as data augmentations are used to obtain CNN functions that are robust to such transformations during training. 
 
 
+
+
+## Sparse Interactions
+> [!example] EECS182 Sp23 Disc04 P1
+> ![](Convolution_Operation.assets/image-20240401124655464.png)![](Convolution_Operation.assets/image-20240401124702439.png)![](Convolution_Operation.assets/image-20240401130249997.png)![](Convolution_Operation.assets/image-20240401133130845.png)![](Convolution_Operation.assets/image-20240401134110424.png)![](Convolution_Operation.assets/image-20240401133901588.png)![](Convolution_Operation.assets/image-20240401134235407.png)![](Convolution_Operation.assets/image-20240401135336162.png)
+
+
+
+
+
+## Translational Invariance
+> [!important]
+> Since CNN's parameters are shared spatially, it is translationally equivariant.
+
+
+
+
+# CNN and MLP Comparisons
 ## Setup
 > [!code]
-
 ```python
 # As usual, a bit of setup
 
@@ -200,7 +208,7 @@ class ThreeLayerMLP(nn.Module):
 
 
 
-## Training Model
+## Compare Accuracy
 > [!code]
 ```python
 learning_rate = 3e-3
@@ -218,6 +226,155 @@ cnn_accuracy = train_model(cnn_model, cnn_optimizer, total_epochs)
 ```
 > [!code] Output
 > ![](Convolutional_Neural_Network.assets/image-20240401151258129.png)![](Convolutional_Neural_Network.assets/image-20240401151321004.png)
+
+
+
+## Compare Translational Equivariance
+> [!code]
+> **Before (28 x 28 input):**
+> ![](Convolutional_Neural_Network.assets/image-20240401180721935.png)
+> 
+> **After (56 x 56 output):**
+> ![](Convolutional_Neural_Network.assets/image-20240401180948713.png)
+```python
+## Some helpers
+def torch_to_numpy(tensor):
+    tensor = tensor.cpu().detach().numpy()
+    return tensor
+
+
+# For each 28 x 28 image, it generate 49 different images with different padding layout, where the number appears in the 56 x 56 output at different location.
+def preprocess_mnist_data(data):
+    # padding tuples: (padding_left, padding_right, padding_top, padding_bottom)
+    # data1 = F.pad(data, (0, 28, 0, 28), mode='constant', value=0)
+    # data2 = F.pad(data, (28, 0, 0, 28), mode='constant', value=0)
+    # data3 = F.pad(data, (0, 28, 28, 0), mode='constant', value=0)
+    # data4 = F.pad(data, (28, 0, 28, 0), mode='constant', value=0)
+    # data = torch.cat((data1, data2, data3, data4), dim=0)
+
+    padded_data_list = []
+
+	# 7 x 7 padded images
+    for i in range(0, 28, 4):
+        for j in range(0, 28, 4):
+            # Make sure that the padding amount horizontally and vertically both sum up to 28, for example, (4, 24, 20, 8) means we pad 4 on the left, 24 on the right, pad 20 to the top and 8 to the bottom.
+            padded_data_list.append(F.pad(data, (i, 28-i, j, 28-j), mode='constant', value=0))
+    
+    padded_data = torch.stack(padded_data_list, dim=0)
+
+    return padded_data
+
+
+
+# Define model layers
+class CNN(nn.Module):
+    def __init__(self):
+        super().__init__()
+        # Input (49, 1, 56, 56)
+	    # Same Padding Layers 56 -> 56
+        self.conv1 = nn.Conv2d(1, 20, 3, 1, padding=1)
+        self.conv2 = nn.Conv2d(20, 40, 3, 1, padding=1)
+        self.conv3 = nn.Conv2d(40, 1, 3, 1, padding=1)
+        # self.conv4 = nn.Conv2d(40, 1, 3, 1, padding=1)
+    def forward(self, x):
+        x = F.relu(self.conv1(x))   
+        x = F.relu(self.conv2(x)) 
+        x = F.relu(self.conv3(x)) 
+        # x = F.relu(self.conv4(x)) 
+        return x
+
+class MLP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(56*56, 100)
+        self.fc2 = nn.Linear(100, 100)
+        self.fc3 = nn.Linear(100, 56*56)
+        
+    def forward(self, x):
+	    # Batch Size 49
+        bs = x.shape[0]
+        # (49, 1, 56, 56) -> (49, 56 * 56)
+        x = x.flatten(start_dim=1)
+        x = F.relu(self.fc1(x))   
+        x = F.relu(self.fc2(x)) 
+        x = F.relu(self.fc3(x)) 
+        # (49, 56 * 56) -> (49, 1, 56, 56)
+        x = x.reshape((bs, 1, 56, 56))
+
+        return x
+
+from ipywidgets import interactive, widgets, Layout
+
+cnn_model = CNN().to(device)
+mlp_model = MLP().to(device)
+
+mnist_sample = mnist_sample.to(device)
+
+# Convert to float32
+mnist_sample = mnist_sample.float()
+cnn_output = torch_to_numpy(cnn_model(mnist_sample))
+mlp_output = torch_to_numpy(mlp_model(mnist_sample))
+
+
+# mnist_sample (49, 1, 56, 56)
+mnist_sample = torch_to_numpy(mnist_sample)
+
+fig = plt.figure(figsize=(5, 5))
+
+  
+
+# Main update function for interactive plot
+
+def update_images(i):
+    fig.clear()
+    f, axarr = plt.subplots(1,3, figsize=(15, 5))
+    # Show the images
+    axarr[0].imshow(mnist_sample[i, 0, :, :])
+    axarr[1].imshow(cnn_output[i, 0, :, :])
+    axarr[2].imshow(mlp_output[i, 0, :, :])
+
+  
+
+    # Set the titles
+    axarr[0].set_title('Input Image')
+    axarr[1].set_title('CNN Output')
+    axarr[2].set_title('MLP Output')
+    plt.axis('off')
+
+  
+
+# Create interactive plot
+ip = interactive(update_images, i=widgets.IntSlider(min=0, max=48, step=1, value=0))
+
+ip
+```
+> [!code] Output
+> ![](Convolutional_Neural_Network.assets/无标题视频.gif)![](Convolutional_Neural_Network.assets/image-20240401193332117.png)
+
+
+
+
+# Initialization in CNN
+
+
+
+
+
+# Batch Normalization in CNN
+
+
+
+
+
+
+
+
+# Dropout in CNN
+
+
+
+
+# Data Augmentation in CNN
 
 
 
