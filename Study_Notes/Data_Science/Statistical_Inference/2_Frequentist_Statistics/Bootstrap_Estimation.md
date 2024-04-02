@@ -75,6 +75,15 @@ Also see [无参Bootstrap](../../../../Mathematics/Probablity_Statistics/Statist
 > [!def]
 > ![](Bootstrap_Estimation.assets/image-20240311110918696.png)
 
+> [!example]
+> ![](Bootstrap_Estimation.assets/image-20240401224810728.png)![](Bootstrap_Estimation.assets/image-20240401224825296.png)![](Bootstrap_Estimation.assets/image-20240401224831079.png)![](Bootstrap_Estimation.assets/image-20240401224844906.png)
+
+
+
+
+
+
+
 
 
 

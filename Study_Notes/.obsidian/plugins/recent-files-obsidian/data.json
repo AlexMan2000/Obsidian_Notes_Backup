@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Locks_Synchronization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
+      "basename": "1_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
+    },
+    {
+      "basename": "Project4_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
+    },
+    {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
     {
       "basename": "Concurrency",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency.md"
+    },
+    {
+      "basename": "Bootstrap_Estimation",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
+    },
+    {
+      "basename": "Non-parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Hypothesis_Testing",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Locks_Synchronization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Locks_Synchronization.md"
+    },
+    {
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
+    },
+    {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
     },
     {
       "basename": "Shell_Scripts",
@@ -101,20 +137,8 @@
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
     },
     {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
       "basename": "PCA_Low-rank_Approximation",
       "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
     {
       "basename": "Response_to_Exponential",
@@ -175,30 +199,6 @@
     {
       "basename": "Structured_Matrices",
       "path": "Computer_Science/Machine_Learning/EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md"
-    },
-    {
-      "basename": "Binary_Decision_Rules",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
-    },
-    {
-      "basename": "5_Decision_Theory",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/5_Decision_Theory.md"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md"
-    },
-    {
-      "basename": "Mixture_of_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian.md"
-    },
-    {
-      "basename": "K-Means",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/K-Means.md"
-    },
-    {
-      "basename": "Kernel_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
     }
   ],
   "omittedPaths": [],

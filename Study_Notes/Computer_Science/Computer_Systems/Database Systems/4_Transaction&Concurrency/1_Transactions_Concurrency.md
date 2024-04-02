@@ -386,6 +386,7 @@
 > 1. If we request a lock at some level, we automatically assume that we lock all the subsequent lower levels. For example, if we use S lock at table level, then it automatically lock all the tuples with S lock.
 > 2. Intention Locks doesn't pose a lock at current level, but may put lock at subsequent lower level. For example, if we use IX lock at table level, it may have intention to put an X lock at an arbitrary tuple.
 > 3. The reason why SIX and S is not compatible is that, even if SIX and S is compatible at current level(both are S), the intention to put X(due to IX) at lower level may cause incompatibility with S at lower levels(since S puts S at lower level).
+> 4. We can never put intention locks at the bottom layer of the lock hierarchy tree since we have to put some lock on tuples. The atomic object for DBMS is tuple(record).
 
 
 
@@ -410,11 +411,15 @@
 
 
 ## Practice Exercises
+### Exercise 1
 > [!example] CMU15445 HW4
 > ![](1_Transactions_Concurrency.assets/image-20240309150706463.png)![](1_Transactions_Concurrency.assets/image-20240309150714338.png)![](1_Transactions_Concurrency.assets/image-20240309150721364.png)![](1_Transactions_Concurrency.assets/image-20240309150729110.png)![](1_Transactions_Concurrency.assets/image-20240309150737584.png)![](1_Transactions_Concurrency.assets/image-20240309150743640.png)
 
 
 
+### Exercise 2
+> [!example] EECS186 Fa20 Disc08 P4
+> ![](1_Transactions_Concurrency.assets/image-20240402085405809.png)
 
 
 

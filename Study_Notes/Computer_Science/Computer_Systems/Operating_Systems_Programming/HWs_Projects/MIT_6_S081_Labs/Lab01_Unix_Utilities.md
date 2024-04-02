@@ -337,15 +337,23 @@ int main(int argc, char *argv[])
         fprintf(2, "usage: xargs command (arg...)\n");
         exit(1);
     }
+	// command <- xargs
     char *command = argv[1];
+
+	// buf for stdin char, 1 byte
     char buf;
-    char new_argv[MAXARG][MAXLEN]; // assuming the maximun single parameter length is 512
+
+	// []
+    char new_argv[MAXARG][MAXLEN]; // assuming the maximum single parameter length is 512
     char *p_new_argv[MAXARG];
 
     while(1) {
+	    
         memset(new_argv, 0, MAXARG * MAXLEN); // reset the parameter
 
         for(int i = 1; i < argc; ++i) {
+	        // put the arguments after xargs into new_argv
+	        // xargs echo line, put "echo", "line" into new_argv
             strcpy(new_argv[i-1], argv[i]);
         }
 
@@ -353,33 +361,52 @@ int main(int argc, char *argv[])
         int offset = 0;
         int is_read = 0;
 
+		// For xargs program, it executes the program following it immediately x number of times, based on the number of lines passed to the input pipe of xargs
+		/* echo "1\n2" | xargs echo line
+		*  > line 1
+		*    line 2
+		*/
+		// Read from stdin to buf one byte after another, here we are reading "1\n2" from stdin
         while((is_read = read(0, &buf, 1)) > 0) {
+
+			// Terminate for the current argument.
             if(buf == ' ') {
                 cur_argc++;
                 offset = 0; 
                 continue;
             }
+
+			// A new line.
             if(buf == '\n') {
                 break;
             }
+
+			
             if(offset==MAXLEN) {
-                fprintf(2, "xargs: parameter too long\n");
+                fprintf(2, "xargs: argument too long\n");
                 exit(1);
             }
+
+			
             if(cur_argc == MAXARG) {
                 fprintf(2, "xargs: too many arguments\n");
                 exit(1);
             }
+
+			
             new_argv[cur_argc][offset++] = buf;
         }
 
         if(is_read <= 0) {
             break;
         } 
+        
         for(int i = 0; i <= cur_argc; ++i) {
             p_new_argv[i] = new_argv[i];
         }
+        
         if(fork() == 0) {
+	        // p_new_argv here mimic the behavior of char* argv[]
             exec(command, p_new_argv);
             exit(1);
         } 

@@ -58,9 +58,20 @@
 
 # Undo/Redo Logging
 ## Undo Logging
+### Components
 > [!def]
 > ![](1_Recovery.assets/image-20240314130445362.png)![](1_Recovery.assets/image-20240314130152995.png)![](1_Recovery.assets/image-20240314130409594.png)
 
+
+### Walkthrough
+> [!example] EECS186 Fa20 Disc09 P1
+> ![](1_Recovery.assets/image-20240402093127779.png)![](1_Recovery.assets/image-20240402093144169.png)
+> If system crashes while we are undoing, we simply redo all the undos again since we have no idea what has been undone before this crash, so it's better to redo all the undos.
+
+
+
+
+### Recovery
 > [!example]
 > ![](1_Recovery.assets/image-20240314130420573.png)
 
@@ -68,8 +79,17 @@
 
 
 ## Redo Logging
+### Components
 > [!def]
 > ![](1_Recovery.assets/image-20240314130504798.png)![](1_Recovery.assets/image-20240314130610775.png)![](1_Recovery.assets/image-20240314130644337.png)![](1_Recovery.assets/image-20240314130720673.png)
+
+
+
+### Walkthrough
+> [!example] EECS186 Fa20 Disc09 P2
+> ![](1_Recovery.assets/image-20240402094259771.png)![](1_Recovery.assets/image-20240402094314002.png)
+
+
 
 
 
@@ -77,16 +97,6 @@
 ## Comparisons
 > [!important]
 > ![](1_Recovery.assets/image-20240314130736044.png)![](1_Recovery.assets/image-20240314130744159.png)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -282,14 +292,20 @@
 
 ### Analysis Phase
 > [!important]
-> ![](1_Recovery.assets/image-20240314165856204.png)![](1_Recovery.assets/image-20240314165816175.png)
+> ![](1_Recovery.assets/image-20240402104821681.png)![](1_Recovery.assets/image-20240402104844053.png)![](1_Recovery.assets/image-20240314165856204.png)![](1_Recovery.assets/image-20240314165816175.png)
 > We start out traversing of logs from the last `BEGIN CKPT`. Since the tables written to the log can be the state of tables at any point between the `BEGIN CKPT` and `END CKPT`. 
 > 
 > This means we need to start at the `BEGIN CKPT` because we’re not sure if the records after it are actually reflected in the tables that were written to the log.
 > 
 
-> [!example]
+> [!example] Example from Notes
 > ![](1_Recovery.assets/image-20240314170432797.png)![](1_Recovery.assets/image-20240314170441493.png)![](1_Recovery.assets/image-20240314170448896.png)![](1_Recovery.assets/image-20240314170455540.png)![](1_Recovery.assets/image-20240314172540240.png)
+
+> [!example] Example from Fa20 Disc09 P3
+> See [CS 186 Discussion 9](CS%20186%20Discussion%209.pdf)
+> ![](1_Recovery.assets/image-20240402105229583.png)![](1_Recovery.assets/image-20240402105240098.png)
+
+
 
 
 
