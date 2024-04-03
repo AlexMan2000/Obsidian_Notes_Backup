@@ -185,6 +185,7 @@ pid_t getpid(void);
 pid_t getppid(void);
 ```
 
+
 ## Creating and Terminating Process
 ### Process State(Simplified)
 > [!def]

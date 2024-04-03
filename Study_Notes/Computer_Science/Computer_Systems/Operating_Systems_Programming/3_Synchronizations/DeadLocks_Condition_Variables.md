@@ -922,11 +922,11 @@ static void eat(unsigned int id) {
 }  
 ​  
 static void philosopher(unsigned int id) {  
-  /* same as in 3.5.1 */  
+  /* same as in version 1 */  
 }  
 ​  
 int main(int argc, const char *argv[]) {  
-  /* same as in 3.5.1 */  
+  /* same as in version 1 */  
 }   
 ```
 > [!exp]
@@ -936,9 +936,11 @@ int main(int argc, const char *argv[]) {
 > - The above solution uses _busy waiting_, which is a concurrency jargon used when a thread periodically checks to see whether some condition has changed so it can move on to do more meaningful work.
 > - The problem with busy waiting, in most situations, is that the busy-waiting thread **occupies the CPU during its time windows, wasting the CPU time**, which would be better spent to ensure other threads — who presumably have meaningful work — to proceed.
 > - **A better solution:** if a philosopher doesn't have permission to advance (i.e. `numAllowed` is confirmed to be zero), then that thread should be **put to sleep indefinitely** until some other thread sees a reason to **wake it up**. In this example, another philosopher thread, after it increments `numAllowed` within `grantPermission()`, could notify the indefinitely blocked thread that some permissions slips are now available.
-    
 
-## Version 3: improve the solution - no busy-waiting
+
+
+# Condition Variable
+## Version 3: Improve the solution - no busy waiting
 > [!def]
 > We can get rid of the busy-waiting situation by putting the thread into **sleep** and having another thread **wake it up** when some condition is met.
 > 
@@ -1016,13 +1018,7 @@ int main(int argc, const char *argv[]) {
 > - Because `numAllowed` is being examined and potentially changed concurrently by many threads, and because a condition framed in terms of it (that is, `numAllowed > 0`) influences whether a thread blocks or continues uninterrupted, we still need a traditional `mutex` here so that competing threads can lock down **exclusive access** to `numAllowed`.
 > - Before `cva::wait()` is called, the the supplied `mutex` lock should have been lock already. If `cva::wait()` notices that the supplied condition isn't met, the `cva` object puts the current thread to **sleep** indefinitely and **automatically release**s the lock. When the `cva` object is notified and a waiting thread is switched back on CPU, it **automatically re-acquire**s the `mutex` lock which it released just prior to sleeping, and **re-evaluate the condition** for that thread. If the condition is met, then the thread proceeds to the following lines; otherwise, it automatically releases the lock again and put the thread back in sleep, and then waits for another notification.
 > - This is KOB.
-
-
-
-# Condition Variable
-
-
-First call (lock should be locked already)  
+```First call (lock should be locked already)  
           │  
           ▼          ┌───────────────┐  
           ├◀─success─┤re-acquire lock◀────┐  sleep: blocked (off CPU)  
@@ -1043,10 +1039,15 @@ First call (lock should be locked already)
 │  lock & proceed   │     FLOWCHART:  
 └─────────┬─────────┘     void wait(Lock &lock, Predicate condition);   
           ▼                                     
+```
 
-- `codition_variable_any` class in summary:
-    
-    /* constructor */  
+
+## Condition Variable Any Class
+
+
+`codition_variable_any` class in summary:
+```c++
+/* constructor */  
     condition_variable_any();  
     ​  
     /* wait: blocks the current thread   
@@ -1058,35 +1059,28 @@ First call (lock should be locked already)
     void notify_all();  
     ​  
     /* other methods... */
-    
-    - Predicate: a function that returns a boolean. You can pass in a function pointer to a predicate, or pass in a [lambda expression](https://msdn.microsoft.com/en-us/library/dd293608.aspx) that is a predicate. If the predicate returns `false`, then `cva::wait()` puts the calling thread into sleep.
-        
-    
-    > You should avoid using the one-argument version of `wait()`, which takes the lock as the only argument, because this version of `wait()` sometimes returns without being notified - "[spurious wake](https://www.justsoftwaresolutions.co.uk/threading/condition-variable-spurious-wakes.html)".
-    
-- The `lock_guard` class exists to **automate the locking and unlocking of a** `mutex`.
-    
-    - The `lock_guard()` constructor binds an internal reference to the supplied `mutex` object and calls `lock()` on it (if the `mutex` lock is already locked by another thread, the constructor is blocked inside, until the lock is released).
-        
-    - The `~lock_guard()` destructor releases the lock on the same `mutex` object.
-        
-    - The overall effect: the code section from the constructor being called to the destructor being called (often implicitly at function return or exception throwing) is marked as a `mutex`-protected critical region.
-        
-    
-    {                          {  
+```
+> [!exp]
+> - Predicate: a function that returns a boolean. You can pass in a function pointer to a predicate, or pass in a [lambda expression](https://msdn.microsoft.com/en-us/library/dd293608.aspx) that is a predicate. If the predicate returns `false`, then `cva::wait()` puts the calling thread into sleep. You should avoid using the one-argument version of `wait()`, which takes the lock as the only argument, because this version of `wait()` sometimes returns without being notified - "[spurious wake](https://www.justsoftwaresolutions.co.uk/threading/condition-variable-spurious-wakes.html)"
+> - The `lock_guard` class exists to **automate the locking and unlocking of a** `mutex`.
+> - The `lock_guard()` constructor binds an internal reference to the supplied `mutex` object and calls `lock()` on it (if the `mutex` lock is already locked by another thread, the constructor is blocked inside, until the lock is released).
+> - The `~lock_guard()` destructor releases the lock on the same `mutex` object.
+> - The overall effect: the code section from the constructor being called to the destructor being called (often implicitly at function return or exception throwing) is marked as a `mutex`-protected critical region.
+```c++
+{                              {  
       ...                        ...  
       m.lock();                  lock_guard<mutex> lg(m); /* lock m */  
       do_something();   <=>      do_something();  
       m.unlock();              } /* the destructor unlocks m */  
-    }                                  
-    
-    > SIDE NOTE: Java: `lock_guard` is C++ STL's answer to Java keyword `synchronized`.
-    
-    > SIDE NOTE: The `lock_guard` is a template class, because other than `mutex` class, some other classes like `recursive_mutex` and `timed_mutex` have such `lock()` and `unlock()` methods, too.
-    
-    Its prototype is
-    
-    /* template declaration */  
+      }    
+```
+> [!exp]
+> SIDE NOTE: Java: `lock_guard` is C++ STL's answer to Java keyword `synchronized`.
+> SIDE NOTE: The `lock_guard` is a template class, because other than `mutex` class, some other classes like `recursive_mutex` and `timed_mutex` have such `lock()` and `unlock()` methods, too.
+> 
+> Its prototype is
+```c++
+/* template declaration */  
     template<typename BasicLockable> lass lock_guard;  
     ​  
     /* constructor (the basic one) */  
@@ -1094,14 +1088,11 @@ First call (lock should be locked already)
     ​  
     /* destructor */  
     ~lock_guard();
-    
-- A pedendic note: to let the other threads to proceed as much as they can, in the `eat()` function, you can place `grantPermission();` immediately after successfully locking the left and right forks, since now that the thread succeeded in locking the two forks already, there is no reason to continue to hold the permission slip - it can give the slip back to the pool, knowing that another thread may grab the slip and try to lock forks.
-    
-    > Placing `grantPermission();` after unlocking the forks is acceptable as well, but it has the opposite effect - it further delays the progress of other threads.
-    
-- Another pedendic note: the global variable `numAllowed`, i.e. the number of available permission slips, keeps track of the bidding situation of a resource that is at premium - like the forks, which is fewer than the dining philosopher threads, or network connections, or database access, ...
-
-
-
-
+```
+> [!exp]
+> A pedendic note: to let the other threads to proceed as much as they can, in the eat() function, you can place grantPermission(); immediately after successfully locking the left and right forks, since now that the thread succeeded in locking the two forks already, there is no reason to continue to hold the permission slip - it can give the slip back to the pool, knowing that another thread may grab the slip and try to lock forks.
+> 
+> Placing `grantPermission();` after unlocking the forks is acceptable as well, but it has the opposite effect - it further delays the progress of other threads.
+> 
+> Another pedendic note: the global variable `numAllowed`, i.e. the number of available permission slips, keeps track of the bidding situation of a resource that is at premium - like the forks, which is fewer than the dining philosopher threads, or network connections, or database access, ...
 

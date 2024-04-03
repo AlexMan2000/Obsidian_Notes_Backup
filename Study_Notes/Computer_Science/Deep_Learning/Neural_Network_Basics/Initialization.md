@@ -6,7 +6,7 @@
 > In summary, initializing all weights to be constant will result in symmetry learning.
 > ![](Initialization.assets/image-20240319130248258.png)![](Back_Propagation_Algorithm.assets/image-20240319130316823.png)![](Back_Propagation_Algorithm.assets/image-20240319130332758.png)![](Back_Propagation_Algorithm.assets/image-20240319172156358.png)![](Back_Propagation_Algorithm.assets/image-20240319172240886.png)
 
-
+   
 
 ## Zero Initialization
 > [!important]

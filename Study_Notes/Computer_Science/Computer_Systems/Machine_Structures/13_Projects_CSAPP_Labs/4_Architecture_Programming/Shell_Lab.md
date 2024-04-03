@@ -40,6 +40,10 @@
 
 
 
+## CRLF and LF
+> If you cannot run `./sdriver.pl`, then you should manually save CRLF file as LF(linux-formatted).
+
+
 # Phase 1: eval
 
 

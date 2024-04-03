@@ -20,42 +20,42 @@
 
 ## Dispatch Loop
 > [!concept]
-> ![](Concurrency.assets/image-20240306103753955.png)
+> ![](Concurrency_Programming.assets/image-20240306103753955.png)
 
 
 
 ### Starting a Thread
 > [!concept]
-> ![](Concurrency.assets/image-20240306110838338.png)![](Concurrency.assets/image-20240306110525188.png)![](Concurrency.assets/image-20240306110519133.png)![](Concurrency.assets/image-20240306110532918.png)![](Concurrency.assets/image-20240306110544795.png)
+> ![](Concurrency_Programming.assets/image-20240306110838338.png)![](Concurrency_Programming.assets/image-20240306110525188.png)![](Concurrency_Programming.assets/image-20240306110519133.png)![](Concurrency_Programming.assets/image-20240306110532918.png)![](Concurrency_Programming.assets/image-20240306110544795.png)
 
 
 
 
 ### Running a Thread
 > [!important]
-> ![](Concurrency.assets/image-20240306103924493.png)
+> ![](Concurrency_Programming.assets/image-20240306103924493.png)
 
 
 ### Switching between Threads
 #### Internal Events: yield()
 > [!def]
-> ![](Concurrency.assets/image-20240306104000407.png)![](Concurrency.assets/image-20240306104201132.png)
+> ![](Concurrency_Programming.assets/image-20240306104000407.png)![](Concurrency_Programming.assets/image-20240306104201132.png)
 > Each thread has its own kernel stack, each process has its own kernel stack. Threads' kernel stacks are well contained in the same portion of memory of its containing process's kernel stack.
 > 
 > **Q: What's the relationship between user stack and kernel stack?**
 > For each thread or process, there can only be one active stack at the same time. Either the user stack is in use or the kernel stack is in use.
-> ![](Concurrency.assets/image-20240306105556263.png)
+> ![](Concurrency_Programming.assets/image-20240306105556263.png)
 
 
 #### External Events: Interrupts
 > [!def]
-> ![](Concurrency.assets/image-20240306110315551.png)![](Concurrency.assets/image-20240306110322915.png)![](Concurrency.assets/image-20240306110356378.png)
+> ![](Concurrency_Programming.assets/image-20240306110315551.png)![](Concurrency_Programming.assets/image-20240306110322915.png)![](Concurrency_Programming.assets/image-20240306110356378.png)
 
 
 
 #### External Events: Timer
 > [!def]
-> ![](Concurrency.assets/image-20240306110409419.png)
+> ![](Concurrency_Programming.assets/image-20240306110409419.png)
 
 
 
@@ -67,12 +67,12 @@
 ## Context Switching
 ### Switching Procedures
 > [!important]
-> ![](Concurrency.assets/image-20240306105857605.png)![](Concurrency.assets/image-20240306105945354.png)
+> ![](Concurrency_Programming.assets/image-20240306105857605.png)![](Concurrency_Programming.assets/image-20240306105945354.png)
 
 
 ### Efficiency
 > [!def]
-> ![](Concurrency.assets/image-20240306110205866.png)
+> ![](Concurrency_Programming.assets/image-20240306110205866.png)
 
 
 
@@ -378,7 +378,7 @@ public class Parcae {
 
 ## Thread and JUnit
 > [!bug] Caveats
-> ![](Concurrency.assets/image-20240306115250618.png)
+> ![](Concurrency_Programming.assets/image-20240306115250618.png)
 
 
 
