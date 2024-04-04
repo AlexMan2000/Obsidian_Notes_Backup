@@ -20,6 +20,19 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 
 
 
+
+
+
+
+
+## Life Cycle of I/O Request
+> [!important]
+> ![](2_Files_IOs.assets/image-20240403125210668.png)
+
+
+
+
+
 # C High-Level File API
 > [!def]
 > ![](2_Files_IOs.assets/image-20240229171357642.png)![](2_Files_IOs.assets/image-20240229171416742.png)
@@ -34,6 +47,14 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 ## Block-by-Block I/O
 > [!concept]
 > ![](2_Files_IOs.assets/image-20240229171507969.png)![](2_Files_IOs.assets/image-20240229171524136.png)
+
+
+
+## Summary
+> [!summary]
+> ![](2_Files_IOs.assets/image-20240403123726541.png)![](2_Files_IOs.assets/image-20240403123733051.png)
+
+
 
 
 
@@ -57,6 +78,13 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 > Reading Less refers to short count problem, details see [Short Counts](../../Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md#Short%20Counts)
 > 
 > ![](2_Files_IOs.assets/image-20240229173742103.png)
+> 
+
+> 
+
+
+
+
 
 
 
@@ -67,3 +95,8 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 > More details see 
 
 
+
+
+## Summary
+> [!summary]
+> ![](2_Files_IOs.assets/image-20240403123639795.png)![](2_Files_IOs.assets/image-20240403123658776.png)

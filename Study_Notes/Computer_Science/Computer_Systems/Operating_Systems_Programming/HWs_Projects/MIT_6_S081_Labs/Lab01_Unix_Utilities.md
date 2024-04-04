@@ -323,7 +323,7 @@ int main(int argc, char* argv[]) {
 # Task 5: Xargs 
 > [!code]
 > ![](Lab01_Unix_Utilities.assets/image-20240302114107077.png)
-> See [I/O Redirection](../../2_Abstractions/3_Sockets_IPCs.md#Pipes#I/O%20Redirection) for the idea of `echo ... | ...`.
+> See [I/O Redirection](../../2_Abstractions/3_IPCs.md#Pipes#I/O%20Redirection) for the idea of `echo ... | ...`.
 ```c
 #include "kernel/types.h"
 #include "kernel/stat.h"

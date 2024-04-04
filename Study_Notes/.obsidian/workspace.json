@@ -13,74 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0c10afd672a22a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/DeadLocks_Condition_Variables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bffdcdca788801e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fae84ac7a09b718",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fb941691c7b4ebf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b9f9b0575e894fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "waitpid",
+                "query": "tag:#A-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,6 +117,14 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "de0d1db8e632e64a",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
               "state": {}
             }
           }
@@ -249,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 303.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -265,57 +212,57 @@
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian-custom-frames:Open Notion": false,
       "obsidian-custom-frames:Open Google Calendar": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "4b9f9b0575e894fe",
+  "active": "35ab89ac09b01d61",
   "lastOpenFiles": [
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.assets/image-20240403084840289.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.assets/image-20240403084818279.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets/image-20240404193852362.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets/image-20240404192309162.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets/image-20240404192306428.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets/image-20240404192129327.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets/image-20240404173606142.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.assets/image-20240404171124706.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.assets/image-20240404171118038.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.assets/image-20240404171054737.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.assets/image-20240404171030553.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.assets/image-20240404170801333.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Monitors_Reader_Writers.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
-    "Computer_Science/Java_Language/Java_IO/Untitled.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Untitled.md",
+    "Computer_Science/Parallel_Programming",
+    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Web_Server.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Thread_Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Process_Level_Parallelism.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming",
+    "Computer_Science/Computer_Systems/Machine_Structures/Untitled.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets",
     "Computer_Science/Java_Language/Java_IO/AIO",
     "Computer_Science/Java_Language/Java_IO/NIO",
     "Computer_Science/Java_Language/Java_IO/BIO",
     "Computer_Science/Java_Language/Java_IO",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/DeadLocks_Condition_Variables.md",
     "Computer_Science/Java_Language/Java_Netty",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrency_Programming.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.assets/image-20240402214633237.png",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.assets/image-20240402210839940.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.assets",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/ThreadFrame.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/13_Projects_CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/COMP530_Labs",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_Sockets_IPCs.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402105240098.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402105229583.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402104844053.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402104821681.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402094314002.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402094259771.png",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.assets/image-20240402094251166.png",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
-    "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md",
-    "Data_Science/Prompt_Engineering/LLM_Training.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md",
     "未命名.canvas"
   ]
 }

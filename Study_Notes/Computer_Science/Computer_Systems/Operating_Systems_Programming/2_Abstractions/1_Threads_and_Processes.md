@@ -84,9 +84,9 @@
 > [!def]
 > ![](1_Threads_and_Processes.assets/image-20240228101433433.png)![](1_Threads_and_Processes.assets/image-20240229095604877.png)![](1_Threads_and_Processes.assets/image-20240229095614449.png)![](1_Threads_and_Processes.assets/image-20240229095627810.png)
 > **More details of :**
-> 1. Synchonization: 
-> 2. Critical Section:
-> 3. Lock: 
+> 1. Synchonization: Chapter 3 of notes
+> 2. Critical Section: Chapter 3 of notes
+> 3. Lock: Chapter 3 of notes
 
 
 
@@ -204,7 +204,5 @@ if (cpid > 0) {
 
 > [!quiz] Sp24 Disc01 P2.2
 > ![](1_Threads_and_Processes.assets/image-20240229164240082.png)![](1_Threads_and_Processes.assets/image-20240229164514784.png)![](1_Threads_and_Processes.assets/image-20240229164703170.png)![](1_Threads_and_Processes.assets/image-20240229165031172.png)
-
-
 
 

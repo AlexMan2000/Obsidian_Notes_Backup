@@ -60,7 +60,9 @@
 > Each process has its own address space and resources such as code, global data, and files. 
 > 
 > Processes are protected from each other due to differing address spaces. If a bug were to corrupt a process, it would generally avoid compromising the entire system due to the protections from the address space.
-> ![](2_Fundamental%20OS%20Concepts.assets/image-20231206225619441.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206230848609.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206230905327.png)
+> ![](2_Fundamental%20OS%20Concepts.assets/image-20231206225619441.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206230848609.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206230905327.png)![](2_Fundamental%20OS%20Concepts.assets/image-20240404170502562.png)
+
+
 
 
 
@@ -98,7 +100,9 @@
 > ![](2_Fundamental%20OS%20Concepts.assets/image-20231206231210104.png)![](2_Fundamental%20OS%20Concepts.assets/image-20231206231458556.png)
 
 
-## Context Switching
+
+
+## Mode Switching
 > [!def]
 > There are three main ways the system switches from a user mode to kernel mode (mode transfer). 
 > - When processes request a system service, this is known as a **system call** (syscall). While similar to a function call, syscalls occur ”outside” the process, meaning it is executed in the kernel mode. Therefore, syscalls encompass functionality that requires the privileges or abstractions of being in the kernel mode. 
@@ -108,7 +112,9 @@
 > All three types of mode transfers are **unprogrammed control transfers**. Instead of the process specifying the specific address like in a regular function call, the process specifies an index into the **interrupt vector table (IVT)**, which is a table that contains the address and properties of each interrupt handler. The ”interrupt” in IVT is used as a general term that’s not just limited to the interrupts mentioned in the previous paragraph. 
 > 
 > The location of the IVT is stored in a designated processor register.
-> 
+> ![](2_Fundamental%20OS%20Concepts.assets/image-20240404170653125.png)![](2_Fundamental%20OS%20Concepts.assets/image-20240404170659064.png)
+
+
 
 
 ## Calling Convention
@@ -121,4 +127,12 @@
 ## Linux /dev/kmem file
 > [!quiz]
 > ![](2_Fundamental%20OS%20Concepts.assets/image-20240229163029614.png)
+
+
+
+## Kernel Stack
+> [!def]
+> ![](2_Fundamental%20OS%20Concepts.assets/image-20240404170801333.png)
+
+
 
