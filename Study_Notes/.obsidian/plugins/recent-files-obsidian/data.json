@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+    },
+    {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
+    },
+    {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
       "basename": "Java_Threads",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
     },
@@ -11,10 +27,6 @@
     {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
       "basename": "Environment Setup",
@@ -93,20 +105,12 @@
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
     },
     {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
       "basename": "Bootstrap_Estimation",
       "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
     },
     {
       "basename": "4_System_Calls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
     },
     {
       "basename": "1_Recovery",
@@ -195,10 +199,6 @@
     {
       "basename": "Regularization",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
-    },
-    {
-      "basename": "Back_Propagation_Algorithm",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
     }
   ],
   "omittedPaths": [],
