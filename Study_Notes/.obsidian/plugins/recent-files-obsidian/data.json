@@ -5,6 +5,10 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
+      "basename": "Project_1",
+      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
+    },
+    {
       "basename": "Lab02_Syscalls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Optimizer",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Regularization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Regularization.md"
     }
   ],
   "omittedPaths": [],

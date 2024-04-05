@@ -74,18 +74,126 @@ static bool put_user (uint8_t *udst, uint8_t byte) {
 
 
 ## Threads
-### Thread Struct
+### Thread Struct(TCB)
+> [!def]
+> Each thread struct represents either a pure kernel thread (i.e. a thread that only runs kernel code) or a thread in a user process.
+> ![](Project0_Pregame.assets/image-20240405105130165.png)
+> This layout has two consequences. First, struct thread must not be allowed to grow too big. If it does, then there will not be enough room for the kernel stack. The base struct thread is only a few bytes in size. It probably should stay well under 1 kB.
+> 
+> Second, kernel stacks must not be allowed to grow too large. If a stack overflows, it will corrupt the thread state. 
+> 
+> Thus, kernel functions should not allocate large structures or arrays as non-static local variables. Use dynamic allocation with `malloc()` or `palloc_get_page()` instead.
+```c
+struct thread {
+  /* Owned by thread.c. */
+  tid_t tid;                 /* Thread identifier. */
+  enum thread_status status; /* Thread state. */
+  char name[16];             /* Name (for debugging purposes). */
+  uint8_t* stack;            /* Saved stack pointer. */
+  int priority;              /* Priority. */
+  struct list_elem allelem;  /* List element for all threads list. */
+
+  /* Shared between thread.c and synch.c. */
+  struct list_elem elem; /* List element. */
+}
+```
+> [!exp]
+> - `tid_t`: The thread’s thread identifier or _tid_. Every thread must have a tid that is unique over the entire lifetime of the kernel. By default, `tid_t` is a `typedef` for `int` and each new thread receives the numerically next higher tid, starting from 1 for the initial process.
+> - `enum thread_status status`: 
+> 	- `THREAD_RUNNING`: The thread is running. Exactly one thread is running at a given time. `thread_current()` returns the running thread.
+> 	- `THREAD_READY`: The thread is ready to run, but it’s not running right now. The thread could be selected to run the next time the scheduler is invoked. Ready threads are kept in a doubly linked list called `ready_list`.
+> 	- `THREAD_BLOCKED`: The thread is waiting for something, e.g. a lock to become available or an interrupt to be invoked. **The thread won’t be scheduled again until it transitions to the `THREAD_READY` state with a call to `thread_unblock()`.** This is most conveniently done indirectly, using one of the Pintos synchronization primitives that block and unblock threads automatically.
+> 	- `THREAD_DYING`: The thread has exited and will be destroyed by the scheduler after switching to the next thread.
+> - `char name[16]`: The thread’s name as a string, or at least the first few characters of it.
+> - `uint8_t *stack`: This pointer is not in use while the thread is in the `THREAD_RUNNING` state. But when the thread is not running, then in order to prepare for later schduling, the kernel will push the content that is minimally required for thread running onto the stack. Thus the `stack` points to the stack top. When an interrupt occurs, whether in the kernel or a user program, a `struct intr_frame` is pushed onto the stack. When the interrupt occurs in a user program, the `struct intr_frame` is always at the very top of the page.
+> - `int priority`: Thread priority. From 0 to 63.
+> 
+> ![](Project0_Pregame.assets/image-20240405150936109.png)
+
+
+
+### Thread Functions
+> [!important]
+> ![](Project0_Pregame.assets/image-20240405151004239.png)
+
+
+
+
+## Processes
+### Process Struct(PCB)
+> [!important]
+> Every process is associated with a process control block (PCB), containing all the information needed to manange the process at runtime. In Pintos (as in most operating systems with multithreaded user processes), each thread _within_ a process also owns a data structure known as a Thread Control Block (TCB), which contains information relevant to that thread in particular, including its name, priority, and stack pointer. 
+> 
+> Any information which is relevant to _all_ threads in the process (e.g. the page directory or name of the process) is instead contained in the PCB. Finally, note that the kernel associates with each user thread exactly one kernel thread to manage privileged operations relevant to the thread.
+> 
+> In Pintos, the TCB of a thread is stored within the same page as the thread’s stack, at the bottom of the page. This is possible because each thread has its own stack; since there is no stack owned exclusively by the process (and not by any of its child threads), the PCB instead must be stored in the process’ heap via `malloc`, where all of its child threads can access it via pointer. Here the key distinction between thread and process are that:
+> - Thread has its own execution stack for function calls. TCB is stored on each thread's own stack(`struct thread` at the bottom and kernel stack at the top, 4KB in total).
+> - Process doesn't have its own stack since when OS starts a process, it starts a main thread within this process. We can think of a process's stack being the stack of the threads it mananges.
+> - We cannot save process state on the stack since it is used for thread execution. Instead, heap is used to stored PCB.
+> 
+> A barebones definition of the PCB can be found in the file `userprog/process.c`. You will likely find it necessary to extend this definition in the course of completing the projects.
+```c
+/* Initializes user programs in the system by ensuring the main
+   thread has a minimal PCB so that it can execute and wait for
+   the first user process. Any additions to the PCB should be also
+   initialized here if main needs those members */
+void userprog_init(void) {
+  struct thread* t = thread_current();
+  bool success;
+
+  /* Allocate process control block
+     It is imoprtant that this is a call to calloc and not malloc,
+     so that t->pcb->pagedir is guaranteed to be NULL (the kernel's
+     page directory) when t->pcb is assigned, because a timer interrupt
+     can come at any time and activate our pagedir */
+  t->pcb = calloc(sizeof(struct process), 1);
+  success = t->pcb != NULL;
+
+  /* Kill the kernel if we did not succeed */
+  ASSERT(success);
+}
+```
+> [!code] process.h
+```c
+/* The process control block for a given process. Since
+   there can be multiple threads per process, we need a separate
+   PCB from the TCB. All TCBs in a process will have a pointer
+   to the PCB, and the PCB will have a pointer to the main thread
+   of the process, which is `special`. */
+struct process {
+  /* Owned by process.c. */
+  uint32_t* pagedir;          /* Page directory. */
+  char process_name[16];      /* Name of the main thread */
+  struct thread* main_thread; /* Pointer to main thread */
+};
+```
+
+
+
+### User Program
+> [!important]
+> ![](Project0_Pregame.assets/image-20240405154651258.png)
+
+
+## Memory Allocation
+### Page Allocator
 > [!def]
 
 
 
 
 
+### Block Allocator
+> [!def]
 
 
-## Processes
 
-
+## Inline Assembly
+> [!important]
+> `asm volatile` is a construct used in C and C++ programming languages to embed assembly language code directly within C or C++ source code. This is part of what's often called "inline assembly"
+> 
+> ![](Project0_Pregame.assets/image-20240405171806757.png)![](Project0_Pregame.assets/image-20240405172019986.png)
+> Here the `input` goes to the `%0` placeholder and `output` goes to the `%1` placeholder.
 
 
 
@@ -115,11 +223,108 @@ static bool put_user (uint8_t *udst, uint8_t byte) {
 
 
 
-
-
-
 # Task 1: Step through the crash
+## Boot the Machine
+> [!task]
+> ![](Project0_Pregame.assets/image-20240405161102460.png)
+
+
+
+
+## Checkout the Thread Linked List
+> [!task]
+> ![](Project0_Pregame.assets/image-20240405162705229.png)![](Project0_Pregame.assets/image-20240405163526887.png)![](Project0_Pregame.assets/image-20240405163809434.png)
+> We can see that while our program stops at the first line of `run_task()`, there are two threads running:
+> - Main thread that starts at `0xc000e000` 
+> - Idle thread that starts at `0xc0104000`
+> 
+> ![](Project0_Pregame.assets/image-20240405164638193.png)
+> 
+> After we step into `process_execute()` function, we get:
+> ![](Project0_Pregame.assets/image-20240405163924125.png)
+> the same as above, so we can see that the main thread of OS is responsible for executing all the codes from the start.
+
+
+
+
+## Backtrace current thread in kernel space
+> [!task]
+> ![](Project0_Pregame.assets/image-20240405164058701.png)![](Project0_Pregame.assets/image-20240405164200263.png)
+
+
+
+## Executing User Program
+### Start a thread for user program
+> [!task]
+> ![](Project0_Pregame.assets/image-20240405164402355.png)![](Project0_Pregame.assets/image-20240405165639699.png)
+> The `process-execute()` function creates a new thread that is responsible for executing the `do-nothing` user program and set the name of this thread to `do-nothing`.
+> 
+> ![](Project0_Pregame.assets/image-20240405164752569.png)
+> Inside the thread's function, we have: 
+> 
+> ![](Project0_Pregame.assets/image-20240405164425758.png)
+> Now if we attempt to visualize all the threads in the memory, we have:
+> 
+> ![](Project0_Pregame.assets/image-20240405165446258.png)![](Project0_Pregame.assets/image-20240405164415185.png)
+> So we know that the name of the thread is `do-nothing` and the address is `0xc010b000`.
+
+
+### Load program into memory
+> [!task]
+> ![](Project0_Pregame.assets/image-20240405170621962.png)![](Project0_Pregame.assets/image-20240405170635542.png)![](Project0_Pregame.assets/image-20240405170648159.png)
+> 
+> We see that the `load()` function sets the `eip` to be an address of the instruction, and `esp` to be the lower bound of kernel virtual memory space and execute the user program.
+> 
+> Pay attention to the value of `eip = 0x0804890f`, which is an user virtual memory address.
+
+### Execute user program
+> [!code]
+> ![](Project0_Pregame.assets/image-20240405170744623.png)![](Project0_Pregame.assets/image-20240405173701783.png)
+```c
+/* Interrupt exit.
+
+   Restores the caller's registers, discards extra data on the
+   stack, and returns to the caller.
+
+   This is a separate function because it is called directly when
+   we launch a new user process (see start_process() in
+   userprog/process.c). */
+.globl intr_exit
+.func intr_exit
+intr_exit:
+	/* Restore caller's registers. */
+	popal
+	popl %gs
+	popl %fs
+	popl %es
+	popl %ds
+
+        /* Discard `struct intr_frame' vec_no, error_code,
+           frame_pointer members. */
+	addl $12, %esp
+
+        /* Return to caller. */
+	iret
+.endfunc
+
+```
+> [!exp]
+> Once we finish executing `iret`, the function returns into userspace(Since when the system boots, it has switched to kernel space.) and execute the code previously specified at `if_.eip = 0x804890f`
+> ![](Project0_Pregame.assets/image-20240405175949120.png)
+> ![](Project0_Pregame.assets/image-20240405180437957.png)![](Project0_Pregame.assets/image-20240405180433000.png)
+> They are exactly the same as the values in `if_`, which validates the argument that the `infr_frame` is the bridge between user program and kernel program.
+
+
+
+## Backtrace current thread in user space
+> [!task]
+> Notice that if you try to get your current location with `backtrace` you’ll only get a hex address. This is because because the debugger only loads in the symbols from the kernel. Now that we are in userspace, we have to load in the symbols from the Pintos executable we are running, namely `do-nothing`. To do this, use `loadusersymbols tests/userprog/do-nothing`. Now, using `backtrace`, you’ll see that you’re currently in the `_start` function.
+> ![](Project0_Pregame.assets/image-20240405181113641.png)
+> 
+> Using the `disassemble` and `stepi` commands, step through userspace instruction by instruction until the page fault occurs. At this point, the processor has immediately entered kernel mode to handle the page fault, so `backtrace` will show the current stack in kernel mode, not the user stack at the time of the page fault. However, you can use `btpagefault` to find the user stack at the time of the page fault. Copy down the output of `btpagefault`.
+> ![](Project0_Pregame.assets/image-20240405181302691.png)![](Project0_Pregame.assets/image-20240405181416050.png)![](Project0_Pregame.assets/image-20240405181443751.png)
 
 
 
 # Task 2: Debug
+
