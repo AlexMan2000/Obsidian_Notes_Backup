@@ -1,4 +1,4 @@
-See [Reviews](../../Machine_Learning/EECS127AB/2_Matrix_Calculus/Vector_Calculus.md#Reviews)
+See [Reviews](../../Machine_Learning/Optimization_EECS127AB/2_Matrix_Calculus/Vector_Calculus.md#Reviews)
 
 
 # Numerator/Denominator Layout

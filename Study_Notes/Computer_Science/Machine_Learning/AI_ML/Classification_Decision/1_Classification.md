@@ -8,7 +8,7 @@
 > 2. **Decision boundary** $\mathcal{X}$: the boundary chosen by our classifier to separate items in the class from those not. Often this is a set that contains a bunch of points that could be classified as either one group or another. 
 > 	- Formally it is defined as $\mathcal{X}=\{x\in\mathbb{R}^d:f(x)=0\}$
 > 	- That is, all the points that makes decision function evaluate to 0.
-> 	- For linear classifiers, this set is a hyperplane of dimension $d-1$, derivations see [Orthogonal Decomposition Theorem](../../EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md#正交分解定理)
+> 	- For linear classifiers, this set is a hyperplane of dimension $d-1$, derivations see [Orthogonal Decomposition Theorem](../../Optimization_EECS127AB/2_Matrix_Calculus/Vector_OPT_Basics.md#正交分解定理)
 > 	- $\{x : f(x) = 0\}$ is also called an **isosurface** of f for the isovalue 0. $f$ can have other isosurfaces for other isovalues, e.g., $\{x : f(x) = 1\}$.
 >  3. **Loss function** $L(h(x), y)$ specifies badness if classifier predicts the class of x to be h(x), and the true class is y. Note that this function only computes the loss at a single test point x. The independent variables here is $h$ and $y$.
 > 	 - Symmetric Loss: A symmetrical loss is the same for false positives and false negatives. **In this case, minimizing risk function is the same as maximizing the posterior probability.** ![](1_Classification.assets/image-20240227131009972.png) 

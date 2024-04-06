@@ -72,7 +72,7 @@ https://www.youtube.com/watch?v=4vGiHC35j9s
 https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote15.html
 
 ## Gaussian Process Definition
-See [Gaussian_Process](../../EECS126/3_Random_Processes/Gaussian_Process.md)
+See [Gaussian_Process](../../Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md)
 
 ## Noiseless GP Regression
 > GP Model is non-parametric!

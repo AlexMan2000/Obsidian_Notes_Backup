@@ -858,6 +858,18 @@ ostream& osunlock(ostream& os) {
 
 
 
+
+
+## Exercises
+> [!example] CS162 Fa20 Disc02 P3.2
+> ![](Thread_Synchonization.assets/image-20240406142457067.png)
+> Here `play_session()` can be viewed as thread function.
+
+
+
+
+
+
 # Monitors
 
 
@@ -996,7 +1008,8 @@ static void think(unsigned int id) {
   /* same as in version 1 */  
 }  
 ​  
-/* wait to get a permission slip to participate in the bid for forks */  
+/* wait to get a permission slip to participate in the bid for forks */ 
+/* P() operation in semaphore */
 static void waitForPermission() {  
   while (true) {  
     numAllowedLock.lock();  
@@ -1008,7 +1021,8 @@ static void waitForPermission() {
   numAllowedLock.unlock();  
 }  
 ​  
-/* give back the permission slip to the pool so others can participate */  
+/* give back the permission slip to the pool so others can participate */
+/* V() operation in semaphore */
 static void grantPermission() {  
   numAllowedLock.lock();  
   numAllowed++;  

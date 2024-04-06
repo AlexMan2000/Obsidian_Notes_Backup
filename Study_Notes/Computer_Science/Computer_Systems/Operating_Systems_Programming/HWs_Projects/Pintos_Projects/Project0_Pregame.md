@@ -207,7 +207,7 @@ struct process {
 > 	- The virtual memory that the program tries to access from userspace is `0xc0000008`. This memory is not allocated for user program. It is protected segment. The current process doesn't have the permission to access this memory address.
 > 	- The virtual address of the instruction that resulted in the crash is given in the `%eip` register, which shows `0x8048915`.
 > 	- We disassemable the object code with `objdump -D do-nothing.o > do-nothing-dump.txt`
-> 	- We can also disassemble the executable file with `objdump -x -d do-nothing` to see the function that the program was in before it crashed. Since `%eip = 0x8048915`, we know that when program crashes, it is in the `_start` function.
+> 	- We can also disassemble the executable file with `objdump -x -d do-nothing > do-nothing-exec-dump.txt`  to see the function that the program was in before it crashed. Since `%eip = 0x8048915`, we know that when program crashes, it is in the `_start` function.
 > ![](Project0_Pregame.assets/image-20240404192129327.png)
 > 
 > The `_start` function is located in the `proj-pregame/src/lib/user`: 
@@ -271,13 +271,17 @@ struct process {
 
 ### Load program into memory
 > [!task]
-> ![](Project0_Pregame.assets/image-20240405170621962.png)![](Project0_Pregame.assets/image-20240405170635542.png)![](Project0_Pregame.assets/image-20240405170648159.png)
+> ![](Project0_Pregame.assets/image-20240405170621962.png)![](Project0_Pregame.assets/image-20240405170635542.png)![](Project0_Pregame.assets/image-20240406115748919.png)![](Project0_Pregame.assets/image-20240405170648159.png)
 > 
-> We see that the `load()` function sets the `eip` to be an address of the instruction, and `esp` to be the lower bound of kernel virtual memory space and execute the user program.
+> We see that the `load()` function sets the `eip` to be an address of the instruction, and `esp` to be the top of user virtual memory space(`0xc0000000`) and execute the user program.
 > 
 > Pay attention to the value of `eip = 0x0804890f`, which is an user virtual memory address.
+> 
+> Also notice that `esp = 0xc0000000`, which is the stack pointer that we want to recover before executing user program.
 
-### Execute user program
+
+
+### Pushing the argument with interrupt frame
 > [!code]
 > ![](Project0_Pregame.assets/image-20240405170744623.png)![](Project0_Pregame.assets/image-20240405173701783.png)
 ```c
@@ -293,7 +297,7 @@ struct process {
 .func intr_exit
 intr_exit:
 	/* Restore caller's registers. */
-	popal
+	popal   /* This instruction deserves closer inspection */
 	popl %gs
 	popl %fs
 	popl %es
@@ -309,6 +313,15 @@ intr_exit:
 
 ```
 > [!exp]
+> ![](Project0_Pregame.assets/image-20240406111650652.png)
+
+
+### iret to execute user program
+> [!important]
+> The key jump here is `iret`, which jumps to the address specified by `%eip`, which is different from `ret` instruction which jumps to the address specified by the top of the stack. 
+> 
+> More importantly, the `iret` instruction will set the `%esp` to `if_.esp` which is the top of the user space.
+> 
 > Once we finish executing `iret`, the function returns into userspace(Since when the system boots, it has switched to kernel space.) and execute the code previously specified at `if_.eip = 0x804890f`
 > ![](Project0_Pregame.assets/image-20240405175949120.png)
 > ![](Project0_Pregame.assets/image-20240405180437957.png)![](Project0_Pregame.assets/image-20240405180433000.png)
@@ -323,8 +336,125 @@ intr_exit:
 > 
 > Using the `disassemble` and `stepi` commands, step through userspace instruction by instruction until the page fault occurs. At this point, the processor has immediately entered kernel mode to handle the page fault, so `backtrace` will show the current stack in kernel mode, not the user stack at the time of the page fault. However, you can use `btpagefault` to find the user stack at the time of the page fault. Copy down the output of `btpagefault`.
 > ![](Project0_Pregame.assets/image-20240405181302691.png)![](Project0_Pregame.assets/image-20240405181416050.png)![](Project0_Pregame.assets/image-20240405181443751.png)
+> Notice that the instruction that causes page fault is `0xc(%ebp)`, which is the same as what we have found in task 0, so we succeesfully pinpoint the bug.
 
 
 
 # Task 2: Debug
+## Debug the do-nothing
+> [!task]
+> ![](Project0_Pregame.assets/image-20240406120829466.png)
+> Before we execute the first instruction of `_start()` in `entry.c`, we have `%esp = 0xc0000000` and `%ebp = 0x0`. The `%esp` is previously set by the `load()` function in the `start_process()` in `process.c`. Inside `load()` function, the `setup_stack()` function set the `esp` to `PHYS_BASE`, which is causing the error to happen.
+> 
+> Since the key instruction that causes the page fault is `0xc(%ebp), %eax` since `0xbffffffc + 0xc > PHYS_BASE`, which is the kernel address space, we just have to set `esp` to `PHYS_BASE - 0xc` so that `0xc(%ebp)` will access `0xbffffffc`, right below the kernel virtual address space.
+```c
+/* Create a minimal stack by mapping a zeroed page at the top of
+   user virtual memory. */
+static bool setup_stack(void** esp) {
+  uint8_t* kpage;
+  bool success = false;
+
+  kpage = palloc_get_page(PAL_USER | PAL_ZERO);
+  if (kpage != NULL) {
+    success = install_page(((uint8_t*)PHYS_BASE) - PGSIZE, kpage, true);
+    if (success)
+	  /* buggy: *esp = PHYS_BASE */
+      *esp = PHYS_BASE - 0xc; /* Modified */
+    else
+      palloc_free_page(kpage);
+  }
+  return success;
+}
+```
+> [!exp]
+> After this modification, we will pass the pintos test:
+> ![](Project0_Pregame.assets/image-20240406121504809.png)
+
+
+
+## Debug the stack-align-0
+> [!task]
+> ![](Project0_Pregame.assets/image-20240406121816528.png)
+```c
+/* Does absolutely nothing. */
+
+#include "tests/lib.h"
+
+int main(int argc UNUSED, char* argv[] UNUSED) {
+	/* Tell the gcc to save variable esp in the %esp register instead of anywhere else (like on the stack)*/
+  register unsigned int esp asm("esp"); 
+  return esp % 16;
+}
+
+```
+> [!important]
+> Again, we can only modify the kernel instead of the user program. For the program above, we use `i386-objdump -x -d stack-align-0 > stack-align-0-exec-dump.txt` and find that the main function of `stack-align-0` is compiled to:
+> ![](Project0_Pregame.assets/image-20240406123915251.png)
+> where the second line is used to extract the result of `esp % 16`. Using `info registers` we see that:
+> ![](Project0_Pregame.assets/image-20240406123949713.png)
+> so here the function returns 4. But we want 12. Thus the 4 least significant bits should be `0xc`.
+> 
+> For pintos, before we progress to `main()` of user program, it will execute some codes the `_start()` function as an entry point(in `entry.c`), which compiles to:
+> ![](Project0_Pregame.assets/image-20240406134756421.png)
+> So before we step into the `main()` function of `start-align-0`(line 917), we have to execute some codes(line 910 ~ line 916). During these lines, `push %ebp` will decrement the `esp` by `4`, `$0x18, %esp` will decrement the `esp` by `0x18`. So in total, `esp` will be decremented by `0x1c` before `main()`. 
+> 
+> But remember that before we execute `_start()` as user program's entry point, the `esp` is set by `setup_stack()` in `process.c`. 
+> 
+> So in order for both `do-nothing.c` and `stack-align-0.c` to pass the test, we have to make sure that the `esp` set by `setup_stack()` has the following properties:
+> 1. `esp - 0x4 + 0xc < PHYS_BASE` (make sure `_start()` won't trigger page fault.)
+> 2. `(esp - 0x4 - 0x18 - 0x4) | 0xf = 0xc` (make sure `stack-align-0` returns 12)
+> 
+> Thus a plausible choice is the following:
+```c
+/* Create a minimal stack by mapping a zeroed page at the top of
+   user virtual memory. */
+static bool setup_stack(void** esp) {
+  uint8_t* kpage;
+  bool success = false;
+
+  kpage = palloc_get_page(PAL_USER | PAL_ZERO);
+  if (kpage != NULL) {
+    success = install_page(((uint8_t*)PHYS_BASE) - PGSIZE, kpage, true);
+    if (success)
+      *esp = PHYS_BASE - 0x14; /* Modified code */
+    else
+      palloc_free_page(kpage);
+  }
+  return success;
+}
+```
+
+
+## System Call
+> [!task]
+> ![](Project0_Pregame.assets/image-20240406141030658.png)![](Project0_Pregame.assets/image-20240406141022466.png)![](Project0_Pregame.assets/image-20240406141042464.png)![](Project0_Pregame.assets/image-20240406141113459.png)![](Project0_Pregame.assets/image-20240406141644611.png)![](Project0_Pregame.assets/image-20240406141651647.png)
+> We can see that `int $0x30` push these arguments from user code into kernel code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Big Picture
+> [!important]
+> For a user program to run, the pintos will go through the following steps:
+
+
+
+
+
+
+
+
+
 

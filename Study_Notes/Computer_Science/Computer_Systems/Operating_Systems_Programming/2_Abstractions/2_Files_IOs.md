@@ -72,6 +72,8 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 > ![](2_Files_IOs.assets/image-20240229172756710.png)
 
 
+
+
 ## Low-Level File API
 > [!def]
 > ![](2_Files_IOs.assets/image-20240229173213518.png)
@@ -80,11 +82,8 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 > ![](2_Files_IOs.assets/image-20240229173742103.png)
 > 
 
-> 
-
-
-
-
+> [!example] CS162 Fa20 Disc02 P2.2
+> ![](2_Files_IOs.assets/image-20240406144504484.png)
 
 
 
@@ -100,3 +99,21 @@ Also see [System_Level_IO](../../Machine_Structures/8_Linking_OS_Processes/Syste
 ## Summary
 > [!summary]
 > ![](2_Files_IOs.assets/image-20240403123639795.png)![](2_Files_IOs.assets/image-20240403123658776.png)
+
+
+
+
+## Exercises
+### lseek
+> [!example] CS162 Fa20 Disc02 p2
+> ![](2_Files_IOs.assets/image-20240406144243042.png)![](2_Files_IOs.assets/image-20240406144248388.png)
+
+
+
+
+### dup
+> [!example] CS162 Fa20 Disc02 P2
+> ![](2_Files_IOs.assets/image-20240406144549688.png)![](2_Files_IOs.assets/image-20240406144554880.png)
+
+
+

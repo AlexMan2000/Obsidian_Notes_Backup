@@ -38,9 +38,9 @@
 > 
 > $H(Y)$ is not really under our control: we start with the set of points with labels represented by $Y$, this distribution has some entropy, and now we wish to carve up those points in a way to minimize the entropy remaining. Thus, the quantity we want to minimize is a weighted average of the two sides of the split, where the weights are (proportional to) the sizes of two sides:$$\operatorname{minimize} H\left(Y \mid X_{j, v}\right):=P\left(X_{j, v}=1\right) H\left(Y \mid X_{j, v}=1\right)+P\left(X_{j, v}=0\right) H\left(Y \mid X_{j, v}=0\right)$$
 > 
-> This quantity $H\left(Y \mid X_{j, v}\right)$ is known as the [Conditional Entropy](../../EECS126/2_Information_Theory/Entropies.md#Joint/Conditional%20Entropy) of $Y$ given $X_{j, v}$. An equivalent way of seeing this is that we want to maximize the information we've learned, which is represented by how much entropy is reduced after learning whether or not $x_j<v$ :$$\operatorname{maximize} I\left(X_{j, v} ; Y\right):=H(Y)-H\left(Y \mid X_{j, v}\right)$$
+> This quantity $H\left(Y \mid X_{j, v}\right)$ is known as the [Conditional Entropy](../../Probability_Theory_EECS126/2_Information_Theory/Entropies.md#Joint/Conditional%20Entropy) of $Y$ given $X_{j, v}$. An equivalent way of seeing this is that we want to maximize the information we've learned, which is represented by how much entropy is reduced after learning whether or not $x_j<v$ :$$\operatorname{maximize} I\left(X_{j, v} ; Y\right):=H(Y)-H\left(Y \mid X_{j, v}\right)$$
 > 
-> This quantity $I\left(X_{j, v} ; Y\right)$ is known as the [Mutual Information](../../EECS126/2_Information_Theory/Entropies.md#Mutual%20Information) between $X_{j, v}$ and $Y$. It is always nonnegative, and it's zero iff the resulting sides of the split have the same distribution of classes as the original set of points. 
+> This quantity $I\left(X_{j, v} ; Y\right)$ is known as the [Mutual Information](../../Probability_Theory_EECS126/2_Information_Theory/Entropies.md#Mutual%20Information) between $X_{j, v}$ and $Y$. It is always nonnegative, and it's zero iff the resulting sides of the split have the same distribution of classes as the original set of points. 
 > ![](3_Decision_Tree.assets/image-20240317111854250.png)
 > 
 > In some literatures, this process is also called information gain maximization.

@@ -28,7 +28,7 @@
 
 
 # Laplacian Eigenmaps
-> More on [Laplacian Matrix](../../EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md#Laplacian%20Matrix)
+> More on [Laplacian Matrix](../../Optimization_EECS127AB/1_Linear_Algebra_Review/Structured_Matrices.md#Laplacian%20Matrix)
 
 > [!def]
 > ![](T-SNE.assets/image-20240330120051932.png)![](T-SNE.assets/image-20240330120314228.png)

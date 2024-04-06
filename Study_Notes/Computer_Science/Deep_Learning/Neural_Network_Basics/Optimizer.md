@@ -10,7 +10,7 @@
 
 > [!important]
 > ![](Back_Propagation_Algorithm.assets/image-20240329104754314.png)![](Back_Propagation_Algorithm.assets/image-20240329104803942.png)![](Back_Propagation_Algorithm.assets/image-20240329104811920.png)![](Back_Propagation_Algorithm.assets/image-20240329104818157.png)![](Back_Propagation_Algorithm.assets/image-20240329104824570.png)![](Back_Propagation_Algorithm.assets/image-20240329104833888.png)
-> The notion of optimal learning rate is detailed in this problem [Optimal Learning Rate of G.D.](../../Machine_Learning/EECS127AB/4_Descent_Methods/Gradient_Descent.md#Optimal%20Learning%20Rate%20of%20G.D.)
+> The notion of optimal learning rate is detailed in this problem [Optimal Learning Rate of G.D.](../../Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Gradient_Descent.md#Optimal%20Learning%20Rate%20of%20G.D.)
 
 
 

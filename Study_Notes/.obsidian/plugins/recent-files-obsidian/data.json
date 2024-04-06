@@ -1,16 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+      "basename": "Concurrent_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
+    },
+    {
+      "basename": "Project1_Userprogram",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
+    },
+    {
+      "basename": "3_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
+    },
+    {
+      "basename": "2_Files_IOs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
     },
     {
       "basename": "Project_1",
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
     },
     {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
       "basename": "Lab02_Syscalls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
+      "basename": "Queues_Message_Passing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
+    },
+    {
+      "basename": "Operating System Interfaces",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
+    },
+    {
+      "basename": "Answers",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
+    },
+    {
+      "basename": "HW1_Pintos_Lists",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
+    },
+    {
+      "basename": "HW2_Shell",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW2_Shell.md"
+    },
+    {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
       "basename": "Lab01_Unix_Utilities",
@@ -25,10 +65,6 @@
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
     },
     {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
-    },
-    {
       "basename": "Exceptions&Processes",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
     },
@@ -39,10 +75,6 @@
     {
       "basename": "HW0_C_Programming",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md"
-    },
-    {
-      "basename": "Concurrent_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
     },
     {
       "basename": "1_Threads_and_Processes",
@@ -59,10 +91,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "3_IPCs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
     },
     {
       "basename": "Shell_Lab",
@@ -89,20 +117,12 @@
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
     },
     {
-      "basename": "Project1_Userprogram",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
       "basename": "Cache Lab",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     },
     {
       "basename": "Initialization",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
-      "basename": "2_Files_IOs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
     },
     {
       "basename": "Shell_Scripts",
@@ -149,18 +169,6 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
     },
     {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "HW1_Pintos_Lists",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
-    },
-    {
-      "basename": "Queues_Message_Passing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
-    },
-    {
       "basename": "Activations&Features",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Residual_Networks",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
-    },
-    {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
-    },
-    {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
     }
   ],
   "omittedPaths": [],

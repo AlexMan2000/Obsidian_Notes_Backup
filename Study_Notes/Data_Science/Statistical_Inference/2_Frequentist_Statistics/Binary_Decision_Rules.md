@@ -19,7 +19,7 @@ Also see [5 Likelihood-Ratio Test](../../../Mathematics/Probablity_Statistics/St
 ## Neyman-Pearson Lemma
 > [!lemma]
 > ![](Binary_Decision_Rules.assets/image-20240315195645687.png)![](Binary_Decision_Rules.assets/image-20240315195653277.png)![](Binary_Decision_Rules.assets/image-20240315200259633.png)
-> See [Weak Duality](../../../Computer_Science/Machine_Learning/EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md#Weak%20Duality) for this inequality.
+> See [Weak Duality](../../../Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md#Weak%20Duality) for this inequality.
 > 
 > ![](Binary_Decision_Rules.assets/image-20240315212224467.png)
 
