@@ -49,6 +49,23 @@
 > [!example] Fa22 disc12 P2
 
 
+
+
+
+
+## Implementations with Scipy
+> [!important]
+> ![](Newton's_Method.assets/image-20240406164816272.png)
+
+
+
+
+
+
+
+
+
+
 # Damped Newton's Method
 > [!algo]
 > ![](Newton's_Method.assets/image-20231217103500299.png)
@@ -89,8 +106,13 @@
 > [!def]
 > All of our discussion thus far has been under the assumption $\nabla^2 f\left(\vec{x}^{(t)}\right) \succ 0$. 
 > 
-> If the Hessian is not positive definite, one may adaptthe algorithm accordingly, forming a new class of methods called quasi-Newton’s methods.
+> If the Hessian is not positive definite, one may adapt the algorithm accordingly, forming a new class of methods called quasi-Newton’s methods.
 
+
+
+
+
+## Implementations in Scipy
 
 
 

@@ -111,6 +111,32 @@
 
 
 
+# Convolution as FIR System
+More in [FIR and IIR Systems](../../Signal_Processing/1_LTI_Systems/Response_to_Exponential.md#FIR%20and%20IIR%20Systems)
+
+> [!example] EECS182 Sp23 HW3 P2
+> ![](Convolution_Operation.assets/image-20240407160048155.png)
+> In short, the so-called convolution is actually cross-correlation in neural network implementation.
+
+
+
+## ID Case
+> [!example] EECS182 Sp23 HW3 P2
+> ![](Convolution_Operation.assets/image-20240407153558202.png)![](Convolution_Operation.assets/image-20240407153603593.png)![](Convolution_Operation.assets/image-20240407153610890.png)![](Convolution_Operation.assets/image-20240407153615720.png)![](Convolution_Operation.assets/image-20240407153804940.png)
+> The proof is in [Properties](../../Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md#Properties)
+
+
+## 2D Case
+> [!example] EECS182 Sp23 HW3 P2
+> ![](Convolution_Operation.assets/image-20240407153902259.png)![](Convolution_Operation.assets/image-20240407153908464.png)
+> See the [Computation Methods](Convolution_Operation.md#Computation%20Methods)
+
+
+
+
+
+
+
 
 
 

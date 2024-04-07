@@ -67,7 +67,9 @@
 ## Context Switching
 ### Switching Procedures
 > [!important]
-> ![](Concurrent_Programming.assets/image-20240306105857605.png)![](Concurrent_Programming.assets/image-20240306105945354.png)
+> ![](Concurrent_Programming.assets/image-20240306105857605.png)![](Concurrent_Programming.assets/image-20240306105945354.png)![](Concurrent_Programming.assets/image-20240407112340156.png)
+
+
 
 
 ### Efficiency
@@ -454,6 +456,18 @@ public class Moirai {
 > 	2, The code calls `start` on the first two threads. But the third thread is never `start`ed, so it will not run.
 > 1. **What is the maximum number of threads that might be running at the same time?**
 > 	The **initial thread** running `main` plus the two new threads that were started. The reason we have to say “might” here is because different interleavings may mean that we don’t always reach this maximum; for example, the first new thread might finish running before the second one even starts.
+
+
+
+# Python Multithreading
+## Use of Queue()
+> [!important]
+
+
+
+
+
+
 
 
 

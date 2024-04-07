@@ -1,12 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "Convolution_Operation",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "Response_to_Exponential",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
+    },
+    {
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Speech_Classifications",
+      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md"
+    },
+    {
+      "basename": "Proxy_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
+    },
+    {
       "basename": "Concurrent_Programming",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
     },
     {
+      "basename": "1_Threads_and_Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "Queues_Message_Passing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
+    },
+    {
+      "basename": "Answers",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
+    },
+    {
       "basename": "Project1_Userprogram",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
+    },
+    {
+      "basename": "Newton's_Method",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Newton's_Method.md"
     },
     {
       "basename": "3_IPCs",
@@ -21,24 +77,12 @@
       "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
     },
     {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
-    },
-    {
       "basename": "Lab02_Syscalls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
     },
     {
-      "basename": "Queues_Message_Passing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
-    },
-    {
       "basename": "Operating System Interfaces",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "Answers",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
     },
     {
       "basename": "HW1_Pintos_Lists",
@@ -77,16 +121,8 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md"
     },
     {
-      "basename": "1_Threads_and_Processes",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
-    },
-    {
       "basename": "2_Fundamental OS Concepts",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md"
-    },
-    {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
     },
     {
       "basename": "Related_Resources",
@@ -133,10 +169,6 @@
       "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
     },
     {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
       "basename": "1_Recovery",
       "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
-    },
-    {
-      "basename": "Activations&Features",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
-    },
-    {
-      "basename": "Modular_Codes",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Modular_Codes.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
-    },
-    {
-      "basename": "Convolution_Operation",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "3_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "Residual_Networks",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
     }
   ],
   "omittedPaths": [],

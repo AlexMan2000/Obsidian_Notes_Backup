@@ -1,3 +1,10 @@
+# Overview of Synchronization
+> [!overview]
+> ![](Thread_Synchonization.assets/image-20240407112707962.png)
+
+
+
+
 # Thread Memory Model
 ## Conceptual Model
 > [!def]
@@ -813,7 +820,50 @@ ostream& osunlock(ostream& os) {
 
 
 
+# Locks
+## Definition
+
+
+
+
+
+
+## Implementations
+More in [Lock_Implementations](Lock_Implementations.md)
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240407114438688.png)
+
+
+
+### Interrupt Enable/Disable
+> [!def]
+> ![](Thread_Synchonization.assets/image-20240407114641932.png)![](Thread_Synchonization.assets/image-20240407114647605.png)![](Thread_Synchonization.assets/image-20240407115717572.png)
+
+
+
+### Enable Position
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240407120009360.png)![](Thread_Synchonization.assets/image-20240407120027250.png)![](Thread_Synchonization.assets/image-20240407115941503.png)
+
+
+
+
+
+
+
+
+
+
+
+
 # Condition Variables
+## Definition
+> [!def]
+> ![](Thread_Synchonization.assets/image-20240407102143516.png)![](Thread_Synchonization.assets/image-20240407102814703.png)
+
+
+
+
 
 
 
@@ -836,12 +886,17 @@ ostream& osunlock(ostream& os) {
 
 ## Purposes and Type
 > [!important]
+> ![](Thread_Synchonization.assets/image-20240407105618261.png)
+> 
 > Generally we have two kinds of semaphores:
-> - **Binary Semaphore**: Functionally equivalent to a mutex. It can be used interchangeably with a lock but is generally less preferred due to its more general nature and the additional overhead that may entail.
-> - **Counting Semaphore**: Allows multiple (up to a specified maximum) threads or processes to enter a critical section. It maintains a count that represents the number of available resources or slots, and this count can be incremented or decremented.
+> - **Binary Semaphore(init = 1)**: Functionally equivalent to a mutex. It can be used interchangeably with a lock but is generally less preferred due to its more general nature and the additional overhead that may entail.
+> - **Counting Semaphore(init > 1)**: Allows multiple (up to a specified maximum) threads or processes to enter a critical section. It maintains a count that represents the number of available resources or slots, and this count can be incremented or decremented.
+> - **Scheduling Constraints(init=0):** ![](Thread_Synchonization.assets/image-20240407105917905.png)
 > 
 > A semaphore can be considered a generalization of a lock. A binary semaphore can be used as a lock, but a lock cannot replicate the functionality of a counting semaphore.
 > 
+
+
 
 
 
@@ -1236,10 +1291,8 @@ int main(int argc, const char *argv[]) {
 
 
 
-
-# Mutual Exclusion Problems
-## Producer-Consumer Problem
-### Problem Descriptions
+# Producer-Consumer Problem
+## Problem Descriptions
 > [!def]
 > ![](Thread_Synchonization.assets/image-20240404161709132.png)
 > **Details:**
@@ -1254,20 +1307,45 @@ int main(int argc, const char *argv[]) {
 
 
 
-
-### Sbuf Package
+## Solution 1 - Circular Buffer Data Structure
+### Data Structure Definition
 > [!def]
+> ![](Thread_Synchonization.assets/image-20240407104413505.png)
+> Here if `r` catches up with `w` then the queue is empty and vise versa.
+> 
+> ![](Thread_Synchonization.assets/image-20240407104510152.png)
+> Here busy-waiting while loop is wasting CPU resources. Chances are that  `Producer` threads always successfully get the CPU schduling and `Consumer` threads cannot `dequeue()` so that `Producer` is indefinitely spinning and waiting.
+
+
+### How to use Semapores
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240407110300903.png)
+
+
+### Coke Machine
+> [!example]
+> ![](Thread_Synchonization.assets/image-20240407110324796.png)
+
+> [!bug] Caveats: Order of Semaphores
+> ![](Thread_Synchonization.assets/image-20240407110752889.png)
+> Here if `Producer` first acquire the mutex and find that `emptySlots = 0` so that it blocks and waits for `Consumer` to increment the `emptySlots`. Meanwhile, since `fullSlots = bufSize`, the `Consumer` acquire the `fullSlots` and then try to grab the mutex but is blocked and waiting for `Producer`.
+> 
+> So here there is a **deadlock situation.**
+
+
+
+
+## Solution 2 - Sbuf Package
+> [!example]
+> This is an encapsulated version of solution 1, the idea is similar.
 > ![](Thread_Synchonization.assets/image-20240404161854345.png)
 
 
 
 
 
-
-
-
-## Readers and Writers Problem
-### Problem Descriptions
+# Readers and Writers Problem
+## Problem Descriptions
 > [!def]
 > ![](Thread_Synchonization.assets/image-20240404165111345.png)![](Thread_Synchonization.assets/image-20240404165039551.png)![](Thread_Synchonization.assets/image-20240404165049529.png)![](Thread_Synchonization.assets/image-20240404165126740.png)
 
@@ -1275,7 +1353,7 @@ int main(int argc, const char *argv[]) {
 
 
 
-### Implementations
+## Implementations
 > [!code]
 > ![](Thread_Synchonization.assets/image-20240404164931856.png)
 

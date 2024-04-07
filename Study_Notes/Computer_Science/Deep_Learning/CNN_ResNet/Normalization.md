@@ -55,13 +55,15 @@
 > - There are also variations of layer normalizations, such as group normalization, which consists in averaging groups of channels - average only certain channels together, channels that make sense to be averaged together.
 
 
-
+### Exercise
+> [!example] EECS182 Sp23 HW3 P1
+> ![](Normalization.assets/image-20240407142344091.png)![](Normalization.assets/image-20240407142351346.png)![](Normalization.assets/image-20240407142356765.png)
 
 
 
 ## Layer Normalization
 > [!def]
-> Layer normalization normalizes input across all channels in one image.
+> Layer normalization normalizes input across all channels for each pixel in one image.
 
 
 
