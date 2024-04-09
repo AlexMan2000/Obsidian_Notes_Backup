@@ -118,3 +118,30 @@ Lecture 1~2
 
 
 
+# Signals in Python
+## How to Represent
+> [!important]
+> ![](Signals_LTI_Systems.assets/image-20240407180125686.png)
+
+
+## Rectangular Signal
+> [!def]
+> ![](Signals_LTI_Systems.assets/image-20240407180155047.png)
+```python
+n_axis = np.arange(-2, 8)
+r_axis = np.array([0,0,1,1,1,1,1,0,0,0])
+
+plt.stem(n_axis, r_axis)
+
+plt.xlabel("n")
+plt.ylabel("r(n)")
+```
+> [!code] Output
+> ![](Signals_LTI_Systems.assets/image-20240407180618512.png)
+
+
+
+## One-Sided Decaying Exponential Signal
+> [!def]
+> ![](Signals_LTI_Systems.assets/image-20240407181301071.png)
+

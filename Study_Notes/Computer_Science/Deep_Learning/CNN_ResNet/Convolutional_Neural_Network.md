@@ -2,7 +2,7 @@
 > [!example] EECS182 Sp23 DISC04 P2
 > Why does CNN perform better than MLP (Multilayer Perceptron) in various modalities? The three most distinct features that differentiate CNN from MLP are as follows:
 > 1. **Sparse interactions** : Unlike the MLP model, which had to calculate the interactions between all neurons using matrix multiplication, CNN has sparse interactions. This is achieved by using smaller kernels in comparison to the resolution of the input image. This means that CNN can greatly reduce the amount of computation and memory requirements and improve statistical efficiency. This is also called sparse connectivity or sparse weights. 
-> 2. **Parameter sharing** : Parameter sharing means using the same parameters more than once within a model. In the case of MLP, all parameters are used only once when calculating the output within one layer. This reduces the memory used to store parameters. More see [Weight Sharing](Convolution_Operation.md#Weight%20Sharing).
+> 2. **Parameter sharing** : Parameter sharing means using the same parameters more than once within a model. In the case of MLP, all parameters are used only once when calculating the output within one layer. This reduces the memory used to store parameters. More see [Weight Sharing](Convolution_Filters.md#Weight%20Sharing).
 > 3. **Translational equivariance** : Parameter sharing in convolution operation makes the convolution layer equivariant to translation of given input. When a function is equivariant to some operation, it means that when the input changes as much as the given operation, the output of the function also changes in the same way. To explain it more formally, if a function $f(x)$ is equivariant to a transformation $g(x)$, then $f(g(x)) = g(f(x))$. In the case of convolution, $g(x)$ is the translation of the input $x$. While **convolution is equivariant to translation**, it is not equivariant to other transformations such as rotation, scale, or warping. Therefore, various regularizations such as data augmentations are used to obtain CNN functions that are robust to such transformations during training. 
 
 
@@ -10,7 +10,7 @@
 
 ## Sparse Interactions
 > [!example] EECS182 Sp23 Disc04 P1
-> ![](Convolution_Operation.assets/image-20240401124655464.png)![](Convolution_Operation.assets/image-20240401124702439.png)![](Convolution_Operation.assets/image-20240401130249997.png)![](Convolution_Operation.assets/image-20240401133130845.png)![](Convolution_Operation.assets/image-20240401134110424.png)![](Convolution_Operation.assets/image-20240401133901588.png)![](Convolution_Operation.assets/image-20240401134235407.png)![](Convolution_Operation.assets/image-20240401135336162.png)
+> ![](Convolution_Filters.assets/image-20240401124655464.png)![](Convolution_Filters.assets/image-20240401124702439.png)![](Convolution_Filters.assets/image-20240401130249997.png)![](Convolution_Filters.assets/image-20240401133130845.png)![](Convolution_Filters.assets/image-20240401134110424.png)![](Convolution_Filters.assets/image-20240401133901588.png)![](Convolution_Filters.assets/image-20240401134235407.png)![](Convolution_Filters.assets/image-20240401135336162.png)
 
 
 
@@ -20,6 +20,8 @@
 > [!important]
 > Since CNN's parameters are shared spatially, it is translationally equivariant.
 
+> [!example] EECS182 Sp23 HW3 P3
+> ![](Convolutional_Neural_Network.assets/image-20240407174449948.png)![](Convolutional_Neural_Network.assets/image-20240407174455645.png)![](Convolutional_Neural_Network.assets/image-20240407174502406.png)
 
 
 
@@ -353,14 +355,156 @@ ip
 
 
 
+# CNN Implementations
+## Conv Forward
+> [!code] 
+```python
+def conv_forward_naive(x, w, b, conv_param):
+    """
+    A naive implementation of the forward pass for a convolutional layer.
 
-# Initialization in CNN
+    The input consists of N data points, each with C channels, height H and width
+    W. We convolve each input with F different filters, where each filter spans
+    all C channels and has height HH and width HH.
+
+    Input:
+    - x: Input data of shape (N, C, H, W)
+    - w: Filter weights of shape (F, C, HH, WW)
+    - b: Biases, of shape (F,)
+    - conv_param: A dictionary with the following keys:
+      - 'stride': The number of pixels between adjacent receptive fields in the
+        horizontal and vertical directions.
+      - 'pad': The number of pixels that will be used to zero-pad the input.
+
+    Returns a tuple of:
+    - out: Output data, of shape (N, F, H', W') where H' and W' are given by
+      H' = 1 + (H + 2 * pad - HH) / stride
+      W' = 1 + (W + 2 * pad - WW) / stride
+    - cache: (x, w, b, conv_param)
+    """
+    out = None
+    
+    stride, pad = conv_param['stride'], conv_param['pad']
+    N, C_in, H_in, W_in = x.shape
+    C_out, _, H_f, W_f = w.shape
+
+	# Careful padding here, pad_width takes in a tuple of tuples, where tuple[i] means padding in i-th dimension, since each dimension has two directions to pad, so tuple[i] is a 2-tuple.
+    x_pad = np.pad(x, pad_width=((0, 0), (0, 0), (pad, pad), (pad, pad)))
+    H_out = 1 + (H_in + 2 * pad - H_f) // stride
+    W_out = 1 + (W_in + 2 * pad - W_f) // stride
+    z = np.zeros(shape=(N, C_out, H_out, W_out))
+
+    for i in range(H_out):
+        for j in range(W_out):
+            for f in range(C_out):
+	            # Slicing 
+                filtered = x_pad[..., i * stride: i * stride + H_f, j * stride:j * stride + W_f]
+                # Use broadcast techniques here, filtered is (N, C, HH, WW)  and filter w[f] is (C, HH, WW) thus the filter is broadcast across all data points.
+                # ... means :,:,:, which means slicing all the elements in the sepcified dimensions. Here it is slicing across (N,)
+                z[..., f, i, j] = np.sum(filtered * w[f], axis=(-1, -2, -3)) + b[f]
+    out = z
+
+    cache = (x, w, b, conv_param)
+    return out, cache
+```
+
+
+## Conv Backward
+### Theory
+See [CNN_Backprop_Recitation_5_F21](CNN_Backprop_Recitation_5_F21.pdf)
+#### BP w.r.t Filter
+> [!thm]
+> ![](Convolutional_Neural_Network.assets/image-20240408182146538.png)![](Convolutional_Neural_Network.assets/image-20240408182210221.png)![](Convolutional_Neural_Network.assets/image-20240408182326766.png)![](Convolutional_Neural_Network.assets/image-20240408182436153.png)
+
+> [!example]
+> ![](Convolutional_Neural_Network.assets/image-20240408183602991.png)![](Convolutional_Neural_Network.assets/image-20240408183608022.png)![](Convolutional_Neural_Network.assets/image-20240408183618750.png)![](Convolutional_Neural_Network.assets/image-20240408183643308.png)![](Convolutional_Neural_Network.assets/image-20240408183651684.png)![](Convolutional_Neural_Network.assets/image-20240408183658542.png)![](Convolutional_Neural_Network.assets/image-20240408183705488.png)![](Convolutional_Neural_Network.assets/image-20240408183715083.png)
+
+
+
+
+
+#### BP w.r.t Input
+> [!thm]
+> ![](Convolutional_Neural_Network.assets/image-20240408182626207.png)![](Convolutional_Neural_Network.assets/image-20240408182715227.png)![](Convolutional_Neural_Network.assets/image-20240408182720593.png)![](Convolutional_Neural_Network.assets/image-20240408182742007.png)
+
+> [!example]
+> ![](Convolutional_Neural_Network.assets/image-20240408182810886.png)![](Convolutional_Neural_Network.assets/image-20240408182826627.png)![](Convolutional_Neural_Network.assets/image-20240408182831467.png)![](Convolutional_Neural_Network.assets/image-20240408182843604.png)![](Convolutional_Neural_Network.assets/image-20240408182848870.png)![](Convolutional_Neural_Network.assets/image-20240408182906547.png)![](Convolutional_Neural_Network.assets/image-20240408182914980.png)![](Convolutional_Neural_Network.assets/image-20240408183237073.png)![](Convolutional_Neural_Network.assets/image-20240408183247899.png)![](Convolutional_Neural_Network.assets/image-20240408183255895.png)![](Convolutional_Neural_Network.assets/image-20240408183311135.png)
+
+
+
+### Take Depth into Account
+> [!important]
+> ![](Convolutional_Neural_Network.assets/image-20240408193219189.png)![](Convolutional_Neural_Network.assets/image-20240408193225380.png)
+
+
+
+
+### Code Implementations
+> [!code]
+```python
+def conv_backward_naive(dout, cache):
+    """
+    A naive implementation of the backward pass for a convolutional layer.
+
+    Inputs:
+    - dout: Upstream derivatives.
+    - cache: A tuple of (x, w, b, conv_param) as in conv_forward_naive
+
+    Returns a tuple of:
+    - dx: Gradient with respect to x
+    - dw: Gradient with respect to w
+    - db: Gradient with respect to b
+    """
+    dx, dw, db = None, None, None
+
+    x, w, b, conv_param = cache
+    stride, pad = conv_param['stride'], conv_param['pad']
+    x_pad = np.pad(x, pad_width=((0, 0), (0, 0), (pad, pad), (pad, pad)))
+
+    dw = np.zeros_like(w)
+    dx = np.zeros_like(x)
+    dx_pad = np.pad(dx, pad_width=((0, 0), (0, 0), (pad, pad), (pad, pad)))
+    db = np.zeros_like(b)
+
+    N, C_in, H_in, W_in = x.shape
+    C_out, _, H_f, W_f = w.shape
+
+    H_out = 1 + (H_in + 2 * pad - H_f) // stride
+    W_out = 1 + (W_in + 2 * pad - W_f) // stride
+
+    for i in range(H_out):
+        for j in range(W_out):
+            for f in range(C_out):
+                field = x_pad[..., i * stride: i * stride + H_f, j * stride: j * stride + W_f]
+                output = np.tile(dout[:, f, i, j], (*field.shape[1:], 1)).T
+                dw[f] += np.sum(field * output, axis=0)
+                dx_pad[..., i * stride: i * stride + H_f, j * stride: j * stride + W_f] += w[f] * output
+    dx = dx_pad[..., pad:-pad, pad:-pad]
+    db = np.sum(dout, axis=(0, 2, 3))
+
+    return dx, dw, db
+```
+
+
+
+
+
+## Pooling Forward
+
+
+
+## Pooling Backward
+
+
+
+
 
 
 
 
 
 # Batch Normalization in CNN
+## Spatial Batch Normalization
 
 
 
@@ -370,6 +514,10 @@ ip
 
 
 # Dropout in CNN
+
+
+
+
 
 
 

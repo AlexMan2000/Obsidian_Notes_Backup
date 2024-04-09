@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Convolution_Operation",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Operation.md"
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+    },
+    {
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+    },
+    {
+      "basename": "Convolution_Filters",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+    },
+    {
+      "basename": "Gradient_Descent",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Gradient_Descent.md"
+    },
+    {
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
     },
     {
       "basename": "Signals_LTI_Systems",
@@ -11,14 +35,6 @@
     {
       "basename": "Response_to_Exponential",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
-    },
-    {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "Speech_Classifications",
@@ -183,22 +199,6 @@
     {
       "basename": "2_Concurrency_Control_Theory",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "Non-parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Hypothesis_Testing",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
-    },
-    {
-      "basename": "List",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Pintos_Doc/List.pdf"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
     }
   ],
   "omittedPaths": [],
