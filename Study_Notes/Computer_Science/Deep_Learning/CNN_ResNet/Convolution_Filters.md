@@ -214,7 +214,10 @@ if __name__ == '__main__':
 > 
 > Then the output feature shape is: 
 > ![](Convolution_Filters.assets/image-20240407162757448.png)
-> where we typically don't have padding.
+> where we typically **don't have padding.**
+> 
+> For multi-channel images, we maxpooling each channel independently.
+> 
 
 
 

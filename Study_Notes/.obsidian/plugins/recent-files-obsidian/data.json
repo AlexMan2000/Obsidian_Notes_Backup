@@ -9,8 +9,36 @@
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
     },
     {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Activations&Features",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
+    },
+    {
       "basename": "Convolution_Filters",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Deep_Learning/Projects/Related_Resources.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Back_Propagation_Algorithm",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "CNN_Backprop_Recitation_5_F21",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf"
     },
     {
       "basename": "Gradient_Descent",
@@ -19,18 +47,6 @@
     {
       "basename": "Optimizer",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "Response_to_Exponential",
@@ -183,22 +199,6 @@
     {
       "basename": "Bootstrap_Estimation",
       "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
-    },
-    {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
-      "basename": "Project4_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     }
   ],
   "omittedPaths": [],

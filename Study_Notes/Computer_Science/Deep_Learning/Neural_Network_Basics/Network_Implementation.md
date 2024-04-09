@@ -552,6 +552,7 @@ def softmax_loss(x, y):
     N = x.shape[0]
     
 	# Calculate cross-entropy loss
+	# Here probs[np.arange(N), y] is selecting the columns of true labels, very clever implementations
     loss = -np.sum(np.log(probs[np.arange(N), y])) / N
 
 	# Calculate dL/dx where x is the input of the softmax layer, different from EECS189 version, this is very important derivations

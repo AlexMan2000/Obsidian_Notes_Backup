@@ -19,6 +19,7 @@
 ## Translational Invariance
 > [!important]
 > Since CNN's parameters are shared spatially, it is translationally equivariant.
+> ![](Convolutional_Neural_Network.assets/image-20240409155321032.png)
 
 > [!example] EECS182 Sp23 HW3 P3
 > ![](Convolutional_Neural_Network.assets/image-20240407174449948.png)![](Convolutional_Neural_Network.assets/image-20240407174455645.png)![](Convolutional_Neural_Network.assets/image-20240407174502406.png)
@@ -355,7 +356,7 @@ ip
 
 
 
-# CNN Implementations
+# CNN Implementations - Numpy
 ## Conv Forward
 > [!code] 
 ```python
@@ -441,6 +442,7 @@ See [CNN_Backprop_Recitation_5_F21](CNN_Backprop_Recitation_5_F21.pdf)
 
 ### Code Implementations
 > [!code]
+> ![](Convolutional_Neural_Network.assets/image-20240409121221564.png)
 ```python
 def conv_backward_naive(dout, cache):
     """
@@ -456,31 +458,36 @@ def conv_backward_naive(dout, cache):
     - db: Gradient with respect to b
     """
     dx, dw, db = None, None, None
+    
+    (x, w, b, conv_param) = cache
+    (N, C, H, W) = x.shape
+    (F, _, HH, WW) = w.shape
+    (_, _, H_prime, W_prime) = dout.shape
+    stride = conv_param['stride']
+    pad = conv_param['pad']
 
-    x, w, b, conv_param = cache
-    stride, pad = conv_param['stride'], conv_param['pad']
-    x_pad = np.pad(x, pad_width=((0, 0), (0, 0), (pad, pad), (pad, pad)))
-
-    dw = np.zeros_like(w)
     dx = np.zeros_like(x)
-    dx_pad = np.pad(dx, pad_width=((0, 0), (0, 0), (pad, pad), (pad, pad)))
+    dw = np.zeros_like(w)
     db = np.zeros_like(b)
 
-    N, C_in, H_in, W_in = x.shape
-    C_out, _, H_f, W_f = w.shape
-
-    H_out = 1 + (H_in + 2 * pad - H_f) // stride
-    W_out = 1 + (W_in + 2 * pad - W_f) // stride
-
-    for i in range(H_out):
-        for j in range(W_out):
-            for f in range(C_out):
-                field = x_pad[..., i * stride: i * stride + H_f, j * stride: j * stride + W_f]
-                output = np.tile(dout[:, f, i, j], (*field.shape[1:], 1)).T
-                dw[f] += np.sum(field * output, axis=0)
-                dx_pad[..., i * stride: i * stride + H_f, j * stride: j * stride + W_f] += w[f] * output
-    dx = dx_pad[..., pad:-pad, pad:-pad]
-    db = np.sum(dout, axis=(0, 2, 3))
+    for n in range(N):
+      dx_pad = np.pad(dx[n,:,:,:], ((0,0),(pad,pad),(pad,pad)), 'constant')
+      x_pad = np.pad(x[n,:,:,:], ((0,0),(pad,pad),(pad,pad)), 'constant')
+      for f in range(F):
+        for h_prime in range(H_prime):
+          for w_prime in range(W_prime):
+            h1 = h_prime * stride
+            h2 = h_prime * stride + HH
+            w1 = w_prime * stride
+            w2 = w_prime * stride + WW
+            dx_pad[:, h1:h2, w1:w2] += w[f,:,:,:] * dout[n,f,h_prime,w_prime]
+            dw[f,:,:,:] += x_pad[:, h1:h2, w1:w2] * dout[n,f,h_prime,w_prime]
+            db[f] += dout[n,f,h_prime,w_prime]
+		# Careful here, to tackle zero padding corner cases, arr[:, 0:0] will not select anything.
+        if pad == 0:
+		    dx[n,:,:,:] = dx_pad[:,:,:]
+        else:
+            dx[n,:,:,:] = dx_pad[:,pad:-pad,pad:-pad]
 
     return dx, dw, db
 ```
@@ -489,22 +496,314 @@ def conv_backward_naive(dout, cache):
 
 
 
-## Pooling Forward
+## MaxPooling Forward
+> [!code]
+> ![](Convolutional_Neural_Network.assets/image-20240409113433811.png)
+> This is usually done within each feature map independently, meaning that the operation is applied to the height and width dimensions, **but not across the channel dimension.**
+> 
+> ![](Convolutional_Neural_Network.assets/image-20240409120736976.png)
+> Each channel has its only maxpooling.
+```python
+def max_pool_forward_naive(x, pool_param):
+    """
+    A naive implementation of the forward pass for a max pooling layer.
+
+    Inputs:
+    - x: Input data, of shape (N, C, H, W)
+    - pool_param: dictionary with the following keys:
+      - 'pool_height': The height of each pooling region
+      - 'pool_width': The width of each pooling region
+      - 'stride': The distance between adjacent pooling regions
+
+    Returns a tuple of:
+    - out: Output data
+    - cache: (x, pool_param)
+    """
+    out = None
+    HH, WW, stride = pool_param["pool_height"], pool_param["pool_width"], pool_param["stride"]
+    N, C, H, W = x.shape
+
+    H_out = (H - HH) // stride + 1
+    W_out = (W - WW) // stride + 1
+
+    out = np.zeros((N, C, H_out, W_out))
+    for i in range(H_out):
+      for j in range(W_out):
+        # Here we don't max across channels, each channel is processed independently.
+        out[..., i, j] = np.max(x[..., i * stride: i * stride + HH, j * stride: j * stride + WW], axis = (-2,-1))
+    cache = (x, pool_param)
+    return out, cache
+
+```
+
+
+## MaxPooling Backward
+> [!code]
+```python
+
+def max_pool_backward_naive(dout, cache):
+    """
+    A naive implementation of the backward pass for a max pooling layer.
+
+    Inputs:
+    - dout: Upstream derivatives
+    - cache: A tuple of (x, pool_param) as in the forward pass.
+
+    Returns:
+    - dx: Gradient with respect to x
+    """
+    dx = None
+
+    x, pool_param = cache
+    HH, WW, stride = pool_param["pool_height"], pool_param["pool_width"], pool_param["stride"]
+    N, C, H, W = x.shape
+
+    H_out = (H - HH) // stride + 1
+    W_out = (W - WW) // stride + 1
+
+
+    dx = np.zeros_like(x)
+    for i in range(H_out):
+      for j in range(W_out):
+        # unit: (N, C, HH, WW)
+        unit = x[..., i * stride: i * stride + HH, j * stride: j * stride + WW]
+        # mask: (HH, WW)
+        indices = np.arange(HH * WW).reshape(HH, WW)
+        # mask: (N, C, HH, WW), replicate (HH, WW) to (N, C, HH, WW) along N, C dimension
+        indices = np.array([indices] * N * C).reshape(N, C, HH, WW)
+        mask = np.argmax(unit.reshape(N, C, HH * WW), axis=-1).reshape(N, C, 1, 1) == indices
+        
+        dx[..., i * stride: i * stride + HH, j * stride: j * stride + WW] += dout[..., i, j, None, None] * mask
+    return dx
+```
 
 
 
-## Pooling Backward
+## Three Layer ConvNet
+> [!code]
+```python
+import numpy as np
+
+from deeplearning.layer_utils import *
+
+
+class ThreeLayerConvNet(object):
+    """
+    A three-layer convolutional network with the following architecture:
+
+    conv - relu - 2x2 max pool - affine - relu - affine - softmax
+
+    The network operates on minibatches of data that have shape (N, C, H, W)
+    consisting of N images, each with height H and width W and with C input
+    channels.
+    """
+
+    def __init__(self, input_dim=(3, 32, 32), num_filters=32, filter_size=7, hidden_dim=100, num_classes=10,
+                 weight_scale=1e-3, reg=0.0, dtype=np.float32):
+        """
+        Initialize a new network.
+
+        Inputs:
+        - input_dim: Tuple (C, H, W) giving size of input data
+        - num_filters: Number of filters to use in the convolutional layer
+        - filter_size: Size of filters to use in the convolutional layer
+        - hidden_dim: Number of units to use in the fully-connected hidden layer
+        - num_classes: Number of scores to produce from the final affine layer.
+        - weight_scale: Scalar giving standard deviation for random initialization
+          of weights.
+        - reg: Scalar giving L2 regularization strength
+        - dtype: numpy datatype to use for computation.
+        """
+        self.params = {}
+        self.reg = reg
+        self.dtype = dtype
+
+	    ################################################################
+		# Forward pass
+		################################################################
+		
+        # Conv Layer
+        self.params["W1"] = np.random.normal(0, weight_scale, size = (num_filters, input_dim[0], filter_size, filter_size))
+        self.params["b1"] = np.zeros((num_filters,))
+
+        # Affine 1, refer to the loss function, we are using same padding and 1/2 pooling
+        flattened_dim = np.prod(np.array(input_dim[1:]) // 2) * num_filters
+        self.params["W2"] = np.random.normal(0, weight_scale, size = (flattened_dim, hidden_dim))
+        self.params["b2"] = np.zeros((hidden_dim,))
+
+        # Affine 2
+        self.params["W3"] = np.random.normal(0, weight_scale, size = (hidden_dim, num_classes))
+        self.params["b3"] = np.zeros((num_classes,))
+
+
+        for k, v in self.params.items():
+            self.params[k] = v.astype(dtype)
+
+    def loss(self, X, y=None):
+        """
+        Evaluate loss and gradient for the three-layer convolutional network.
+
+        Input / output: Same API as TwoLayerNet in fc_net.py.
+        """
+        W1, b1 = self.params['W1'], self.params['b1']
+        W2, b2 = self.params['W2'], self.params['b2']
+        W3, b3 = self.params['W3'], self.params['b3']
+
+        # pass conv_param to the forward pass for the convolutional layer
+        filter_size = W1.shape[2]
+        conv_param = {'stride': 1, 'pad': (filter_size - 1) // 2}
+
+        # pass pool_param to the forward pass for the max-pooling layer
+        pool_param = {'pool_height': 2, 'pool_width': 2, 'stride': 2}
+
+        scores = None
+
+        # Conv Layer
+        scores, cache1 = conv_relu_pool_forward(X, W1, b1, conv_param, pool_param)
+
+        # Affine Layer 1
+        scores, cache2 = affine_relu_forward(scores, W2, b2)
+
+        # Affine Layer 2
+        scores, cache3 = affine_forward(scores, W3, b3)
+
+        if y is None:
+            return scores
+
+        loss, grads = 0, {}
+    
+		################################################################
+		# Backward pass
+		################################################################
+
+        # Compute softmax loss
+        loss, dout = softmax_loss(scores, y)
+
+        # Adding for regularization
+        loss += 0.5 * self.reg * np.sum(W1 ** 2)
+        loss += 0.5 * self.reg * np.sum(W2 ** 2)
+        loss += 0.5 * self.reg * np.sum(W3 ** 2)
+
+        # Backward Propagation
+        dout, grads["W3"], grads["b3"] = affine_backward(dout, cache3)
+        dout, grads["W2"], grads["b2"] = affine_relu_backward(dout, cache2)
+        dout, grads["W1"], grads["b1"] = conv_relu_pool_backward(dout, cache1)
+
+        # Adding for regularization
+        grads["W1"] += self.reg * W1
+        grads["W2"] += self.reg * W2
+        grads["W3"] += self.reg * W3
+        return loss, grads
+```
 
 
 
-
-
+# CNN Implementation - PyTorch
+## Data Augmentation
+> [!thm]
+> ![](Convolutional_Neural_Network.assets/image-20240409155203510.png)![](Convolutional_Neural_Network.assets/image-20240409155211012.png)
 
 
 
 
 # Batch Normalization in CNN
 ## Spatial Batch Normalization
+> [!thm]
+> We already saw that batch normalization is a very useful technique for training deep fully-connected networks. **Batch normalization can also be used for convolutional networks, but we need to tweak it a bit**; the modification will be called "spatial batch normalization."
+> 
+> Normally batch-normalization accepts inputs of shape `(N, D)` and produces outputs of shape `(N, D)`, where we normalize across the minibatch dimension `N`. For data coming from convolutional layers, batch normalization needs to accept inputs of shape `(N, C, H, W)` and produce outputs of shape `(N, C, H, W)` where the `N` dimension gives the minibatch size and the `(H, W)` dimensions give the spatial size of the feature map.
+> 
+> If the feature map was produced using convolutions, then we expect the statistics of each feature channel to be relatively consistent both between different images and different locations within the same image. 
+> 
+> Therefore spatial batch normalization computes a mean and variance for each of the `C` feature channels by computing statistics over both the minibatch dimension `N` and the spatial dimensions `H` and `W`.
+> 
+> To show it graphically, 
+> ![](Convolutional_Neural_Network.assets/image-20240409153449186.png)
+
+
+## Forward
+> [!code] Forward
+> Reference: http://www.yelbee.top/index.php/archives/181/
+```python
+def spatial_batchnorm_forward(x, gamma, beta, bn_param):
+    """
+    Computes the forward pass for spatial batch normalization.
+
+    Inputs:
+    - x: Input data of shape (N, C, H, W)
+    - gamma: Scale parameter, of shape (C,)
+    - beta: Shift parameter, of shape (C,)
+    - bn_param: Dictionary with the following keys:
+      - mode: 'train' or 'test'; required
+      - eps: Constant for numeric stability
+      - momentum: Constant for running mean / variance. momentum=0 means that
+        old information is discarded completely at every time step, while
+        momentum=1 means that new information is never incorporated. The
+        default of momentum=0.9 should work well in most situations.
+      - running_mean: Array of shape (D,) giving running mean of features
+      - running_var Array of shape (D,) giving running variance of features
+
+    Returns a tuple of:
+    - out: Output data, of shape (N, C, H, W)
+    - cache: Values needed for the backward pass
+    """
+    out, cache = None, None
+#############################################################################
+    # TODO: Implement the forward pass for spatial batch normalization. 
+    # HINT: You can implement spatial batch normalization using the vanilla     #
+    # version of batch normalization defined above. Your implementation should  #
+    # be very short; ours is less than five lines.                      #############################################################################
+    N, C, H, W = x.shape
+
+    # Transpose to (N, H, W, C) and reshape to (N, D = H * W * C)
+    x_bn = x.transpose((0,2,3,1)).reshape(-1,C)
+
+    # Output is (N, D = H * W * C)
+    out_bn, cache = batchnorm_forward(x_bn, gamma, beta, bn_param)
+
+    # Reshape to (N, H, W, C) and transpose to (N, C, H, W)
+    out = out_bn.reshape(N,H,W,C).transpose((0,3,1,2))
+    return out, cache
+```
+
+
+## Backward
+> [!code] Backward
+```python
+def spatial_batchnorm_backward(dout, cache):
+    """
+    Computes the backward pass for spatial batch normalization.
+
+    Inputs:
+    - dout: Upstream derivatives, of shape (N, C, H, W)
+    - cache: Values from the forward pass
+
+    Returns a tuple of:
+    - dx: Gradient with respect to inputs, of shape (N, C, H, W)
+    - dgamma: Gradient with respect to scale parameter, of shape (C,)
+    - dbeta: Gradient with respect to shift parameter, of shape (C,)
+    """
+    dx, dgamma, dbeta = None, None, None
+#############################################################################
+    # TODO: Implement the backward pass for spatial batch normalization.        #
+    # HINT: You can implement spatial batch normalization using the vanilla     #
+    # version of batch normalization defined above. Your implementation should  #
+    # be very short; ours is less than five lines.                      ##############################################################################
+    N, C, H, W = dout.shape
+
+    # Transpose to (N, H, W, C) and reshape to (N, D = H * W * C)
+    dout_bn = dout.transpose((0,2,3,1)).reshape(-1,C)
+
+    # Output is (N, D = H * W * C)
+    dx_bn, dgamma, dbeta = batchnorm_backward_alt(dout_bn, cache)
+
+    # Reshape to (N, H, W, C) and transpose to (N, C, H, W)
+    dx = dx_bn.reshape(N,H,W,C).transpose((0,3,1,2))
+
+    return dx, dgamma, dbeta
+
+
+```
 
 
 
@@ -513,16 +812,7 @@ def conv_backward_naive(dout, cache):
 
 
 
-# Dropout in CNN
 
-
-
-
-
-
-
-
-# Data Augmentation in CNN
 
 
 

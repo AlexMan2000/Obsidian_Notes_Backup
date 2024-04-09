@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "35ab89ac09b01d61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7aead671ce92d89c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -228,35 +216,37 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "35ab89ac09b01d61",
+  "active": "7aead671ce92d89c",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408193225380.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408193219189.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf",
-    "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf.crdownload",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183715083.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183705488.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183658542.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183651684.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183643308.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183618750.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183608022.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183602991.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240408183311135.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155321032.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155211012.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155203510.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155151476.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409153449186.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409150315989.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409145858900.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
+    "Computer_Science/Deep_Learning/Projects/Related_Resources.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409121221564.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409120736976.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409113433811.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf",
+    "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf.crdownload",
     "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.assets",
     "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Gradient_Descent.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Batchnorm_Works_Why.pdf",
     "Computer_Science/Deep_Learning/CNN_ResNet/Batchnorm_Backprop_Alt.pdf",
     "Computer_Science/Deep_Learning/CNN_ResNet/Batchnorm_Backprop.pdf",
     "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Gradient_Notes.pdf",
     "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Gradient_Notes.pdf.crdownload",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets",
     "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
@@ -273,9 +263,6 @@
     "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Newton's_Method.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
-    "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
     "未命名.canvas"
   ]
 }

@@ -44,7 +44,9 @@
 > 
 > In the standard ML perspective (Figure 1a) we would take a particular pixel on a particular channel and average it across the batch. But since we do not have enough things in a batch, we need to average across more things. And we should average across things that are alike. Think of it as 1D normalization.
 > 
-> In the case of **batch normalization** (Figure 1b) it is considered that the different pixels are all alike each other, but the different channels can be qualitatively different because they correspond to different features. So we average across the different pixels. Think of it as 2D normalization.
+> In the case of **batch normalization** (Figure 1b) it is considered that the different pixels are all alike each other, but the different channels can be qualitatively different because they correspond to different features. So we average across the different pixels. Think of it as 2D normalization. 
+> - It is treating each channel as a feature.
+> - If the input shape is `(N, C, H, W)`, the `gamma/beta` will be of dimension `(C,)`
 > 
 > Another kind of normalization also used in practice is **layer normalization** (Figure 1c) where the different channels are averaged together. 
 > - This can be done more frequently at later layers in the convolutional process because these features become learned features and there is no reason for them to be much larger than the others. 
