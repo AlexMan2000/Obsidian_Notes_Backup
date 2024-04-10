@@ -14,7 +14,7 @@
 
 
 
-# Batch Normalization
+# Batch Normalization(BN)
 ## 1-D Case
 > [!def]
 > **Batch Normalization during Training:**
@@ -48,11 +48,7 @@
 > - It is treating each channel as a feature.
 > - If the input shape is `(N, C, H, W)`, the `gamma/beta` will be of dimension `(C,)`
 > 
-> Another kind of normalization also used in practice is **layer normalization** (Figure 1c) where the different channels are averaged together. 
-> - This can be done more frequently at later layers in the convolutional process because these features become learned features and there is no reason for them to be much larger than the others. 
-> - This gives the advantage of a lot more averaging and removes the need to look deeper into your batch. 
-> - Additionally, layer norm is computationally less costly than batch norm and in practice useful if we have hardware constraints. 
-> - There are also variations of layer normalizations, such as group normalization, which consists in averaging groups of channels - average only certain channels together, channels that make sense to be averaged together.
+> 
 
 
 
@@ -88,19 +84,20 @@ Hypothesis 1: Covariate Shift
 
 
 
-# Layer Normalization
+# Layer Normalization(LN)
 > [!def]
-> Layer normalization normalizes input across all channels for each pixel in one image.
+> ![](Normalization.assets/image-20240401173235188.png)
+> Another kind of normalization also used in practice is **layer normalization** (Figure 1c) where the different channels are averaged together. 
+> - This can be done more frequently at later layers in the convolutional process because these features become learned features and there is no reason for them to be much larger than the others. 
+> - This gives the advantage of a lot more averaging and removes the need to look deeper into your batch. 
+> - Additionally, layer norm is computationally less costly than batch norm and in practice useful if we have hardware constraints. 
+> - There are also variations of layer normalizations, such as group normalization, which consists in averaging groups of channels - average only certain channels together, channels that make sense to be averaged together.
 
 
 
 
 
-
-
-
-
-# Instance Normalization
+# Instance Normalization(LN)
 > [!def]
 > Instance normalization normalizes across each channel in each training images. The problem instance normalization tries to address is that the network should be agnostic to the contrast of the original image.
 

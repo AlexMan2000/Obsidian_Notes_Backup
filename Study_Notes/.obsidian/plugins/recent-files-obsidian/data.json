@@ -1,24 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+      "basename": "Speech_Classifications",
+      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md"
     },
     {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
     },
     {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
-      "basename": "Activations&Features",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
     },
     {
       "basename": "Convolution_Filters",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+    },
+    {
+      "basename": "Initialization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
+    },
+    {
+      "basename": "GNN_Basics",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Basics.md"
+    },
+    {
+      "basename": "Proxy_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+    },
+    {
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
+    },
+    {
+      "basename": "Activations&Features",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
     },
     {
       "basename": "Related_Resources",
@@ -51,14 +71,6 @@
     {
       "basename": "Response_to_Exponential",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
-    },
-    {
-      "basename": "Speech_Classifications",
-      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md"
-    },
-    {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
     },
     {
       "basename": "Thread_Synchonization",
@@ -187,18 +199,6 @@
     {
       "basename": "Cache Lab",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "Initialization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
-      "basename": "Shell_Scripts",
-      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
-    },
-    {
-      "basename": "Bootstrap_Estimation",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Bootstrap_Estimation.md"
     }
   ],
   "omittedPaths": [],

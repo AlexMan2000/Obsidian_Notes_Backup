@@ -698,15 +698,11 @@ class ThreeLayerConvNet(object):
 
 
 
-# CNN Implementation - PyTorch
-## Data Augmentation
-> [!thm]
-> ![](Convolutional_Neural_Network.assets/image-20240409155203510.png)![](Convolutional_Neural_Network.assets/image-20240409155211012.png)
 
 
 
 
-# Batch Normalization in CNN
+# Spatial Batch Normalization in CNN
 ## Spatial Batch Normalization
 > [!thm]
 > We already saw that batch normalization is a very useful technique for training deep fully-connected networks. **Batch normalization can also be used for convolutional networks, but we need to tweak it a bit**; the modification will be called "spatial batch normalization."
@@ -719,6 +715,7 @@ class ThreeLayerConvNet(object):
 > 
 > To show it graphically, 
 > ![](Convolutional_Neural_Network.assets/image-20240409153449186.png)
+> In pytorch, spatial batch normalization is `BatchNorm2d`
 
 
 ## Forward
@@ -811,6 +808,112 @@ def spatial_batchnorm_backward(dout, cache):
 
 
 
+
+
+
+# CNN Implementation - PyTorch
+## Data Augmentation
+> [!thm]
+> ![](Convolutional_Neural_Network.assets/image-20240409155203510.png)![](Convolutional_Neural_Network.assets/image-20240409155211012.png)![](Convolutional_Neural_Network.assets/image-20240409183837943.png)
+
+
+## Network Improvements
+> [!code] 
+> UNet Design, first upscaling and then downsampling.
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import numpy as np
+
+
+class ConvBlock(nn.Module):
+  def __init__(self, input_channel, output_channel, kernel_size, stride, padding, max_pooling_factor, do_batchnorm):
+    super(ConvBlock, self).__init__()
+
+    """
+    Single block of Conv
+    conv -> {bn} -> relu -> maxpooling
+    """  
+
+    layers = []
+    layers.append(nn.Conv2d(input_channel, output_channel, kernel_size, stride, padding))
+    if do_batchnorm:
+      # Sptial Batchnorm
+      layers.append(nn.BatchNorm2d(output_channel))
+  
+
+    layers.append(nn.ReLU())
+    if max_pooling_factor > 0:
+      layers.append(nn.MaxPool2d((max_pooling_factor, max_pooling_factor)))
+
+
+    self.block = nn.Sequential(*layers)
+
+
+  def forward(self, x):
+    x = self.block(x)
+    return x
+
+
+class AffineReluBlock(nn.Module):
+  def __init__(self, input_dim, output_dim, initialization_scheme):
+    super(AffineReluBlock, self).__init__()
+
+    layers = []
+    affine_layer = nn.Linear(input_dim, output_dim)
+
+	# Personalized initialization
+    if initialization_scheme == "He":
+      with torch.no_grad():
+        affine_layer.weight = nn.Parameter(torch.normal(0, np.sqrt(2 / input_dim), size = (output_dim, input_dim)))
+        affine_layer.bias = nn.Parameter(torch.zeros(output_dim,))
+    elif initialization_scheme == "xavier":
+      with torch.no_grad():
+        affine_layer.weight = nn.Parameter(torch.normal(0, np.sqrt(1 / input_dim), size = (output_dim, input_dim)))
+        affine_layer.bias = nn.Parameter(torch.zeros(output_dim,))
+    
+    layers.append(affine_layer)
+    layers.append(nn.ReLU())
+    
+    self.block = nn.Sequential(*layers)
+
+  def forward(self, x):
+    x = self.block(x)
+    return x
+
+
+
+class MyNeuralNetwork(nn.Module):
+    def __init__(self, do_batchnorm=False, p_dropout=0.0):
+        super().__init__()
+        self.do_batchnorm = do_batchnorm
+        self.p_dropout = p_dropout
+
+        conv_blocks = []
+        conv_blocks.append(ConvBlock(3, 32, (3, 3), 1, 1, 0, self.do_batchnorm))
+        conv_blocks.append(ConvBlock(32, 64, (3, 3), 1, 1, 2, self.do_batchnorm))
+        conv_blocks.append(ConvBlock(64, 128, (3, 3), 1, 1, 2, self.do_batchnorm))
+        conv_blocks.append(ConvBlock(128, 64, (3, 3), 1, 1, 2, self.do_batchnorm))
+
+        fc_blocks = []
+        fc_blocks.append(AffineReluBlock(1024, 256, "He"))
+        fc_blocks.append(AffineReluBlock(256, 128, "He"))
+        fc_blocks.append(nn.Linear(128, 100))
+
+        if self.p_dropout > 0.0:
+          fc_blocks.append(nn.Dropout(p_dropout))
+
+        self.conv_layers = nn.Sequential(*conv_blocks)
+        self.fc_layers = nn.Sequential(*fc_blocks)
+
+
+    def forward(self, x):
+        x = self.conv_layers(x)
+        x = torch.flatten(x, 1)
+        x = self.fc_layers(x)
+        return x
+```
 
 
 

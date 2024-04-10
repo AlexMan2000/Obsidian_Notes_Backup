@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+                "file": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+                "file": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+                "file": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,24 +218,30 @@
   },
   "active": "7aead671ce92d89c",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.assets/image-20240409213601995.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.assets/image-20240409213554924.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.assets",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Basics.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409183837943.png",
+    "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155321032.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155211012.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155203510.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409155151476.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409153449186.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409150315989.png",
     "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409145858900.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
     "Computer_Science/Deep_Learning/Projects/Related_Resources.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409121221564.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409120736976.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.assets/image-20240409113433811.png",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf",
     "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf.crdownload",
@@ -249,9 +255,6 @@
     "Computer_Science/Deep_Learning/Matrix_Calculus_Review/Gradient_Notes.pdf.crdownload",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets",
-    "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md",
-    "Computer_Science/Deep_Learning/Projects/NTU_ML",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
@@ -260,9 +263,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Newton's_Method.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
     "未命名.canvas"
   ]
 }
