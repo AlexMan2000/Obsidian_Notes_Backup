@@ -817,6 +817,10 @@ def spatial_batchnorm_backward(dout, cache):
 > ![](Convolutional_Neural_Network.assets/image-20240409155203510.png)![](Convolutional_Neural_Network.assets/image-20240409155211012.png)![](Convolutional_Neural_Network.assets/image-20240409183837943.png)
 
 
+
+
+
+
 ## Network Improvements
 > [!code] 
 > UNet Design, first upscaling and then downsampling.
@@ -899,10 +903,9 @@ class MyNeuralNetwork(nn.Module):
         fc_blocks = []
         fc_blocks.append(AffineReluBlock(1024, 256, "He"))
         fc_blocks.append(AffineReluBlock(256, 128, "He"))
-        fc_blocks.append(nn.Linear(128, 100))
-
         if self.p_dropout > 0.0:
-          fc_blocks.append(nn.Dropout(p_dropout))
+            fc_blocks.append(nn.Dropout(p_dropout))
+        fc_blocks.append(nn.Linear(128, 100))
 
         self.conv_layers = nn.Sequential(*conv_blocks)
         self.fc_layers = nn.Sequential(*fc_blocks)

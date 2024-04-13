@@ -57,9 +57,16 @@
 
 
 # Text Justification
+> [!algo]
+> ![](Dynamic_Programming.assets/image-20240410215701040.png)![](Dynamic_Programming.assets/image-20240410215728529.png)
+> `DP[n]` can be thought of as empty line, which doesn't have badness since we have no words to fit that line.
 
 
 
+
+# Parent Pointers
+
+ 
 
 # Subsequences
 
@@ -72,7 +79,12 @@
 
 
 
-# Blackjack
+# Perfect-Information Blackjack
+> [!algo]
+> ![](Dynamic_Programming.assets/image-20240411132735561.png)![](Dynamic_Programming.assets/image-20240411132742466.png)
+
+
+
 
 
 

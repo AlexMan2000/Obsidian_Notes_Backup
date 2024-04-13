@@ -79,10 +79,273 @@
 
 
 
+# Interdomain and Intradomain Routing
+## Intra-Domain Routing
+> [!def]
+> ![](3_Routing.assets/image-20240410201246260.png)
 
 
 
 
+## Inter-Domain Routing
+> [!def]
+> ![](3_Routing.assets/image-20240410201309195.png)
+
+
+## Big Picture
+> [!important]
+![](3_Routing.assets/image-20240410201543895.png)
+
+
+
+
+# Least-Cost Routing
+## Goal
+> [!important]
+> ![](3_Routing.assets/image-20240410202052792.png)![](3_Routing.assets/image-20240410202059918.png)
+
+> [!example]
+> ![](3_Routing.assets/image-20240410203407167.png)
+
+
+## Cost Design
+> [!def]
+> ![](3_Routing.assets/image-20240410203536385.png)![](3_Routing.assets/image-20240410203721364.png)
+
+
+
+## Simple Route Types
+### Trivial Routes
+> [!def]
+> ![](3_Routing.assets/image-20240410211823000.png)
+
+
+
+
+
+### Connected/Direct Routes
+> [!def]
+> ![](3_Routing.assets/image-20240410204127882.png)
+
+
+
+### Static Routes
+> [!def]
+> ![](3_Routing.assets/image-20240410204144628.png)
+> **Why would we use this?**
+> - We want to overwrite some paths. 
+> - Want the packets to pass a particular routers.
+> 
+> ![](3_Routing.assets/image-20240410212449693.png)
+
+
+
+# Routing Algorithm Classification
+>[!def]
+>![](3_Routing.assets/image-20240412164619719.png)
+
+
+
+
+
+
+
+# Distance-Vector Routing Protocols
+## Algorithm: Bellman Ford
+> [!algo]
+> ![](3_Routing.assets/image-20240412141222594.png)![](3_Routing.assets/image-20240412141237635.png)![](3_Routing.assets/image-20240412141428207.png)
+> 1. **Periodic Updates**: Routers configured to use distance vector routing protocols (such as RIP - Routing Information Protocol) periodically broadcast their entire routing table. This interval is often fixed; for example, RIP typically sends updates every 30 seconds.
+> 2. **Triggered Updates**: When there is a significant change in the routing table, such as a change in a route's metric or the addition or removal of a route, the router will send out an update immediately to its neighbors. This is known as a triggered update. Triggered updates help the network converge more quickly by promptly disseminating changes in network topology.
+> 3. **Initial Startup**: When a router first starts up or comes online, it may broadcast its routing table to inform its neighbors of its presence and to learn about the network topology from responses it receives.
+
+> [!example]
+> ![](3_Routing.assets/image-20240412143406584.png)![](3_Routing.assets/image-20240412143645275.png)![](3_Routing.assets/image-20240412143816339.png)
+
+
+
+## State Information Diffusion
+> [!important]
+> ![](3_Routing.assets/image-20240412144022753.png)![](3_Routing.assets/image-20240412144014827.png)
+
+
+
+
+
+
+## Link Cost Changes
+> [!def]
+> ![](3_Routing.assets/image-20240412144255262.png)![](3_Routing.assets/image-20240412151010523.png)
+
+
+
+## Problem 1: Counting to Infinity
+> [!def]
+> ![](3_Routing.assets/image-20240412145110359.png)
+> One solution is to pick a maximum value (e.g. 16) and stop there.
+
+
+### Solution 1: Split Horizon
+> [!def]
+> The concept of "split horizon" is a routing strategy used in computer networks to prevent routing loops and ensure efficient network traffic management.
+> ![](3_Routing.assets/image-20240412150323349.png)
+>
+
+
+### Solution 2: Poison Reverse
+> [!def]
+> **Poison reverse**: if a router advertises a loop, set that value to ∞ so the next advertisement is immediately accepted(which won't cause a new round of broadcasting). It is an optimization to split horizon.
+> ![](3_Routing.assets/image-20240412160048208.png)![](3_Routing.assets/image-20240412160055570.png)![](3_Routing.assets/image-20240412160114981.png)![](3_Routing.assets/image-20240412160120825.png)![](3_Routing.assets/image-20240412160131364.png)
+
+
+
+
+## Problem 2: Link Failures
+### Solution 1: TTL
+> [!def]
+> If some link fails, we have to wait for some time(TTL) until then we should eliminate the link from the DV table.
+> ![](3_Routing.assets/image-20240412151136005.png)![](3_Routing.assets/image-20240412151153351.png)![](3_Routing.assets/image-20240412151244552.png)![](3_Routing.assets/image-20240412151251491.png)
+> More example see [Distance_Vector_Algo](Distance_Vector_Algo.pdf)
+> 
+> TTL for some DV table entry is initialized to some constant which is predetermined by the router operator. 
+> 
+> Every time a entry gets recharged, the TTL is reinitialized.
+
+
+### Solution 2: Poison
+> [!def]
+> Instead of clearing out the table entry when that entry's TTL expires, we could change the entry's cost to destination to $\infty$ and broadcast it.
+> ![](3_Routing.assets/image-20240412155832633.png)![](3_Routing.assets/image-20240412155847086.png)
+
+
+
+
+
+
+## Summary
+> [!summary]
+> **The basic table update algorithm for D-V is as follows:**
+> - Neighbors advertise a route with a particular distance/cost to a particular destination
+> 	- _do not_ advertise to neighbor whos entry is in the nextHop table (avoid split horizon problem)
+> - Router adds 1 to advertised distance and saves it in the nextHop table, along with the address of the neighbor that advertised it
+> - If a neighbor gives a lower number than the current nextHop, it replaces the previous entry
+> 	- Exception: any cost given by current best neighbor will overwrite the entry, even if it’s larger
+> 	- Exception to exception: stop counting at some maximum value to avoid counting to infinity when a loop exists
+> - Direct routes need to be manually populated to initialize cost
+
+
+
+## Exercises
+### DV Algorithm
+> [!example] CS168 Sp24 Disc03 P1
+> ![](3_Routing.assets/image-20240412170752479.png)![](3_Routing.assets/image-20240412170758599.png)![](3_Routing.assets/image-20240412171333350.png)![](3_Routing.assets/image-20240412171339002.png)
+
+
+
+### Split Horizon and Poisoned Reverse
+> [!example] CS168 Sp24 Disc03 P2
+> ![](3_Routing.assets/image-20240412172931569.png)![](3_Routing.assets/image-20240412172937520.png)
+
+
+
+### Counting to Infinity
+> [!example] CS168 Sp24 Disc03 P3
+> ![](3_Routing.assets/image-20240412190243924.png)![](3_Routing.assets/image-20240412190251032.png)![](3_Routing.assets/image-20240412192128003.png)![](3_Routing.assets/image-20240412192134572.png)
+
+
+
+# Link-State Protocols
+## Overview
+> [!overview]
+> ![](3_Routing.assets/image-20240412162342766.png)
+
+
+## Step 1~2: Learn the Global Topology
+> [!algo]
+> ![](3_Routing.assets/image-20240412162542373.png)![](3_Routing.assets/image-20240412163748805.png)
+
+> [!bug] Loop Problems: Flooding
+> ![](3_Routing.assets/image-20240412163023079.png)![](3_Routing.assets/image-20240412163414484.png)
+
+
+
+
+## Step 3: Find Paths
+> [!algo]
+> ![](3_Routing.assets/image-20240412163537384.png)
+
+
+
+
+## Step 4: Populate Tables
+> [!algo]
+> ![](3_Routing.assets/image-20240412163620594.png)![](3_Routing.assets/image-20240412163635668.png)
+
+
+
+## Convergence
+> [!def]
+> ![](3_Routing.assets/image-20240412164031029.png)![](3_Routing.assets/image-20240412164349360.png)
+
+
+
+
+## Timeline for Local Failure
+> [!def]
+> ![](3_Routing.assets/image-20240412164327044.png)
+
+
+
+
+
+# Spanning Tree Protocol 
+
+## Learning Switches
+> [!def]
+> ![](3_Routing.assets/image-20240412165232214.png)
+> - Unlike Distance-Vector and Link-State protocols, which have static local table states, tables are filled in opportunistically using data packets.
+> 	- This means that instead of dropping packets to unknown destinations, send the packet to all possible destinations (i.e. flood it).
+> 	- Also flood when the recorded nextHop is the same as the message’s sender (avoid loops).
+> - Static routes also need to be learned, so on the initial send typically all of the routers will need to be pinged.
+> - Eventually, one of the packets will reach the destination, and information can then be sent backwards so that all routers in the path can learn about the host.
+> - **Doesn’t work when network has loops**
+> 
+> See [Distance_Vector_Algo](Distance_Vector_Algo.pdf)
+> ![](3_Routing.assets/image-20240412165826068.png)
+
+> [!example]
+> ![](3_Routing.assets/image-20240412165607128.png)![](3_Routing.assets/image-20240412165618229.png)![](3_Routing.assets/image-20240412165638261.png)
+
+
+
+## From Learning Switches to Spanning Tree 
+> [!algo]
+> In order to address the issue that learning switches don’t work when the network has cycles, we can use the **spanning tree protocol:** the main idea being that we disable routes until we create a spanning tree of the entire network.
+> 
+> STP is only used in local (layer 2) networks, where bandwidth is generally not a concern and the number of nodes is relatively small, allowing for packet flooding.
+> 
+> Since flooding can find hosts, no static routes are needed anymore.
+> 
+> **Step 1: find least cost paths from every switch to the root**
+> 
+> Introduction:
+> - This is basically the Distance-Vector protocol with a single table entry where that entry is the destination, or the switch at the root of the tree.
+> - Every switch has a unique orderable ID.
+> - Our goal is to first find the root (lowest ID), then find the best path to the root (lowest cost). Algorithm:
+> - All switches begin by thinking they are the root.
+> 	- On receiving a route message from a neighbor:
+> 	- If the the advertised root is smaller, use it instead.
+> 	- If it’s larger, ignore it.
+> 	- If it is the same as stored, use normal D-V update rules to minimize the distance, breaking ties by preferring the next hop with the smallest ID.
+> - Only the root and switches that think they are the root will generate periodic advertisements. All other switches will forward advertisements when received.
+> 
+> **Step 2: disable data delivery on every link not on a shortest path to root**
+> - Each switch:
+> 	- Enables the link along the best path to root
+> 	- Enable all links to hosts (anything that is not a switch, i.e. have not sent any advertisements)
+> 	- Disables every other link
+>  
+> **Step 3:** when a link on the tree fails, start over
+> - If a route expires, routers think they are the root again
 
 
 

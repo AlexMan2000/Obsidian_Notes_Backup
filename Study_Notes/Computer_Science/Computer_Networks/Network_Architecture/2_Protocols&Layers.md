@@ -128,7 +128,8 @@
 
 # End-to-End Principles
 > [!overview]
-> ![](2_Protocols&Layers.assets/image-20240224144836396.png)
+> ![](2_Protocols&Layers.assets/image-20240224144836396.png)![](2_Protocols&Layers.assets/image-20240411205728602.png)![](2_Protocols&Layers.assets/image-20240411205853878.png)
+
 
 
 
@@ -150,6 +151,19 @@
 > [!concept]
 > ![](2_Protocols&Layers.assets/image-20240224145039680.png)
 > Here the E2E fails when at least one link drops the packets, and probabilistically it is $1-(1-0.1)^{10}=0.65=65\%$
+
+
+
+
+
+# Concept Checks
+> [!example] CS168 Sp24 Disc02 P1
+> ![](2_Protocols&Layers.assets/image-20240411210832713.png)![](2_Protocols&Layers.assets/image-20240411210839661.png)
+
+
+> [!example] CS168 Sp24 Disc02 P4
+> ![](2_Protocols&Layers.assets/image-20240411214309318.png)![](2_Protocols&Layers.assets/image-20240411214314904.png)
+
 
 
 

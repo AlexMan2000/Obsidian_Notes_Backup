@@ -144,4 +144,57 @@ plt.ylabel("r(n)")
 ## One-Sided Decaying Exponential Signal
 > [!def]
 > ![](Signals_LTI_Systems.assets/image-20240407181301071.png)
+```python
+def decaying_expo(rate, n_start, n_end):
+    """
+    Returns a right-sided decaying exponential signal, truncated to the provided indices.
+    
+    Parameters:
+    rate    - The decay rate.
+    n_start - The first time index to use in generating the signal. 
+    n_end   - The last time index to use in generating the signal.
+    
+    Returns:
+    n       - The time indices the signal is generated for: n_start, n_start + 1, ..., n_end.
+    sig     - The signal values for each input in n.
+    
+    If n_start is not less than n_end, a ValueError will be raised, as this specifies an empty
+    range of time indices to generate the signal over.    
+    """
+    if n_start >= n_end:
+        raise ValueError("n_start must be less than n_end")
+    
+    def u(n):
+        return n >= 0
+
+    n_list = np.arange(n_start, n_end + 1)
+    sig_list = np.exp(-1 * rate * n_list) * u(n_list)
+    return n_list, sig_list
+	
+	
+	
+index_list, sig_list = decaying_expo(0.95, -5, 20)
+plt.stem(index_list, sig_list)
+```
+> [!code] Output
+> ![](Signals_LTI_Systems.assets/image-20240412195023473.png)
+
+
+
+# Convolution in Python
+## Three Mode of Convolution
+> [!important]
+
+
+
+
+
+
+
+## Convolution Shape
+
+
+
+
+
 

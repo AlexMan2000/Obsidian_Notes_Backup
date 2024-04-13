@@ -1,8 +1,176 @@
 {
   "recentFiles": [
     {
+      "basename": "Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md"
+    },
+    {
+      "basename": "Response_to_Exponential",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "class2-reading",
+      "path": "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf"
+    },
+    {
+      "basename": "complexnumbers",
+      "path": "Mathematics/Differential_Equations/MIT_18.031/complexnumbers.pdf"
+    },
+    {
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "Filters&Bode_Plots",
+      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md"
+    },
+    {
+      "basename": "Rational_Transfer_Functions",
+      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md"
+    },
+    {
+      "basename": "Phasor&Transfer_Functions",
+      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md"
+    },
+    {
+      "basename": "3.4_Step_and_Delta",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
+    },
+    {
+      "basename": "3.5_Impulse_Response",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
+    },
+    {
+      "basename": "3.3_Periodic_Input",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.3_Periodic_Input.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "Sockets",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
+    },
+    {
+      "basename": "Parallel_Query_Processing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Parallel_Query_Processing.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "2_Sampling&Aliasing",
+      "path": "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md"
+    },
+    {
+      "basename": "1_Geometry",
+      "path": "Computer_Science/Computer_Graphics/1_Geometry.md"
+    },
+    {
+      "basename": "IP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/IP.md"
+    },
+    {
+      "basename": "HTTP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/HTTP.md"
+    },
+    {
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "Data_Replication",
+      "path": "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Data_Replication.md"
+    },
+    {
+      "basename": "DB_Design",
+      "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
+    },
+    {
+      "basename": "1_Recovery",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
+    },
+    {
+      "basename": "CS 186 Discussion 9",
+      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf"
+    },
+    {
+      "basename": "Image_Classification",
+      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Image_Classification.md"
+    },
+    {
+      "basename": "2_Protocols&Layers",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md"
+    },
+    {
+      "basename": "1_Packets&Networks",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md"
+    },
+    {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/TCP.md"
+    },
+    {
+      "basename": "Proxy_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+    },
+    {
+      "basename": "Shortest_Path",
+      "path": "Computer_Science/Leetcode_Bank/Graph_Algorithms/Shortest_Path.md"
+    },
+    {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
+      "basename": "Sorting",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md"
+    },
+    {
+      "basename": "2_Informed_Search",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
+    },
+    {
+      "basename": "3_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
+      "basename": "T-SNE",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "PCA",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md"
+    },
+    {
       "basename": "Speech_Classifications",
       "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Deep_Learning/Projects/Related_Resources.md"
+    },
+    {
+      "basename": "Dropout",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
     },
     {
       "basename": "Convolutional_Neural_Network",
@@ -11,6 +179,14 @@
     {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
     },
     {
       "basename": "Residual_Networks",
@@ -23,182 +199,6 @@
     {
       "basename": "Initialization",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
-      "basename": "GNN_Basics",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Basics.md"
-    },
-    {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
-    },
-    {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
-    },
-    {
-      "basename": "Activations&Features",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Activations&Features.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Deep_Learning/Projects/Related_Resources.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Back_Propagation_Algorithm",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
-      "basename": "CNN_Backprop_Recitation_5_F21",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/CNN_Backprop_Recitation_5_F21.pdf"
-    },
-    {
-      "basename": "Gradient_Descent",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Gradient_Descent.md"
-    },
-    {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Response_to_Exponential",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
-    },
-    {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
-    },
-    {
-      "basename": "Lock_Implementations",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
-    },
-    {
-      "basename": "Concurrent_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
-    },
-    {
-      "basename": "1_Threads_and_Processes",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
-    },
-    {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
-      "basename": "Queues_Message_Passing",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
-    },
-    {
-      "basename": "Answers",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
-    },
-    {
-      "basename": "Project1_Userprogram",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
-      "basename": "Newton's_Method",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/4_Descent_Methods/Newton's_Method.md"
-    },
-    {
-      "basename": "3_IPCs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
-    },
-    {
-      "basename": "2_Files_IOs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
-    },
-    {
-      "basename": "Project_1",
-      "path": "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md"
-    },
-    {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "HW1_Pintos_Lists",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
-    },
-    {
-      "basename": "HW2_Shell",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW2_Shell.md"
-    },
-    {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
-    },
-    {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
-      "basename": "Java_Threads",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
-    },
-    {
-      "basename": "Exceptions&Processes",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Exceptions&Processes.md"
-    },
-    {
-      "basename": "Environment Setup",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md"
-    },
-    {
-      "basename": "HW0_C_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW0_C_Programming.md"
-    },
-    {
-      "basename": "2_Fundamental OS Concepts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "Web_Server",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Web_Server.md"
-    },
-    {
-      "basename": "Sockets",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
-    },
-    {
-      "basename": "Thread_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Thread_Level_Parallelism.md"
-    },
-    {
-      "basename": "Process_Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Process_Level_Parallelism.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
     }
   ],
   "omittedPaths": [],

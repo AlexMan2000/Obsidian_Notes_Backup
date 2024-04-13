@@ -38,6 +38,12 @@
 ## Packets on a Link
 ### TimeLine View
 > [!concept]
+> **Terminologies:**
+> - **Transmission Delay:** Time for a packet to get on/off the wire.
+> - **Propagation Delay:** Time for a packet to be transmitted across the link.
+> - **Queuing Delay:** Time for a packet to wait until it can be transmitted off the wire by a router. Queuing delay itself doesn't contain the transmission delay.
+> - **Packet Delay:** Sum of the above.
+> 
 > ![image.png](1_Packets&Networks.assets/64c6f60ec9f42a7ec1bbb0664b7a41c0_MD5.png)
 > 这个公式可以理解为我上传的时间加上传输的时间，就是我的`Packet Delay`.
 > 
@@ -67,6 +73,11 @@
 > ![](1_Packets&Networks.assets/image-20240224110708409.png)![](1_Packets&Networks.assets/image-20240224110656987.png)![](1_Packets&Networks.assets/image-20240224110634387.png)![](1_Packets&Networks.assets/image-20240224110641470.png)
 
 
+### Concept Check
+> [!example] CS168 Sp24 Disc02 P1
+> ![](1_Packets&Networks.assets/image-20240411203336664.png)![](1_Packets&Networks.assets/image-20240411203344405.png)![](1_Packets&Networks.assets/image-20240411204924322.png)
+
+
 
 
 
@@ -75,6 +86,24 @@
 > [!concept]
 > ![image.png](1_Packets&Networks.assets/8dc9d0a0404e8162a56da49cd8c921d9_MD5.png)
 > Packet header is useful for those switches to decide how to forward the packets to the desired switches.
+
+
+
+## Exercise
+> [!example] CS168 Sp24 Disc02 P2
+> ![](1_Packets&Networks.assets/image-20240411211110660.png)![](1_Packets&Networks.assets/image-20240411211349098.png)![](1_Packets&Networks.assets/image-20240411211354120.png)![](1_Packets&Networks.assets/image-20240411212132064.png)![](1_Packets&Networks.assets/image-20240411212138756.png)![](1_Packets&Networks.assets/image-20240411212145222.png)![](1_Packets&Networks.assets/image-20240411212152117.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -120,14 +149,18 @@
 
 
 # Statistical Multiplexing
-## Definition
+## Peak of Demand
 > [!def]
 > ![](1_Packets&Networks.assets/image-20240223224111425.png)![](1_Packets&Networks.assets/image-20240223225526518.png)
 > Peak of aggregate demand means many internet users are trying to access the same resource at the same time and **we assume that the probability of this event is extremely low.** This assumption is the reason why statistical multiplexing works in real life.
+> - Here **peak of the aggregate** is obtained by first stacking the function (i.e. $f(x)+g(x)$ pointwise) and find the pointwise maximum to be the value. Like $\max_{x}(f(x)+g(x))$
+> - Aggregate of the peak is obtained by first finding the pointwise maximum of each function, then add these maximum. The argmax of different functions could difinitely be very different. Like $\max_{x}f(x)+\max_{x}g(x)$
 > 
-> This inequality is very much like the Jesen't Inequality.
+> This inequality is very much like the Jesen's Inequality.
 > 
-> ![](1_Packets&Networks.assets/image-20240223225431747.png)
+> ![](1_Packets&Networks.assets/image-20240223225431747.png)![](1_Packets&Networks.assets/image-20240411204757970.png)
+
+
 
 
 
@@ -140,7 +173,21 @@
 
 
 
+## Exercise
+> [!example] CS168 Sp24 Disc02 P3
+> ![](1_Packets&Networks.assets/image-20240411213712831.png)![](1_Packets&Networks.assets/image-20240411213718121.png)![](1_Packets&Networks.assets/image-20240411213724162.png)
+
+
+
+
+
+
+
+
+
+
 # Resource Sharing
+## Overview
 > [!overview]
 > The key question we should ask for statistical multiplexing is that **at what granularity are we multiplexing things.**
 > 
@@ -152,20 +199,23 @@
 
 
 
-## Reservation
+## Circuit Switching
 > [!def]
 > ![](1_Packets&Networks.assets/image-20240223230549226.png)
-> This is like a establish a stable highway(i,e, in terms of transmission speed, determined by the bandwidth  ) between the source and destination before sending any packets of data.
+> This is like establishing a stable highway(i,e, in terms of transmission speed, determined by the bandwidth  ) between the source and destination before sending any packets of data.
 > 
 > Note that the bandwidth is guaranteed to be stable once fixed.
+> ![](1_Packets&Networks.assets/image-20240411204221593.png)
 
 
 
 
 
-## Best-Effort
+## Packet Switching
 > [!def]
 > ![](1_Packets&Networks.assets/image-20240223230752011.png)
+
+
 
 
 
@@ -214,9 +264,6 @@
 ## Summary
 > [!summary]
 > ![](1_Packets&Networks.assets/image-20240224110116816.png)![](1_Packets&Networks.assets/image-20240224110132246.png)
-
-
-# Queuing Principles
 
 
 
