@@ -1,16 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md"
+      "basename": "Parallel_Query_Processing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
+    },
+    {
+      "basename": "1_Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
+    },
+    {
+      "basename": "Data_Replication",
+      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Data_Replication.md"
+    },
+    {
+      "basename": "2_Types_of_RL",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
+    },
+    {
+      "basename": "1_Markov_Decision_Process",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Fourier_Transforms",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
+    },
+    {
+      "basename": "Discrete_Time_Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Continuous_Time_Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Solutions",
+      "path": "Computer_Science/Signal_Processing/Labs/Solutions.md"
     },
     {
       "basename": "Response_to_Exponential",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
     },
     {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
+    },
+    {
+      "basename": "L11_L12__Absolute_Convergence_Tests_for_Series",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md"
+    },
+    {
+      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
     {
       "basename": "class2-reading",
@@ -49,20 +113,8 @@
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.3_Periodic_Input.md"
     },
     {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
       "basename": "Sockets",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
-    },
-    {
-      "basename": "Parallel_Query_Processing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Parallel_Query_Processing.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
     {
       "basename": "2_Sampling&Aliasing",
@@ -83,10 +135,6 @@
     {
       "basename": "单串",
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
-      "basename": "Data_Replication",
-      "path": "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Data_Replication.md"
     },
     {
       "basename": "DB_Design",
@@ -151,54 +199,6 @@
     {
       "basename": "T-SNE",
       "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "PCA",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/PCA.md"
-    },
-    {
-      "basename": "Speech_Classifications",
-      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Speech_Classifications.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Deep_Learning/Projects/Related_Resources.md"
-    },
-    {
-      "basename": "Dropout",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Dropout.md"
-    },
-    {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "Network_Implementation",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
-    },
-    {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Residual_Networks",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
-    },
-    {
-      "basename": "Convolution_Filters",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
-    },
-    {
-      "basename": "Initialization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
     }
   ],
   "omittedPaths": [],

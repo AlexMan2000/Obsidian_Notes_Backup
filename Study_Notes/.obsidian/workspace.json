@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9b96c18c3b58934e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9a951044da0b9222",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Page",
+                "query": "pointwise convergence",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,11 +216,45 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9b96c18c3b58934e",
+  "active": "9a951044da0b9222",
   "lastOpenFiles": [
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414165239898.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164952980.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164941262.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164918441.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164436227.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414161047008.png",
+    "Computer_Science/Computer_Systems/Database Systems/9_Big_Data_Topics",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155614148.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155608765.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155526464.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155519767.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414154051977.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Data_Replication.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/image-20240413120143227.png",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.assets",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md",
+    "Computer_Science/Signal_Processing/Labs/Solutions.md",
+    "Computer_Science/Signal_Processing/Labs",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.assets",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.assets",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf",
     "Mathematics/Differential_Equations/MIT_18.031/complexnumbers.pdf",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
@@ -240,42 +262,8 @@
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md",
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md",
     "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/61ac531007c87f2bf556250bcf9c9808_MD5.jpeg",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/3afdcedac7455d9f55816254bb723c49_MD5.jpeg",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/Pasted image 20240413111042.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/Pasted image 20240413111037.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/8aba1b577a4f2e2cca3fee62ecc8faf9_MD5.jpeg",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.assets/Pasted image 20240413111011.png",
     "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
     "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf",
-    "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf.crdownload",
-    "Mathematics/Differential_Equations/MIT_18.031/Untitled.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.assets/a3df700911b2567e0ba8a8327d9a3469_MD5.png",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.assets/66e2d546622205fbcd83cc2d7f9b64b8_MD5.png",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.assets/d3bbb162fe186f9845411e2401af6e5f_MD5.png",
-    "Mathematics/Differential_Equations/MIT_18.03SC/未确认 362270.crdownload",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.3_Periodic_Input.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Series.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Parallel_Query_Processing.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md",
-    "Computer_Science/Computer_Graphics/1_Geometry.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/Distance_Vector_Algo.pdf",
-    "Computer_Science/Computer_Networks/Network_Protocols/IP.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/HTTP.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/Distance_Vector_Algo.pdf.crdownload",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Big_Data_Topics/Data_Replication.md",
-    "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md",
-    "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.assets",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf",
-    "Computer_Science/Deep_Learning/Projects/NTU_ML/Image_Classification.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md",
-    "Computer_Science/Computer_Networks/Network_Protocols",
     "未命名.canvas"
   ]
 }

@@ -98,9 +98,30 @@ Fa19 Lec3
 
 
 
-# Connecting Systems 
+# Cascading LTI Systems
+## Serial Connection
+> [!def]
+> ![](Response_to_Exponential.assets/image-20240413192924372.png)
+> We know that the output of this system is $x*h*g$. By associative law we have that the equivalent of this serial LTI system is $h*g$.
+
+
+
+
+
+## Parallel Connection
+> [!def]
+> ![](Response_to_Exponential.assets/image-20240413193050869.png)
+> We know that the output of this system is $x*h+x*g$. By distributive law we have that the equivalent of this serial LTI system is $h+g$.
+
+
+
+
+
+
+## Computing Example
 > [!example]
 > ![](Response_to_Exponential.assets/image-20240413120143227.png)
+> Here $g*h[n]=\sum\limits_{k=-\infty}^{\infty}g[k]h[n-k]=\sum\limits_{k=-\infty}^{\infty}\alpha^{k}u[k]\delta[n-k-2]=\alpha^{n-2}u[n-2]$ when $k=n-2$ and $\delta[n-k-2]=1$
 
 
 
