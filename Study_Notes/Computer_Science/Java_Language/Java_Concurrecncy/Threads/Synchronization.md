@@ -355,6 +355,63 @@ public static void main(String[] args) {
 > ![](Synchronization.assets/image-20240415143406057.png)
 
 
+## 线程安全方法的组合
+> [!example]
+> ![](Synchronization.assets/image-20240415143645117.png)
+> 可以看到，线程安全方法的组合不是线程安全的。
+
+
+
+## 不可变类的线程安全
+> [!important]
+> ![](Synchronization.assets/image-20240415143733468.png)![](Synchronization.assets/image-20240415143743112.png)
+> 这种方法被称为defensive copying.
+
+
+## 实例分析
+### Servlet
+> [!example] Case 1
+> ![](Synchronization.assets/image-20240415144357474.png)![](Synchronization.assets/image-20240415144404948.png)
+> 在`Tomcat`运行期间只会有一个`Servlet`对象产生，这就意味着肯定有多个线程会对这个对象的状态进行修改。
+> - 所有引用类在没有权限修饰符的情况下都是线程不安全的。
+> - 不可变类的引用类在`final`修饰下是线程安全的，比如这里的`String`
+> - 所有可变类即便加上`final`修饰也是线程不安全的，比如这里的`Date`
+
+> [!example] Case 2
+> ![](Synchronization.assets/image-20240415145033062.png)
+> 这里`userService`也不是线程安全的，`update()`方法就属于临界区，会有多个线程调用。
+
+
+### Spring AOP
+> [!example] Spring
+> ![](Synchronization.assets/image-20240415145150655.png)
+> Spring中的任何对象默认都是单例的，也就是所有的对象都有被多个线程共享的可能。于是这个例子中，多个线程都可以调用`MyAspect()`对象的`before()` 或者 `after()`方法导致`start`变量的值不是线程安全的。
+
+
+### 无状态类
+> [!example]
+> ![](Synchronization.assets/image-20240415145621780.png)
+> **从下面往上看:**
+> - `UserDaoImpl`是无状态的，尽管`update()`会被多个线程调用，但是其方法内部创建的都是对其他线程不可见的局部变量，且没有向外部暴露(如果加一些修饰符的话会更好)。同时`conn`对象也是局部变量，也是线程安全的。
+> - `UserServiceImpl`是线程安全的，尽管他有一个成员变量，但是这个成员变量是无状态的。同时这个类中的方法也没有修改`userDao`的指向，所以是线程安全的。
+> - `MyServlet`也是线程安全的，原因同上。
+
+> [!example]
+> ![](Synchronization.assets/image-20240415150412001.png)![](Synchronization.assets/image-20240415150425304.png)
+> 和上面的例子类似，但是这里`UserDaoImpl`类不是无状态的了，有一个成员变量会被多个线程执行`update()`修改。
+
+
+### 局部变量
+> [!example]
+> ![](Synchronization.assets/image-20240415150506693.png)
+> 得益于局部变量的存在，这个程序是线程安全的，每个线程在调用`UserServiceImpl`的`update()`方法时，都会创建一个新的`UserDaoImpl`。
+> 
+> 尽管`UserDaoImpl`类是有状态的，但是不同线程内部都有自己的类对象，不存在共享问题。
+
+> [!bug] Caveats
+> 推荐将`Connection`对象作为线程内的局部变量，这样可以保证线程安全，保证每个线程只处理自己的请求。
+
+
 
 
 
