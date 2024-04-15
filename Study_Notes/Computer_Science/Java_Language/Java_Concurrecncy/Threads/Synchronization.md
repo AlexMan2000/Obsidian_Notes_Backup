@@ -1,4 +1,4 @@
-# synchronized 
+# synchronized 用法
 ## 对象锁
 > [!important]
 > **把需要共享的变量封装到一个类当中:**
@@ -410,6 +410,225 @@ public static void main(String[] args) {
 
 > [!bug] Caveats
 > 推荐将`Connection`对象作为线程内的局部变量，这样可以保证线程安全，保证每个线程只处理自己的请求。
+
+
+
+### 暴露引用/变量逃逸
+> [!example]
+> ![](Synchronization.assets/image-20240415150813190.png)![](Synchronization.assets/image-20240415150820728.png)
+> 这里局部变量`sdf`会被传递给子类的对象中，导致如果我们通过子类对象执行`bar()`时，会发生线程安全问题。
+
+
+
+### JDK String
+> [!important]
+> **几个问题:**
+> - 为什么`String`类已经是`Immutable`了, 却还要设计成`final`类? 如果不是`final`类，则如果子类通过外星方法继承并重写了`String`类的某个会暴露内部状态引用的方法，则通过这个子类调用外星方法会导致线程安全问题。本质上就是子类会通过继承重写破坏父类方法的行为。
+> 
+> ![](Synchronization.assets/image-20240415151120770.png)![](Synchronization.assets/image-20240415151129045.png)
+
+
+
+
+## 买票练习
+> [!example]
+```java
+package cn.itcast.n4.exercise;
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Vector;
+
+@Slf4j(topic = "c.ExerciseSell")
+public class ExerciseSell {
+    public static void main(String[] args) throws InterruptedException {
+        // 模拟多人买票
+        TicketWindow window = new TicketWindow(1000);
+
+        // 所有线程的集合
+        List<Thread> threadList = new ArrayList<>();
+        // 卖出的票数统计
+        List<Integer> amountList = new Vector<>();
+        for (int i = 0; i < 2000; i++) {
+            Thread thread = new Thread(() -> {
+			 /*
+			   这里window和amountList是两个不同的类，各自都需要线程安全保护
+			   但是不需要组合起来保护。
+			 */
+                // 买票
+                int amount = window.sell(random(5));
+                // 统计买票数，因为Vector<>是线程安全类，所以不需要加synchronized(amountList){...}
+                amountList.add(amount);
+            });
+            threadList.add(thread);
+            thread.start();
+        }
+
+        for (Thread thread : threadList) {
+            thread.join();
+        }
+
+        // 统计卖出的票数和剩余票数
+        log.debug("余票：{}",window.getCount());
+        log.debug("卖出的票数：{}", amountList.stream().mapToInt(i-> i).sum());
+    }
+
+    // Random 为线程安全
+    static Random random = new Random();
+
+    // 随机 1~5
+    public static int random(int amount) {
+        return random.nextInt(amount) + 1;
+    }
+}
+
+// 售票窗口
+class TicketWindow {
+    private int count;
+
+    public TicketWindow(int count) {
+        this.count = count;
+    }
+
+    // 获取余票数量
+    public int getCount() {
+        return count;
+    }
+
+    // 售票
+    public synchronized int sell(int amount) {
+        if (this.count >= amount) {
+            this.count -= amount;
+            return amount;
+        } else {
+            return 0;
+        }
+    }
+}
+
+```
+
+
+
+## 转账练习
+> [!example]
+```java
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.Random;
+
+@Slf4j(topic = "c.ExerciseTransfer")
+public class ExerciseTransfer {
+    public static void main(String[] args) throws InterruptedException {
+        Account a = new Account(1000);
+        Account b = new Account(1000);
+        Thread t1 = new Thread(() -> {
+            for (int i = 0; i < 1000; i++) {
+                a.transfer(b, randomAmount());
+            }
+        }, "t1");
+        Thread t2 = new Thread(() -> {
+            for (int i = 0; i < 1000; i++) {
+                b.transfer(a, randomAmount());
+            }
+        }, "t2");
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
+        // 查看转账2000次后的总金额
+        log.debug("total:{}", (a.getMoney() + b.getMoney()));
+    }
+
+    // Random 为线程安全
+    static Random random = new Random();
+
+    // 随机 1~100
+    public static int randomAmount() {
+        return random.nextInt(100) + 1;
+    }
+}
+
+// 账户
+class Account {
+    private int money;
+
+    public Account(int money) {
+        this.money = money;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    // 转账
+    public void transfer(Account target, int amount) {
+	    /*
+	      本例中，Account A中的money和Account B中的money都是共享变量
+	      当A给B转账的时候，A需要读取自己的money查看余额是否足够，同时需要读取B的money来完成金额数修改，所以有多个变量是共享变量。
+	      在Account.class上加上锁保证账户的money都被保护。
+	      如果只加synchronized(this)相当于只保护了当前对象的共享变量。this.setMoney会被保护，但是target.setMoney()不会被保护。而且会产生死锁现象。
+
+
+			虽然synchronized(Account.class)能解决线程安全问题，但是效率很低，同一时间只有两个账户能够互相转账。也就是只能A -> B 结束了以后 B->A才能进行。
+			锁的粒度不够小。
+	    */
+        synchronized(Account.class) {
+            if (this.money >= amount) {
+                this.setMoney(this.getMoney() - amount);
+                target.setMoney(target.getMoney() + amount);
+            }
+        }
+    }
+}
+
+
+
+```
+
+
+
+# Java Monitor
+## Java对象头
+> [!def]
+> 在32位的虚拟机中
+> - `KClass Word`是一个指针(4 bytes), 存放方法区中存放当前类的类名的地址，比如`Student`类名存放在在方法区中的`0xbffffffc`处，那么`KClass Word`就是这个地址。
+> - `Mark Word`如下，主要是记录一些对象当前的锁状态。
+> - 对于`Integer`包装类来说，除了其元数据的`4 bytes`, 对象头还需要维护`8 bytes`, 所以总共是`4 + 8 = 12 bytes`。
+> 
+> ![](Synchronization.assets/image-20240415160737004.png)![](Synchronization.assets/image-20240415160744256.png)
+
+
+
+## Monitor 工作原理
+> [!def]
+> 每一个`Java`对象都会和一个`Monitor`对象相关联。
+> ![](Synchronization.assets/image-20240415161722465.png)
+
+
+## synchronized 原理
+> [!important]
+> ![](Synchronization.assets/image-20240415163141545.png)![](Synchronization.assets/image-20240415163235501.png)
+
+
+
+
+# Java 锁优化
+## 轻量级锁
+> [!def]
+> ![](Synchronization.assets/image-20240415164129138.png)![](Synchronization.assets/image-20240415164203192.png)
+
+
+
+
+
 
 
 

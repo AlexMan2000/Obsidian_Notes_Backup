@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 329.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -267,25 +267,25 @@
   },
   "active": "4018ebf96e364f85",
   "lastOpenFiles": [
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150506693.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150425304.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150412001.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150239767.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150236848.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415145621780.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415145150655.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415145033062.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415144404948.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415144357474.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415143743112.png",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415164203192.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415164129138.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415163235501.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415163141545.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415161722465.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415160744256.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415160737004.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415151129045.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415151120770.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150820728.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets/image-20240415150813190.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
     "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
     "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md",
