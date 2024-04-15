@@ -25,6 +25,14 @@
 
 
 
+## Lock Hierarchy
+> [!important]
+> - Any locktype can be parent lock of of NL.
+> - IX can be parent of any child node.(IX can be seen as of higher rank). Intention to write prioritize intention to read. After all, writing including reading first.
+> - IS can be parent of IS, S, NL.
+> - IS cannot be parent of IX, X, SIX
+
+
 
 # Part 1: Queuing
 ## Task 1: LockType

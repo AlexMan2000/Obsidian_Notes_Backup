@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Shell_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Java_Threads",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
+    },
+    {
+      "basename": "Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
+    },
+    {
       "basename": "Project4_Concurrency",
       "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md"
     },
@@ -13,20 +37,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
     {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
       "basename": "No_SQL",
       "path": "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md"
     },
     {
       "basename": "Parallel_Query_Processing",
       "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
     },
     {
       "basename": "3_Query_Optimization",
@@ -183,22 +199,6 @@
     {
       "basename": "TCP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/TCP.md"
-    },
-    {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
-    },
-    {
-      "basename": "Shortest_Path",
-      "path": "Computer_Science/Leetcode_Bank/Graph_Algorithms/Shortest_Path.md"
-    },
-    {
-      "basename": "Dynamic_Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
-    },
-    {
-      "basename": "Sorting",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md"
     }
   ],
   "omittedPaths": [],

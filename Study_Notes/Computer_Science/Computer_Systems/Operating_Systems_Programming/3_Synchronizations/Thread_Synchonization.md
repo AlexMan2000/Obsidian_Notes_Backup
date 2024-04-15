@@ -837,26 +837,33 @@ More in [Lock_Implementations](Lock_Implementations.md)
 
 ### Interrupt Enable/Disable
 > [!def]
-> ![](Thread_Synchonization.assets/image-20240407114641932.png)![](Thread_Synchonization.assets/image-20240407114647605.png)![](Thread_Synchonization.assets/image-20240407115717572.png)
+> The key idea underlying the implementation of lock is to prevent the dispatcher(scheduler) from performing context switching during lockrelease and lock acquisition.
+> ![](Thread_Synchonization.assets/image-20240407114641932.png)
+> We cannot let user consciously `disable/enable ints` since if user call `acquireLock()` and then add an infinite loop and never call `releaseLock()` then the dispatcher will never get the chance to context switch and execute other tasks, which will blow up the operating system.
+> 
+> ![](Thread_Synchonization.assets/image-20240407114647605.png)![](Thread_Synchonization.assets/image-20240407115717572.png)
+> Here, `go to sleep()` is like being blocked forever, CPU won't schdule it since it is not in ready state. In short, this implementation is called `Blocking Lock`.
 
 
 
 ### Enable Position
 > [!important]
-> ![](Thread_Synchonization.assets/image-20240407120009360.png)![](Thread_Synchonization.assets/image-20240407120027250.png)![](Thread_Synchonization.assets/image-20240407115941503.png)
+> ![](Thread_Synchonization.assets/image-20240407120009360.png)
+> If we `enable ints` before we put the thread onto waiting queue, then chances are that:
+> - Thread A acquired the lock and set the `value = True` but didn't put thread B onto the waiting queue. Then immediately after that, the context switching happens.
+> - Immediately, thread A release the lock and intend to wake up the thread B which it thought should have been put on the waiting queue but actually not. In this case, thread B will never be woken up.
+>
+> ![](Thread_Synchonization.assets/image-20240407120027250.png)![](Thread_Synchonization.assets/image-20240407115941503.png)![](Thread_Synchonization.assets/image-20240415114722347.png)
+> Here it is important to realize that in order to context switching to happen, there are two ways, as stated above:
+> - Voluntary relinquish of CPU, through `sleep()` call.
+> - Involuntary interrupt from the operating system. 
+> 
+> If we don't voluntarily relinquish the CPU after calling `disable ints`, the dispatcher will never have a chance to perform the context switch to schdule a different thread.
 
 
 
 
-
-
-
-
-
-
-
-
-# Condition Variables
+# Condition Variables& Monitors
 ## Definition
 > [!def]
 > ![](Thread_Synchonization.assets/image-20240407102143516.png)![](Thread_Synchonization.assets/image-20240407102814703.png)
@@ -898,6 +905,14 @@ More in [Lock_Implementations](Lock_Implementations.md)
 
 
 
+## Difference with CV
+> [!important]
+> - Semaphore doesn't actively block/unblock the threads, it is up to the threads themselves to block/unblock to check the condition.
+> - Condition Variable can actively block/unblock the threads through `wait/notify()` method.
+> 
+
+
+
 
 
 
@@ -921,11 +936,6 @@ More in [Lock_Implementations](Lock_Implementations.md)
 > Here `play_session()` can be viewed as thread function.
 
 
-
-
-
-
-# Monitors
 
 
 

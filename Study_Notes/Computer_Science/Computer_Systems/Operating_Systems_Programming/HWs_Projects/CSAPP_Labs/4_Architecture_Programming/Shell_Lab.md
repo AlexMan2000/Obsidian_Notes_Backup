@@ -202,12 +202,15 @@ void eval(char *cmdline)
                 Even if you block SIGCHLD or other signals in the parent process, waitpid can still be used to wait for 
                 child processes to change state (e.g., to terminate).
 
-                Here, 
+                Here, we don't need to call waitpid() to reap the child processes, since we have a signal handler that also calls a waitpid to reap the child processes.
+                If the waitpid here is called first, then in the signal handler, the waitpid will immediately return 0 and the child processes that are stopped by some signal won't be correctly reaped.
             */
             // if(waitpid(pid, &status, 0) < 0) {
             //     unix_error("waitfg: waitpid errror");
             // }
 
+
+			// Instead, we call waitfg which is a usy waiting loop that check if the 
             waitfg(pid);
             
         }
@@ -388,6 +391,7 @@ void sigchld_handler(int sig)
 
     */
     while((pid = waitpid(-1, &child_status, WNOHANG | WUNTRACED)) > 0) {
+	    sigprocmask(SIG_BLOCK, &mask_all, NULL);
         struct job_t* job = getjobpid(jobs, pid);
         if (WIFEXITED(child_status)) {
             // If child process terminates normally
