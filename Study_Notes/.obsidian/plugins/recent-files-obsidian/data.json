@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Project4_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
+    },
+    {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
+    },
+    {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
+      "basename": "No_SQL",
+      "path": "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md"
+    },
+    {
       "basename": "Parallel_Query_Processing",
       "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md"
     },
@@ -17,8 +37,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
     },
     {
-      "basename": "Data_Replication",
-      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Data_Replication.md"
+      "basename": "Distributed_Txns",
+      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Distributed_Txns.md"
     },
     {
       "basename": "2_Types_of_RL",
@@ -179,26 +199,6 @@
     {
       "basename": "Sorting",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Sorting.md"
-    },
-    {
-      "basename": "2_Informed_Search",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classical_Search_Algorithms/2_Informed_Search.md"
-    },
-    {
-      "basename": "3_IPCs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
-    },
-    {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
-    },
-    {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
-      "basename": "T-SNE",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Dimension_Deduction/T-SNE.md"
     }
   ],
   "omittedPaths": [],

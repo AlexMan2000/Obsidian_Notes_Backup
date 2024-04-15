@@ -119,37 +119,74 @@ See [Data Partitioning](Parallel_Query_Processing.md#Data%20Partioning)
 
 
 
-
-
-
 # Parallelized Algorithms
 ## Parallel Sorting
-
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414190858363.png)![](Parallel_Query_Processing.assets/image-20240414192638032.png)![](Parallel_Query_Processing.assets/image-20240414192649978.png)![](Parallel_Query_Processing.assets/image-20240414193121253.png)![](Parallel_Query_Processing.assets/image-20240414193127811.png)
 
 
 
 
 ## Parallel Hashing
-
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414190723953.png)![](Parallel_Query_Processing.assets/image-20240414190732200.png)![](Parallel_Query_Processing.assets/image-20240414190749214.png)![](Parallel_Query_Processing.assets/image-20240414190759998.png)
+> Have to want for all machines to finish phase 1 in order for data to be synced before we move onto the phase 2.
 
 
 
 
 ## Parallel Sort Merge Join
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414191008699.png)![](Parallel_Query_Processing.assets/image-20240414193159759.png)![](Parallel_Query_Processing.assets/image-20240414193210133.png)![](Parallel_Query_Processing.assets/image-20240414193220215.png)![](Parallel_Query_Processing.assets/image-20240414195123446.png)
+
+
+
+
+
+
+## Parallel Naive Hash Join
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414192020958.png)
+
 
 
 
 
 
 ## Parallel Grace Hash Join
-
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414191020435.png)![](Parallel_Query_Processing.assets/image-20240414191025188.png)
 
 
 
 ## Broadcast Join
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414194053491.png)![](Parallel_Query_Processing.assets/image-20240414194935526.png)
+> Since R is small enough to fit into the memory, we can simply just send the copy of $R$ to every machine instead of partitioning them.
+> - Then we don't need to worry about data skew and histogram.
+
+
 
 
 ## Symmetric Hash Join
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414194059448.png)![](Parallel_Query_Processing.assets/image-20240414194110456.png)
 
 
+
+# Parallel Aggregation
 ## Hierarchical Aggregation
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414194225975.png)
+
+
+
+## Parallel GroupBy
+> [!important]
+> ![](Parallel_Query_Processing.assets/image-20240414194303543.png)![](Parallel_Query_Processing.assets/image-20240414194327429.png)
+
+
+
+
+
+

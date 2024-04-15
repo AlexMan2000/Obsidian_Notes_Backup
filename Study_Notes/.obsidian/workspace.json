@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
+                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c46c8e3d0860b51b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c05d7ae5bc2c35cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a034908a60fe31e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.50152587890625
+    "width": 226.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -141,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,26 +253,31 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9a951044da0b9222",
+  "active": "c46c8e3d0860b51b",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414165239898.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164952980.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164941262.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164918441.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414164436227.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414161047008.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets/image-20240414225144825.png",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.assets/image-20240414224935073.png",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414195123446.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194935526.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194327429.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194303543.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194225975.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194110456.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194059448.png",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414194053491.png",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414193220215.png",
     "Computer_Science/Computer_Systems/Database Systems/9_Big_Data_Topics",
     "Computer_Science/Computer_Systems/Database Systems/8_NoSQL",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155614148.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155608765.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155526464.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414155519767.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets/image-20240414154051977.png",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Data_Replication.md",
+    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Distributed_Txns.md",
     "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets",
     "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
     "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
@@ -258,11 +300,6 @@
     "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf",
     "Mathematics/Differential_Equations/MIT_18.031/complexnumbers.pdf",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
     "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf",
     "未命名.canvas"
   ]
