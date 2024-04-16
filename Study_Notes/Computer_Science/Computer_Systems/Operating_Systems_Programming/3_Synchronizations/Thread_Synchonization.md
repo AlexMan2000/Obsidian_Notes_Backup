@@ -907,11 +907,7 @@ More in [Lock_Implementations](Lock_Implementations.md)
 
 ## Difference with CV
 > [!important]
-> - Semaphore doesn't actively block/unblock the threads, it is up to the threads themselves to block/unblock to check the condition.
-> - Condition Variable can actively block/unblock the threads through `wait/notify()` method.
-> 
-
-
+> ![](Thread_Synchonization.assets/image-20240415203144003.png)
 
 
 
