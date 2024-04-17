@@ -626,6 +626,14 @@ class Account {
 > ![](Synchronization.assets/image-20240415164129138.png)![](Synchronization.assets/image-20240415164203192.png)
 
 
+# Wait-Notify
+> [!important]
+> ![](Synchronization.assets/image-20240416170024953.png)
+
+
+
+
+
 
 
 

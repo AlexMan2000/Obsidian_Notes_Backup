@@ -77,7 +77,7 @@ Lecture 1~2
 
 
 
-## Properties
+## Properties(Discrete)
 ### Identity Element
 > [!property] Identity Element
 > ![](Signals_LTI_Systems.assets/image-20240316214759670.png)
@@ -106,6 +106,8 @@ Lecture 1~2
 > [!property]
 > ![](Signals_LTI_Systems.assets/image-20240316220926474.png)
 
+
+## Properties(Continuous)
 
 
 
@@ -178,6 +180,12 @@ plt.stem(index_list, sig_list)
 ```
 > [!code] Output
 > ![](Signals_LTI_Systems.assets/image-20240412195023473.png)
+
+
+
+
+
+
 
 
 

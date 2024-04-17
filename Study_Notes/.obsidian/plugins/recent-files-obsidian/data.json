@@ -5,12 +5,56 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
     },
     {
+      "basename": "Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
+    },
+    {
+      "basename": "Discrete_Time_Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Continuous_Time_Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Fourier_Transforms",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
+    },
+    {
+      "basename": "Fast_Fourier_Transform",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md"
+    },
+    {
+      "basename": "Response_to_Exp_Filters",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
+    },
+    {
       "basename": "Synchronization",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
     },
     {
-      "basename": "Lock_Implementations",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
+      "basename": "Concurrent_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
+    },
+    {
+      "basename": "LTI_Filtering_Applications",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
+    },
+    {
+      "basename": "Atomic_Instruction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instruction.md"
+    },
+    {
+      "basename": "4_Transforms",
+      "path": "Computer_Science/Computer_Graphics/4_Transforms.md"
+    },
+    {
+      "basename": "Shell_Scripts",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "SQL_Programming",
@@ -77,28 +121,8 @@
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
     {
-      "basename": "Fourier_Transforms",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
-    },
-    {
-      "basename": "Discrete_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "Continuous_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md"
-    },
-    {
       "basename": "Solutions",
       "path": "Computer_Science/Signal_Processing/Labs/Solutions.md"
-    },
-    {
-      "basename": "Response_to_Exponential",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exponential.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
@@ -175,30 +199,6 @@
     {
       "basename": "HTTP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/HTTP.md"
-    },
-    {
-      "basename": "单串",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
-      "basename": "DB_Design",
-      "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
-    },
-    {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
-      "basename": "CS 186 Discussion 9",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf"
-    },
-    {
-      "basename": "Image_Classification",
-      "path": "Computer_Science/Deep_Learning/Projects/NTU_ML/Image_Classification.md"
-    },
-    {
-      "basename": "2_Protocols&Layers",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md"
     }
   ],
   "omittedPaths": [],

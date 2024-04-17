@@ -373,7 +373,7 @@ show_multiple_images(edge_images, edge_titles)
 
 
 # Convolution as FIR System
-More in [FIR and IIR Systems](../../Signal_Processing/1_LTI_Systems/Response_to_Exponential.md#FIR%20and%20IIR%20Systems)
+More in [FIR and IIR Systems](../../Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md#FIR%20and%20IIR%20Systems)
 
 ## Convolution and Cross-Correlation
 > [!example] EECS182 Sp23 HW3 P2

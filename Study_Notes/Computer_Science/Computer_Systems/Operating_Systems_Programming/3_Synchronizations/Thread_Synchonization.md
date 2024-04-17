@@ -863,20 +863,6 @@ More in [Lock_Implementations](Lock_Implementations.md)
 
 
 
-# Condition Variables& Monitors
-## Definition
-> [!def]
-> ![](Thread_Synchonization.assets/image-20240407102143516.png)![](Thread_Synchonization.assets/image-20240407102814703.png)
-
-
-
-
-
-
-
-
-
-
 # Semaphores
 ## Definition
 > [!def]
@@ -931,6 +917,34 @@ More in [Lock_Implementations](Lock_Implementations.md)
 > ![](Thread_Synchonization.assets/image-20240406142457067.png)
 > Here `play_session()` can be viewed as thread function.
 
+
+# Condition Variables&Monitors
+## Definition
+> [!def]
+> ![](Thread_Synchonization.assets/image-20240416194103835.png)![](Thread_Synchonization.assets/image-20240407102143516.png)![](Thread_Synchonization.assets/image-20240407102814703.png)
+> **Important Notes:**
+> - What `cond_signal()` does is just to put one of the waiting threads on the ready queue, waiting to be schduled by CPU.
+> - Very important to re-acquire the lock before the return from `cv_wait()`. As shown in the example [Solution 3 - Condition Variables](Thread_Synchonization.md#Solution%203%20-%20Condition%20Variables)
+> - Also if when the `cond_signal()` is called, there is no threads that are waiting in the queue, then nothing happens.
+> - When `cond_signal(&cv, &lock)` is called and waked up one of the waiting threads on the waiting queue of `cv`, this thread is kicked off from the waiting queue of `cv` and put on the ready queue of `lock`.
+> 	- If after being put on the ready queue of `lock`, other threads grab this lock, then this thread is going to wait again, but not for the condition variable, instead it's for the `lock`.
+
+
+
+
+## Monitors with CVs
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240416194134187.png)
+
+
+
+
+## Mesa vs Hoare Monitors
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240416201450621.png)![](Thread_Synchonization.assets/image-20240416202534398.png)
+> Hoare monitors ensure that there is no race condition between Signaler's `cond_signal` and signalee's `cond_wait()`'s re-acquisition of the lock.
+> 
+> ![](Thread_Synchonization.assets/image-20240416202542315.png)
 
 
 
@@ -1348,22 +1362,58 @@ int main(int argc, const char *argv[]) {
 
 
 
+## Solution 3 - Condition Variables
+> [!example]
+> ![](Thread_Synchonization.assets/image-20240416194450619.png)
+> **Several things to note:**
+> - `cond_wait(&buf_CV, &buf_lock)` will release the lock when called and will re-acquire the lock before returns.
+> - The reason why we need a while loop in the consumer is that 
+> 	- During the time a thread is sleeping and woken up by `cond_signal`, the queue maybe modified by other threads, so we need to loop checking the queue to see whether there is things to be consumed.
+> 	- Between `cond_signal()`'s attempt to wake up any of the waiting thread and the notified thread re-acquire the lock, there may be other threads that will modified the queue(for example the producer) and release the lock, so an `if` is not enough, causing a spurious wakeup.
+> 		- With the perspective of producer thread, I wake up a particular thread by `cond_signal`, hoping that it can consume what I have produced.
+> 		- In the perspective of the notified consumer, I was woken up hoping that there is something new in the queue to be consumed, but due to some race condition, there is nothing in the queue, so I am falsely alarmed. (Spurious Wakeup)
+> 
+> ![](Thread_Synchonization.assets/image-20240416203300847.png)
+
+
+
+
+
 
 
 # Readers and Writers Problem
 ## Problem Descriptions
 > [!def]
-> ![](Thread_Synchonization.assets/image-20240404165111345.png)![](Thread_Synchonization.assets/image-20240404165039551.png)![](Thread_Synchonization.assets/image-20240404165049529.png)![](Thread_Synchonization.assets/image-20240404165126740.png)
+> ![](Thread_Synchonization.assets/image-20240404165111345.png)![](Thread_Synchonization.assets/image-20240404165039551.png)![](Thread_Synchonization.assets/image-20240404165049529.png)![](Thread_Synchonization.assets/image-20240404165126740.png)![](Thread_Synchonization.assets/image-20240416205032429.png)
 
 
 
 
 
-## Implementations
+
+
+## Solution 1 - Semaphores
 > [!code]
 > ![](Thread_Synchonization.assets/image-20240404164931856.png)
 
 
+## Solution 2 - Monitors
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240416203952688.png)![](Thread_Synchonization.assets/image-20240416203958856.png)
+> The reason why we need to release the lock before `AccessDatabase` is that we just want to check **whether we have the access** to the database and we don't want to lock the database at all. Since the checking logic involves modification to the shared variables, like AW, WW, we need to grab the lock before and release it after.
+> 	
+> ![](Thread_Synchonization.assets/image-20240416204004771.png)
+> **Why we need to prioritize the writer?**
+> - Writers update the database far less often than readers read the database.
+> - Readers always want to read the most updated value in the database, so it's better for writer to finish updating before reader can read the data.
+> - It is a design choice.
+
+
+
+
+## Solution 3 - Single CV
+> [!example]
+> ![](Thread_Synchonization.assets/image-20240417110210558.png)![](Thread_Synchonization.assets/image-20240417110218133.png)
 
 
 

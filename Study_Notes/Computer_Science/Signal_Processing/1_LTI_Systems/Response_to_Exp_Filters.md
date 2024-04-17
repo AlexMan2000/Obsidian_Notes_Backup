@@ -4,7 +4,7 @@ Fa19 Lec3
 # Response to Complex Exponential
 ## Complex Exponentials
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407143914815.png)![](Response_to_Exponential.assets/image-20240413102204337.png)![](Response_to_Exponential.assets/image-20240413102212492.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407143914815.png)![](Response_to_Exp_Filters.assets/image-20240413102204337.png)![](Response_to_Exp_Filters.assets/image-20240413102212492.png)
 
 
 
@@ -17,21 +17,21 @@ Fa19 Lec3
 >   An eigenfunction is a type of function that, when used as an input for a given operator, produces a result proportional to the original function. 
 >   
 >   The concept is most often discussed in the contexts of linear algebra, differential equations, and quantum mechanics, among other areas in mathematics and physics.
->   ![](Response_to_Exponential.assets/image-20240407143831570.png)
+>   ![](Response_to_Exp_Filters.assets/image-20240407143831570.png)
 
 
 
 ## Time Response of LTI
 > [!important]
-> ![](Response_to_Exponential.assets/image-20240407143933029.png) 
+> ![](Response_to_Exp_Filters.assets/image-20240407143933029.png) 
 
 > [!example] EECS120 Fa19 Lec3
-> ![](Response_to_Exponential.assets/image-20240407144025948.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407144025948.png)
 > where the $(6)$ comes from the fact that $\delta(\tau - 3) = 1$ only when $\tau = 3$ and thus $\delta(\tau-3)e^{-s\tau}=\begin{cases} e^{-3s}&\tau=3\\0&otherwise\end{cases}$. More see [3.4_Step_and_Delta](../../../Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md).
 > 
 > Here $y(t) = x(t-3)$ is given. So the transfer function serves to describe the relationship between the input and output and is typically defined to be the proportional of output to intput, which is:
 > 
-> ![](Response_to_Exponential.assets/image-20240407145147376.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407145147376.png)
 
 
 
@@ -43,7 +43,7 @@ Fa19 Lec3
 > - $z^n\big|_{z=e^{jw}}=e^{jwn}$
 > 
 > in this way, the transfer function is a function of just one variable $w$. 
-> ![](Response_to_Exponential.assets/image-20240407145622136.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407145622136.png)
 > You may wonder why we choose $s$ to be purely imaginary and $z$ to be on the unit circle. 
 > - It is just a special case of the transfer function. There is no difference between FR and transfer function.
 > - Because of its special meaning of the oscillation of sinusoidal waves, we call it frequency response of the LTI system.
@@ -55,7 +55,7 @@ Fa19 Lec3
 
 > [!example] EE120 Fa19 Disc02 P2
 > Notice here our phase is defined to be between $[-\pi, \pi]$.
-> ![](Response_to_Exponential.assets/8aba1b577a4f2e2cca3fee62ecc8faf9_MD5.jpeg)![](Response_to_Exponential.assets/3afdcedac7455d9f55816254bb723c49_MD5.jpeg)![](Response_to_Exponential.assets/61ac531007c87f2bf556250bcf9c9808_MD5.jpeg)
+> ![](Response_to_Exp_Filters.assets/8aba1b577a4f2e2cca3fee62ecc8faf9_MD5.jpeg)![](Response_to_Exp_Filters.assets/3afdcedac7455d9f55816254bb723c49_MD5.jpeg)![](Response_to_Exp_Filters.assets/61ac531007c87f2bf556250bcf9c9808_MD5.jpeg)
 > 
 
 
@@ -66,34 +66,35 @@ Fa19 Lec3
 # Filtering
 ## Definition
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407145822574.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407145822574.png)
 
 
 
 
 ## Moving Averge Filter
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407150051241.png)![](Response_to_Exponential.assets/image-20240407150234699.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407150051241.png)![](Response_to_Exp_Filters.assets/image-20240407150234699.png)
 
 
 
 ## Causal Filter
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407150341727.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407150341727.png)
 > This is a high-pass filter.
+
 
 
 
 # FIR and IIR Systems
 ## Finite Impulse Response System
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407150800339.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407150800339.png)
 
 
 
 ## Infinite Impulse Response System
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240407151008327.png)
+> ![](Response_to_Exp_Filters.assets/image-20240407151008327.png)
 
 
 
@@ -101,7 +102,7 @@ Fa19 Lec3
 # Cascading LTI Systems
 ## Serial Connection
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240413192924372.png)
+> ![](Response_to_Exp_Filters.assets/image-20240413192924372.png)
 > We know that the output of this system is $x*h*g$. By associative law we have that the equivalent of this serial LTI system is $h*g$.
 
 
@@ -110,7 +111,7 @@ Fa19 Lec3
 
 ## Parallel Connection
 > [!def]
-> ![](Response_to_Exponential.assets/image-20240413193050869.png)
+> ![](Response_to_Exp_Filters.assets/image-20240413193050869.png)
 > We know that the output of this system is $x*h+x*g$. By distributive law we have that the equivalent of this serial LTI system is $h+g$.
 
 
@@ -120,7 +121,7 @@ Fa19 Lec3
 
 ## Computing Example
 > [!example]
-> ![](Response_to_Exponential.assets/image-20240413120143227.png)
+> ![](Response_to_Exp_Filters.assets/image-20240413120143227.png)
 > Here $g*h[n]=\sum\limits_{k=-\infty}^{\infty}g[k]h[n-k]=\sum\limits_{k=-\infty}^{\infty}\alpha^{k}u[k]\delta[n-k-2]=\alpha^{n-2}u[n-2]$ when $k=n-2$ and $\delta[n-k-2]=1$
 
 
