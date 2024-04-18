@@ -948,6 +948,25 @@ More in [Lock_Implementations](Lock_Implementations.md)
 
 
 
+## Construct Monitor from Semaphores
+> [!important]
+> ![](Thread_Synchonization.assets/image-20240417111142907.png)
+> If I call a bunch of signals and then do a wait then the wait will not go to wait.
+> - We want to make sure that the `wait` function properly even if we call `signal()` beforehand.
+> 
+> ![](Thread_Synchonization.assets/image-20240417112122285.png)
+
+
+
+
+## Summary
+> [!summary]
+> ![](Thread_Synchonization.assets/image-20240417112309624.png)
+
+
+
+
+
 
 # DeadLock - Dining Philosophy Problem
 ## Problem Descriptions

@@ -6,7 +6,7 @@
 
 
 
-## Limit Doesn't Preserve Inequality
+## Limit Doesn't Preserve Strict Inequality
 > [!important]
 > ![](Proof%20Techniques.assets/image-20231116091808362.png)![](Proof%20Techniques.assets/image-20231116091751092.png)
 

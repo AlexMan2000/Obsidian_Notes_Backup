@@ -68,6 +68,7 @@
 ### Switching Procedures
 > [!important]
 > ![](Concurrent_Programming.assets/image-20240306105857605.png)![](Concurrent_Programming.assets/image-20240306105945354.png)![](Concurrent_Programming.assets/image-20240407112340156.png)
+> More on iret see [Project0_Pregame](../HWs_Projects/Pintos_Projects/Project0_Pregame.md)
 
 
 

@@ -192,8 +192,9 @@ plt.stem(index_list, sig_list)
 # Convolution in Python
 ## Three Mode of Convolution
 > [!important]
-
-
+> - `full mode`
+> - `same mode`: 
+> - `valid mode`
 
 
 

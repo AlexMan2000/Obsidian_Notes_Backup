@@ -50,7 +50,7 @@
 
 
 
-# Linear Least Mean Square Estimation
+# Linear Least Square Estimation(LLSE)
 > [!def]
 > `Bayesian LLMS`优化的是:
 > - Consider estimators of $\Theta$, of the form $\hat{\Theta} = aX + b$

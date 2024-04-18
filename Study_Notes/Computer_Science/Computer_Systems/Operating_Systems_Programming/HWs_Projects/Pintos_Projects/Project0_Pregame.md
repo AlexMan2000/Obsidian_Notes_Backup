@@ -318,7 +318,7 @@ intr_exit:
 
 ### iret to execute user program
 > [!important]
-> The key jump here is `iret`, which jumps to the address specified by `%eip`, which is different from `ret` instruction which jumps to the address specified by the top of the stack. 
+> The key jump here is `iret`, which set `%eip` to be `if_.eip` and jumps to the address, which is different from `ret` instruction which jumps to the address specified by the top of the stack. 
 > 
 > More importantly, the `iret` instruction will set the `%esp` to `if_.esp` which is the top of the user space.
 > 

@@ -37,19 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "811647f7051a0d7e",
+            "id": "119543ace8f6720d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d529a03ae2117b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
+                "file": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pointwise convergence",
+                "query": "context switching",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,54 +277,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "811647f7051a0d7e",
+  "active": "119543ace8f6720d",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240417110218133.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240417110210558.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240417105634090.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416205032429.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416204004771.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416203958856.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416203952688.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416203300847.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416202542315.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416202534398.png",
     "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240416201450621.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instruction.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instruction.assets",
-    "Computer_Science/Computer_Graphics/4_Transforms.md",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.assets",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171953142.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171516258.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171453910.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171409781.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417170948565.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417165629846.png",
+    "Computer_Science/Signal_Processing/Difference_Equations",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417164138115.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417163837057.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/SQL_Programming.md",
-    "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Relational_Algebra.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
-    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md",
-    "Computer_Science/Computer_Systems/Database Systems/9_Big_Data_Topics",
-    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md",
-    "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.assets",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.assets",
-    "Computer_Science/Signal_Processing/Labs",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.assets",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+    "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
+    "Computer_Science/Signal_Processing/Related_Resources.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.md",
+    "Mathematics/Analysis/18_102_Functional_Analysis/Course_Materials/Functional Analysis.pdf",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets/image-20240417142855170.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets/image-20240417142853029.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Graphical_Models/Kalman_Filters.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Kalman_Filters.md",
+    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs",
+    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Programming.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.assets",
     "未命名.canvas"
   ]
 }

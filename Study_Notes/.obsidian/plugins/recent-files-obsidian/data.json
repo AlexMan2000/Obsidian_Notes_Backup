@@ -1,16 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+      "basename": "Queues_Message_Passing",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md"
     },
     {
-      "basename": "Lock_Implementations",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
+      "basename": "LTI_Filtering_Applications",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
+    },
+    {
+      "basename": "3.6_Convolution",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md"
+    },
+    {
+      "basename": "Response_to_Exp_Filters",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "Discrete_Time_Fourier_Series",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Solutions",
+      "path": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Network_Implementation",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md"
+    },
+    {
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md"
+    },
+    {
+      "basename": "Residual_Networks",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Signal_Processing/Related_Resources.md"
+    },
+    {
+      "basename": "intro_analysis",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf"
+    },
+    {
+      "basename": "realanal",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md"
+    },
+    {
+      "basename": "Proof Techniques",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.md"
+    },
+    {
+      "basename": "Functional Analysis",
+      "path": "Mathematics/Analysis/18_102_Functional_Analysis/Course_Materials/Functional Analysis.pdf"
+    },
+    {
+      "basename": "Hilbert_Space_RVs",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Discrete_Time_Markov_Chain(DTMC)",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md"
+    },
+    {
+      "basename": "Neyman-Pearson_Formulation",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md"
+    },
+    {
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Non-parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Kalman_Filters",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Kalman_Filters.md"
+    },
+    {
+      "basename": "MAP&LMS&LLMS",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md"
+    },
+    {
+      "basename": "Linear_Regression",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
+    },
+    {
+      "basename": "Convolution_Filters",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+    },
+    {
+      "basename": "RNN_Basics",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
+    },
+    {
+      "basename": "Concurrent_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
+    },
+    {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+    },
+    {
+      "basename": "1_Threads_and_Processes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md"
+    },
+    {
+      "basename": "2_Fundamental OS Concepts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/2_Fundamental OS Concepts.md"
+    },
+    {
+      "basename": "1_Operating System Introduction",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/1_Fundamentals/1_Operating System Introduction.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "2_Files_IOs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "3_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
+    },
+    {
+      "basename": "Synchronization_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Programming.md"
+    },
+    {
+      "basename": "Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.md"
     },
     {
       "basename": "Continuous_Time_Fourier_Series",
@@ -25,20 +169,8 @@
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md"
     },
     {
-      "basename": "Response_to_Exp_Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
-    },
-    {
       "basename": "Synchronization",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
-      "basename": "Concurrent_Programming",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
     },
     {
       "basename": "Atomic_Instruction",
@@ -51,10 +183,6 @@
     {
       "basename": "Shell_Scripts",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "SQL_Programming",
@@ -71,134 +199,6 @@
     {
       "basename": "2_Iterators&Joins",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "Java_Threads",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "No_SQL",
-      "path": "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/No_SQL.md"
-    },
-    {
-      "basename": "Parallel_Query_Processing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Parallel_Query_Processing.md"
-    },
-    {
-      "basename": "3_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
-    },
-    {
-      "basename": "1_Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
-    },
-    {
-      "basename": "Distributed_Txns",
-      "path": "Computer_Science/Computer_Systems/Database Systems/7_Distributed_DBs/Distributed_Txns.md"
-    },
-    {
-      "basename": "2_Types_of_RL",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
-    },
-    {
-      "basename": "1_Markov_Decision_Process",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Solutions",
-      "path": "Computer_Science/Signal_Processing/Labs/Solutions.md"
-    },
-    {
-      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
-    },
-    {
-      "basename": "L11_L12__Absolute_Convergence_Tests_for_Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "class2-reading",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf"
-    },
-    {
-      "basename": "complexnumbers",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/complexnumbers.pdf"
-    },
-    {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
-    },
-    {
-      "basename": "Filters&Bode_Plots",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Filters&Bode_Plots.md"
-    },
-    {
-      "basename": "Rational_Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Rational_Transfer_Functions.md"
-    },
-    {
-      "basename": "Phasor&Transfer_Functions",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/Phasor&Transfer_Functions.md"
-    },
-    {
-      "basename": "3.4_Step_and_Delta",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
-    },
-    {
-      "basename": "3.5_Impulse_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
-    },
-    {
-      "basename": "3.3_Periodic_Input",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.3_Periodic_Input.md"
-    },
-    {
-      "basename": "Sockets",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
-    },
-    {
-      "basename": "2_Sampling&Aliasing",
-      "path": "Computer_Science/Computer_Graphics/2_Sampling&Aliasing.md"
-    },
-    {
-      "basename": "1_Geometry",
-      "path": "Computer_Science/Computer_Graphics/1_Geometry.md"
-    },
-    {
-      "basename": "IP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/IP.md"
-    },
-    {
-      "basename": "HTTP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/HTTP.md"
     }
   ],
   "omittedPaths": [],

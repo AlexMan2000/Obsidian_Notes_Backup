@@ -206,3 +206,13 @@ if (cpid > 0) {
 > ![](1_Threads_and_Processes.assets/image-20240229164240082.png)![](1_Threads_and_Processes.assets/image-20240229164514784.png)![](1_Threads_and_Processes.assets/image-20240229164703170.png)![](1_Threads_and_Processes.assets/image-20240229165031172.png)
 
 
+
+
+# Kernel Structure
+> [!important]
+> ![](1_Threads_and_Processes.assets/image-20240417113319650.png)![](1_Threads_and_Processes.assets/image-20240417113629082.png)
+
+
+
+
+

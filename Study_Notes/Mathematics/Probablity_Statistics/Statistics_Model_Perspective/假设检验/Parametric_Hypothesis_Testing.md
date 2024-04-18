@@ -715,6 +715,9 @@ plt.ylabel("frequency")
 ## 5.8 Code Example
 
 
+
+
+
 # 6 Goodness of Fit Test
 [Goodness of Fit.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1668735440690-8fe28275-b0de-4837-b332-8427ffffcc2d.pdf)
 [MIT-Assessing Goodness of Fit.pdf](https://www.yuque.com/attachments/yuque/0/2022/pdf/12393765/1668735609909-07d9d1c3-e2b3-4733-b2ae-57009994d025.pdf)
