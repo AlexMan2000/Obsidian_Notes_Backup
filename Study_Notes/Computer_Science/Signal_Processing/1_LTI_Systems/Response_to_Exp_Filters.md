@@ -98,6 +98,16 @@ Fa19 Lec3
 
 
 
+## Comparison
+> [!important]
+> ![](Response_to_Exp_Filters.assets/image-20240420172650566.png)![](Response_to_Exp_Filters.assets/image-20240420172708941.png)![](Response_to_Exp_Filters.assets/image-20240420172730597.png)
+
+
+
+
+
+
+
 
 # Cascading LTI Systems
 ## Serial Connection

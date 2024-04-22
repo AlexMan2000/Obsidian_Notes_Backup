@@ -144,13 +144,11 @@ fig.savefig("./HW4_P2")
 > `PCA`的一种常用计算方法是通过对中心化矩阵(`Centered Data Matrix`)进行奇异值分解, 不妨令奇异值分解(`Compact Version`)的结果为$\mathbf{\bar{X}}=\mathbf{U}_k\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$, 其中$\mathbf{U_k}/\mathbf{V_k}$是协方差矩阵的前$k$个左/右奇异向量按列组成的矩阵, $\mathbf{\Lambda}_k$是奇异值方阵。$\mathbf{V_k}$一般用于从降维后的数据反构造出原来的中心化矩阵。
 > ![image.png](Kernel_Methods.assets/ec23590dee5b89778cafffa3a1459ca7_MD5.png)
 > 1. `Score Vector`
-> 
-`PCA`的一大目的就是要得到`Score Vector`，`Score Vector`被定义为$\mathbf{\alpha_i}=\mathbf{U_k}^{\top}(\mathbf{x_i-\overline{x_n}})$, 本质上是中心化样本在$Col(\mathbf{U_k})$上的不同方向的投影大小，注意是大小，如果我们再左乘一个$\mathbf{U_k}$, 得到的$\mathbf{U_k\alpha_i}=\mathbf{U_kU_k^{\top}}(\mathbf{x_i}-\mathbf{\overline{x_n}})$才是投影后的向量。The coefficient $\mathbf{α_i}$ (score of the $i$th point) is used for the representation of data in a lower dimension space and dimension reduction.
+> `PCA`的一大目的就是要得到`Score Vector`，`Score Vector`被定义为$\mathbf{\alpha_i}=\mathbf{U_k}^{\top}(\mathbf{x_i-\overline{x_n}})$, 本质上是中心化样本在$Col(\mathbf{U_k})$上的不同方向的投影大小，注意是大小，如果我们再左乘一个$\mathbf{U_k}$, 得到的$\mathbf{U_k\alpha_i}=\mathbf{U_{k}U_{k}^{\top}}(\mathbf{x_i}-\mathbf{\overline{x_n}})$才是投影后的向量。The coefficient $\mathbf{α_i}$ (score of the $i$th point) is used for the representation of data in a lower dimension space and dimension reduction.
 > 注意到我们在进行奇异值分解任意矩阵$A=U\Sigma V^T$的时候, $A^{\top}A v = \lambda v$求出的特征向量$v$就是$A$的右奇异向量, $AA^{\top} u = \lambda u$求出的特征向量$u$就是$A$的左奇异向量。
 > 所以为了得到上述$\mathbf{U_k}$, 我们需要求出$\mathbf{\bar{X}\bar{X}^{\top}}$的特征值。
 > 2. `Score Matrix`
-> 
-对于中心化数据矩阵我们有$\mathbf{\bar{X}}=\mathbf{U}_k\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$, 左乘$\mathbf{U_k}^{\top}$得到$\mathbf{U_k}^{\top}\mathbf{\bar{X}}=\mathbf{U_k}^{\top}\mathbf{U}_k\mathbf{\Lambda}_k\mathbf{V}_k^{\top}=\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$
+> 对于中心化数据矩阵我们有$\mathbf{\bar{X}}=\mathbf{U}_k\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$, 左乘$\mathbf{U_k}^{\top}$得到$\mathbf{U_k}^{\top}\mathbf{\bar{X}}=\mathbf{U_k}^{\top}\mathbf{U}_k\mathbf{\Lambda}_k\mathbf{V}_k^{\top}=\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$
 > `Score Matrix`被定义为$\Alpha=\begin{bmatrix} \mathbf{\alpha_1}&\mathbf{\alpha_2}&\cdots&\mathbf{\alpha_n}\end{bmatrix}=\mathbf{U_k}^{\top}\mathbf{\bar{X}}=\mathbf{\Lambda}_k\mathbf{V}_k^{\top}$。
 
  
@@ -167,8 +165,8 @@ fig.savefig("./HW4_P2")
 ## Kernel Matrix for PCA
 > 下面的讨论中，** 假设**$\mathbf{\phi}:\mathbb{R}^d\to \mathbb{R}^m$**且**$m>>n$
 > 下面介绍在`Feature Mapped Data`上进行`PCA`的两种方法:
-> 1. 直接对$\mathbf{\Phi}\mathbf{\Phi}^{\top}$(如果是`Centered Data`**则此时是协方差矩阵**)进行特征值分解(或者直接对$\mathbf{\Phi}$进行奇异值分解)得到左奇异向量矩阵$\mathbf{U_k}$, `Score Matrix`就是$\Alpha=\mathbf{U_k^{\top}\mathbf{\Phi}=\Lambda^{-\frac{1}{2}}V_k^{\top}}$(因为$\mathbf{\Phi=U_k\Lambda^{-\frac{1}{2}}V_k^{\top}}$), 此时$\mathbf{\Phi}\mathbf{\Phi}^{\top}\in \mathbb{R}^{m\times m}$, 分解所需要考虑的参数量比较大。
-> 2. 对$\mathbf{K}=\mathbf{\Phi}^{\top}\mathbf{\Phi}$(**核矩阵**)进行特征值分解(或者直接对$\mathbf{\Phi}$进行奇异值分解)得到右奇异向量矩阵$\mathbf{V_k}$,`Score Matrix`就是$\Alpha=\mathbf{V^{\top}\Phi^{\top}\Phi}=\mathbf{V^{\top}K}$。此时$\mathbf{\Phi}\mathbf{\Phi}^{\top}\in \mathbb{R}^{n\times n}$, 分解所需要考虑的参数量比较小, 更推荐使用。
+> 1. 直接对$\mathbf{\Phi}\mathbf{\Phi}^{\top}$(如果是`Centered Data`**则此时是协方差矩阵**)进行特征值分解(或者直接对$\mathbf{\Phi}$进行奇异值分解)得到左奇异向量矩阵$\mathbf{U_k}$, `Score Matrix`就是$\alpha=\mathbf{U_k^{\top}\mathbf{\Phi}=\Lambda^{-\frac{1}{2}}V_k^{\top}}$(因为$\mathbf{\Phi=U_k\Lambda^{-\frac{1}{2}}V_k^{\top}}$), 此时$\mathbf{\Phi}\mathbf{\Phi}^{\top}\in \mathbb{R}^{m\times m}$, 分解所需要考虑的参数量比较大。
+> 2. 对$\mathbf{K}=\mathbf{\Phi}^{\top}\mathbf{\Phi}$(**核矩阵**)进行特征值分解(或者直接对$\mathbf{\Phi}$进行奇异值分解)得到右奇异向量矩阵$\mathbf{V_k}$,`Score Matrix`就是$\alpha=\mathbf{V^{\top}\Phi^{\top}\Phi}=\mathbf{V^{\top}K}$。此时$\mathbf{\Phi}^{\top}\mathbf{\Phi}\in \mathbb{R}^{n\times n}$, 分解所需要考虑的参数量比较小, 更推荐使用。
 
 ### Definition
 > 定义`Kernel Matrix`为$\mathbf{K}=\mathbf{\Phi}^{\top}\mathbf{\Phi}\in \mathbb{R}^{n\times n}$，则:
@@ -185,8 +183,8 @@ fig.savefig("./HW4_P2")
 > Input: $\{\mathbf{x_1}, \mathbf{x_2}, \cdots, \mathbf{x_N}\}$
 > 1. $\mathbf{K}_{ij}=k(\mathbf{x_i},\mathbf{x_j})$
 > 2. $\mathbf{Kv_i}=\lambda_i\mathbf{v_i}$, $\forall i=1,2,\cdots, k$
-> 3. Given $w$s.t. $\|v\|=1$, need $\tilde{v}$that satisfies $\|\tilde{v}\|^2=\frac{1}{\lambda}$， 即$\tilde{v}=\frac{1}{\sqrt{\lambda}}v$。对$\mathbf{K}$做对角化，有$\mathbf{K=V\Lambda V^{\top}=V_k\Lambda_kV_k^{\top}}$, 其中$\mathbf{\Lambda}\in \mathbb{R}^{n\times n}$是对角化得到的特征值矩阵，对角线上的元素是$\lambda_i$。另外，我们可以将$\mathbf{\Lambda_k}\in \mathbb{R}^{k\times k}$看成是一个`Scale Matrix`, 于是$\mathbf{\tilde{V_k}=V_k\Lambda^{-\frac{1}{2}}}$
-> 4. $\Alpha=\mathbf{\tilde{V_k}^{\top}K=\Lambda_k^{-\frac{1}{2}}V_k^{\top}K}$。因为$\mathbf{K=V_k\Lambda_kV_k^{\top}}$, 则两边同乘以$\mathbf{V_k^{\top}}$得到$\mathbf{V_{k}^{\top}K=V_{k}^{\top}V_{k}\Lambda_kV_k^{\top}=\Lambda_k V_k^{\top}}$。 所以$\Alpha=\mathbf{\Lambda_k^{-\frac{1}{2}}V_k^{\top}K=\Lambda_k^{-\frac{1}{2}}\Lambda_k V_k^{\top}=\Lambda_k^{\frac{1}{2}}V_k^{\top}}$, 其中$\|(V_k)_i\|^2_2=1$
+> 3. Given $w$s.t. $\|v\|=1$, need $\tilde{v}$that satisfies $\|\tilde{v}\|^2=\frac{1}{\lambda}$， 即$\tilde{v}=\frac{1}{\sqrt{\lambda}}v$。对$\mathbf{K}$做对角化，有$\mathbf{K=V\Lambda V^{\top}=V_k\Lambda_{k}V_k^{\top}}$, 其中$\mathbf{\Lambda}\in \mathbb{R}^{n\times n}$是对角化得到的特征值矩阵，对角线上的元素是$\lambda_i$。另外，我们可以将$\mathbf{\Lambda_k}\in \mathbb{R}^{k\times k}$看成是一个`Scale Matrix`, 于是$\mathbf{\tilde{V_k}=V_k\Lambda^{-\frac{1}{2}}}$
+> 4. $\Alpha=\mathbf{\tilde{V_k}^{\top}K=\Lambda_k^{-\frac{1}{2}}V_k^{\top}K}$。因为$\mathbf{K=V_k\Lambda_{k}V_k^{\top}}$, 则两边同乘以$\mathbf{V_k^{\top}}$得到$\mathbf{V_{k}^{\top}K=V_{k}^{\top}V_{k}\Lambda_{k}V_k^{\top}=\Lambda_k V_k^{\top}}$。 所以$\Alpha=\mathbf{\Lambda_k^{-\frac{1}{2}}V_k^{\top}K=\Lambda_k^{-\frac{1}{2}}\Lambda_k V_k^{\top}=\Lambda_k^{\frac{1}{2}}V_k^{\top}}$, 其中$\|(V_k)_i\|^2_2=1$
 
 
 
@@ -210,7 +208,7 @@ fig.savefig("./HW4_P2")
 > 4. 定义$\mathbf{J_n=I_n-\frac{1}{n}1_n1_n^{\top}}$, called centering matrix.
 > 
 **于是:**
-> $\begin{aligned}\mathbf{\tilde{K}}&= \mathbf{K}-\frac{1}{n}\mathbf{K}\mathbf{1_n1_n^{\top}}-\frac{1}{n}\mathbf{1_n1_n^{\top}}\mathbf{K}+\frac{1}{n^2}\mathbf{1_n^{\top}}\mathbf{K}\mathbf{1_n}\mathbf{1_n}\mathbf{1_n}^{\top}\\&=(\mathbf{I_n-\frac{1}{n}1_n1_n^{\top})K(I_n-\frac{1}{n}1_n1_n^{\top})}\\&=\mathbf{J_nKJ_n^{\top}}\end{aligned}$
+> $\begin{aligned}\mathbf{\tilde{K}}&= \mathbf{K}-\frac{1}{n}\mathbf{K}\mathbf{1_n1_n^{\top}}-\frac{1}{n}\mathbf{1_n1_n^{\top}}\mathbf{K}+\frac{1}{n^2}\mathbf{1_n^{\top}}\mathbf{K}\mathbf{1_n}\mathbf{1_n}\mathbf{1_n}^{\top}\\&=(\mathbf{I_n-\frac{1}{n}1_n1_n^{\top})K(I_n-\frac{1}{n}1_n1_n^{\top})}\\&=\mathbf{J_{n}KJ_n^{\top}}\end{aligned}$
 
 
 

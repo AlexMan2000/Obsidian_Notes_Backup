@@ -472,13 +472,13 @@ In other words, reject $H_0$if $\hat{\theta_n}\leq c$, $\frac{\hat{\theta_n}-\th
 ## 4.5 Distribution of P-Values
 ### Under Null Hypothesis
 > [!important]
-> Since $t_{data}$ is a random variable, calculated from the samples, p-value is also a random variable.
+> Since $\tilde{t}_{data}$ is a random variable, calculated from the samples, p-value is also a random variable.
 > 
-> If we repeatedly draw samples from null distribution(assume null distribution is true) and calculate the $t_{data}$ and evaluate the pvalue function to get the p-value, we would get a pvalue for each $t_{data}$.
+> If we repeatedly draw samples from null distribution(assume null distribution is true) and calculate the $\tilde{t}_{data}$ and evaluate the pvalue function to get the p-value, we would get a pvalue for each $\tilde{t}_{data}$.
 > 
 > **If $\tilde{t}_{data}$ is continuous, then we have:**
-> 
-> Now suppose $\tilde{t}_{data}\sim T(\mathcal{H}_0)$(which means test statistic is parametrized by the transformation of the parameters from $\mathcal{H}_0$) and its CDF of $F_{\tilde{t}}$, then we know from [Inverse Method](../../../../Computer_Science/Machine_Learning/AI_ML/Sampling_Methods/Sampling_Algorithms.md#Inverse%20Method) that $F_{\tilde{t}}(\tilde{t}_{data})\sim\text{Uniform}(0,1)$, so $\tilde{p}=P_0(\tilde{t}\geq \tilde{t}_{data})=1-F_{\tilde{t}}(\tilde{t}_{data})$, then we compute the CDF of $\tilde{p}$(p-value), which is $$\begin{aligned}F_{\tilde{p}}(u)&=P(\tilde{p}\leq u)\\&=P(1-F_{\tilde{t}}(\tilde{t}_{data})\leq u)\\&=P(F_{\tilde{t}}(\tilde{t}_{data})\leq 1-u)\\&=\int_{1-u}^11dz\\&=u\end{aligned}$$, taking the derivative we get $$f_{\tilde{p}}(p)=1$$, which means $\tilde{p}$ is uniformly distributed acrosss $[0,1]$.
+> ![](Parametric_Hypothesis_Testing.assets/image-20240418124942360.png)
+> Now suppose $\tilde{t}_{data}\sim \mathcal{H}_0$(note that $\mathcal{H}_0$ should be the sampling distribution under null hypothesis) and its CDF of $F_{\tilde{t}}$, then we know from [Inverse Method](../../../../Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md#Inverse%20Method) that $F_{\tilde{t}_{data}}(\tilde{t}_{data})\sim\text{Uniform}(0,1)$, so $\tilde{p}=P_{H_0}(\tilde{t}_{null}\geq \tilde{t}_{data})=1-F_{\tilde{t}_{null}}(\tilde{t}_{data})$, then we compute the CDF of $\tilde{p}$(p-value), which is $$\begin{aligned}F_{\tilde{p}}(u)&=P(\tilde{p}\leq u)\\&=P(1-F_{\tilde{t}_{data}}(\tilde{t}_{data})\leq u)\\&=P(F_{\tilde{t}_{data}}(\tilde{t}_{data})\geq 1-u)\\&=\int_{1-u}^11dz\\&=u\end{aligned}$$, taking the derivative we get $$f_{\tilde{p}}(p)=1$$, which means $\tilde{p}$ is uniformly distributed acrosss $[0,1]$. The key of the proof is that $\tilde{t}_{data}=\tilde{t}_{null}$.
 > 
 > **If $\tilde{t}_{data}$ is discrete, then we have:**
 > $$P(\tilde{t}\geq t_{data})=P(\tilde{t}\geq t_j)<P(\tilde{t}\geq t_i)\quad\forall t_i<t_{data}\leq t_j$$
@@ -579,6 +579,7 @@ plt.ylabel("frequency")
 
 
 # 5 Likelihood-Ratio Test
+Also see [Neyman-Pearson_Formulation](../../../../Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md)
 ## 5.1 Definition
 > [!def]
 > ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227447196.png)
@@ -712,10 +713,9 @@ plt.ylabel("frequency")
 > $$C(X)=\{p_0:2n*(\overline{X}_nlog\frac{\overline{X}_n}{p_0}+(1-\overline{X}_n)log\frac{1-\overline{X}_n}{1-p_0})<\chi_{1,1-\alpha}^2\}$$
 
 
+
 ## 5.8 Code Example
-
-
-
+See [Neyman-Pearson_Formulation](../../../../Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md)
 
 
 # 6 Goodness of Fit Test

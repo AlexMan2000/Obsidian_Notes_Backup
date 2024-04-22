@@ -3,6 +3,14 @@
 > ![](2_Gaussian_Discriminative_Analysis.assets/image-20240320111332485.png)
 
 
+# GDA
+> [!def]
+> ![](2_Gaussian_Discriminative_Analysis.assets/image-20240418145414003.png)![](2_Gaussian_Discriminative_Analysis.assets/image-20240418145426263.png)
+
+> [!proof]
+> ![](2_Gaussian_Discriminative_Analysis.assets/image-20240418145559317.png)![](2_Gaussian_Discriminative_Analysis.assets/image-20240418145606140.png)
+
+
 
 
 # LDA
@@ -59,7 +67,7 @@
 
 
 
-# Conditional Gaussian Modeling
+
 
 
 

@@ -56,9 +56,14 @@
 > [!example] Example 2: Pattern Recognition pp362
 > ![](1_Bayes_Networks.assets/image-20240303085625104.png)
 
+> [!example] More Examples
+> ![](1_Bayes_Networks.assets/image-20240419134920883.png)![](1_Bayes_Networks.assets/image-20240419134928312.png)
 
 
 
+
+
+ 
 # Bayesian Network Causal Structure
 ## Three-Node Model
 > [!overview]
@@ -165,7 +170,7 @@
 
 
 
-
+ 
 ## Operations on Factors
 > [!def]
 > ![](1_Bayes_Networks.assets/image-20240303111218031.png)![](1_Bayes_Networks.assets/image-20240303111225716.png)![](1_Bayes_Networks.assets/image-20240303111316381.png)
@@ -174,11 +179,13 @@
 ### Join Factors
 > [!def]
 > ![](1_Bayes_Networks.assets/image-20240303113012908.png)![](1_Bayes_Networks.assets/image-20240303113037693.png)
+> 
 
 
 ### Eliminate Factors
 > [!def]
 > ![](1_Bayes_Networks.assets/image-20240303113205640.png)![](1_Bayes_Networks.assets/image-20240303113218052.png)
+> Here if we join two factors $f_{1}(A, B)$($2^2$) and $f_{2}(B,E)$($2^2$), the resulting factor would be $f_{3}(A, B, E)$($2^3$), after we eliminate $A$, the resulting factor $f_{4}(B,E)$ would be of size $2^2$.
 
 
 
@@ -219,21 +226,27 @@
 
 
 ## Variable Ordering and Variable Relevance
+### Principles
 > [!important]
 > ![](1_Bayes_Networks.assets/image-20240303111652354.png)![](1_Bayes_Networks.assets/image-20240303111707293.png)
 
 > [!example]
 > ![](1_Bayes_Networks.assets/image-20240303113750669.png)![](1_Bayes_Networks.assets/image-20240303113756391.png)
-> For the first ordering, when we eliminate factor $f(Z)$, we get a large factor $f(X_1,X_2,\cdots,X_{n})$(since we have $f(Z), f(X_i|Z)\forall i=1,2,\cdots, n$ to start with), which corresponds to $2^{n}$ rows in CPT.
+> For the first ordering, when we eliminate variable $Z$, we get a large factor $f(X_1,X_2,\cdots,X_{n})$(since we have $f(Z), f(X_i|Z)\forall i=1,2,\cdots, n$ to start with), which corresponds to $2^{n}$ rows in CPT.
 > 
 > For the second ordering, after eliminating $X_1$, we get small factor $f(Y_1,Z)$, which corresponds to $2^2$ rows in CPT.
 > ![](1_Bayes_Networks.assets/image-20240303114802837.png)
+> The key is that in order to eliminate some variable, we have to at least join all the factors that contains this variable. The join operation of factors will be the bottleneck of our variable elimination algorithm since joining factors make the factor's CPT temporary table larger.
+
+
+### Exercises
+> [!example] CS188 Fa23 Disc08 P3
+> ![](1_Bayes_Networks.assets/image-20240419151226033.png)
 
 
 
 
-
-## Comparisons
+### Comparisons
 > [!important]
 > ![](1_Bayes_Networks.assets/image-20240303112754178.png)![](1_Bayes_Networks.assets/image-20240303113258138.png)![](1_Bayes_Networks.assets/image-20240303113302706.png)
 
@@ -248,6 +261,16 @@
 
 
 # Bayesian Network Modeling
+## Bayesian Linear Regression
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240419135409900.png)
+> Because of the bayes network's causal structure.
+> 
+> ![](1_Bayes_Networks.assets/image-20240419140409914.png)
+
+
+
+
 ## Polynomial Regression Model
 > [!def]
 > If we have training data $\mathbf{x}=(x_1,x_{2,\cdots,}x_n)$ where $x_{i}\in\mathbb{R}$, and observed output data $\mathbf{t}=(t_1,t_{2,\cdots,}t_n)$ and polynomial regression  coefficients $\mathbf{w}=(w_1,w_{2,\cdots,}w_n)$.
@@ -273,9 +296,12 @@
 
 
 
-## Generative Models
+## Generative Models - Ancestral Sampling
 > [!def]
 > ![](1_Bayes_Networks.assets/image-20240304130141114.png)![](1_Bayes_Networks.assets/image-20240304130205465.png)
+
+> [!algo]
+> ![](1_Bayes_Networks.assets/image-20240419135213890.png)
 
 
 
@@ -323,18 +349,50 @@
 
 
 # Bayesian Network Sampling
+> [!motiv]
+> ![](1_Bayes_Networks.assets/image-20240419163654488.png)
+
+
 ## Prior Sampling
-
-
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240419160456415.png)![](1_Bayes_Networks.assets/image-20240419152534506.png)![](1_Bayes_Networks.assets/image-20240419152539604.png)
 
 
 ## Rejection Sampling
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240419152609916.png)![](1_Bayes_Networks.assets/image-20240419160803441.png)![](1_Bayes_Networks.assets/image-20240419160807908.png)
 
 
 ## Likelihood Sampling
+> [!def]
+> **Why we need this?**
+> If some conditional probability is hard to calculate(e.g. not so obvious from the CPT table), we can use sampling techniques to generate some samples(joint samples $(x_{1},\cdots, x_{n})_{m=1}^M$) and use these samples and counting principle to estimate the conditional probability.
+> ![](1_Bayes_Networks.assets/image-20240419161041032.png)![](1_Bayes_Networks.assets/image-20240419161057753.png)![](1_Bayes_Networks.assets/image-20240419161105074.png)![](1_Bayes_Networks.assets/image-20240419161411623.png)
+
+> [!algo]
+> ![](1_Bayes_Networks.assets/image-20240419171629566.png)
+
 
 
 ## Gibbs Sampling
+See [Gibbs Sampling](../Approximate_Inference/Sampling_Algorithms.md#Gibbs%20Sampling)
+> [!motiv]
+> ![](1_Bayes_Networks.assets/image-20240419172701205.png)![](1_Bayes_Networks.assets/image-20240419165129453.png)![](1_Bayes_Networks.assets/image-20240419165136444.png)![](1_Bayes_Networks.assets/image-20240419165143664.png)
+
+> [!algo]
+> ![](1_Bayes_Networks.assets/image-20240419183729028.png)![](1_Bayes_Networks.assets/image-20240419183531308.png)![](1_Bayes_Networks.assets/image-20240419183539976.png)
+
+
+
+## Importance Sampling
+> [!def]
+> ![](1_Bayes_Networks.assets/image-20240419183113903.png)![](1_Bayes_Networks.assets/image-20240419183123290.png)![](1_Bayes_Networks.assets/image-20240419183210679.png)![](1_Bayes_Networks.assets/image-20240419183849681.png)
+
+
+
+## Exercises
+> [!example] CS188 Fa23 Disc9 P1
+> ![](1_Bayes_Networks.assets/image-20240419172310630.png)![](1_Bayes_Networks.assets/image-20240419172317984.png)
 
 
 

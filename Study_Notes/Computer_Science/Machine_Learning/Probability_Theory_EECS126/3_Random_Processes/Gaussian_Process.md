@@ -1,4 +1,7 @@
 # Basic Definition
+[GP_Part1](GP_Part1.pdf)
+[GP_Part2](GP_Part2.pdf)
+[GP_Part3](GP_Part3.pdf)
 ## Stochastic Process
 > [!def]
 > ![](Gaussian_Process.assets/image-20240320121353977.png)
@@ -56,13 +59,6 @@ pl.plot(Xtest, f_prior)
 
 
 
-# Covariance Function Tuning
-
-
-
-
-
-
 # Control the Gaussian Process
 > [!def]
 > ![](Gaussian_Process.assets/image-20240320113701407.png)
@@ -80,7 +76,13 @@ pl.plot(Xtest, f_prior)
 
 
 
+# Gaussian Process in Numpy
 
 
+
+
+
+
+# Gaussian Process in Skict-Learn
 
 

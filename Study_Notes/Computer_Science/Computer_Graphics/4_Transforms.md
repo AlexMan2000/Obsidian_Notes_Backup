@@ -1,5 +1,3 @@
-
-
 # Decomposition of Transforms
 ## SVD
 

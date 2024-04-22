@@ -4,83 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "599e3ee6022366cc",
+        "id": "81317f142ebc2017",
         "type": "tabs",
         "children": [
           {
-            "id": "4018ebf96e364f85",
+            "id": "5960d8b439131c85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f000bddb04acfe63",
+            "id": "25c33b5e21a37e43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Graphics/4_Transforms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d658eb83e770a170",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "119543ace8f6720d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d529a03ae2117b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b571c1fd74c1a58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "context switching",
+                "query": "kerne",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Queues_Message_Passing.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -277,54 +229,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "119543ace8f6720d",
+  "active": "25c33b5e21a37e43",
   "lastOpenFiles": [
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.6_Convolution.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171953142.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171516258.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171453910.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417171409781.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417170948565.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417165629846.png",
-    "Computer_Science/Signal_Processing/Difference_Equations",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417164138115.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets/image-20240417163837057.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.assets",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182708588.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182214626.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182202817.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181939070.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181723086.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181457414.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181402102.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181303280.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180912930.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180712002.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180648997.png",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.assets",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
-    "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Network_Implementation.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolutional_Neural_Network.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Residual_Networks.md",
-    "Computer_Science/Signal_Processing/Related_Resources.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/intro_analysis.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/realanal.pdf",
-    "Mathematics/Analysis/18_100A_Real_Analysis/Related_Resources.md",
-    "Mathematics/Analysis/18_100A_Real_Analysis/Proof Techniques.md",
-    "Mathematics/Analysis/18_102_Functional_Analysis/Course_Materials/Functional Analysis.pdf",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Discrete_Time_Markov_Chain(DTMC).md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets/image-20240417142855170.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets/image-20240417142853029.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.assets",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Graphical_Models/Kalman_Filters.md",
-    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Kalman_Filters.md",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/MAP&LMS&LLMS.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs",
-    "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Programming.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Lock_Implementations.assets",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md",
+    "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.assets",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/3_Op_Amps/3_Practice_Exercises.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/AC_Circuit_Analysis.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/3_Op_Amps/1_Op_Amps.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/2_Touchscreen_Op_amp.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/High_Order_DEs.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Circuit_State_Anaysis.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Basic_DEs.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
+    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/1_Capacitors.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/2.3_Exponential_Response.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf.crdownload",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/Bayesian_Linear_Regression.pdf",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/Bayesian_Linear_Regression.pdf.crdownload",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf.crdownload",
     "未命名.canvas"
   ]
 }
