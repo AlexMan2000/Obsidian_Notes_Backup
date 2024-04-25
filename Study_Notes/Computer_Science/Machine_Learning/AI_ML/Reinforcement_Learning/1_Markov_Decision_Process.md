@@ -35,7 +35,6 @@
 > [!algo]
 > ![](1_Markov_Decision_Process.assets/image-20240215134429484.png)![](1_Markov_Decision_Process.assets/image-20240215134439231.png)![](1_Markov_Decision_Process.assets/image-20240215141034808.png)
 
-
 > [!example] 
 > ![](1_Markov_Decision_Process.assets/image-20240215134703504.png)
 > For this value iteration, we can quickly determine which action the MDP will pick by observation:

@@ -268,6 +268,19 @@ long long int sum_simd_unrolled(int vals[NUM_ELEMS]) {
 > ![](Data-Level_Parallelism.assets/image-20231201105042113.png)
 
 
+
+# Python MPI Package
+> [!important]
+> Install `MSMpiSetup.exe` from https://www.microsoft.com/en-us/download/details.aspx?id=54607
+> 
+> Run  `conda install -c conda-forge mpi4py` at the windows terminal with administrator permission.
+> 
+
+
+
+
+
+
 # Concept Check
 ## Intrinsic Instructions
 > [!important]

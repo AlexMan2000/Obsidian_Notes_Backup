@@ -13,26 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "25c33b5e21a37e43",
+            "id": "8832e988d37e9e2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -62,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kerne",
+                "query": "plot density",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -154,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,8 +228,22 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "25c33b5e21a37e43",
+  "active": "5960d8b439131c85",
   "lastOpenFiles": [
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/1_Markov_Decision_Process.md",
+    "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md",
+    "Computer_Science/Deep_Learning/Deep_Generative_Models/Variational_AutoEncoder.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md",
+    "Computer_Science/Deep_Learning/Deep_Generative_Models",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.md",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Related_Resources.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Related_Resources.md",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_AutoEncoder.md",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Data-Level_Parallelism.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182708588.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182214626.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420182202817.png",
@@ -241,12 +254,9 @@
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420181303280.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180912930.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180712002.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets/image-20240420180648997.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.assets",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md",
     "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf",
     "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md",
@@ -260,23 +270,12 @@
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/AC_Circuit_Analysis.md",
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/3_Op_Amps/1_Op_Amps.md",
     "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/2_Touchscreen_Op_amp.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/High_Order_DEs.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Circuit_State_Anaysis.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Basic_DEs.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/1_Capacitors.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/2.3_Exponential_Response.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Kalman_Filters.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf.crdownload",
     "Computer_Science/Machine_Learning/AI_ML/Regression/Bayesian_Linear_Regression.pdf",
     "Computer_Science/Machine_Learning/AI_ML/Regression/Bayesian_Linear_Regression.pdf.crdownload",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf.crdownload",
     "未命名.canvas"
   ]
 }

@@ -4,9 +4,21 @@
 
 
 # MRF: Notations
+## Overview
 > [!def]
-> ![](3_Markov_Random_Field.assets/image-20240419204131298.png)![](3_Markov_Random_Field.assets/image-20240420133540596.png)![](3_Markov_Random_Field.assets/image-20240420133554504.png)![](3_Markov_Random_Field.assets/image-20240420133636641.png)
+> ![](3_Markov_Random_Field.assets/image-20240419204131298.png)
 
+
+## Cliques
+> [!def]
+> ![](3_Markov_Random_Field.assets/image-20240420133540596.png)
+
+
+
+
+## Potentials
+> [!def]
+> ![](3_Markov_Random_Field.assets/image-20240420133554504.png)![](3_Markov_Random_Field.assets/image-20240420133636641.png)
 
 
 
