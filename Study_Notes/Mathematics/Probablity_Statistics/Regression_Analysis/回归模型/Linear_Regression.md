@@ -291,7 +291,7 @@ $Y_i\sim \mathcal{N}(\beta_0+\beta_1X_i,\sigma^2)$
 :::info
 我们已经计算过:
 $\mathbf{J(\beta)}=\sum_{i=1}^n \epsilon_i^2=\mathbf{(y-X\beta)^T(y-X\beta)}$ through derivative:
-$\begin{align}\frac{\partial J}{\partial \mathbf{\beta}}& =\frac{\partial}{\partial \mathbf{\beta}}(\mathbf{y^Ty-y^TX\beta-\beta^TX^Ty+\beta^TX^TX\beta}) \nonumber \\&=\mathbf{-2X^Ty+2X^TX\beta}=0 \nonumber \end{align}$
+$\begin{align}\frac{\partial J}{\partial \mathbf{\beta}}& =\frac{\partial}{\partial \mathbf{\beta}}(\mathbf{y^Ty-y^TX\beta-\beta^{T}X^{T}y+\beta^{T}X^{T}X\beta}) \nonumber\\&=\mathbf{-2X^Ty+2X^TX\beta}=0 \nonumber \end{align}$
 Thus the OLS for normal error model is
  $\mathbf{\hat{\beta}}_{OLS}=\mathbf{(X^TX)^{-1}X^Ty}=\mathbf{(X^TX)^{-1}X^T(\mathbf{X}\beta+\epsilon)}=I_n\beta+(X^TX)^{-1}X^T\epsilon$
 :::
@@ -304,7 +304,7 @@ Thus the OLS for normal error model is
 $\mathbf{Y=X\beta +\epsilon}$, $\hat{\beta}=\beta+\mathbf{(X^TX)^{-1}X^T\epsilon}$
 :::
 **Proof**We first calculate the least square estimator by minimizing $\mathbf{J(\beta)}=\sum_{i=1}^n \epsilon_i^2=\mathbf{(y-X\beta)^T(y-X\beta)}$ through derivative:
-$\begin{align}\frac{\partial J}{\partial \mathbf{\beta}}& =\frac{\partial}{\partial \mathbf{\beta}} (\mathbf{y^Ty-y^TX\beta-\beta^TX^Ty+\beta^TX^TX\beta}) \nonumber\\&=\mathbf{-2X^Ty+2X^TX\beta}=0 \nonumber \end{align}$
+$\begin{align}\frac{\partial J}{\partial \mathbf{\beta}}& =\frac{\partial}{\partial \mathbf{\beta}} (\mathbf{y^Ty-y^TX\beta-\beta^{T}X^{T}y+\beta^{T}X^{T}X\beta}) \nonumber\\&=\mathbf{-2X^Ty+2X^TX\beta}=0 \nonumber \end{align}$
 Thus the LSE for normal error model is $\mathbf{\hat{\beta}}_{LSE}=\mathbf{(X^TX)^{-1}X^Ty}$
 We then compute the MLE for normal error model and we know the log-likelihood function looks like:
 $\begin{align}    l(\mathbf{\beta},\sigma^2)&=-\frac{n}{2}log\sigma^2-\frac{n}{2\sigma^2}\mathbf{(y-X\beta)^T(y-X\beta)} \nonumber\end{align}$
@@ -318,7 +318,7 @@ Thus, when $\epsilon\sim \mathcal{N}(0,\sigma^2\mathbf{I}_n)$, the LSE and MLE m
 `**MLE**`**for **$\mathbf{\beta}$**:**
 $\frac{\partial l}{\partial \beta}=-\frac{1}{\sigma^2}\mathbf{X^T(X\beta-Y)}$
 $\frac{\partial l}{\partial \beta^2}=-\frac{\mathbf{X^TX}}{\sigma^2}=-I(\beta)$
-$\hat{\beta}-\beta\sim \mathcal{N}(0,I^{-1}(\beta))=\mathcal{N}(0,\sigma^2(\mathbf{X^TX})^{-1})$
+$\hat{\beta}-\beta\sim \mathcal{N}(0,I^{-1}(\beta))=\mathcal{N}(0,\sigma^2(\mathbf{X^{T}X})^{-1})$
 $\hat{\beta}$achieves the Cramer-Rao Bound, no proof is provided.
 :::
 
@@ -667,7 +667,7 @@ $\mathbf{I-H}$是投影矩阵，且将$\forall z\in \mathbb{R}^n$投影到$\math
 > 于是$\mathbf{HH_S}e_i=\mathbf{H}e_i,\forall 1\leq i\leq n$, 这表明$\mathbf{HH_S=H}$
 > 3. $\mathbf{H_SH=H_S}$
 > 
-我们只需要对上述等式的左右两边同时取转置，即$\mathbf{(HH_S)^T=H^T}$，得到$\mathbf{H_S^TH^T=H_S^T} \tag{1}$, 因为$\mathbf{H}$和$\mathbf{H_S}$是投影矩阵满足$\mathbf{H^T=H}$且$\mathbf{H_S^T=H_S}$， 于是$(1)$式变成$\mathbf{H_SH=H_S}$
+我们只需要对上述等式的左右两边同时取转置，即$\mathbf{(HH_S)^T=H^T}$，得到$\mathbf{H_S^{T}H^T=H_S^T} \tag{1}$, 因为$\mathbf{H}$和$\mathbf{H_S}$是投影矩阵满足$\mathbf{H^T=H}$且$\mathbf{H_S^T=H_S}$， 于是$(1)$式变成$\mathbf{H_SH=H_S}$
 > 3. $\mathbf{H-H_S}$是投影矩阵![image.png](./Linear_Regression.assets/20230302_1229208993.png)
 
 

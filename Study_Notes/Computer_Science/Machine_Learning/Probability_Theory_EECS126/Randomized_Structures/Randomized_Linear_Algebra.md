@@ -229,3 +229,8 @@ generate_plots(A)
 > [!code] Output
 > ![](Randomized_Linear_Algebra.assets/image-20240316180948077.png)
 
+
+
+
+# Matrix Completion
+ 

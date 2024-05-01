@@ -4,7 +4,7 @@
 > ![](3_Regression&Reparametrization.assets/image-20240203160654772.png)
 > Basically we are making assumptions about the randomness of the data and that of the weight.
 > 
-> And it is just the tug of war between the prior and likehood distribution that determines the posterior distribution. [Priors&Posteriors](../../../../Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md)
+> And it is just the tug of war between the prior and likehood distribution that determines the posterior distribution. [Hypothesis_Testing](../../../../Data_Science/Statistical_Inference/3_Bayesian_Statistics/Hypothesis_Testing.md)
 > 
 > For all of the following discussion, we assume that the observation takes the form $$\vec{y}=X\vec{w}+\vec{z}$$ where:
 > 1. $X$ is our data matrix(each row is a data point of $d$ dimension)
@@ -44,7 +44,7 @@
 ## Bayesian Perspective
 > [!important]
 > ![](3_Regression&Reparametrization.assets/image-20240215194645426.png)
-> The formula is inspired by [Weighted Average of Prior and Data](../../../../Data_Science/Statistical_Inference/3_Bayesian_Statistics/Priors&Posteriors.md#Guassian%20Priors#Weighted%20Average%20of%20Prior%20and%20Data) and derived below:
+> The formula is inspired by [Weighted Average of Prior and Data](../../../../Data_Science/Statistical_Inference/3_Bayesian_Statistics/Hypothesis_Testing.md#Guassian%20Priors#Weighted%20Average%20of%20Prior%20and%20Data) and derived below:
 > Suppose we have dataset $D_N=\left\{\left(x_1, y_1\right),\left(x_2, y_2\right), \cdots,\left(x_N, y_N\right)\right\}$, where we assume a $1-d \operatorname{model} y_i=\omega x_i+\varepsilon_i$ where $\varepsilon_i \sim N\left(0, \sigma^2\right), \omega \sim N\left(\mu_0, \sigma_0^2\right)$
 > Then the posterior distribution :$$\begin{aligned}f\left(\omega \mid D_N\right) & =f\left(\omega \mid x_1, x_2, \cdots, x_N, y_1, y_2, \cdots, y_n, \sigma^2\right) \\& =\frac{f\left(y_1, y_2, \cdots, y_N \mid \omega, x_1, x_2, \cdots, x_N, \sigma^2\right) f(\omega)}{f\left(y_1, y_2, \cdots y_N \mid x_1, x_2, \cdots x_N\right)} \\& \propto \prod_{i=1}^N \exp \left\{-\frac{1}{2 \sigma^2}\left(y_i-\omega x_i\right)^2\right\} \exp \left\{-\frac{1}{2 \sigma_0^2}\left(\omega-\mu_0\right)^2\right\} \\& \propto-\frac{\sigma_0^2 \sum_{i=1}^N\left(y_i-\omega x_i\right)^2+\sigma^2\left(\omega-\mu_0\right)^2}{2 \sigma^2 \sigma_0^2} \\& =-\frac{\left(\sum_{i=1}^N x_i^2 \cdot \omega^2-2 \sum_{i=1}^N x_i y_i \cdot \omega+\sum_{i=1}^N y_i^2\right) \sigma_0^2+\left(\omega^2-2 \mu_0 \cdot \omega+\mu_0^2\right) \cdot \sigma^2}{2 \sigma^2 \sigma_0^2} \\& =-\frac{\left(\sigma_0^2 \sum_{i=1}^N x_i^2+\sigma^2\right) \omega^2-2 \sigma_0^2 \sum_{i=1}^N x_i y_i \cdot \omega+C}{2 \sigma^2 \sigma_0^2} \\\therefore \mu_{\text {post }} & =\frac{\sigma_0^2 \sum_{i=1}^N x_i y_i+\sigma^2\mu_0}{\sigma_0^2 \sum_{i=1}^N x_i^2+\sigma^2} \quad \sigma_{\text {post }}^2=\frac{\sigma^2 \sigma_0^2}{\sigma_0^2 \sum_{i=1}^N x_i^2+\sigma^2}\end{aligned}$$
 > 

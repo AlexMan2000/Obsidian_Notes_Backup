@@ -13,8 +13,11 @@
 ## P-Value of the Test
 > [!def]
 > ![](Non-parametric_Hypothesis_Testing.assets/image-20240315175410691.png)![](Non-parametric_Hypothesis_Testing.assets/image-20240315175421700.png)
+> Think of x as a dataset where a, b could belong to a group while c could belong to another.
+> 
+> Think of $\prod_x$ as all possible permutations row-wise of the dataset. 
 
-
+    
 ## Exchangeability
 > [!property]
 > ![](Non-parametric_Hypothesis_Testing.assets/image-20240315175823130.png)

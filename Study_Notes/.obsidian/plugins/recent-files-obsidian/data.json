@@ -1,6 +1,190 @@
 {
   "recentFiles": [
     {
+      "basename": "4_Transforms",
+      "path": "Computer_Science/Computer_Graphics/4_Transforms.md"
+    },
+    {
+      "basename": "Rigid_Body_Transformation",
+      "path": "Computer_Science/Robotics_Control_Theory/Rigid_Body_Motion/Rigid_Body_Transformation.md"
+    },
+    {
+      "basename": "Basic_Concepts",
+      "path": "Data_Science/Statistical_Inference/Causal_Inference/Basic_Concepts.md"
+    },
+    {
+      "basename": "3_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
+    },
+    {
+      "basename": "Sockets",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
+    },
+    {
+      "basename": "Proxy_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+    },
+    {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
+      "basename": "2_Files_IOs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
+    },
+    {
+      "basename": "Atomic_Instructions",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md"
+    },
+    {
+      "basename": "Synchronization_Problems",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Doubly_Robust_Estimators",
+      "path": "Data_Science/Statistical_Inference/Causal_Inference/Doubly_Robust_Estimators.md"
+    },
+    {
+      "basename": "Covariate_Adjustment",
+      "path": "Data_Science/Statistical_Inference/Causal_Inference/Covariate_Adjustment.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Variance_Reduction_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variance_Reduction_Methods.md"
+    },
+    {
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
+    },
+    {
+      "basename": "Sampling_Algorithms",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
+    },
+    {
+      "basename": "Hilbert_Space_RVs",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md"
+    },
+    {
+      "basename": "High-level_Distributions",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/10_随机变量的矩_高阶分布/High-level_Distributions.md"
+    },
+    {
+      "basename": "3.4_Step_and_Delta",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
+    },
+    {
+      "basename": "LTI_Filtering_Applications",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
+    },
+    {
+      "basename": "Response_to_Exp_Filters",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "3.5_Impulse_Response",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
+    },
+    {
+      "basename": "PART_B__向量场和曲线积分",
+      "path": "Mathematics/Vector_Calculus/18.02SC/Unit_3_Double_Integrals/PART_B__向量场和曲线积分.md"
+    },
+    {
+      "basename": "PART_A__二重积分",
+      "path": "Mathematics/Vector_Calculus/18.02SC/Unit_3_Double_Integrals/PART_A__二重积分.md"
+    },
+    {
+      "basename": "衍生随机变量__贝叶斯公式变体__协方差",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/衍生随机变量__贝叶斯公式变体__协方差.md"
+    },
+    {
+      "basename": "Related Resources",
+      "path": "Mathematics/Vector_Calculus/18.02SC/Related Resources.md"
+    },
+    {
+      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
+    },
+    {
+      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
+    },
+    {
+      "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
+      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md"
+    },
+    {
+      "basename": "Neyman-Pearson_Formulation",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md"
+    },
+    {
+      "basename": "Bayesian_Formulation",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Bayesian_Formulation.md"
+    },
+    {
+      "basename": "Galleries_of_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Galleries_of_Testing.md"
+    },
+    {
+      "basename": "Parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Hypothesis_Testing",
+      "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Binary_Decision_Rules",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
+    },
+    {
+      "basename": "Hypothesis_Testing",
+      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Randomized_Linear_Algebra",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Randomized_Structures/Randomized_Linear_Algebra.md"
+    },
+    {
+      "basename": "Linear_Regression",
+      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
+    },
+    {
+      "basename": "Propensity_Score_Weighting",
+      "path": "Data_Science/Statistical_Inference/Causal_Inference/Propensity_Score_Weighting.md"
+    },
+    {
+      "basename": "Matching",
+      "path": "Data_Science/Statistical_Inference/Causal_Inference/Matching.md"
+    },
+    {
+      "basename": "Discrete_Time_Fourier_Series",
+      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
+    },
+    {
+      "basename": "Non-parametric_Hypothesis_Testing",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Non-parametric_Hypothesis_Testing.md"
+    },
+    {
+      "basename": "Data-Level_Parallelism",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Data-Level_Parallelism.md"
+    },
+    {
+      "basename": "Assign3_Recursion_Backtracking",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/4_Recursive_Thinking/Assign3_Recursion_Backtracking.md"
+    },
+    {
       "basename": "2_Types_of_RL",
       "path": "Computer_Science/Machine_Learning/AI_ML/Reinforcement_Learning/2_Types_of_RL.md"
     },
@@ -15,190 +199,6 @@
     {
       "basename": "__经验函数和插入估计量",
       "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/单元统计推断/无参推断/__经验函数和插入估计量.md"
-    },
-    {
-      "basename": "Variational_Inference",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Related_Resources.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Related_Resources.md"
-    },
-    {
-      "basename": "Variational_AutoEncoder",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_AutoEncoder.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "3_Markov_Random_Field",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md"
-    },
-    {
-      "basename": "Block_Diagrams",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Block_Diagrams.md"
-    },
-    {
-      "basename": "Data-Level_Parallelism",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/10_Parallel_Programming/Data-Level_Parallelism.md"
-    },
-    {
-      "basename": "Discrete_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
-      "basename": "Response_to_Exp_Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
-    },
-    {
-      "basename": "L11_L12__Absolute_Convergence_Tests_for_Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L11_L12__Absolute_Convergence_Tests_for_Series.md"
-    },
-    {
-      "basename": "Understanding Analysis",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/Understanding Analysis.pdf"
-    },
-    {
-      "basename": "L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L9_L10__Limsup_Liminf__BW_Theorem_Cauchy__Series.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L16_L17__Min_Max_Theorem__IVT____Uniform_Convergence.md"
-    },
-    {
-      "basename": "Difference_Equations",
-      "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
-    },
-    {
-      "basename": "L7_L8__Convergence_Sequences",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L7_L8__Convergence_Sequences.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
-    },
-    {
-      "basename": "3_Practice_Exercises",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/3_Op_Amps/3_Practice_Exercises.md"
-    },
-    {
-      "basename": "AC_Circuit_Analysis",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Frequency_Analysis-AC/AC_Circuit_Analysis.md"
-    },
-    {
-      "basename": "1_Op_Amps",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/3_Op_Amps/1_Op_Amps.md"
-    },
-    {
-      "basename": "2_Touchscreen_Op_amp",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/2_Touchscreen_Op_amp.md"
-    },
-    {
-      "basename": "High_Order_DEs",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/High_Order_DEs.md"
-    },
-    {
-      "basename": "Circuit_State_Anaysis",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Circuit_State_Anaysis.md"
-    },
-    {
-      "basename": "Basic_DEs",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Differential_Equations-DC/Basic_DEs.md"
-    },
-    {
-      "basename": "Capacitors&Inductors&OpAmp",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16B/Module1_Signal_Processing/Advanced_Circuit_Elements/Capacitors&Inductors&OpAmp.md"
-    },
-    {
-      "basename": "1_Capacitors",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/2_Circuit_Analysis/2_Capacitive_Touchscreen/1_Capacitors.md"
-    },
-    {
-      "basename": "2.3_Exponential_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/2.3_Exponential_Response.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
-    },
-    {
-      "basename": "2_Decision_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
-    },
-    {
-      "basename": "4_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "Synchronization_Problems",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
-    },
-    {
-      "basename": "Kernel_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Kernel_Methods.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
-    },
-    {
-      "basename": "Laplace_Approximation",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Laplace_Approximation.md"
-    },
-    {
-      "basename": "Gaussian_Process",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md"
-    },
-    {
-      "basename": "3_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
-    },
-    {
-      "basename": "4_Generalized_Linear_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/4_Generalized_Linear_Model.md"
-    },
-    {
-      "basename": "Solutions",
-      "path": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md"
-    },
-    {
-      "basename": "Mixture_of_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian.md"
-    },
-    {
-      "basename": "Features_Hilbert_Space",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Kernel_Methods/Features_Hilbert_Space.md"
-    },
-    {
-      "basename": "GMMEMNotes",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/GMMEMNotes.pdf"
-    },
-    {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "K-Means",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/K-Means.md"
     }
   ],
   "omittedPaths": [],

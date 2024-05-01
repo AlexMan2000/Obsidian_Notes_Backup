@@ -1,6 +1,4 @@
-
-
-
+# Orthognal Projection
 
 
 

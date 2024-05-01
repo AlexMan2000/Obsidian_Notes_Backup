@@ -273,7 +273,8 @@
 
 # 2 Choices of Statistics
 ## 2.1 Z-Test
-> ![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227423658.png)
+> [!def]
+> ![](Parametric_Hypothesis_Testing.assets/image-20240425190357055.png)![](Parametric_Hypothesis_Testing.assets/image-20240425190512908.png)![image.png](./Parametric_Hypothesis_Testing.assets/20230302_1227423658.png)
 > 
 
 
@@ -556,7 +557,7 @@ plt.ylabel("frequency")
 > **Key**
 > P-value= $\alpha^*=\sup_{\theta\leq \frac{1}{2}}\mathbb{P}_{\theta}(\frac{\sqrt{n}(0.7-\theta)}{\sqrt{\theta(1-\theta)}}\geq\frac{\sqrt{n}(c-\theta)}{\sqrt{\theta(1-\theta)}})=1-\Phi(\frac{\sqrt{n}(c-\theta)}{\theta})$when $n$is large.
 > 
-> When $n$is small, we have $T(X)=\sum_{i=1}^{10} X_i \sim Binomial(10,\theta)$, p-value=$\alpha^*=\sup_{\theta\leq \frac{1}{2}}P_{\theta}(T(X)\geq 7)$, and we know that when $\theta=\frac{1}{2}$, $P_{\theta}(T(X)\leq 7)$is the largest, so $\alpha^*=\sum_{k=7}^{10}(_k^{10})(\frac{1}{2})^k(\frac{1}{2})^{10-k}=\sum_{i=7}^{10}(_k^{10})(\frac{1}{2})^{10}$
+> When $n$ is small, we have $T(X)=\sum_{i=1}^{10} X_i \sim Binomial(10,\theta)$, p-value=$\alpha^*=\sup_{\theta\leq \frac{1}{2}}P_{\theta}(T(X)\geq 7)$, and we know that when $\theta=\frac{1}{2}$, $P_{\theta}(T(X)\geq 7)$is the largest, so $\alpha^*=\sum_{k=7}^{10}(_k^{10})(\frac{1}{2})^k(\frac{1}{2})^{10-k}=\sum_{i=7}^{10}(_k^{10})(\frac{1}{2})^{10}$
 
 ### E2 Poisson 1
 > [!example]
@@ -574,7 +575,9 @@ plt.ylabel("frequency")
 > Calculate the p-value.
 > 
 > **Key**
-> Let $T(X)=\sum_{i=1}^3X_i=5+3+1=9\sim Possion(3\lambda)$p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 1}\sum_{k=9}^{\infty}\frac{(3\lambda)^k e^{-3\lambda}}{k!}=\sum_{k=9}^{\infty}\frac{e^{-3\lambda}}{k!}\approx 0.0038$(obtained when $\lambda=1$)
+> Let $T(X)=\sum_{i=1}^3X_i=5+3+1=9\sim Possion(3\lambda)$
+> 
+> p-value=$\alpha^*=\sup_{\lambda\leq 1}P_{\lambda}(T(X)\geq 9)=\sup_{\lambda\leq 1}\sum_{k=9}^{\infty}\frac{(3\lambda)^k e^{-3\lambda}}{k!}=\sum_{k=9}^{\infty}\frac{e^{-3\lambda}}{k!}\approx 0.0038$(obtained when $\lambda=1$)
 
 
 
