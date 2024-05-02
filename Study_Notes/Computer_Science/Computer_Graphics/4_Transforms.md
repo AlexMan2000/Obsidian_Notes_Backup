@@ -10,6 +10,16 @@
 
 ## Coordinate Transformation
 > [!important]
+> Suppose we have a point in 2D space, which can be represented by two different coordinates. One basis is $\vec{o},\vec{x},\vec{y}$ and another is $\vec{e},\vec{u},\vec{v}$. Here $\vec{o}$ and $\vec{e}$ are the origin of the coordinate respectively.
+> ![](4_Transforms.assets/image-20240501170519164.png)
+> To express the same point $\vec{p}$, we have two formulations:
+> 1. $\vec{p}=\vec{o}+x_p\vec{x}+y_p\vec{y}$
+> 2. $\vec{p}=\vec{e}+u_p\vec{u}+v_p\vec{v}$
+> 
+> Frame to canonical(uvw -> xyz): $$$$
+> Canonical to Frame(xyz -> uvw):
+
+
 
 
 
