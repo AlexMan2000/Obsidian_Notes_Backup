@@ -16,8 +16,15 @@
 > 1. $\vec{p}=\vec{o}+x_p\vec{x}+y_p\vec{y}$
 > 2. $\vec{p}=\vec{e}+u_p\vec{u}+v_p\vec{v}$
 > 
-> Frame to canonical(uvw -> xyz): $$$$
+> Frame to canonical(uvw -> xyz): $$\mathrm{p}_{x y}=\left[\begin{array}{lll}
+\mathrm{u} & \mathrm{v} & \mathrm{e} \\
+0 & 0 & 1
+\end{array}\right] \mathrm{p}_{u v} .$$
 > Canonical to Frame(xyz -> uvw):
+> $$\mathrm{p}_{u v}=\left[\begin{array}{lll}
+\mathrm{u} & \mathrm{v} & \mathrm{e} \\
+0 & 0 & 1
+\end{array}\right]^{-1} \mathrm{p}_{x y .}$$
 
 
 

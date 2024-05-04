@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "5f152522576b7172",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "442ec23c609f1be4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3d8df37692015cfd",
             "type": "leaf",
             "state": {
@@ -49,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+                "file": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,13 +97,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -153,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 200
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -181,7 +206,7 @@
             }
           },
           {
-            "id": "de0d1db8e632e64a",
+            "id": "fb4d45ad876ae3eb",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -201,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Graphics/4_Transforms.md",
+                "file": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Graphics/4_Transforms.md",
+                "file": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -276,11 +301,29 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "5960d8b439131c85",
+  "active": "d8cda77d2b12d166",
   "lastOpenFiles": [
+    "Computer_Science/Web_Development/Javascript/Promise/Await_Async.md",
+    "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency.md",
+    "Computer_Science/Web_Development/Javascript/Promise",
+    "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+    "Computer_Science/Web_Development/Vue",
+    "Computer_Science/Web_Development/React",
+    "Computer_Science/Web_Development/HTMLCSS",
+    "Computer_Science/Web_Development/Javascript",
+    "Computer_Science/Untitled",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md",
+    "Computer_Science/Computer_Graphics/4_Transforms.md",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240501170519164.png",
     "Computer_Science/Robotics_Control_Theory/Rigid_Body_Motion/Rigid_Body_Transformation.md",
-    "Computer_Science/Computer_Graphics/4_Transforms.md",
     "Data_Science/Statistical_Inference/Causal_Inference/Basic_Concepts.md",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429230322440.png",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429230058602.png",
@@ -291,39 +334,21 @@
     "Computer_Science/Robotics_Control_Theory/Dynamics",
     "Computer_Science/Robotics_Control_Theory/Velocities_Jacobian",
     "Computer_Science/Robotics_Control_Theory/Vision",
-    "Computer_Science/Robotics_Control_Theory/Kinematics",
-    "Computer_Science/Robotics_Control_Theory/Rigid_Body_Motion",
-    "Computer_Science/Robotics_Control_Theory",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429223813450.png",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429223752542.png",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429223741745.png",
     "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429223709620.png",
-    "Computer_Science/Computer_Graphics/4_Transforms.assets/image-20240429223620859.png",
-    "Computer_Science/Computer_Graphics/4_Transforms.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
     "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
     "Data_Science/Statistical_Inference/Causal_Inference/Doubly_Robust_Estimators.md",
     "Data_Science/Statistical_Inference/Causal_Inference/Covariate_Adjustment.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variance_Reduction_Methods.md",
-    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variance_Reduction_Methods.assets",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/10_随机变量的矩_高阶分布/High-level_Distributions.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
-    "Mathematics/Vector_Calculus/18.02SC/Unit_3_Double_Integrals/PART_B__向量场和曲线积分.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Bayesian_Formulation.assets",
     "未命名.canvas"
   ]
 }

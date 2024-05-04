@@ -457,8 +457,11 @@ public class interruprThread {
                 // 如果被打断，终止执行 
                     log.debug("While runnning, is interrupted, breaking...");  
                     break;  
-                }                isInterrupted = Thread.currentThread().isInterrupted();  
-            }        });        t1.start();  
+                }                
+                isInterrupted = Thread.currentThread().isInterrupted();  
+            }       
+		});        
+		t1.start();  
   
         Thread.sleep(2000);  
   
@@ -562,6 +565,9 @@ public class park {
 > ![](Java_Threads.assets/image-20240403102609885.png)
 > Notes:
 > 1. 睡眠两秒的意义是让出CPU的时间片让CPU不会太忙。
+> 2. 总的来说分为两种情况
+> 	1. 线程在`Running`的时候被打断，直接料理后事, 并退出循环。
+> 	2. 线程在`sleep`的时候被打断，先将打断标记设置为`true`, 在下一次循环的时候料理后事并推出循环。
 > 
 ```java
 package cn.itcast.test;
