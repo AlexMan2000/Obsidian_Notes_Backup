@@ -629,7 +629,117 @@ class Account {
 # Wait-Notify
 > [!important]
 > ![](Synchronization.assets/image-20240416170024953.png)
+```java
+package cn.itcast.self_test;
 
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+@Slf4j(topic="c.Protective_Block")
+public class Protective_Block {
+
+    public static void main(String[] args) {
+        ConcurrentCircularBuffer<String> monitor = new ConcurrentCircularBuffer<>(10);
+
+        int numConsume = 5;
+        int numProduce = 3;
+        Thread[] consumers = new Thread[numConsume];
+        Thread[] producers = new Thread[numProduce];
+
+        for (int i = 0; i < numConsume; i++){
+            consumers[i] = new Thread(()->{
+                String s = monitor.poll();
+                System.out.println("Successfully consumed " + s);
+            }, "consumer"+i);
+        }
+
+        for (int i = 0; i < numProduce; i++){
+            producers[i] = new Thread(()->{
+                while (true) {
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    monitor.put("Data" + Thread.currentThread().getId());
+                    System.out.println(Thread.currentThread().getName()  + " successfully produced the data" + Thread.currentThread().getId());
+                }
+
+                }, "producer"+i);
+        }
+
+        System.out.println("Now starting consumers");
+        for (int i = 0; i < numConsume; i++){
+            consumers[i].start();
+        }
+
+        System.out.println("Now starting producers");
+        for (int i = 0;  i < numProduce; i++){
+            producers[i].start();
+        }
+    }
+}
+
+
+class ConcurrentCircularBuffer<T> {
+
+    public T[] buffer;
+    int capacity;
+    int front;
+    int back;
+
+    public ConcurrentCircularBuffer(int capacity) {
+        buffer = (T[]) new Object[capacity];
+        this.capacity = capacity;
+        front = 0;
+        back = 0;
+    }
+
+
+    public synchronized boolean isEmpty() {
+        return front == back;
+    }
+
+
+    public synchronized boolean isFull() {
+        return Math.abs(front - back) == capacity;
+    }
+
+    public synchronized T poll() {
+        while (isEmpty()) {
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        T res = buffer[front];
+        front = (front + 1) % capacity;
+        this.notify();
+        return res;
+    }
+
+    public synchronized void put(T data) {
+        while (isFull()) {
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        buffer[back] = data;
+        back = (back + 1) % capacity;
+        this.notify();
+    }
+}
+```
 
 
 

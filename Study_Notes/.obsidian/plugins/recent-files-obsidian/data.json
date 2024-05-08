@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "ReentrantLock",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/ReentrantLock.md"
+    },
+    {
+      "basename": "Synchronization",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
+    },
+    {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Atomic_Instructions",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md"
+    },
+    {
+      "basename": "image-20240403160741603",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240403160741603.png"
+    },
+    {
+      "basename": "Concurrent_Programming",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md"
+    },
+    {
+      "basename": "Synchronization_Problems",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
+    },
+    {
+      "basename": "3_IPCs",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
+    },
+    {
+      "basename": "Rigid_Body_Transformation",
+      "path": "Computer_Science/Robotics_Control_Theory/Rigid_Body_Motion/Rigid_Body_Transformation.md"
+    },
+    {
+      "basename": "Proxy_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+    },
+    {
+      "basename": "Sockets",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
+    },
+    {
+      "basename": "SpinningLock",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/SpinningLock.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "2_Protocols&Layers",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md"
+    },
+    {
       "basename": "Promise基础",
       "path": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md"
     },
@@ -17,20 +73,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
     },
     {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
       "basename": "Java_Threads",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
-    },
-    {
-      "basename": "Synchronization_Problems",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
-    },
-    {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
     },
     {
       "basename": "Discrete_Time_Fourier_Series",
@@ -49,32 +93,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
     {
-      "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
-    },
-    {
-      "basename": "Rigid_Body_Transformation",
-      "path": "Computer_Science/Robotics_Control_Theory/Rigid_Body_Motion/Rigid_Body_Transformation.md"
-    },
-    {
       "basename": "Basic_Concepts",
       "path": "Data_Science/Statistical_Inference/Causal_Inference/Basic_Concepts.md"
     },
     {
-      "basename": "3_IPCs",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md"
-    },
-    {
-      "basename": "Sockets",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md"
-    },
-    {
       "basename": "2_Files_IOs",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md"
-    },
-    {
-      "basename": "Atomic_Instructions",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md"
     },
     {
       "basename": "Doubly_Robust_Estimators",
@@ -175,30 +199,6 @@
     {
       "basename": "Hypothesis_Testing",
       "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Binary_Decision_Rules",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Binary_Decision_Rules.md"
-    },
-    {
-      "basename": "Hypothesis_Testing",
-      "path": "Data_Science/Statistical_Inference/2_Frequentist_Statistics/Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Randomized_Linear_Algebra",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Randomized_Structures/Randomized_Linear_Algebra.md"
-    },
-    {
-      "basename": "Linear_Regression",
-      "path": "Mathematics/Probablity_Statistics/Regression_Analysis/回归模型/Linear_Regression.md"
-    },
-    {
-      "basename": "Propensity_Score_Weighting",
-      "path": "Data_Science/Statistical_Inference/Causal_Inference/Propensity_Score_Weighting.md"
-    },
-    {
-      "basename": "Matching",
-      "path": "Data_Science/Statistical_Inference/Causal_Inference/Matching.md"
     }
   ],
   "omittedPaths": [],

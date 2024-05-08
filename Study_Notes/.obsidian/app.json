@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./Promise基础.assets",
+  "attachmentFolderPath": "./ReentrantLock.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

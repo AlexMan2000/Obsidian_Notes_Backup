@@ -285,6 +285,7 @@
 ## Convergence
 > [!def]
 > ![](3_Routing.assets/image-20240412164031029.png)![](3_Routing.assets/image-20240412164349360.png)
+> In other words, after convergence, we can run Dijkistra's algorithm to find the optimal route for each router.
 
 
 
@@ -292,6 +293,37 @@
 ## Timeline for Local Failure
 > [!def]
 > ![](3_Routing.assets/image-20240412164327044.png)
+
+
+
+## Why LS Protocols?
+> [!important]
+> ![](3_Routing.assets/image-20240507112705291.png)
+
+
+
+## Example 1: Link Failure
+> [!example] CS168 Sp24 Disc04 P1
+> ![](3_Routing.assets/image-20240507114804361.png)![](3_Routing.assets/image-20240507114810039.png)
+
+> [!solution] Explanations
+> 1. After convergence, we can run a dijkistra's algorithm to find the SSSP from D, which is D -> G -> H -> F -> H1
+> 2. The link GH goes down, and G, H have updated but not sent to other routers. In this case, for D, since it doesn't receive the updates, so its local table contains (nextHop: G, distToH1: 7) and thinks that it will go through the same path as in 1. 
+> 3. But since G has updated, so the actual path is D -> (G -> E -> F -> H1).
+> 4. After another convergence, we run Dijkistra again and know that B will take B -> A -> I -> H2
+> 5. Link AI increases to 100, so A's nexthop changes from I to C and I's table is unchanged. So for A, it will hop to C. Since A assume that C shares the same global topology with A, so A will think that C will also choose the optimal shortest path, which is C -> D -> B -> I -> H2.
+> 6. Since C has not update yet and its nexthop was A, so the packet will go to C and then back to A, which is a loop.
+> 7. In order for successful packet transmission, D has to be correct since it is connected to the SCC on the right(E, G, F, H, H1). If D is correct, then its nexthop should be B(D->B->I->H2), so B must be correct. For router A, in order for successful transmission, C should be correct since A's nexthop is C. So B,C,D should all be updated.
+> 8. Since all routers will pass through B if they want to send packets to H2, so B must be correct. But now B is not updated, so no routers(except I, since it doesn't pass B) will successfully send packets.
+
+
+
+## Example 2: Delay&Convergence
+> [!example] CS168 Sp24 Disc04 P1
+> ![](3_Routing.assets/image-20240507115217147.png)
+
+> [!solution] Explanations
+> For the third question, since we can see that the degrees of the nodes are all bigger than 1, so if we remove any nodes(except S and T)
 
 
 
