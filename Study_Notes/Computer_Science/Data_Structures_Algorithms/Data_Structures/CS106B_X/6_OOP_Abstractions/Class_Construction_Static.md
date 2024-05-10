@@ -52,7 +52,7 @@
 > [!important]
 > ![](Class_Construction_Static.assets/image-20240118113631968.png)![](Class_Construction_Static.assets/image-20240118113642808.png)
 
-
+ 
 ## Case 2: Field without Default Constructor
 > [!important]
 > ![](Class_Construction_Static.assets/image-20240118114011281.png)

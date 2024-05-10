@@ -68,6 +68,19 @@
 
 
 
+
+
+## 本地配置文件
+> [!important]
+> 运行服务器时，控制台会输出包含`CATALINA_BASE`的键值对:
+> Using CATALINA_BASE:   `"C:\Users\alexm\AppData\Local\JetBrains\IntelliJIdea2022.2\tomcat\4dff9ba8-f417-40f8-aa85-cd7055ae5c18"`
+> 这个目录下存放的就是我们对当前tomcat服务器的配置文件。
+> ![](Servlet.assets/image-20240510184828659.png)
+> 我们在`Run -> Edit Configuration`中做的任何修改都会更新到`conf`目录下的`server.xml`中:
+> ![](Servlet.assets/image-20240510184930379.png)
+
+
+
 # Servlet生命周期
 > [!important]
 > 假设我们有如下Servlet配置项:
@@ -245,11 +258,7 @@ public @interface WebServlet {
 
     String displayName() default "";
 }
-
 ```
-
-
-
 
 
 

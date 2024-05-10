@@ -63,9 +63,65 @@
 
 
 ## std::unique_ptr
-### Exclusive Ownership
+### Common APIs
+> [!important]
+> **Create and Initialization:**
+> 1. Default Constructor: `std::unique_ptr<int> ptr;`
+> 2. Constructor with Raw Pointer: `std::unique_ptr<int> ptr(new int(5));
+> 3. Using `std::make_unique(elem)` (preferred): `auto ptr = std::make_unique<int>(5)`. 
+> 
+> **Accessing the Managed Object:**
+> 1. **Dereference** Operator: `*ptr`
+> 2. Member **Access** Operator: `ptr->member_func()`
+> 
+> **Managing Ownership:**
+> 1. **Release** Ownership: `int* rawPtr = ptr.release();`
+> 2. **Reset**, it will change the raw pointer that will be managed: `ptr.reset(new int(10))` or change it to null `ptr.reset()` so that nothing will be managed by the smart pointer.
+> 3. **Swap**: Swaps the managed objects of two `std::unique_ptr` instances.
+
+### Exclusive Ownership and Movable
 > [!def]
 > ![](RAII_Smart_Pointers.assets/image-20240307161308927.png)![](RAII_Smart_Pointers.assets/image-20240308203826359.png)
+```c++
+#include <iostream>
+#include <memory>
+
+class MyClass {
+public:
+    MyClass() { std::cout << "MyClass constructor\n"; }
+    ~MyClass() { std::cout << "MyClass destructor\n"; }
+    void display() const { std::cout << "Displaying MyClass\n"; }
+};
+
+int main() {
+    // Create a unique_ptr using std::make_unique
+    std::unique_ptr<MyClass> ptr1 = std::make_unique<MyClass>();
+
+    // Move construct a new unique_ptr
+    std::unique_ptr<MyClass> ptr2 = std::move(ptr1);
+    if (!ptr1) {
+        std::cout << "ptr1 is now null after move\n";
+    }
+    if (ptr2) {
+        ptr2->display();
+    }
+
+    // Move assign to another unique_ptr
+    std::unique_ptr<MyClass> ptr3;
+    ptr3 = std::move(ptr2);
+    if (!ptr2) {
+        std::cout << "ptr2 is now null after move\n";
+    }
+    if (ptr3) {
+        ptr3->display();
+    }
+
+    return 0;
+}
+
+```
+> [!exp]
+> ![](RAII_Smart_Pointers.assets/image-20240510145550092.png)![](RAII_Smart_Pointers.assets/image-20240510145541079.png)
 
 
 
@@ -79,9 +135,7 @@
 > ![](RAII_Smart_Pointers.assets/image-20240308203941282.png)
 
 
-
-
-
+### CS106X Slides
 > [!concept]
 > ![](RAII_Smart_Pointers.assets/image-20240124125033237.png)
 > If we are able to copy, it will cause double free problem:
@@ -91,6 +145,12 @@
 
 
 ## std::shared_ptr
+### Common APIs
+> [!important]
+> ![](RAII_Smart_Pointers.assets/image-20240510172759569.png)![](RAII_Smart_Pointers.assets/image-20240510172806320.png)![](RAII_Smart_Pointers.assets/image-20240510172813664.png)![](RAII_Smart_Pointers.assets/image-20240510172823742.png)
+
+
+
 ### Reference Count
 > [!important]
 > ![](RAII_Smart_Pointers.assets/image-20240308204242557.png)![](RAII_Smart_Pointers.assets/image-20240308204342541.png)
@@ -103,7 +163,7 @@
 
 
 
-
+### CS106X Slides
 > [!concept]
 > ![](RAII_Smart_Pointers.assets/image-20240124125558380.png)
 > When we do `p2 = p1`, we call copy constructor of `std::shared_ptr<int>`.

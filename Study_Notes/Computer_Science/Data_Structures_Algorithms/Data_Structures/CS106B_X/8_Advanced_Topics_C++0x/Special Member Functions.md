@@ -19,7 +19,7 @@
 
 ## When C++ doesn't provide Default Constructor
 > [!important]
-> There are a few circumstances where C++ does not automatically provide default copy constructors and assignment operators. If your class contains a reference or const variable as a data member, your class will not automatically get an assignment operator. Similarly, if your class has a data member that doesn't have a copy constructor or assignment operator (for example, an ifstream ), your class won't be copyable.
+> There are a few circumstances where **C++ does not automatically provide default copy constructors and assignment operators**. If your class contains a reference or const variable as a data member, your class will not automatically get an assignment operator. Similarly, if your class has a data member that doesn't have a copy constructor or assignment operator (for example, an ifstream ), your class won't be copyable.
 > 
 > There is one other case involving inheritance where C++ won't automatically create the copy functions for you, and in the chapter on inheritance we'll see how to exploit this to disable copying.
 
@@ -34,6 +34,7 @@
 > 
 > An alternative means for copying data over from the other object uses the STL copy algorithm. Recall that copy takes three parameters – two delineating an input range of iterators and one denoting the beginning of an output range – then copies the specified iterator range to the destination. 
 > ![](Special%20Member%20Functions.assets/image-20240118160524340.png)
+> **Note that it is not recommended to define the copy constructor with non-const parameter.**
 
 
 ## Doubling Freeing Problem

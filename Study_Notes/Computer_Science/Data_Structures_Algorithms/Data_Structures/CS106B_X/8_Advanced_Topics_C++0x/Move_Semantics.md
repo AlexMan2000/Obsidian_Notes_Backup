@@ -265,6 +265,10 @@ StrVector::~StrVector() {
 }
 
 ```
+> [!exp] Output
+> ![](Move_Semantics.assets/image-20240510151509854.png)
+> All the move constructors are elided and only fill constructor is called.
+
 
 
 ## Applications
