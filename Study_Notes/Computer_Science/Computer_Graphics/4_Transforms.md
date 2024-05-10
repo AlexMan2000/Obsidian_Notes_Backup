@@ -174,6 +174,9 @@
 
 
 # Viewing Transformation
+## Pinhole Camera
+
+
 ## Camera Transformation
 > [!def]
 > 
@@ -193,3 +196,5 @@
 
 
 ## Projective Projection
+
+

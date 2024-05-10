@@ -146,7 +146,7 @@
 
 
 
-### Core Guideline C.66 - noexcept
+## Core Guideline C.66 - noexcept
 > [!def]
 > ![](Move_Semantics.assets/image-20240307154706946.png)
 > ![](Move_Semantics.assets/image-20240307155250506.png)
@@ -166,7 +166,105 @@
 ## Quick Quiz
 > [!problem]
 > ![](Move_Semantics.assets/image-20240118214037725.png)![](Move_Semantics.assets/image-20240118220552262.png)![](Move_Semantics.assets/image-20240118220558632.png)![](Move_Semantics.assets/image-20240118220617001.png)
+```c++
+/* main.cpp */
+#include "test.hpp"
 
+StrVector readNames(int size);
+
+int main(int argc, char* argv[]) {
+	// Move constructor is elided here for RVO optimization
+    StrVector name1 = readNames(414213);
+    StrVector name2; // Default constructor
+    name2 = readNames(4324312);
+    return 0;
+}
+
+// Copy Constructor is elided when returning(by creating a temporary r-value object instead of temporary l-value object)
+StrVector readNames(int size) {
+	// Fill constructor called, cannot be optimized
+    StrVector names(size, "Ito");
+    return names;
+}
+
+
+/* test.hpp */
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class StrVector{
+    public:
+
+        // Default constructor
+        StrVector();
+
+        // Fill Constructor
+        StrVector(int size, string data);
+
+        // Copy Constructor
+        StrVector(const StrVector& rhs);
+
+        // Move Constructor 
+        StrVector(StrVector&& rhs);
+
+        // Copy Assignment
+        StrVector& operator=(const StrVector& rhs);
+        
+        // Move Assignment
+        StrVector& operator=(StrVector&& rhs);
+
+		// Destructor
+        ~StrVector();
+
+    private:
+        int size;
+        string data;
+};
+
+
+/* test.cpp */
+#include "test.hpp"
+
+
+StrVector::StrVector() {
+    cout << "Default Constructor" << endl;
+}
+
+ // Fill Constructor
+StrVector::StrVector(int size, string data) {
+    cout << "Fill Constructor" << endl;
+}
+
+// Copy Constructor
+StrVector::StrVector(const StrVector& rhs) {
+    cout << "Copy Constructor" << endl;
+}
+
+// Move Constructor 
+StrVector::StrVector(StrVector&& rhs) {
+    cout << "Move Constructor" << endl;
+}
+
+// Copy Assignment
+StrVector& StrVector::operator=(const StrVector& rhs) {
+    cout << "Copy Assignment" << endl;
+    return *this;
+}
+
+// Move Assignment
+StrVector& StrVector::operator=(StrVector&& rhs) {
+    cout << "Move Assignment" << endl;
+    return *this;
+}
+
+
+StrVector::~StrVector() {
+    cout << "Destructor" << endl;
+}
+
+```
 
 
 ## Applications
@@ -183,6 +281,71 @@
 > 
 > ![](Move_Semantics.assets/image-20240118220005884.png)
 
+
+
+
+# Integrated Examples
+## Construction or Assignment?
+> [!example ]
+> ![](Special%20Member%20Functions.assets/image-20240118154033683.png)
+> 1. The first one invokes default constructor, since it doesn't take in any parameters.
+> 2. The second one invokes the normal constructor which takes userd-defined number of parameters.
+> 3. **The third one is the most vexing part of C++ programming, which basically is defining a new function.** This function has no parameter and return `MyVector` type.
+> 4. The fourth one invokes copy constructor. vec4 is constructed as a copy of vec2.
+> 5. **The fifth one invokes default constructor.**  C++ designer makes this in order to differentiate between `...()` and `...{}`.
+> 6. The sixth one invokes copy constructor. vec6 is constructed as a copy of the vector returned by vec3 + vec4.
+> 7. The seventh invokes copy constructor. vec7 is constructed as a copy of vec4.
+> 8. The `vec7 = vec2` invokes copy assignment operator.
+>
+
+
+## How many instances created?
+> [!example]
+> ![](Special%20Member%20Functions.assets/image-20240118164654299.png)
+> In total, three `StringVector` instances are created but there is lots of copying:
+> 
+> ![](Special%20Member%20Functions.assets/image-20240118164847431.png)
+> But when the compiler is smart enough, it can skip one constructor:
+> 
+> ![](Special%20Member%20Functions.assets/image-20240118165005605.png)
+
+
+
+## How many times each special member functions are called?
+> [!example]
+> ![](Special%20Member%20Functions.assets/image-20240118171124257.png)
+> 1. Default Constructor: 1
+> 2. Normal Constructor(Fill Constructor): 2
+> 3. Copy Constructor: 3
+> 4. Copy Assignment: 1
+> 5. Destructor: 6
+> 
+> ![](Special%20Member%20Functions.assets/image-20240118171850042.png)
+> Assume there is no optimization so that copy constructor will be called when the function returned and that the `StrVector` doesn't have a move constructor:
+> 1. readNames is executed, in the function `StrVector names(size, "Ito")` triggers a fill constructor.
+> 2. The function returns and create a temporary object `StrVector temp = names`, which triggers the copy constructor since `names` is an l-value.
+> 3. The `names` goes out of scope, so its destructor is triggered.
+> 4. `StrVector name1 = readNames(...)` triggers the copy constructor of `StrVector` since **StrVector doesn't have a move constructor**.
+> 5. The temporary object is copied to `name1` and will be freed, which triggered its destructor.
+> 6. `StrVector name2` triggers the default constructor of `StrVector`.
+> 7. readNames is executed again, in the function `StrVector names(size, "Ito")` triggers a fill constructor.
+> 8. The function returns and create a temporary object `StrVector temp = names`, which triggers the copy constructor since `names` is an l-value.
+> 9. The `names` goes out of scope, so its destructor is triggered.
+> 10. `name2 = readNames(...)` triggers the copy assignment(not move assignment for the same reason as in point 4).
+> 11. `name1`is freed.
+> 12. `name2` is freed.
+> 
+> By default, C++ doesn't provide move constructor/assignment to every class.
+
+
+
+# Disable Copying - delete keyword
+> [!important]
+> One way of doing this is to declare the copy constructor and copy assignment operator to be private and not implement them.
+> ![](Special%20Member%20Functions.assets/image-20240118164401024.png)
+> Other tricks include declaring them in the public section and use delete keyword.
+> 
+> ![](Special%20Member%20Functions.assets/image-20240118164500527.png)
 
 
 

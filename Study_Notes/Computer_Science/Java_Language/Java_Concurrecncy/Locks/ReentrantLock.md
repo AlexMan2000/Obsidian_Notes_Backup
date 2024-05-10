@@ -178,7 +178,7 @@ class Synchronized_Print {
             log.debug(String.valueOf(i));
             // waitingForNext.signal() 会有死锁问题, 要注意。
             /**
-             死锁产生的原因，假设线程1先抢到锁，然后numberCounter++, 并释放锁。然后线程3抢到了锁，但是条件不满足，于是去waitset中等待，并释放锁，然后线程4, 5, 6, 7, 8, 9, 10均在线程2之前抢到了锁，因为条件不满足于是都去waitset中等待了。最后线程2才抢到了锁，然后numberCounter+=, 释放锁，叫醒了线程4，然后线程4没法执行，去waitset并释放锁。但此时blockingSet中已经没有线程等待锁被释放了，也就是说没有线程回去执行signal()方法了，也就是说waitSet中的线程永远不会被唤醒了，也就是死锁问题。
+             死锁产生的原因，假设线程1先抢到锁，然后numberCounter++, 并释放锁。然后线程3抢到了锁，但是条件不满足，于是去waitset中等待，并释放锁，然后线程4, 5, 6, 7, 8, 9, 10均在线程2之前抢到了锁，因为条件不满足于是都去waitset中等待了。最后线程2才抢到了锁，然后numberCounter++, 释放锁，叫醒了线程4，然后线程4没法执行，去waitset并释放锁。但此时blockingSet中已经没有线程等待锁被释放了，也就是说没有线程会去执行signal()方法了，也就是说waitSet中的线程永远不会被唤醒了，也就是死锁问题。
              
          signalAll() 方法保证了所有线程最终都一定会抢到锁并执行numberCounter++。
             */
@@ -233,5 +233,266 @@ public class Thread_Sequence_Park_Unpark {
 
 
 
+
+## 同步模式之交替输出
+> [!important]
+> 要求: 三个线程，线程1只负责打印a，线程2只负责打印b，线程3只负责打印c. 要求交替输出abcabcabcabcabc. (5 次 abc)
+
+
+
+### 思路1 - cv.wait()/signal()
+> [!algo]
+> 使用Condition Variable, 维护一个状态和三个条件变量:
+> 1. 状态有三种，`a` 和 `b` 和`c`, 如果当前状态为`a`, 则线程1可以打印，线程`b` 和`c` 需要进入各自的休息室。
+> 2. 条件变量有三个: `CVA`, `CVB`, `CVC`
+> 	1. `CVA` 表示当前状态不是`a`, 需要等待状态变为`a` 的休息室，线程1专属。
+> 	2. `CVB` 表示当前状态不是`b`, 需要等待状态变为`b` 的休息室，线程2专属。
+> 	3. `CVC` 表示当前状态不是`c`, 需要等待状态变为`c` 的休息室，线程3专属。
+> 这种写法不需要使用`signalAll()`也能避免死锁，因为我在`signal()`的时候相当于只通知了下一个可以打印的线程，不存在思路2中的虚假唤醒现象。
+```java
+package cn.itcast.self_test;
+
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
+@Slf4j(topic="c.Interleaving_Print")
+public class Interleaving_Print {
+    public static void main(String[] args) {
+
+        Sync_Print sp = new Sync_Print("a");
+
+        Thread t1 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("a");
+            }
+        },"t1");
+        Thread t2 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("b");
+            }
+        },"t2");
+        Thread t3 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("c");
+            }
+        },"t3");
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+
+@Slf4j(topic="c.Sync_Print")
+class Sync_Print {
+
+    public String currentState;
+
+    public ReentrantLock lockman = new ReentrantLock();
+
+    public Condition ca = lockman.newCondition();
+    public Condition cb = lockman.newCondition();
+    public Condition cc = lockman.newCondition();
+
+
+    public Map<String, Condition> conditionMap = new HashMap<>();
+
+    public Sync_Print(String currentState) {
+        this.currentState = currentState;
+        initMap();
+    }
+
+    public void initMap() {
+        this.conditionMap.put("a", ca);
+        this.conditionMap.put("b", cb);
+        this.conditionMap.put("c", cc);
+    }
+
+    public void print(String output) {
+        lockman.lock();
+        // Critical Section
+        try {
+            while (!currentState.equals(output)) {
+                try {
+                    this.conditionMap.get(output).await();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            log.debug(output);
+            switch(currentState) {
+                case "a":
+                    currentState = "b";
+                    this.conditionMap.get("b").signal();
+                    break;
+                case "b":
+                    currentState = "c";
+                    this.conditionMap.get("c").signal();
+                    break;
+                case "c":
+                    currentState = "a";
+                    this.conditionMap.get("a").signal();
+                    break;
+            }
+        } finally {
+            lockman.unlock();
+        }
+
+    }
+}
+```
+
+
+### 思路2 - cv.wait()/signalAll()
+> [!algo]
+> 维护三个条件变量太多，其实只需要一个即可。
+> 
+> 注意: 这种写法等价于使用`synchronized(this)`, 因为只有一个条件变量。
+```java
+package cn.itcast.self_test;
+
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
+@Slf4j(topic="c.Interleaving_Print")
+public class Interleaving_Print {
+    public static void main(String[] args) {
+
+        Sync_Print sp = new Sync_Print("a");
+
+        Thread t1 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("a");
+            }
+        },"t1");
+        Thread t2 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("b");
+            }
+        },"t2");
+        Thread t3 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                sp.print("c");
+            }
+        },"t3");
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+/**
+写法其实和顺序控制很想，所以在通知的时候仍然需要signalAll()而不是signal()，防止死锁。
+*/
+@Slf4j(topic="c.Sync_Print")
+class Sync_Print {
+    public String currentState;
+
+    public ReentrantLock lockman = new ReentrantLock();
+
+    public Condition cv = lockman.newCondition();
+
+    public Sync_Print(String currentState) {
+        this.currentState = currentState;
+    }
+
+    public void print(String output) {
+        lockman.lock();
+        // Critical Section
+        try {
+            while (!currentState.equals(output)) {
+                try {
+                    this.cv.await();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            log.debug(output);
+            switch(currentState) {
+                case "a":
+                    currentState = "b";
+                    this.cv.signalAll();
+                    break;
+                case "b":
+                    currentState = "c";
+                    this.cv.signalAll();
+                    break;
+                case "c":
+                    currentState = "a";
+                    this.cv.signalAll();
+                    break;
+            }
+        } finally {
+            lockman.unlock();
+        }
+
+    }
+}
+```
+
+
+
+
+
+
+### 思路3 - park()/unpark()
+> [!algo]
+```java
+package cn.itcast.self_test;
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.concurrent.locks.LockSupport;
+
+@Slf4j(topic="c.Interleaving_Print_Park")
+public class Interleaving_Print_Park {
+    public static void main(String[] args) {
+
+        Thread[] threads = new Thread[3];
+        threads[0] = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                LockSupport.park();
+                log.debug("a");
+                LockSupport.unpark(threads[1]);
+            }
+        },"t1");
+        threads[1] = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                LockSupport.park();
+                log.debug("b");
+                LockSupport.unpark(threads[2]);
+            }
+        },"t2");
+        threads[2] = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                LockSupport.park();
+                log.debug("c");
+                LockSupport.unpark(threads[0]);
+            }
+        },"t3");
+
+        threads[0].start();
+        threads[1].start();
+        threads[2].start();
+
+        LockSupport.unpark(threads[0]);
+
+    }
+}
+```
 
 

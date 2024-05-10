@@ -1,6 +1,98 @@
 {
   "recentFiles": [
     {
+      "basename": "Move_Semantics",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Move_Semantics.md"
+    },
+    {
+      "basename": "Special Member Functions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Special Member Functions.md"
+    },
+    {
+      "basename": "RAII_Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md"
+    },
+    {
+      "basename": "Exceptions",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
+    },
+    {
+      "basename": "Class_Construction_Static",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Construction_Static.md"
+    },
+    {
+      "basename": "Functions and Lambdas",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
+    },
+    {
+      "basename": "Class_Inheritance",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
+    },
+    {
+      "basename": "AP-HW4-Smart_Pointers",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md"
+    },
+    {
+      "basename": "AP-HW1-Matrix_Algebra",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
+    },
+    {
+      "basename": "AP-HW2-Network",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
+    },
+    {
+      "basename": "Template_Class_Design",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Template_Class_Design.md"
+    },
+    {
+      "basename": "Section6_Class_Design_Hashing",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
+    },
+    {
+      "basename": "Setup_OpenGL",
+      "path": "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.md"
+    },
+    {
+      "basename": "4_Transforms",
+      "path": "Computer_Science/Computer_Graphics/4_Transforms.md"
+    },
+    {
+      "basename": "Serialization",
+      "path": "Computer_Science/Java_Language/Java_SE/Serialization.md"
+    },
+    {
+      "basename": "Annotations",
+      "path": "Computer_Science/Java_Language/Java_SE/Annotations.md"
+    },
+    {
+      "basename": "Access_Modifiers",
+      "path": "Computer_Science/Java_Language/Java_SE/Access_Modifiers.md"
+    },
+    {
+      "basename": "Volatile",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Visibility/Volatile.md"
+    },
+    {
+      "basename": "Servlet",
+      "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
+    },
+    {
+      "basename": "Tomcat",
+      "path": "Computer_Science/Java_Language/Java_Web/Tomcat.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "Computer_Science/Java_Language/Java_Web/JSP.md"
+    },
+    {
+      "basename": "Memory_Mapping",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Memory_Mapping.md"
+    },
+    {
+      "basename": "System_Level_IO",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
+    },
+    {
       "basename": "ReentrantLock",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/ReentrantLock.md"
     },
@@ -85,10 +177,6 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
     },
     {
-      "basename": "4_Transforms",
-      "path": "Computer_Science/Computer_Graphics/4_Transforms.md"
-    },
-    {
       "basename": "2_Concurrency_Control_Theory",
       "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
     },
@@ -111,94 +199,6 @@
     {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Variance_Reduction_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variance_Reduction_Methods.md"
-    },
-    {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "Hilbert_Space_RVs",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hilbert_Space_RVs/Hilbert_Space_RVs.md"
-    },
-    {
-      "basename": "High-level_Distributions",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/10_随机变量的矩_高阶分布/High-level_Distributions.md"
-    },
-    {
-      "basename": "3.4_Step_and_Delta",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
-    },
-    {
-      "basename": "Response_to_Exp_Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Response_to_Exp_Filters.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
-      "basename": "3.5_Impulse_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
-    },
-    {
-      "basename": "PART_B__向量场和曲线积分",
-      "path": "Mathematics/Vector_Calculus/18.02SC/Unit_3_Double_Integrals/PART_B__向量场和曲线积分.md"
-    },
-    {
-      "basename": "PART_A__二重积分",
-      "path": "Mathematics/Vector_Calculus/18.02SC/Unit_3_Double_Integrals/PART_A__二重积分.md"
-    },
-    {
-      "basename": "衍生随机变量__贝叶斯公式变体__协方差",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/5_衍生随机变量_卷积公式/衍生随机变量__贝叶斯公式变体__协方差.md"
-    },
-    {
-      "basename": "Related Resources",
-      "path": "Mathematics/Vector_Calculus/18.02SC/Related Resources.md"
-    },
-    {
-      "basename": "L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L13-15__Limit_of_Functions_Continuity_Dirichlet's_Function.md"
-    },
-    {
-      "basename": "L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L22_L23__FTC__Integration_Techniques__Pointwise_Uniform_Convergence_of_Function.md"
-    },
-    {
-      "basename": "L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral",
-      "path": "Mathematics/Analysis/18_100A_Real_Analysis/L20_L21__Taylor_Theorem__Riemann_Sum__Riemann_Integral.md"
-    },
-    {
-      "basename": "Neyman-Pearson_Formulation",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Neyman-Pearson_Formulation.md"
-    },
-    {
-      "basename": "Bayesian_Formulation",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/Hypothesis_Testing/Bayesian_Formulation.md"
-    },
-    {
-      "basename": "Galleries_of_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Galleries_of_Testing.md"
-    },
-    {
-      "basename": "Parametric_Hypothesis_Testing",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/假设检验/Parametric_Hypothesis_Testing.md"
-    },
-    {
-      "basename": "Hypothesis_Testing",
-      "path": "Data_Science/Statistical_Inference/3_Bayesian_Statistics/Hypothesis_Testing.md"
     }
   ],
   "omittedPaths": [],

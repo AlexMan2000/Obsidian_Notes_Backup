@@ -12,7 +12,7 @@
 > 
 > ![](AP-HW1-Matrix_Algebra.assets/image-20240119173419168.png)
 > For example, to run HW1 in the container, we can do:
-> ` docker run -it -v I:/A_Study_Notes_Backup/A-Computer-Science/Advanced_C++/AP1400-2-HW1:/home/AP-HW/HW1 hw1 bash`
+> ` docker run -it -v F:/A_Study_Notes_Backup/A-Computer-Science/Advanced_C++/AP1400-2-HW1:/home/AP-HW/HW1 hw1 bash`
 > 
 > Then to find the file we have just mounted in the container, we just use our navigation techniques:
 > `cd /` to the root, then `ls -a` to see all the sub directories, and then find the `home/AP-HW/HW1`.
@@ -24,7 +24,7 @@
 > [!important]
 > Everytime we edit some codes and want to see if the codes work just fine, we can do the following:
 > 1. `docker build -t imageName .`
-> 2. `docker run -it hw1 bash`
+> 2. `docker run -it imageName bash`
 > 3. In the container, run `./main` to see the test result.
 
 

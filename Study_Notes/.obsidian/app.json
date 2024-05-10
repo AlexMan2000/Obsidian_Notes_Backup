@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./ReentrantLock.assets",
+  "attachmentFolderPath": "./Move_Semantics.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

@@ -574,6 +574,7 @@ class OurStack {
 
 
 ## Binary Operators
+### Vector Class +
 > [!example] vector class +
 > ![](Template_Class_Design.assets/image-20240101091919146.png)
 > 1. **Why are we returning by value instead?** 
@@ -583,6 +584,8 @@ class OurStack {
 > 3. **Why did we declare these as non-member functions?**
 >    We are not changing the objects of lhs.
 
+
+### Fraction Struct << 
 > [!example] fraction struct <<
 > ![](Template_Class_Design.assets/image-20240101100251736.png)![](Template_Class_Design.assets/image-20240101100257564.png)
 > 1. **Why is the ostream parameter passed by non-const reference, and the Fraction struct passed by const reference?** 
@@ -592,6 +595,8 @@ class OurStack {
 > 3. **Why are we implementing this as a non-member function?**
 >    Here we are overloading << so our class works as the rhs…but we can’t change the class of lhs (stream library).
 
+
+### Ostream Friend
 > [!example] fraction class << friend keyword
 > ![](Template_Class_Design.assets/image-20240101100900777.png)![](Template_Class_Design.assets/image-20240101100908440.png)![](Template_Class_Design.assets/image-20240101101124121.png)![](Template_Class_Design.assets/image-20240101101508061.png)
 > **Important:** `friend` keyword cannot be used with member-function.
