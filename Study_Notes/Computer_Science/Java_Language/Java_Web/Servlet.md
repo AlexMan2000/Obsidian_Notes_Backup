@@ -81,6 +81,13 @@
 
 
 
+## 工作空间项目目录和tomcat项目部署目录
+### tomcat部署目录
+> [!important]
+> tomcat真正访问的是`tomcat`部署的web项目, 就是`out`中的文件，这些文件对应着工作空间目录的`WEB-INF`目录下的所有资源：classes中存放着所有服务器启动后Java编译器编译的所有类文件:
+> ![](Servlet.assets/image-20240510185757138.png)
+
+
 # Servlet生命周期
 > [!important]
 > 假设我们有如下Servlet配置项:
@@ -112,7 +119,12 @@
 > [!important]
 > 当用户访问`https://localhost:8081/demo1`时，`tomcat`会将`cn.itcast.web.servlet.ServletDemo1`这个类加载进内存并实例化一个对象，然后执行这个对象上的`service()`方法。
 > 总的来说, 我们有如下执行原理：
-> 1. 当服务器接受到客户端浏览器的请求后，会解析请求URL路径，获取访问的Servlet的资源路径
+> 1. 当**服务器接受到客户端浏览器的请求后**，会解析请求URL路径，获取访问的Servlet的资源路径
+> 	1. 注意服务器启动的时候默认不会自动实例化`Servlet`对象，而是要在开始接收请求之后才会去实例化对象，且tomcat容器对每个`Servlet`类只会实例化一个对象。
+> 	2. 什么时候实例化可以通过配置`load-on-start`属性
+> 		1. `load-on-start`为负数，则在第一次请求接收时创建对象
+> 		2. `load-on-start`为非负数，则在服务器启动时就创建对象
+> 		3. 使用注解配置时，默认为`-1`。
 > 2. 查找web.xml文件，是否有对应的\<url-pattern\>标签体内容
 > 3. 如果有，则在找到对应的\<servlet-class\>全类名
 > 4. tomcat会将字节码文件加载进内存, 并且创建其对象
@@ -180,6 +192,7 @@ public class ServletDemo2 implements Servlet {
     }
 }
 ```
+
 
 
 # Servlet单例模式
@@ -261,6 +274,75 @@ public @interface WebServlet {
 ```
 
 
+# Tomcat 断点调试
+> [!important]
+> 点击`Debug`即可:
+> ![](Servlet.assets/image-20240510185906240.png)
+
+
+
+# Servlet的体系结构
+## 继承链条
+> [!important]
+> HttpServlet -> GenericServlet -> Servlet
+> 一般我们使用的时候都会继承`HttpServlet`, 然后覆写其`doGet`和`doPost`方法。
+
+
+
+## HttpServlet使用
+> [!important]
+> `@WebServlet("/user/*")`是通配符匹配表示所有`/user/`后面跟什么都可以，都会触发当前`Servlet`的`service`方法。
+
+
+
+## 路径匹配优先级
+> [!important]
+> 如果多个`Servlet`都可以匹配用户访问的`url`则`tomcat`会默认优先精确匹配。比如用户访问了`/user/demo5`这个路径，此时有两个`Servlet`都可以被触发:
+> - `Servlet01`的路径是`/user/*`
+> - `Servlet02`的路径是`/user/demo5`
+> 
+> 那么会优先选择下面的匹配。
+
+
+
+# Request/Response对象
+## 生命周期
+> [!important]
+> ![](Servlet.assets/image-20240510201824190.png)
+> **重点:**
+> 1. request和response对象是由`tomcat`服务器内部创建的。
+> 2. request对象是来获取请求消息，response对象来设置响应消息。
+
+
+
+## Request对象的使用
+### 获取请求行数据
+> [!important]
+> ![](Servlet.assets/image-20240510202444440.png)
+> 其中如果请求参数有多个，那么通过`getQueryString()`返回的字符串是由`&`拼接而成的键值对。
+
+
+### 获取请求头数据
+> [!important]
+> ![](Servlet.assets/image-20240510213033286.png)
+```java
+@Override  
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {  
+    // Get Request Line  
+    System.out.println(req.getMethod());  
+    System.out.println(req.getProtocol());  
+    // Get Request Header  
+    Enumeration<String> headerKeyIter = req.getHeaderNames();  
+  
+    while (headerKeyIter.hasMoreElements()) {  
+        String headerKey = headerKeyIter.nextElement();  
+        String value = req.getHeader(headerKey);  
+        System.out.println(value);  
+    }
+}
+```
+> [!code] Output
+> ![](Servlet.assets/image-20240510213716110.png)
 
 
 
@@ -269,6 +351,6 @@ public @interface WebServlet {
 
 
 
-
+## Response对象的使用
 
 

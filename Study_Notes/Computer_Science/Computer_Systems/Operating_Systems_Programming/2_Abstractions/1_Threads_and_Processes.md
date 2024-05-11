@@ -45,7 +45,7 @@
 ## Thread State
 > [!def]
 > ![](1_Threads_and_Processes.assets/image-20240228094754941.png)![](1_Threads_and_Processes.assets/image-20240228094844657.png)
-> More details see
+> More details see [Thread_Synchonization](../3_Synchronizations/Thread_Synchonization.md)
 
 
 

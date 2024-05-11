@@ -404,7 +404,7 @@ int main(int argc, const char *argv[]) {
 
 
 
-## Solution 2 - Sbuf Package
+## Solution 2 - Semaphores(SBuf)
 > [!example]
 > This is an encapsulated version of solution 1, the idea is similar.
 > ![](Thread_Synchonization.assets/image-20240404161854345.png)
@@ -448,6 +448,7 @@ int main(int argc, const char *argv[]) {
 
 ## Solution 2 - Monitors
 > [!important]
+> Here we favor writers over readers so readers have to wait for all the waiting writers.
 > ![](Thread_Synchonization.assets/image-20240416203952688.png)![](Thread_Synchonization.assets/image-20240416203958856.png)
 > The reason why we need to release the lock before `AccessDatabase` is that we just want to check **whether we have the access** to the database and we don't want to lock the database at all. Since the checking logic involves modification to the shared variables, like AW, WW, we need to grab the lock before and release it after.
 > 	
@@ -582,11 +583,15 @@ int main(int argc, const char *argv[]) {
 > [!important]
 > ![](Concurrent_Programming.assets/image-20240404144358876.png)
 > **Design questions to consider:**
-> 1. Why we use `malloc` at all?
+> 1. Why we use `malloc` at all? Prevent Race Conditions!
 > 2. Why detaching peer threads?
 > 
 > To address first question, we must look closely at `pthread_create` function.
 > ![](Concurrent_Programming.assets/image-20240404151520050.png)![](Concurrent_Programming.assets/image-20240404151527204.png)
+> **Important:**
+> - Calling `pthread_join()` on a joinable thread will automatically release all the resources associated with that thread. 
+> - When a thread is created with `pthread_create()`, it remains in a joinable state by default. **A joinable thread retains certain resources (such as its stack and thread control block) after it has finished executing, until another thread calls `pthread_join()` to clean up these resources.** If `pthread_join()` is never called, these resources are not released, leading to a resource leak.
+> - By detaching a thread using `pthread_detach()`, you inform the system that the thread's resources can be reclaimed immediately when the thread terminates, without waiting for another thread to join it.
 
 
 

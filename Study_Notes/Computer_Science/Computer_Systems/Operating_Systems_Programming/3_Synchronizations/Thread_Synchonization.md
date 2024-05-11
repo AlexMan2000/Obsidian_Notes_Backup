@@ -13,7 +13,8 @@
 
 ## Shared Variable Analysis
 > [!def]
-> ![](Thread_Synchonization.assets/image-20240404151934580.png)![](Thread_Synchonization.assets/image-20240404151948417.png)![](Thread_Synchonization.assets/image-20240404152258030.png)
+> ![](Thread_Synchonization.assets/image-20240404151934580.png)![](Thread_Synchonization.assets/image-20240404151948417.png)![](Thread_Synchonization.assets/image-20240404152258030.png)![](Thread_Synchonization.assets/image-20240511101126056.png)![](Thread_Synchonization.assets/image-20240511101132147.png)
+
 
 
 # Thread Safety

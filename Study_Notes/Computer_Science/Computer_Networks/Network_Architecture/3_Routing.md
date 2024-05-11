@@ -330,7 +330,6 @@
 
 
 # Spanning Tree Protocol 
-
 ## Learning Switches
 > [!def]
 > ![](3_Routing.assets/image-20240412165232214.png)
