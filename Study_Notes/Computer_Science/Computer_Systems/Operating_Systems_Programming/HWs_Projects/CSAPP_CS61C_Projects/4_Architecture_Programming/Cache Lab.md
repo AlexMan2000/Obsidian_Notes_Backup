@@ -1,4 +1,4 @@
-# Part A: Cache Simulator
+# Part A: Cache Simulator(Medium)
 > [!overview]
 > ![](Cache%20Lab.assets/image-20231207190005828.png)
 
@@ -8,13 +8,9 @@
   
 
 int main()
-
 {
-
     printSummary(0, 0, 0);
-
     return 0;
-
 }
 ```
 
@@ -725,4 +721,178 @@ int main(int argc, char** argv)
 ```
 
 
-# Part B: Matrix Transpose Function
+# Part B: Matrix Transpose Function(Hard)
+## Testing Specs
+> [!important]
+> ![](Cache%20Lab.assets/image-20240512103458552.png)![](Cache%20Lab.assets/image-20240512115206271.png)
+
+
+
+## Design Ideas
+> [!algo] Idea
+> See [Cache Blocking in Matrix Multiplication](../../../../Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md#With%20Blocking) (原理笔记)
+> 
+> Also see https://zhuanlan.zhihu.com/p/387662272 (cachelab 最优解)on how to optimize 64 x 64 matrix using proper blocking techniques.
+> 
+> Another fantastic video https://www.youtube.com/watch?v=huz6hJPl_cU （原理解释）
+
+
+
+## 32 x 32 Matrix(Medium)
+### Naive Approach
+> [!algo]
+```c
+void trans_submit(int M, int N, int A[N][M], int B[M][N]) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            int tmp = A[i][j];
+            B[j][i] = tmp;
+        }
+    }
+}
+```
+
+> [!important] Analysis
+
+
+
+### Blocked Approach(8 x 8 Matrix Block)
+> [!algo]
+```c
+int i, j, i1, j1;
+int gap = 8;
+for (i = 0; i < N; i += gap) {
+	for (j = 0; j < M; j += gap) {
+		for (i1 = i; i1 < i + gap && i1 < N; i1++) {
+			for (j1 = j; j1 < j + gap && j1 < M; j1++) {
+				B[j1][i1] = A[i1][j1];
+			}
+		}
+	}
+}
+```
+
+> [!important] Analysis
+> ![](Cache%20Lab.assets/image-20240512143503862.png)
+> Suppose the starting address of matrix A is `0xA+0000` and matrix B is `0x A+1000`.
+> - Determine optimal matrix block size. 
+> 	- Principle: Minimize the portion of cache miss.
+> 	- Method: Find how many continuous blocks of data can fit into the entire cache without conflict for direct mapped cache.
+> 	- Ex: The cache is 1KiB = 1024B, since each line of the matrix contains 32 ints(128 bytes), the cache can hold 8 lines without conflict. So our block size would better be 8 x 8.
+> - Analyze the **non-diagonal** cache miss rate:
+> 	- For non-diagonal blocks, they belong to different cache index. In the graph above, the first block column would go to cache index with 1 mod 4, while the second block column would go to cache index with 2 mod 4, so these two columns won't conflict. In other words, there won't be any conflict miss.
+> 	- ![](Cache%20Lab.assets/image-20240512144450587.png)
+> 	- The cache miss rate would be 1 / 8 of the operations. Here since there is 64 ints in a matrix block, the number of cache miss per block should be 64 / 8 = 8 times. So in total, there should be 12 x 8 x 2 = 192 misses.
+> - Analyze the **diagonal** cache miss rate:
+> 	- Since for diagonal blocks, they belong to the same cache index group(1 mod 4 for the first block column, 2 mod 4 for the second block column), there will be more conflict misses. Roughly each time A read a line, there will be a conflict miss and will evict the same line in B, which later on cause a conflict miss. And initially B will read all rows in, which counts for another 8 misses. So in total for each block pair(A, B), there will be 4 x 8 = 32 misses. There are 4 blocks so there should be around 32 x 4 = 128 misses.
+> 	- In total, there should be around 320 misses.
+> 
+> ![](Cache%20Lab.assets/image-20240512153714248.png)
+
+> [!bug] Caveat
+> 上述方法存在很明显的性能问题，因为在每一个对角块中，对角线元素会导致额外的冲突，形成一种:
+> - A先读取，把B踢掉。
+> - B写入时候不命中，然后把A踢掉
+> - A再读取的时候不命中，又要把B踢掉
+> 
+> 的不搞笑的缓存访问方式。
+
+
+
+
+### Improved Blocked Approach(Hard)
+> [!important]
+> 一种改进的方式就是我们不要在每次读取完A的一个元素后就立即在B的相应位置写入元素，而是可以等待A的某一行都读取完了以后再全部写入B中，这样可以使得Conflict Miss极大幅度的减小。
+```c
+void transpose_32x32_submit(int M, int N, int A[N][M], int B[M][N])
+{
+    for(int i = 0; i < 32; i += 8)
+        for(int j = 0; j < 32; j += 8)
+            for (int k = i; k < i + 8; k++)
+            {
+                int a_0 = A[k][j];
+                int a_1 = A[k][j+1];
+                int a_2 = A[k][j+2];
+                int a_3 = A[k][j+3];
+                int a_4 = A[k][j+4];
+                int a_5 = A[k][j+5];
+                int a_6 = A[k][j+6];
+                int a_7 = A[k][j+7];
+                B[j][k] = a_0;
+                B[j+1][k] = a_1;
+                B[j+2][k] = a_2;
+                B[j+3][k] = a_3;
+                B[j+4][k] = a_4;
+                B[j+5][k] = a_5;
+                B[j+6][k] = a_6;
+                B[j+7][k] = a_7;
+            }         
+}
+```
+> [!exp] Analysis
+> 非对角线的Miss 数量不变，为192次。
+> 对角线的Miss数量计算如下:
+> - 对于每个Block而言，A每次读取一行的时候都会造成冷不命中，一共8次。
+> - B在第一次读取的时候一共有8次MISS.
+> - 之后每当A读取到第i个对角线元素时，都会将cache中对应第i行的B踢掉，后续写入B的某一列时，会触发一次B的第i行的额外的conflict miss.
+> - 对于每个Block对(A, B)来说，一共有 8 + 8 + 8 = 24 次 miss, 一共有4组，所有一共是24 x 4 =96 misses
+> - 加起来一共288 misses.
+> 
+> ![](Cache%20Lab.assets/image-20240512155643898.png)
+
+
+
+
+## 64 x 64 Matrix(Very Hard)
+### Naive Approach
+> [!test]
+> ![](Cache%20Lab.assets/image-20240512161353006.png)
+
+
+
+### Blocked Approach with 4 x 4
+> [!code]
+> 因为每 4 行就会占满一个缓存，先考虑 4 × 4 分块，结果如下：
+> ![](Cache%20Lab.assets/image-20240512161501763.png)
+
+
+
+### Blocked Approach with 8 x 8
+> [!important]
+
+
+
+
+
+## 61 x 67 Matrix(Easy)
+> [!important]
+> 使用16 x 16 的分块就能拿满分了。
+```c
+char transpose_61x67_submit_desc[] = "61 x 67 Input";
+void transpose_61x67_submit(int M, int N, int A[N][M], int B[M][N])
+{
+    int i, j, i1, j1;
+    int gap = 16;
+    for (i = 0; i < N; i += gap) {
+        for (j = 0; j < M; j += gap) {
+            for (i1 = i; i1 < i + gap && i1 < N; i1++) {
+                for (j1 = j; j1 < j + gap && j1 < M; j1++) {
+                    B[j1][i1] = A[i1][j1];
+                }
+            }
+        }
+    }     
+}
+```
+
+
+
+## Testing Results
+> [!test]
+
+
+
+
+
+
+

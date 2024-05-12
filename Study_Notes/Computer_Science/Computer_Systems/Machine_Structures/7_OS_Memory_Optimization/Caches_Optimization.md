@@ -223,15 +223,17 @@
 
 # Writing Cache-Friendly Codes
 ## Repeated Reference/Stride-k
+> [!def]
 > ![image.png](Caches_Optimization.assets/20231024_0932491180.png)
 > 假设我们的`Cache`参数如下:
 > 1. Fully Associative Cache
 > 2. Cache Size: 16 bytes
 > 3. Block Size: 16 bytes
 > 
-则当我们访问`v[0]`时, `v[0],v[1],v[2],v[3]`会被加载到缓存中。如果我们的`Stride`是`1`的话，则第一个`miss`过后，后三次访问都是`Hit`，最终我们会达到如下所示的状态:
+> 则当我们访问`v[0]`时, `v[0],v[1],v[2],v[3]`会被加载到缓存中。如果我们的`Stride`是`1`的话，则第一个`miss`过后，后三次访问都是`Hit`，最终我们会达到如下所示的状态:
 > ![image.png](Caches_Optimization.assets/20231024_0932509582.png)![image.png](Caches_Optimization.assets/20231024_0932519231.png)
-> 总的来说，`Strike`越小，`Block Size`越大，`Hit Rate`就会越高。
+> 总的来说，`Stride`越小，`Block Size`越大，`Hit Rate`就会越高。
+> 
 > ![image.png](Caches_Optimization.assets/20231024_0932528153.png)
 
 
@@ -239,6 +241,7 @@
 
 ## Matrix Access Order
 ### Row Major Order
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0932537343.png)
 
 
@@ -251,14 +254,17 @@
 
 ## Matrix Transpose
 ### P6.17 - 2 x 2 - 16 bytes cache
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0932554065.png)![image.png](Caches_Optimization.assets/20231024_0932565707.png)![image.png](Caches_Optimization.assets/20231024_0932587988.png)
 > 本题根据内存地址和缓存的结构可以判断出，`src`和`dst`的相同行会映射到相同的`Cache Set`中。
 
 
 
 ### P6.34 - 4 x 4 - 32 bytes cache
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0932582934.png)![image.png](Caches_Optimization.assets/20231024_0933009533.png)
 > 本题根据内存地址和缓存的结构可以判断出，`src`和`dst`的相同行会映射到相同的`Cache Set`中。
+> 
 > ![image.png](Caches_Optimization.assets/20231024_0933026915.png)
 
 ```c
@@ -352,58 +358,79 @@ i = 1, j = 3
 
 
 
-
-## MM Spatial Locality
+## Matrix Multiplication
+### MM Spatial Locality
 > ![image.png](Caches_Optimization.assets/20231024_0933069964.png)![image.png](Caches_Optimization.assets/20231024_0933077329.png)
 
 
 
-### ijk Implementation
+#### ijk Implementation
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933087221.png)
+> Since each cache block can hold 4 doubles, and A is accessing in the row-major order, so after every cache miss, there are three cache hits.
+> So the miss rate for A is 0.25.
+> 
+> However for B, since we are accessing in a column major way, each access will cause a cache miss, so the cache miss rate is 1.
 
 
 
-### jik Implementation
-> ![image.png](Caches_Optimization.assets/20231024_0933111477.png)
+#### jik Implementation
+> [!important]
+> ![image.png
+> ](Caches_Optimization.assets/20231024_0933111477.png)
+> As said above, only the inner loop affect the cache performance.
 
 
 
 
-### kij Implementation
+#### kij Implementation
+> [!important]
+> 目标矩阵按行运算结果。
 > ![image.png](Caches_Optimization.assets/20231024_0933129369.png)
+> 这种方式由于有两个矩阵都是row major order access, 所以cache performance很高。
 
 
 
-### ikj Implementation
+#### ikj Implementation
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933131178.png)
+> 同上
 
 
-### jki Implementation
+#### jki Implementation
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933131950.png)
 
 
-### kji Implementation
+#### kji Implementation
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933141752.png)
 
 
-### Summary
+#### Summary
+> [!summary]
 > ![image.png](Caches_Optimization.assets/20231024_0933156635.png)
 
 
 
-## MM Temporal Locality
-### Without Blocking
+### MM Temporal Locality
+#### Without Blocking
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933154021.png)
 > 这里我们将矩阵使用`1-dimensional array`来表示。
 > ![image.png](Caches_Optimization.assets/20231024_0933168941.png)![image.png](Caches_Optimization.assets/20231024_0933174708.png)
 
 
-### With Blocking
+#### With Blocking
+> [!important]
 > ![image.png](Caches_Optimization.assets/20231024_0933196544.png)![image.png](Caches_Optimization.assets/20231024_0933204046.png)![image.png](Caches_Optimization.assets/20231024_0933224850.png)
+> ![](Caches_Optimization.assets/image-20240512114549167.png)
+
 
 
 
 ### Summary
+> [!summary]
 > ![image.png](Caches_Optimization.assets/20231024_0933231040.png)
 
 

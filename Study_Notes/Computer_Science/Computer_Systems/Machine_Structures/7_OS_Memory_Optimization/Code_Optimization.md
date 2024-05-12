@@ -237,7 +237,7 @@ CPE即每个元素的周期数，它描述了处理器在执行特定计算任�
 
 
 
-## Loop Unrolling
+## Loop Unrolling - 指令级的并行
 ### 2 x 1 unrolling
 > 一种方法是，我们在每次循环中同时计算两次乘积，这样我们可以减少一半的循环数量，达到接近`2x`的性能提升。
 > ![image.png](./Code_Optimization.assets/20231024_0925101423.png)
@@ -291,7 +291,7 @@ CPE即每个元素的周期数，它描述了处理器在执行特定计算任�
 
 # Summary on Optimization Techniques
 > 1. **Eliminating Loop Inefficiencies**，减少循环时低效调用，比如 for 循环当中检查边界，如果每次都调用一个方法获取长度，这将大大增加时间消耗，更坏的情况是导致了算法复杂度的改变。
-> 2. **Reducing Procedure Calls**，减少程序调用。
+> 2. **Reducing Procedure Calls**，减少函数调用。
 > 3. **Eliminating Unneeded Memory References**，减少不必要的内存引用。使用一个寄存器变量做临时读写，将最后的结果写入到内存中。如果每次都写入内存，那么会很低效。
 > 4. **Loop Unrolling**，循环展开。for 循环每次步进 2 或者更多，提供指令级别并行。
 > 5. **Multiple Accumulators**，使用多个累积变量。从数据流图的角度去分析，使用多个累积变量可以获得更好的指令并行。

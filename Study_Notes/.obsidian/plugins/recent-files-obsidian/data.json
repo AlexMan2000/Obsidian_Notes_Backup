@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Cache Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md"
+    },
+    {
+      "basename": "Caches_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md"
+    },
+    {
+      "basename": "Circuit_Logic",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md"
+    },
+    {
+      "basename": "_CPU",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/_CPU.md"
+    },
+    {
+      "basename": "Code_Optimization",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
+    },
+    {
+      "basename": "Architecture_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Architecture_Lab.md"
+    },
+    {
+      "basename": "Performance_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/5_Performance_Programming/Performance_Lab.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "Malloc_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Malloc_Lab.md"
+    },
+    {
       "basename": "Proxy_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md"
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Proxy_Lab.md"
     },
     {
       "basename": "Volatile",
@@ -50,15 +86,7 @@
     },
     {
       "basename": "Shell_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md"
-    },
-    {
-      "basename": "Cache Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md"
-    },
-    {
-      "basename": "Malloc_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md"
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Shell_Lab.md"
     },
     {
       "basename": "Concurrent_Programming",
@@ -67,10 +95,6 @@
     {
       "basename": "Shell_Scripts",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Shell_Scripts.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
     {
       "basename": "Sockets",
@@ -175,30 +199,6 @@
     {
       "basename": "Section6_Class_Design_Hashing",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
-    },
-    {
-      "basename": "Setup_OpenGL",
-      "path": "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.md"
-    },
-    {
-      "basename": "4_Transforms",
-      "path": "Computer_Science/Computer_Graphics/4_Transforms.md"
-    },
-    {
-      "basename": "Annotations",
-      "path": "Computer_Science/Java_Language/Java_SE/Annotations.md"
-    },
-    {
-      "basename": "Access_Modifiers",
-      "path": "Computer_Science/Java_Language/Java_SE/Access_Modifiers.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "Computer_Science/Java_Language/Java_Web/JSP.md"
-    },
-    {
-      "basename": "Memory_Mapping",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Memory_Mapping.md"
     }
   ],
   "omittedPaths": [],

@@ -56,7 +56,7 @@
 
 ### Attack 2: Return-oriented Programming
 > [!concept]
-> Also see [X86_Attack_Lab](../../Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/3_Assembly_Programming/X86_Attack_Lab.md) and [[CS161 SP24] Lecture 4_ Mitigating Memory Safety Vulnerabilities]([CS161%20SP24]%20Lecture%204_%20Mitigating%20Memory%20Safety%20Vulnerabilities.pdf)
+> Also see [X86_Attack_Lab](../../Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/3_Assembly_Programming/X86_Attack_Lab.md) and [[CS161 SP24] Lecture 4_ Mitigating Memory Safety Vulnerabilities]([CS161%20SP24]%20Lecture%204_%20Mitigating%20Memory%20Safety%20Vulnerabilities.pdf)
 > ![](3_Mitigating_Vulnerabilities.assets/image-20240225094600216.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225095122708.png)![](3_Mitigating_Vulnerabilities.assets/image-20240225095022538.png)
 > The key idea is that we want to find some code snippets that starts with the instruction that we want to execute and ends with a `ret` instruction since the `ret` instruction makes sure that we will jump to the next gadget and perform chain calling.
 
