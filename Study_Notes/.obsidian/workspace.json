@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "442ec23c609f1be4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f4864b41ce6078e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a98740c57f6d3d41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,14 +49,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -277,16 +252,32 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9f4864b41ce6078e",
+  "active": "a98740c57f6d3d41",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240512002402189.png",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Visibility/Volatile.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
+    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
+    "Computer_Science/Java_Language/Java_SE/Reflection.md",
+    "Computer_Science/Java_Language/Java_Big_Data",
+    "Computer_Science/Java_Language/Java_Spring",
+    "Computer_Science/Java_Language/Java_SE/Lambda.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+    "Computer_Science/Java_Language/Java_SE/Reflection.assets/image-20240511174459316.png",
+    "Computer_Science/Java_Language/Java_SE/Reflection.assets",
+    "Computer_Science/Java_Language/Java_SE/Stream.md",
+    "Computer_Science/Java_Language/Java_SE/Annotations.md",
+    "Computer_Science/Java_Language/Java_Web/Servlet.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Shell_Lab.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Cache Lab.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240511112820902.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240511112513727.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240511112313801.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Malloc_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240511102221546.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.assets/image-20240511101132147.png",
@@ -296,25 +287,12 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_Labs/4_Architecture_Programming/Proxy_Lab.assets/image-20240511093753348.png",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
-    "Computer_Science/Java_Language/Java_Web/Servlet.md",
     "Computer_Science/Computer_Security/Ch4_Web_Security/UI_Attacks.md",
     "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md",
     "Computer_Science/Computer_Security/Ch4_Web_Security/Cross-Site_Scripting(XSS).md",
     "Computer_Science/Computer_Security/Ch4_Web_Security/Cross-Site_Request_Forgery(CSRF).md",
     "Computer_Science/Computer_Security/Ch4_Web_Security/Cookies_Sessions.md",
-    "Computer_Science/Computer_Security/Ch4_Web_Security/Same_Origin_Policy.md",
-    "Computer_Science/Computer_Security/Ch4_Web_Security/SQL_Injection.md",
     "Computer_Science/Java_Language/Java_Web/Servlet.assets/image-20240510213716110.png",
-    "Computer_Science/Java_Language/Java_Web/Servlet.assets/image-20240510213033286.png",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md",
-    "Computer_Science/Computer_Security/Ch2_Memory_Safety/Project_1.md",
-    "Computer_Science/Java_Language/Java_Web/Servlet.assets/image-20240510202444440.png",
-    "Computer_Science/Java_Language/Java_SE/Serialization.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/RAII_Smart_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Special Member Functions.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.assets",
     "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.assets",
     "Computer_Science/Game_Development/OpenGL",
@@ -322,9 +300,6 @@
     "Computer_Science/Java_Language/Java_SE/Access_Modifiers.assets",
     "Computer_Science/Java_Language/Java_SE",
     "Computer_Science/Java_Language/Java_Web/Servlet.assets",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Visibility",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Locks",
-    "Computer_Science/Web_Development/Javascript/Promise",
     "未命名.canvas"
   ]
 }

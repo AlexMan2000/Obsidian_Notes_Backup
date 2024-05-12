@@ -436,17 +436,19 @@ int main(int argc, const char *argv[]) {
 > ![](Thread_Synchonization.assets/image-20240404165111345.png)![](Thread_Synchonization.assets/image-20240404165039551.png)![](Thread_Synchonization.assets/image-20240404165049529.png)![](Thread_Synchonization.assets/image-20240404165126740.png)![](Thread_Synchonization.assets/image-20240416205032429.png)
 
 
-
-
-
-
-
-## Solution 1 - Semaphores
+## Solution 1 - Semaphores(读优先)
 > [!code]
 > ![](Thread_Synchonization.assets/image-20240404164931856.png)
+> The w semaphore controls access to the critical sections that access the shared object. The mutex semaphore protects access to the shared readcnt variable, which counts the number of readers currently in the critical section. 
+> 
+> A writer locks the w mutex each time it enters the critical section and unlocks it each time it leaves. 
+> 
+> This guarantees that there is at most one writer in the critical section at any point in time. On the other hand, only the first reader to enter the critical section locks w, and only the last reader to leave the critical section unlocks it. The w mutex is ignored by readers who enter and leave while other readers are present. This means that as long as a single reader holds the w mutex, an unbounded number of readers can enter the critical section unimpeded. 
+> 
+> A correct solution to either of the readers-writers problems can result in starvation, where a thread blocks indefinitely and fails to make progress. For example, in the solution in Figure 12.26, a writer could wait indefinitely while a stream of readers arrived.
 
 
-## Solution 2 - Monitors
+## Solution 2 - Monitors(写优先)
 > [!important]
 > Here we favor writers over readers so readers have to wait for all the waiting writers.
 > ![](Thread_Synchonization.assets/image-20240416203952688.png)![](Thread_Synchonization.assets/image-20240416203958856.png)
@@ -461,7 +463,7 @@ int main(int argc, const char *argv[]) {
 
 
 
-## Solution 3 - Single CV
+## Solution 3 - Single CV(写优先)
 > [!example]
 > ![](Thread_Synchonization.assets/image-20240417110210558.png)![](Thread_Synchonization.assets/image-20240417110218133.png)
 

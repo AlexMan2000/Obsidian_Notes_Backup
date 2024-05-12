@@ -629,6 +629,9 @@ class Account {
 # Wait-Notify
 > [!important]
 > ![](Synchronization.assets/image-20240416170024953.png)
+
+
+## 使用Condition_Variable实现Circular Buffer
 ```java
 package cn.itcast.self_test;
 

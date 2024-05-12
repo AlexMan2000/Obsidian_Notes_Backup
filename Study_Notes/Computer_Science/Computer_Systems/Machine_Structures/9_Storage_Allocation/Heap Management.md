@@ -203,14 +203,13 @@
 
 
 
-
 # Explicit Free Lists
 ## Block Design
 > [!def]
 > ![](Heap%20Management.assets/image-20240306200132733.png)
 
 
-Linked List Layout
+## Linked List Layout
 > [!def]
 > ![](Heap%20Management.assets/image-20240306200632973.png)
 
@@ -241,4 +240,10 @@ Linked List Layout
 ## Summary
 > [!summary]
 > ![](Heap%20Management.assets/image-20240306201709932.png)
+
+
+
+# Segregated Free Lists
+
+
 

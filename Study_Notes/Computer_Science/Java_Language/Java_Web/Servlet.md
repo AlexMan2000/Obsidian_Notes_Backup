@@ -347,10 +347,6 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
 
 
-
-
-
-
 ## Response对象的使用
 
 
