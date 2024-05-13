@@ -732,8 +732,6 @@ int main(int argc, char** argv)
 > [!algo] Idea
 > See [Cache Blocking in Matrix Multiplication](../../../../Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md#With%20Blocking) (原理笔记)
 > 
-> Also see https://zhuanlan.zhihu.com/p/387662272 (cachelab 最优解)on how to optimize 64 x 64 matrix using proper blocking techniques.
-> 
 > Another fantastic video https://www.youtube.com/watch?v=huz6hJPl_cU （原理解释）
 
 
@@ -858,7 +856,14 @@ void transpose_32x32_submit(int M, int N, int A[N][M], int B[M][N])
 
 
 ### Blocked Approach with 8 x 8
+> [!code]
+```c
+
+
+```
+
 > [!important]
+> See https://zhuanlan.zhihu.com/p/387662272 (cachelab 最优解)on how to optimize 64 x 64 matrix using proper blocking techniques within 1024 misses!
 
 
 

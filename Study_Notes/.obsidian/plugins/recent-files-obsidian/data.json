@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Process_Communication",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md"
+    },
+    {
       "basename": "Cache Lab",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md"
     },
@@ -11,6 +15,22 @@
     {
       "basename": "Circuit_Logic",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md"
+    },
+    {
+      "basename": "Assign7_Hashing(Unfinished)",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Assign7_Hashing(Unfinished).md"
+    },
+    {
+      "basename": "_Datalab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/2_Number_Representation/_Datalab.md"
+    },
+    {
+      "basename": "Modular_Arithmetic",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
+    },
+    {
+      "basename": "X86_Bomb_Lab",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/3_Assembly_Programming/X86_Bomb_Lab.md"
     },
     {
       "basename": "_CPU",
@@ -179,26 +199,6 @@
     {
       "basename": "Exceptions",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/8_Advanced_Topics_C++0x/Exceptions.md"
-    },
-    {
-      "basename": "Functions and Lambdas",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Functions and Lambdas.md"
-    },
-    {
-      "basename": "Class_Inheritance",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/6_OOP_Abstractions/Class_Inheritance.md"
-    },
-    {
-      "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
-    },
-    {
-      "basename": "AP-HW2-Network",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW2-Network.md"
-    },
-    {
-      "basename": "Section6_Class_Design_Hashing",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Section6_Class_Design_Hashing.md"
     }
   ],
   "omittedPaths": [],

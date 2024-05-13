@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4a7b3d4f47022a53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ef60ce4bdf37be5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9121e950f00373f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e69875a4101f93f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/_CPU.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
                 "mode": "source",
                 "source": false
               }
@@ -201,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -256,7 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 302.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -276,20 +240,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "932953190040c9d5",
+  "active": "9121e950f00373f9",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
+    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Assign7_Hashing(Unfinished).md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/2_Number_Representation/_Datalab.md",
+    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/3_Assembly_Programming/X86_Bomb_Lab.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512161501763.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512161353006.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512155643898.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512153714248.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512144450587.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512143503862.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512115206271.png",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.assets/image-20240512114549167.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512103458552.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/_CPU.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Architecture_Lab.md",
@@ -309,15 +278,10 @@
     "Computer_Science/Java_Language/Java_SE/Lambda.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
-    "Computer_Science/Java_Language/Java_SE/Reflection.assets/image-20240511174459316.png",
     "Computer_Science/Java_Language/Java_SE/Reflection.assets",
     "Computer_Science/Java_Language/Java_SE/Stream.md",
     "Computer_Science/Java_Language/Java_SE/Annotations.md",
     "Computer_Science/Java_Language/Java_Web/Servlet.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/1_Threads_and_Processes.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Shell_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Concurrent_Programming.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.assets",
     "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.assets",
     "Computer_Science/Game_Development/OpenGL",
