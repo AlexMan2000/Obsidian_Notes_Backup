@@ -612,3 +612,22 @@ int main(int argc, const char *argv[]) {
 
 # Queues_Message_Passing
 
+
+
+
+
+# Real-World Example
+## Transfer 
+> [!example] CS162 Sp24 Disc03 P1.1
+> ![](Synchronization_Problems.assets/image-20240517095823298.png)![](Synchronization_Problems.assets/image-20240517095831179.png)
+
+
+## Game Server
+> [!example] CS162 Sp24 Disc03 P1.2
+> ![](Synchronization_Problems.assets/image-20240517100016880.png)
+
+
+
+
+
+

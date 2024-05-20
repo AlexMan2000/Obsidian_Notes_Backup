@@ -73,6 +73,10 @@
 > [!def]
 > A heap file is a file type with no particular ordering of pages or of the records on pages and has two main implementations.
 > ![](Disk_Space_Management.assets/image-20240124091443308.png)
+> - In a heap file, new records are placed in the first available space in the file. This "first available space" could be an empty space left by a previously deleted record or at the end of the file if no such spaces are available.
+> - This method is typically fast for insertions since it doesn't require the records to be ordered in any particular way.
+> - Unlike indexed files or other organized storage methods (like clustered files), heap files do not store records based on any key or other criteria. There's no inherent sorting or ordering of the data by values.
+> - Because of this, when records are retrieved (e.g., during a full table scan), they appear in the order they are found in the file, which corresponds to the order of insertion unless records have been deleted and their spaces reused.
 
 > [!quiz] True or False
 > In a heap file, all pages must be filled to capacity except the last page.
@@ -80,6 +84,18 @@
 > **False,** there is no such requirement.
 
 
+
+### Ordering Myth
+> [!important]
+> It's a common misconception that heap files result in a "random" order of records each time they are read from disk. In reality, the order of records in a heap file remains consistent between reads unless:
+> - New records are added.
+> - Existing records are deleted, potentially causing new records to occupy these freed spaces.
+> - The file is explicitly reorganized or compacted by the database system.
+> 
+> Suppose you have a heap-organized file storing customer records with attributes like CustomerID, Name, and Address. When new customer records are added:
+> - They are placed in the next available space.
+> - If a customer record is deleted, its space becomes available for future insertions.
+> - When scanning the table to list all customers, the result will reflect the physical order in the file at the time of the scan, which might not match any logical or sorted order by CustomerID or Name.
 
 
 ### List Implementation

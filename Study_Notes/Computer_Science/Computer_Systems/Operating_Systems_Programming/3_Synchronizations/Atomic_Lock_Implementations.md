@@ -1,11 +1,27 @@
+# Common Atomic Instructions
+> [!example]
+> ![](Atomic_Instructions.assets/image-20240416174146133.png)
+
+
+
+
+
+## Atomic Add in Queues
+> [!example]
+> ![](Atomic_Instructions.assets/image-20240416174351026.png)
+
+
+
+
+
 # Blocking Lock
 > [!def]
 > **Blocking Locks (Mutexes)**: If the lock is a standard blocking lock (or mutex), the thread that attempts to acquire the lock will be put into a waiting state until the lock becomes available. When the thread holding the lock releases it, the operating system's scheduler will wake up one of the waiting threads (or all, depending on the policy) and allow it to acquire the lock.
-> ![](Lock_Implementations.assets/image-20240416190402680.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416190402680.png)
 
 > [!bug] Caveats
 > This works perfectly on uniprocessor, but for multiprocessors, when we call `disable interrupts`, we are onlying disabling the interrupt on that particular processor.
-> ![](Lock_Implementations.assets/image-20240416193247004.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416193247004.png)
 
 
 
@@ -17,17 +33,26 @@
 # Spinning Lock
 ## Naive Implementation
 > [!def]
-> ![](Lock_Implementations.assets/image-20240416182813982.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416182813982.png)
 > No system call here(`sleep()` is a syscall), so the code is entirely at user level.
 
 > [!bug] Caveats: Priority Inversion
-> ![](Lock_Implementations.assets/image-20240416183327122.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416183327122.png)
+
+> [!example] CS162 Sp24 Disc03 P1.2 
+> We can use test-set a spinning lock implementation:
+> ![](Atomic_Lock_Implementations.assets/image-20240517101409503.png)![](Atomic_Lock_Implementations.assets/image-20240517101632756.png)
+
+
+
+
+
 
 
 
 ## Better Implementation
 > [!def]
-> ![](Lock_Implementations.assets/image-20240416184403109.png)![](Lock_Implementations.assets/image-20240416190248084.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416184403109.png)![](Atomic_Lock_Implementations.assets/image-20240416190248084.png)
 > The improvement is that we want the waiting time of our critical section to be as short as possible so that we can handle the busy-waiting problem.
 > 
 > Even if there is a system call(compared with naive implementation), the waiting time is minimized.
@@ -44,23 +69,23 @@
 > [!important]
 > 
 >  To deal with the `sleep()` system call and set `guard = 0`, we could introduce the `futex` API, which can accomplish `sleep() & guard = 0` at the same time.
->  ![](Lock_Implementations.assets/image-20240416192055652.png)
+>  ![](Atomic_Lock_Implementations.assets/image-20240416192055652.png)
 
 ### Impl 1
 > [!example]
-> ![](Lock_Implementations.assets/image-20240416192542586.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416192542586.png)
 
 
 
 
 ### Impl 2
 > [!example]
-> ![](Lock_Implementations.assets/image-20240416192754148.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416192754148.png)
 
 
 ### Impl 3
 > [!example]
-> ![](Lock_Implementations.assets/image-20240416192559892.png)
+> ![](Atomic_Lock_Implementations.assets/image-20240416192559892.png)
 
 
 

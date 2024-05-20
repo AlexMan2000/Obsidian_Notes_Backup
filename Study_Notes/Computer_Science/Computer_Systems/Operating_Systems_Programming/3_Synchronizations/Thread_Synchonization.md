@@ -830,7 +830,7 @@ ostream& osunlock(ostream& os) {
 
 
 ## Implementations
-More in [Lock_Implementations](Lock_Implementations.md)
+More in [Atomic_Lock_Implementations](Atomic_Lock_Implementations.md)
 > [!important]
 > ![](Thread_Synchonization.assets/image-20240407114438688.png)
 
@@ -888,7 +888,9 @@ More in [Lock_Implementations](Lock_Implementations.md)
 > - **Scheduling Constraints(init=0):** ![](Thread_Synchonization.assets/image-20240407105917905.png)
 > 
 > A semaphore can be considered a generalization of a lock. A binary semaphore can be used as a lock, but a lock cannot replicate the functionality of a counting semaphore.
-> 
+> ![](Thread_Synchonization.assets/image-20240517094857907.png)
+
+
 
 
 

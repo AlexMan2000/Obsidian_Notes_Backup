@@ -333,6 +333,18 @@
 
 
 
+
+## Algorithm Discussions
+### Why Left-Deep-Join
+> [!important]
+> In the join algorithm, the outer loop(left relation) needs to wait until all results are ready from inner relations to proceed joining operation. 
+> - Try to think in sort merge join where for each outer relation record, if there is a match, we have to scan all the records from the inner relation(right relation). This requires the right relation to be fully computed. Otherwise we may not see all the matching records.
+> - Left-deep join supports pipelining since we can process the output record from left relation on-the-fly(incrementally, without having to materialize) while the right relation is always fully computed(we don't have to wait).
+> - For example, (A join B) join C is left-deep join where A join B can be processed on the fly while C is always fully ready. On the other hand, A join (B join C) is a right-deep join where A has to wait until the (B join C)'s completion to start joining.
+
+
+
+
 # Query Plan Searching Examples
 ## Methodology
 > [!important] 

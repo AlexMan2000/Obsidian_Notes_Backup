@@ -72,6 +72,66 @@ static bool put_user (uint8_t *udst, uint8_t byte) {
 > In other words, the bridge between the caller program and system call handler program is this `struct intr_frame`.
 
 
+## Interrupts
+### Interrupt Frame
+> [!def]
+```c
+/* Interrupt stack frame. */
+struct intr_frame {
+  /* Pushed by intr_entry in intr-stubs.S.
+       These are the interrupted task's saved registers. */
+  uint32_t edi;       /* Saved EDI. */
+  uint32_t esi;       /* Saved ESI. */
+  uint32_t ebp;       /* Saved EBP. */
+  uint32_t esp_dummy; /* Not used. */
+  uint32_t ebx;       /* Saved EBX. */
+  uint32_t edx;       /* Saved EDX. */
+  uint32_t ecx;       /* Saved ECX. */
+  uint32_t eax;       /* Saved EAX. */
+  uint16_t gs, : 16;  /* Saved GS segment register. */
+  uint16_t fs, : 16;  /* Saved FS segment register. */
+  uint16_t es, : 16;  /* Saved ES segment register. */
+  uint16_t ds, : 16;  /* Saved DS segment register. */
+
+  /* Pushed by intrNN_stub in intr-stubs.S. */
+  uint32_t vec_no; /* Interrupt vector number. */
+
+  /* Sometimes pushed by the CPU,
+       otherwise for consistency pushed as 0 by intrNN_stub.
+       The CPU puts it just under `eip', but we move it here. */
+  uint32_t error_code; /* Error code. */
+
+  /* Pushed by intrNN_stub in intr-stubs.S.
+       This frame pointer eases interpretation of backtraces. */
+  void* frame_pointer; /* Saved EBP (frame pointer). */
+
+  /* Pushed by the CPU.
+       These are the interrupted task's saved registers. */
+  void (*eip)(void); /* Next instruction to execute. */
+  uint16_t cs, : 16; /* Code segment for eip. */
+  uint32_t eflags;   /* Saved CPU flags. */
+  void* esp;         /* Saved stack pointer. */
+  uint16_t ss, : 16; /* Data segment for esp. */
+};
+```
+
+
+### intr-entry
+> [!important]
+> ![](Project0_Pregame.assets/image-20240517105651429.png)
+
+
+
+
+
+### intr-exit
+> [!important]
+> ![](Project0_Pregame.assets/image-20240517105657247.png)
+
+
+
+
+
 
 ## Threads
 ### Thread Struct(TCB)
@@ -270,6 +330,12 @@ struct process {
 
 
 ### Load program into memory
+> [!algo] Load ELF File
+> ![](Project0_Pregame.assets/image-20240517133757706.png)
+
+> [!algo] After loading
+> ![](Project0_Pregame.assets/image-20240517133700459.png)
+
 > [!task]
 > ![](Project0_Pregame.assets/image-20240405170621962.png)![](Project0_Pregame.assets/image-20240405170635542.png)![](Project0_Pregame.assets/image-20240406115748919.png)![](Project0_Pregame.assets/image-20240405170648159.png)
 > 

@@ -1,11 +1,8 @@
 # Part A: Cache Simulator(Medium)
 > [!overview]
 > ![](Cache%20Lab.assets/image-20231207190005828.png)
-
 ```c
 #include "cachelab.h"
-
-  
 
 int main()
 {
@@ -749,8 +746,9 @@ void trans_submit(int M, int N, int A[N][M], int B[M][N]) {
     }
 }
 ```
-
 > [!important] Analysis
+> ![](Cache%20Lab.assets/image-20240513203809336.png)![](Cache%20Lab.assets/image-20240513203817121.png)
+
 
 
 

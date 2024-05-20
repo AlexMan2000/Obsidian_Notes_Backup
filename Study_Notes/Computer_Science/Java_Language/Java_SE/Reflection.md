@@ -66,7 +66,9 @@ public class Container {
     private Map<Class<?>, Object> services;
 
     public Container() {
+	    // 类到方法名的映射
         this.mapping = new HashMap<>();
+        // 类到对象的映射
         this.services = new HashMap<>();
     }
 

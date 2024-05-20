@@ -287,11 +287,6 @@
 
 
 
-
-
-
-
-
 ## Common Table Expressions(CTE)
 > [!concept]
 > ![](SQL_Programming.assets/image-20240119162501800.png)![](SQL_Programming.assets/image-20240119162512227.png)![](SQL_Programming.assets/image-20240119162543402.png)

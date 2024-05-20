@@ -44,6 +44,7 @@ public class test1 {
 
 
 # 锁超时
+## 定义
 > [!important]
 > 
 ```java
@@ -92,6 +93,12 @@ public class test2 {
     }
 }
 ```
+
+
+## 解决哲学家就餐问题
+> [!important]
+
+
 
 
 

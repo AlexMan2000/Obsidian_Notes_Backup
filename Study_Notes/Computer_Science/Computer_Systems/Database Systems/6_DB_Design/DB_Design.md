@@ -159,7 +159,8 @@
 
 
 
-
+# Other Normal Form
+## 3rd NF
 
 
 

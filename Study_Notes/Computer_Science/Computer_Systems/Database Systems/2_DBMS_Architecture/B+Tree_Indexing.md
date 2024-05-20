@@ -142,14 +142,14 @@
 
 # B\+ Tree Refinement
 ## Leaf Nodes Refinements
-### Alt 1
+### Alt 1: Store Records
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184045344.png)
 > Here each entry of the leaf nodes store the actual data, we don't have to do translation between pointer and (pageID, slotID) as we have seen in [B-plus Tree Index (Reference)](B+Tree_Indexing.md#B-plus%20Tree%20Index%20(Reference)).
 > 
 
 
-### Alt 2
+### Alt 2: Store one Reference to A Record
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184105502.png)
 > We introduced it in [B-plus Tree Index (Reference)](B+Tree_Indexing.md#B-plus%20Tree%20Index%20(Reference)).
@@ -158,7 +158,7 @@
 
 
 
-### Alt3
+### Alt3: Store Multiple References to Records
 > [!def]
 > ![](B+Tree_Indexing.assets/image-20240206184400796.png)
 > Bookkeeping here means if our reference list causes a block to be full and even spillover to a another block, then we have to record which portion of the reference list belongs to which block.

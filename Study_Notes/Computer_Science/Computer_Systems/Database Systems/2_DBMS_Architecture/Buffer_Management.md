@@ -1,5 +1,28 @@
-# Buffer Components
-## Buffer Pool
+# Buffer Pool Manager
+## Organization
+> [!important]
+> ![](Buffer_Management.assets/image-20240514110707784.png)
+
+
+## Page Table
+> [!def]
+> ![](Buffer_Management.assets/image-20240514110727225.png)
+
+
+
+## Locks&Latches
+> [!important]
+> When some trasaction asks the bufferpool manager to load some data into the buffer pool(i.e. asking for records)
+> ![](Buffer_Management.assets/image-20240514111313910.png)
+
+
+
+## Page Allocation Policy
+> [!def]
+> ![](Buffer_Management.assets/image-20240514112120160.png)
+
+
+
 
 
 
@@ -11,7 +34,7 @@
 
 
 
-# Page Replacement Policy
+# Traditional Page Replacement Policy
 ## Why Software Level?
 > [!motiv]
 > ![](Buffer_Management.assets/image-20240209165350460.png)
@@ -135,10 +158,15 @@ public class LRUEvictionPolicy implements EvictionPolicy {
 ### Algorithm
 > [!algo]
 > ![](Buffer_Management.assets/image-20240209161753170.png)![](Buffer_Management.assets/image-20240209161921826.png)![](Buffer_Management.assets/image-20240209161929257.png)
+> **Note:**
+> - When the buffer pool is not full, no replacement policy will be triggered. In this case, the clock hand is nowhere to find.
+> - When the buffer pool is full, the clock hand will be set to the first unpinned page in the buffer pool.
+> - We don't move the pointer when there is a page hit, we will start the clock hand iteration at this position.(not the next one).
 
 > [!example] Hit Event Without Pinning Event
 > See [CS 186 Discussion 4](CS%20186%20Discussion%204.pdf)
 > ![](Buffer_Management.assets/image-20240209164214220.png)![](Buffer_Management.assets/image-20240209164218564.png)
+> Here the second chance bit is the same as reference bit.
 
 > [!example] With Pinned Event
 > ![](Buffer_Management.assets/image-20240209161938290.png)![](Buffer_Management.assets/image-20240209161944359.png)![](Buffer_Management.assets/image-20240209162049866.png)![](Buffer_Management.assets/image-20240209162055609.png)![](Buffer_Management.assets/image-20240209162101917.png)
@@ -183,11 +211,76 @@ public class LRUEvictionPolicy implements EvictionPolicy {
 ### LRU - Sequantial Flooding
 > [!important]
 > ![](Buffer_Management.assets/image-20240209162153568.png)![](Buffer_Management.assets/image-20240209162158019.png)
+> Is like cache miss if we keep loading conclicting blocks in.
 
 
 ### MRU - Good at Sequential Requests
 > [!important]
 > ![](Buffer_Management.assets/image-20240209162209299.png)![](Buffer_Management.assets/image-20240209162245985.png)
+
+
+
+# Better Page Eviction Policies
+## LRU - K
+> [!important]
+> ![](Buffer_Management.assets/image-20240514121956352.png)![](Buffer_Management.assets/image-20240514133422288.png)
+
+
+
+## Localization
+> [!important]
+> ![](Buffer_Management.assets/image-20240514134502136.png)
+
+
+## Priority Hints
+> [!important]
+> ![](Buffer_Management.assets/image-20240514140539694.png)
+> For autoincrement key(with index on it) like this, we know pages that stores larger key are more important.
+
+
+
+
+# Buffer Pool Optimization
+## Multiple Buffer Pools
+> [!important]
+> ![](Buffer_Management.assets/image-20240514112212163.png)
+> - Each pool can be managed independently, with its own set of resources and management strategies.
+> - **Latch contention** occurs when multiple threads or processes attempt to acquire a latch at the same time, leading to delays and decreased performance as each thread waits for access.
+> - **How Partitioning Helps**: By dividing memory into multiple pools, the likelihood that two processes will need to access the same memory region simultaneously is reduced. Each process accesses its designated memory pool, thereby reducing the competition or "contention" for latches. This can significantly decrease waiting times and increase throughput.
+> 
+> ![](Buffer_Management.assets/image-20240514112400434.png)![](Buffer_Management.assets/image-20240514112408425.png)
+
+
+
+## Pre-Fetching
+> [!def]
+> ![](Buffer_Management.assets/image-20240514112906896.png)
+> 1. **Identifying Access Pattern:** If sequential scan, pre-fetch the next few consecutive pages so that the SQL executor won't have to wait for data to be ready. If index scan, pre-fetch the next childNode in the index tree.
+> 2. **Preactive Loading:** Based on these predictions, the buffer pool manager preloads the anticipated data pages from the disk into the buffer pool. This is done in a way that does not disrupt the current performance but instead utilizes idle I/O capacity or prioritizes prefetching to maximize efficiency.
+> 3. **Optimizing Resource Use:** By loading data pages before they are needed, the system can **reduce I/O wait times** when the actual query is executed.
+> 
+> ![](Buffer_Management.assets/image-20240514113809663.png)
+> When Q1 is asking for index-page 1, the buffer pool manager already predicts that the next pages to load are index-page3 and index-page5.
+
+
+
+## Scan Sharing
+> [!def]
+> ![](Buffer_Management.assets/image-20240514113939755.png)![](Buffer_Management.assets/image-20240514114441345.png)![](Buffer_Management.assets/image-20240514114654554.png)
+
+
+
+## Buffer Pool ByPass
+> [!def]
+> ![](Buffer_Management.assets/image-20240514114957388.png)
+
+
+
+
+
+
+
+
 
 
 

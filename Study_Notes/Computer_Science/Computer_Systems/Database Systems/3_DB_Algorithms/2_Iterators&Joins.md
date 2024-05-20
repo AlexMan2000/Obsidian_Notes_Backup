@@ -19,6 +19,8 @@
 
 
 # Iteration Algorithms
+> [!important]
+> More see [4_Query_Execution_Model](4_Query_Execution_Model.md)
 ## Select Operator
 > [!example] Streaming Operator
 > ![](2_Iterators&Joins.assets/image-20240220093725921.png)

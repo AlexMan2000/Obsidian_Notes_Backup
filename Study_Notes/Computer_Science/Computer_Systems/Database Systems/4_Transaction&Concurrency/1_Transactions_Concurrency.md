@@ -74,6 +74,11 @@
 ### Consistency
 > [!def]
 > ![](1_Transactions_Concurrency.assets/image-20240304144031976.png)
+> It means when user try to insert some records that don't satisfy the schema, the trasaction will be inconsistent and thus aborted by DBMS.
+> 
+> ![](1_Transactions_Concurrency.assets/image-20240514161459182.png)
+
+
 
 
 

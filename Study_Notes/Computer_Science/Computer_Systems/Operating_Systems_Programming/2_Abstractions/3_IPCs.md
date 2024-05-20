@@ -347,24 +347,19 @@ More see [Sockets](../../Machine_Structures/11_Network_Programming/Sockets.md)
 
 
 ### Server Implementations
-#### Single-Threaded Server
-> [!code]
-> 
-
-
-
-
-#### Concurrent Server
-> [!code]
-
-
-
+> See [Proxy_Lab](../HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Proxy_Lab.md)
 
 
 
 ## Echo Server
-
-
+> [!example] CS162 Sp24 Disc02 P2.3
+> ![](3_IPCs.assets/image-20240516105845478.png)![](3_IPCs.assets/image-20240516105909674.png)![](3_IPCs.assets/image-20240516105915257.png)
+> If error happens during `serve_client`, we terminate the current thread and close the connection.
+> 
+> Another danger of this code could be the handling of interuption of `read`.
+> - When syscall `read` is doing its job, it could be interrupted by other processes or threads. When the interrupt handler returns, two scenarios could happen:
+> 	- The interrupt returns **without** `EINTR`, in this case, the syscall `read` will be **automatically** restarted and resumed where it was left off.
+> 	- The interrupt returns **with** `EINTR`, in this case, the syscall `read` will fail and we have to **manually** restart the `read` syscall.
 
 
 

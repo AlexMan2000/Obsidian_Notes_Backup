@@ -1,4 +1,4 @@
-# Ant Testing Framework
+# Ant Framework
 ## Downloading
 > https://ant.apache.org/
 
@@ -42,6 +42,34 @@
 ```
 
 
+
+## Ant Build
+> [!important]
+> ![](Lab01_Storage.assets/image-20240516101949300.png)
+> `ant dist` will compile your source code into a jar file for later use.
+
+
+
+## Create Tables
+> [!important]
+> ![](Lab01_Storage.assets/image-20240516102836190.png)
+
+
+
+
+
+
+# Module Diagram
+> [!important]
+> ![](Lab01_Storage.assets/image-20240515091942548.png)![](Lab01_Storage.assets/image-20240515092000215.png)
+
+
+
+
+
+
+
+
 # Task 1: Fields and Tuples
 > [!task]
 > ![](Lab01_Storage.assets/image-20240310121654009.png)
@@ -50,7 +78,7 @@
 ### TupleDesc
 > [!design]
 > ![](Lab01_Storage.assets/image-20240310150545675.png)
-> **TupleDesc** is similar to the scheme of a relation, it contains all the column information of a record, like columnFieldName and columnFieldType.
+> **TupleDesc** is similar to the **scheme** of a relation, it contains all the column information of a record, like columnFieldName and columnFieldType.
 > 
 > Here we pair each columnFieldName and columnFieldType up as a nested data structure TDItem.
 > 
@@ -483,12 +511,387 @@ public class Tuple implements Serializable {
 
 
 # Task 2: Catalog
+## Catalog 
+> [!def]
+> The catalog (class `Catalog` in SimpleDB) consists of a list of the tables and schemas of the tables that are currently in the database.
+> ![](Lab01_Storage.assets/image-20240515092024789.png)
+> 在整个 SimpleDb 中, CataLog 是全局唯一的，可以通过方法Database.getCatalog()获得，global buffer pool可以通过方法Database.getBufferPool()获得。
+> 
+> 总的来说，`Catalog`会使用一个`HashMap<?, ?>`管理一个从`tableId`到`Table`的映射，管理所有的在`DBMS`运行时创建的`Table`对象。
+> 
+```java
+package simpledb.common;
+
+import simpledb.storage.*;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
+/**
+ * The Catalog keeps track of all available tables in the database and their
+ * associated schemas.
+ * For now, this is a stub catalog that must be populated with tables by a
+ * user program before it can be used -- eventually, this should be converted
+ * to a catalog that reads a catalog table from disk.
+ *
+ * @Threadsafe
+ */
+public class Catalog {
+
+    private Map<Integer, Table> tables;
+
+    /**
+     * Constructor.
+     * Creates a new, empty catalog.
+     */
+    public Catalog() {
+        // TODO: some code goes here
+        this.tables = new HashMap<>();
+    }
+
+    /**
+     * Add a new table to the catalog.
+     * This table's contents are stored in the specified DbFile.
+     *
+     * @param file      the contents of the table to add;  file.getId() is the identfier of
+     *                  this file/tupledesc param for the calls getTupleDesc and getFile
+     * @param name      the name of the table -- may be an empty string.  May not be null.  If a name
+     *                  conflict exists, use the last table to be added as the table for a given name.
+     * @param pkeyField the name of the primary key field
+     */
+    public void addTable(DbFile file, String name, String pkeyField) {
+        // TODO: some code goes here
+        if (name == null) {
+            System.out.println("The name of the table cannot be null");
+            return;
+        }
+
+        Table newTable =  new Table(file.getTupleDesc(), file, pkeyField, name);
+        int tableId = file.getId();
+        // If id conflicts, id --> old Table(old DbFile) => id ---> new Table(old DbFile)
+        if (tables.containsKey(tableId)) {
+            tables.put(tableId, newTable);
+            return;
+        }
 
 
+        // 文件是由tableid绝对定位的，而不是由name标识的
+        // If name conflicts, overwrite old table with "name" with new table instance
+        // 给老名字换新文件
+        for (Map.Entry<Integer, Table> pair: tables.entrySet()) {
+            Table table = pair.getValue();
+            if (table.getTableName().equals(name)) {
+                tables.remove(pair.getKey());
+            }
+        }
+
+        // No conflicts happen
+        tables.put(tableId, newTable);
+    }
+
+    public void addTable(DbFile file, String name) {
+        addTable(file, name, "");
+    }
+
+    /**
+     * Add a new table to the catalog.
+     * This table has tuples formatted using the specified TupleDesc and its
+     * contents are stored in the specified DbFile.
+     *
+     * @param file the contents of the table to add;  file.getId() is the identfier of
+     *             this file/tupledesc param for the calls getTupleDesc and getFile
+     */
+    public void addTable(DbFile file) {
+        addTable(file, (UUID.randomUUID()).toString());
+    }
+
+    /**
+     * Return the id of the table with  a specified name,
+     *
+     * @throws NoSuchElementException if the table doesn't exist
+     */
+    public int getTableId(String name) throws NoSuchElementException {
+        // TODO: some code goes here
+        for (Map.Entry<Integer, Table> pair: tables.entrySet()) {
+            if (pair.getValue().getTableName().equals(name)) {
+                return pair.getKey();
+            }
+        }
+
+        // If not found
+        throw new NoSuchElementException(String.format("No such table named: %s", name));
+    }
+
+    /**
+     * Returns the tuple descriptor (schema) of the specified table
+     *
+     * @param tableid The id of the table, as specified by the DbFile.getId()
+     *                function passed to addTable
+     * @throws NoSuchElementException if the table doesn't exist
+     */
+    public TupleDesc getTupleDesc(int tableid) throws NoSuchElementException {
+        // TODO: some code goes here
+        return getTableById(tableid).getTableSchema();
+    }
+
+    /**
+     * Get the Table object by tableid, throw error if there is no table with this id
+     * @param tableid
+     * @return
+     * @throws NoSuchElementException
+     */
+    private Table getTableById(int tableid) throws NoSuchElementException {
+        if (tables.containsKey(tableid)) {
+            return tables.get(tableid);
+        }
+
+        // If not found
+        throw new NoSuchElementException(String.format("No such table with id: %s", tableid));
+
+    }
+
+    /**
+     * Get a table by name, throw NoSuchElementException if not found
+     * @param name
+     * @return
+     * @throws NoSuchElementException
+     */
+    private Table getTableByName(String name) throws NoSuchElementException {
+        for (Map.Entry<Integer, Table> pair: tables.entrySet()) {
+            if (pair.getValue().getTableName().equals(name)) {
+                return pair.getValue();
+            }
+        }
+        // If not found
+        throw new NoSuchElementException(String.format("No such table named: %s", name));
+    }
+
+    /**
+     * Returns the DbFile that can be used to read the contents of the
+     * specified table.
+     *
+     * @param tableid The id of the table, as specified by the DbFile.getId()
+     *                function passed to addTable
+     */
+    public DbFile getDatabaseFile(int tableid) throws NoSuchElementException {
+        // TODO: some code goes here
+        return getTableById(tableid).getTableContent();
+    }
+
+    public String getPrimaryKey(int tableid) {
+        // TODO: some code goes here
+        return getTableById(tableid).getTablePrimaryKey();
+    }
+
+    public Iterator<Integer> tableIdIterator() {
+        // TODO: some code goes here
+        return tables.keySet().iterator();
+    }
+
+    public String getTableName(int tableid) {
+        // TODO: some code goes here
+        return getTableById(tableid).getTableName();
+    }
+
+    /**
+     * Delete all tables from the catalog
+     */
+    public void clear() {
+        // TODO: some code goes here
+        java.lang.reflect.Field[] fields = this.getClass().getDeclaredFields();
+        for (java.lang.reflect.Field field: fields) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(this);
+                if (value instanceof Map) {
+                    ((Map<?, ?>) value).clear();
+                }
+            } catch (IllegalAccessException e) {
+                System.out.println("Error accessing field: " + e.getMessage());
+            }
+        }
+    }
+
+    /**
+     * Reads the schema from a file and creates the appropriate tables in the database.
+     *
+     * @param catalogFile
+     */
+    public void loadSchema(String catalogFile) {
+        String line = "";
+        String baseFolder = new File(new File(catalogFile).getAbsolutePath()).getParent();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(catalogFile));
+
+            while ((line = br.readLine()) != null) {
+                //assume line is of the format name (field type, field type, ...)
+                String name = line.substring(0, line.indexOf("(")).trim();
+                //System.out.println("TABLE NAME: " + name);
+                String fields = line.substring(line.indexOf("(") + 1, line.indexOf(")")).trim();
+                String[] els = fields.split(",");
+                List<String> names = new ArrayList<>();
+                List<Type> types = new ArrayList<>();
+                String primaryKey = "";
+                for (String e : els) {
+                    String[] els2 = e.trim().split(" ");
+                    names.add(els2[0].trim());
+                    if (els2[1].trim().equalsIgnoreCase("int"))
+                        types.add(Type.INT_TYPE);
+                    else if (els2[1].trim().equalsIgnoreCase("string"))
+                        types.add(Type.STRING_TYPE);
+                    else {
+                        System.out.println("Unknown type " + els2[1]);
+                        System.exit(0);
+                    }
+                    if (els2.length == 3) {
+                        if (els2[2].trim().equals("pk"))
+                            primaryKey = els2[0].trim();
+                        else {
+                            System.out.println("Unknown annotation " + els2[2]);
+                            System.exit(0);
+                        }
+                    }
+                }
+                Type[] typeAr = types.toArray(new Type[0]);
+                String[] namesAr = names.toArray(new String[0]);
+                TupleDesc t = new TupleDesc(typeAr, namesAr);
+                HeapFile tabHf = new HeapFile(new File(baseFolder + "/" + name + ".dat"), t);
+                addTable(tabHf, name, primaryKey);
+                System.out.println("Added table : " + name + " with schema " + t);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(0);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Invalid catalog entry : " + line);
+            System.exit(0);
+        }
+    }
+}
+
+```
+
+## DbFile
+> [!def]
+> `DbFile`接口抽象了一个`Table`中的`Tuples`信息和`metadata`，以及添加/删除`records(tuples)`, 获取table schema等方法。
+> 
+> 同时`DbFile`还抽象了`readPage()`和`writePage()`表示从磁盘中读取和写入一个页的数据。
+> 
+> 本质上就是文件输入输出接口。
+> 
 
 
+## Table
+> [!code]
+> 抽象一个`Table`的信息，包含Table的:
+> - Schema
+> - TableName
+> - Table主键名
+> - TableContent(`DbFile`)对象
+```java
+public class Table {
+
+    // 一张表对应一个DbFile文件接口，
+    private TupleDesc tableSchema;
+    private DbFile tableContent;  // A list of tuples stored on some pages
+    private String tablePrimaryKey;
+    private String tableName;
+
+    public Table(TupleDesc tableSchema, DbFile tableContent, String tablePrimaryKey, String tableName) {
+        this.tableSchema = tableSchema;
+        this.tableContent = tableContent;
+        this.tableName = tableName;
+        this.tablePrimaryKey = tablePrimaryKey;
+    }
+...
+}
+```
+
+## Page
+> [!def]
+> 抽象了`BufferPool/Disk`中的一个`Frame/Page`。Buffer Pool Manager中会管理这些`Pages`, 负责加载和移除`Page`。
+> - 当`Page`被序列化时，可以看作是`Disk`上的静态文件
+> - 当`Page`被反序列化加载进内存时，可以看作是`BufferPool`中的一个`Frame`
 
 
 
 
 # Task 3: BufferPool
+> [!def]
+> ![](Lab01_Storage.assets/image-20240515092044618.png)![](Lab01_Storage.assets/image-20240515085410596.png)
+
+
+
+# Task 4: File/Page
+> [!algo]
+> ![](Lab01_Storage.assets/image-20240515092108810.png)![](Lab01_Storage.assets/image-20240515092119319.png)
+> Here the byte data are stored in big-endianess fashion.
+> 
+
+
+## HeapPage
+> [!algo]
+> See [Unpacked Layout](../../2_DBMS_Architecture/Disk_Space_Management.md#Unpacked%20Layout), the heappage in simple DB is implemented in an unpacked fashion.
+> 
+> - Page Header contains a bitmap with one bit per tuple slot
+> 	- 0 indicates no tuple at that slot(invalid)
+> 		- Has been deleted 
+> 		- Or never been initialized.
+> 	- 1 indicates validity.
+> - The maximum number of tuples within a page should be `floor(pagesize * 8 / tuplesize * 8 + 1) `
+> 	- tuplesize is the number of bytes for the actual content of the fields.
+> 	- 1 extra bit for the header.
+> 
+> `HeapPage`主要用于模拟一个页的数据，页中存放了`PageHeader` 和 `Tuples`. 需要通过`byte[] data` 来初始化。
+
+
+
+
+# End-to-end Test
+> [!important]
+> - First create a table file at `filepath/filename.txt`
+> - Compile the java source code with ant: `ant dist`(dist is the output folder for the compiler), output is a `.jar` file that can be executed directly.
+> - Then convert the table file to a `.dat` file with `java -jar dist/simpledb convert filepath/filename.txt N`(N indicates that the table has N columns), this will produce a `.data` file at the same folder as `filename.txt`
+> - Write a sample test program:
+```java
+public class TestQuery1 {
+    public static void main(String[] args) {
+
+
+        Type[] types = new Type[]{Type.INT_TYPE, Type.INT_TYPE, Type.INT_TYPE};
+        String[] fieldNames = new String[]{"col1", "col2", "col3"};
+
+        TupleDesc schema = new TupleDesc(types, fieldNames);
+        HeapFile table1 = new HeapFile(new File("F:\\Study_Notes_Backup\\Computer_Science\\MIT_6830\\simple-db-hw-2022-main\\simple-db-hw-2022-main\\db_files\\table1.dat"), schema);
+
+
+        Database.getCatalog().addTable(table1, "table1", "col1");
+
+        TransactionId tid = new TransactionId();
+        SeqScan f = new SeqScan(tid, table1.getId());
+
+        try {
+            f.open();
+            while(f.hasNext()) {
+                Tuple tup = f.next();
+                System.out.println(tup);
+            }
+            f.close();
+            Database.getBufferPool().transactionComplete(tid);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+> [!important]
+> Run `ant` , then `java -classpath dist/simpledb.jar simpledb.endtests.TestQuery1` to compile and link these files into a new `.jar` file, overwrite the old one. 
+> 
+> It will also execute the logic in `TestQuery1`.
+
+
+

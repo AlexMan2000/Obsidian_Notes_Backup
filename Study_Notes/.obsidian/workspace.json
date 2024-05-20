@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5cfe638dd4ad06d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1880aa7d5c965419",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,25 +49,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "86c904f73fd2d524",
+            "id": "d5243f347c8e8a38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
+                "file": "Computer_Science/Java_Language/Java_SE/Reflection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca0c529cd332dc77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -73,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Alt Index",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 396.5
+    "width": 333.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -165,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
+                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
+                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -240,54 +277,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9121e950f00373f9",
+  "active": "ca0c529cd332dc77",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.md",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Process_Communication.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/5_Digital_Logics/Circuit_Logic.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/7_Hashing_PQs_Trees/Assign7_Hashing(Unfinished).md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/2_Number_Representation/_Datalab.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/3_Assembly_Programming/X86_Bomb_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512161501763.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512161353006.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512155643898.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512153714248.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512144450587.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512143503862.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512115206271.png",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Caches_Optimization.assets/image-20240512114549167.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Cache Lab.assets/image-20240512103458552.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/_CPU.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Architecture_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/5_Performance_Programming/Performance_Lab.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Computer_Engineering",
-    "Computer_Science/Untitled.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Malloc_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Proxy_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Proxy_Lab.assets/image-20240512002402189.png",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Visibility/Volatile.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md",
+    "Computer_Science/Java_Language/Java_IO/BIO/Blocking_IO.md",
     "Computer_Science/Java_Language/Java_SE/Reflection.md",
-    "Computer_Science/Java_Language/Java_Big_Data",
-    "Computer_Science/Java_Language/Java_Spring",
-    "Computer_Science/Java_Language/Java_SE/Lambda.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
-    "Computer_Science/Java_Language/Java_SE/Reflection.assets",
-    "Computer_Science/Java_Language/Java_SE/Stream.md",
-    "Computer_Science/Java_Language/Java_SE/Annotations.md",
+    "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.md",
+    "Computer_Science/Web_Development/React/React_LifeCycles.md",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104414154.png",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104347287.png",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104303960.png",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104214446.png",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104154125.png",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.md",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets/image-20240519090408413.png",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets/image-20240519090042795.png",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets/image-20240519085821649.png",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets/image-20240518225309193.png",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets/image-20240518224205062.png",
+    "Computer_Science/Computer_Systems/Database Systems/8_NoSQL/Redis.assets",
+    "Computer_Science/Java_Language/Java_IO/IOStream/DataStream.md",
+    "Computer_Science/Web_Development/React/React_Basics.md",
+    "Computer_Science/Java_Language/Java_Spring/Spring_MVC.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
+    "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.assets",
+    "Computer_Science/Java_Language/Java_IO/BIO/Blocking_IO.assets",
+    "Computer_Science/Java_Language/Java_IO/BIO/Client-Server.md",
     "Computer_Science/Java_Language/Java_Web/Servlet.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW4-Smart_Pointers.assets",
-    "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.assets",
-    "Computer_Science/Game_Development/OpenGL",
-    "Computer_Science/Game_Development",
-    "Computer_Science/Java_Language/Java_SE/Access_Modifiers.assets",
-    "Computer_Science/Java_Language/Java_SE",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Buffer_Management.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
+    "Computer_Science/Java_Language/Java_IO/IOStream",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.assets",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.assets",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.assets",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/Low_Rank_Models.assets",
     "未命名.canvas"
   ]
 }
