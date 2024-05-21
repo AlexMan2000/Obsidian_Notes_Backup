@@ -37,18 +37,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c33465aa83f2189d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
                 "mode": "source",
                 "source": false
@@ -56,31 +44,19 @@
             }
           },
           {
-            "id": "d5243f347c8e8a38",
+            "id": "3e0baae99fbcc42b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Java_Language/Java_SE/Reflection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca0c529cd332dc77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
+                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -277,13 +253,18 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ca0c529cd332dc77",
+  "active": "1880aa7d5c965419",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md",
+    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
     "Computer_Science/Java_Language/Java_IO/BIO/Blocking_IO.md",
     "Computer_Science/Java_Language/Java_SE/Reflection.md",
     "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.md",
     "Computer_Science/Web_Development/React/React_LifeCycles.md",
-    "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md",
     "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104414154.png",
     "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104347287.png",
     "Computer_Science/Java_Language/Java_Spring/Spring_JWT.assets/image-20240519104303960.png",
@@ -305,21 +286,16 @@
     "Computer_Science/Java_Language/Java_IO/BIO/Blocking_IO.assets",
     "Computer_Science/Java_Language/Java_IO/BIO/Client-Server.md",
     "Computer_Science/Java_Language/Java_Web/Servlet.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Instructions.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
     "Computer_Science/Computer_Systems/Machine_Structures/11_Network_Programming/Sockets.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Important_Applications_Of_Basic_Probability.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Buffer_Management.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md",
     "Computer_Science/Java_Language/Java_IO/IOStream",
     "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.assets",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.assets",

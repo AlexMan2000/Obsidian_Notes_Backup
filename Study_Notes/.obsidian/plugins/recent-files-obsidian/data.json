@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Project1_Userprogram",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "Atomic_Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md"
+    },
+    {
+      "basename": "4_Message_Authentication_Codes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md"
+    },
+    {
+      "basename": "3_Cryptographic_Hashes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
       "basename": "Spring_JWT",
       "path": "Computer_Science/Java_Language/Java_Spring/Spring_JWT.md"
     },
@@ -45,10 +65,6 @@
       "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
     },
     {
-      "basename": "Project1_Userprogram",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
       "basename": "Lab01_Storage",
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
     },
@@ -63,10 +79,6 @@
     {
       "basename": "Code_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "Atomic_Lock_Implementations",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md"
     },
     {
       "basename": "Thread_Synchonization",
@@ -187,18 +199,6 @@
     {
       "basename": "1_Sorting&Hashing",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
-    },
-    {
-      "basename": "Project3_Join&Optimization(sp24)",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project3_Join&Optimization(sp24).md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Database Systems/Related_Resources.md"
-    },
-    {
-      "basename": "Lab06_Rollback_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab06_Rollback_Recovery.md"
     }
   ],
   "omittedPaths": [],
