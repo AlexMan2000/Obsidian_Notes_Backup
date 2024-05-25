@@ -616,7 +616,7 @@ int main(int argc, const char *argv[]) {
 
 
 
-# Real-World Example
+# Real-World Examples
 ## Transfer 
 > [!example] CS162 Sp24 Disc03 P1.1
 > ![](Synchronization_Problems.assets/image-20240517095823298.png)![](Synchronization_Problems.assets/image-20240517095831179.png)
@@ -625,9 +625,5 @@ int main(int argc, const char *argv[]) {
 ## Game Server
 > [!example] CS162 Sp24 Disc03 P1.2
 > ![](Synchronization_Problems.assets/image-20240517100016880.png)
-
-
-
-
 
 

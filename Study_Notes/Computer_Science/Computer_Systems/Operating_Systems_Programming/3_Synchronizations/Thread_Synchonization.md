@@ -916,9 +916,20 @@ More in [Atomic_Lock_Implementations](Atomic_Lock_Implementations.md)
 
 
 ## Exercises
+### Crowded Video Games
 > [!example] CS162 Fa20 Disc02 P3.2
 > ![](Thread_Synchonization.assets/image-20240406142457067.png)
 > Here `play_session()` can be viewed as thread function.
+
+
+
+### Simple Scheduling
+> [!example] CS162 Sp24 Disc03 P1.3
+> ![](Synchronization_Problems.assets/image-20240525113137107.png)![](Synchronization_Problems.assets/image-20240525113145001.png)![](Synchronization_Problems.assets/image-20240525113151975.png)![](Synchronization_Problems.assets/image-20240525113159137.png)![](Synchronization_Problems.assets/image-20240525113206524.png)![](Synchronization_Problems.assets/image-20240525113212243.png)
+
+
+
+
 
 
 # Condition Variables&Monitors
@@ -947,7 +958,9 @@ More in [Atomic_Lock_Implementations](Atomic_Lock_Implementations.md)
 > ![](Thread_Synchonization.assets/image-20240416201450621.png)![](Thread_Synchonization.assets/image-20240416202534398.png)
 > Hoare monitors ensure that there is no race condition between Signaler's `cond_signal` and signalee's `cond_wait()`'s re-acquisition of the lock.
 > 
-> ![](Thread_Synchonization.assets/image-20240416202542315.png)
+> ![](Thread_Synchonization.assets/image-20240416202542315.png)![](Thread_Synchonization.assets/image-20240525113357570.png)
+
+
 
 
 
@@ -968,6 +981,17 @@ More in [Atomic_Lock_Implementations](Atomic_Lock_Implementations.md)
 
 
 
+## Exercises
+### Basic Usages
+> [!example] CS162 Sp24 Disc03 P2.1
+> ![](Thread_Synchonization.assets/image-20240525115813180.png)![](Thread_Synchonization.assets/image-20240525115819506.png)![](Thread_Synchonization.assets/image-20240525115827168.png)
+
+
+
+
+### Office Hour Queue
+> [!example] CS162 Sp24 Disc03 P2.2
+> ![](Thread_Synchonization.assets/image-20240525120322094.png)![](Thread_Synchonization.assets/image-20240525120331089.png)![](Thread_Synchonization.assets/image-20240525120336914.png)![](Thread_Synchonization.assets/image-20240525120342743.png)![](Thread_Synchonization.assets/image-20240525120348757.png)![](Thread_Synchonization.assets/image-20240525120354386.png)![](Thread_Synchonization.assets/image-20240525120359936.png)![](Thread_Synchonization.assets/image-20240525120406367.png)
 
 
 

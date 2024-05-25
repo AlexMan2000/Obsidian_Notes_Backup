@@ -1,4 +1,4 @@
-# Preliminaries
+# Threat Models
 ## Detailed Definition of Confidentiality
 > [!def]
 > ![](2_Symmetric_Cryptography.assets/image-20240227215634812.png)![](2_Symmetric_Cryptography.assets/image-20240227215646693.png)
@@ -7,7 +7,7 @@
 > In other words, the attacker should not learn any new information about M beyond what they already knew before seeing C (seeing C should not give the attacker any new information).
 
 
-## IND-CPA Definition of Confidentiality
+## IND-CPA Threat Model
 ### IND-CPA Definition
 > [!def]
 > This definition is called IND-CPA (indistinguishability under chosen plaintext attack.
@@ -100,6 +100,18 @@
 
 
 
+## Example
+> [!example] CS161 Fa23 Disc04 P1
+> ![](2_Symmetric_Cryptography.assets/image-20240522095230061.png)![](2_Symmetric_Cryptography.assets/image-20240522095235496.png)
+
+
+
+
+
+
+
+
+
 # Block Cipher Scheme
 ## Motivation
 > [!motiv] Motivation
@@ -119,7 +131,9 @@
 > 
 > Given a fixed scrambling setting (key), the block cipher encryption must map each of the $2^n$ possible plaintext inputs to a different ciphertext output. In other words, given a specific key, the block cipher encryption must be able to map every possible input to a unique output. 
 > 
-> If the block cipher mapped two plaintext inputs to the same ciphertext output, there would be no way to decrypt that ciphertext back into plaintext, since that ciphertext could correspond to multiple different plaintexts. This means that the block cipher must also be _deterministic_. Given the same input and key, the block cipher should always give the same output.
+> If the block cipher mapped two plaintext inputs to the same ciphertext output, there would be no way to decrypt that ciphertext back into plaintext, since that ciphertext could correspond to multiple different plaintexts. 
+> 
+> **This means that the block cipher must also be _deterministic_. Given the same input and key, the block cipher should always give the same output.**
 > 
 > In mathematical notation, the block cipher can be described as follows. There is an encryption function $E:\{0,1\}^k×\{0,1\}^n→\{0,1\}^n$.
 > 
@@ -190,9 +204,10 @@
 
 
 
-## Copmutationally IND
+## Computationally IND
 > [!concept]
 > ![](2_Symmetric_Cryptography.assets/image-20240305092658027.png)
+> `Computationally indistinguishable`的意思就是在有限的算力条件下没有办法反推出一个`Bijection`函数(`permutation`)是如何在`input`和`output`之间做映射的。
 
 
 
@@ -244,7 +259,10 @@
 
 ### Security
 > [!property]
-> ![](2_Symmetric_Cryptography.assets/image-20240305094830641.png)![](2_Symmetric_Cryptography.assets/image-20240305115934213.png)![](2_Symmetric_Cryptography.assets/image-20240305115948333.png)
+> ![](2_Symmetric_Cryptography.assets/image-20240305094830641.png)![](2_Symmetric_Cryptography.assets/image-20240305115934213.png)
+> 比如"I am john"和"I am alex"可能加密出来分别是"ebosash"和"ebosjsd", 前面有一部分是一样的，此时加密算法就不够安全。但只要使用Random IVs across different messages 就是IND-CPA secure的。 
+> 
+> ![](2_Symmetric_Cryptography.assets/image-20240305115948333.png)
 
 
 ### Need for Padding
@@ -253,10 +271,29 @@
 > PKCS stands for Public Key Cryptography Standards.
 
 
+### Example
+> [!example] CS161 Fa23 Disc04 P3
+> ![](2_Symmetric_Cryptography.assets/image-20240522104954979.png)![](2_Symmetric_Cryptography.assets/image-20240522105034325.png)![](2_Symmetric_Cryptography.assets/image-20240522105311321.png)![](2_Symmetric_Cryptography.assets/image-20240522105633207.png)
+
+
+
+
+
+
+
+
 
 ## AES-CFB Mode - Stream
 > [!def]
 > ![](2_Symmetric_Cryptography.assets/image-20240305094510552.png)![](2_Symmetric_Cryptography.assets/image-20240305122647296.png)
+
+> [!example] CS161 Fa23 Disc04 P2
+> ![](2_Symmetric_Cryptography.assets/image-20240522100459478.png)![](2_Symmetric_Cryptography.assets/image-20240522101851323.png)
+
+
+
+
+
 
 
 
@@ -368,8 +405,50 @@
 
 
 
+# Design Block Ciphers
+## Example 1 - AES-PCBC
+> [!example] CS161 Fa23 ExamPrep04 P1 AES-PCBC
+> ![](2_Symmetric_Cryptography.assets/image-20240522111552964.png)![](2_Symmetric_Cryptography.assets/image-20240522111857233.png)![](2_Symmetric_Cryptography.assets/image-20240522112322208.png)![](2_Symmetric_Cryptography.assets/image-20240522112622679.png)![](2_Symmetric_Cryptography.assets/image-20240522112834306.png)![](2_Symmetric_Cryptography.assets/image-20240522112842456.png)
 
 
 
+
+## Example 2 - AES-GROOT
+> [!bug] Vulnerability to Plaintext Recovery:
+> Saying that **an encryption scheme** is vulnerable to **plaintext recovery** means it has weaknesses that allow an attacker to **deduce or recover the original plaintext from the encrypted data (ciphertext) without necessarily having the decryption key.**
+
+> [!example] CS161 Fa23 ExamPrep04 P2
+> ![](2_Symmetric_Cryptography.assets/image-20240522114858861.png)![](2_Symmetric_Cryptography.assets/image-20240522115206173.png)![](2_Symmetric_Cryptography.assets/image-20240522115211985.png)![](2_Symmetric_Cryptography.assets/image-20240522115220942.png)![](2_Symmetric_Cryptography.assets/image-20240522115227744.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Summary
+## How to quickly determine IND-CPA Secutiry
+> [!important]
+> 1. If IV is not random across plaintexts, the scheme would be deterministic, and deterministic scheme is not IND-CPA secure.
+> 2. If IV is random across plaintexts:
+> 	1. If the randomness is not passed to the end of the block chain, then the scheme is not IND-CPA secure.
+> 	2. 
+
+
+## How to break IND-CPA Security
+> [!important]
+> If you can get a deterministic value from the ciphertexts(or parts of the ciphertexts, like the n-th block) provided the same plaintexts(or parts of the plaintexts), then we can follow the IND-CPA game rules and break the security. (Like in example 2 above).
 
 

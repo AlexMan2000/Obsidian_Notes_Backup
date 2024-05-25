@@ -5,20 +5,92 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
     },
     {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md"
+      "basename": "HW1_Pintos_Lists",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW1_Pintos_Lists.md"
     },
     {
-      "basename": "Atomic_Lock_Implementations",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md"
+      "basename": "Basic_Scheduling_Schemes",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/4_Scheduling/Basic_Scheduling_Schemes.md"
+    },
+    {
+      "basename": "Starvation",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/4_Scheduling/Starvation.md"
+    },
+    {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
       "basename": "4_Message_Authentication_Codes",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md"
     },
     {
+      "basename": "Thread_Synchonization",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
+    },
+    {
+      "basename": "Synchronization_Problems",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
+    },
+    {
+      "basename": "HW2_Shell",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CS162_HWs/HW2_Shell.md"
+    },
+    {
+      "basename": "Atomic_Lock_Implementations",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Atomic_Lock_Implementations.md"
+    },
+    {
       "basename": "3_Cryptographic_Hashes",
       "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "5_Pseudorandom_Number_Generator",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/5_Pseudorandom_Number_Generator.md"
+    },
+    {
+      "basename": "6_Key_Exchange_Algorithms",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md"
+    },
+    {
+      "basename": "2_Digital_Signatures",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.md"
+    },
+    {
+      "basename": "1_Public-Key(Asymmetric) Encryption",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/1_Public-Key(Asymmetric) Encryption.md"
+    },
+    {
+      "basename": "4_Passwords",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/4_Passwords.md"
+    },
+    {
+      "basename": "3_Certificates",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/3_Certificates.md"
+    },
+    {
+      "basename": "1_Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "RSA_Algorithm",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/RSA_Algorithm.md"
+    },
+    {
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Setup_OpenGL",
+      "path": "Computer_Science/Game_Development/OpenGL/Setup_OpenGL.md"
     },
     {
       "basename": "Spring_JWT",
@@ -69,20 +141,8 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
     },
     {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
-    },
-    {
-      "basename": "Synchronization_Problems",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Synchronization_Problems.md"
-    },
-    {
       "basename": "Code_Optimization",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Code_Optimization.md"
-    },
-    {
-      "basename": "Thread_Synchonization",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
     },
     {
       "basename": "3_IPCs",
@@ -139,66 +199,6 @@
     {
       "basename": "HW1_C_C++",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Stanford_CS110_HWs/HW1_C_C++.md"
-    },
-    {
-      "basename": "Probability_Formulas_and_Theorems",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Probability_Formulas_and_Theorems.md"
-    },
-    {
-      "basename": "Serializable",
-      "path": "Computer_Science/Java_Language/Java_SE/Serializable.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "Hash_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md"
-    },
-    {
-      "basename": "DB_Design",
-      "path": "Computer_Science/Computer_Systems/Database Systems/6_DB_Design/DB_Design.md"
-    },
-    {
-      "basename": "ReentrantLock",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/ReentrantLock.md"
-    },
-    {
-      "basename": "Project4_Concurrency&Lock",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency&Lock.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
-      "basename": "Java_Threads",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
-    },
-    {
-      "basename": "3_Query_Optimization",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
-    },
-    {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
-      "basename": "B+Tree_Indexing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/B+Tree_Indexing.md"
-    },
-    {
-      "basename": "Relational_Algebra",
-      "path": "Computer_Science/Computer_Systems/Database Systems/1_SQL_Algebra/Relational_Algebra.md"
-    },
-    {
-      "basename": "1_Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
     }
   ],
   "omittedPaths": [],

@@ -5,11 +5,13 @@
 
 
 ## Properties
+### Security Properties
 > [!property]
 > ![](3_Cryptographic_Hashes.assets/image-20240308221434176.png)
 > By “infeasible”, we mean that there is no known way to accomplish it with any realistic amount of computing power.
 > 
 > **Note**, the third property implies the second property. Cryptographers tend to keep them separate because a given hash function’s resistance towards the one might differ from its resistance towards the other (where resistance means the amount of computing power needed to achieve a given chance of success).
+> ![](3_Cryptographic_Hashes.assets/image-20240522154328775.png)![](3_Cryptographic_Hashes.assets/image-20240522154347619.png)
 
 > [!example] Application: Message Integrity
 > Under certain threat models, hash functions can be used to verify message integrity. For instance, suppose Alice downloads a copy of the installation disk for the latest version of the Ubuntu distribution, but before she installs it onto her computer, she would like to verify that she has a valid copy of the Ubuntu software and not something that was modified in transit by an attacker. 
@@ -21,9 +23,15 @@
 
 
 
+### Confidentiality
+> [!bug] Caveats
+> Whether the algorithm can hide the original information from third-party. Hash functions alone won't provide this property.
 
 
-# Hash Algorithms
+
+
+
+# Hash Function Examples
 > [!def]
 > ![](3_Cryptographic_Hashes.assets/image-20240308223329252.png)![](3_Cryptographic_Hashes.assets/image-20240308223454401.png)
 
@@ -33,3 +41,4 @@
 
 
 # Lowest Hash Scheme
+
