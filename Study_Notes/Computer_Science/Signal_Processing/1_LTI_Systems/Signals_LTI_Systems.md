@@ -54,6 +54,12 @@ Lecture 1~2
 
 
 
+## Quick Testing
+> [!important]
+> ![](Signals_LTI_Systems.assets/image-20240601133137399.png)
+
+
+
 
 
 

@@ -247,65 +247,128 @@ def DFS( w, G, verbose=False ):
 > ![](Graph_Algorithms.assets/image-20240201173448798.png)
 > What this tells us is that the nodes that have more edge dependencies will be added to `order` first, so that later on when we do reversion operation, we get the correct topological sort result.
 
-> [!code]
+> [!code] Method 1: DFS - Reverse Method
 > 
 ```python
-# This method is not complete!
-# It will only topologically sort the vertices reachable from the first node that it picks.
-# How would you modify it to be complete?
+def topologicalSortDFS(graph):
+    visited = {}
+    recStack = {}
+    topoList = []
+
+    for node in graph:
+        visited[node] = False
+        recStack[node] = False
+
+    for node in graph:
+        if not visited[node]:
+            if dfsHelper(graph, visited, recStack, topoList, node):
+                raise LookupError("Cycle Detected")
+
+    return list(reversed(topoList))
 
 
-def topoSort_helper( w, currentTime, ordering, verbose ):
-    if verbose:
-        print("Time", currentTime, ":\t entering", w)
-    w.inTime = currentTime
-    currentTime += 1
-    w.status = "inprogress"
-    for v in w.getOutNeighbors():
-        if v.status == "unvisited":
-            currentTime = topoSort_helper(v, currentTime, ordering, verbose)
-            currentTime += 1
-    w.outTime = currentTime
-    w.status = "done"
-    ordering.insert(0, w)
-    if verbose:
-        print("Time", currentTime, ":\t leaving", w)
-    return currentTime
-        
-def topoSort( G, verbose=False ):
-    w = G.vertices[0]
-    ordering = []
-    for v in G.vertices:
-        v.status = "unvisited"
-        v.inTime = None
-        v.outTime = None
-    topoSort_helper( w, 0, ordering, verbose )
-    return ordering
+def dfsHelper(graph, visited, recStack, topoList, currNode):
+    visited[currNode] = True
+    
+    # Used for cycle detection
+    recStack[currNode] = True
 
-G = CS161Graph()
-dpkg = CS161Vertex( "dkpg" )
-coreutils = CS161Vertex( "coreutils" )
-multiarch_support = CS161Vertex( "multiarch_support" )
-libselinux1 = CS161Vertex("libselinux1")
-libbz2 = CS161Vertex( "libbz2" )
-tar = CS161Vertex("tar")
-for N in [ dpkg, coreutils, multiarch_support, libselinux1, libbz2, tar ]:
-    G.addVertex( N )
-	G.addDiEdge( dpkg, multiarch_support )
-	G.addDiEdge( dpkg, coreutils )
-	G.addDiEdge( dpkg, tar )
-	G.addDiEdge( dpkg, libbz2 )
-	G.addDiEdge( coreutils, libbz2 )
-	G.addDiEdge( coreutils, libselinux1 )
-	G.addDiEdge( libbz2, libselinux1 )
-	G.addDiEdge( libselinux1, multiarch_support )
-        
+    for successor in graph[currNode]:
+        if not visited[successor]:
+            if dfsHelper(graph, visited, recStack, topoList, successor):
+                return True
+        elif recStack[successor]:
+            return True
 
-
-V = topoSort(G)
-for v in V:
-    print(v)
+    recStack[currNode] = False
+    topoList.append(currNode)
 ```
+
+> [!code] Method 2: Queue - Forward Method
+```python
+def topologicalSortQueue(graph):
+    q = queue.Queue()
+    topoList = []
+
+    # 1. Find all the nodes that have no incoming edges(source nodes)
+    nodeDegreeMap = findDegrees(graph)
+
+    sourceNodes = list(map(lambda elem: elem[0], filter(lambda elem: elem[1]["in"] == 0,nodeDegreeMap.items() )))
+
+
+    # 2. Put all the souce nodes into the queue
+    for node in sourceNodes:
+        q.put(node)
+
+
+    # 3. While the queue is not empty
+    while not q.empty():
+        # 3.1 Pop the node from the front of the queue
+        currNode = q.get()
+
+        # 3.2 Append that source node to the topo ordering list
+        topoList.append(currNode)
+
+        # 3.3 For each neighbor of the current node
+        for neighbor in graph[currNode]:
+            # 3.3.1 Decrease the in degree of this neighbor by one(deleting the incoming edges)
+            nodeDegreeMap[neighbor]["in"] -= 1
+
+            # 3.3.2 If the neighbor becomes a source due to 0 in-degree, append it to the queue
+            if nodeDegreeMap[neighbor]["in"] == 0:
+                q.put(neighbor)
+
+
+    # 4. Finally, If the length of the topo ordering list is less than the number of nodes,
+    # then there is a cycle in the graph and no topological ordering is possible
+    # Since if there is a cycle, then the in-degree of the nodes in the cycle will always be
+    # bigger than or equal to 1 and there will be no source nodes added to the queue and the
+    # while loop is terminated prematurely.
+    if len(topoList) < len(graph):
+        raise LookupError("Cycle Detected!")
+
+    return topoList
+
+
+def findDegrees(graph) -> Dict:
+    nodeDegreeMap = {}
+
+    for node in graph:
+        nodeDegreeMap[node] = {"in": 0, "out": 0}
+
+    for node in graph:
+        for neighbor in graph[node]:
+            nodeDegreeMap[node]["out"] += 1
+            nodeDegreeMap[neighbor]["in"] += 1
+
+    return nodeDegreeMap
+
+
+
+if __name__ == "__main__":  
+    testGraphMulti = {"A": ["B","C"],  
+                  "B": ["C","D","E"],  
+                  "C": ["F"],  
+                  "D": [],  
+                  "E": ["F"],  
+                  "F": []}  
+  
+    testGraphEmpty = {  
+  
+    }  
+  
+    testGraphCycle = {  
+        "A": ["B", "C"],  
+        "B": ["C", "D", "E"],  
+        "C": ["D"],  
+        "D": [],  
+        "E": ["A"]  
+    }
+```
+
+
+
+
 
 
 
@@ -617,6 +680,15 @@ dijkstra_shortestPaths(G.vertices[0], G)
 
 > [!bug] Important
 > If there is negative cycles, finding shortest path is NP hard.
+
+
+
+# LeetCode Problems
+## Find Eventual Safe States
+> [!def] 
+> ![](Graph_Algorithms.assets/image-20240704112212044.png)
+
+> [!code]
 
 
 

@@ -319,10 +319,64 @@ static void syscall_handler(struct intr_frame* f) {
 ### Accessing User provided Memory
 > [!important]
 > 很多时候，用户在系统调用的时候会传入地址值，比如`exec(const char* file)`传入的就是文件名的起始地址。系统调用程序需要对这个地址值进行验证看其是否合法。
-> - 在`userprog/pagedir.c`中有一个`pagedie_get_page(void* pagedir, void* vaddr)`方法用于检查`vaddr`是否存在于`page table`中，如果存在说明该虚拟内存已经被映射到对应的物理内存。否则，表明该虚拟内存未分配，不可用。
+> - 在`userprog/pagedir.c`中有一个`pagedir_get_page(void* pagedir, void* vaddr)`方法用于检查`vaddr`是否存在于`page table`中，如果存在说明该虚拟内存已经被映射到对应的物理内存。否则，表明该虚拟内存未分配，不可用。
 > - 在`threads/vaddr.h`中有一个`is_user_vaddr(const void* vaddr)`方法用于检查一个虚拟内存地址是否是用户地址空间中的地址，即是否小于`PHYS_BASE(0xc0000000)`。
 > 
 > 我们可以使用这两个方法判断用户传入的地址值是否合法，从而保护内核态免受攻击。
+```c
+/*
+  Verify the validity of a user-provided pointer, 
+  then dereference it. If you choose this route, 
+  you’ll want to look at the functions in userprog/pagedir.c and in threads/vaddr.h.
+   This is the simplest way to handle user memory access.
+*/
+bool validate_pointer(void* start_addr, size_t pointer_width) {
+  void * pagedir = thread_current() -> pcb -> pagedir;
+  if (pagedir == NULL) {
+    return false;
+  }
+  
+  // Check the end of the string
+  if (!is_user_vaddr(start_addr)
+  || pagedir_get_page(pagedir, (void *) start_addr) == NULL) {
+    return false;
+  }
+
+  // Check the end of the string
+  void* end_addr = start_addr + pointer_width;
+  if (!is_user_vaddr(end_addr)
+  || pagedir_get_page(pagedir, (void *) end_addr) == NULL) {
+    return false;
+  }
+
+  return true;
+
+}
+
+bool validate_string(const char* start_str) {
+  void * pagedir = thread_current() -> pcb -> pagedir;
+  if (pagedir == NULL) {
+    return false;
+  }
+
+  // Check the end of the string
+  if (!is_user_vaddr(start_str)
+  || pagedir_get_page(pagedir, (void *) start_str) == NULL) {
+    return false;
+  }
+
+  // Check the end of the string
+  char * end_str = start_str + strlen(start_str) + 1;
+  
+  if (!is_user_vaddr(end_str)
+  || pagedir_get_page(pagedir, (void *) end_str) == NULL) {
+    return false;
+  }
+
+  return true;
+}
+```
+
 
 
 
@@ -352,10 +406,9 @@ static void syscall_handler(struct intr_frame* f) {
 
 ### SYS_WAIT(Very Hard)
 > [!task]
-> See [Simple Scheduling](../../3_Synchronizations/Thread_Synchonization.md#Simple%20Scheduling) example.
+> See [Simple Scheduling](../../3_Synchronizations/Thread_Synchonization.md#Simple%20Scheduling) example on how to make sure that when child process is executing, parent process should wait(using semaphore)
 > ![](Project1_Userprogram.assets/image-20240525165909556.png)
 > 
-
 
 > [!exp] Hints
 > ![](Project1_Userprogram.assets/image-20240525165819620.png)![](Project1_Userprogram.assets/image-20240525170024886.png)![](Project1_Userprogram.assets/image-20240525170011673.png)
@@ -395,7 +448,14 @@ static void syscall_handler(struct intr_frame* f) {
 
 
 ### SYS_WRITE
+> [!def]
+> ![](Project1_Userprogram.assets/image-20240623182713472.png)
+> 从`buffer`位置开始读取`size`bytes到`fd`文件中。
+> - 如果`fd`在当前进程中未被创建，则返回`-1`
+> - 如果文件已经不能写入，则返回`0`
+```c
 
+```
 
 ### SYS_SEEK
 
