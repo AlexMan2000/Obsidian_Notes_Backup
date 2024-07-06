@@ -72,6 +72,13 @@
 
 
 
+# Parenthesization
+> [!algo]
+> ![](Dynamic_Programming.assets/image-20240705204919276.png)
+
+
+
+
 
 # Edit Distance
 
@@ -97,3 +104,12 @@
 
 
 # Chain Matrix Multiplication
+
+
+
+
+# Leetcode Problems
+## Editing Distance
+
+
+

@@ -684,11 +684,241 @@ dijkstra_shortestPaths(G.vertices[0], G)
 
 
 # LeetCode Problems
-## Find Eventual Safe States
+## No 547 Number of Provinces
+> [!def] 
+> ![](Graph_Algorithms.assets/image-20240704152923062.png)
+
+> [!code]
+> 由于本题是无向图，于是思路比较简单，就是利用[Depth First Search](Graph_Algorithms.md#Depth%20First%20Search)。每进行一次`DFS`, 看一下是否还有剩余节点， 如果有则说明当前的`DFS`没有覆盖到所有的城市，当前`DFS`的结果记为一个省份， 然后从下一个没有覆盖到的城市开始进行下一次`DFS`。
+```java
+class Solution {
+    public int findCircleNum(int[][] isConnected) {
+
+        int num_cities = isConnected.length;
+
+
+        int num_province = 0;
+
+        Map<Integer, Boolean> visited = new HashMap<>();
+
+        
+        for (int i = 0; i < num_cities; i++) {
+            visited.put(i, false);
+        }
+
+        for (int i = 0; i < num_cities; i++) {
+            if (visited.get(i) == false) {
+                num_province++;
+                dfs(visited, i, isConnected);
+            }
+        }
+        return num_province;
+    }
+
+    public void dfs(Map<Integer, Boolean> visited, int starting_node, int[][] adj_matrix) {
+        
+        visited.put(starting_node, true);
+        List<Integer> successors = findSuccessors(starting_node, adj_matrix, visited);
+        if (successors.size() == 0) {
+            return;
+        }
+
+        for (Integer node: successors) {
+            dfs(visited, node, adj_matrix);
+        }
+    }
+
+
+    public List<Integer> findSuccessors(int curr_node, int[][] adj_matrix, Map<Integer, Boolean> visited) {
+
+        List<Integer> adj_list = new ArrayList<>();
+        for (int i = 0; i < adj_matrix[curr_node].length; i++) {
+            if (adj_matrix[curr_node][i] == 1 && visited.get(i) == false) {
+                adj_list.add(i);
+            }
+        }
+        return adj_list;
+    }
+
+}
+```
+
+
+
+## No 841 Keys and Rooms
+> [!def]
+> ![](Graph_Algorithms.assets/image-20240704154031686.png)
+
+> [!code]
+> 本题使用拓扑排序比较复杂，用`DFS`即可，只要判断最终`visited`中为`True`的节点数量是否等于房间数即可。
+```java
+class Solution {
+
+    public boolean canVisitAllRooms(List<List<Integer>> rooms) {
+List<Integer> res = new ArrayList<>();
+
+        Map<Integer, Boolean> visited = new HashMap<>();
+        Map<Integer, Boolean> recStack = new HashMap<>();
+
+        for (int i = 0; i < rooms.size(); i++) {
+            visited.put(i, false);
+            recStack.put(i, false);
+        }
+
+        dfs(0, rooms, visited, recStack);
+
+        return visited.entrySet()
+                    .stream()
+                    .filter(elem -> elem.getValue())
+                    .map(elem -> elem.getKey())
+                    .collect(Collectors.toList())
+                    .size()
+         == rooms.size();
+    }
+
+    public boolean dfs(Integer node
+                        , List<List<Integer>> rooms
+                        , Map<Integer, Boolean> visited
+                        , Map<Integer, Boolean> recStack) {
+        visited.put(node, true);
+
+        if (recStack.get(node)) {
+            return true;
+        }
+        recStack.put(node, true);
+
+        List<Integer> neighbors = rooms.get(node);
+        for (Integer neighbor: neighbors) {
+            if (!visited.get(neighbor)) {
+                if (dfs(neighbor, rooms, visited, recStack)) {
+                    return true;
+                }
+            }
+            
+        }
+    
+        recStack.put(node, false);
+        return false;
+    }
+
+}
+```
+
+
+
+
+
+## No 802 Find Eventual Safe States
 > [!def] 
 > ![](Graph_Algorithms.assets/image-20240704112212044.png)
 
 > [!code]
+> 本题的难点在于对于题目的理解，所有的安全节点实际上就是不在环内的节点。因为所有环内的节点的`out degree`总是大于等于`1`。于是在反向图中，所有在环内的节点的`in degree`总是大于等于`1`，于是这些节点在我们的BFS拓扑排序时不会被加入到队列中。
+> 
+> 思路比较简单，就是现在反向图上做一个[Topological Sort](Graph_Algorithms.md#Topological%20Sort), 然后将得到的拓扑排序进行一个排序即可
+```java
+class Solution {
+    public List<Integer> eventualSafeNodes(int[][] graph) { 
+
+        List<Integer> res = new ArrayList<>();
+        Queue<Integer> q = new ArrayDeque<>();
+
+
+        // 1. Flip the graph
+        Map<Integer, List<Integer>> flippedGraph = flipGraph(graph);
+
+		// 2. Calculate the degree info on the flipped graph
+        Map<Integer, Map<String, Integer>> degreeInfo = findAllDegrees(flippedGraph);
+
+		// 3. Find all the source nodes
+        List<Integer> soucres = degreeInfo.entrySet()
+                                        .stream()
+                                        .filter(elem -> elem.getValue().get("in") == 0)
+                                        .map(elem -> elem.getKey())
+                                        .collect(Collectors.toList());
+
+		// 4. Add all the source nodes to the queue
+        for (Integer source: soucres) {
+            q.add(source);
+        }
+
+
+		// 5. Start the BFS Topological Sorting
+        while (!q.isEmpty()) {
+            Integer node = q.poll();
+            res.add(node);
+            for (Integer neighbor: flippedGraph.get(node)) {
+                degreeInfo.get(neighbor).put("in", degreeInfo.get(neighbor).get("in") - 1);
+                if (degreeInfo.get(neighbor).get("in") == 0) {
+                    q.add(neighbor);
+                }
+            }
+        }
+
+		// 6. Collect the results, only those nodes that aren't in the cycle will be defined as safe nodes.
+        Collections.sort(res);
+
+        return res;
+
+    }
+
+	/** 
+		Functions that flip the graph, from (node, neighbor) to (neighbor, node)
+	*/
+    public Map<Integer, List<Integer>> flipGraph(int[][] graph) {
+        int numNodes = graph.length;
+        Map<Integer, List<Integer>> res = new HashMap<>();
+
+        for (int i = 0; i < numNodes; i++) {
+            res.put(i, new ArrayList<>());
+        }
+
+        for (int i = 0; i < numNodes; i++) {
+            for (int neighbor: graph[i]) {
+                res.get(neighbor).add(i);
+            }
+        }
+
+        return res;
+    }
+
+	
+    public Map<Integer, Map<String, Integer>> findAllDegrees(Map<Integer, List<Integer>> graph) {
+
+
+        Map<Integer, Map<String, Integer>> nodeDegreeMapping = new HashMap<>();
+
+        // Initialize
+        for (Integer i: graph.keySet()) {
+            Map<String, Integer> hashMap = new HashMap<>();
+            hashMap.put("in", 0);
+            hashMap.put("out", 0);
+            nodeDegreeMapping.put(i, hashMap);
+        }
+
+        // Populate
+        for (Integer i: graph.keySet()) {
+            for (Integer neighbor: graph.get(i)) {
+                 nodeDegreeMapping.get(i).put("out",nodeDegreeMapping.get(i).get("out") + 1 );
+                 nodeDegreeMapping.get(neighbor).put("in", nodeDegreeMapping.get(neighbor).get("in") + 1);
+            }
+        }
+
+
+        return nodeDegreeMapping;
+    }
+
+}
+```
+ 
+
+
+## No 1129 Shortest Path with Alternating Colors
+> [!code]
+> ![](Graph_Algorithms.assets/image-20240705203832473.png)
+```java
+
+```
 
 
 

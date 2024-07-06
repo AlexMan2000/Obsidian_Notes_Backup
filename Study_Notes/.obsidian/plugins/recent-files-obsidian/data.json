@@ -1,28 +1,92 @@
 {
   "recentFiles": [
     {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
-    },
-    {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
-    },
-    {
       "basename": "Dynamic_Programming",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
     },
     {
-      "basename": "Debouncing",
-      "path": "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md"
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "数组提升",
+      "path": "Computer_Science/Web_Development/Javascript/数组/数组提升.md"
+    },
+    {
+      "basename": "数组基础",
+      "path": "Computer_Science/Web_Development/Javascript/数组/数组基础.md"
+    },
+    {
+      "basename": "扩展方法",
+      "path": "Computer_Science/Web_Development/Javascript/数组/扩展方法.md"
+    },
+    {
+      "basename": "Useful_Functions",
+      "path": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md"
     },
     {
       "basename": "圆角渐变边框",
       "path": "Computer_Science/Web_Development/Javascript/常用需求实现/圆角渐变边框.md"
     },
     {
+      "basename": "进度条",
+      "path": "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.md"
+    },
+    {
+      "basename": "RNN_Basics",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
+    },
+    {
+      "basename": "Filters",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "Sequence_to_Sequence_Model",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
+    },
+    {
+      "basename": "Global_Explanation",
+      "path": "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md"
+    },
+    {
+      "basename": "System_Representations",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
+    },
+    {
+      "basename": "3.5_Impulse_Response",
+      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
+    },
+    {
+      "basename": "LTI_Filtering_Applications",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
+    },
+    {
+      "basename": "Inverse-Z-Transform",
+      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md"
+    },
+    {
       "basename": "Z-Transform",
       "path": "Computer_Science/Signal_Processing/5_Z-Transform/Z-Transform.md"
+    },
+    {
+      "basename": "React_Hooks",
+      "path": "Computer_Science/Web_Development/React/React_Hooks.md"
+    },
+    {
+      "basename": "Directed Graph",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
+    },
+    {
+      "basename": "Debouncing",
+      "path": "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md"
     },
     {
       "basename": "Promise基础",
@@ -31,14 +95,6 @@
     {
       "basename": "Promise重写",
       "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
-    },
-    {
-      "basename": "Useful_Functions",
-      "path": "Computer_Science/Web_Development/Javascript/Basics/Useful_Functions.md"
-    },
-    {
-      "basename": "Inverse-Z-Transform",
-      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md"
     },
     {
       "basename": "1.2_Basic_DE's",
@@ -58,31 +114,15 @@
     },
     {
       "basename": "浏览器事件环",
-      "path": "Computer_Science/Web_Development/Javascript/EventLoop/浏览器事件环.md"
+      "path": "Computer_Science/Web_Development/Javascript/事件环/浏览器事件环.md"
     },
     {
       "basename": "3.11_Poles",
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.11_Poles.md"
     },
     {
-      "basename": "3.5_Impulse_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
-    },
-    {
-      "basename": "System_Representations",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
-    },
-    {
-      "basename": "React_Hooks",
-      "path": "Computer_Science/Web_Development/React/React_Hooks.md"
-    },
-    {
       "basename": "3.4_Step_and_Delta",
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
     },
     {
       "basename": "1_Public-Key(Asymmetric) Encryption",
@@ -105,20 +145,8 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/3_Synchronizations/Thread_Synchonization.md"
     },
     {
-      "basename": "Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
-    },
-    {
       "basename": "Difference_Equations",
       "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "Synchronization_Problems",
@@ -149,10 +177,6 @@
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.8_Partial_Fractions.md"
     },
     {
-      "basename": "RNN_Basics",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
-    },
-    {
       "basename": "CALL",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/CALL.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "⭐Lab_10__Scheme__Scheme_Lists",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61A/4_Scheme_Functional_Programming/4_2_Scheme_Lists_Interpreters/⭐Lab_10__Scheme__Scheme_Lists.md"
-    },
-    {
-      "basename": "Lab01_Storage",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
-    },
-    {
-      "basename": "Project_Setup",
-      "path": "Computer_Science/Game_Development/Game_Engine_Design/Project_Setup.md"
-    },
-    {
-      "basename": "4_Query_Execution_Model",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.md"
-    },
-    {
-      "basename": "Entry_Point",
-      "path": "Computer_Science/Game_Development/Game_Engine_Design/Entry_Point.md"
-    },
-    {
-      "basename": "2_Drawing_Triangles",
-      "path": "Computer_Science/Game_Development/OpenGL/2_Drawing_Triangles.md"
-    },
-    {
-      "basename": "1_Setup_OpenGL",
-      "path": "Computer_Science/Game_Development/OpenGL/1_Setup_OpenGL.md"
     }
   ],
   "omittedPaths": [],
