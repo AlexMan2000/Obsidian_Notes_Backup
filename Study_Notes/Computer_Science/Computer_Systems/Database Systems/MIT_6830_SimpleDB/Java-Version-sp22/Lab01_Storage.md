@@ -826,7 +826,7 @@ public class Table {
 
 
 
-# Task 4: File/Page
+# Task 4~5: File/Page
 > [!algo]
 > ![](Lab01_Storage.assets/image-20240515092108810.png)![](Lab01_Storage.assets/image-20240515092119319.png)
 > Here the byte data are stored in big-endianess fashion.
@@ -848,6 +848,11 @@ public class Table {
 > 
 > `HeapPage`主要用于模拟一个页的数据，页中存放了`PageHeader` 和 `Tuples`. 需要通过`byte[] data` 来初始化。
 
+
+
+## HeapFile
+> [!def]
+> `HeapFile`类模拟了一张表所对应的文件，
 
 
 

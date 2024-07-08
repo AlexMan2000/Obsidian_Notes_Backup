@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/Javascript/数组/数组提升.md",
+                "file": "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4d2f8f3744e0585f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,12 +44,24 @@
             }
           },
           {
-            "id": "487d088748f1634c",
+            "id": "200c222f85b79ae4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "784a5ec44da1588e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 259.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -190,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+                "file": "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+                "file": "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -265,54 +289,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "aaf0c6ce67e010eb",
+  "active": "4d2f8f3744e0585f",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.assets/image-20240705204919276.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md",
+    "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707113530435.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707113529544.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707111404353.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707111213345.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707110733248.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707105851600.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707104958012.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707104653581.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707104643346.png",
+    "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.assets/image-20240707102439935.png",
+    "Computer_Science/Deep_Learning/Transformers/Positional_Encoding.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md",
+    "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+    "Computer_Science/Deep_Learning/Graph_Neural_Networks",
+    "Computer_Science/Untitled",
+    "Computer_Science/Natural_Language_Processing",
+    "Computer_Science/Computer_Vision/Related_Resources.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.assets",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Autoregressive_Model.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.assets/image-20240705203832473.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Greedy_Algorithms.md",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md",
+    "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.assets",
     "Computer_Science/Web_Development/Javascript/数组/数组提升.md",
-    "Computer_Science/Web_Development/Javascript/数组/数组提升.assets/image-20240705200635966.png",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
+    "Computer_Science/Deep_Learning/Pytorch Tutorial 1.pdf",
+    "Computer_Science/Deep_Learning/Training_Techniques/How_to_Train_Resnet.md",
+    "Computer_Science/Deep_Learning/Training_Techniques",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Untitled",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
     "Computer_Science/Web_Development/Javascript/数组/数组提升.assets",
     "Computer_Science/Web_Development/Javascript/数组/数组基础.md",
     "Computer_Science/Web_Development/Javascript/数组/扩展方法.md",
-    "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
-    "Computer_Science/Web_Development/Javascript/数组",
     "Mathematics/Differential_Equations/MIT_18.03SC/1.2_Basic_DE's.md",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/圆角渐变边框.md",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.md",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.assets/image-20240705180408553.png",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.assets/image-20240705172155819.png",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.assets/image-20240705172040233.png",
-    "Computer_Science/Web_Development/Javascript/常用需求实现/进度条.assets",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240705122549259.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240705122540360.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240705122445123.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240705122255782.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240705122153615.png",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/LSTM.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets",
-    "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md",
-    "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
-    "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md",
-    "Computer_Science/Signal_Processing/5_Z-Transform/Z-Transform.md",
-    "Computer_Science/Signal_Processing/5_Z-Transform/Z-Transform.assets",
-    "Computer_Science/Web_Development/React/React_Hooks.md",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
-    "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md",
-    "Computer_Science/Web_Development/Javascript/常用需求实现",
-    "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md",
-    "Computer_Science/Web_Development/Javascript/函数",
-    "Computer_Science/Web_Development/Javascript/基础语法",
-    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.assets",
-    "Computer_Science/Web_Development/Javascript/Functional_Programming",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md",
     "未命名.canvas"
   ]
 }

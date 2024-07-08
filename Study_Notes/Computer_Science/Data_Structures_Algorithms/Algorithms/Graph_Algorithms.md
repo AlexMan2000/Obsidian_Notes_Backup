@@ -284,7 +284,7 @@ def dfsHelper(graph, visited, recStack, topoList, currNode):
     topoList.append(currNode)
 ```
 
-> [!code] Method 2: Queue - Forward Method
+> [!code] Method 2: Kahn's Algorithm
 ```python
 def topologicalSortQueue(graph):
     q = queue.Queue()

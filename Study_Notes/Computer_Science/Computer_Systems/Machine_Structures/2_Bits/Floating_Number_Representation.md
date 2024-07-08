@@ -195,6 +195,23 @@
 > ![image.png](./Floating_Number_Representation.assets/20231023_2301386033.png)![image.png](./Floating_Number_Representation.assets/20231023_2301391415.png)
 
 
+## Quick Methods
+> [!important]
+> For any numbers that takes the form of `int.deci`, we will follow the steps:
+> - Determine the sign bit, if `int >= 0` the sign bit is 0, otherwise it's 1.
+> - For integer part, repeatedly divide by 2 until the dividand becomes 0 and then back trace all the remainders.
+> - For decimal part, repeatedly multiply by 2 until the result is 1, then collect all the integer parts along the way(not reversedly).
+> - If the integer part is $0_{2}$, normalize it by using scientific notations so that the integer part is 1(only for normalized numbers).
+> - Then you should have sign bit, mantissa ready. Now we calculate exponential, for 64-bit precision, we use 11 bits for exponent, which means its bias is $-(2^{11-1}-1)=-1023$, so we need to add back that amount to the exponent we get from the previous step.
+> - Finally, convert the exponents to its binary form.
+> - After all these, you just concatenate three fields: `sign, exponent, mantissa` and get the IEEE standard floating number representation.
+
+> [!quiz] Important Question
+> Why 0.1 + 0.2 !== 0.3? 
+> ![](Floating_Number_Representation.assets/image-20240707100941021.png)![](Floating_Number_Representation.assets/image-20240707102439935.png)
+
+
+
 
 ## Binary to Decimal
 > ![image.png](./Floating_Number_Representation.assets/20231023_2301402117.png)
