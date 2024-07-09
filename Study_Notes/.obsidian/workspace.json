@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "aaf0c6ce67e010eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "200c222f85b79ae4",
             "type": "leaf",
             "state": {
@@ -291,9 +279,12 @@
   },
   "active": "4d2f8f3744e0585f",
   "lastOpenFiles": [
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240708230216904.png",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md",
     "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707113530435.png",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240707113529544.png",
@@ -319,7 +310,6 @@
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.assets",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Autoregressive_Model.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Greedy_Algorithms.md",
     "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md",
@@ -332,11 +322,9 @@
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Untitled",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
-    "Computer_Science/Web_Development/Javascript/数组/数组提升.assets",
     "Computer_Science/Web_Development/Javascript/数组/数组基础.md",
     "Computer_Science/Web_Development/Javascript/数组/扩展方法.md",
     "Mathematics/Differential_Equations/MIT_18.03SC/1.2_Basic_DE's.md",
-    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md",
     "未命名.canvas"
   ]
 }

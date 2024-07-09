@@ -5,6 +5,10 @@
       "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
     },
     {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
       "basename": "Sampling_Algorithms",
       "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "RNN_Basics",
       "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
-    },
-    {
-      "basename": "Dynamic_Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
     },
     {
       "basename": "Graph_Algorithms",
