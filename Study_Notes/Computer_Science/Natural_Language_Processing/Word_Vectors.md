@@ -1,10 +1,17 @@
-# Motivations
+  # Motivations
 > [!overview]
 > In this section we are going to discuss several frequently used methods for word embedding.
 
 
-# Co-occurrence
-## Algorithmic Idea
+
+# Count-Based Methods
+## Co-occurrence Matrix
+### Definition
+> [!def]
+> ![](Word_Vectors.assets/image-20240710141902818.png)
+
+
+### How to Build One
 > [!code]
 > ![](Word_Vectors.assets/image-20240708230216904.png)
 ```python
@@ -58,8 +65,134 @@ print(df)
 
 
 
-## Window Size
-> [!important]
-> Window size varies, 
+### Applying SVD 
+> [!algo]
+> ![](Word_Vectors.assets/image-20240710142054627.png)![](Word_Vectors.assets/image-20240710142106669.png)
 
 
+
+
+# Window-Based Methods
+> [!overview]
+> Word2vec is a family of models of **distributional semantics**.
+> - Words that occur in similar contexts tend to have similar meanings.
+
+
+## CBOW Model
+### Algorithmic Idea
+> [!algo]
+> ![](Word_Vectors.assets/image-20240710143209276.png)![](Word_Vectors.assets/image-20240710143227631.png)
+
+
+
+### Objective Function
+> [!def]
+> ![](Word_Vectors.assets/image-20240710143916533.png)
+
+
+
+
+
+
+
+
+
+
+
+
+## Skipgram Model
+### Algorithmic Idea
+> [!algo]
+> ![](Word_Vectors.assets/image-20240710144007435.png)
+
+
+
+
+
+
+### Objective Function
+> [!def] Objective Function
+> ![](Word_Vectors.assets/image-20240710134404462.png)![](Word_Vectors.assets/image-20240710135912179.png)
+
+> [!important] Alternative Representations
+> ![](Word_Vectors.assets/image-20240710154731484.png)
+
+
+
+
+
+
+
+### Parameters
+> [!def]
+> ![](Word_Vectors.assets/image-20240710134718809.png)![](Word_Vectors.assets/image-20240710134725484.png)
+> Here, every word has two vectors:
+> - $\vec{u}_{w}$ is the embedding for the word $w$ that appears as a context word.
+> - $\vec{v}_{w}$ is the embedding for the word $w$ that appears as a center word.
+> 
+> ![](Word_Vectors.assets/image-20240710134739937.png)
+
+
+
+### Training & Optimization
+> [!def] Empirical Loss
+> ![](Word_Vectors.assets/image-20240710135838211.png)
+
+
+#### Gradient Descent
+> [!def]
+> ![](Word_Vectors.assets/image-20240710140641414.png)
+
+
+
+
+
+
+
+#### S.G.D Intuition
+> [!def]
+> ![](Word_Vectors.assets/image-20240710140704251.png)![](Word_Vectors.assets/image-20240710140714414.png)![](Word_Vectors.assets/image-20240710140720054.png)![](Word_Vectors.assets/image-20240710140728701.png)
+
+
+
+## Negative Sampling Techniques
+> [!def]
+> ![](Word_Vectors.assets/image-20240710161837423.png)
+
+
+
+## Hierarchical Softmax
+
+
+
+
+
+
+# Global Vectors Methods(Glove)
+## Ratio of Co-occurrence
+> [!def]
+> ![](Word_Vectors.assets/image-20240710181958334.png)![](Word_Vectors.assets/image-20240710183304224.png)
+
+
+
+
+## Least Squares Objective
+> [!def]
+> ![](Word_Vectors.assets/image-20240710182025005.png)![](Word_Vectors.assets/image-20240710182031725.png)![](Word_Vectors.assets/image-20240710183517129.png)
+
+
+
+
+
+
+
+
+## Summary
+> [!summary]
+> ![](Word_Vectors.assets/image-20240710182301632.png)
+
+
+
+
+
+# Word Vectors Evaluation

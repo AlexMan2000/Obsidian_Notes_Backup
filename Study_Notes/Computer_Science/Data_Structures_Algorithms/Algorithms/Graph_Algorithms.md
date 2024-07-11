@@ -915,10 +915,106 @@ class Solution {
 
 ## No 1129 Shortest Path with Alternating Colors
 > [!code]
-> ![](Graph_Algorithms.assets/image-20240705203832473.png)
+> ![](Graph_Algorithms.assets/image-20240705203832473.png)![](Graph_Algorithms.assets/image-20240710222926015.png)
 ```java
+class Solution {
 
+    public static final int RED = 0;
+    public static final int BLUE = 1;
+
+    // Since the weight of the edge is all one, so dijkstra algorithm is equivalent to a simple BFS
+    public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
+
+
+        // 1. Initialize neighbors, red neighbor and blue neighbors, used for finding successors
+        List<Integer>[][] neighbors = new ArrayList[2][n];
+        for (int i =  0; i < n; i++) {
+            neighbors[RED][i] = new ArrayList<>();
+            neighbors[BLUE][i] = new ArrayList<>();
+        }
+        
+        for (int[] edges: redEdges) {
+            neighbors[RED][edges[0]].add(edges[1]);
+        }
+
+        for (int[] edges: blueEdges) {
+            neighbors[BLUE][edges[0]].add(edges[1]);
+        }
+
+
+        // 2. Initialize dists
+        int[][] dists = new int[2][n];
+        Arrays.fill(dists[RED], Integer.MAX_VALUE);
+        Arrays.fill(dists[BLUE], Integer.MAX_VALUE);
+        dists[RED][0] = 0;
+        dists[BLUE][0] = 0;
+
+        // 3. Initialize queue
+        Queue<int[]> q = new ArrayDeque<>();
+        q.offer(new int[] {RED, 0});  // If i choose red edge at node 0 first
+        q.offer(new int[] {BLUE, 0});  // If i choose blue edge at node 0 first
+
+
+        // 4. Start BFS process
+        while (!q.isEmpty()) {
+            // 4.1 Visit the current node
+            int[] current = q.poll();
+            int currColor = current[0], currNode = current[1];
+            int nextColor = currColor ^ 1;  // RED -> BLUE, BLUE -> RED
+
+            // 4.2 Find alternating color successor
+            for (int nextNode: neighbors[nextColor][currNode]) {
+                if (dists[nextColor][nextNode] != Integer.MAX_VALUE) {
+                    // The node has been visited, since the edge weight are all 1, no edge relaxation operation needed
+                    continue;
+                }
+                dists[nextColor][nextNode] = dists[currColor][currNode] + 1;
+                q.offer(new int[] {nextColor, nextNode});
+            }
+        }
+
+        // 5. Collect the result
+        int[] res = new int[n];
+        for (int i = 0; i < n;  i++) {
+            int minValue = Math.min(dists[RED][i], dists[BLUE][i]);
+            if (minValue == Integer.MAX_VALUE) {
+                res[i] = -1;
+            } else {
+                res[i] = minValue;
+            }
+        }
+        return res;
+    }
+}
 ```
 
 
 
+## No 1376 通知所有员工所需的时间
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240710225602178.png)
+```java
+class Solution {
+	// DFS Solution
+    public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
+        // 使用 HashMap 来构建图
+        Map<Integer, List<Integer>> g = new HashMap<Integer, List<Integer>>();
+        for (int i = 0; i < n; i++) {
+            g.putIfAbsent(manager[i], new ArrayList<Integer>());
+            g.get(manager[i]).add(i);
+        }
+        // 从根节点开始进行 DFS 并返回总时间
+        return dfs(headID, informTime, g);
+    }
+
+    public int dfs(int cur, int[] informTime, Map<Integer, List<Integer>> g) {
+        int res = 0;
+        // 遍历当前节点的邻居节点
+        for (int neighbor : g.getOrDefault(cur, new ArrayList<Integer>())) {
+            res = Math.max(res, dfs(neighbor, informTime, g));
+        }
+        // 返回当前节点被通知需要的时间以及所有邻居节点被通知所需的最大时间
+        return informTime[cur] + res;
+    }
+}
+```
