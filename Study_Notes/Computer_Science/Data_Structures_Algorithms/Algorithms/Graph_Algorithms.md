@@ -393,29 +393,32 @@ if __name__ == "__main__":
 ## Basic Idea
 > [!important]
 > ![](Graph_Algorithms.assets/image-20240411164643334.png)![](Graph_Algorithms.assets/image-20240411164652957.png)![](Graph_Algorithms.assets/image-20240411164657310.png)
+> The two algorithms we are going to introduce are Kosaraju's Algorithm and Tarjan's Algorithm, which utilize DFS to find the SCC of a directed graph.
 
 
 
 
-## Algorithm
+## Kosaraju's Algorithm
+### Algorithm Ideas
 > [!algo]
 > ![](Graph_Algorithms.assets/image-20240411164843328.png)![](Graph_Algorithms.assets/image-20240411165016943.png)![](Graph_Algorithms.assets/image-20240411165021049.png)
 
+> [!warning] Alternative
+> ![](Graph_Algorithms.assets/image-20240712174749593.png)
 
 
-
-## Example
+### Algorithm Example
 > [!example]
 > ![](Graph_Algorithms.assets/image-20240411170430032.png)![](Graph_Algorithms.assets/image-20240411170423700.png)![](Graph_Algorithms.assets/image-20240411170445798.png)
 
 
 
-## Proof of Correctness
+### Proof of Correctness
 > [!proof]
 > ![](Graph_Algorithms.assets/image-20240411171034973.png)![](Graph_Algorithms.assets/image-20240411171041891.png)![](Graph_Algorithms.assets/image-20240411171049665.png)![](Graph_Algorithms.assets/image-20240411171054519.png)
 
 
-## Code Implementations
+### Code Implementations
 > [!code]
 ```python
 def DFS_helper( w, currentTime, ordering, verbose ):
@@ -473,6 +476,178 @@ SCCs = SCC(G, False)
 for X in SCCs:
     print ([str(x) for x in X])
 ```
+
+
+
+
+## Tarjan's Algorithm
+### Low-Link Values/Disc
+> [!def]
+> ![](Graph_Algorithms.assets/image-20240712175119482.png)![](Graph_Algorithms.assets/image-20240712175125160.png)![](Graph_Algorithms.assets/image-20240712175207830.png)
+> **Disc**(Discovering Time): This is the time when a node is visited 1st time whiel DFS traversal. In the above graph, the node index(value in the node) is the disc value for each node.
+
+> [!warning]
+> Low-link value are highly dependent on the order of DFS traversal.
+> ![](Graph_Algorithms.assets/image-20240712175345215.png)
+
+
+### Algorithmic Example
+> [!example]
+> ![](Graph_Algorithms.assets/image-20240712224325969.png)
+> The result is obtained from starting DFS from node A.
+
+
+
+### Algorithmic Idea
+> [!algo]
+> - Pick any node to start DFS
+> - For any unvisited node `u`, set its `Disc` and `Low` to the timestamp when it is first visited along the way.
+> 	- `dics[u] = Time`
+> 	- `low[u] = Time`
+> - After we have visited `u`, we will visit its neighbors and update the `low[u]` as follows, for each of its neighbor `v`:
+> 	- Tree Edge: If `v` has not been visited, then after `v` finishes its DFS, update `low[u] = min(low[u], low[v])`
+> 	- Back Edge: If `v` has been visited and is also on the dfs stack(ancestor nodes), then update `low[u] = min(low[u], disc[v])`.
+> - After all of `u`'s neighbors have finished their DFS, if `low[u]` is updated to the point such that `low[u] = disc[u]`, then we know that `u` is the head of an SCC and we will start to pop nodes from the stack:
+> 	- Pop element from the stack until the element is equal to node `u`。
+> 
+> ![](Graph_Algorithms.assets/image-20240713160155556.png)
+
+
+
+
+
+### Code Implementations
+> [!code]
+> https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/
+```python
+    def tarJanAlgo(self, graph):
+
+        def dfsHelper(u, disc, low, ast, rst):
+
+            nonlocal time
+            nonlocal SCCs
+            # 1. Once the node u is first visited, set the disc[u] and low[u] to 1st visited time
+            disc[u] = time
+            low[u] = time
+            time += 1
+            ast[u] = True
+            rst.append(u)
+
+            # 2. Start visit its neighbors
+            for v in graph[u]:
+                # Tree edge case: update low[u] = min(low[u], low[v]) after v has finished its DFS
+                if disc[v] == -1:
+                    dfsHelper(v, disc, low, ast, rst)
+                    low[u] = min(low[u], low[v])
+                elif ast[v]:
+                    # Back edge case(visited and ancestor node): update low[u] = min(low[u], disc[v])
+                    low[u] = min(low[u], disc[v])
+
+            # 3. u has done visited, and we need to see if this node is the start of an SCC
+            if disc[u] == low[u]:
+                temp = []
+                # 3.1 We have to pop the node from the same group
+                w = -1
+                while w != u:
+                    w = rst.pop()
+                    temp.append(w)
+                    ast[w] = False  # backtrack
+                SCCs.append(temp)
+
+        def SCCPrinter(SCCList):
+            for group in SCCList:
+                print(group)
+
+        numNode = len(graph)
+        time = 0  # discover time ticker
+        SCCs = []
+
+        # 1. Initialize
+        # 1.1 Discover time and low-link values
+        disc = [-1 for _ in range(numNode)]
+        low = [-1 for _ in range(numNode)]
+
+        # 1.2 Stack to keep track of the visiting stage, for fast access
+        auxStack = [False for _ in range(numNode)]
+
+        # 1.3 Real stack data structure
+        readStack = []
+
+        # 2. Start the DFS process
+        for i in range(numNode):
+            if disc[i] == -1:
+                dfsHelper(i, disc, low, auxStack, readStack)
+
+        return SCCs
+```
+
+
+
+
+
+## Other Problems with Tarjan's Algorithms
+### Find Cut Vertices
+> [!task]
+> The cut vertices/articulation points represent vulnerabilities in a connected network - single points whose failure spolit the network into 2 or more components.
+> ![](Graph_Algorithms.assets/image-20240713221851075.png)
+> A very naive implementation would be to remove node from the graph one by one, see if any one of the node would disconnect the graph. 
+> - Time Complexity: $O(V(V+E))$
+> - Auxiliary Space: $O(V+E)$
+> 
+> But we could still use tarjan's algorithm to find such nodes, the idea is as follows: In the DFS tree, a vertex $u$ is an articulation point if:
+> - $u$ is the root of a DFS subtree and has at least two children.
+> - $u$ is not the root of a DFS tree and it has a child $v$ such that no vertex in the subtree rooted at $v$ has a back edge to one of the ancestors in the DFS tree rooted at $u$.
+> - Time Complexity: $O(V+E)$
+> - Auxiliary Space: $O(V+E)$
+
+> [!example]
+> ![](Graph_Algorithms.assets/image-20240714105243453.png)![](Graph_Algorithms.assets/image-20240714105250947.png)
+
+> [!code]
+> 
+```python
+def dfsCut(u, parent, disc, low):
+	nonlocal time
+	nonlocal cuts
+	disc[u] = time
+	low[u] = time
+	time += 1
+	children = 0
+
+	for v in graph[u]:
+		if disc[v] == -1:
+			# The DFS tree should not contain the node that has been visited before
+			children += 1
+			dfsCut(v, u, disc, low)
+			low[u] = min(low[u], low[v])
+
+			# Check if the child(doesn't have a parent) has the property 2:
+			# The back edge cannot reach any of the ancestors of u, then u is the cut vertice
+			if low[v] >= disc[u] and parent != -1:
+				cuts.append(u)
+		elif v != parent:
+			low[u] = min(low[u], disc[v])
+
+	# Check if the current node is a root node and has at least two children
+	if parent == -1 and children > 1:
+		cuts.append(u)
+```
+
+
+### Bi-connected Graph
+> [!def]
+> ![](Graph_Algorithms.assets/image-20240714112638925.png)
+
+> [!example]
+> ![](Graph_Algorithms.assets/image-20240714112654295.png)![](Graph_Algorithms.assets/image-20240714112701012.png)
+
+> [!code]
+```python
+
+
+```
+
+
 
 
 
@@ -684,7 +859,8 @@ dijkstra_shortestPaths(G.vertices[0], G)
 
 
 # LeetCode Problems
-## No 547 Number of Provinces
+## DFS
+### No 547 Number of Provinces
 > [!def] 
 > ![](Graph_Algorithms.assets/image-20240704152923062.png)
 
@@ -745,7 +921,7 @@ class Solution {
 
 
 
-## No 841 Keys and Rooms
+### No 841 Keys and Rooms
 > [!def]
 > ![](Graph_Algorithms.assets/image-20240704154031686.png)
 
@@ -807,8 +983,116 @@ List<Integer> res = new ArrayList<>();
 
 
 
+### No 1376 通知所有员工所需的时间
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240710225602178.png)
+```java
+class Solution {
+	// DFS Solution
+    public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
+        // 使用 HashMap 来构建图
+        Map<Integer, List<Integer>> g = new HashMap<Integer, List<Integer>>();
+        for (int i = 0; i < n; i++) {
+            g.putIfAbsent(manager[i], new ArrayList<Integer>());
+            g.get(manager[i]).add(i);
+        }
+        // 从根节点开始进行 DFS 并返回总时间
+        return dfs(headID, informTime, g);
+    }
 
-## No 802 Find Eventual Safe States
+    public int dfs(int cur, int[] informTime, Map<Integer, List<Integer>> g) {
+        int res = 0;
+        // 遍历当前节点的邻居节点
+        for (int neighbor : g.getOrDefault(cur, new ArrayList<Integer>())) {
+            res = Math.max(res, dfs(neighbor, informTime, g));
+        }
+        // 返回当前节点被通知需要的时间以及所有邻居节点被通知所需的最大时间
+        return informTime[cur] + res;
+    }
+}
+```
+
+### No 797 所有可能的路径
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240712172313588.png)
+```java
+class Solution {
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+
+
+        List<List<Integer>> res = new ArrayList<>();
+        ArrayList<Integer> path = new ArrayList<>();
+        path.add(0);
+        dfs(res, 0, graph.length - 1, path, graph);
+        return res;
+    }
+
+    public void dfs(List<List<Integer>> res, int currNode, int targetNode, ArrayList<Integer> path,  int[][] adjs) {
+        
+        if (currNode == targetNode) {
+            res.add((ArrayList)path.clone());
+        }
+
+        for (int neighbor: adjs[currNode]) {
+            path.add(neighbor);
+            dfs(res, neighbor, targetNode, path, adjs);
+            path.remove(path.size() - 1);
+        }
+    }
+} 
+```
+
+### No 1466 重新规划路线
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240712170615708.png)
+```java
+class Solution {
+    public int minReorder(int n, int[][] connections) {
+
+        // 构建adj list
+        List<int[]>[] adjs = new List[n];
+
+        for (int i = 0; i < n; i++) {
+            adjs[i] = new ArrayList<>();
+        }
+
+        for (int[] edge: connections) {
+            // 正向边
+            adjs[edge[0]].add(new int[] {edge[1], 1});
+            // 反向边
+            adjs[edge[1]].add(new int[] {edge[0], 0});
+        }
+
+        return dfsHelper(adjs, 0, -1);
+
+
+    }
+
+    public int dfsHelper(List<int[]>[] adjs, int currNode, int parentNode) {
+
+        int res = 0;
+        for (int[] n: adjs[currNode]) {
+            // 终止条件
+            int neighbor = n[0], direction = n[1];
+            if (neighbor == parentNode) {
+                continue;
+            }
+           
+            res += (dfsHelper(adjs, neighbor, currNode) + direction);
+        }
+
+        return res;
+    }
+}
+```
+> [!proof] Explanations
+> ![](Graph_Algorithms.assets/image-20240712170940814.png)
+
+
+
+
+## Topological Sort
+### No 802 Find Eventual Safe States
 > [!def] 
 > ![](Graph_Algorithms.assets/image-20240704112212044.png)
 
@@ -912,8 +1196,8 @@ class Solution {
 ```
  
 
-
-## No 1129 Shortest Path with Alternating Colors
+## BFS 
+### No 1129 Shortest Path with Alternating Colors
 > [!code]
 > ![](Graph_Algorithms.assets/image-20240705203832473.png)![](Graph_Algorithms.assets/image-20240710222926015.png)
 ```java
@@ -990,31 +1274,144 @@ class Solution {
 
 
 
-## No 1376 通知所有员工所需的时间
+### No 1926 迷宫中里入口最近的出口
 > [!task]
-> ![](Graph_Algorithms.assets/image-20240710225602178.png)
+> ![](Graph_Algorithms.assets/image-20240714121445497.png)
+```java
+public int nearestExit(char[][] maze, int[] entrance) {
+
+        Queue<int[]> q = new ArrayDeque<>();
+
+        int height = maze.length;
+        int width = maze[0].length;
+
+        boolean[][] visited = new boolean[height][width];
+        boolean[][] isGoal = new boolean[height][width];
+        
+
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if ((i == 0 || j == 0 || i == height - 1 || j == width - 1) && maze[i][j] == '.' 
+                    && (i != entrance[0] 
+                    || j != entrance[1])) {
+                        isGoal[i][j] = true;
+                }
+            }
+        }
+       
+
+        int res = 0;
+        q.offer(new int[] {entrance[0], entrance[1], 0});
+        visited[entrance[0]][entrance[1]] = true;
+        int[] dy = new int[] {1, 0, -1, 0};
+        int[] dx = new int[] {0, 1, 0, -1}; 
+
+
+        while (!q.isEmpty()) {
+            int[] n = q.poll();
+            int currY = n[0];
+            int currX = n[1];
+            int distance = n[2];
+            
+            for(int i = 0; i < 4; i++) {
+                int newY = currY + dy[i];
+                int newX = currX + dx[i];
+                if ((newY >= height || newX >= width || 
+            newY < 0 || newX < 0) || maze[newY][newX] == '+') {
+                    continue;
+                }
+                if (!visited[newY][newX]) {
+                    if (isGoal[newY][newX]) {
+                        return distance + 1;
+                    }
+                    q.offer(new int[] {newY, newX, distance + 1});
+                    visited[currY][currX] = true;
+                }
+            }
+        }
+
+        return -1;
+
+    }
+```
+
+
+
+
+
+## Connectivity
+### Bridges
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240713151220026.png)
+> ![](Graph_Algorithms.assets/image-20240713170155520.png)
+> https://www.thealgorists.com/Algo/GraphTheory/Tarjan/Bridges
 ```java
 class Solution {
-	// DFS Solution
-    public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
-        // 使用 HashMap 来构建图
-        Map<Integer, List<Integer>> g = new HashMap<Integer, List<Integer>>();
-        for (int i = 0; i < n; i++) {
-            g.putIfAbsent(manager[i], new ArrayList<Integer>());
-            g.get(manager[i]).add(i);
+
+    public static int time = 0;
+    public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
+        
+
+        List<List<Integer>> res = new ArrayList<>();
+
+        Map<Integer, List<Integer>> adjs = new HashMap<>();
+
+        for (List<Integer> connect: connections) {
+            adjs.putIfAbsent(connect.get(0), new ArrayList<>());
+            adjs.putIfAbsent(connect.get(1), new ArrayList<>());
+            adjs.get(connect.get(0)).add(connect.get(1));
+            adjs.get(connect.get(1)).add(connect.get(0));
         }
-        // 从根节点开始进行 DFS 并返回总时间
-        return dfs(headID, informTime, g);
+
+        int[] disc = new int[n];
+        int[] low = new int[n];
+
+        for (int i = 0 ; i < n; i++) {
+            disc[i] = -1;
+            low[i] = -1;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (disc[i] == -1){
+                dfsHelper(i, -1, disc, low, adjs, res);
+            }
+            
+        }
+
+
+        return res;
+
     }
 
-    public int dfs(int cur, int[] informTime, Map<Integer, List<Integer>> g) {
-        int res = 0;
-        // 遍历当前节点的邻居节点
-        for (int neighbor : g.getOrDefault(cur, new ArrayList<Integer>())) {
-            res = Math.max(res, dfs(neighbor, informTime, g));
+
+    public void dfsHelper(int u, int parent, int[] disc, int[] low, Map<Integer, List<Integer>> adjs, List<List<Integer>> res) {
+        disc[u] = time;
+        low[u] = time;
+        time++;
+
+        List<Integer> neighbors = adjs.get(u);
+        for (Integer v: neighbors) {
+            if (disc[v] == -1) {
+		        // Tarjan Step
+                dfsHelper(v, u, disc, low, adjs, res);
+                low[u] = Math.min(low[u], low[v]);
+
+
+				// Key step here
+                if (low[v] > disc[u]) {
+                    res.add(Arrays.asList(u, v));
+                }
+            } else if(v == parent) {
+	            // Cannot miss this step
+                continue;
+            } else {
+	            // Tarjan Step(modified)
+                low[u] = Math.min(low[u], disc[v]);
+            }
         }
-        // 返回当前节点被通知需要的时间以及所有邻居节点被通知所需的最大时间
-        return informTime[cur] + res;
     }
 }
 ```
+
+

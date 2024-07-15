@@ -95,9 +95,65 @@
 
 
 
+# Attention Variants
+## Argmax Attention
+> [!def]
+> ![](Transformer_Basics.assets/image-20240714180243070.png)![](Transformer_Basics.assets/image-20240714180255095.png)![](Transformer_Basics.assets/image-20240714180303902.png)
+
+
+
+
+## Kernelized Linear Attention
+> [!def]
+
+
+
+
 
 
 # Implementations
+## Self-Attention
+### Self-Attention Vanilla
+> [!task]
+> ![](Transformer_Basics.assets/image-20240714124642225.png)![](Transformer_Basics.assets/image-20240714131235876.png) 
+> where $d_{k}$ is the dimension for query/key vectors.
+> 
+> In this model, all the values in the $K, Q, V$ matrices are learned fromd data.
+> ![](Transformer_Basics.assets/image-20240714152418150.png)![](Transformer_Basics.assets/image-20240714161507788.png)![](Transformer_Basics.assets/image-20240714154207229.png)
+
+> [!proof]
+> **Claim:** For two random vectors $\vec{q}\in \mathbb{R}^d$ and $\vec{k}\in \mathbb{R}^d$, whose entries are i.i.d with zero mean and unit variance.(For example gaussian), then the variance of $\vec{q}^{\top}\vec{k}$ is proportional to $d$.
+> 
+> **Proof:** 
+> ![](Transformer_Basics.assets/image-20240714153941798.png)![](Transformer_Basics.assets/image-20240714153949043.png)![](Transformer_Basics.assets/image-20240714153956468.png)
+
+
+
+
+
+### Self-Attention: Attention by Content
+> [!def]
+> ![](Transformer_Basics.assets/image-20240714132024569.png)
+> There are several important hints:
+> - 1. To attend to a specific element, ensure that its pre-softmax score is significantly higher than that of the other elements.
+> - 2. Attending to a particular element is more manageable if the keys are orthogonal.
+> 	- Suppose we have $\mathbf{k}_{1}\cdot \mathbf{k}_{2}=\mathbf{k}_{2}\cdot \mathbf{k}_{3}=\mathbf{k}_{1}\cdot \mathbf{k}_{3}=0$(Orthogonal Keys).
+> 	- With orthogonal keys, if $\mathbf{q}$ is close to $\mathbf{k}_{1}$​, the score for $\mathbf{k}_{1}$​ will be significantly higher, leading to a higher softmax value for $\mathbf{k}_{1}$​ and near-zero values for $\mathbf{k}_{2}$​​ and $\mathbf{k}_{3}$​. This clear distinction simplifies the attention mechanism's task of focusing on the relevant key.
+> 	- ![](Transformer_Basics.assets/image-20240714174337223.png)
+> - 3. When there are repeated elements in a sequence with the same content, attending to all of them rather than a single one will be simpler. Since they have the same content, taking a "weighted average" over values weighted by attention scores will produce the same output as attending to a single one.
+> 
+> In general, when designing $K, Q, V$ matrices:
+> - $K$ might as well be orthogonal
+> - $Q$ should have large values at the index it wants to pay attention to.
+> 
+
+
+
+
+### Self-Attention: Attention by Position
+> [!def]
+>![](Transformer_Basics.assets/image-20240714175732010.png)
+
 
 
 

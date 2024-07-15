@@ -1,32 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
-      "basename": "Node_Embeddings",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
+      "basename": "Project1_Userprogram",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
     },
     {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
+      "basename": "P2102__Gitlet",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
     },
     {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "Lab01_Storage",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
+    },
+    {
+      "basename": "Lab02_Operators",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
     },
     {
       "basename": "Z-Transform",
       "path": "Computer_Science/Signal_Processing/5_Z-Transform/Z-Transform.md"
     },
     {
-      "basename": "Inverse-Z-Transform",
-      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md"
-    },
-    {
       "basename": "System_Representations",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
+    },
+    {
+      "basename": "Node_Embeddings",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
+    },
+    {
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Inverse-Z-Transform",
+      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md"
     },
     {
       "basename": "Filters",
@@ -45,10 +69,6 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
     },
     {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
-    },
-    {
       "basename": "Floating_Number_Representation",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md"
     },
@@ -59,10 +79,6 @@
     {
       "basename": "Useful_Functions",
       "path": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md"
-    },
-    {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
     },
     {
       "basename": "Related_Resources",
@@ -103,10 +119,6 @@
     {
       "basename": "Back_Propagation_Algorithm",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
-    },
-    {
-      "basename": "Lab01_Storage",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
     },
     {
       "basename": "数组基础",
@@ -165,14 +177,6 @@
       "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.2_Basic_DE's.md"
     },
     {
-      "basename": "Project1_Userprogram",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
-    },
-    {
       "basename": "Answers",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "React_LifeCycles",
       "path": "Computer_Science/Web_Development/React/React_LifeCycles.md"
-    },
-    {
-      "basename": "Await_Async",
-      "path": "Computer_Science/Web_Development/Javascript/Promise/Await_Async.md"
     }
   ],
   "omittedPaths": [],
