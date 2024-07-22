@@ -9,12 +9,84 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
     },
     {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
+    },
+    {
+      "basename": "Numerics",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Numerics.md"
+    },
+    {
+      "basename": "Executor_Pattern",
+      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Concurrency_Patterns/Executor_Pattern.md"
+    },
+    {
+      "basename": "Leetcode_Problems",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Leetcode_Problems.md"
+    },
+    {
+      "basename": "Leetcode_Problems",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.md"
+    },
+    {
+      "basename": "HW1802__Percolation",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/HW1802__Percolation.md"
+    },
+    {
+      "basename": "Filters",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
     },
     {
       "basename": "Transformer_Basics",
       "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "兼容性封装汇总",
+      "path": "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md"
+    },
+    {
+      "basename": "Modular_Arithmetic",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
+    },
+    {
+      "basename": "Algorithmic_Thinking",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md"
+    },
+    {
+      "basename": "Ch1_DPV_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "Laplace_Transform",
+      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.md"
+    },
+    {
+      "basename": "Fourier_Transform",
+      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md"
+    },
+    {
+      "basename": "Z-Transform",
+      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
+    },
+    {
+      "basename": "System_Representations",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
+    },
+    {
+      "basename": "Signals_LTI_Systems",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
+    },
+    {
+      "basename": "P2102__Gitlet",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
     },
     {
       "basename": "Lab01_Storage",
@@ -25,36 +97,12 @@
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
     },
     {
-      "basename": "Z-Transform",
-      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Z-Transform.md"
-    },
-    {
-      "basename": "System_Representations",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
-    },
-    {
       "basename": "Node_Embeddings",
       "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
     },
     {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
-    },
-    {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Inverse-Z-Transform",
-      "path": "Computer_Science/Signal_Processing/5_Z-Transform/Inverse-Z-Transform.md"
-    },
-    {
-      "basename": "Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
     },
     {
       "basename": "Dependency_Parsing",
@@ -83,10 +131,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Computer_Vision/Related_Resources.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
     {
       "basename": "RNN_Basics",
@@ -133,10 +177,6 @@
       "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md"
     },
     {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "Directed Graph",
       "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
-    },
-    {
-      "basename": "Debouncing",
-      "path": "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md"
-    },
-    {
-      "basename": "Promise基础",
-      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md"
-    },
-    {
-      "basename": "Promise重写",
-      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
-    },
-    {
-      "basename": "1.2_Basic_DE's",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/1.2_Basic_DE's.md"
-    },
-    {
-      "basename": "Answers",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Answers.md"
-    },
-    {
-      "basename": "浏览器事件环",
-      "path": "Computer_Science/Web_Development/Javascript/事件环/浏览器事件环.md"
-    },
-    {
-      "basename": "3.11_Poles",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.11_Poles.md"
-    },
-    {
-      "basename": "3.4_Step_and_Delta",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.4_Step_and_Delta.md"
-    },
-    {
-      "basename": "1_Public-Key(Asymmetric) Encryption",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/1_Public-Key(Asymmetric) Encryption.md"
-    },
-    {
-      "basename": "React_LifeCycles",
-      "path": "Computer_Science/Web_Development/React/React_LifeCycles.md"
     }
   ],
   "omittedPaths": [],

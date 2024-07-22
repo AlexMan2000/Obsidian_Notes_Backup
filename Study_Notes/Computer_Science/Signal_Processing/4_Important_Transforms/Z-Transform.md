@@ -5,6 +5,11 @@
 
 
 
+# Terminologies
+Left-Sided
+
+
+
 # Z-Transform
 ## Definition
 > [!def]
@@ -52,12 +57,51 @@
 ## Causality
 > [!important]
 > A linear, time-invariant system is causal if its unit-sample reponse is zero for $t<0$.
+> ![](Z-Transform.assets/6059616cb27f778f9a92b446e96e4b34_MD5.jpeg)
 
 > [!example]
 > ![](Z-Transform.assets/image-20240710172239210.png)![](Z-Transform.assets/image-20240710172245371.png)
 > As long as all the signal represented by the poles are right-sided.
 > 
 > ![](Z-Transform.assets/image-20240710172601379.png)
+
+
+
+# Properties of Z-transform
+## P1: Shape
+> [!property] 
+> ![](Z-Transform.assets/67000c8f61380643dfd8b8e64be682cd_MD5.jpeg)
+
+
+
+## P1: Linearity
+> [!property] 
+> ![](Z-Transform.assets/428778ea63286063f95390166e4e671d_MD5.jpeg)
+
+
+
+## P2: Time Shifting
+> [!property] 
+> ![](Z-Transform.assets/b1eda4c22c6a89dbfa0425ad87b2ea74_MD5.jpeg)![](Z-Transform.assets/f3636b74fb923b6accac12cfcf0c9ac1_MD5.jpeg)
+
+
+
+
+
+
+# System Function Analysis
+## Causality
+> [!thm]
+> ![](Z-Transform.assets/08a87ea51b3db2464e1f5030895734e9_MD5.jpeg)
+> 
+
+
+
+
+
+
+
+
 
 
 # Periodic Signal

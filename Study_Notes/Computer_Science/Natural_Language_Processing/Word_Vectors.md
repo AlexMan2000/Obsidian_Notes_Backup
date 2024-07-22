@@ -155,9 +155,31 @@ print(df)
 
 
 
+### Mathematical Derivations
+### Skipgram Derivatives
+> [!thm]
+> ![](Word_Vectors.assets/image-20240721181056747.png)![](Word_Vectors.assets/image-20240721181103302.png)![](Word_Vectors.assets/image-20240721181110140.png)![](Word_Vectors.assets/image-20240721181116347.png)![](Word_Vectors.assets/image-20240721181208972.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Negative Sampling Techniques
 > [!def]
 > ![](Word_Vectors.assets/image-20240710161837423.png)
+
+
+
+
+
 
 
 
