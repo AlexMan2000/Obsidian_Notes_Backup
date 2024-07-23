@@ -1302,6 +1302,7 @@ public int nearestExit(char[][] maze, int[] entrance) {
        
 
         int res = 0;
+        // 如果我们不想显式地记录下出发点到当前位置的距离，则以只维护一个变量step, 等队列中所有level-1的节点全部清空以后再更新step++
         q.offer(new int[] {entrance[0], entrance[1], 0});
         visited[entrance[0]][entrance[1]] = true;
         int[] dy = new int[] {1, 0, -1, 0};
@@ -1333,6 +1334,133 @@ public int nearestExit(char[][] maze, int[] entrance) {
 
         return -1;
 
+    }
+```
+
+
+
+
+### No 934 最短的桥
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240722205028589.png)
+> **思路:**
+> - 首先遍历所有的节点, 遍历每个节点的时候运行一次`DFS`以得到任意一座岛屿的全部节点，然后使用多源BFS从这个岛屿中的任意一个节点出发(穷举)，如果在探索的过程中遇到了某个节点他的东南西北方向中的任意一个节点为第二座岛屿，那么我们就找到了最短的路径大小，结束循环。
+```java
+public int shortestBridge(int[][] grid) {
+        int n = grid.length;
+        int[][] dirs = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                // 任意一个岛屿中的一片陆地
+                if (grid[i][j] == 1) {
+	                // 从任意一个岛屿的任意一个陆地开始探索，只需要一个队列
+                    Queue<int[]> queue = new ArrayDeque<int[]>();
+                    // 找到当前岛屿的所有陆地坐标，标记为-1
+                    dfs(i, j, grid, queue);
+
+					// 开始BFS搜索最短路径
+                    int step = 0;
+                    while (!queue.isEmpty()) {
+                        int sz = queue.size();
+                        // 先将当前level/step的所有节点探索完，再探索下一个level/step的节点
+                        for (int k = 0; k < sz; k++) {
+                            int[] cell = queue.poll();
+                            int x = cell[0], y = cell[1];
+                            for (int d = 0; d < 4; d++) {
+                                int nx = x + dirs[d][0];
+                                int ny = y + dirs[d][1];
+                                if (nx >= 0 && ny >= 0 && nx < n && ny < n) {
+	                                // Expand
+                                    if (grid[nx][ny] == 0) {
+                                        queue.offer(new int[]{nx, ny});
+                                        grid[nx][ny] = -1;
+                                    } else if (grid[nx][ny] == 1) {
+                                        return step;
+                                    }
+                                }
+                            }
+                        }
+                        step++;
+                    }
+                }
+            }
+        }
+        return 0;
+    }
+
+    public void dfs(int x, int y, int[][] grid, Queue<int[]> queue) {
+        if (x < 0 || y < 0 || x >= grid.length || y >= grid[0].length || grid[x][y] != 1) {
+            return;
+        }
+        queue.offer(new int[]{x, y});
+        grid[x][y] = -1;
+        dfs(x - 1, y, grid, queue);
+        dfs(x + 1, y, grid, queue);
+        dfs(x, y - 1, grid, queue);
+        dfs(x, y + 1, grid, queue);
+    }
+```
+
+
+### No 433 最小基因变化
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240722223733701.png)
+```java
+public int minMutation(String startGene, String endGene, String[] bank) {
+        Queue<String> q = new ArrayDeque<>();
+        q.offer(startGene);
+
+        boolean[] visited = new boolean[bank.length];
+        Map<String, Integer> mapping = new HashMap<>();
+        // 添加映射方便查询
+        for (int i = 0; i < bank.length; i++) {
+            mapping.put(bank[i], i);
+        }
+
+        int step = 0;
+
+
+        while (!q.isEmpty()) {
+            int qsize = q.size();
+            step++;
+            for (int k = 0; k < qsize; k++) {
+                String currGene = q.poll();
+                // 防止空指针异常
+                if (mapping.containsKey(currGene)) {
+                    visited[mapping.get(currGene)] = true;
+                }
+
+				// 寻找下一个访问对象，必须是没有访问过的，且和当前对象只有一个字符不同
+                for (String potential: bank) {
+                    if (diffDistance(currGene, potential) == 1 &&
+                        visited[mapping.get(potential)] == false
+                    ) {
+                         if (potential.equals(endGene)) {
+                            return step;
+                        }
+                        q.offer(potential);
+                    } 
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    public int diffDistance(String src, String dest) {
+        if (src.length() != dest.length()) {
+            return -1;
+        }
+
+        int diff = 0;
+        for (int i = 0; i < src.length(); i++) {
+            if (src.charAt(i) != dest.charAt(i)) {
+                diff++;
+            }
+        }
+
+        return diff;
     }
 ```
 

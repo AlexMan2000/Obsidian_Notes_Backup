@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "Modular_Arithmetic",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
+    },
+    {
       "basename": "Project0_Pregame",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
     },
     {
       "basename": "Project1_Userprogram",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
     },
     {
       "basename": "Word_Vectors",
@@ -47,10 +51,6 @@
     {
       "basename": "兼容性封装汇总",
       "path": "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md"
-    },
-    {
-      "basename": "Modular_Arithmetic",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
     },
     {
       "basename": "Algorithmic_Thinking",
