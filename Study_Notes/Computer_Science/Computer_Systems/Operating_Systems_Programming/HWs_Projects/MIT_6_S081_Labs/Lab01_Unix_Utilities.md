@@ -1,3 +1,7 @@
+# Setup
+> [!important]
+> 本系列实验使用`WSL`, 环境设置详见[Related_Resources](../../../Machine_Structures/Related_Resources/Related_Resources.md)
+
 # Task 1: Sleep
 > [!code]
 > ![](Lab01_Unix_Utilities.assets/image-20240302113009763.png)

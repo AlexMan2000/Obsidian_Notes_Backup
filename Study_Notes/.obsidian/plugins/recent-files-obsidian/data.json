@@ -1,28 +1,188 @@
 {
   "recentFiles": [
     {
-      "basename": "Graph_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+      "basename": "引用类型的类型定义",
+      "path": "Computer_Science/Web_Development/Typescript/引用类型的类型定义.md"
     },
     {
-      "basename": "Modular_Arithmetic",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
-    },
-    {
-      "basename": "Project0_Pregame",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+      "basename": "组合与继承",
+      "path": "Computer_Science/Web_Development/React/React_Component/组合与继承.md"
     },
     {
       "basename": "Project1_Userprogram",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
     },
     {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
+    },
+    {
+      "basename": "SpringBoot_Basics",
+      "path": "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.md"
+    },
+    {
+      "basename": "Spring_Security",
+      "path": "Computer_Science/Java_Language/Java_Spring/Spring_Security.md"
+    },
+    {
+      "basename": "Promise重写",
+      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
+    },
+    {
+      "basename": "Stream",
+      "path": "Computer_Science/Java_Language/Java_SE/Stream.md"
+    },
+    {
+      "basename": "5_Pseudorandom_Number_Generator",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/5_Pseudorandom_Number_Generator.md"
+    },
+    {
+      "basename": "4_Message_Authentication_Codes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "3_Cryptographic_Hashes",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
+    },
+    {
+      "basename": "6_Key_Exchange_Algorithms",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md"
+    },
+    {
+      "basename": "Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/Routing.md"
+    },
+    {
       "basename": "Word_Vectors",
       "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
     },
     {
+      "basename": "Generative_Models_Basics",
+      "path": "Computer_Science/Deep_Learning/Deep_Generative_Models/Generative_Models_Basics.md"
+    },
+    {
+      "basename": "1_Public-Key(Asymmetric) Encryption",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/1_Public-Key(Asymmetric) Encryption.md"
+    },
+    {
+      "basename": "image-20240523201653808",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.assets/image-20240523201653808.png"
+    },
+    {
+      "basename": "2_Digital_Signatures",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.md"
+    },
+    {
+      "basename": "Z-Transform",
+      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
+    },
+    {
+      "basename": "P2102__Gitlet",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
+    },
+    {
+      "basename": "1_Introduction",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
+    },
+    {
+      "basename": "Environment Setup",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/Related_Resources.md"
+    },
+    {
+      "basename": "Variational_AutoEncoder",
+      "path": "Computer_Science/Deep_Learning/Deep_Generative_Models/Variational_AutoEncoder.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "Sampling_Algorithms",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
+    },
+    {
+      "basename": "Generative_Adversarial_Net",
+      "path": "Computer_Science/Deep_Learning/Deep_Generative_Models/Generative_Adversarial_Net.md"
+    },
+    {
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
       "basename": "Numerics",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Numerics.md"
+    },
+    {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+    },
+    {
+      "basename": "Latent_Variable_Models",
+      "path": "Computer_Science/Deep_Learning/Deep_Generative_Models/Latent_Variable_Models.md"
+    },
+    {
+      "basename": "RNN_Basics",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
+    },
+    {
+      "basename": "Sequence_to_Sequence_Model",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
+    },
+    {
+      "basename": "P1800__NBody",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/2_List_Testing/P1800__NBody.md"
+    },
+    {
+      "basename": "L1801__Basic_Setup_Java",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/1_Basic_Java_Syntax/L1801__Basic_Setup_Java.md"
+    },
+    {
+      "basename": "L2101__Environment_Setup_Collatz_Sequence",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/1_Basic_Java_Syntax/L2101__Environment_Setup_Collatz_Sequence.md"
+    },
+    {
+      "basename": "Study_Guide",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/1_Basic_Java_Syntax/Study_Guide.md"
+    },
+    {
+      "basename": "Related Resources",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/Related Resources.md"
+    },
+    {
+      "basename": "README",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/README.md"
+    },
+    {
+      "basename": "Graph_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md"
+    },
+    {
+      "basename": "Modular_Arithmetic",
+      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md"
     },
     {
       "basename": "Executor_Pattern",
@@ -39,166 +199,6 @@
     {
       "basename": "HW1802__Percolation",
       "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/HW1802__Percolation.md"
-    },
-    {
-      "basename": "Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
-    },
-    {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
-    },
-    {
-      "basename": "兼容性封装汇总",
-      "path": "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md"
-    },
-    {
-      "basename": "Algorithmic_Thinking",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md"
-    },
-    {
-      "basename": "Ch1_DPV_Intro_Big-O",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Laplace_Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.md"
-    },
-    {
-      "basename": "Fourier_Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md"
-    },
-    {
-      "basename": "Z-Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
-    },
-    {
-      "basename": "System_Representations",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
-    },
-    {
-      "basename": "Lab01_Storage",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
-    },
-    {
-      "basename": "Lab02_Operators",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
-    },
-    {
-      "basename": "Node_Embeddings",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "Dependency_Parsing",
-      "path": "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md"
-    },
-    {
-      "basename": "Dynamic_Programming",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "Floating_Number_Representation",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/2_Bits/Floating_Number_Representation.md"
-    },
-    {
-      "basename": "Sequence_to_Sequence_Model",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
-    },
-    {
-      "basename": "Useful_Functions",
-      "path": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Vision/Related_Resources.md"
-    },
-    {
-      "basename": "RNN_Basics",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
-    },
-    {
-      "basename": "Greedy_Algorithms",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Greedy_Algorithms.md"
-    },
-    {
-      "basename": "圆角渐变边框",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md"
-    },
-    {
-      "basename": "数组提升",
-      "path": "Computer_Science/Web_Development/Javascript/数组/数组提升.md"
-    },
-    {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Pytorch Tutorial 1",
-      "path": "Computer_Science/Deep_Learning/Pytorch Tutorial 1.pdf"
-    },
-    {
-      "basename": "How_to_Train_Resnet",
-      "path": "Computer_Science/Deep_Learning/Training_Techniques/How_to_Train_Resnet.md"
-    },
-    {
-      "basename": "Back_Propagation_Algorithm",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Back_Propagation_Algorithm.md"
-    },
-    {
-      "basename": "数组基础",
-      "path": "Computer_Science/Web_Development/Javascript/数组/数组基础.md"
-    },
-    {
-      "basename": "扩展方法",
-      "path": "Computer_Science/Web_Development/Javascript/数组/扩展方法.md"
-    },
-    {
-      "basename": "进度条",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "Global_Explanation",
-      "path": "Computer_Science/Deep_Learning/Explainable_AI/Global_Explanation.md"
-    },
-    {
-      "basename": "3.5_Impulse_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
-    },
-    {
-      "basename": "React_Hooks",
-      "path": "Computer_Science/Web_Development/React/React_Hooks.md"
-    },
-    {
-      "basename": "Directed Graph",
-      "path": "Computer_Science/Discrete_Mathematics/Unit2_Structures/Graph_Theory/Directed Graph.md"
     }
   ],
   "omittedPaths": [],

@@ -1,11 +1,11 @@
 # RBAC Design
 > [!important]
 > https://mysql.tutorials24x7.com/blog/guide-to-design-database-for-rbac-in-mysql
-> ![](Spring_JWT.assets/image-20240519104154125.png)
+> ![](Spring_Security.assets/image-20240519104154125.png)
 
 ## User Table
 > [!def]
-> ![](Spring_JWT.assets/image-20240519104214446.png)
+> ![](Spring_Security.assets/image-20240519104214446.png)
 
 
 ```sql
@@ -29,7 +29,7 @@ CREATE TABLE `user` (
 
 ## Role Table
 > [!def]
-> ![](Spring_JWT.assets/image-20240519104303960.png)
+> ![](Spring_Security.assets/image-20240519104303960.png)
 ```sql
 CREATE TABLE `role` (  
   `id` BIGINT NOT NULL AUTO_INCREMENT,  
@@ -48,7 +48,7 @@ CREATE TABLE `role` (
 
 ## Permission Table
 > [!def]
-> ![](Spring_JWT.assets/image-20240519104347287.png)
+> ![](Spring_Security.assets/image-20240519104347287.png)
 ```sql
 CREATE TABLE `rbac`.`permission` (  
   `id` BIGINT NOT NULL AUTO_INCREMENT,  
@@ -67,7 +67,7 @@ CREATE TABLE `rbac`.`permission` (
 
 ## Role Permission Table
 > [!def]
-> ![](Spring_JWT.assets/image-20240519104414154.png)
+> ![](Spring_Security.assets/image-20240519104414154.png)
 ```sql
 CREATE TABLE `role_permission` (
   `roleId` BIGINT NOT NULL,
@@ -109,6 +109,23 @@ ADD CONSTRAINT `fk_user_role`
   ON UPDATE NO ACTION;
 
 ```
+\
+
+# Spring Security Packages
 
 
 
+
+
+# Jwt Architecture
+
+
+
+
+# Jwt Signing Algorithms
+> [!important]
+> ![](Spring_Security.assets/image-20240731213812737.png)
+
+
+
+# Jwt Configurations

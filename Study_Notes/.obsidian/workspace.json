@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
+                "file": "Computer_Science/Web_Development/React/React_Component/组合与继承.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35afe78e9a83ad81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Web_Development/Typescript/引用类型的类型定义.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +49,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+                "file": "Computer_Science/Deep_Learning/Deep_Generative_Models/Generative_Models_Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "295dab92d17f8f09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c76c6fd1cd07bdb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d11e6bc4701dd0e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Numerics.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
+                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +158,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "euclid algorithm",
+                "query": "authenticity",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,7 +250,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
+                "file": "Computer_Science/Web_Development/Typescript/引用类型的类型定义.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +267,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
+                "file": "Computer_Science/Web_Development/Typescript/引用类型的类型定义.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -277,54 +325,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "8baadfc89c0a81e3",
+  "active": "35afe78e9a83ad81",
   "lastOpenFiles": [
+    "Computer_Science/Web_Development/React/React_Component/组合与继承.md",
+    "Computer_Science/Web_Development/Typescript/引用类型的类型定义.md",
+    "Computer_Science/Web_Development/React/React_Basics.md",
+    "Computer_Science/Web_Development/React/React_Component",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
+    "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.md",
+    "Computer_Science/Web_Development/Next",
+    "Computer_Science/Web_Development/Typescript",
+    "Computer_Science/Java_Language/Java_Spring/Spring_Security.md",
+    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
+    "Computer_Science/Java_Language/Java_SE/Stream.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/5_Pseudorandom_Number_Generator.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Java_Language/Java_Spring/Spring_Security.assets/image-20240731213812737.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.assets/image-20240729181727676.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.assets/image-20240729180027876.png",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md",
+    "Computer_Science/Computer_Networks/Network_Projects/Routing.md",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
+    "Computer_Science/Deep_Learning/Deep_Generative_Models/Generative_Models_Basics.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/1_Public-Key(Asymmetric) Encryption.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.assets/image-20240523201653808.png",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.md",
+    "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.assets/image-20240723221454745.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.assets/image-20240723093222258.png",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.assets/image-20240722223733701.png",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.assets/image-20240722205028589.png",
-    "Computer_Science/Discrete_Mathematics/Unit2_Structures/Number_Theory/Modular_Arithmetic.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Graph_Algorithms.md",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
     "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181208972.png",
     "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181116347.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181110140.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181103302.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181101759.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240721181056747.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Numerics.md",
-    "Computer_Science/Java_Language/Java_Concurrecncy/Concurrency_Patterns/Executor_Pattern.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/12_Graphs_MST_DP/Leetcode_Problems.md",
     "Computer_Science/Java_Language/Java_Concurrecncy/Concurrency_Patterns",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.assets/image-20240721112031662.png",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.assets/image-20240721103340587.png",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.assets/image-20240720211423761.png",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/HW1802__Percolation.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Numerics.assets",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
-    "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/7_Disjoint_Sets/Leetcode_Problems.assets",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.md",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Inverse-Z-Transform.md",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
     "Computer_Science/Web_Development/Javascript/兼容性封装汇总.assets",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
-    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
-    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
     "Computer_Science/Natural_Language_Processing/Word_Vectors.assets",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets",
     "Computer_Science/Deep_Learning/Graph_Neural_Networks",
-    "Computer_Science/Untitled",
-    "Computer_Science/Natural_Language_Processing",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.assets",
     "未命名.canvas"
   ]
 }

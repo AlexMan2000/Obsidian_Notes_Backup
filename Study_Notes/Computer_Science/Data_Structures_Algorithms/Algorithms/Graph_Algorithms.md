@@ -1403,6 +1403,17 @@ public int shortestBridge(int[][] grid) {
 ```
 
 
+
+### No 542 最近的零
+> [!task]
+> ![](Graph_Algorithms.assets/image-20240723093222258.png)
+```java
+
+```
+
+
+ 
+
 ### No 433 最小基因变化
 > [!task]
 > ![](Graph_Algorithms.assets/image-20240722223733701.png)

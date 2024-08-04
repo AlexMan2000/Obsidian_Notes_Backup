@@ -303,6 +303,10 @@
 > [!algo]
 > ![](1_Bayes_Networks.assets/image-20240419135213890.png)
 
+> [!example]
+> ![](1_Bayes_Networks.assets/image-20240723221454745.png)
+> Here each random variable takes 0 or 1.
+
 
 
 

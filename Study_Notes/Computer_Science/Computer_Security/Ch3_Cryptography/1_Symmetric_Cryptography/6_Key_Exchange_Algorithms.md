@@ -1,3 +1,9 @@
+# Intuitions
+> [!overview]
+> ![](6_Key_Exchange_Algorithms.assets/image-20240729180027876.png)
+
+
+
 # Discrete Log Diffie-Hellman
 ## Diffie-Hellman Intuition
 > [!important]
@@ -18,6 +24,12 @@
 
 > [!exp]
 > ![](6_Key_Exchange_Algorithms.assets/image-20240523170428300.png)
+
+
+
+## Forward Secrecy
+> [!property]
+> ![](6_Key_Exchange_Algorithms.assets/image-20240729181727676.png)
 
 
 
