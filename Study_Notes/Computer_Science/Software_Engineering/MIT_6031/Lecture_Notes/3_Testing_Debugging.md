@@ -175,7 +175,7 @@
 
 
 
-
+ 
 ## Multiple Partitions vs One Partitions
 ### One Partition
 > [!concept]

@@ -8,8 +8,10 @@
 > The value F(K,M) is called the _tag_ for M or the MAC of M. Typically, we might use a 128-bit key K and 128-bit tags.
 > 
 
-> [!example] MAC on File Storage
-> MACs can be used for more than just communication security. For instance, suppose we want to store files on a removable USB flash drive, which we occasionally share with our friends. To protect against tampering with the files on our flash drive, our machine could generate a secret key and store a MAC of each file somewhere on the flash drive. When our machine reads the file, it could check that the MAC is valid before using the file contents. In a sense, this is a case where we are “communicating” to a “future version of ourselves,” so security for stored data can be viewed as a variant of communication security.
+> [!example] MAC on **File Storage**
+> MACs can be used for more than just communication security. For instance, suppose we want to store files on a removable USB flash drive, which we occasionally share with our friends. 
+> 
+> **To protect against tampering with the files on our flash drive, our machine could generate a secret key and store a MAC of each file somewhere on the flash drive.** When our machine reads the file, it could check that the MAC is valid before using the file contents. In a sense, this is a case where we are “communicating” to a “future version of ourselves,” so security for stored data can be viewed as a variant of communication security.
 
 
 ## MAC Usage
@@ -40,6 +42,7 @@
 ## How MAC ensures Integrity&Authenticity
 > [!important]
 > ![](4_Message_Authentication_Codes.assets/image-20240522163207586.png)
+> 本质上就是发送者和接收者有共同的`Secret Key`，发送者用`secret key`给`message`计算一个标记`tag`, 接收者用同样的`Secret Key`在收到的`message`上计算`tag`, 如果计算出来的`tag`和收到的`tag`完全一致，则可以确定发送者是可信赖的。
 
 
 
@@ -55,6 +58,7 @@
 ## NMAC
 > [!def]
 > ![](4_Message_Authentication_Codes.assets/image-20240522151856606.png)
+> NMAC采用两个不同的长度为`n`(这个`n`的长度必须和我们的`cryptographic hash`的输出长度一致，比如`SHA-256`的hash输出是256 bit, 那么`n`就必须是256)的keys K1， K2。
 
 
 
@@ -63,6 +67,7 @@
 ### Definition
 > [!def]
 > ![](4_Message_Authentication_Codes.assets/image-20240522152104711.png)
+> `HMAC` 使用一个Key, 但是思想和`NMAC`差不多。先把K做一个预处理得到两个Keys, 然后和NMAC一样。
 
 
 

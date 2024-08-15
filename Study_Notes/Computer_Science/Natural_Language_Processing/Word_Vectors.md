@@ -154,11 +154,32 @@ print(df)
 > ![](Word_Vectors.assets/image-20240710140704251.png)![](Word_Vectors.assets/image-20240710140714414.png)![](Word_Vectors.assets/image-20240710140720054.png)![](Word_Vectors.assets/image-20240710140728701.png)
 
 
-
-### Mathematical Derivations
 ### Skipgram Derivatives
+> [!important]
+> Here are some importants results to remember:
+> - $U$ is the outside word vectors of shape (`vocab_size, word_dim`)
+> - $V$ is the center word vectors of shape (`vocab_size, word_dim`)
+> - $J_{naive-{softmaxloss}}(\vec{v}_{c,}o,U)=-log(\hat{y}_o)$, 其中$\hat{y}_o=softmax(U\vec{v}_{c})[oIndex]$, `oIndex`是`outside word index in the vocab size`
+> 	- Derivative w.r.t $\vec{v}_c$, $\frac{\partial J}{\partial \vec{v}_c}=U^{\top}(\hat{y}-\vec{y})\in\mathbb{R}^{dim}$, where $\vec{y}$ is the probability vector that has shape `(vocab_size,)`
+> 	- Derivative w.r.t $U$, $\frac{\partial J}{\partial U}=(\hat{y}-\vec{y})\vec{v}_c^{\top}\in\mathbb{R}^{vocab\times dim}$
+> - $J_{{negative}-{sample}}(\vec{v}_{c},o,U)=-log(\sigma(\vec{u}_o^{\top}\vec{v}_c))-\sum\limits_{s=1}^Klog(\sigma(-\vec{u}_{w_s}^{\top}\vec{v}_c))$
+> 	- Derivative w.r.t $\vec{v}_c$
+> 	- Derivative w.r.t $\vec{u}_o$
+> 	- Derivative w.r.t $\vec{u}_{w_{s}}$
+
 > [!thm]
-> ![](Word_Vectors.assets/image-20240721181056747.png)![](Word_Vectors.assets/image-20240721181103302.png)![](Word_Vectors.assets/image-20240721181110140.png)![](Word_Vectors.assets/image-20240721181116347.png)![](Word_Vectors.assets/image-20240721181208972.png)
+> ![](Word_Vectors.assets/image-20240721181056747.png)![](Word_Vectors.assets/image-20240721181103302.png)![](Word_Vectors.assets/image-20240721181110140.png)![](Word_Vectors.assets/image-20240721181116347.png)![](Word_Vectors.assets/image-20240721181208972.png)![](Word_Vectors.assets/image-20240813133956196.png)![](Word_Vectors.assets/image-20240813134002472.png)![](Word_Vectors.assets/image-20240813134010987.png)![](Word_Vectors.assets/image-20240813134018829.png)![](Word_Vectors.assets/image-20240813134026082.png)![](Word_Vectors.assets/image-20240813134033513.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,12 +199,7 @@ print(df)
 
 
 
-
-
-
-
-
-## Hierarchical Softmax
+## Word2Vec Implementations
 
 
 
