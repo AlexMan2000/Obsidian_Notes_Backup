@@ -8,79 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d2f8f3744e0585f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ecdb883f3292fbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0e841096bf7adb62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2132e6046e5781d0",
+            "id": "8baadfc89c0a81e3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
-                "mode": "source",
-                "source": false
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf"
               }
             }
           },
           {
-            "id": "295dab92d17f8f09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c76c6fd1cd07bdb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d11e6bc4701dd0e4",
+            "id": "e9ce98b10955c302",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,31 +42,42 @@
             }
           },
           {
-            "id": "8baadfc89c0a81e3",
+            "id": "619ee698eb387291",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+                "file": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a01e2c686bf4c2f8",
+            "id": "f234ae4363f586df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md",
+                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5921acca7a1d6c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +107,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "underdetermined",
+                "query": "EM Algorithm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -238,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +216,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -313,54 +274,53 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9ecdb883f3292fbb",
+  "active": "0e841096bf7adb62",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.assets/image-20240814163424543.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Specifications.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md",
-    "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813210624863.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813205324954.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Malloc_Lab.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813180035612.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813174031310.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813174025102.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets/image-20240813174009887.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
     "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
-    "Computer_Science/Large_Language_Models/LangChain_Models",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240813134033513.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240813134026082.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240813134018829.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240813134010987.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
-    "Computer_Science/Web_Development/Javascript/事件环/浏览器事件环.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
-    "Computer_Science/Web_Development/Network/Websocket.md",
-    "Computer_Science/Web_Development/Webpack/Loaders.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.assets/image-20240826114447833.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Related_Resources.md",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering/GMMEMNotes.pdf",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.assets/image-20240826113357859.png",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.md",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.assets/image-20240825225433885.png",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.assets/image-20240825225417881.png",
+    "Computer_Science/Machine_Learning/AI_ML/Clustering/EM_Algorithm.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213135628.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213113808.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213050428.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213027183.png",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240825205933483.png",
+    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240825205725798.png",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md",
+    "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md",
+    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
+    "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md",
+    "Computer_Science/Leetcode_Bank/前缀和",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Graph_Features.md",
+    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.assets",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Untitled.md",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets",
+    "Computer_Science/Large_Language_Models/LangChain_Models",
     "Computer_Science/Web_Development/Network",
-    "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.md",
-    "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md",
-    "Computer_Science/Web_Development/React/React_Context/Context使用场景.md",
-    "Computer_Science/Web_Development/React/React_LifeCycles.md",
-    "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md",
-    "Computer_Science/Web_Development/React/React-Hooks/Ref.md",
-    "Computer_Science/Web_Development/React/React-Hooks",
-    "Computer_Science/Web_Development/React/React_Component/组合与继承.md",
-    "Computer_Science/Web_Development/Webpack/L",
-    "Computer_Science/Web_Development/Javascript/BOM",
-    "Computer_Science/Web_Development/Javascript/DOM",
-    "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.assets",
-    "Computer_Science/Web_Development/React/代码分割.md",
-    "Computer_Science/Web_Development/React/React_Context",
     "未命名.canvas"
   ]
 }

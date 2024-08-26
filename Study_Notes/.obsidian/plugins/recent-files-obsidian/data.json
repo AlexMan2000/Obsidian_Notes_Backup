@@ -1,12 +1,120 @@
 {
   "recentFiles": [
     {
-      "basename": "XV6-Memory",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md"
+      "basename": "4_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "hmm_notes",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "Node_Embeddings",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Related_Resources.md"
+    },
+    {
+      "basename": "GMMEMNotes",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/GMMEMNotes.pdf"
+    },
+    {
+      "basename": "Mixture_of_Gaussian_EM",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.md"
+    },
+    {
+      "basename": "Initialization",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
+    },
+    {
+      "basename": "5_Conditional_Random_Field",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.md"
+    },
+    {
+      "basename": "3_Markov_Random_Field",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md"
+    },
+    {
+      "basename": "Data_Compression",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md"
+    },
+    {
+      "basename": "Model_Fine_Tuning",
+      "path": "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md"
+    },
+    {
+      "basename": "Lab02_Operators",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Lab01_Storage",
+      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
+    },
+    {
+      "basename": "前缀和",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "Graph_Features",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Graph_Features.md"
+    },
+    {
+      "basename": "6_Key_Exchange_Algorithms",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md"
+    },
+    {
+      "basename": "11-iterators-joins-2",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf"
+    },
+    {
+      "basename": "1_Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
+    },
+    {
+      "basename": "Dependency_Parsing",
+      "path": "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md"
     },
     {
       "basename": "Heap Management",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Untitled.md"
+    },
+    {
+      "basename": "P2102__Gitlet",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
+    },
+    {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
+      "basename": "XV6-Memory",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md"
     },
     {
       "basename": "3_Testing_Debugging",
@@ -33,20 +141,8 @@
       "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md"
     },
     {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
       "basename": "Malloc_Lab",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Malloc_Lab.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
     },
     {
       "basename": "Transformer_Basics",
@@ -103,102 +199,6 @@
     {
       "basename": "非空断言和类型断言",
       "path": "Computer_Science/Web_Development/Typescript/非空断言和类型断言.md"
-    },
-    {
-      "basename": "类型定义",
-      "path": "Computer_Science/Web_Development/Typescript/类型定义.md"
-    },
-    {
-      "basename": "环境配置",
-      "path": "Computer_Science/Web_Development/Typescript/环境配置.md"
-    },
-    {
-      "basename": "4_Message_Authentication_Codes",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/4_Message_Authentication_Codes.md"
-    },
-    {
-      "basename": "3_Cryptographic_Hashes",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/3_Cryptographic_Hashes.md"
-    },
-    {
-      "basename": "5_Pseudorandom_Number_Generator",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/5_Pseudorandom_Number_Generator.md"
-    },
-    {
-      "basename": "Z-Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
-    },
-    {
-      "basename": "Project1_Userprogram",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project1_Userprogram.md"
-    },
-    {
-      "basename": "SpringBoot_Basics",
-      "path": "Computer_Science/Java_Language/Java_Spring/SpringBoot_Basics.md"
-    },
-    {
-      "basename": "Spring_Security",
-      "path": "Computer_Science/Java_Language/Java_Spring/Spring_Security.md"
-    },
-    {
-      "basename": "Promise重写",
-      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
-    },
-    {
-      "basename": "Stream",
-      "path": "Computer_Science/Java_Language/Java_SE/Stream.md"
-    },
-    {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
-      "basename": "6_Key_Exchange_Algorithms",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/Related_Resources.md"
-    },
-    {
-      "basename": "Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Projects/Routing.md"
-    },
-    {
-      "basename": "Generative_Models_Basics",
-      "path": "Computer_Science/Deep_Learning/Deep_Generative_Models/Generative_Models_Basics.md"
-    },
-    {
-      "basename": "1_Public-Key(Asymmetric) Encryption",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/1_Public-Key(Asymmetric) Encryption.md"
-    },
-    {
-      "basename": "image-20240523201653808",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.assets/image-20240523201653808.png"
-    },
-    {
-      "basename": "2_Digital_Signatures",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/2_Asymmetric_Cryptography/2_Digital_Signatures.md"
-    },
-    {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
-    },
-    {
-      "basename": "1_Introduction",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/1_Introduction.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/Related_Resources/Related_Resources.md"
-    },
-    {
-      "basename": "Environment Setup",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Environment Setup.md"
     }
   ],
   "omittedPaths": [],

@@ -852,7 +852,9 @@ public class Table {
 
 ## HeapFile
 > [!def]
-> `HeapFile`类模拟了一张表所对应的文件，
+> `HeapFile`类模拟了一张表所对应的文件，一个文件包含了多个Pages需要读取数据。
+> 
+> 
 
 
 
@@ -897,6 +899,9 @@ public class TestQuery1 {
 > Run `ant` , then `java -classpath dist/simpledb.jar simpledb.endtests.TestQuery1` to compile and link these files into a new `.jar` file, overwrite the old one. 
 > 
 > It will also execute the logic in `TestQuery1`.
+> ![](Lab01_Storage.assets/image-20240818092243967.png)
+
+
 
 
 
