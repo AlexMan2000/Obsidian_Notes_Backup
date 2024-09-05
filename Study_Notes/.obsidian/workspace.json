@@ -8,19 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e841096bf7adb62",
+            "id": "8baadfc89c0a81e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8baadfc89c0a81e3",
+            "id": "8f1ca8d0ed62dcee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b217448561f1e08",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -30,12 +42,24 @@
             }
           },
           {
-            "id": "e9ce98b10955c302",
+            "id": "83f6af13a200c768",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+                "file": "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f2953ce35589ab12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,24 +78,12 @@
             }
           },
           {
-            "id": "f234ae4363f586df",
+            "id": "b8842301b68d1b7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5921acca7a1d6c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -151,7 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5
+    "width": 285.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -199,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,7 +228,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +266,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 333.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,56 +283,58 @@
       "obsidian-custom-frames:Open Notion": false,
       "obsidian-custom-frames:Open Google Calendar": false,
       "templater-obsidian:Templater": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "0e841096bf7adb62",
+  "active": "932953190040c9d5",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf",
+    "Data_Science/Time_Series_Analysis",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md",
+    "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
+    "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144",
+    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/7872809adb03748d3f4141f9ff80ca74_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/Pasted image 20240904212453.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/dda2c6a333da38ac2639490ccf2b87ea_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/Pasted image 20240904210045.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/993b7280c1c5682ee089556ed81d52c0_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/Pasted image 20240904204815.png",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.assets/image-20240826114447833.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/Related_Resources.md",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/GMMEMNotes.pdf",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.assets/image-20240826113357859.png",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.assets/image-20240825225433885.png",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.assets/image-20240825225417881.png",
-    "Computer_Science/Machine_Learning/AI_ML/Clustering/EM_Algorithm.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213135628.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213113808.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213050428.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets/image-20240825213027183.png",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240825205933483.png",
-    "Computer_Science/Natural_Language_Processing/Word_Vectors.assets/image-20240825205725798.png",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md",
-    "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md",
-    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
     "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md",
-    "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md",
-    "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md",
-    "Computer_Science/Leetcode_Bank/前缀和",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Graph_Features.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.assets",
-    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Untitled.md",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.assets",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.assets",
-    "Computer_Science/Large_Language_Models/LangChain_Models",
-    "Computer_Science/Web_Development/Network",
+    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md",
+    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Name_Entity_Recognition.md",
+    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Recognition.md",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.md",
+    "Computer_Science/Natural_Language_Processing/Speech_Analysis",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets/feee50c398f8842a26e79c21ec311832_MD5.jpeg",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets/9fe7caaffaba39802dfdd3df37d329a6_MD5.jpeg",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets/Pasted image 20240904174209.png",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets/Pasted image 20240904174152.png",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets",
+    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets",
+    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
+    "Computer_Science/Natural_Language_Processing/Structural_Learning",
+    "Computer_Science/Natural_Language_Processing/Word_Embedding",
+    "Computer_Science/Natural_Language_Processing/Text_Classification",
+    "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md",
+    "Computer_Science/Natural_Language_Processing/Structural_Learning/Constituency_Parsing.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets",
+    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf",
+    "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
+    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/ICMP.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/UDP.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/TCP.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/IP.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md",
     "未命名.canvas"
   ]
 }

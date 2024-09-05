@@ -1,20 +1,184 @@
 {
   "recentFiles": [
     {
+      "basename": "Lab01_Bytestream",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md"
+    },
+    {
+      "basename": "Lab04_Traps",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md"
+    },
+    {
+      "basename": "Lab03_Page_Tables",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md"
+    },
+    {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
       "basename": "4_Hidden_Markov_Model",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Speech_Tagging",
+      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md"
+    },
+    {
+      "basename": "Name_Entity_Recognition",
+      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Name_Entity_Recognition.md"
+    },
+    {
+      "basename": "Speech_Recognition",
+      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Recognition.md"
+    },
+    {
+      "basename": "Generative_Models",
+      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.md"
+    },
+    {
+      "basename": "Discriminative_Models",
+      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
+    },
+    {
+      "basename": "Dependency_Parsing",
+      "path": "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md"
+    },
+    {
+      "basename": "Constituency_Parsing",
+      "path": "Computer_Science/Natural_Language_Processing/Structural_Learning/Constituency_Parsing.md"
+    },
+    {
+      "basename": "Lab01_Unix_Utilities",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
+    },
+    {
+      "basename": "Proj1_Traceroute",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
     },
     {
       "basename": "hmm_notes",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf"
     },
     {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Vectors.md"
+      "basename": "Useful_Functions",
+      "path": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md"
     },
     {
       "basename": "1_Bayes_Networks",
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "3_Markov_Random_Field",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md"
+    },
+    {
+      "basename": "Promise重写",
+      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
+    },
+    {
+      "basename": "ICMP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/ICMP.md"
+    },
+    {
+      "basename": "UDP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/UDP.md"
+    },
+    {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/TCP.md"
+    },
+    {
+      "basename": "IP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/IP.md"
+    },
+    {
+      "basename": "1_Packets&Networks",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md"
+    },
+    {
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "5_BGP",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md"
+    },
+    {
+      "basename": "4_Addressing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "2_Protocols&Layers",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/2_Protocols&Layers.md"
+    },
+    {
+      "basename": "HTTP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/HTTP.md"
+    },
+    {
+      "basename": "循环不变量(Loop Invariant)",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md"
+    },
+    {
+      "basename": "Tree",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/Tree.md"
+    },
+    {
+      "basename": "五大基本原则",
+      "path": "Computer_Science/Software_Engineering/Design_Patterns/五大基本原则.md"
+    },
+    {
+      "basename": "Promise基础",
+      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise基础.md"
+    },
+    {
+      "basename": "工厂模式",
+      "path": "Computer_Science/Software_Engineering/Design_Patterns/Creational_Patterns/工厂模式.md"
+    },
+    {
+      "basename": "L1813_ Radix Sort",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/L1813_ Radix Sort.md"
+    },
+    {
+      "basename": "Sorting Properties",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/Sorting Properties.md"
+    },
+    {
+      "basename": "Sorting Summary",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/Sorting Summary.pdf"
+    },
+    {
+      "basename": "L1812__Merge_Quick_Sort",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/L1812__Merge_Quick_Sort.md"
+    },
+    {
+      "basename": "Quick_Sort",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/Quick_Sort.md"
+    },
+    {
+      "basename": "Basic_Sorting_Algorithms",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/Basic_Sorting_Algorithms.md"
+    },
+    {
+      "basename": "总结：this指向总结",
+      "path": "Computer_Science/Web_Development/Javascript/总结/总结：this指向总结.md"
+    },
+    {
+      "basename": "Numbers",
+      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
     },
     {
       "basename": "Node_Embeddings",
@@ -35,170 +199,6 @@
     {
       "basename": "Initialization",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "5_Conditional_Random_Field",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/5_Conditional_Random_Field.md"
-    },
-    {
-      "basename": "3_Markov_Random_Field",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md"
-    },
-    {
-      "basename": "Data_Compression",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md"
-    },
-    {
-      "basename": "Model_Fine_Tuning",
-      "path": "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md"
-    },
-    {
-      "basename": "Lab02_Operators",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "Lab01_Storage",
-      "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab01_Storage.md"
-    },
-    {
-      "basename": "前缀和",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md"
-    },
-    {
-      "basename": "Disk_Space_Management",
-      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
-    },
-    {
-      "basename": "Graph_Features",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Graph_Features.md"
-    },
-    {
-      "basename": "6_Key_Exchange_Algorithms",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/6_Key_Exchange_Algorithms.md"
-    },
-    {
-      "basename": "11-iterators-joins-2",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/11-iterators-joins-2.pdf"
-    },
-    {
-      "basename": "1_Sorting&Hashing",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
-    },
-    {
-      "basename": "Dependency_Parsing",
-      "path": "Computer_Science/Natural_Language_Processing/Dependency_Parsing.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Untitled.md"
-    },
-    {
-      "basename": "P2102__Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/16_Software_Projects/P2102__Gitlet.md"
-    },
-    {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
-      "basename": "XV6-Memory",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md"
-    },
-    {
-      "basename": "3_Testing_Debugging",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/3_Testing_Debugging.md"
-    },
-    {
-      "basename": "6_Designing_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/6_Designing_Specifications.md"
-    },
-    {
-      "basename": "4_Version_Control",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/4_Version_Control.md"
-    },
-    {
-      "basename": "5_Specifications",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/5_Specifications.md"
-    },
-    {
-      "basename": "Tweeter",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Problem_Sets/Tweeter.md"
-    },
-    {
-      "basename": "8_Abstract_Data_Type",
-      "path": "Computer_Science/Software_Engineering/MIT_6031/Lecture_Notes/8_Abstract_Data_Type.md"
-    },
-    {
-      "basename": "Malloc_Lab",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/CSAPP_CS61C_Projects/4_Architecture_Programming/Malloc_Lab.md"
-    },
-    {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
-    },
-    {
-      "basename": "浏览器事件环",
-      "path": "Computer_Science/Web_Development/Javascript/事件环/浏览器事件环.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
-    },
-    {
-      "basename": "Websocket",
-      "path": "Computer_Science/Web_Development/Network/Websocket.md"
-    },
-    {
-      "basename": "Loaders",
-      "path": "Computer_Science/Web_Development/Webpack/Loaders.md"
-    },
-    {
-      "basename": "Webpack基本定义配置",
-      "path": "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.md"
-    },
-    {
-      "basename": "兼容性封装汇总",
-      "path": "Computer_Science/Web_Development/Javascript/兼容性封装汇总.md"
-    },
-    {
-      "basename": "Context使用场景",
-      "path": "Computer_Science/Web_Development/React/React_Context/Context使用场景.md"
-    },
-    {
-      "basename": "React_LifeCycles",
-      "path": "Computer_Science/Web_Development/React/React_LifeCycles.md"
-    },
-    {
-      "basename": "React_Hooks",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md"
-    },
-    {
-      "basename": "Ref",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/Ref.md"
-    },
-    {
-      "basename": "组合与继承",
-      "path": "Computer_Science/Web_Development/React/React_Component/组合与继承.md"
-    },
-    {
-      "basename": "代码分割",
-      "path": "Computer_Science/Web_Development/React/代码分割.md"
-    },
-    {
-      "basename": "非空断言和类型断言",
-      "path": "Computer_Science/Web_Development/Typescript/非空断言和类型断言.md"
     }
   ],
   "omittedPaths": [],
