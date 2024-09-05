@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Word_Semantics",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
+    },
+    {
+      "basename": "Discriminative_Models",
+      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md"
+    },
+    {
+      "basename": "Generative_Models",
+      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.md"
+    },
+    {
+      "basename": "Dependency_Parsing",
+      "path": "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md"
+    },
+    {
+      "basename": "4_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "Speech_Tagging",
+      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md"
+    },
+    {
+      "basename": "hmm_notes",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf"
+    },
+    {
       "basename": "Lab01_Bytestream",
       "path": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md"
     },
@@ -17,16 +49,8 @@
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
     },
     {
-      "basename": "4_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
-    },
-    {
       "basename": "2_Iterators&Joins",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "Speech_Tagging",
-      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md"
     },
     {
       "basename": "Name_Entity_Recognition",
@@ -35,22 +59,6 @@
     {
       "basename": "Speech_Recognition",
       "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Recognition.md"
-    },
-    {
-      "basename": "Generative_Models",
-      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.md"
-    },
-    {
-      "basename": "Discriminative_Models",
-      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
-      "basename": "Dependency_Parsing",
-      "path": "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md"
     },
     {
       "basename": "Constituency_Parsing",
@@ -63,10 +71,6 @@
     {
       "basename": "Proj1_Traceroute",
       "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
-    },
-    {
-      "basename": "hmm_notes",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf"
     },
     {
       "basename": "Useful_Functions",
@@ -195,10 +199,6 @@
     {
       "basename": "Mixture_of_Gaussian_EM",
       "path": "Computer_Science/Machine_Learning/AI_ML/Clustering/Mixture_of_Gaussian_EM.md"
-    },
-    {
-      "basename": "Initialization",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Initialization.md"
     }
   ],
   "omittedPaths": [],
