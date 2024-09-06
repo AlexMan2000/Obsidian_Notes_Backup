@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+      "basename": "计数问题",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
+    },
+    {
+      "basename": "维护窗口性质",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
     },
     {
       "basename": "Lab02_Operators",
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
     },
     {
       "basename": "Lab03_Query_Optimization",
@@ -191,14 +199,6 @@
     {
       "basename": "Word_Semantics",
       "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
-      "basename": "Discriminative_Models",
-      "path": "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md"
     }
   ],
   "omittedPaths": [],
