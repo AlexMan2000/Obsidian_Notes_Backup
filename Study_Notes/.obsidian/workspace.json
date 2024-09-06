@@ -25,31 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83f6af13a200c768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2953ce35589ab12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,14 +49,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a7708706319f30e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d40864dda92120dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -202,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -278,54 +278,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "83f6af13a200c768",
+  "active": "a7708706319f30e1",
   "lastOpenFiles": [
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.md",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.md",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/7d8d65c33470473b1de5a3110f679226_MD5.jpeg",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/Pasted image 20240905105155.png",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/ea90ee9663e117358047330ea6c9189d_MD5.jpeg",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/Pasted image 20240905104258.png",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/0b1c51ddbeabf36fdab73f5bb4361006_MD5.jpeg",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/90c351fbb4014e63a661a4845595499b_MD5.jpeg",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/Pasted image 20240905103743.png",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets/Pasted image 20240905103738.png",
-    "Computer_Science/Natural_Language_Processing/Structural_Learning/Dependency_Parsing.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf",
-    "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
-    "Data_Science/Time_Series_Analysis",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
+    "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab03_Query_Optimization.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Design.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/Memory-Mapping.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Memory_Mapping.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md",
-    "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144",
-    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/7872809adb03748d3f4141f9ff80ca74_MD5.jpeg",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.assets/Pasted image 20240904212453.png",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Name_Entity_Recognition.md",
-    "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Recognition.md",
-    "Computer_Science/Natural_Language_Processing/Speech_Analysis",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Discriminative_Models.assets",
-    "Computer_Science/Natural_Language_Processing/Text_Classification/Generative_Models.assets",
-    "Computer_Science/Natural_Language_Processing/Structural_Learning",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding",
-    "Computer_Science/Natural_Language_Processing/Text_Classification",
-    "Computer_Science/Natural_Language_Processing/Structural_Learning/Constituency_Parsing.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab07_Cache.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md",
+    "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md",
-    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.md",
     "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/3_Markov_Random_Field.md",
-    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/ICMP.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/UDP.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/TCP.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/IP.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/1_Packets&Networks.md",
+    "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/35b78eede7b753d3a2dc0e7900b89dfd_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/dd921b21782f4b45e4cd8716965311e1_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/Pasted image 20240905171217.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/Pasted image 20240905171212.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/ab4047b251ae53e23e2cf81cda5ce202_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/Pasted image 20240905171200.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/b1ef99a8314312be49a3e75e307af575_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/5bb85d4f9471a728430ebcd6948727f4_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/Pasted image 20240905171129.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets/Pasted image 20240905171114.png",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/1_Latent_Variable_Models.assets",
+    "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.assets",
+    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process",
+    "Computer_Science/Reinforcement_Learning/Imitation_Learning/Q-Learning.assets",
+    "Computer_Science/Reinforcement_Learning/Q-Learning",
+    "Computer_Science/Reinforcement_Learning/Imitation_Learning",
+    "Computer_Science/Reinforcement_Learning",
+    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.assets",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/hmm_notes.pdf",
     "未命名.canvas"
   ]
 }

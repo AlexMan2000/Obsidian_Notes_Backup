@@ -43,7 +43,7 @@
 > 3. For C, we still choose the clockwise for similar reasons,  so the update for $B$ should be $\begin{aligned}U_{k+1}(B)=0.6\times \{R(C,clockwise,A)+\gamma\times U^{clockwise}_{k}(A)\}\\ +0.4\times \{R(C,clockwise,B)+\gamma\times U^{clockwise}_{k}(B)\}\end{aligned}$
 
 > [!code]
-> To write the above in code, we can construct a [linear system](../../Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md#Discrete-Time%20LTI%20Difference%20Equation):
+> To write the above in code, we can construct a [linear system](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md#Discrete-Time%20LTI%20Difference%20Equation):
 > $\begin{bmatrix}U_{k+1}(A)\\U_{k+1}(B)\\U_{k+1}(C) \end{bmatrix}=\begin{bmatrix}0&0.5&0\\0.2&0&0.3\\0.3&0.2&0 \end{bmatrix}\begin{bmatrix}U_{k}(A)\\U_{k}(B)\\U_{k}(C) \end{bmatrix}+\begin{bmatrix}0\\0.8\\2 \end{bmatrix}$
 ```python
 value_iter_vec = np.array([0,0,0])
@@ -148,7 +148,7 @@ for i in range(25):
 > ![](1_Markov_Decision_Process.assets/image-20240215142415409.png)
 > Since we don't have to consider all the action at each V-state, we omit a factor $A$ and reach $O(S^2)$ as our time complexity.
 > 
-> Very important properties, since we don't have to do maximizing for each Q-state, we can simplify our iteration as a [linear system](../../Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md#Discrete-Time%20LTI%20Difference%20Equation), which only involves matrix multiplication and addition.
+> Very important properties, since we don't have to do maximizing for each Q-state, we can simplify our iteration as a [linear system](../../Machine_Learning/Control_LA_Circuit/EECS16B/Module2_Robotic_Control/Discretization_System_ID.md#Discrete-Time%20LTI%20Difference%20Equation), which only involves matrix multiplication and addition.
 
 > [!example]
 > We see that different policy yields different value iteration update results.
@@ -244,7 +244,7 @@ for i in range(25):
 ## Expectimax and Value Iteration
 > [!property] Expectimax and Value Iteration
 > ![](1_Markov_Decision_Process.assets/image-20240215150154398.png)![](1_Markov_Decision_Process.assets/image-20240215145932691.png)
-> The key realization is that, in order to compute the value of each state with the [Expectimax Algorithm](../Classical_Search_Algorithms/4_Adverserial_Search.md#Expectimax%20Algorithm) in each iteration, even if we have pruning techniques, we still have to traverse through the entire tree(with horizon $H$), looking ahead with $H$ steps.
+> The key realization is that, in order to compute the value of each state with the [Expectimax Algorithm](../../Machine_Learning/AI_ML/Classical_Search_Algorithms/4_Adverserial_Search.md#Expectimax%20Algorithm) in each iteration, even if we have pruning techniques, we still have to traverse through the entire tree(with horizon $H$), looking ahead with $H$ steps.
 > 
 > But for value iteration, due to its dynamic programming essense, for each iteration we only need to look ahead by one step, which saves lots of time.
 > ![](4_Adverserial_Search.assets/image-20240209150421471.png)
