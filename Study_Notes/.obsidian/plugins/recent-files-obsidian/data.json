@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "计数问题",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
+      "basename": "链表",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
+    },
+    {
+      "basename": "二叉树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/二叉树.md"
+    },
+    {
+      "basename": "集合",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
     },
     {
       "basename": "维护窗口性质",
       "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
+    },
+    {
+      "basename": "字典树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+    },
+    {
+      "basename": "单调队列",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.md"
+    },
+    {
+      "basename": "计数问题",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
     },
     {
       "basename": "Lab02_Operators",
@@ -179,26 +199,6 @@
     {
       "basename": "Normalization",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
-    },
-    {
-      "basename": "Sequence_to_Sequence_Model",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
-    },
-    {
-      "basename": "Node_Embeddings",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Node_Embeddings.md"
-    },
-    {
-      "basename": "Graph_Features",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/Graph_Features.md"
-    },
-    {
-      "basename": "Word_Semantics",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md"
     }
   ],
   "omittedPaths": [],
