@@ -49,14 +49,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
+                "file": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a085d66d9dc26e2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f08f3d11cb7acc72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ec53c63381423bc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -178,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
+                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,31 +289,34 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d40864dda92120dd",
+  "active": "a7708706319f30e1",
   "lastOpenFiles": [
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/数组.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/堆.md",
+    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md",
+    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md",
+    "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md",
+    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets/image-20240908213832119.png",
+    "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
+    "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240907161303798.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/二叉树.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/集合.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240907160057841.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets/image-20240907155734089.png",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets",
-    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104949786.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104645042.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104322840.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906115139368.png",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906111438655.png",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906105527543.png",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906105400640.png",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906104309836.png",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab03_Query_Optimization.md",
@@ -292,9 +331,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Calls.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab07_Cache.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md",
-    "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/1_Latent_Variable_Models.assets",
     "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.assets",

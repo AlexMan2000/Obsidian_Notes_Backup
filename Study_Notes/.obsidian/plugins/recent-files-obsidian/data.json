@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "字典树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+    },
+    {
+      "basename": "数组",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md"
+    },
+    {
+      "basename": "堆",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/堆.md"
+    },
+    {
+      "basename": "维护窗口性质",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
+    },
+    {
+      "basename": "计数问题",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
+    },
+    {
+      "basename": "循环不变量(Loop Invariant)",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md"
+    },
+    {
       "basename": "链表",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
+    },
+    {
+      "basename": "Numbers",
+      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
     },
     {
       "basename": "二叉树",
@@ -13,28 +49,12 @@
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
     },
     {
-      "basename": "维护窗口性质",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
-    },
-    {
-      "basename": "字典树",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
-    },
-    {
       "basename": "单调队列",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.md"
     },
     {
-      "basename": "计数问题",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
-    },
-    {
       "basename": "Lab02_Operators",
       "path": "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md"
-    },
-    {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
     },
     {
       "basename": "Lab03_Query_Optimization",
@@ -179,26 +199,6 @@
     {
       "basename": "2_Types_of_RL",
       "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/2_Types_of_RL.md"
-    },
-    {
-      "basename": "image-20240214095238433",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.assets/image-20240214095238433.png"
-    },
-    {
-      "basename": "Q-Learning",
-      "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
-    },
-    {
-      "basename": "Sentiment_Analysis",
-      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Sentiment_Analysis.md"
-    },
-    {
-      "basename": "Speech_Tagging",
-      "path": "Computer_Science/Natural_Language_Processing/Speech_Analysis/Speech_Tagging.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     }
   ],
   "omittedPaths": [],
