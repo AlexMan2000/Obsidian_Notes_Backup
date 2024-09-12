@@ -44,12 +44,34 @@
             }
           },
           {
-            "id": "d40864dda92120dd",
+            "id": "524fd461b9393634",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md",
+                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c84123f71e5b12e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "0aea684b8d4fd6ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -104,7 +126,7 @@
       {
         "id": "ac58ecdddeed7005",
         "type": "tabs",
-        "dimension": 75.84789311408016,
+        "dimension": 75.84442169907881,
         "children": [
           {
             "id": "932953190040c9d5",
@@ -152,7 +174,7 @@
       {
         "id": "4f417f835f612f94",
         "type": "tabs",
-        "dimension": 24.152106885919835,
+        "dimension": 24.15557830092119,
         "children": [
           {
             "id": "f58fc5649c2dc1e2",
@@ -214,7 +236,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +253,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,36 +311,47 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a7708706319f30e1",
+  "active": "524fd461b9393634",
   "lastOpenFiles": [
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.assets/image-20240912115235000.png",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.assets/image-20240912112341358.png",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.assets/image-20240912095308006.png",
+    "Computer_Science/Leetcode_Bank/Data_Structures/栈.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240912094059542.png",
+    "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/队列.md",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets/image-20240911145711475.png",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets/image-20240911143124680.png",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets/image-20240911142653087.png",
+    "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240911142200661.png",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets/image-20240911121855133.png",
+    "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md",
+    "Computer_Science/Leetcode_Bank/位运算",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets/image-20240911115838892.png",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets",
+    "Computer_Science/Leetcode_Bank/代码技巧",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/数组.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/堆.md",
+    "Computer_Science/Leetcode_Bank/IO操作",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md",
+    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets/image-20240911113506295.png",
+    "Computer_Science/Leetcode_Bank/Sorting",
+    "Computer_Science/Leetcode_Bank/Data_Structures/数组.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
+    "Computer_Science/Leetcode_Bank/Data_Structures/堆.md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets/image-20240908213832119.png",
-    "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
-    "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240907161303798.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/二叉树.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/集合.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets/image-20240907160057841.png",
     "Computer_Science/Leetcode_Bank/Data_Structures/链表.assets",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets/image-20240907155734089.png",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.assets",
-    "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104949786.png",
-    "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104645042.png",
-    "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets/image-20240907104322840.png",
-    "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.assets",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906115139368.png",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906111438655.png",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets/image-20240906105527543.png",
+    "Computer_Science/Leetcode_Bank/Data_Structures/队列.assets",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.assets",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab02_Operators.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
     "Computer_Science/Computer_Systems/Database Systems/MIT_6830_SimpleDB/Java-Version-sp22/Lab03_Query_Optimization.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
@@ -326,17 +359,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/Memory-Mapping.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/OS_VM_I_O.md",
     "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Memory_Mapping.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Calls.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/3_IPCs.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/2_Files_IOs.md",
-    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.assets",
-    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/1_Latent_Variable_Models.assets",
-    "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.assets",
-    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process",
-    "Computer_Science/Reinforcement_Learning/Imitation_Learning/Q-Learning.assets",
-    "Computer_Science/Reinforcement_Learning/Q-Learning",
     "未命名.canvas"
   ]
 }

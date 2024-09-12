@@ -68,6 +68,7 @@
 > [!thm]
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950351850.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950379507.png)
 > **书上的定理:**
+> 
 > ![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950383953.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950392411.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950407660.png)![image.png](Ch2_DPV_Divide_and_Conquer_FFT.assets/20231024_0950422906.png)
 
 > [!proof]

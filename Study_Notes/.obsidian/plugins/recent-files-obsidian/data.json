@@ -1,28 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "栈",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/栈.md"
+    },
+    {
+      "basename": "链表",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
+    },
+    {
+      "basename": "Drawing 2024-09-12 09.35.41.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md"
+    },
+    {
+      "basename": "双指针技巧",
+      "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
+    },
+    {
+      "basename": "队列",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/队列.md"
     },
     {
       "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
     {
-      "basename": "字典树",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+      "basename": "Ch1_DPV_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
+    },
+    {
+      "basename": "维护窗口性质",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
     },
     {
       "basename": "数组",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md"
     },
     {
-      "basename": "堆",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/堆.md"
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
     },
     {
-      "basename": "维护窗口性质",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
+      "basename": "字典树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+    },
+    {
+      "basename": "堆",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/堆.md"
     },
     {
       "basename": "计数问题",
@@ -31,10 +59,6 @@
     {
       "basename": "循环不变量(Loop Invariant)",
       "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md"
-    },
-    {
-      "basename": "链表",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
     },
     {
       "basename": "Numbers",
@@ -47,10 +71,6 @@
     {
       "basename": "集合",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
-    },
-    {
-      "basename": "单调队列",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/单调队列.md"
     },
     {
       "basename": "Lab02_Operators",
@@ -179,26 +199,6 @@
     {
       "basename": "Sampling_Algorithms",
       "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "UDP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/UDP.md"
-    },
-    {
-      "basename": "RNN_Basics",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
-    },
-    {
-      "basename": "3_MDP_Advanced",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
-    },
-    {
-      "basename": "1_Markov_Decision_Process",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.md"
-    },
-    {
-      "basename": "2_Types_of_RL",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/2_Types_of_RL.md"
     }
   ],
   "omittedPaths": [],
