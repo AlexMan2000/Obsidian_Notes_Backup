@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "ARMA",
+      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+    },
+    {
+      "basename": "File_System_Data_Structure",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md"
+    },
+    {
+      "basename": "Machine_Translation",
+      "path": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
+      "basename": "2_Decision_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
+    },
+    {
+      "basename": "1_Multivariable_Gaussian",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
+    },
+    {
+      "basename": "3_MDP_Advanced",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
+    },
+    {
+      "basename": "链表",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
+    },
+    {
+      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
+    },
+    {
+      "basename": "IP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md"
+    },
+    {
+      "basename": "Imitation_Learning",
+      "path": "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.md"
+    },
+    {
+      "basename": "Q-Learning",
+      "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "字典树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
+    },
+    {
+      "basename": "Word_Semantics",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md"
+    },
+    {
+      "basename": "Numbers",
+      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
+    },
+    {
+      "basename": "Drawing 2024-09-12 09.35.41.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md"
+    },
+    {
+      "basename": "Proj1_Traceroute",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "4_Addressing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
+    },
+    {
       "basename": "单串",
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
     },
@@ -9,24 +97,12 @@
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/栈.md"
     },
     {
-      "basename": "链表",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
-    },
-    {
-      "basename": "Drawing 2024-09-12 09.35.41.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md"
-    },
-    {
       "basename": "双指针技巧",
       "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
     },
     {
       "basename": "队列",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/队列.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
     },
     {
       "basename": "Ch1_DPV_Intro_Big-O",
@@ -41,14 +117,6 @@
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md"
     },
     {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
-      "basename": "字典树",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
-    },
-    {
       "basename": "堆",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/堆.md"
     },
@@ -59,10 +127,6 @@
     {
       "basename": "循环不变量(Loop Invariant)",
       "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md"
-    },
-    {
-      "basename": "Numbers",
-      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
     },
     {
       "basename": "二叉树",
@@ -83,10 +147,6 @@
     {
       "basename": "XV6-Memory",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/5_Memory/XV6-Memory.md"
-    },
-    {
-      "basename": "File_System_Data_Structure",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md"
     },
     {
       "basename": "File_System_Design",
@@ -139,66 +199,6 @@
     {
       "basename": "Heap Management",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
-    },
-    {
-      "basename": "Lab01_Unix_Utilities",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab01_Unix_Utilities.md"
-    },
-    {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
-      "basename": "4_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "Variational_Inference",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variational_Inference.md"
-    },
-    {
-      "basename": "Useful_Functions",
-      "path": "Computer_Science/Web_Development/Javascript/基础语法/Useful_Functions.md"
-    },
-    {
-      "basename": "Lab01_Bytestream",
-      "path": "Computer_Science/Computer_Networks/Network_Projects/Stanford_CS144/Lab01_Bytestream.md"
-    },
-    {
-      "basename": "1_Latent_Variable_Models",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/1_Latent_Variable_Models.md"
-    },
-    {
-      "basename": "AutoEncoders",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/AutoEncoders.md"
-    },
-    {
-      "basename": "Variance_Reduction_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Variance_Reduction_Methods.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Related_Resources.md"
-    },
-    {
-      "basename": "Imitation_Learning",
-      "path": "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.md"
-    },
-    {
-      "basename": "Laplace_Approximation",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Laplace_Approximation.md"
-    },
-    {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
     }
   ],
   "omittedPaths": [],

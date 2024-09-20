@@ -1,6 +1,6 @@
 # Terminology
 > [!def]
-> ![](Q-Learning.assets/bd49f678f9b43e7cc54b8c66352c2040_MD5.jpeg)
+> ![](../Q-Learning/Q-Learning.assets/bd49f678f9b43e7cc54b8c66352c2040_MD5.jpeg)
 > Here $o_t$ is always the derived properties from $s_t$(think of $s_t$ as hidden states, model configurations unreadable to human while $o_t$ as observed states readable to humans).
 > - $o_t$ doesn't have Markov Property, $s_{t}$ does.
 > - If you observe a car image, call it $o_5$ , it is static so you cannot deduce where it will be at $o_6$ just from $o_5$. But if you consider the $o_{1,}o_{2},\cdots,o_4$, you will likely to know in which direction the car is moving.
@@ -10,7 +10,7 @@
 
 # Imitation Learning
 > [!def]
-> ![](Q-Learning.assets/b0ef6a689733369d476bdb3811dec2f7_MD5.jpeg)
+> ![](../Q-Learning/Q-Learning.assets/b0ef6a689733369d476bdb3811dec2f7_MD5.jpeg)
 
 
 

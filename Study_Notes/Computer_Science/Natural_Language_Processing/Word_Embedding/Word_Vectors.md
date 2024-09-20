@@ -1,4 +1,4 @@
-  # Motivations
+# Motivations
 > [!overview]
 > In this section we are going to discuss several frequently used methods for word embedding.
 
@@ -76,6 +76,7 @@ print(df)
 > [!overview]
 > Word2vec is a family of models of **distributional semantics**.
 > - Words that occur in similar contexts tend to have similar meanings.
+> - It is a predictive model.
 
 
 ## CBOW Model
@@ -408,6 +409,11 @@ def skipgram(currentCenterWord, windowSize, outsideWords, word2Ind,
 
 
 # Global Vectors Methods(Glove)
+> [!important]
+> It is a count-based model with ALS training techniques.
+
+
+
 ## Ratio of Co-occurrence
 > [!def]
 > ![](Word_Embedding/Word_Vectors.assets/image-20240710181958334.png)![](Word_Embedding/Word_Vectors.assets/image-20240710183304224.png)

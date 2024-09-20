@@ -125,7 +125,26 @@
 
 
 # xv6源码分析-write syscall(Lec06)
+## 调试疑难杂症
+> [!important]
+> 1. 首先安装`sudo apt install gcc-riscv64-unknown-elf`, 因为直接使用`gdb`指令会出现`Undefined term: riscv:rv64`
+> 2. 然后创建`~/.config/gdb/gdbinit`文件，并在文件中加入以下两行:
+> 	1. add-auto-load-safe-path /home/alexman/xv6-labs-2021/.gdbinit
+> 	2. set auto-load safe-path .
+> 3. 在`xvg-2021-labs`文件夹下执行`make qemu-gdb`
+> 4. 最后新开一个**terminal**并在`xvg-2021-labs`文件夹下调用`gdb-multiarch`即可, 出现以下状态说明配置完成:
+> ![](4_System_Calls.assets/image-20240913150210884.png)
+
+
+
+
 ## Phase 1: 从用户态到ecall - trapoline
+> [!important]
+> `sh.asm`
+> `CTRL^A + C`在断点状态下呼出内存监控功能
+
+
+
 
 
 
