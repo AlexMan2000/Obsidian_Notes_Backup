@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Basic_Time_Series",
+      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md"
+    },
+    {
       "basename": "ARMA",
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "System_Level_IO",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
-    },
-    {
-      "basename": "Signals",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/Signals.md"
-    },
-    {
-      "basename": "Heap Management",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Heap Management.md"
     }
   ],
   "omittedPaths": [],

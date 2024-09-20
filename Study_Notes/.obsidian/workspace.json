@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,23 +265,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "abd22396395eb00b",
+  "active": "b8842301b68d1b7e",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114831085.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114140476.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114124533.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
+    "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920113131289.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112954376.png",
     "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112526245.png",
     "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112439342.png",
     "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112353559.png",
     "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920111753334.png",
     "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920110837032.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920110712706.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920110304183.png",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20240920104534136.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20240920104327712.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20240920104307388.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20240920104238245.png",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets",
-    "Data_Science/Time_Series_Analysis/ARMA.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md",
@@ -309,10 +311,8 @@
     "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
     "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
     "Computer_Science/Leetcode_Bank/Data_Structures/栈.md",
-    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
     "Computer_Science/Leetcode_Bank/位运算",
     "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets",
-    "Computer_Science/Leetcode_Bank/代码技巧",
     "未命名.canvas"
   ]
 }

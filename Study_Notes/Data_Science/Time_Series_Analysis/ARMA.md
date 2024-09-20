@@ -1,51 +1,3 @@
-# Basic Statistics of a Time Series
-> [!summary]
-> ![](ARMA.assets/image-20240920110304183.png)
-> **Remarks:**
-> - **(Auto)Covariance**: Measures the linear dependence between two points on the same series.
-> - **Cross-covariance**: Measures the linear dependence between two series.
-
-
-
-## ACF
-> [!def]
-> ![](ARMA.assets/image-20240920110712706.png)
-> The ACF measures the linear predictability of the series at time $t$,say $x_t$, using only the value $x_s$.
-> 
-> Here we can show that $-1\leq \rho(s,t)\leq 1$ using Cauchy-Schwarz inequality.
-> 
-> **Remarks:** 
-> - If we can predict $x_t$ **perfectly from** $x_s$ through a linear relationship, $x_{t}= \beta_{0}+ \beta_1x_s$, then the correlation will be $+1$ when $\beta_{1}> 0$, and $-1$ when $\beta_{1}< 0$.
-> 
-
-
-> [!code]
-```python
-
-
-```
-
-
-
-
-
-## CCF
-> [!def]
-> ![](ARMA.assets/image-20240920110837032.png)
-
-
-
-
-## Stationarity
-### Strong Stationarity
-> [!def]
-> ![](ARMA.assets/image-20240920112526245.png)![](ARMA.assets/image-20240920112439342.png)
-
-
-### (Weak) Stationarity
-> [!def]
-> ![](ARMA.assets/image-20240920112353559.png)
-
 
 
 
@@ -66,7 +18,9 @@
 > ![](ARMA.assets/image-20240916174017960.png)
 > **Weakly Stationary: We prove by definition:**
 > 
-> ![](ARMA.assets/image-20240916174036753.png)
+> ![](ARMA.assets/image-20240916174036753.png)![](ARMA.assets/image-20240920112954376.png)
+
+
 
 
 
@@ -109,9 +63,6 @@
 
 
 
-
-
-# Random Walk
 
 
 
