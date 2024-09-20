@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
                 "mode": "source",
                 "source": false
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -277,21 +277,21 @@
   },
   "active": "b8842301b68d1b7e",
   "lastOpenFiles": [
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920124009761.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123647775.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123639569.png",
-    "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920170247701.png",
     "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123552267.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123426865.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123047699.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920122652054.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920121358735.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920121326787.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920120814714.png",
+    "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165942679.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165355926.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165235065.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165118044.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165103325.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164719667.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164656355.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164620548.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164356920.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164204006.png",
     "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114831085.png",
     "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",

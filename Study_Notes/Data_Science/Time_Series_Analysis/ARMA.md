@@ -1,9 +1,3 @@
-
-
-
-
-
-
 # Auto-regressive Process
 ## AR(1)
 > [!def]
@@ -19,15 +13,34 @@
 > **Weakly Stationary: We prove by definition:**
 > 
 > ![](ARMA.assets/image-20240916174036753.png)![](ARMA.assets/image-20240920112954376.png)
-
-
-
+> **Linear Process:**
+> 
+> ![](ARMA.assets/image-20240920165942679.png)
 
 
 
 ## AR(p)
 > [!def]
 > ![](ARMA.assets/image-20240916174108060.png)
+
+
+
+# Causality
+## Backshift Operator
+> [!important]
+> ![](ARMA.assets/image-20240920165103325.png)![](ARMA.assets/image-20240920165118044.png)![](ARMA.assets/image-20240920165235065.png)![](ARMA.assets/image-20240920165355926.png)
+
+
+
+
+
+## Definition
+> [!def]
+> ![](ARMA.assets/image-20240920170247701.png)
+
+
+
+
 
 
 
@@ -70,5 +83,11 @@
 # Autoregressive Moving Average Model
 > [!def]
 > ![](ARMA.assets/image-20240916174157103.png)
+
+
+
+
+
+
 
 
