@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "736aeb70201c5bf3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+              }
+            }
+          },
+          {
             "id": "a7708706319f30e1",
             "type": "leaf",
             "state": {
@@ -267,20 +277,22 @@
   },
   "active": "b8842301b68d1b7e",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114831085.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114140476.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114124533.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920124009761.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123647775.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123639569.png",
     "Data_Science/Time_Series_Analysis/ARMA.md",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920113131289.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112954376.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112526245.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112439342.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920112353559.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920111753334.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920110837032.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123552267.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123426865.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920123047699.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920122652054.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920121358735.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920121326787.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920120814714.png",
+    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920114831085.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets",
@@ -309,8 +321,6 @@
     "Computer_Science/Computer_Networks/Network_Protocols/Routing",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/栈.md",
     "Computer_Science/Leetcode_Bank/位运算",
     "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets",
     "未命名.canvas"

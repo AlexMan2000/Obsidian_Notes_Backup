@@ -5,12 +5,16 @@
       "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
     },
     {
-      "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md"
-    },
-    {
       "basename": "ARMA",
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md"
     },
     {
       "basename": "File_System_Data_Structure",
@@ -195,10 +199,6 @@
     {
       "basename": "Lab08_Virtual_Memory",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/7_OS_Memory_Optimization/Lab08_Virtual_Memory.md"
-    },
-    {
-      "basename": "System_Level_IO",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/8_Linking_OS_Processes/System_Level_IO.md"
     }
   ],
   "omittedPaths": [],

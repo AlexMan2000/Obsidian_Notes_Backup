@@ -8,6 +8,7 @@
 
 
 ## ACF
+### Definitions
 > [!def]
 > ![](ARMA.assets/image-20240920110712706.png)
 > The ACF measures the linear predictability of the series at time $t$,say $x_t$, using only the value $x_s$.
@@ -18,8 +19,31 @@
 > - If we can predict $x_t$ **perfectly from** $x_s$ through a linear relationship, $x_{t}= \beta_{0}+ \beta_1x_s$, then the correlation will be $+1$ when $\beta_{1}> 0$, and $-1$ when $\beta_{1}< 0$.
 > 
 
-> [!code]
-> ![](Basic_Time_Series.assets/image-20240920114831085.png)
+
+
+### Properties
+> [!property] 
+> ![](Basic_Time_Series.assets/image-20240920123047699.png)
+
+
+
+## Sample ACF
+### Properties
+> [!property]
+> ![](Basic_Time_Series.assets/image-20240920124009761.png)
+
+
+
+
+
+
+
+### Implementations
+> [!code] Estimating the ACF
+> ![](Basic_Time_Series.assets/image-20240920114831085.png)![](Basic_Time_Series.assets/image-20240920120814714.png)
+> **Derivations of std:** 
+> 
+> ![](Basic_Time_Series.assets/image-20240920123426865.png)
 ```python
 def acf_impl(x, nlags):
     """
@@ -42,6 +66,9 @@ def acf_impl(x, nlags):
 
 
 
+### Large-Sample Distribution of ACF
+> [!important]
+> 
 
 
 ## CCF
@@ -65,12 +92,49 @@ def acf_impl(x, nlags):
 > - ACF is symmetric around the origin. $$\begin{aligned}\rho(h)&=\rho((t+h)-t)\\&=\operatorname{cov}\left(x_{t+h}, x_t\right)\\&=\operatorname{cov}\left(x_t, x_{t+h}\right)\\&=\rho(t-(t+h))\\&=\rho(-h)\end{aligned}$$
 
 
+# Linear Process
+## Definition
+> [!def]
+> ![](Basic_Time_Series.assets/image-20240920123647775.png)
+> The autocovariance function is given by:
+> 
+> ![](Basic_Time_Series.assets/image-20240920123639569.png)
+
+
+
+
+
+
+
 
 
 # White Noise
 > [!def]
 > $$X_t \sim N\left(0, \sigma^2\right)$$
 
+> [!code] Simulation
+> $$w_t \sim N\left(0, \sigma^2\right)$$
+> - Set $\sigma=1$, sample $\mathrm{n}=500$ points from the process above
+> - Plot the white noise
+> - Plot the sample ACF with lag $=20$.
+> - Calculate the analytical ACF and compare it with the sample ACF.
+> - What trend/observation you can find in the ACF plot?
+> - Change $n$ to 50 , compare the new ACF plot $(n=50)$ to the old ACF plot $(n=500)$. What causes the difference?
+> 
+> **Observations:**
+> - The **autocorrelations** at most lags should ideally be close to **zero**, as white noise is, by definition, uncorrelated across time. (Think about orthogonality between vectors).
+> - The **confidence interval** (usually represented by the shaded area) typically spans $\pm \frac{2}{\sqrt{n}}$, where `n` is the number of observations. For white noise, most points (lags) should fall within this confidence interval.
+> - The first lag (lag 0) is always **1** because any series is perfectly correlated with itself, also given by the computing formula.
+> - Occasional spikes in the autocorrelations at some lags may occur due to random variations, especially for smaller sample sizes.
+> 
+> **Differences:**
+> - 
+> 
+```python
+
+```
+> [!test] Simulation Results
+> ![](Basic_Time_Series.assets/image-20240920121326787.png)![](Basic_Time_Series.assets/image-20240920121358735.png)
 
 # Random Walk with Drift
 > [!def]
