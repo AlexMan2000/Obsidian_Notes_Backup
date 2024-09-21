@@ -72,7 +72,7 @@
 # Unit Sample Response
 ## System Functionals and USR
 > [!def]
-> For a discrete time system, the unit sample response(or unit impulse response) is the output of the system given the input of this form $$x[n]=\begin{cases}1&n\geq 0\\0&\textbf{otherwise} \end{cases}$$.
+> For a discrete time system, the unit sample response(or unit impulse response) is the output of the system given the input of this form $$x[n]=\begin{cases}1&n= 0\\0&\textbf{otherwise} \end{cases}$$.
 > 
 > Unit sample response is very closely related to the concepts of poles and system functional. 
 
@@ -84,7 +84,7 @@
 > 1. We start by finding the system functional $$\frac{\mathcal{Y}}{\mathcal{X}}=\frac{1}{(1-\frac{1}{2}\mathcal{R})(1-\frac{1}{4}\mathcal{R})}$$
 > 2. We use partial fraction to get the following: $$\frac{\mathcal{Y}}{\mathcal{X}}=\frac{2}{1-\frac{1}{2}\mathcal{R}}+\frac{-1}{1-\frac{1}{4}\mathcal{R}}$$
 > 3. The poles are just the coefficients of the two denominators: $p_{0}=\frac{1}{2}$ and $p_{1}=\frac{1}{4}$
-> 4. The expression for unit sample response is just $$h[n]=2\cdot (\frac{1}{2})^{n}+(-1)\cdot (\frac{1}{4})^{n},\forall n\geq 0$$
+> 4. The expression for unit sample response is just $$h[n]=2\cdot (\frac{1}{2})^{n}+(-1)\cdot (\frac{1}{4})^{n},\forall n\geq 0$$ One can chcek that $h[0]=1$.
 
 
 

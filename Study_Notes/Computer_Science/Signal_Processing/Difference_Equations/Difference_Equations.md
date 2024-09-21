@@ -13,13 +13,22 @@
 
 
 
-
-
-
 # Solving Difference Equation
+## Procedures
+> [!important]
+> ![](Difference_Equations.assets/image-20240921101653934.png)![](Difference_Equations.assets/image-20240921101702418.png)
+
+
+
+
+
+## Examples
 > [!example]
 > The procedure is similar to that of solving differential equations.
 > ![](Difference_Equations.assets/image-20240420170132096.png)
+
+> [!example]
+> ![](Difference_Equations.assets/image-20240921101723913.png)
 
 
 

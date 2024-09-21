@@ -24,6 +24,12 @@
 > ![](ARMA.assets/image-20240916174108060.png)
 
 
+## ACF of AR process
+> [!important]
+
+
+ 
+
 
 # Causality
 ## Backshift Operator
@@ -34,11 +40,18 @@
 
 
 
-## Definition
+## Causality Definition
 > [!def]
 > ![](ARMA.assets/image-20240920170247701.png)
 
 
+
+## AR(1) and Causality
+> [!important]
+> ![](ARMA.assets/image-20240920170655460.png)![](ARMA.assets/image-20240920170728814.png)
+> But we can redefine the white noise sequence to make it causal:
+> 
+> ![](ARMA.assets/image-20240920170815278.png)
 
 
 
@@ -57,6 +70,24 @@
 
 
 
+# Invertibility
+## Invertibility Definition
+> [!def]
+> ![](ARMA.assets/image-20240920171401823.png)
+
+
+
+
+
+## MA(1) and Invertibility
+> [!important]
+> ![](ARMA.assets/image-20240920171257365.png)![](ARMA.assets/image-20240920171310083.png)
+
+> [!summary]
+> ![](ARMA.assets/image-20240920171427735.png)![](ARMA.assets/image-20240920171435772.png)
+
+
+
 # AR and MA Prediction
 ### Linear Process
 > [!important]
@@ -72,6 +103,8 @@
 > ![](ARMA.assets/image-20240920111753334.png)
 
 
+
+
 ## Prediction
 
 
@@ -81,8 +114,40 @@
 
 
 # Autoregressive Moving Average Model
+## Model Definition
 > [!def]
 > ![](ARMA.assets/image-20240916174157103.png)
+> **Using Operator/Polynomial Notations we would have:**
+> 
+> ![](ARMA.assets/image-20240920172529763.png)
+
+
+## Stationarity, Causality and Invertibility
+> [!important]
+> ![](ARMA.assets/image-20240920172703440.png)
+
+
+
+
+
+### Casuality
+> [!example]
+> 
+
+
+
+
+
+### Invertibility
+> [!example]
+
+
+
+## Parameter Redundancy
+> [!example]
+> ![](ARMA.assets/image-20240920172616427.png)![](ARMA.assets/image-20240920172634668.png)
+
+
 
 
 

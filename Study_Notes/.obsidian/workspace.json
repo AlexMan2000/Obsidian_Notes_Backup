@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
+                "file": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a996c4ecdf40b265",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +229,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -275,26 +287,40 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "b8842301b68d1b7e",
+  "active": "a996c4ecdf40b265",
   "lastOpenFiles": [
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920170247701.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.assets/image-20240921101723913.png",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.assets/image-20240921101702418.png",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.assets/image-20240921101653934.png",
+    "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md",
+    "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
+    "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md",
+    "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf",
+    "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf",
+    "Mathematics/Differential_Equations/MIT_18.03SC/2.1_Characteristic_Equation.md",
+    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
+    "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
+    "Computer_Science/Signal_Processing/Related_Resources.md",
     "Data_Science/Time_Series_Analysis/ARMA.md",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165942679.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165355926.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165235065.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165118044.png",
-    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920165103325.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164719667.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164656355.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164620548.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164356920.png",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets/image-20240920164204006.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920172703440.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920172634668.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920172616427.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920172529763.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920172524663.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920171435772.png",
+    "Data_Science/Time_Series_Analysis/ARMA.assets/image-20240920171427735.png",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
     "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
     "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
@@ -305,24 +331,10 @@
     "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
     "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
     "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md",
-    "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.md",
-    "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md",
-    "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
     "Computer_Science/Game_Development/UE5",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md",
-    "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md",
-    "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md",
-    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
     "Computer_Science/Computer_Networks/Network_Protocols/Application",
     "Computer_Science/Computer_Networks/Network_Protocols/Transport",
     "Computer_Science/Computer_Networks/Network_Protocols/Routing",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
-    "Computer_Science/Leetcode_Bank/位运算",
-    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.assets",
     "未命名.canvas"
   ]
 }
