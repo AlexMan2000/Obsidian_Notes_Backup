@@ -30,6 +30,12 @@
 > [!important]
 > ![](Transformer_Basics.assets/image-20240706222352687.png)
 > The frequency at eariler time steps are designed to be of high frequency since high-frequency signals are essential for capturing fine details and variations.
+>
+> **Why introducing sinusoidal functions?**
+> https://medium.com/@gunjassingh/positional-encoding-in-transformers-a-visual-and-intuitive-guide-0761e655cea7
+> 
+> **Importance of Linear Transformation in Positional Encoding?**
+> https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/
 
 
 
@@ -110,10 +116,9 @@
 
 
 
-
 # Implementations
 ## Self-Attention
-### Self-Attention Vanilla
+### Self-Attention Scaled
 > [!task]
 > ![](Transformer_Basics.assets/image-20240714124642225.png)![](Transformer_Basics.assets/image-20240714131235876.png) 
 > where $d_{k}$ is the dimension for query/key vectors.

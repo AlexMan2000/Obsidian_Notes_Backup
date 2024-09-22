@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -212,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,7 +229,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,6 +289,9 @@
   },
   "active": "a996c4ecdf40b265",
   "lastOpenFiles": [
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md",
     "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
     "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md",
     "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md",
@@ -328,9 +331,6 @@
     "Data_Science/Time_Series_Analysis/ARMA.assets",
     "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md",
     "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md",
-    "Computer_Science/Leetcode_Bank/Data_Structures/链表.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md",
     "Computer_Science/Game_Development/UE5",
     "Computer_Science/Computer_Networks/Network_Protocols/Application",
     "Computer_Science/Computer_Networks/Network_Protocols/Transport",

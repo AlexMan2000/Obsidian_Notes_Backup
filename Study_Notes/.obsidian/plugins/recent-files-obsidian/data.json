@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "RNN_Basics",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
+    },
+    {
+      "basename": "Sequence_to_Sequence_Model",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
+    },
+    {
       "basename": "Fourier_Transforms",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "维护窗口性质",
       "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
-    },
-    {
-      "basename": "数组",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/数组.md"
-    },
-    {
-      "basename": "堆",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/堆.md"
-    },
-    {
-      "basename": "计数问题",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
     }
   ],
   "omittedPaths": [],
