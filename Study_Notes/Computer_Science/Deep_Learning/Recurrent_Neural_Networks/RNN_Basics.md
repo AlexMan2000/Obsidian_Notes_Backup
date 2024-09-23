@@ -39,8 +39,27 @@
 # RNN Training
 ## Vanishing/Exploding Gradient
 > [!important]
-> ![](RNN_Basics.assets/image-20240704231032016.png)
+> **Why is vanishing gradient a problem?**
+> ![](RNN_Basics.assets/image-20240704231032016.png)![](RNN_Basics.assets/image-20240922133314808.png)
+> **Why is exploding gradient a problem?**
+> 
+> ![](RNN_Basics.assets/image-20240922133531610.png)
 > Examples see [Analyzing RNN Gradients](RNN_Basics.md#Analyzing%20RNN%20Gradients)
+
+
+> [!proof] Proof Sketch
+> ![](RNN_Basics.assets/image-20240922133243764.png)![](RNN_Basics.assets/image-20240922133249438.png)![](RNN_Basics.assets/image-20240922133255320.png)
+
+> [!proof] Proof
+> ![](RNN_Basics.assets/image-20240922133124847.png)![](RNN_Basics.assets/image-20240922133131341.png)![](RNN_Basics.assets/image-20240922133141871.png)![](RNN_Basics.assets/image-20240922133148542.png)![](RNN_Basics.assets/image-20240922133154524.png)
+
+
+
+
+
+
+
+
 
 
 
@@ -66,6 +85,9 @@
 > 
 > Examples see [Analyzing RNN Gradients](RNN_Basics.md#Analyzing%20RNN%20Gradients)
 
+### Gradient Clipping
+> [!def]
+> ![](RNN_Basics.assets/image-20240922133602411.png)
 
 
 
@@ -83,14 +105,26 @@
 > ![](RNN_Basics.assets/image-20240706105649763.png)![](RNN_Basics.assets/image-20240706105659912.png)![](RNN_Basics.assets/image-20240706105705195.png)
 
 
-## Multiscale Information
+# Bi-directional RNNs
+## Motivations
+> [!motiv]
+> ![](RNN_Basics.assets/image-20240922175307363.png)
+
+
+## Model Definition
+> [!def]
+> ![](RNN_Basics.assets/image-20240922175324345.png)![](RNN_Basics.assets/image-20240922175508666.png)![](RNN_Basics.assets/image-20240922175518015.png)
+
+> [!bug] Caveats
+> ![](RNN_Basics.assets/image-20240922175532565.png)
 
 
 
-# LSTM
+
+# LSTM - Fixing Vanishing Gradient
 ## Definition
 > [!def]
-> ![](RNN_Basics.assets/image-20240705085421376.png)
+> ![](RNN_Basics.assets/image-20240705085421376.png)![](RNN_Basics.assets/image-20240922174901787.png)
 > Here the output $h_{t}$ of a hidden layer of RNN is obtained by element-wise product of $$h_{t}=\tilde{o}_{t}\odot tanh(a_{t})$$
 > - $h_{t}$ is the hidden state
 > - $a_{t}$ is the cell state, or candidate state($C_{t}$ in some literatures)
@@ -126,6 +160,16 @@
 ## Output Gate
 > [!def]
 > ![](RNN_Basics.assets/image-20240705085842703.png)
+
+
+
+## Summary
+> [!summary]
+> ![](RNN_Basics.assets/image-20240922180111110.png)![](RNN_Basics.assets/image-20240922180146354.png)
+
+
+
+
 
 
 

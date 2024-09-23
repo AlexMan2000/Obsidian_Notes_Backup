@@ -84,6 +84,10 @@
 > [!def]
 > ![](Transformer_Basics.assets/image-20240707111213345.png)
 > In reality, cross-attention is multi-headed and the number of heads are the same for encoder and decoder.
+> 
+> ![](Transformer_Basics.assets/image-20240922182804167.png)
+
+
 
 
 
@@ -101,7 +105,19 @@
 
 
 
-# Attention Variants
+# Transformer Attention Variants
+## K, Q, V Attention
+> [!def]
+> ![](Transformer_Basics.assets/image-20240922180911435.png)
+> In this model, all the values in the $K, Q, V$ matrices are learned fromd data.
+> 
+> ![](Transformer_Basics.assets/image-20240714152418150.png)![](Transformer_Basics.assets/image-20240714161507788.png)
+
+> [!proof] Statistics
+> ![](Transformer_Basics.assets/image-20240922180925572.png)![](Transformer_Basics.assets/image-20240922180930917.png)
+
+
+
 ## Argmax Attention
 > [!def]
 > ![](Transformer_Basics.assets/image-20240714180243070.png)![](Transformer_Basics.assets/image-20240714180255095.png)![](Transformer_Basics.assets/image-20240714180303902.png)
@@ -118,7 +134,7 @@
 
 # Implementations
 ## Self-Attention
-### Self-Attention Scaled
+### Scaled Dot Product Attention
 > [!task]
 > ![](Transformer_Basics.assets/image-20240714124642225.png)![](Transformer_Basics.assets/image-20240714131235876.png) 
 > where $d_{k}$ is the dimension for query/key vectors.

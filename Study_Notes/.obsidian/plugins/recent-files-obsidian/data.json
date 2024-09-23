@@ -1,16 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "NMT(Neural Machine Translation)",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md"
+    },
+    {
+      "basename": "Convolution_Filters",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+    },
+    {
       "basename": "Transformer_Basics",
       "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "Torch_Venv相关",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+    },
+    {
+      "basename": "Sequence_to_Sequence_Model",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
     },
     {
       "basename": "RNN_Basics",
       "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
     },
     {
-      "basename": "Sequence_to_Sequence_Model",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
+      "basename": "System_Representations",
+      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
+    },
+    {
+      "basename": "ARMA",
+      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
       "basename": "Fourier_Transforms",
@@ -27,10 +55,6 @@
     {
       "basename": "Continuous_Time_Fourier_Series",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "System_Representations",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
     },
     {
       "basename": "Difference_Equations",
@@ -81,16 +105,8 @@
       "path": "Computer_Science/Signal_Processing/Related_Resources.md"
     },
     {
-      "basename": "ARMA",
-      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
-    },
-    {
       "basename": "Basic_Time_Series",
       "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
     },
     {
       "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
@@ -183,22 +199,6 @@
     {
       "basename": "栈",
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/栈.md"
-    },
-    {
-      "basename": "双指针技巧",
-      "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
-    },
-    {
-      "basename": "队列",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/队列.md"
-    },
-    {
-      "basename": "Ch1_DPV_Intro_Big-O",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
-    },
-    {
-      "basename": "维护窗口性质",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
     }
   ],
   "omittedPaths": [],
