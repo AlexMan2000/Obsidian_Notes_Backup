@@ -271,12 +271,21 @@ print(ht[-1])
 > ![](NMT(Neural%20Machine%20Translation).assets/image-20240923081630860.png)
 
 
+## Comparisons
+> [!important]
+> ![](NMT(Neural%20Machine%20Translation).assets/image-20240923082946355.png)
+
+
+
+
 # Practical Implementation
-## Vocab Creation
+> [!important]
+> Github Repo: https://github.com/AlexMan2000/Stanford_CS224n
 
 
-
-## Model Building
+## Training Results
+> [!test] Results
+> ![](NMT(Neural%20Machine%20Translation).assets/image-20240923103550089.png)![](NMT(Neural%20Machine%20Translation).assets/image-20240923103606007.png)
 
 
 

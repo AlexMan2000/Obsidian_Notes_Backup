@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87b793644394d0e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md",
+                "file": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md",
                 "mode": "source",
                 "source": false
               }
@@ -287,31 +275,40 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "87b793644394d0e8",
+  "active": "b8842301b68d1b7e",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923081630860.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923081621226.png",
-    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923103606007.png",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923103550089.png",
+    "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.assets/image-20240923095832661.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.assets/image-20240923095803162.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.assets",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.md",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.assets/image-20240923075924794.png",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.assets/image-20240923075910935.png",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.assets",
+    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
+    "Computer_Science/Natural_Language_Processing/Model_Evaluation",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets/image-20240923092821709.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets/image-20240923092807783.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets/image-20240923092655410.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets/image-20240923092609265.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets/image-20240923092542748.png",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.assets",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240922203707047.png",
+    "Computer_Science/Natural_Language_Processing/Hugging_Face_Models",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923082946355.png",
+    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets/image-20240923081630860.png",
+    "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md",
+    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
+    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.assets",
     "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md",
     "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240922182804167.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240922180930917.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240922180925572.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20240922180911435.png",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240922180146354.png",
-    "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.assets/image-20240922180111110.png",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).assets",
     "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md",
-    "Data_Science/Time_Series_Analysis/ARMA.md",
     "Computer_Science/Computer_Science_Tools/DataBase_Tools/MongoDB.md",
     "Computer_Science/Computer_Science_Tools/Big_Data_Tools/Map_Reduce.md",
     "Computer_Science/Computer_Science_Tools/Deep_Learning",
@@ -324,17 +321,8 @@
     "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md",
     "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md",
-    "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md",
     "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf",
     "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf",
-    "Mathematics/Differential_Equations/MIT_18.03SC/2.1_Characteristic_Equation.md",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
-    "Computer_Science/Signal_Processing/EE120Labs/Solutions.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.assets",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling",
-    "Data_Science/Time_Series_Analysis/ARMA.assets",
-    "Computer_Science/Game_Development/UE5",
     "未命名.canvas"
   ]
 }

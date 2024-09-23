@@ -5,12 +5,32 @@
       "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md"
     },
     {
-      "basename": "Convolution_Filters",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
+      "basename": "ARMA",
+      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+    },
+    {
+      "basename": "BERT",
+      "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
+    },
+    {
+      "basename": "Finetuning",
+      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md"
+    },
+    {
+      "basename": "Pretraining",
+      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.md"
     },
     {
       "basename": "Transformer_Basics",
       "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "BLEU",
+      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
+    },
+    {
+      "basename": "Convolution_Filters",
+      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
     },
     {
       "basename": "Torch_Venv相关",
@@ -35,10 +55,6 @@
     {
       "basename": "System_Representations",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
-    },
-    {
-      "basename": "ARMA",
-      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
       "basename": "Fourier_Transforms",
@@ -183,22 +199,6 @@
     {
       "basename": "Proj1_Traceroute",
       "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "4_Addressing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
-    },
-    {
-      "basename": "单串",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
-      "basename": "栈",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/栈.md"
     }
   ],
   "omittedPaths": [],
