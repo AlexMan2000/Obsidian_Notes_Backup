@@ -38,26 +38,7 @@
 
 ### Implementations
 > [!code]
-```python
-def acf_impl(x, nlags):
-    """
-    Your implementation for the Autocorrelation Function.
-    Your implementation will be checked against statsmodels.tsa.stattools.acf.
-    @param x: a 1-d numpy array
-    @param nlags: an integer
-    @return a 1-d numpy array with (nlags+1) elements. 
-    The first element denotes the acf at lag = 0 (1.0 by definition).
-    """
-    #TODO: replace the template code with your code here. This part will be graded.
-    assert len(x) > nlags
-    x_bar = np.mean(x)
-    output = []
-    for lag in range(nlags+1):
-        top_len = len(x) - lag
-        gamma = np.sum((x[lag:]-x_bar)*(x[:top_len]-x_bar))/len(x)
-        output.append(gamma)
-    return np.array(output)/output[0]
-```
+> Implementation see [Implementations](Basic_Time_Series.md#Stationary%20Estimates#Implementations)
 
 
 
@@ -169,7 +150,7 @@ def acf_impl(x, nlags):
 
 
 
-# Linear Process Estimates
+# Linear Process
 ## Stationary Linear Process Definition
 > [!def]
 > ![](Basic_Time_Series.assets/image-20240920123647775.png)
@@ -182,7 +163,23 @@ def acf_impl(x, nlags):
 
 
 
-## Estimating mu
+
+## Linear Process Estimates
+> [!def]
+> A **linear stochastic process** is a type of stochastic (random) process where the future state of the process is a linear function of its past states and a random disturbance or noise term. 
+> $$X_t=c+\sum_{i=1}^p \phi_i X_{t-i}+\epsilon_t$$
+> where:
+> - $X_t$ is the value of the process at time $t$,
+> - $c$ is a constant term (intercept),
+> - $\phi_i$ are the coefficients of the linear function (these represent the dependence of the current value $X_t$ on past values),
+> - $X_{t-i}$ represents the past values of the process (lagged terms),
+> - $\epsilon_t$ is a stochastic or random noise term (often assumed to be white noise, i.e., uncorrelated random noise with a mean of zero).
+> 
+> ![](ARMA.assets/image-20240920111753334.png)
+
+
+
+### Estimating mu
 > [!important]
 > ![](Basic_Time_Series.assets/image-20240920164356920.png)![](Basic_Time_Series.assets/image-20240920150555761.png)
 

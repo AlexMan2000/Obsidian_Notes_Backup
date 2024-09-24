@@ -261,6 +261,8 @@ print(ht[-1])
 # NMT Attention
 > [!def]
 > Paper Source: https://paperswithcode.com/method/multiplicative-attention
+
+
 ## Multiplicative Attention
 > [!important]
 > ![](NMT(Neural%20Machine%20Translation).assets/image-20240923081621226.png)

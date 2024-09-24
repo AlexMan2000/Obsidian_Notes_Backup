@@ -1,16 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "NMT(Neural Machine Translation)",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md"
-    },
-    {
       "basename": "ARMA",
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
+      "basename": "Torch_Venv相关",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
+    },
+    {
+      "basename": "Tokenization",
+      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+    },
+    {
+      "basename": "Parameter_Estimation",
+      "path": "Data_Science/Time_Series_Analysis/Parameter_Estimation.md"
+    },
+    {
+      "basename": "Prediction",
+      "path": "Data_Science/Time_Series_Analysis/Prediction.md"
+    },
+    {
+      "basename": "Basic_Time_Series",
+      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
+    },
+    {
+      "basename": "字典树",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
+    },
+    {
+      "basename": "2_Symmetric_Cryptography",
+      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md"
+    },
+    {
+      "basename": "BPE_Illustrated",
+      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/BPE_Illustrated.pdf"
+    },
+    {
       "basename": "BERT",
       "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
+    },
+    {
+      "basename": "NMT(Neural Machine Translation)",
+      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md"
     },
     {
       "basename": "Finetuning",
@@ -31,14 +67,6 @@
     {
       "basename": "Convolution_Filters",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
-    },
-    {
-      "basename": "Torch_Venv相关",
-      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
     },
     {
       "basename": "Sequence_to_Sequence_Model",
@@ -121,10 +149,6 @@
       "path": "Computer_Science/Signal_Processing/Related_Resources.md"
     },
     {
-      "basename": "Basic_Time_Series",
-      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
-    },
-    {
       "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
       "path": "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "4_System_Calls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
-      "basename": "字典树",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
-      "basename": "Word_Semantics",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Semantics.md"
-    },
-    {
-      "basename": "Numbers",
-      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
-    },
-    {
-      "basename": "Drawing 2024-09-12 09.35.41.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md"
-    },
-    {
-      "basename": "Proj1_Traceroute",
-      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
     }
   ],
   "omittedPaths": [],
