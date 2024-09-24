@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "ARMA",
-      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+      "basename": "Tokenization",
+      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
+    },
+    {
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
     },
     {
       "basename": "Torch_Venv相关",
       "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
     },
     {
-      "basename": "Tokenization",
-      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
+      "basename": "BERT",
+      "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
+    },
+    {
+      "basename": "ARMA",
+      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
       "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
@@ -39,10 +47,6 @@
     {
       "basename": "BPE_Illustrated",
       "path": "Computer_Science/Natural_Language_Processing/Tokenizations/BPE_Illustrated.pdf"
-    },
-    {
-      "basename": "BERT",
-      "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
     },
     {
       "basename": "NMT(Neural Machine Translation)",
@@ -195,10 +199,6 @@
     {
       "basename": "2_Iterators&Joins",
       "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
-    },
-    {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
     }
   ],
   "omittedPaths": [],

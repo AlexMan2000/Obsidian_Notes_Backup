@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
+                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "29b04c6ac421d9df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "736aeb70201c5bf3",
             "type": "leaf",
             "state": {
@@ -53,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data_Science/Time_Series_Analysis/ARMA.md",
+                "file": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,11 +262,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f08f3d11cb7acc72",
+  "active": "619ee698eb387291",
   "lastOpenFiles": [
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
     "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md",
+    "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
     "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md",
     "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Data_Science/Time_Series_Analysis/Parameter_Estimation.md",
     "Data_Science/Time_Series_Analysis/Prediction.md",
@@ -277,7 +290,6 @@
     "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.assets",
     "Computer_Science/Natural_Language_Processing/Tokenizations/BPE_Illustrated.pdf",
     "Computer_Science/Natural_Language_Processing/Tokenizations/WordPiece_Illustrated.pdf",
-    "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
     "Computer_Science/Natural_Language_Processing/Tokenizations",
     "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md",
     "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md",
