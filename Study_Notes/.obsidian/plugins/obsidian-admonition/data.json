@@ -312,6 +312,18 @@
       "title": "Design",
       "injectColor": true,
       "noTitle": false
+    },
+    "config": {
+      "type": "config",
+      "color": "60, 175, 131",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-settings"
+      },
+      "command": false,
+      "title": "Configurations",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

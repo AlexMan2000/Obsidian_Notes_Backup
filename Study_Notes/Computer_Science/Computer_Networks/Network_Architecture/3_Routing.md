@@ -151,73 +151,108 @@
 
 
 # Distance-Vector Routing Protocols
-## Algorithm: Bellman Ford
+## Rule 1: Distributed Bellman Ford
+### Algorithm
 > [!algo]
 > ![](3_Routing.assets/image-20240412141222594.png)![](3_Routing.assets/image-20240412141237635.png)![](3_Routing.assets/image-20240412141428207.png)
 > 1. **Periodic Updates**: Routers configured to use distance vector routing protocols (such as RIP - Routing Information Protocol) periodically broadcast their entire routing table. This interval is often fixed; for example, RIP typically sends updates every 30 seconds.
 > 2. **Triggered Updates**: When there is a significant change in the routing table, such as a change in a route's metric or the addition or removal of a route, the router will send out an update immediately to its neighbors. This is known as a triggered update. Triggered updates help the network converge more quickly by promptly disseminating changes in network topology.
 > 3. **Initial Startup**: When a router first starts up or comes online, it may broadcast its routing table to inform its neighbors of its presence and to learn about the network topology from responses it receives.
+> 
+> ![](3_Routing.assets/image-20240925153349338.png)
 
 > [!example]
 > ![](3_Routing.assets/image-20240412143406584.png)![](3_Routing.assets/image-20240412143645275.png)![](3_Routing.assets/image-20240412143816339.png)
 
 
 
-## State Information Diffusion
+### State Information Diffusion
 > [!important]
 > ![](3_Routing.assets/image-20240412144022753.png)![](3_Routing.assets/image-20240412144014827.png)
 
 
 
 
-
-
-## Link Cost Changes
+### Link Cost Changes
 > [!def]
 > ![](3_Routing.assets/image-20240412144255262.png)![](3_Routing.assets/image-20240412151010523.png)
 
 
 
-## Problem 1: Counting to Infinity
-> [!def]
-> ![](3_Routing.assets/image-20240412145110359.png)
-> One solution is to pick a maximum value (e.g. 16) and stop there.
-
-
-### Solution 1: Split Horizon
-> [!def]
-> The concept of "split horizon" is a routing strategy used in computer networks to prevent routing loops and ensure efficient network traffic management.
-> ![](3_Routing.assets/image-20240412150323349.png)
->
-
-
-### Solution 2: Poison Reverse
-> [!def]
-> **Poison reverse**: if a router advertises a loop, set that value to ∞ so the next advertisement is immediately accepted(which won't cause a new round of broadcasting). It is an optimization to split horizon.
-> ![](3_Routing.assets/image-20240412160048208.png)![](3_Routing.assets/image-20240412160055570.png)![](3_Routing.assets/image-20240412160114981.png)![](3_Routing.assets/image-20240412160120825.png)![](3_Routing.assets/image-20240412160131364.png)
 
 
 
 
-## Problem 2: Link Failures
-### Solution 1: TTL
-> [!def]
-> If some link fails, we have to wait for some time(TTL) until then we should eliminate the link from the DV table.
-> ![](3_Routing.assets/image-20240412151136005.png)![](3_Routing.assets/image-20240412151153351.png)![](3_Routing.assets/image-20240412151244552.png)![](3_Routing.assets/image-20240412151251491.png)
-> More example see [Distance_Vector_Algo](Distance_Vector_Algo.pdf)
+## Rule 2: Update From Next-Hop
+> [!important]
+> 因为`Network Topology`随时会发生改变，来自`Next Hop`的最佳距离可会发生改变，那么这些依赖于`Next Hop`的路由器也需要做相应的更新。
+> ![](3_Routing.assets/image-20240925153502997.png)![](3_Routing.assets/image-20240925153511022.png)![](3_Routing.assets/image-20240925153450772.png)
+
+
+
+## Rule 3: Resending/Expiring
+> [!important]
+> **Packets can get dropped! So resend the packet periodically, believeing that it will finally reach the destination.**  本质上就是为了确保我的下家收到信息，我每隔一段时间发一次。
+> ![](3_Routing.assets/image-20240925153704535.png)![](3_Routing.assets/image-20240925153711984.png)
+> **Routes/Links can get failed! So delete the corresponding next hop if we haven't received any packets from it after certain time(called time to live TTL).** 本质就是一段时间没收到我下家的消息，就删除表中有关下家的路径信息。
 > 
-> TTL for some DV table entry is initialized to some constant which is predetermined by the router operator. 
+> ![](3_Routing.assets/image-20240925155232516.png)![](3_Routing.assets/image-20240925155239521.png)
+
+
+
+## Rule 4: Poisoning Expired Routes
+> [!important]
+> 等待`TTL expire`很费时间，在等待的过程中可能不断地有其他的潜在Next Hop发来信息但都因为路径长度太大而被拒绝，这就导致了因为`Network Topology`发生变化之后某些路由器不能及时地更换最优路径。下面的例子说明了这个情况：
+> ![](3_Routing.assets/image-20240925160044716.png)
+> R3不能在R2报废的同时就更新其`Forwarding Table`， 我们想要更早的`detect failure`, 就需要`Poisoning`（发送一个无穷大的路径长度）。
 > 
-> Every time a entry gets recharged, the TTL is reinitialized.
-
-
-### Solution 2: Poison
-> [!def]
-> Instead of clearing out the table entry when that entry's TTL expires, we could change the entry's cost to destination to $\infty$ and broadcast it.
-> ![](3_Routing.assets/image-20240412155832633.png)![](3_Routing.assets/image-20240412155847086.png)
+> ![](3_Routing.assets/image-20240925160205460.png)![](3_Routing.assets/image-20240925160525244.png)
 
 
 
+
+## 2-Loop Problem
+### Rule 5A: Split Horizon(No next hop)
+> [!important]
+> ![](3_Routing.assets/image-20240925161027733.png)![](3_Routing.assets/image-20240925161120617.png)![](3_Routing.assets/image-20240925161128837.png)
+
+
+
+### Rule 5B: Poison Reverse(white lie)
+> [!important]
+> ![](3_Routing.assets/image-20240925161505773.png)
+
+
+
+### When to use which
+> [!important]
+> ![](3_Routing.assets/image-20240925161735384.png)
+
+
+
+
+### Summary
+> [!summary]
+> ![](3_Routing.assets/image-20240925161612537.png)![](3_Routing.assets/image-20240925161629569.png)
+
+
+
+
+
+
+
+
+
+
+
+
+## N-Loop: Counting to Infinity Problem
+> [!bug] CTI Problem Demo
+> ![](3_Routing.assets/image-20240925162144530.png)![](3_Routing.assets/image-20240925162151094.png)![](3_Routing.assets/image-20240925162201792.png)![](3_Routing.assets/image-20240925162220751.png)![](3_Routing.assets/image-20240925162235806.png)
+
+
+> [!proof] Solution
+> ![](3_Routing.assets/image-20240925162358520.png)![](3_Routing.assets/image-20240925162408177.png)![](3_Routing.assets/image-20240925162414713.png)
 
 
 
@@ -231,6 +266,10 @@
 > 	- Exception: any cost given by current best neighbor will overwrite the entry, even if it’s larger
 > 	- Exception to exception: stop counting at some maximum value to avoid counting to infinity when a loop exists
 > - Direct routes need to be manually populated to initialize cost
+> 
+> ![](3_Routing.assets/image-20240925162447708.png)
+
+
 
 
 

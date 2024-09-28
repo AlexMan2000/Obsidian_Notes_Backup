@@ -1,24 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "Tokenization",
-      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
+      "basename": "Plugins",
+      "path": "Computer_Science/Web_Development/Webpack/Plugins.md"
     },
     {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+      "basename": "热更新(HMR)",
+      "path": "Computer_Science/Web_Development/Webpack/热更新(HMR).md"
+    },
+    {
+      "basename": "AWS-Deployment",
+      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
+    },
+    {
+      "basename": "Websocket",
+      "path": "Computer_Science/Web_Development/Network/Websocket.md"
     },
     {
       "basename": "Torch_Venv相关",
       "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
     },
     {
+      "basename": "Loaders",
+      "path": "Computer_Science/Web_Development/Webpack/Loaders.md"
+    },
+    {
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+    },
+    {
+      "basename": "3_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
+    },
+    {
+      "basename": "循环不变量(Loop Invariant)",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md"
+    },
+    {
+      "basename": "维护窗口性质",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
+    },
+    {
+      "basename": "计数问题",
+      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
+    },
+    {
+      "basename": "双指针技巧",
+      "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
+    },
+    {
       "basename": "BERT",
       "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
     },
     {
+      "basename": "Proj2_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md"
+    },
+    {
+      "basename": "IP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md"
+    },
+    {
       "basename": "ARMA",
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+    },
+    {
+      "basename": "Webpack基本定义配置",
+      "path": "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.md"
+    },
+    {
+      "basename": "Tokenization",
+      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
     },
     {
       "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
@@ -147,58 +199,6 @@
     {
       "basename": "Solutions",
       "path": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Signal_Processing/Related_Resources.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.00.41.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md"
-    },
-    {
-      "basename": "File_System_Data_Structure",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/6_Filesystem/Unix_V6_File_Systems/File_System_Data_Structure.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
-    },
-    {
-      "basename": "2_Decision_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/2_Decision_Networks.md"
-    },
-    {
-      "basename": "1_Multivariable_Gaussian",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/1_Multivariable_Gaussian.md"
-    },
-    {
-      "basename": "3_MDP_Advanced",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
-    },
-    {
-      "basename": "链表",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/链表.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "IP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md"
-    },
-    {
-      "basename": "Imitation_Learning",
-      "path": "Computer_Science/Reinforcement_Learning/Imitation_Learning/Imitation_Learning.md"
-    },
-    {
-      "basename": "Q-Learning",
-      "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
-    },
-    {
-      "basename": "2_Iterators&Joins",
-      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
     }
   ],
   "omittedPaths": [],
