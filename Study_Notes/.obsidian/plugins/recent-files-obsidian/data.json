@@ -2,19 +2,23 @@
   "recentFiles": [
     {
       "basename": "代码分割",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md"
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
     },
     {
       "basename": "AsyncSplitting",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/AsyncSplitting.gif"
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/AsyncSplitting.gif"
     },
     {
       "basename": "不同打包模式",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/不同打包模式.md"
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/不同打包模式.md"
     },
     {
       "basename": "Treeshaking",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/Treeshaking.md"
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md"
     },
     {
       "basename": "HMR(热更新)",
@@ -39,10 +43,6 @@
     {
       "basename": "Optimizer",
       "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
     },
     {
       "basename": "Plugins",

@@ -8,41 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "619ee698eb387291",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80b3e2fd211f1d94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "736aeb70201c5bf3",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -164,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,16 +216,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "80b3e2fd211f1d94",
+  "active": "736aeb70201c5bf3",
   "lastOpenFiles": [
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/image-20240929125801473.png",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/AsyncSplitting.gif",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/image-20240929123330222.png",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/不同打包模式.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/Treeshaking.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化",
+    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
+    "Computer_Science/Web_Development/前端性能优化",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/image-20240929133509543.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/image-20240929130233183.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/image-20240929125801473.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/AsyncSplitting.gif",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/image-20240929123330222.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/不同打包模式.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化",
     "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md",
     "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点",
@@ -263,19 +245,13 @@
     "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.md",
     "Computer_Science/Web_Development/Webpack/Webpack 常用命令总结.docx",
     "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
-    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Computer_Science/Web_Development/Webpack/热更新(HMR).md",
     "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928165304464.png",
     "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928165051727.png",
-    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928164935341.png",
-    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928164846590.png",
     "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets",
     "Computer_Science/Web_Development/Webpack/基础知识点/Plugins.md",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20240927182943153.png",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets",
     "Computer_Science/Web_Development/Network/Websocket.md",
-    "Computer_Science/Web_Development/项目部署/Untitled",
     "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
     "Computer_Science/Web_Development/Webpack/基础知识点/Loaders.md",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
