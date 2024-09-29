@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/Plugins.md",
+                "file": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
                 "mode": "source",
                 "source": false
               }
@@ -41,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/Plugins.md",
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/Plugins.md",
+                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,20 +239,45 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "619ee698eb387291",
+  "active": "80b3e2fd211f1d94",
   "lastOpenFiles": [
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/image-20240929125801473.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/AsyncSplitting.gif",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/image-20240929123330222.png",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/不同打包模式.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/Treeshaking.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化",
+    "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Untitled",
+    "Computer_Science/Web_Development/Webpack/基础知识点",
+    "Computer_Science/Web_Development/Webpack/基础知识点/打包React_Vue代码.md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.assets/image-20240928222043360.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.assets/image-20240928215626270.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.assets/image-20240928215527500.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.assets",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.md",
+    "Computer_Science/Web_Development/Webpack/Webpack 常用命令总结.docx",
+    "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
+    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
     "Computer_Science/Web_Development/Webpack/热更新(HMR).md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928165304464.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928165051727.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928164935341.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets/image-20240928164846590.png",
+    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.assets",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Plugins.md",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20240927182943153.png",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets",
     "Computer_Science/Web_Development/Network/Websocket.md",
     "Computer_Science/Web_Development/项目部署/Untitled",
-    "Computer_Science/Web_Development/项目部署",
     "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
-    "Computer_Science/Web_Development/Webpack/Plugins.md",
-    "Computer_Science/Computer_Science_Tools/Untitled",
-    "Computer_Science/Web_Development/Webpack/Loaders.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/Loaders.md",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md",
     "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md",
@@ -259,32 +285,8 @@
     "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
     "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162447708.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162414713.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162408177.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162358520.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162235806.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162220751.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162201792.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162151094.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.assets/image-20240925162144530.png",
-    "Computer_Science/Computer_Networks/Network_Architecture/Distance_Vector_Protocol.pdf",
-    "Computer_Science/Computer_Networks/Network_Architecture/Distance_Vector_Algo.pdf",
     "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md",
     "Data_Science/Time_Series_Analysis/ARMA.md",
-    "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.md",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md",
-    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
-    "Data_Science/Time_Series_Analysis/Parameter_Estimation.md",
-    "Data_Science/Time_Series_Analysis/Prediction.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
-    "Data_Science/Time_Series_Analysis/Parameter_Estimation.assets",
-    "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md",
-    "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenizers.md",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.assets",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/BPE_Illustrated.pdf",
-    "Computer_Science/Natural_Language_Processing/Tokenizations/WordPiece_Illustrated.pdf",
     "未命名.canvas"
   ]
 }

@@ -1,12 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Plugins",
-      "path": "Computer_Science/Web_Development/Webpack/Plugins.md"
+      "basename": "代码分割",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.md"
     },
     {
-      "basename": "热更新(HMR)",
-      "path": "Computer_Science/Web_Development/Webpack/热更新(HMR).md"
+      "basename": "AsyncSplitting",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/代码分割.assets/AsyncSplitting.gif"
+    },
+    {
+      "basename": "不同打包模式",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/不同打包模式.md"
+    },
+    {
+      "basename": "Treeshaking",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/前端性能优化/Treeshaking.md"
+    },
+    {
+      "basename": "HMR(热更新)",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md"
+    },
+    {
+      "basename": "Webpack基本定义配置",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
+    },
+    {
+      "basename": "打包React_Vue代码",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/打包React_Vue代码.md"
+    },
+    {
+      "basename": "Babel处理ES6代码",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md"
+    },
+    {
+      "basename": "SourceMap",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.md"
+    },
+    {
+      "basename": "Optimizer",
+      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+    },
+    {
+      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
+      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
+    },
+    {
+      "basename": "Plugins",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Plugins.md"
     },
     {
       "basename": "AWS-Deployment",
@@ -22,11 +62,7 @@
     },
     {
       "basename": "Loaders",
-      "path": "Computer_Science/Web_Development/Webpack/Loaders.md"
-    },
-    {
-      "basename": "Optimizer",
-      "path": "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md"
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Loaders.md"
     },
     {
       "basename": "3_Routing",
@@ -65,16 +101,8 @@
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
-      "basename": "Webpack基本定义配置",
-      "path": "Computer_Science/Web_Development/Webpack/Webpack基本定义配置.md"
-    },
-    {
       "basename": "Tokenization",
       "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
     },
     {
       "basename": "Parameter_Estimation",
@@ -171,34 +199,6 @@
     {
       "basename": "LTI_Filtering_Applications",
       "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
-    },
-    {
-      "basename": "Filters",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Filters.md"
-    },
-    {
-      "basename": "Signals_LTI_Systems",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/Signals_LTI_Systems.md"
-    },
-    {
-      "basename": "class1-reading",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/class1-reading.pdf"
-    },
-    {
-      "basename": "class2-reading",
-      "path": "Mathematics/Differential_Equations/MIT_18.031/class2-reading.pdf"
-    },
-    {
-      "basename": "2.1_Characteristic_Equation",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/2.1_Characteristic_Equation.md"
-    },
-    {
-      "basename": "Machine_Translation",
-      "path": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md"
-    },
-    {
-      "basename": "Solutions",
-      "path": "Computer_Science/Signal_Processing/EE120Labs/Solutions.md"
     }
   ],
   "omittedPaths": [],
