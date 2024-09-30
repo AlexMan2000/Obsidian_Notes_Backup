@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "动态库DLL-提升速度",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md"
+    },
+    {
+      "basename": "HMR(热更新)",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md"
+    },
+    {
+      "basename": "Babel处理ES6代码",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md"
+    },
+    {
+      "basename": "Webpack性能优化专题",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md"
+    },
+    {
+      "basename": "懒加载",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/懒加载.md"
+    },
+    {
       "basename": "代码分割",
       "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md"
     },
@@ -21,20 +41,12 @@
       "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md"
     },
     {
-      "basename": "HMR(热更新)",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md"
-    },
-    {
       "basename": "Webpack基本定义配置",
       "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
     },
     {
       "basename": "打包React_Vue代码",
       "path": "Computer_Science/Web_Development/Webpack/基础知识点/打包React_Vue代码.md"
-    },
-    {
-      "basename": "Babel处理ES6代码",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md"
     },
     {
       "basename": "SourceMap",
@@ -187,18 +199,6 @@
     {
       "basename": "Difference_Equations",
       "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
-    },
-    {
-      "basename": "Z-Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
-    },
-    {
-      "basename": "3.5_Impulse_Response",
-      "path": "Mathematics/Differential_Equations/MIT_18.03SC/3.5_Impulse_Response.md"
-    },
-    {
-      "basename": "LTI_Filtering_Applications",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/LTI_Filtering_Applications.md"
     }
   ],
   "omittedPaths": [],
