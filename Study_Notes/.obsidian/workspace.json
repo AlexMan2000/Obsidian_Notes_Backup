@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
+                "file": "Data_Science/Time_Series_Analysis/(G)ARCH.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
+                "file": "Data_Science/Time_Series_Analysis/(G)ARCH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
+                "file": "Data_Science/Time_Series_Analysis/(G)ARCH.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,8 +218,16 @@
   },
   "active": "736aeb70201c5bf3",
   "lastOpenFiles": [
-    "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md",
+    "Data_Science/Time_Series_Analysis/ARMA.md",
+    "Data_Science/Time_Series_Analysis/(G)ARCH.md",
+    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
+    "Data_Science/Time_Series_Analysis/Prediction.md",
+    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md",
+    "Data_Science/Time_Series_Analysis/Related_Resources.md",
+    "Data_Science/Time_Series_Analysis/Parameter_Estimation.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
+    "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md",
     "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点/懒加载.md",
@@ -256,14 +264,6 @@
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
     "Computer_Science/Web_Development/Network/Websocket.md",
     "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Loaders.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/循环不变量(Loop Invariant).md",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md",
-    "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md",
-    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
-    "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md",
-    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
     "未命名.canvas"
   ]
 }

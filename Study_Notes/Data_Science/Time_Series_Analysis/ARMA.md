@@ -1,4 +1,4 @@
-# Auto-regressive Process
+ # Auto-regressive Process
 ## AR(1)
 > [!def]
 > ![](ARMA.assets/image-20240916173726936.png)

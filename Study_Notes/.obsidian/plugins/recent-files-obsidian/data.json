@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "(G)ARCH",
+      "path": "Data_Science/Time_Series_Analysis/(G)ARCH.md"
+    },
+    {
+      "basename": "ARMA",
+      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
+    },
+    {
+      "basename": "Basic_Time_Series",
+      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
+    },
+    {
+      "basename": "Prediction",
+      "path": "Data_Science/Time_Series_Analysis/Prediction.md"
+    },
+    {
+      "basename": "Difference_Equations",
+      "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Data_Science/Time_Series_Analysis/Related_Resources.md"
+    },
+    {
+      "basename": "Parameter_Estimation",
+      "path": "Data_Science/Time_Series_Analysis/Parameter_Estimation.md"
+    },
+    {
+      "basename": "1_Bayes_Networks",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
+    },
+    {
       "basename": "动态库DLL-提升速度",
       "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md"
     },
@@ -109,24 +141,8 @@
       "path": "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md"
     },
     {
-      "basename": "ARMA",
-      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
-    },
-    {
       "basename": "Tokenization",
       "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
-    },
-    {
-      "basename": "Parameter_Estimation",
-      "path": "Data_Science/Time_Series_Analysis/Parameter_Estimation.md"
-    },
-    {
-      "basename": "Prediction",
-      "path": "Data_Science/Time_Series_Analysis/Prediction.md"
-    },
-    {
-      "basename": "Basic_Time_Series",
-      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
     },
     {
       "basename": "字典树",
@@ -183,22 +199,6 @@
     {
       "basename": "Fourier_Transforms",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
-    },
-    {
-      "basename": "Discrete_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "Fast_Fourier_Transform",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md"
-    },
-    {
-      "basename": "Continuous_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Continuous_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "Difference_Equations",
-      "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
     }
   ],
   "omittedPaths": [],
