@@ -108,13 +108,103 @@
 # Transformer Attention Variants
 ## K, Q, V Attention
 > [!def]
-> ![](Transformer_Basics.assets/image-20240922180911435.png)
+> ![](Transformer_Basics.assets/image-20240922180911435.png)![](Transformer_Basics.assets/image-20241002121613322.png)
 > In this model, all the values in the $K, Q, V$ matrices are learned fromd data.
 > 
 > ![](Transformer_Basics.assets/image-20240714152418150.png)![](Transformer_Basics.assets/image-20240714161507788.png)
 
 > [!proof] Statistics
 > ![](Transformer_Basics.assets/image-20240922180925572.png)![](Transformer_Basics.assets/image-20240922180930917.png)
+```python
+def attention(query, key, value, mask=None, dropout=None):
+    # Your code here
+    """
+    input:
+    @param query: (batch_size, seq_len, d_q)
+    @param key: (batch_size, seq_len, d_k)
+    @param value: (batch_size, seq_len, d_v)
+    @param mask: (batch_size, seq_len) of 1 and 0 where 1 means
+    @param dropout: A predefined layer that apply dropout to the attention weights
+
+    returns:
+    - attention_out: (batch_size, seq_len, d_v)
+    - attention_weights: (batch_size, seq_len, seq_len)
+    """
+    # Step 1: Get the query/key embedding dim
+    d_k = query.size(-1)
+
+    # Step 2: Apply softmax(QK.T/sqrt{d_k}) to get the attn_weights ()
+    # Step 2.1 Calculate the dot product (batch_size, seq_len, seq_len)
+    batch_scores = torch.matmul(query, key.transpose(-2, -1)) / math.sqrt(d_k)
+
+    # Step 2.2 Apply the mask so that the q_i * k_j is zero where mask[:, j] is 0
+    if mask is not None:
+        # broadcast along seq_len, since we are masking out along the last dimension
+        mask = mask.unsqueeze(1)
+        batch_scores = batch_scores.masked_fill_(mask == 0, float("-inf"))
+    # Step 2.3 Calculate attention weights with softmax
+    attention_weights = batch_scores.softmax(dim=-1) # (batch_size, seq_len, seq_len)
+
+    # Step 3: Apply dropout
+    if dropout is not None:
+        attention_weights = dropout(attention_weights)
+
+    attention_out = torch.matmul(attention_weights, value)
+    return attention_out, attention_weights
+```
+
+
+
+## Multi-headed KQV Attention
+> [!def]
+> ![](Transformer_Basics.assets/image-20241002121803891.png)![](Transformer_Basics.assets/image-20241002121810348.png)![](Transformer_Basics.assets/image-20241002121637725.png)
+```python
+class MultiHeadedAttention(nn.Module):
+    def __init__(self, h, d_model, dropout=0.1):
+        # Your code here
+        """
+        Input:
+        @param h: number of heads to use
+        @param d_model: d_k * h, used for d_q = d_k, d_v
+        @param dropout: layer to dropout attention
+        """
+        super().__init__()
+        self.num_head = h
+        self.d_model = d_model
+        self.d_k = d_model // h
+        self.dropout = nn.Dropout(p=dropout)
+        # Wq, Wk, Wv, Wo projections
+        self.projections = clones(nn.Linear(d_model, d_model), 4)
+
+    def forward(self, query, key, value, mask=None):
+        # Your code here
+        """
+        Inputs:
+        - query/key/value: (batch_size, seq_len, d_model), d_model = h * d_k
+        - mask: (batch_size, d_model)
+        """
+
+        # Step 1: Calculate Attention(QWq, KWk, VWv)
+        kqv_packed = [query, key, value]
+        batch_size = query.size(0)
+        [query_input, key_input, value_input] = [
+            projection(mat).view(batch_size, -1, self.num_head, self.d_k).transpose(1, 2)
+            for projection, mat
+            in zip(self.projections[:-1], kqv_packed)]
+        # here query_input/key_input are (batch_size, num_head, seq_len, d_k)
+
+        # Step 2: Calculate multi-headed attention score
+        attention_out, self.attn = attention(query_input, key_input, value_input
+                                             , mask=mask, dropout=self.dropout)
+        # (batch_size, num_head, seq_len, d_v), (batch_size, num_head, seq_len, seq_len)
+
+        # Step 3: Perform concatenation
+        # Need Contiguous to make sure view() works fine
+        attention_out = attention_out.transpose(1, 2) \
+            .contiguous() \
+            .view(batch_size, -1, self.d_model)
+        return self.projections[-1](attention_out)
+```
 
 
 

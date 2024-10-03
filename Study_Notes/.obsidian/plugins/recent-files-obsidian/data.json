@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "BLEU",
+      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
+    },
+    {
+      "basename": "ROUGE",
+      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.md"
+    },
+    {
+      "basename": "Machine_Translation",
+      "path": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md"
+    },
+    {
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
       "basename": "(G)ARCH",
       "path": "Data_Science/Time_Series_Analysis/(G)ARCH.md"
     },
@@ -169,14 +185,6 @@
       "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.md"
     },
     {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
-    },
-    {
-      "basename": "BLEU",
-      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
-    },
-    {
       "basename": "Convolution_Filters",
       "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "RNN_Basics",
       "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
-    },
-    {
-      "basename": "System_Representations",
-      "path": "Computer_Science/Signal_Processing/1_LTI_Systems/System_Representations.md"
-    },
-    {
-      "basename": "Fourier_Transforms",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
     }
   ],
   "omittedPaths": [],
