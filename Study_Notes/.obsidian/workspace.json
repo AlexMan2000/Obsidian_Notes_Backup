@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
+                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3581f8a72e1daf2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Markov Blanket",
+                "query": "deepCl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
+                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
+                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,26 +225,51 @@
       "obsidian-custom-frames:Open Notion": false,
       "obsidian-custom-frames:Open Google Calendar": false,
       "templater-obsidian:Templater": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
   "active": "736aeb70201c5bf3",
   "lastOpenFiles": [
+    "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md",
+    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
+    "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.md",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets/add617c4ed8a26aa3474af944fcd8058_MD5.jpeg",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets/image-20241004120120254.png",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/轮播图.md",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md",
+    "Computer_Science/Web_Development/Javascript/对象/Property和Element.md",
+    "Computer_Science/Web_Development/前端测试和调试/Vitest.assets",
+    "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.md",
+    "Computer_Science/Web_Development/Javascript/对象/P8_对象_构造函数_实例化.md",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md",
+    "Computer_Science/Web_Development/Javascript/对象/未确认 668208.crdownload",
+    "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.docx",
+    "Computer_Science/Web_Development/Javascript/对象/未确认 976283.crdownload",
+    "Computer_Science/Web_Development/Javascript/对象/未确认 188956.crdownload",
+    "Computer_Science/Web_Development/Javascript/对象",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/文本溢出隐藏.md",
+    "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md",
+    "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md",
+    "Computer_Science/Web_Development/Javascript/实用函数/兼容性封装汇总.md",
+    "Computer_Science/Web_Development/Javascript/实用函数",
+    "Computer_Science/Web_Development/前端测试和调试",
+    "Computer_Science/Web_Development/Javascript/异步提升/异常处理.md",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md",
+    "Computer_Science/Web_Development/Javascript/异步提升",
+    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.md",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.assets/image-20241002200436219.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.assets",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002200414994.png",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002200233510.png",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195834262.png",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195812316.png",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195737462.png",
     "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195727857.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
     "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20241002141559328.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20241002141553213.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20241002141536670.png",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
     "Data_Science/Time_Series_Analysis/(G)ARCH.md",
     "Data_Science/Time_Series_Analysis/ARMA.md",
@@ -240,29 +277,6 @@
     "Data_Science/Time_Series_Analysis/Prediction.md",
     "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md",
     "Data_Science/Time_Series_Analysis/Related_Resources.md",
-    "Data_Science/Time_Series_Analysis/Parameter_Estimation.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
-    "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/懒加载.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
-    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
-    "Computer_Science/Web_Development/前端性能优化",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/不同打包模式.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Untitled",
-    "Computer_Science/Web_Development/Webpack/基础知识点",
-    "Computer_Science/Web_Development/Webpack/基础知识点/打包React_Vue代码.md",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.assets",
-    "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.md",
-    "Computer_Science/Deep_Learning/Neural_Network_Basics/Optimizer.md",
     "未命名.canvas"
   ]
 }

@@ -1,6 +1,70 @@
 {
   "recentFiles": [
     {
+      "basename": "Vitest",
+      "path": "Computer_Science/Web_Development/前端测试和调试/Vitest.md"
+    },
+    {
+      "basename": "并发控制",
+      "path": "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md"
+    },
+    {
+      "basename": "Promise重写",
+      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
+    },
+    {
+      "basename": "Console调试",
+      "path": "Computer_Science/Web_Development/前端测试和调试/Console调试.md"
+    },
+    {
+      "basename": "轮播图",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/轮播图.md"
+    },
+    {
+      "basename": "滚动元素到可视区域",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md"
+    },
+    {
+      "basename": "Property和Element",
+      "path": "Computer_Science/Web_Development/Javascript/对象/Property和Element.md"
+    },
+    {
+      "basename": "P9_构造函数及实例化原理_包装类",
+      "path": "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.md"
+    },
+    {
+      "basename": "P8_对象_构造函数_实例化",
+      "path": "Computer_Science/Web_Development/Javascript/对象/P8_对象_构造函数_实例化.md"
+    },
+    {
+      "basename": "进度条",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md"
+    },
+    {
+      "basename": "文本溢出隐藏",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/文本溢出隐藏.md"
+    },
+    {
+      "basename": "圆角渐变边框",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md"
+    },
+    {
+      "basename": "Useful_Functions",
+      "path": "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md"
+    },
+    {
+      "basename": "兼容性封装汇总",
+      "path": "Computer_Science/Web_Development/Javascript/实用函数/兼容性封装汇总.md"
+    },
+    {
+      "basename": "异常处理",
+      "path": "Computer_Science/Web_Development/Javascript/异步提升/异常处理.md"
+    },
+    {
+      "basename": "Finetuning",
+      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md"
+    },
+    {
       "basename": "BLEU",
       "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
     },
@@ -135,70 +199,6 @@
     {
       "basename": "维护窗口性质",
       "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/维护窗口性质.md"
-    },
-    {
-      "basename": "计数问题",
-      "path": "Computer_Science/Leetcode_Bank/Sliding_Windows/计数问题.md"
-    },
-    {
-      "basename": "双指针技巧",
-      "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
-    },
-    {
-      "basename": "BERT",
-      "path": "Computer_Science/Natural_Language_Processing/Hugging_Face_Models/BERT.md"
-    },
-    {
-      "basename": "Proj2_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md"
-    },
-    {
-      "basename": "IP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/Routing/IP.md"
-    },
-    {
-      "basename": "Tokenization",
-      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/Tokenization.md"
-    },
-    {
-      "basename": "字典树",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/字典树.md"
-    },
-    {
-      "basename": "2_Symmetric_Cryptography",
-      "path": "Computer_Science/Computer_Security/Ch3_Cryptography/1_Symmetric_Cryptography/2_Symmetric_Cryptography.md"
-    },
-    {
-      "basename": "BPE_Illustrated",
-      "path": "Computer_Science/Natural_Language_Processing/Tokenizations/BPE_Illustrated.pdf"
-    },
-    {
-      "basename": "NMT(Neural Machine Translation)",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/NMT(Neural Machine Translation).md"
-    },
-    {
-      "basename": "Finetuning",
-      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md"
-    },
-    {
-      "basename": "Pretraining",
-      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Pretraining.md"
-    },
-    {
-      "basename": "Convolution_Filters",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Convolution_Filters.md"
-    },
-    {
-      "basename": "Sequence_to_Sequence_Model",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/Sequence_to_Sequence_Model.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_ResNet/Normalization.md"
-    },
-    {
-      "basename": "RNN_Basics",
-      "path": "Computer_Science/Deep_Learning/Recurrent_Neural_Networks/RNN_Basics.md"
     }
   ],
   "omittedPaths": [],
