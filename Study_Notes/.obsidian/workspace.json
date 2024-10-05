@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+                "file": "Computer_Science/Web_Development/前端项目/新闻头条.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d501f94fb35fb4d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1877bf3409c9be73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+                "file": "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+                "file": "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,16 +254,41 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "736aeb70201c5bf3",
+  "active": "d501f94fb35fb4d2",
   "lastOpenFiles": [
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/b2bb7cb5c462637cd035772e4f63ea82_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/image-20241005130302077.png",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/364b8283c8a9c1d21261e06a274055aa_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/image-20241005125824238.png",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/021eed575792663552671722078d8765_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets/image-20241005124138385.png",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.md",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets/56a4dda604d014dd1c6d59dee175191b_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets/c57580451a7a48df2f115888b79be1ba_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets/image-20241005121336691.png",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets/image-20241005121324790.png",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets/333b8226fa62e152fd2c5e4f442f8e22_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/DOM/事件循环.assets",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.md",
+    "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.assets",
     "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md",
-    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
-    "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
-    "Computer_Science/Web_Development/前端测试和调试/Console调试.md",
-    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets/add617c4ed8a26aa3474af944fcd8058_MD5.jpeg",
-    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets/image-20241004120120254.png",
-    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets",
+    "Computer_Science/Web_Development/Javascript/异步提升/r.md",
+    "Computer_Science/Web_Development/Javascript/总结/总结：this指向总结.md",
+    "Computer_Science/Web_Development/Javascript/函数/作用域.md",
+    "Computer_Science/Web_Development/Javascript/函数/作用域.assets",
     "Computer_Science/Web_Development/HTMLCSS/常用需求实现/轮播图.md",
+    "Computer_Science/Web_Development/前端项目/新闻头条.md",
+    "Computer_Science/Web_Development/前端测试和调试/Vitest.md",
+    "Computer_Science/Web_Development/前端项目",
+    "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md",
+    "Computer_Science/Deep_Learning/Model_Compression",
+    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning_Examples.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+    "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md",
+    "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.md",
+    "Computer_Science/Web_Development/前端测试和调试/Console调试.assets",
     "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md",
     "Computer_Science/Web_Development/Javascript/对象/Property和Element.md",
     "Computer_Science/Web_Development/前端测试和调试/Vitest.assets",
@@ -248,35 +298,10 @@
     "Computer_Science/Web_Development/Javascript/对象/未确认 668208.crdownload",
     "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.docx",
     "Computer_Science/Web_Development/Javascript/对象/未确认 976283.crdownload",
-    "Computer_Science/Web_Development/Javascript/对象/未确认 188956.crdownload",
-    "Computer_Science/Web_Development/Javascript/对象",
     "Computer_Science/Web_Development/HTMLCSS/常用需求实现/文本溢出隐藏.md",
     "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md",
     "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md",
     "Computer_Science/Web_Development/Javascript/实用函数/兼容性封装汇总.md",
-    "Computer_Science/Web_Development/Javascript/实用函数",
-    "Computer_Science/Web_Development/前端测试和调试",
-    "Computer_Science/Web_Development/Javascript/异步提升/异常处理.md",
-    "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md",
-    "Computer_Science/Web_Development/Javascript/异步提升",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.md",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.assets/image-20241002200436219.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002200414994.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002200233510.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195834262.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195812316.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195737462.png",
-    "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.assets/image-20241002195727857.png",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md",
-    "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.assets/image-20241002141559328.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.md",
-    "Data_Science/Time_Series_Analysis/ARMA.md",
-    "Data_Science/Time_Series_Analysis/Basic_Time_Series.md",
-    "Data_Science/Time_Series_Analysis/Prediction.md",
-    "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md",
-    "Data_Science/Time_Series_Analysis/Related_Resources.md",
     "未命名.canvas"
   ]
 }

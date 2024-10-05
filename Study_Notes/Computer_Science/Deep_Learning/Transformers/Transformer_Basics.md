@@ -48,6 +48,7 @@
 # Improve 2: Multi-headed Attention
 > [!def]
 > ![](Transformer_Basics.assets/image-20240706230903712.png)![](Transformer_Basics.assets/image-20240706230911133.png)
+> Details see below [Multi-headed KQV Attention](Transformer_Basics.md#Multi-headed%20KQV%20Attention)
 
 
 
@@ -120,9 +121,9 @@ def attention(query, key, value, mask=None, dropout=None):
     # Your code here
     """
     input:
-    @param query: (batch_size, seq_len, d_q)
-    @param key: (batch_size, seq_len, d_k)
-    @param value: (batch_size, seq_len, d_v)
+    @param query: (batch_size, seq_len, num_head, d_q)
+    @param key: (batch_size, seq_len, num_head, d_k)
+    @param value: (batch_size, seq_len, num_head, d_v)
     @param mask: (batch_size, seq_len) of 1 and 0 where 1 means
     @param dropout: A predefined layer that apply dropout to the attention weights
 
@@ -156,8 +157,17 @@ def attention(query, key, value, mask=None, dropout=None):
 
 
 ## Multi-headed KQV Attention
+### Definition
 > [!def]
 > ![](Transformer_Basics.assets/image-20241002121803891.png)![](Transformer_Basics.assets/image-20241002121810348.png)![](Transformer_Basics.assets/image-20241002121637725.png)
+
+
+
+
+
+
+### Implementations
+> [!code]
 ```python
 class MultiHeadedAttention(nn.Module):
     def __init__(self, h, d_model, dropout=0.1):
@@ -205,6 +215,18 @@ class MultiHeadedAttention(nn.Module):
             .view(batch_size, -1, self.d_model)
         return self.projections[-1](attention_out)
 ```
+
+
+
+### Manipulation of Attention Scores
+> [!def]
+
+
+
+
+
+
+
 
 
 
