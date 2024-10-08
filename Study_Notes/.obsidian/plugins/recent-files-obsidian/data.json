@@ -1,16 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "文件下载相关",
+      "path": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md"
+    },
+    {
+      "basename": "缓存机制",
+      "path": "Computer_Science/Web_Development/Network/缓存机制.md"
+    },
+    {
+      "basename": "Kalman_Filter",
+      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
+    },
+    {
+      "basename": "私有变量",
+      "path": "Computer_Science/Web_Development/Javascript/对象/私有变量.md"
+    },
+    {
+      "basename": "文件上传相关",
+      "path": "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.md"
+    },
+    {
+      "basename": "P8_对象_构造函数_实例化",
+      "path": "Computer_Science/Web_Development/Javascript/对象/P8_对象_构造函数_实例化.md"
+    },
+    {
+      "basename": "Property和Element",
+      "path": "Computer_Science/Web_Development/Javascript/对象/Property和Element.md"
+    },
+    {
+      "basename": "并发控制",
+      "path": "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md"
+    },
+    {
+      "basename": "Useful_Functions",
+      "path": "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md"
+    },
+    {
+      "basename": "二维动态规划",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
+    },
+    {
       "basename": "Llama2",
       "path": "Computer_Science/Large_Language_Models/Llama/Llama2.md"
     },
     {
       "basename": "Llama3",
       "path": "Computer_Science/Large_Language_Models/Llama/Llama3.md"
-    },
-    {
-      "basename": "Kalman_Filter",
-      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
     },
     {
       "basename": "Linear_Dynamical_Systems",
@@ -61,10 +97,6 @@
       "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/事件循环.md"
     },
     {
-      "basename": "二维动态规划",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
-    },
-    {
       "basename": "单串",
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
     },
@@ -105,10 +137,6 @@
       "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.pdf"
     },
     {
-      "basename": "并发控制",
-      "path": "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md"
-    },
-    {
       "basename": "总结：this指向总结",
       "path": "Computer_Science/Web_Development/Javascript/总结/总结：this指向总结.md"
     },
@@ -145,16 +173,8 @@
       "path": "Computer_Science/Web_Development/前端测试和调试/Console调试.md"
     },
     {
-      "basename": "Property和Element",
-      "path": "Computer_Science/Web_Development/Javascript/对象/Property和Element.md"
-    },
-    {
       "basename": "P9_构造函数及实例化原理_包装类",
       "path": "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.md"
-    },
-    {
-      "basename": "P8_对象_构造函数_实例化",
-      "path": "Computer_Science/Web_Development/Javascript/对象/P8_对象_构造函数_实例化.md"
     },
     {
       "basename": "进度条",
@@ -169,10 +189,6 @@
       "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md"
     },
     {
-      "basename": "Useful_Functions",
-      "path": "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md"
-    },
-    {
       "basename": "兼容性封装汇总",
       "path": "Computer_Science/Web_Development/Javascript/实用函数/兼容性封装汇总.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "BLEU",
       "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
-    },
-    {
-      "basename": "ROUGE",
-      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/ROUGE.md"
-    },
-    {
-      "basename": "Machine_Translation",
-      "path": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md"
-    },
-    {
-      "basename": "ARMA",
-      "path": "Data_Science/Time_Series_Analysis/ARMA.md"
-    },
-    {
-      "basename": "Basic_Time_Series",
-      "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
     }
   ],
   "omittedPaths": [],
