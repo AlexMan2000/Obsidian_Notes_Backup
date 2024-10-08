@@ -1,12 +1,108 @@
 {
   "recentFiles": [
     {
+      "basename": "Llama2",
+      "path": "Computer_Science/Large_Language_Models/Llama/Llama2.md"
+    },
+    {
+      "basename": "Llama3",
+      "path": "Computer_Science/Large_Language_Models/Llama/Llama3.md"
+    },
+    {
+      "basename": "Kalman_Filter",
+      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
+    },
+    {
+      "basename": "Linear_Dynamical_Systems",
+      "path": "Data_Science/Time_Series_Analysis/Linear_Dynamical_Systems.md"
+    },
+    {
+      "basename": "4_Hidden_Markov_Model",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
+    },
+    {
+      "basename": "继承",
+      "path": "Computer_Science/Web_Development/Javascript/原型和原型链/继承.md"
+    },
+    {
+      "basename": "HMM",
+      "path": "Data_Science/Time_Series_Analysis/HMM.md"
+    },
+    {
+      "basename": "(G)ARCH",
+      "path": "Data_Science/Time_Series_Analysis/(G)ARCH.md"
+    },
+    {
+      "basename": "原型",
+      "path": "Computer_Science/Web_Development/Javascript/原型和原型链/原型.md"
+    },
+    {
+      "basename": "事件冒泡与捕获",
+      "path": "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件冒泡与捕获.md"
+    },
+    {
+      "basename": "事件委托",
+      "path": "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md"
+    },
+    {
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "新闻头条",
+      "path": "Computer_Science/Web_Development/前端项目/新闻头条.md"
+    },
+    {
       "basename": "浏览器渲染原理",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/浏览器渲染原理.md"
+      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md"
     },
     {
       "basename": "事件循环",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/事件循环.md"
+      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/事件循环.md"
+    },
+    {
+      "basename": "二维动态规划",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
+    },
+    {
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "集合",
+      "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
+    },
+    {
+      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
+      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
+    },
+    {
+      "basename": "前缀和",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md"
+    },
+    {
+      "basename": "Numbers",
+      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
+    },
+    {
+      "basename": "Websocket",
+      "path": "Computer_Science/Web_Development/Network/Websocket.md"
+    },
+    {
+      "basename": "滚动元素到可视区域",
+      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md"
+    },
+    {
+      "basename": "Finetuning_Examples",
+      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning_Examples.md"
+    },
+    {
+      "basename": "Parameter_Quantization",
+      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md"
+    },
+    {
+      "basename": "Parameter_Quantization",
+      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.pdf"
     },
     {
       "basename": "并发控制",
@@ -25,28 +121,12 @@
       "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/轮播图.md"
     },
     {
-      "basename": "新闻头条",
-      "path": "Computer_Science/Web_Development/前端项目/新闻头条.md"
-    },
-    {
       "basename": "Vitest",
       "path": "Computer_Science/Web_Development/前端测试和调试/Vitest.md"
     },
     {
-      "basename": "Parameter_Quantization",
-      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md"
-    },
-    {
       "basename": "Finetuning",
       "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md"
-    },
-    {
-      "basename": "Finetuning_Examples",
-      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning_Examples.md"
-    },
-    {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
     },
     {
       "basename": "Debouncing",
@@ -63,10 +143,6 @@
     {
       "basename": "Console调试",
       "path": "Computer_Science/Web_Development/前端测试和调试/Console调试.md"
-    },
-    {
-      "basename": "滚动元素到可视区域",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md"
     },
     {
       "basename": "Property和Element",
@@ -117,88 +193,12 @@
       "path": "Computer_Science/Natural_Language_Processing/Sequence_Modeling/Machine_Translation.md"
     },
     {
-      "basename": "(G)ARCH",
-      "path": "Data_Science/Time_Series_Analysis/(G)ARCH.md"
-    },
-    {
       "basename": "ARMA",
       "path": "Data_Science/Time_Series_Analysis/ARMA.md"
     },
     {
       "basename": "Basic_Time_Series",
       "path": "Data_Science/Time_Series_Analysis/Basic_Time_Series.md"
-    },
-    {
-      "basename": "Prediction",
-      "path": "Data_Science/Time_Series_Analysis/Prediction.md"
-    },
-    {
-      "basename": "Difference_Equations",
-      "path": "Computer_Science/Signal_Processing/Difference_Equations/Difference_Equations.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Data_Science/Time_Series_Analysis/Related_Resources.md"
-    },
-    {
-      "basename": "Parameter_Estimation",
-      "path": "Data_Science/Time_Series_Analysis/Parameter_Estimation.md"
-    },
-    {
-      "basename": "1_Bayes_Networks",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/1_Bayes_Networks.md"
-    },
-    {
-      "basename": "动态库DLL-提升速度",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md"
-    },
-    {
-      "basename": "HMR(热更新)",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/HMR(热更新).md"
-    },
-    {
-      "basename": "Babel处理ES6代码",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Babel处理ES6代码.md"
-    },
-    {
-      "basename": "Webpack性能优化专题",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md"
-    },
-    {
-      "basename": "懒加载",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/懒加载.md"
-    },
-    {
-      "basename": "代码分割",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md"
-    },
-    {
-      "basename": "Drawing 2024-09-20 12.02.46.excalidraw",
-      "path": "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md"
-    },
-    {
-      "basename": "AsyncSplitting",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.assets/AsyncSplitting.gif"
-    },
-    {
-      "basename": "不同打包模式",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/不同打包模式.md"
-    },
-    {
-      "basename": "Treeshaking",
-      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md"
-    },
-    {
-      "basename": "Webpack基本定义配置",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
-    },
-    {
-      "basename": "打包React_Vue代码",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/打包React_Vue代码.md"
-    },
-    {
-      "basename": "SourceMap",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/SourceMap.md"
     }
   ],
   "omittedPaths": [],
