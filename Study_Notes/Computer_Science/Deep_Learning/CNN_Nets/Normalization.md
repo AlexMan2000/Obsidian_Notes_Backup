@@ -14,6 +14,41 @@
 
 
 
+
+# 0-1标准化
+> [!important]
+> ![](Normalization.assets/d623929a4fb6562929bddf54bf962563_MD5.jpeg)
+```python
+
+
+
+
+```
+
+
+
+
+
+# Z-Score 标准化
+> [!important]
+> ![](Normalization.assets/52805ca6258879f4800b5b207eead298_MD5.jpeg)
+```python
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
 # Batch Normalization(BN)
 ## 1-D Case
 > [!def]

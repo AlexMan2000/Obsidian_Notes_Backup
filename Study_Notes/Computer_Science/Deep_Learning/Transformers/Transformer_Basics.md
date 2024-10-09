@@ -36,6 +36,16 @@
 > 
 > **Importance of Linear Transformation in Positional Encoding?**
 > https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/
+> 
+> **总结:**
+> - sin和cos函数的值域有限，可以很好地限制编码位置的数字的大小, 否则如果使用pos的数值直接来encoding的话，一旦序列很长，pos就会很大。
+> - 通过调节频率，可以得到多种多样的sin和cos函数，从而可以加你个位置信息投射到每个feature index 维度都各具特色，各不相同的高维空间，以形成对位置信息的更好表示
+> - 通过独特的计算公式，我们可以让特征编号小的特征被投射到剧烈变化的维度上，并且让特征编号大的特征被投射到轻微变化、甚至完全单调的维度上，从而可以让小编号特征去捕捉样本之间的局部细节差异，让大编号特征去捕捉样本之间按顺序排列的全局趋势
+> 
+> **额外的好处:**
+> - 首先最重要的是其**函数的周期性带来泛化性**：在模型训练过程中，我们可能使用的都是序列长度小于20的数据，但是当实际应用中遇到一个序列长度为50的数据，**正弦和余弦函数的周期性**意味着，即使模型在训练时未见过某个位置，它仍然可以生成一个合理的位置编码。它可用泛化到不同长度的序列。
+> - **不增加额外的训练参数**：当我们在一个已经很大的模型（如 GPT-3 或 BERT）上添加位置信息时，我们不希望增加太多的参数，因为这会增加训练成本和过拟合的风险。正弦和余弦位置编码不增加任何训练参数。
+> - **即便是相同频率下的正余弦函数，也可以通过周期性带来部分的相对位置信息，可以比绝对位置信息更有效**：正弦和余弦函数的周期性特征为模型提供了一种隐含的相对位置信息，使得模型能够更有效地理解序列中不同位置之间的相对关系。
 
 
 
@@ -46,9 +56,49 @@
 
 
 # Improve 2: Multi-headed Attention
+## Definition
 > [!def]
 > ![](Transformer_Basics.assets/image-20240706230903712.png)![](Transformer_Basics.assets/image-20240706230911133.png)
 > Details see below [Multi-headed KQV Attention](Transformer_Basics.md#Multi-headed%20KQV%20Attention)
+
+
+
+## Attending to particular vectors
+> [!important]
+> ![](Transformer_Basics.assets/73fc423013cb0488581b4e4a08b7274e_MD5.jpeg)![](Transformer_Basics.assets/b3cd20cf37e30d3a1e2ab83fdb9ffa9c_MD5.jpeg)![](Transformer_Basics.assets/fa69b9122132fdcb453c935bfad224bb_MD5.jpeg)![](Transformer_Basics.assets/4b74a6dc83c31015dcf9f216f6da93c7_MD5.jpeg)![](Transformer_Basics.assets/8a3a01a02f0ee5a16285d3f5e4826cc8_MD5.jpeg)
+
+
+
+## Drawback of Single-headed Attention
+> [!important]
+> ![](Transformer_Basics.assets/d5a743dce42723ec71c6469c9fea5224_MD5.jpeg)![](Transformer_Basics.assets/ba668c29f437ca465cdf0a9e402385bc_MD5.jpeg)![](Transformer_Basics.assets/97a380fa8a5feea6ecc3bc1e30158278_MD5.jpeg)
+
+
+
+
+
+## Benefits of Multi-headed Attention
+> [!important]
+> ![](Transformer_Basics.assets/95b74d5def18e14f0324b18298c9767e_MD5.jpeg)![](Transformer_Basics.assets/4c7c98d5dc9aa379c5868763c69f9ace_MD5.jpeg)![](Transformer_Basics.assets/386e18dd5b793c59f0effb26940f14f0_MD5.jpeg)![](Transformer_Basics.assets/a69b0511fc029bd9de9548a5c067c52f_MD5.jpeg)
+> 
+> 所以我们通过上面的例子发现多头注意力的几个优点:
+> ![](Transformer_Basics.assets/a68fa5b44c8f4bcf2b31b6a81202ea30_MD5.jpeg)![](Transformer_Basics.assets/6405b09f4408356fb51f4366c0d26c22_MD5.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,7 +145,9 @@
 
 ## Layer Nomalization
 > [!def]
-> ![](Transformer_Basics.assets/image-20240707111404353.png)
+> ![](Transformer_Basics.assets/image-20240707111404353.png)![](Transformer_Basics.assets/0295afce5882750b3a04e1580d9ee16a_MD5.jpeg)![](Transformer_Basics.assets/image-20241009144530278.png)
+
+
 
 
 

@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "translation invariance",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,14 +230,29 @@
   },
   "active": "3581f8a72e1daf2b",
   "lastOpenFiles": [
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/2a9988062a7a0087d6b2d9c6c6796924_MD5.jpeg",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/image-20241008160610759.png",
-    "Computer_Science/Web_Development/Network/缓存机制.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/6405b09f4408356fb51f4366c0d26c22_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241009160634228.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/a68fa5b44c8f4bcf2b31b6a81202ea30_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241009160608501.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/a69b0511fc029bd9de9548a5c067c52f_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/386e18dd5b793c59f0effb26940f14f0_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/4c7c98d5dc9aa379c5868763c69f9ace_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241009155733526.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241009155728872.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241009155722363.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/95b74d5def18e14f0324b18298c9767e_MD5.jpeg",
+    "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md",
+    "Computer_Science/Computer_Vision/Dataset",
+    "Computer_Science/Computer_Vision/Computer_Vision_Tasks.md",
+    "Computer_Science/Deep_Learning/CNN_Nets/Convolutional_Neural_Network.md",
+    "Computer_Science/Deep_Learning/CNN_Nets/Convolution_Filters.md",
+    "Computer_Science/Deep_Learning/CNN_Nets/Normalization.md",
+    "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.md",
+    "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.assets",
+    "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/1ce82b88950a4b9104eebf228c837a16_MD5.jpeg",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/image-20241008160320687.png",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/5154354c709edee5d1a01447783998ba_MD5.jpeg",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets/image-20241008160233768.png",
+    "Computer_Science/Web_Development/Network/缓存机制.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets",
     "Data_Science/Time_Series_Analysis/Kalman_Filter.md",
     "Computer_Science/Web_Development/Javascript/对象/私有变量.md",
@@ -251,8 +266,6 @@
     "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md",
     "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md",
     "Computer_Science/Large_Language_Models/Llama/Llama2.md",
-    "Computer_Science/Large_Language_Models/Llama/Llama2.assets/a3d3147e3f61dff2b41cf22861b20103_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/Llama/Llama2.assets/image-20241007215753870.png",
     "Computer_Science/Large_Language_Models/Llama/Llama2.assets",
     "Computer_Science/Large_Language_Models/Llama/Llama3.md",
     "Computer_Science/Large_Language_Models/Llama",
@@ -261,21 +274,8 @@
     "Computer_Science/Web_Development/Javascript/原型和原型链/继承.md",
     "Data_Science/Time_Series_Analysis/HMM.md",
     "Data_Science/Time_Series_Analysis/(G)ARCH.md",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.assets/82fec3d74216f5ff2e1ff990e718d6b4_MD5.jpeg",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.assets/4f1295361696f615b2b56686abf8da79_MD5.jpeg",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.assets/image-20241007173805773.png",
     "Data_Science/Time_Series_Analysis/(G)ARCH.assets",
-    "Data_Science/Time_Series_Analysis/AR.md",
     "Computer_Science/Web_Development/Javascript/原型和原型链/继承.assets",
-    "Computer_Science/Web_Development/Javascript/原型和原型链/原型.md",
-    "Computer_Science/Web_Development/前端项目/新闻头条.md",
-    "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件冒泡与捕获.md",
-    "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/事件循环.md",
-    "Computer_Science/Web_Development/Javascript/异步提升/异常处理.md",
-    "Computer_Science/Web_Development/Javascript/原型和原型链",
-    "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md",
-    "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.assets",
-    "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器",
     "未命名.canvas"
   ]
 }

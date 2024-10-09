@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Transformer_Basics",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+    },
+    {
+      "basename": "Torchvision_Dataset",
+      "path": "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md"
+    },
+    {
+      "basename": "Computer_Vision_Tasks",
+      "path": "Computer_Science/Computer_Vision/Computer_Vision_Tasks.md"
+    },
+    {
+      "basename": "Convolutional_Neural_Network",
+      "path": "Computer_Science/Deep_Learning/CNN_Nets/Convolutional_Neural_Network.md"
+    },
+    {
+      "basename": "Convolution_Filters",
+      "path": "Computer_Science/Deep_Learning/CNN_Nets/Convolution_Filters.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Computer_Science/Deep_Learning/CNN_Nets/Normalization.md"
+    },
+    {
+      "basename": "Classic_Nets",
+      "path": "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.md"
+    },
+    {
+      "basename": "CNN_Backprop_Recitation_5_F21",
+      "path": "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf"
+    },
+    {
       "basename": "文件下载相关",
       "path": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md"
     },
@@ -79,10 +111,6 @@
     {
       "basename": "事件委托",
       "path": "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md"
-    },
-    {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
     },
     {
       "basename": "新闻头条",
@@ -171,34 +199,6 @@
     {
       "basename": "Console调试",
       "path": "Computer_Science/Web_Development/前端测试和调试/Console调试.md"
-    },
-    {
-      "basename": "P9_构造函数及实例化原理_包装类",
-      "path": "Computer_Science/Web_Development/Javascript/对象/P9_构造函数及实例化原理_包装类.md"
-    },
-    {
-      "basename": "进度条",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/进度条.md"
-    },
-    {
-      "basename": "文本溢出隐藏",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/文本溢出隐藏.md"
-    },
-    {
-      "basename": "圆角渐变边框",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/圆角渐变边框.md"
-    },
-    {
-      "basename": "兼容性封装汇总",
-      "path": "Computer_Science/Web_Development/Javascript/实用函数/兼容性封装汇总.md"
-    },
-    {
-      "basename": "异常处理",
-      "path": "Computer_Science/Web_Development/Javascript/异步提升/异常处理.md"
-    },
-    {
-      "basename": "BLEU",
-      "path": "Computer_Science/Natural_Language_Processing/Model_Evaluation/BLEU.md"
     }
   ],
   "omittedPaths": [],

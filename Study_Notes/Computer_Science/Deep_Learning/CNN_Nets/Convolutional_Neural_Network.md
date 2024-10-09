@@ -19,7 +19,7 @@
 ## Translational Invariance
 > [!important]
 > Since CNN's parameters are shared spatially, it is translationally equivariant.
-> ![](Convolutional_Neural_Network.assets/image-20240409155321032.png)
+> ![](Convolutional_Neural_Network.assets/image-20240409155321032.png)![](Convolutional_Neural_Network.assets/a03e1d7ac4e2b0541d52c599f303ef1b_MD5.jpeg)
 
 > [!example] EECS182 Sp23 HW3 P3
 > ![](Convolutional_Neural_Network.assets/image-20240407174449948.png)![](Convolutional_Neural_Network.assets/image-20240407174455645.png)![](Convolutional_Neural_Network.assets/image-20240407174502406.png)
