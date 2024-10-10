@@ -3,20 +3,16 @@
 > ![](Transformer_Basics.assets/image-20240706221804990.png)
 
 
-
-
-# Self Attention
+# Model Structure
 > [!important]
-> ![](Transformer_Basics.assets/image-20240706221539230.png)![](Transformer_Basics.assets/image-20240706221615144.png)
+> ![](Transformer_Basics.assets/d179d0db460ba38e158ec60c31d864e9_MD5.jpeg)
 
 
 
 
-
-
-
-# Improve 1: Positional Encoding
-## Motivations
+# Encoder Structure
+## Positional Encoding
+### Motivations
 > [!motiv]
 > Due to the fact that self-attention will look into the future time step of inputs or hidden states, the system is not causal, which means it loses information about the time ordering. But we can use positional encoding to address this issue. 
 > - Self attention is permutation invariant. 
@@ -26,7 +22,7 @@
 
 
 
-## Naive Positional Encoding
+### Naive Positional Encoding
 > [!important]
 > ![](Transformer_Basics.assets/image-20240706222352687.png)
 > The frequency at eariler time steps are designed to be of high frequency since high-frequency signals are essential for capturing fine details and variations.
@@ -49,27 +45,27 @@
 
 
 
-## Learned Positional Encoding
+### Learned Positional Encoding
 > [!def]
 > ![](Transformer_Basics.assets/image-20240706230425999.png)![](Transformer_Basics.assets/image-20240706230543833.png)
 
 
 
-# Improve 2: Multi-headed Attention
-## Definition
+## Multi-headed Attention
+### Definition
 > [!def]
 > ![](Transformer_Basics.assets/image-20240706230903712.png)![](Transformer_Basics.assets/image-20240706230911133.png)
 > Details see below [Multi-headed KQV Attention](Transformer_Basics.md#Multi-headed%20KQV%20Attention)
 
 
 
-## Attending to particular vectors
+### Attending to particular vectors
 > [!important]
 > ![](Transformer_Basics.assets/73fc423013cb0488581b4e4a08b7274e_MD5.jpeg)![](Transformer_Basics.assets/b3cd20cf37e30d3a1e2ab83fdb9ffa9c_MD5.jpeg)![](Transformer_Basics.assets/fa69b9122132fdcb453c935bfad224bb_MD5.jpeg)![](Transformer_Basics.assets/4b74a6dc83c31015dcf9f216f6da93c7_MD5.jpeg)![](Transformer_Basics.assets/8a3a01a02f0ee5a16285d3f5e4826cc8_MD5.jpeg)
 
 
 
-## Drawback of Single-headed Attention
+### Drawback of Single-headed Attention
 > [!important]
 > ![](Transformer_Basics.assets/d5a743dce42723ec71c6469c9fea5224_MD5.jpeg)![](Transformer_Basics.assets/ba668c29f437ca465cdf0a9e402385bc_MD5.jpeg)![](Transformer_Basics.assets/97a380fa8a5feea6ecc3bc1e30158278_MD5.jpeg)
 
@@ -77,7 +73,7 @@
 
 
 
-## Benefits of Multi-headed Attention
+### Benefits of Multi-headed Attention
 > [!important]
 > ![](Transformer_Basics.assets/95b74d5def18e14f0324b18298c9767e_MD5.jpeg)![](Transformer_Basics.assets/4c7c98d5dc9aa379c5868763c69f9ace_MD5.jpeg)![](Transformer_Basics.assets/386e18dd5b793c59f0effb26940f14f0_MD5.jpeg)![](Transformer_Basics.assets/a69b0511fc029bd9de9548a5c067c52f_MD5.jpeg)
 > 
@@ -86,38 +82,78 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Improve 3: Adding Non-linearities
-## Linearities
+## Feed-forward Networks
+### Linearities
 > [!important]
 > ![](Transformer_Basics.assets/image-20240707104643346.png)![](Transformer_Basics.assets/image-20240707104653581.png)
 
 
 
-# Improve 4: Masked Attention
-## Motivations
-> [!motiv]
-> ![](Transformer_Basics.assets/image-20240707104958012.png)
-
-
-## Mechanisms
+### FFN-Structure
 > [!def]
-> ![](Transformer_Basics.assets/image-20240707105851600.png)
+> 根据Transformer的结构图可以看出，每一个多头注意力机制层都链接了一个前馈网络层。前馈网络（Feed-Forward Networks，FFNs），在神经网络的语境中，是指那些信息单向流动的网络结构。在这样的网络中，信息从输入层流向输出层，中间可能会经过多个隐藏层，但不会有任何反向的信息流，即不存在循环或者回路。因此在Transformer当中，实际上前馈神经网络就是**由线性层组成的深度神经网络结构**。它的主要职责是对输入数据进行**非线性变换，同时也负责产生输出值**。它的作用暗示了一个关键的事实——**自注意力机制大多数时候是一个线性结构**：加权求和是一个线性操作，即便我们是经过丰富的权重变化、由丰富的Q、K、V等矩阵点积的结果，还有softmax函数，但是自注意力机制依然是一个线性的过程。因此，在加入前馈神经网络之前，transformer本身不带有传统意义上的非线性结构。
+> 
+
+
+## 普通掩码
+> [!def]
+> ![](Transformer_Basics.assets/fff7559242060374847e5ae59ef9510a_MD5.jpeg)![](Transformer_Basics.assets/a7843470838112020a9c028f892a6c5a_MD5.jpeg)
+```python
+def create_padding_mask(seq, pad_token=0):
+    # seq: (batch_size, seq_len, embedding_dim)
+    # 检查填充值位置
+    padding_mask = (seq == pad_token).all(dim=-1)  # (batch_size, seq_len)
+    
+    # 增加维度以匹配注意力权重矩阵的形状
+    # (batch_size, num_heads, seq_len, seq_len)
+    padding_mask = padding_mask.unsqueeze(1).unsqueeze(3).expand(-1, -1, -1, seq.size(1))
+    
+    # 将填充值部分设置为负无穷大，有效数据部分设置为0
+    padding_mask = padding_mask.float() * -1e9  # (batch_size, num_heads, seq_len, seq_len)
+    
+    return padding_mask
+```
+> [!code] 不使用升维的掩码实现
+> ![](Transformer_Basics.assets/3d34d12ef1a4f5b6ede9a8cff3c0fb07_MD5.jpeg)
+```python
+def create_padding_mask(seq, pad_token=0):
+    # seq: (batch_size, seq_len, embedding_dim)
+    # 检查填充值位置
+    padding_mask = (seq == pad_token).all(dim=-1)  # (batch_size, seq_len)
+    padding_mask = padding_mask.float() * -1e9
+    
+    return padding_mask
+```
+
+
+
+
+
+
+
+# Decoder Structure
+## 训练数据格式
+> [!important]
+> ![](Transformer_Basics.assets/3e561c74fc8c765b86af4ab3ecdc2d82_MD5.jpeg)![](Transformer_Basics.assets/cd502b29b34d8afd45198ff1c9aac40e_MD5.jpeg)
+
+
+## 训练流程 - Teacher Forcing
+> [!important]
+> ![](Transformer_Basics.assets/69d4b1c4304c8d2cb14ec9b06c1c8df7_MD5.jpeg)![](Transformer_Basics.assets/a275cf4103e4d11ca5ac1119cd038b2e_MD5.jpeg)![](Transformer_Basics.assets/image-20241010120602232.png)
+
+
+
+## 测试流程 - Autoregressive
+> [!important]
+> ![](Transformer_Basics.assets/800fcc2aa65c7835e68372a536593272_MD5.jpeg)![](Transformer_Basics.assets/c3ceadeb2a4bf3c67e7165cc83b0a398_MD5.jpeg)![](Transformer_Basics.assets/0105c85b66d1e8a35663a9a88cf1d169_MD5.jpeg)
+
+
+## 前瞻掩码
+> [!def]
+> ![](Transformer_Basics.assets/49025c400940007bc7869d46dfa0d4c6_MD5.jpeg)![](Transformer_Basics.assets/9fa6eee2e3ce3ddf6686cea578dc3714_MD5.jpeg)
+
+
+
 
 
 
