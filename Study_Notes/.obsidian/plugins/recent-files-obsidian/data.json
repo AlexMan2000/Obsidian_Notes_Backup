@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Transformer_Basics",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md"
+      "basename": "Transformer_Models",
+      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md"
+    },
+    {
+      "basename": "B-Trees",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md"
+    },
+    {
+      "basename": "Decoder-Only_Models",
+      "path": "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md"
     },
     {
       "basename": "Torchvision_Dataset",
@@ -191,10 +199,6 @@
     {
       "basename": "Promise重写",
       "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
-    },
-    {
-      "basename": "Console调试",
-      "path": "Computer_Science/Web_Development/前端测试和调试/Console调试.md"
     }
   ],
   "omittedPaths": [],

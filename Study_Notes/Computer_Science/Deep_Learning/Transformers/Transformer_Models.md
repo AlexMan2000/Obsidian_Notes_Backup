@@ -1,11 +1,11 @@
 # Motivation
 > [!motiv]
-> ![](Transformer_Basics.assets/image-20240706221804990.png)
+> ![](Transformer_Models.assets/image-20240706221804990.png)
 
 
 # Model Structure
 > [!important]
-> ![](Transformer_Basics.assets/d179d0db460ba38e158ec60c31d864e9_MD5.jpeg)
+> ![](Transformer_Models.assets/d179d0db460ba38e158ec60c31d864e9_MD5.jpeg)
 
 
 
@@ -18,13 +18,13 @@
 > - Self attention is permutation invariant. 
 > - Position of words in a sentence carries information!
 > 
-> ![](Transformer_Basics.assets/image-20240706222213813.png)
+> ![](Transformer_Models.assets/image-20240706222213813.png)
 
 
 
 ### Naive Positional Encoding
 > [!important]
-> ![](Transformer_Basics.assets/image-20240706222352687.png)
+> ![](Transformer_Models.assets/image-20240706222352687.png)
 > The frequency at eariler time steps are designed to be of high frequency since high-frequency signals are essential for capturing fine details and variations.
 >
 > **Why introducing sinusoidal functions?**
@@ -43,31 +43,73 @@
 > - **不增加额外的训练参数**：当我们在一个已经很大的模型（如 GPT-3 或 BERT）上添加位置信息时，我们不希望增加太多的参数，因为这会增加训练成本和过拟合的风险。正弦和余弦位置编码不增加任何训练参数。
 > - **即便是相同频率下的正余弦函数，也可以通过周期性带来部分的相对位置信息，可以比绝对位置信息更有效**：正弦和余弦函数的周期性特征为模型提供了一种隐含的相对位置信息，使得模型能够更有效地理解序列中不同位置之间的相对关系。
 
+> [!code] Implementation
+> ![](Transformer_Models.assets/d1051efd90d8421a839d4bbe6d8d8e22_MD5.jpeg)![](Transformer_Models.assets/e7c96515f54d62e5cbbb6eb0b7893f82_MD5.jpeg)![](Transformer_Models.assets/image-20241010154519584.png)
+```python
+class PositionalEncoding(nn.Module):
+    """
+    - 位置编码完全没有使用我们embedding层输出的具体值，而仅仅利用了输出的形状，所以位置编码与语义无关
+    - 位置编码层没有任何需要学习的参数，于是用不到nn.Parameter
+    - max_seq_len旨在帮助我们的位置编码快速预先计算好所有的正余弦函数值，让代码执行速度更快
+    """
+    def __init__(self, d_model, dropout, max_seq_len=5000):
+        super().__init__()
+
+        self.dropout = nn.Dropout(dropout)
+        positional_matrix = torch.zeros((max_seq_len, d_model))
+
+        position = torch.arange(0, max_seq_len).unsqueeze(1)  # (max_seq_len, 1), waiting to be broadcasted
+        div_term = torch.exp(
+            torch.arange(0, d_model, 2) * -(math.log(10000.0) / d_model)
+        ) # (d_model, )
+
+        # position * div_term will be (max_seq_len, d_model)
+        # 预先计算好max_seq_len个位置的编码，在前向传播的过程中仅需要索引即可，速度是很快的
+        positional_matrix[:, 0::2] = torch.sin(position * div_term)
+        positional_matrix[:, 1::2] = torch.sin(position * div_term)
+
+        # Used for those parameters that are fixed/not learnable, but are used across training and testing
+        # Used for faster retrieval
+        self.register_buffer("pe", positional_matrix)
+
+    def forward(self, x):
+        """
+        Input should be the embedding src token sequence
+        :param x: (batch_size, seq_len, d_model)
+        :return: x + pe(x)
+        """
+        pe = self.pe.unsqueeze(0) # (1, seq_len, d_model), broadcast it across all samples in the batch
+
+        # This disabling grad is optional since pe is not a learnable parameter by definition
+        x = x + pe[:, :x.size(1)].requires_grad_(False)
+        return self.dropout(x)
+
+```
 
 
 ### Learned Positional Encoding
 > [!def]
-> ![](Transformer_Basics.assets/image-20240706230425999.png)![](Transformer_Basics.assets/image-20240706230543833.png)
+> ![](Transformer_Models.assets/image-20240706230425999.png)![](Transformer_Models.assets/image-20240706230543833.png)
 
 
 
 ## Multi-headed Attention
 ### Definition
 > [!def]
-> ![](Transformer_Basics.assets/image-20240706230903712.png)![](Transformer_Basics.assets/image-20240706230911133.png)
-> Details see below [Multi-headed KQV Attention](Transformer_Basics.md#Multi-headed%20KQV%20Attention)
+> ![](Transformer_Models.assets/image-20240706230903712.png)![](Transformer_Models.assets/image-20240706230911133.png)
+> Details see below [Multi-headed KQV Attention](Transformer_Models.md#Multi-headed%20KQV%20Attention)
 
 
 
 ### Attending to particular vectors
 > [!important]
-> ![](Transformer_Basics.assets/73fc423013cb0488581b4e4a08b7274e_MD5.jpeg)![](Transformer_Basics.assets/b3cd20cf37e30d3a1e2ab83fdb9ffa9c_MD5.jpeg)![](Transformer_Basics.assets/fa69b9122132fdcb453c935bfad224bb_MD5.jpeg)![](Transformer_Basics.assets/4b74a6dc83c31015dcf9f216f6da93c7_MD5.jpeg)![](Transformer_Basics.assets/8a3a01a02f0ee5a16285d3f5e4826cc8_MD5.jpeg)
+> ![](Transformer_Models.assets/73fc423013cb0488581b4e4a08b7274e_MD5.jpeg)![](Transformer_Models.assets/b3cd20cf37e30d3a1e2ab83fdb9ffa9c_MD5.jpeg)![](Transformer_Models.assets/fa69b9122132fdcb453c935bfad224bb_MD5.jpeg)![](Transformer_Models.assets/4b74a6dc83c31015dcf9f216f6da93c7_MD5.jpeg)![](Transformer_Models.assets/8a3a01a02f0ee5a16285d3f5e4826cc8_MD5.jpeg)
 
 
 
 ### Drawback of Single-headed Attention
 > [!important]
-> ![](Transformer_Basics.assets/d5a743dce42723ec71c6469c9fea5224_MD5.jpeg)![](Transformer_Basics.assets/ba668c29f437ca465cdf0a9e402385bc_MD5.jpeg)![](Transformer_Basics.assets/97a380fa8a5feea6ecc3bc1e30158278_MD5.jpeg)
+> ![](Transformer_Models.assets/d5a743dce42723ec71c6469c9fea5224_MD5.jpeg)![](Transformer_Models.assets/ba668c29f437ca465cdf0a9e402385bc_MD5.jpeg)![](Transformer_Models.assets/97a380fa8a5feea6ecc3bc1e30158278_MD5.jpeg)
 
 
 
@@ -75,17 +117,17 @@
 
 ### Benefits of Multi-headed Attention
 > [!important]
-> ![](Transformer_Basics.assets/95b74d5def18e14f0324b18298c9767e_MD5.jpeg)![](Transformer_Basics.assets/4c7c98d5dc9aa379c5868763c69f9ace_MD5.jpeg)![](Transformer_Basics.assets/386e18dd5b793c59f0effb26940f14f0_MD5.jpeg)![](Transformer_Basics.assets/a69b0511fc029bd9de9548a5c067c52f_MD5.jpeg)
+> ![](Transformer_Models.assets/95b74d5def18e14f0324b18298c9767e_MD5.jpeg)![](Transformer_Models.assets/4c7c98d5dc9aa379c5868763c69f9ace_MD5.jpeg)![](Transformer_Models.assets/386e18dd5b793c59f0effb26940f14f0_MD5.jpeg)![](Transformer_Models.assets/a69b0511fc029bd9de9548a5c067c52f_MD5.jpeg)
 > 
 > 所以我们通过上面的例子发现多头注意力的几个优点:
-> ![](Transformer_Basics.assets/a68fa5b44c8f4bcf2b31b6a81202ea30_MD5.jpeg)![](Transformer_Basics.assets/6405b09f4408356fb51f4366c0d26c22_MD5.jpeg)
+> ![](Transformer_Models.assets/a68fa5b44c8f4bcf2b31b6a81202ea30_MD5.jpeg)![](Transformer_Models.assets/6405b09f4408356fb51f4366c0d26c22_MD5.jpeg)
 
 
 
 ## Feed-forward Networks
 ### Linearities
 > [!important]
-> ![](Transformer_Basics.assets/image-20240707104643346.png)![](Transformer_Basics.assets/image-20240707104653581.png)
+> ![](Transformer_Models.assets/image-20240707104643346.png)![](Transformer_Models.assets/image-20240707104653581.png)
 
 
 
@@ -95,9 +137,9 @@
 > 
 
 
-## 普通掩码
+## 填充掩码
 > [!def]
-> ![](Transformer_Basics.assets/fff7559242060374847e5ae59ef9510a_MD5.jpeg)![](Transformer_Basics.assets/a7843470838112020a9c028f892a6c5a_MD5.jpeg)
+> ![](Transformer_Models.assets/fff7559242060374847e5ae59ef9510a_MD5.jpeg)![](Transformer_Models.assets/a7843470838112020a9c028f892a6c5a_MD5.jpeg)
 ```python
 def create_padding_mask(seq, pad_token=0):
     # seq: (batch_size, seq_len, embedding_dim)
@@ -114,10 +156,10 @@ def create_padding_mask(seq, pad_token=0):
     return padding_mask
 ```
 > [!code] 不使用升维的掩码实现
-> ![](Transformer_Basics.assets/3d34d12ef1a4f5b6ede9a8cff3c0fb07_MD5.jpeg)
+> ![](Transformer_Models.assets/3d34d12ef1a4f5b6ede9a8cff3c0fb07_MD5.jpeg)
 ```python
 def create_padding_mask(seq, pad_token=0):
-    # seq: (batch_size, seq_len, embedding_dim)
+    # seq: (batch_size, seq_len, d_model)
     # 检查填充值位置
     padding_mask = (seq == pad_token).all(dim=-1)  # (batch_size, seq_len)
     padding_mask = padding_mask.float() * -1e9
@@ -134,26 +176,37 @@ def create_padding_mask(seq, pad_token=0):
 # Decoder Structure
 ## 训练数据格式
 > [!important]
-> ![](Transformer_Basics.assets/3e561c74fc8c765b86af4ab3ecdc2d82_MD5.jpeg)![](Transformer_Basics.assets/cd502b29b34d8afd45198ff1c9aac40e_MD5.jpeg)
+> ![](Transformer_Models.assets/3e561c74fc8c765b86af4ab3ecdc2d82_MD5.jpeg)![](Transformer_Models.assets/cd502b29b34d8afd45198ff1c9aac40e_MD5.jpeg)
 
 
 ## 训练流程 - Teacher Forcing
 > [!important]
-> ![](Transformer_Basics.assets/69d4b1c4304c8d2cb14ec9b06c1c8df7_MD5.jpeg)![](Transformer_Basics.assets/a275cf4103e4d11ca5ac1119cd038b2e_MD5.jpeg)![](Transformer_Basics.assets/image-20241010120602232.png)
+> ![](Transformer_Models.assets/69d4b1c4304c8d2cb14ec9b06c1c8df7_MD5.jpeg)![](Transformer_Models.assets/a275cf4103e4d11ca5ac1119cd038b2e_MD5.jpeg)![](Transformer_Models.assets/image-20241010120602232.png)
 
 
 
 ## 测试流程 - Autoregressive
 > [!important]
-> ![](Transformer_Basics.assets/800fcc2aa65c7835e68372a536593272_MD5.jpeg)![](Transformer_Basics.assets/c3ceadeb2a4bf3c67e7165cc83b0a398_MD5.jpeg)![](Transformer_Basics.assets/0105c85b66d1e8a35663a9a88cf1d169_MD5.jpeg)
+> ![](Transformer_Models.assets/800fcc2aa65c7835e68372a536593272_MD5.jpeg)![](Transformer_Models.assets/c3ceadeb2a4bf3c67e7165cc83b0a398_MD5.jpeg)![](Transformer_Models.assets/0105c85b66d1e8a35663a9a88cf1d169_MD5.jpeg)
 
 
 ## 前瞻掩码
 > [!def]
-> ![](Transformer_Basics.assets/49025c400940007bc7869d46dfa0d4c6_MD5.jpeg)![](Transformer_Basics.assets/9fa6eee2e3ce3ddf6686cea578dc3714_MD5.jpeg)
+> ![](Transformer_Models.assets/49025c400940007bc7869d46dfa0d4c6_MD5.jpeg)![](Transformer_Models.assets/9fa6eee2e3ce3ddf6686cea578dc3714_MD5.jpeg)![](Transformer_Models.assets/673911832947816cead3cf0902b81e48_MD5.jpeg)![](Transformer_Models.assets/2337fff8cae782ceb5bc81b2dc0271b2_MD5.jpeg)
+```python
+import torch
+
+def create_look_ahead_mask(seq_len, start_seq = 1):
+    mask = torch.triu(torch.ones((seq_len, seq_len)),diagonal=start_seq)  # triu 左下方的三角矩阵，diagonal控制对角线位置
+    #mask = mask.float() * -1e9  # 将未来的位置设置为负无穷大
+    return mask
+```
 
 
 
+## 交叉掩码
+> [!important]
+> ![](Transformer_Models.assets/42dee99dd12cf4854528f42be35719a4_MD5.jpeg)![](Transformer_Models.assets/9ae551fbf57d8b2c6d7d44b9ed66cdea_MD5.jpeg)![](Transformer_Models.assets/f8382d672af6e5bbd3161a952cdcb959_MD5.jpeg)
 
 
 
@@ -163,16 +216,16 @@ def create_padding_mask(seq, pad_token=0):
 
 ## Model Structure
 > [!def]
-> ![](Transformer_Basics.assets/image-20240707110733248.png)
+> ![](Transformer_Models.assets/image-20240707110733248.png)
 
 
 
 ## Cross Attention
 > [!def]
-> ![](Transformer_Basics.assets/image-20240707111213345.png)
+> ![](Transformer_Models.assets/image-20240707111213345.png)
 > In reality, cross-attention is multi-headed and the number of heads are the same for encoder and decoder.
 > 
-> ![](Transformer_Basics.assets/image-20240922182804167.png)
+> ![](Transformer_Models.assets/image-20240922182804167.png)
 
 
 
@@ -181,7 +234,7 @@ def create_padding_mask(seq, pad_token=0):
 
 ## Layer Nomalization
 > [!def]
-> ![](Transformer_Basics.assets/image-20240707111404353.png)![](Transformer_Basics.assets/0295afce5882750b3a04e1580d9ee16a_MD5.jpeg)![](Transformer_Basics.assets/image-20241009144530278.png)
+> ![](Transformer_Models.assets/image-20240707111404353.png)![](Transformer_Models.assets/0295afce5882750b3a04e1580d9ee16a_MD5.jpeg)![](Transformer_Models.assets/image-20241009144530278.png)
 
 
 
@@ -190,20 +243,20 @@ def create_padding_mask(seq, pad_token=0):
 
 ## Pros and Cons
 > [!bug] Caveats
-> ![](Transformer_Basics.assets/image-20240707113530435.png)
+> ![](Transformer_Models.assets/image-20240707113530435.png)
 
 
 
 # Transformer Attention Variants
 ## K, Q, V Attention
 > [!def]
-> ![](Transformer_Basics.assets/image-20240922180911435.png)![](Transformer_Basics.assets/image-20241002121613322.png)
+> ![](Transformer_Models.assets/image-20240922180911435.png)![](Transformer_Models.assets/image-20241002121613322.png)
 > In this model, all the values in the $K, Q, V$ matrices are learned fromd data.
 > 
-> ![](Transformer_Basics.assets/image-20240714152418150.png)![](Transformer_Basics.assets/image-20240714161507788.png)
+> ![](Transformer_Models.assets/image-20240714152418150.png)![](Transformer_Models.assets/image-20240714161507788.png)
 
 > [!proof] Statistics
-> ![](Transformer_Basics.assets/image-20240922180925572.png)![](Transformer_Basics.assets/image-20240922180930917.png)
+> ![](Transformer_Models.assets/image-20240922180925572.png)![](Transformer_Models.assets/image-20240922180930917.png)
 ```python
 def attention(query, key, value, mask=None, dropout=None):
     # Your code here
@@ -247,7 +300,8 @@ def attention(query, key, value, mask=None, dropout=None):
 ## Multi-headed KQV Attention
 ### Definition
 > [!def]
-> ![](Transformer_Basics.assets/image-20241002121803891.png)![](Transformer_Basics.assets/image-20241002121810348.png)![](Transformer_Basics.assets/image-20241002121637725.png)
+> ![](Transformer_Models.assets/image-20241002121803891.png)![](Transformer_Models.assets/image-20241002121810348.png)![](Transformer_Models.assets/image-20241002121637725.png)
+> 本质上是对于`embedding_dim`(比如说是`512`), 分成`n=8`个维度为`64`的注意力头，然后计算完每个头的注意力向量之后再拼接起来。
 
 
 
@@ -269,7 +323,7 @@ class MultiHeadedAttention(nn.Module):
         super().__init__()
         self.num_head = h
         self.d_model = d_model
-        self.d_k = d_model // h
+        self.d_k = d_model // h  # 分割
         self.dropout = nn.Dropout(p=dropout)
         # Wq, Wk, Wv, Wo projections
         self.projections = clones(nn.Linear(d_model, d_model), 4)
@@ -320,7 +374,7 @@ class MultiHeadedAttention(nn.Module):
 
 ## Argmax Attention
 > [!def]
-> ![](Transformer_Basics.assets/image-20240714180243070.png)![](Transformer_Basics.assets/image-20240714180255095.png)![](Transformer_Basics.assets/image-20240714180303902.png)
+> ![](Transformer_Models.assets/image-20240714180243070.png)![](Transformer_Models.assets/image-20240714180255095.png)![](Transformer_Models.assets/image-20240714180303902.png)
 
 
 
@@ -336,17 +390,17 @@ class MultiHeadedAttention(nn.Module):
 ## Self-Attention
 ### Scaled Dot Product Attention
 > [!task]
-> ![](Transformer_Basics.assets/image-20240714124642225.png)![](Transformer_Basics.assets/image-20240714131235876.png) 
+> ![](Transformer_Models.assets/image-20240714124642225.png)![](Transformer_Models.assets/image-20240714131235876.png) 
 > where $d_{k}$ is the dimension for query/key vectors.
 > 
 > In this model, all the values in the $K, Q, V$ matrices are learned fromd data.
-> ![](Transformer_Basics.assets/image-20240714152418150.png)![](Transformer_Basics.assets/image-20240714161507788.png)![](Transformer_Basics.assets/image-20240714154207229.png)
+> ![](Transformer_Models.assets/image-20240714152418150.png)![](Transformer_Models.assets/image-20240714161507788.png)![](Transformer_Models.assets/image-20240714154207229.png)
 
 > [!proof]
 > **Claim:** For two random vectors $\vec{q}\in \mathbb{R}^d$ and $\vec{k}\in \mathbb{R}^d$, whose entries are i.i.d with zero mean and unit variance.(For example gaussian), then the variance of $\vec{q}^{\top}\vec{k}$ is proportional to $d$.
 > 
 > **Proof:** 
-> ![](Transformer_Basics.assets/image-20240714153941798.png)![](Transformer_Basics.assets/image-20240714153949043.png)![](Transformer_Basics.assets/image-20240714153956468.png)
+> ![](Transformer_Models.assets/image-20240714153941798.png)![](Transformer_Models.assets/image-20240714153949043.png)![](Transformer_Models.assets/image-20240714153956468.png)
 
 
 
@@ -354,13 +408,13 @@ class MultiHeadedAttention(nn.Module):
 
 ### Self-Attention: Attention by Content
 > [!def]
-> ![](Transformer_Basics.assets/image-20240714132024569.png)
+> ![](Transformer_Models.assets/image-20240714132024569.png)
 > There are several important hints:
 > - 1. To attend to a specific element, ensure that its pre-softmax score is significantly higher than that of the other elements.
 > - 2. Attending to a particular element is more manageable if the keys are orthogonal.
 > 	- Suppose we have $\mathbf{k}_{1}\cdot \mathbf{k}_{2}=\mathbf{k}_{2}\cdot \mathbf{k}_{3}=\mathbf{k}_{1}\cdot \mathbf{k}_{3}=0$(Orthogonal Keys).
 > 	- With orthogonal keys, if $\mathbf{q}$ is close to $\mathbf{k}_{1}$​, the score for $\mathbf{k}_{1}$​ will be significantly higher, leading to a higher softmax value for $\mathbf{k}_{1}$​ and near-zero values for $\mathbf{k}_{2}$​​ and $\mathbf{k}_{3}$​. This clear distinction simplifies the attention mechanism's task of focusing on the relevant key.
-> 	- ![](Transformer_Basics.assets/image-20240714174337223.png)
+> 	- ![](Transformer_Models.assets/image-20240714174337223.png)
 > - 3. When there are repeated elements in a sequence with the same content, attending to all of them rather than a single one will be simpler. Since they have the same content, taking a "weighted average" over values weighted by attention scores will produce the same output as attending to a single one.
 > 
 > In general, when designing $K, Q, V$ matrices:
@@ -373,7 +427,12 @@ class MultiHeadedAttention(nn.Module):
 
 ### Self-Attention: Attention by Position
 > [!def]
->![](Transformer_Basics.assets/image-20240714175732010.png)
+>![](Transformer_Models.assets/image-20240714175732010.png)
+
+
+
+
+## PyTorch_Implementations
 
 
 

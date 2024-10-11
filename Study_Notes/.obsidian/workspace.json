@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
+                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,19 +228,22 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "abd22396395eb00b",
+  "active": "3581f8a72e1daf2b",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/3d34d12ef1a4f5b6ede9a8cff3c0fb07_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241010134348738.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/a7843470838112020a9c028f892a6c5a_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241010134312336.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/fff7559242060374847e5ae59ef9510a_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241010121052700.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/9fa6eee2e3ce3ddf6686cea578dc3714_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241010120737381.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/49025c400940007bc7869d46dfa0d4c6_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/image-20241010120721904.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.assets/0105c85b66d1e8a35663a9a88cf1d169_MD5.jpeg",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154519584.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/e7c96515f54d62e5cbbb6eb0b7893f82_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154511656.png",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/d1051efd90d8421a839d4bbe6d8d8e22_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154440255.png",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/0841723b51c8beb7625f6d3862103f5f_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/image-20241010143317393.png",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/57d11703a872a4bd8937dbca7fa2c2d1_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/image-20241010143241985.png",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/3970a5f78ac9f41f67a4c60844a3ec39_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets",
     "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md",
     "Computer_Science/Computer_Vision/Dataset",
     "Computer_Science/Computer_Vision/Computer_Vision_Tasks.md",
@@ -250,7 +253,6 @@
     "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.md",
     "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.assets",
     "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Basics.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
     "Computer_Science/Web_Development/Network/缓存机制.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets",
@@ -273,9 +275,7 @@
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
     "Computer_Science/Web_Development/Javascript/原型和原型链/继承.md",
     "Data_Science/Time_Series_Analysis/HMM.md",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.md",
     "Data_Science/Time_Series_Analysis/(G)ARCH.assets",
-    "Computer_Science/Web_Development/Javascript/原型和原型链/继承.assets",
     "未命名.canvas"
   ]
 }
