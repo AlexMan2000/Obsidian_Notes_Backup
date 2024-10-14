@@ -29,7 +29,9 @@
 > [!important]
 > 访问网址: https://pytorch.org/get-started/locally/ 按照步骤即可
 > 
-> 对于`nvcc --version`结果为`cuda_12.4`的情况，在虚拟环境中执行`pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124`
+> 对于`nvcc --version`结果为`cuda_12.4`的情况，在虚拟环境中执行:
+> - `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124`
+> - `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
 
 # torch1.11.0+cu113 cannot install

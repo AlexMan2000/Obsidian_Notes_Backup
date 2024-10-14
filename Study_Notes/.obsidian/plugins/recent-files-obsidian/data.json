@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "LLama_Basics",
+      "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
+    },
+    {
+      "basename": "LLava",
+      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/LLava.md"
+    },
+    {
+      "basename": "InternVL",
+      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md"
+    },
+    {
+      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
+      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
+    },
+    {
+      "basename": "Monkey_Chat",
+      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/Monkey_Chat.md"
+    },
+    {
       "basename": "Transformer_Models",
       "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md"
     },
     {
-      "basename": "B-Trees",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md"
-    },
-    {
       "basename": "Decoder-Only_Models",
       "path": "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md"
+    },
+    {
+      "basename": "Torch_Venv相关",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
+    },
+    {
+      "basename": "B-Trees",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md"
     },
     {
       "basename": "Torchvision_Dataset",
@@ -141,10 +165,6 @@
       "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
     },
     {
-      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
-      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
-    },
-    {
       "basename": "前缀和",
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "作用域",
       "path": "Computer_Science/Web_Development/Javascript/函数/作用域.md"
-    },
-    {
-      "basename": "轮播图",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/轮播图.md"
-    },
-    {
-      "basename": "Vitest",
-      "path": "Computer_Science/Web_Development/前端测试和调试/Vitest.md"
-    },
-    {
-      "basename": "Finetuning",
-      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning.md"
-    },
-    {
-      "basename": "Debouncing",
-      "path": "Computer_Science/Web_Development/Javascript/Functional_Programming/Debouncing.md"
-    },
-    {
-      "basename": "Promise重写",
-      "path": "Computer_Science/Web_Development/Javascript/Promise/Promise重写.md"
     }
   ],
   "omittedPaths": [],

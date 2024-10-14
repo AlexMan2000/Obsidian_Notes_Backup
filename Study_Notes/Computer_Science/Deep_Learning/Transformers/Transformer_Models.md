@@ -98,6 +98,10 @@ class PositionalEncoding(nn.Module):
 > [!def]
 > ![](Transformer_Models.assets/image-20240706230903712.png)![](Transformer_Models.assets/image-20240706230911133.png)
 > Details see below [Multi-headed KQV Attention](Transformer_Models.md#Multi-headed%20KQV%20Attention)
+> 
+> ![](Transformer_Models.assets/935807c375a61452efcf94171a0802be_MD5.jpeg)
+
+
 
 
 

@@ -11,26 +11,15 @@
             "id": "a53fb71963e7ca6c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "3581f8a72e1daf2b",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
+                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
+                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
+                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,21 +217,29 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "3581f8a72e1daf2b",
+  "active": "a53fb71963e7ca6c",
   "lastOpenFiles": [
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md",
+    "Computer_Science/Large_Language_Models/Vision_LLMs/LLava.md",
+    "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md",
+    "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md",
+    "Computer_Science/Large_Language_Models/Vision_LLMs/Monkey_Chat.md",
     "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154519584.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/e7c96515f54d62e5cbbb6eb0b7893f82_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154511656.png",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/d1051efd90d8421a839d4bbe6d8d8e22_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241010154440255.png",
+    "Computer_Science/Large_Language_Models/Vision_LLMs",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/935807c375a61452efcf94171a0802be_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241013191935409.png",
     "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/0841723b51c8beb7625f6d3862103f5f_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/image-20241010143317393.png",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/57d11703a872a4bd8937dbca7fa2c2d1_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/image-20241010143241985.png",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets/3970a5f78ac9f41f67a4c60844a3ec39_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013173719946.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/7446a906753df110c5483f912a58fb41_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013173712339.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/acfbfc53dd36db19bc575748720a88d0_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171653733.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171649577.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/8a335bb4a7d49bd0d5d351df71590d28_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171523313.png",
+    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md",
     "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets",
     "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md",
     "Computer_Science/Computer_Vision/Dataset",
@@ -267,15 +264,7 @@
     "Computer_Science/Web_Development/前端常用需求实现",
     "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md",
     "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md",
-    "Computer_Science/Large_Language_Models/Llama/Llama2.md",
     "Computer_Science/Large_Language_Models/Llama/Llama2.assets",
-    "Computer_Science/Large_Language_Models/Llama/Llama3.md",
-    "Computer_Science/Large_Language_Models/Llama",
-    "Data_Science/Time_Series_Analysis/Linear_Dynamical_Systems.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Web_Development/Javascript/原型和原型链/继承.md",
-    "Data_Science/Time_Series_Analysis/HMM.md",
-    "Data_Science/Time_Series_Analysis/(G)ARCH.assets",
     "未命名.canvas"
   ]
 }
