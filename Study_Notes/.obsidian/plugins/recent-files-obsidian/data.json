@@ -1,8 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
+      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2023-12-10 22.00.18.excalidraw",
+      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2023-12-16 12.26.42.excalidraw",
+      "path": "Excalidraw/Drawing 2023-12-16 12.26.42.excalidraw.md"
+    },
+    {
+      "basename": "MoE.excalidraw",
+      "path": "Excalidraw/MoE.excalidraw.md"
+    },
+    {
       "basename": "LLama_Basics",
       "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
+    },
+    {
+      "basename": "Pasted Image 20231210223244_411",
+      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.assets/Pasted Image 20231210223244_411.png"
+    },
+    {
+      "basename": "MoE",
+      "path": "Computer_Science/Large_Language_Models/Llama/MoE.png"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
+    },
+    {
+      "basename": "背包dp",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md"
+    },
+    {
+      "basename": "浏览器渲染原理",
+      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md"
+    },
+    {
+      "basename": "Vision_Transformers",
+      "path": "Computer_Science/Deep_Learning/Transformers/Vision_Transformers.md"
+    },
+    {
+      "basename": "Parameter_Quantization",
+      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md"
+    },
+    {
+      "basename": "二维动态规划",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
+    },
+    {
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "Kalman_Filter",
+      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
     },
     {
       "basename": "LLava",
@@ -11,10 +67,6 @@
     {
       "basename": "InternVL",
       "path": "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md"
-    },
-    {
-      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
-      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
     },
     {
       "basename": "Monkey_Chat",
@@ -73,10 +125,6 @@
       "path": "Computer_Science/Web_Development/Network/缓存机制.md"
     },
     {
-      "basename": "Kalman_Filter",
-      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
-    },
-    {
       "basename": "私有变量",
       "path": "Computer_Science/Web_Development/Javascript/对象/私有变量.md"
     },
@@ -99,10 +147,6 @@
     {
       "basename": "Useful_Functions",
       "path": "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md"
-    },
-    {
-      "basename": "二维动态规划",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
     },
     {
       "basename": "Llama2",
@@ -147,58 +191,6 @@
     {
       "basename": "新闻头条",
       "path": "Computer_Science/Web_Development/前端项目/新闻头条.md"
-    },
-    {
-      "basename": "浏览器渲染原理",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md"
-    },
-    {
-      "basename": "事件循环",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/事件循环.md"
-    },
-    {
-      "basename": "单串",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
-      "basename": "集合",
-      "path": "Computer_Science/Leetcode_Bank/Data_Structures/集合.md"
-    },
-    {
-      "basename": "前缀和",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/前缀和.md"
-    },
-    {
-      "basename": "Numbers",
-      "path": "Computer_Science/Leetcode_Bank/Arithmetics/Numbers.md"
-    },
-    {
-      "basename": "Websocket",
-      "path": "Computer_Science/Web_Development/Network/Websocket.md"
-    },
-    {
-      "basename": "滚动元素到可视区域",
-      "path": "Computer_Science/Web_Development/HTMLCSS/常用需求实现/滚动元素到可视区域.md"
-    },
-    {
-      "basename": "Finetuning_Examples",
-      "path": "Computer_Science/Natural_Language_Processing/Pre-Post-training/Finetuning_Examples.md"
-    },
-    {
-      "basename": "Parameter_Quantization",
-      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md"
-    },
-    {
-      "basename": "Parameter_Quantization",
-      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.pdf"
-    },
-    {
-      "basename": "总结：this指向总结",
-      "path": "Computer_Science/Web_Development/Javascript/总结/总结：this指向总结.md"
-    },
-    {
-      "basename": "作用域",
-      "path": "Computer_Science/Web_Development/Javascript/函数/作用域.md"
     }
   ],
   "omittedPaths": [],

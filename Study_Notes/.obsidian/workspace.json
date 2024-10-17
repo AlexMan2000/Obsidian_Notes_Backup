@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "01b19163ec6546f0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "translation invariance",
+                "query": "KL Divergence",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.5
+    "width": 200
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -141,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+                "file": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+                "file": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,54 +228,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "a53fb71963e7ca6c",
+  "active": "01b19163ec6546f0",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md",
+    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md",
+    "Excalidraw/Drawing 2023-12-16 12.26.42.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
+    "Excalidraw/Drawing 2023-03-12 17.40.02.excalidraw.md",
+    "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
+    "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
+    "Excalidraw/MoE.excalidraw.md",
+    "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md",
+    "Excalidraw/Drawing 2024-10-17 16.17.16.excalidraw.md",
+    "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.assets/Pasted Image 20231210223244_411.png",
+    "Computer_Science/Large_Language_Models/Llama/MoE.png",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
+    "Excalidraw/Drawing 2024-10-17 16.17.31_0.excalidraw.md",
+    "Excalidraw/Drawing 2024-10-17 16.17.31.excalidraw.md",
+    "Excalidraw/Drawing 2024-10-17 13.00.31.excalidraw.png",
+    "Excalidraw/MoE.excalidraw.assets/Pasted Image 20241017161209_943.png",
+    "Excalidraw/MoE.excalidraw.assets/Pasted Image 20241017161048_838.png",
+    "Excalidraw/MoE.excalidraw.assets/Pasted Image 20241017160954_568.png",
+    "Excalidraw/MoE.excalidraw.assets",
+    "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241016211630375.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/3c1ea5a4a63f92728a75dbefb64603be_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241016211622791.png",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/5ace1f61654d6e656b3cf85625e56c79_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Transformers/Vision_Transformers.md",
+    "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md",
+    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
+    "Data_Science/Time_Series_Analysis/Kalman_Filter.md",
     "Computer_Science/Large_Language_Models/Vision_LLMs/LLava.md",
     "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md",
-    "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md",
-    "Computer_Science/Large_Language_Models/Vision_LLMs/Monkey_Chat.md",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md",
     "Computer_Science/Large_Language_Models/Vision_LLMs",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/935807c375a61452efcf94171a0802be_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Transformers/Transformer_Models.assets/image-20241013191935409.png",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013173719946.png",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/7446a906753df110c5483f912a58fb41_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013173712339.png",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/acfbfc53dd36db19bc575748720a88d0_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171653733.png",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171649577.png",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/8a335bb4a7d49bd0d5d351df71590d28_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets/image-20241013171523313.png",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
     "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets",
-    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md",
     "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets",
-    "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md",
     "Computer_Science/Computer_Vision/Dataset",
-    "Computer_Science/Computer_Vision/Computer_Vision_Tasks.md",
-    "Computer_Science/Deep_Learning/CNN_Nets/Convolutional_Neural_Network.md",
-    "Computer_Science/Deep_Learning/CNN_Nets/Convolution_Filters.md",
-    "Computer_Science/Deep_Learning/CNN_Nets/Normalization.md",
-    "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.md",
     "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.assets",
     "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
-    "Computer_Science/Web_Development/Network/缓存机制.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets",
-    "Data_Science/Time_Series_Analysis/Kalman_Filter.md",
-    "Computer_Science/Web_Development/Javascript/对象/私有变量.md",
-    "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.md",
-    "Computer_Science/Web_Development/Javascript/对象/P8_对象_构造函数_实例化.md",
-    "Computer_Science/Web_Development/Javascript/对象/私有字段.md",
-    "Computer_Science/Web_Development/Javascript/对象/Property和Element.md",
     "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.assets",
-    "Computer_Science/Web_Development/Javascript/异步提升/并发控制.md",
     "Computer_Science/Web_Development/前端常用需求实现",
-    "Computer_Science/Web_Development/Javascript/实用函数/Useful_Functions.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md",
-    "Computer_Science/Large_Language_Models/Llama/Llama2.assets",
     "未命名.canvas"
   ]
 }
