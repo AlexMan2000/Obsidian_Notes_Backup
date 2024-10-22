@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "React_Hooks",
+      "path": "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md"
+    },
+    {
+      "basename": "Canvas",
+      "path": "Computer_Science/Web_Development/HTMLCSS/Canvas/Canvas.md"
+    },
+    {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
+    },
+    {
+      "basename": "AWS-Deployment",
+      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
+    },
+    {
       "basename": "LLama_Basics",
       "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
     },
@@ -35,10 +55,6 @@
     {
       "basename": "Pasted Image 20231210223244_411",
       "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.assets/Pasted Image 20231210223244_411.png"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
     },
     {
       "basename": "浏览器渲染原理",
@@ -183,14 +199,6 @@
     {
       "basename": "事件冒泡与捕获",
       "path": "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件冒泡与捕获.md"
-    },
-    {
-      "basename": "事件委托",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md"
-    },
-    {
-      "basename": "新闻头条",
-      "path": "Computer_Science/Web_Development/前端项目/新闻头条.md"
     }
   ],
   "omittedPaths": [],
