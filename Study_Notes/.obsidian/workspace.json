@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md",
+                "file": "Computer_Science/Web_Development/React/React-Hooks/UseState.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React_Hooks"
+              "title": "UseState"
+            }
+          },
+          {
+            "id": "91f4cef7943536a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "自定义Hooks"
             }
           }
         ]
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "KL Divergence",
+                "query": "tag:#Definition",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md",
+                "file": "Computer_Science/Web_Development/React/React-Hooks/UseState.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +183,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for React_Hooks"
+              "title": "Backlinks for UseState"
             }
           },
           {
@@ -178,12 +192,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md",
+                "file": "Computer_Science/Web_Development/React/React-Hooks/UseState.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from React_Hooks"
+              "title": "Outgoing links from UseState"
             }
           }
         ],
@@ -245,52 +259,52 @@
   },
   "active": "b9205cfa1ed611e8",
   "lastOpenFiles": [
-    "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md",
-    "Computer_Science/Web_Development/React/React-Hooks/React_Hooks.md",
+    "Computer_Science/Web_Development/前端常用需求实现/函数参数归一化.md",
+    "Computer_Science/Web_Development/React/React-Hooks/UseMemo.md",
+    "Computer_Science/Web_Development/React/React-Hooks/UseCallback.md",
+    "Computer_Science/Web_Development/React/React-Hooks/UseState.md",
+    "Computer_Science/Web_Development/React/React-Hooks/UseEffect.md",
+    "Computer_Science/Web_Development/React/React_Context/Context使用场景.md",
+    "Computer_Science/Web_Development/React/React_Component/组合与继承.md",
+    "Computer_Science/Web_Development/React/React-Router",
+    "Computer_Science/Web_Development/Javascript/ES6/Proxy.md",
+    "Computer_Science/Web_Development/设计模式",
+    "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md",
+    "Computer_Science/Web_Development/React/React-Hooks/UseRef.md",
+    "Computer_Science/Web_Development/Javascript/ES6/Proxy.assets/4c9b034452ac7def81907a2e0db01dff_MD5.jpeg",
+    "Computer_Science/Web_Development/Javascript/ES6/Proxy.assets/image-20241023213830690.png",
+    "Computer_Science/Web_Development/Javascript/ES6/Proxy.assets/image-20241023213828948.png",
+    "Computer_Science/Web_Development/Javascript/ES6/Proxy.assets",
+    "Computer_Science/Web_Development/Node/基础/Events发布订阅.md",
+    "Computer_Science/Web_Development/Javascript/ES6",
+    "Computer_Science/Web_Development/Node/基础/同步与异步_阻塞和非阻塞.md",
+    "Excalidraw/MoE.excalidraw.md",
+    "Computer_Science/Web_Development/Node/EggJS",
+    "Computer_Science/Web_Development/Node/Koa",
+    "Computer_Science/Web_Development/Node/基础",
+    "Computer_Science/Web_Development/Node/基础/同步与异步_阻塞和非阻塞.assets/bfa68c12865b5f4e5d6d2060954da6f5_MD5.jpeg",
+    "Computer_Science/Web_Development/Node/同步与异步_阻塞和非阻塞.assets/image-20241023175554889.png",
+    "Computer_Science/Web_Development/Node/基础/同步与异步_阻塞和非阻塞.assets/a156627fd2a7280141fb7cc7a535304d_MD5.jpeg",
+    "Computer_Science/Web_Development/Node/同步与异步_阻塞和非阻塞.assets/image-20241023175534049.png",
+    "Computer_Science/Web_Development/Node/基础/同步与异步_阻塞和非阻塞.assets",
+    "Computer_Science/Web_Development/Network/HTML5本地储存.md",
+    "Computer_Science/Web_Development/Node",
+    "Computer_Science/Web_Development/Network/HTML5本地储存.assets/c4f598133e28a71b8971c42c37cd040f_MD5.jpeg",
+    "Computer_Science/Web_Development/Network/HTML5本地储存.assets/image-20241023122051598.png",
+    "bu.md",
+    "Computer_Science/Web_Development/Network/HTML5本地储存.assets/2063724a9d5f9e48dd0cb18951583599_MD5.jpeg",
+    "Computer_Science/Web_Development/Network/HTML5本地储存.assets",
+    "Computer_Science/Web_Development/Network/缓存机制.md",
+    "Computer_Science/Web_Development/Network/Websocket.md",
     "Computer_Science/Web_Development/HTMLCSS/Canvas/Canvas.md",
+    "Computer_Science/Web_Development/Javascript/DOM/DOM事件/事件委托.md",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md",
-    "Computer_Science/Web_Development/HTMLCSS/Canvas",
     "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/2e818d9a053099780403a56698199f14_MD5.jpeg",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20241021004906444.png",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/f6febba6def65418b1ba2bc282f3c7fc_MD5.jpeg",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20241021004039452.png",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/75581556cb003b3a1ccc0229138a0c6b_MD5.jpeg",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20241021004029075.png",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/6f1d05a3f624b5db715c803554ad4bcb_MD5.jpeg",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.assets/image-20241021003952277.png",
     "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
-    "Computer_Science/Large_Language_Models/CLIP",
-    "Computer_Science/Large_Language_Models/Llama/MoE.png",
     "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
     "Computer_Science/Large_Language_Models/Vision_LLMs/LLava.md",
     "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md",
-    "Excalidraw/Drawing 2023-10-24 15.22.40.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-16 12.26.42.excalidraw.md",
-    "Excalidraw/Drawing 2024-09-12 09.35.41.excalidraw.md",
-    "Excalidraw/Drawing 2024-09-20 12.00.41.excalidraw.md",
-    "Excalidraw/Drawing 2023-03-12 17.40.02.excalidraw.md",
-    "Excalidraw/Drawing 2024-01-25 16.31.42.excalidraw.md",
-    "Excalidraw/Drawing 2024-01-31 15.12.18.excalidraw.md",
-    "Excalidraw/Drawing 2024-09-20 12.02.46.excalidraw.md",
-    "Excalidraw/MoE.excalidraw.md",
-    "Excalidraw/Drawing 2023-11-05 09.54.46.excalidraw.md",
-    "Excalidraw/Drawing 2024-10-17 16.17.16.excalidraw.md",
-    "Excalidraw/Drawing 2023-10-24 15.21.23.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.assets/Pasted Image 20231210223244_411.png",
-    "Excalidraw/Drawing 2024-10-17 16.17.31_0.excalidraw.md",
-    "Excalidraw/Drawing 2024-10-17 16.17.31.excalidraw.md",
-    "Excalidraw/MoE.excalidraw.assets",
-    "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md",
-    "Computer_Science/Large_Language_Models/Vision_LLMs",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.assets",
-    "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.assets",
-    "Computer_Science/Computer_Vision/Dataset",
-    "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.assets",
-    "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.assets",
     "未命名.canvas"
   ]
 }
