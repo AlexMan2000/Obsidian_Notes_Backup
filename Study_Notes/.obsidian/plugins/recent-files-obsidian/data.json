@@ -1,8 +1,88 @@
 {
   "recentFiles": [
     {
+      "basename": "背包dp",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md"
+    },
+    {
+      "basename": "贪心算法",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/贪心算法.md"
+    },
+    {
+      "basename": "Algorithmic_Thinking",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md"
+    },
+    {
+      "basename": "Ch1_DPV_Intro_Big-O",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md"
+    },
+    {
       "basename": "UseState",
       "path": "Computer_Science/Web_Development/React/React-Hooks/UseState.md"
+    },
+    {
+      "basename": "Matrix_Basics",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
+    },
+    {
+      "basename": "PCA_Low-rank_Approximation",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
+    },
+    {
+      "basename": "知识点总结_练习",
+      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/1_Systems_and_Imaging/2_Inversion_Vector_Spaces/知识点总结_练习.md"
+    },
+    {
+      "basename": "单串",
+      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
+    },
+    {
+      "basename": "Webpack基本定义配置",
+      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
+    },
+    {
+      "basename": "AWS-Deployment",
+      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
+    },
+    {
+      "basename": "Data_Compression",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
+    },
+    {
+      "basename": "Entropies",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
+    },
+    {
+      "basename": "2_MLE&MAP",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
+    },
+    {
+      "basename": "Convex_Functions",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Convex_Functions.md"
+    },
+    {
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
+    },
+    {
+      "basename": "Sampling_Algorithms",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
+    },
+    {
+      "basename": "文件上传相关",
+      "path": "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.md"
+    },
+    {
+      "basename": "文件下载相关",
+      "path": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md"
+    },
+    {
+      "basename": "自定义Hooks",
+      "path": "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md"
     },
     {
       "basename": "函数参数归一化",
@@ -31,10 +111,6 @@
     {
       "basename": "Proxy",
       "path": "Computer_Science/Web_Development/Javascript/ES6/Proxy.md"
-    },
-    {
-      "basename": "自定义Hooks",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md"
     },
     {
       "basename": "UseRef",
@@ -73,28 +149,12 @@
       "path": "Computer_Science/Web_Development/HTMLCSS/Canvas/Canvas.md"
     },
     {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
-    },
-    {
-      "basename": "AWS-Deployment",
-      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
-    },
-    {
       "basename": "LLama_Basics",
       "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
     },
     {
       "basename": "MoE",
       "path": "Computer_Science/Large_Language_Models/Llama/MoE.png"
-    },
-    {
-      "basename": "背包dp",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md"
     },
     {
       "basename": "LLava",
@@ -133,72 +193,12 @@
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
     },
     {
-      "basename": "单串",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
       "basename": "Kalman_Filter",
       "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
     },
     {
       "basename": "InternVL",
       "path": "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md"
-    },
-    {
-      "basename": "Monkey_Chat",
-      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/Monkey_Chat.md"
-    },
-    {
-      "basename": "Transformer_Models",
-      "path": "Computer_Science/Deep_Learning/Transformers/Transformer_Models.md"
-    },
-    {
-      "basename": "Decoder-Only_Models",
-      "path": "Computer_Science/Deep_Learning/Transformers/Decoder-Only_Models.md"
-    },
-    {
-      "basename": "Torch_Venv相关",
-      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
-    },
-    {
-      "basename": "B-Trees",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/8_Balanced_Search_Trees/B-Trees.md"
-    },
-    {
-      "basename": "Torchvision_Dataset",
-      "path": "Computer_Science/Computer_Vision/Dataset/Torchvision_Dataset.md"
-    },
-    {
-      "basename": "Computer_Vision_Tasks",
-      "path": "Computer_Science/Computer_Vision/Computer_Vision_Tasks.md"
-    },
-    {
-      "basename": "Convolutional_Neural_Network",
-      "path": "Computer_Science/Deep_Learning/CNN_Nets/Convolutional_Neural_Network.md"
-    },
-    {
-      "basename": "Convolution_Filters",
-      "path": "Computer_Science/Deep_Learning/CNN_Nets/Convolution_Filters.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Computer_Science/Deep_Learning/CNN_Nets/Normalization.md"
-    },
-    {
-      "basename": "Classic_Nets",
-      "path": "Computer_Science/Deep_Learning/CNN_Nets/Classic_Nets.md"
-    },
-    {
-      "basename": "CNN_Backprop_Recitation_5_F21",
-      "path": "Computer_Science/Deep_Learning/CNN_Nets/CNN_Backprop_Recitation_5_F21.pdf"
-    },
-    {
-      "basename": "文件下载相关",
-      "path": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md"
-    },
-    {
-      "basename": "私有变量",
-      "path": "Computer_Science/Web_Development/Javascript/对象/私有变量.md"
     }
   ],
   "omittedPaths": [],
