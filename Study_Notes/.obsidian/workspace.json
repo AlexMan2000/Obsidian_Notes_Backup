@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
+                "file": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "背包dp"
+              "title": "Actor-Critic_Algorithm"
+            }
+          },
+          {
+            "id": "f2339678f4cad301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Graph_Features"
+            }
+          },
+          {
+            "id": "c88792c40efe8710",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Graph_Convolutional_Networks"
+            }
+          },
+          {
+            "id": "6e8448d0ba84b31b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "双指针技巧"
+            }
+          },
+          {
+            "id": "1792ab49e353604b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RLHF"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "peak",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 229.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -178,12 +235,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 背包dp"
+              "title": "Outgoing links from Graph_Convolutional_Networks"
             }
           }
         ],
@@ -243,54 +300,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b9205cfa1ed611e8",
+  "active": "c88792c40efe8710",
   "lastOpenFiles": [
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/0675eef8e3b0e6dd8c9445b13d4c2708_MD5.jpeg",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/image-20241110205841864.png",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/贪心算法.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/42cc622cc843d38fc72b40927ab3b43e_MD5.jpeg",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/image-20241110203910342.png",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/b2d7917a48bc7d1cbbf350cf5d32f2dd_MD5.jpeg",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/image-20241110203837951.png",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/e0e68dfa36d65654a31c07429719784c_MD5.jpeg",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/image-20241110203830420.png",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/6f33ea8b7ece429ef77bc18480959019_MD5.jpeg",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/image-20241110201351352.png",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets/794a1f1aae84887501dde00e7ecd378b_MD5.jpeg",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Algorithmic_Thinking.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch1_DPV_Intro_Big-O.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.assets",
-    "Computer_Science/Web_Development/React/React-Hooks/UseState.md",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md",
-    "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/1_Systems_and_Imaging/2_Inversion_Vector_Spaces/知识点总结_练习.md",
-    "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md",
-    "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/b673dae02320a12085cd800c0942aa31_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120339547.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/b01872cbaba79a860406002bcb2cbcf5_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120329928.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/bb52e0ba36910f7bd520cdeff95084e4_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120314061.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/5822ed87db770c373173ef2847fe70db_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120128701.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/d9f352874c54f71292335fbd74e79e83_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118115409942.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/ad639a0538770bb4556a3fe973ee4488_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
+    "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md",
+    "Computer_Science/Large_Language_Models/Prompt_Engineering/SFT.md",
+    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
+    "Computer_Science/Large_Language_Models/Prompt_Engineering/DPO.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/RLHF.assets",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.assets",
+    "Computer_Science/Natural_Language_Processing/Named_Entity_Recognition",
+    "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.assets",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient",
+    "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.assets",
+    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
+    "Computer_Science/Large_Language_Models/Prompt_Engineering/Aligning_LLMs.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md",
+    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
+    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
     "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/2_MLE&MAP.assets",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Convex_Functions.md",
-    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md",
-    "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md",
-    "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.md",
-    "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md",
-    "Computer_Science/Large_Language_Models/GPT",
-    "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md",
-    "Computer_Science/Web_Development/Webpack/面试考点",
-    "Computer_Science/Web_Development/前端常用需求实现/函数参数归一化.md",
-    "Computer_Science/Web_Development/React/React-Hooks/UseMemo.md",
-    "Computer_Science/Web_Development/React/React-Hooks/UseCallback.md",
-    "Computer_Science/Web_Development/React/React-Hooks/UseEffect.md",
-    "Computer_Science/Web_Development/React/React-Router",
-    "Computer_Science/Web_Development/设计模式",
-    "Computer_Science/Web_Development/Javascript/ES6/Proxy.assets",
-    "Computer_Science/Web_Development/Javascript/ES6",
-    "Computer_Science/Web_Development/Node/EggJS",
-    "Computer_Science/Web_Development/Node/Koa",
+    "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT2_Least_Square_Determinants/2.11_Markov_矩阵_傅里叶级数.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md",
     "未命名.canvas"
   ]
 }

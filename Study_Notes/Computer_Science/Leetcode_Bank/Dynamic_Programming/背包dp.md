@@ -331,6 +331,13 @@ class Solution {
     }}
 ```
 
+# 分组背包
+## 模板
+> [!important]
+> ![](%E8%83%8C%E5%8C%85dp.assets/0675eef8e3b0e6dd8c9445b13d4c2708_MD5.jpeg)![](%E8%83%8C%E5%8C%85dp.assets/fd062329ce5dc3c473d784ba7067da74_MD5.jpeg)
+
+
+
 
 
 
@@ -643,11 +650,6 @@ public class Solution {
 }
 ```
 
-
-# 分组背包
-## 模板
-> [!important]
-> ![](%E8%83%8C%E5%8C%85dp.assets/0675eef8e3b0e6dd8c9445b13d4c2708_MD5.jpeg)
 
 
 

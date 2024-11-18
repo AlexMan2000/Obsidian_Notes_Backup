@@ -43,3 +43,37 @@
 
 
 
+# 解决CUDNN error
+> [!important]
+> 将`pytorch`降级即可: `pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/test/cu124`
+
+
+
+# 安装deepspeed 出现的问题
+## CUDA安装版本和Torch编译的版本不匹配
+> [!important]
+> 去官网安装CUDA https://developer.nvidia.com/cuda-12-4-0-download-archive
+> 安装torch也要选择12.4
+
+
+
+
+
+
+## 系统找不到指定文件
+> [!important]
+> ![](Torch_Venv%E7%9B%B8%E5%85%B3.assets/1123512d8e45f762cb71f86b5550bbe9_MD5.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

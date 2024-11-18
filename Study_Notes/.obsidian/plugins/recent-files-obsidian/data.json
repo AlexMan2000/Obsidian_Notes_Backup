@@ -1,8 +1,156 @@
 {
   "recentFiles": [
     {
+      "basename": "Graph_Convolutional_Networks",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
+    },
+    {
+      "basename": "GNN_Layer",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md"
+    },
+    {
+      "basename": "Node_Embeddings",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md"
+    },
+    {
+      "basename": "Graph_Features",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md"
+    },
+    {
+      "basename": "Graph_Embeddings",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md"
+    },
+    {
+      "basename": "Graph_Attention",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md"
+    },
+    {
+      "basename": "GraphSAGE",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md"
+    },
+    {
+      "basename": "Actor-Critic_Algorithm",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md"
+    },
+    {
+      "basename": "Policy_Gradient_Optimization",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md"
+    },
+    {
+      "basename": "RLHF",
+      "path": "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md"
+    },
+    {
+      "basename": "SFT",
+      "path": "Computer_Science/Large_Language_Models/Prompt_Engineering/SFT.md"
+    },
+    {
+      "basename": "双指针技巧",
+      "path": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md"
+    },
+    {
+      "basename": "DPO",
+      "path": "Computer_Science/Large_Language_Models/Prompt_Engineering/DPO.md"
+    },
+    {
+      "basename": "Q-Learning",
+      "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
+    },
+    {
+      "basename": "LLama_Basics",
+      "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
+    },
+    {
+      "basename": "Aligning_LLMs",
+      "path": "Computer_Science/Large_Language_Models/Prompt_Engineering/Aligning_LLMs.md"
+    },
+    {
+      "basename": "Webpack性能优化专题",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md"
+    },
+    {
+      "basename": "动态库DLL-提升速度",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md"
+    },
+    {
+      "basename": "Treeshaking",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md"
+    },
+    {
+      "basename": "代码分割",
+      "path": "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md"
+    },
+    {
+      "basename": "Torch_Venv相关",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
+    },
+    {
+      "basename": "AWS-Deployment",
+      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
+    },
+    {
+      "basename": "2.11_Markov_矩阵_傅里叶级数",
+      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT2_Least_Square_Determinants/2.11_Markov_矩阵_傅里叶级数.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "高阶知识点和练习",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md"
+    },
+    {
       "basename": "背包dp",
       "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/背包dp.md"
+    },
+    {
+      "basename": "L1812__Merge_Quick_Sort",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/13_Sorting_Algorithms/L1812__Merge_Quick_Sort.md"
+    },
+    {
+      "basename": "Dynamic_Programming",
+      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Dynamic_Programming.md"
+    },
+    {
+      "basename": "1_Sorting&Hashing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/1_Sorting&Hashing.md"
+    },
+    {
+      "basename": "1_Transactions_Concurrency",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
+    },
+    {
+      "basename": "Memory_Mangement",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/Memory_Mangement.md"
+    },
+    {
+      "basename": "2_Concurrency_Control_Theory",
+      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
+    },
+    {
+      "basename": "2_Iterators&Joins",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/2_Iterators&Joins.md"
+    },
+    {
+      "basename": "Storage_Models_Compressions",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Storage_Models_Compressions.md"
+    },
+    {
+      "basename": "Hash_Indexing",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Hash_Indexing.md"
+    },
+    {
+      "basename": "Disk_Space_Management",
+      "path": "Computer_Science/Computer_Systems/Database Systems/2_DBMS_Architecture/Disk_Space_Management.md"
+    },
+    {
+      "basename": "4_Query_Execution_Model",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/4_Query_Execution_Model.md"
+    },
+    {
+      "basename": "3_Query_Optimization",
+      "path": "Computer_Science/Computer_Systems/Database Systems/3_DB_Algorithms/3_Query_Optimization.md"
     },
     {
       "basename": "贪心算法",
@@ -41,10 +189,6 @@
       "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
     },
     {
-      "basename": "AWS-Deployment",
-      "path": "Computer_Science/Web_Development/项目部署/AWS-Deployment.md"
-    },
-    {
       "basename": "Data_Compression",
       "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md"
     },
@@ -55,150 +199,6 @@
     {
       "basename": "Entropies",
       "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
-    },
-    {
-      "basename": "2_MLE&MAP",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/2_MLE&MAP.md"
-    },
-    {
-      "basename": "Convex_Functions",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Convex_Functions.md"
-    },
-    {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
-    },
-    {
-      "basename": "Sampling_Algorithms",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Sampling_Algorithms.md"
-    },
-    {
-      "basename": "文件上传相关",
-      "path": "Computer_Science/Web_Development/前端常用需求实现/文件上传相关.md"
-    },
-    {
-      "basename": "文件下载相关",
-      "path": "Computer_Science/Web_Development/前端常用需求实现/文件下载相关.md"
-    },
-    {
-      "basename": "自定义Hooks",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/自定义Hooks.md"
-    },
-    {
-      "basename": "函数参数归一化",
-      "path": "Computer_Science/Web_Development/前端常用需求实现/函数参数归一化.md"
-    },
-    {
-      "basename": "UseMemo",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/UseMemo.md"
-    },
-    {
-      "basename": "UseCallback",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/UseCallback.md"
-    },
-    {
-      "basename": "UseEffect",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/UseEffect.md"
-    },
-    {
-      "basename": "Context使用场景",
-      "path": "Computer_Science/Web_Development/React/React_Context/Context使用场景.md"
-    },
-    {
-      "basename": "组合与继承",
-      "path": "Computer_Science/Web_Development/React/React_Component/组合与继承.md"
-    },
-    {
-      "basename": "Proxy",
-      "path": "Computer_Science/Web_Development/Javascript/ES6/Proxy.md"
-    },
-    {
-      "basename": "UseRef",
-      "path": "Computer_Science/Web_Development/React/React-Hooks/UseRef.md"
-    },
-    {
-      "basename": "Events发布订阅",
-      "path": "Computer_Science/Web_Development/Node/基础/Events发布订阅.md"
-    },
-    {
-      "basename": "同步与异步_阻塞和非阻塞",
-      "path": "Computer_Science/Web_Development/Node/基础/同步与异步_阻塞和非阻塞.md"
-    },
-    {
-      "basename": "MoE.excalidraw",
-      "path": "Excalidraw/MoE.excalidraw.md"
-    },
-    {
-      "basename": "HTML5本地储存",
-      "path": "Computer_Science/Web_Development/Network/HTML5本地储存.md"
-    },
-    {
-      "basename": "bu",
-      "path": "bu.md"
-    },
-    {
-      "basename": "缓存机制",
-      "path": "Computer_Science/Web_Development/Network/缓存机制.md"
-    },
-    {
-      "basename": "Websocket",
-      "path": "Computer_Science/Web_Development/Network/Websocket.md"
-    },
-    {
-      "basename": "Canvas",
-      "path": "Computer_Science/Web_Development/HTMLCSS/Canvas/Canvas.md"
-    },
-    {
-      "basename": "LLama_Basics",
-      "path": "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md"
-    },
-    {
-      "basename": "MoE",
-      "path": "Computer_Science/Large_Language_Models/Llama/MoE.png"
-    },
-    {
-      "basename": "LLava",
-      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/LLava.md"
-    },
-    {
-      "basename": "Drawing 2024-10-06 13.14.34.excalidraw",
-      "path": "Excalidraw/Drawing 2024-10-06 13.14.34.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-12-10 22.00.18.excalidraw",
-      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-12-16 12.26.42.excalidraw",
-      "path": "Excalidraw/Drawing 2023-12-16 12.26.42.excalidraw.md"
-    },
-    {
-      "basename": "Pasted Image 20231210223244_411",
-      "path": "Excalidraw/Drawing 2023-12-10 22.00.18.excalidraw.assets/Pasted Image 20231210223244_411.png"
-    },
-    {
-      "basename": "浏览器渲染原理",
-      "path": "Computer_Science/Web_Development/Javascript/DOM/事件环浏览器/浏览器渲染原理.md"
-    },
-    {
-      "basename": "Vision_Transformers",
-      "path": "Computer_Science/Deep_Learning/Transformers/Vision_Transformers.md"
-    },
-    {
-      "basename": "Parameter_Quantization",
-      "path": "Computer_Science/Deep_Learning/Model_Compression/Parameter_Quantization.md"
-    },
-    {
-      "basename": "二维动态规划",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/二维动态规划.md"
-    },
-    {
-      "basename": "Kalman_Filter",
-      "path": "Data_Science/Time_Series_Analysis/Kalman_Filter.md"
-    },
-    {
-      "basename": "InternVL",
-      "path": "Computer_Science/Large_Language_Models/Vision_LLMs/InternVL.md"
     }
   ],
   "omittedPaths": [],
