@@ -66,6 +66,38 @@
 
 
 
+## Train GNN
+> [!motiv]
+> ![](Graph_Convolutional_Networks.assets/42e8c45b09e3f4bc0483165c292cb89d_MD5.jpeg)![](Graph_Convolutional_Networks.assets/863db8df6758cc54022205bec9885a92_MD5.jpeg)![](Graph_Convolutional_Networks.assets/ada075361b060872952783dfd7dd5a88_MD5.jpeg)
+
+
+
+## Model Design
+> [!important]
+> ![](Graph_Convolutional_Networks.assets/b4ae6a17853959f2ae9dc5b4a688cc0f_MD5.jpeg)![](Graph_Convolutional_Networks.assets/90b798d8071631a29d34603580512047_MD5.jpeg)![](Graph_Convolutional_Networks.assets/6e00242f708470598220ec3dd34b4bb5_MD5.jpeg)
+
+
+
+
+## Inductive Capability
+> [!important]
+> ![](Graph_Convolutional_Networks.assets/f8401d8e4b6f4a97c74341f47de5d1e6_MD5.jpeg)![](Graph_Convolutional_Networks.assets/a9396fe98af21bf891aaded277ccf230_MD5.jpeg)![](Graph_Convolutional_Networks.assets/88bd60c88d1ee5d30a8f22e84d179190_MD5.jpeg)
+
+
+
+
+# GNN vs CNN
+> [!important]
+> ![](Graph_Convolutional_Networks.assets/4e25e23b9f0bc41b688782d0b24b618a_MD5.jpeg)![](Graph_Convolutional_Networks.assets/c07095a38f903380328527cd0bf7d9a1_MD5.jpeg)![](Graph_Convolutional_Networks.assets/image-20241118124534759.png)![](Graph_Convolutional_Networks.assets/78dc901b101476eeb4192cec9ea094da_MD5.jpeg)
+
+
+   
+# GNN vs Transformer
+
+
+
+
+
 
 
 

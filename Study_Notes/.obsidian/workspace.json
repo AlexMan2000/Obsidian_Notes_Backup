@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Actor-Critic_Algorithm"
-            }
-          },
-          {
-            "id": "f2339678f4cad301",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Graph_Features"
+              "title": "Graph_Convolutional_Networks"
             }
           },
           {
@@ -77,8 +63,7 @@
               "title": "RLHF"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -300,31 +285,31 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "c88792c40efe8710",
+  "active": "b9205cfa1ed611e8",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/b673dae02320a12085cd800c0942aa31_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120339547.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/b01872cbaba79a860406002bcb2cbcf5_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120329928.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/bb52e0ba36910f7bd520cdeff95084e4_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120314061.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/5822ed87db770c373173ef2847fe70db_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118120128701.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/d9f352874c54f71292335fbd74e79e83_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118115409942.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/ad639a0538770bb4556a3fe973ee4488_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/78dc901b101476eeb4192cec9ea094da_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124554051.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/c07095a38f903380328527cd0bf7d9a1_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/4e25e23b9f0bc41b688782d0b24b618a_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124534759.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124527682.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124521841.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/88bd60c88d1ee5d30a8f22e84d179190_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124330165.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/a9396fe98af21bf891aaded277ccf230_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124321540.png",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.assets",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
     "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md",
     "Computer_Science/Large_Language_Models/Prompt_Engineering/SFT.md",

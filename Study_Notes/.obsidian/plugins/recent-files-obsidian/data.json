@@ -5,8 +5,12 @@
       "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
     },
     {
-      "basename": "GNN_Layer",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md"
+      "basename": "Actor-Critic_Algorithm",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md"
+    },
+    {
+      "basename": "6ec8ff6c8781f37327529af2a5e2a862_MD5",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/6ec8ff6c8781f37327529af2a5e2a862_MD5.jpeg"
     },
     {
       "basename": "Node_Embeddings",
@@ -15,6 +19,10 @@
     {
       "basename": "Graph_Features",
       "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md"
+    },
+    {
+      "basename": "GNN_Layer",
+      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md"
     },
     {
       "basename": "Graph_Embeddings",
@@ -27,10 +35,6 @@
     {
       "basename": "GraphSAGE",
       "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md"
-    },
-    {
-      "basename": "Actor-Critic_Algorithm",
-      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md"
     },
     {
       "basename": "Policy_Gradient_Optimization",
@@ -195,10 +199,6 @@
     {
       "basename": "Word_Vectors",
       "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
-      "basename": "Entropies",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/2_Information_Theory/Entropies.md"
     }
   ],
   "omittedPaths": [],

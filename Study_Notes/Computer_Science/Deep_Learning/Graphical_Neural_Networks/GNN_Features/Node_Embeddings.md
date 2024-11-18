@@ -157,8 +157,8 @@ print("The PageRank value for node 0 after one iteration is {}".format(r1))
 
 
 
-# Node Similarities
-## Motivations
+# Node Embeddings
+## Node Similarities
 > [!motiv]
 > ![](Node_Embeddings.assets/3a983ed7bb0bb68ed2b46cf1d6a1c610_MD5.jpeg)
 
@@ -168,9 +168,6 @@ print("The PageRank value for node 0 after one iteration is {}".format(r1))
 > ![](Node_Embeddings.assets/5eac4c865e9a7685ad8418797a48aab3_MD5.jpeg)![](Node_Embeddings.assets/6817ff8a6ccfa793c67b6032d7121488_MD5.jpeg)
 
 
-
-
-# Node Embeddings
 ## Encoder-Decoder Structure
 ### Definition
 > [!important]
