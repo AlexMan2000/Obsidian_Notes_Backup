@@ -36,15 +36,29 @@
 
 
 ## Properties&Proofs
-> ![image.png](Kernel_Methods.assets/20231107_2232542362.png)
+> [!important]
+> 
+> ![](Kernel_Methods.assets/d3a4a9668ff856fa3aba11acde628224_MD5.jpeg)
 
-**Proof**
 
-### Sums of Kernels
+
+### (28) Constant
+> [!proof]
+> ![](Kernel_Methods.assets/de5e4f3af014937e02583a224c8ceb06_MD5.jpeg)
+
+### (29) Fucntion
+> [!proof]
+> ![](Kernel_Methods.assets/9fa8a5adb208a83850984aa65d133e6e_MD5.jpeg)
+
+
+
+### (32) Sum
+> [!proof]
 > ![image.png](Kernel_Methods.assets/20231107_2232557457.png)
 
 
-### Products of Kernels
+### (33) Product
+> [!proof]
 > ![image.png](Kernel_Methods.assets/20231107_2232573780.png)![image.png](Kernel_Methods.assets/20231107_2232586804.png)
 
 

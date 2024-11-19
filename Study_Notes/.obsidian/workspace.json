@@ -36,34 +36,21 @@
             }
           },
           {
-            "id": "6e8448d0ba84b31b",
+            "id": "a758b7329193e57d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "双指针技巧"
-            }
-          },
-          {
-            "id": "1792ab49e353604b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RLHF"
+              "title": "3_Regression&Reparametrization"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -95,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Kernel  Me",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +113,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4f417f835f612f94",
@@ -220,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Graph_Convolutional_Networks"
+              "title": "Outgoing links from 3_Regression&Reparametrization"
             }
           }
         ],
@@ -285,21 +273,27 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b9205cfa1ed611e8",
+  "active": "a758b7329193e57d",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/78dc901b101476eeb4192cec9ea094da_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124554051.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/c07095a38f903380328527cd0bf7d9a1_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/4e25e23b9f0bc41b688782d0b24b618a_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124534759.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124527682.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124521841.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/88bd60c88d1ee5d30a8f22e84d179190_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124330165.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/a9396fe98af21bf891aaded277ccf230_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241118124321540.png",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part1.pdf",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/6ed2221860867197015ce1305f3d5fc3_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20241118221247585.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/9fa8a5adb208a83850984aa65d133e6e_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175542452.png",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/de5e4f3af014937e02583a224c8ceb06_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175532104.png",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/d3a4a9668ff856fa3aba11acde628224_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175324769.png",
+    "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/a1347124414bd924f6710b8a5853e286_MD5.jpeg",
+    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20241118174433284.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets",
@@ -319,9 +313,6 @@
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.assets",
     "Computer_Science/Natural_Language_Processing/Named_Entity_Recognition",
     "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.assets",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.assets",
     "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
     "Computer_Science/Large_Language_Models/Prompt_Engineering/Aligning_LLMs.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md",
@@ -329,10 +320,6 @@
     "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md",
     "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
     "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
-    "Computer_Science/Web_Development/项目部署/AWS-Deployment.md",
-    "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT2_Least_Square_Determinants/2.11_Markov_矩阵_傅里叶级数.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/高阶知识点和练习.md",
     "未命名.canvas"
   ]
 }

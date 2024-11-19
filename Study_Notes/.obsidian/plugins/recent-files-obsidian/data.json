@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "3_Regression&Reparametrization",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
+    },
+    {
+      "basename": "Gaussian_Process",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md"
+    },
+    {
+      "basename": "Kernel_Methods",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.md"
+    },
+    {
+      "basename": "GP_Part1",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part1.pdf"
+    },
+    {
+      "basename": "GP_Part2",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf"
+    },
+    {
+      "basename": "1_Classification",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md"
+    },
+    {
+      "basename": "GP_Part3",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf"
+    },
+    {
       "basename": "Graph_Convolutional_Networks",
       "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "UseState",
       "path": "Computer_Science/Web_Development/React/React-Hooks/UseState.md"
-    },
-    {
-      "basename": "Matrix_Basics",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/Matrix_Basics.md"
-    },
-    {
-      "basename": "PCA_Low-rank_Approximation",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/1_Linear_Algebra_Review/PCA_Low-rank_Approximation.md"
-    },
-    {
-      "basename": "知识点总结_练习",
-      "path": "Computer_Science/Machine_Learning/Control_LA_Circuit/EECS16A/1_Systems_and_Imaging/2_Inversion_Vector_Spaces/知识点总结_练习.md"
-    },
-    {
-      "basename": "单串",
-      "path": "Computer_Science/Leetcode_Bank/Dynamic_Programming/单串.md"
-    },
-    {
-      "basename": "Webpack基本定义配置",
-      "path": "Computer_Science/Web_Development/Webpack/基础知识点/Webpack基本定义配置.md"
-    },
-    {
-      "basename": "Data_Compression",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Data_Compression.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
     }
   ],
   "omittedPaths": [],

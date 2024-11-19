@@ -83,7 +83,7 @@ See [Gaussian_Process](../../Probability_Theory_EECS126/3_Random_Processes/Gauss
 
 ### Generalized Version
 > [!algo]
-> ![](3_Regression&Reparametrization.assets/image-20240320123315291.png)
+> ![](3_Regression&Reparametrization.assets/024362e9797548c01544dbe06f9a6b25_MD5.jpeg)![](3_Regression&Reparametrization.assets/4dd5be91b3e7b65a6fd1f10483d097a3_MD5.jpeg)![](3_Regression&Reparametrization.assets/13acbe2b26fae93b602249f2f356df62_MD5.jpeg)![](3_Regression&Reparametrization.assets/image-20240320123315291.png)
 
 
 
@@ -104,7 +104,8 @@ See [Gaussian_Process](../../Probability_Theory_EECS126/3_Random_Processes/Gauss
 > [!algo]
 > ![](3_Regression&Reparametrization.assets/image-20240320123751574.png)![](3_Regression&Reparametrization.assets/image-20240320123801108.png)
 
-
+> [!example]
+> ![](3_Regression&Reparametrization.assets/ede0e6a987437e25098aa1a1897c3c3c_MD5.jpeg)![](3_Regression&Reparametrization.assets/55de65ebb1900e6fc385e8dc867446d2_MD5.jpeg)![](3_Regression&Reparametrization.assets/a1347124414bd924f6710b8a5853e286_MD5.jpeg)
 
 
 
@@ -118,7 +119,7 @@ See [Gaussian_Process](../../Probability_Theory_EECS126/3_Random_Processes/Gauss
 
 ## Learning the Kernel Parameters
 > [!important]
-> ![](3_Regression&Reparametrization.assets/image-20240320123855725.png)
+> ![](3_Regression&Reparametrization.assets/6ed2221860867197015ce1305f3d5fc3_MD5.jpeg)![](3_Regression&Reparametrization.assets/image-20240320123855725.png)
 
 
 

@@ -59,6 +59,12 @@ pl.plot(Xtest, f_prior)
 
 
 
+# Gaussian Process Kernels
+
+
+
+
+
 # Control the Gaussian Process
 > [!def]
 > ![](Gaussian_Process.assets/image-20240320113701407.png)
