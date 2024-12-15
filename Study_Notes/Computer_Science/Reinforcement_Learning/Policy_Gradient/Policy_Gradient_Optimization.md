@@ -63,6 +63,8 @@
 > [!important] Rewards to go
 > ![](RLHF.assets/9a4194455167adc37aa276fd2f1c4ee6_MD5.jpeg)
 
+
+
 ### Method 2: Optimal Baseline
 > [!def]
 > ![](RLHF.assets/138c54bd0ca53549b48f7e368e8ec6fd_MD5.jpeg)

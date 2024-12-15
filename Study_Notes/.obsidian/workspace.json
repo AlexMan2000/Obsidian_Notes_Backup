@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graph_Convolutional_Networks"
+              "title": "Node2Vec"
+            }
+          },
+          {
+            "id": "97bc4671580beaeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Word_Vectors"
             }
           },
           {
@@ -27,30 +41,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+                "file": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graph_Convolutional_Networks"
+              "title": "3_Routing"
             }
           },
           {
-            "id": "a758b7329193e57d",
+            "id": "c6084bcb3f29707d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+                "file": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3_Regression&Reparametrization"
+              "title": "QLoRA"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Kernel  Me",
+                "query": "Hierarchical",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,8 +126,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4f417f835f612f94",
@@ -208,12 +220,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
+                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 3_Regression&Reparametrization"
+              "title": "Outgoing links from Node2Vec"
             }
           }
         ],
@@ -273,53 +285,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "a758b7329193e57d",
+  "active": "b9205cfa1ed611e8",
   "lastOpenFiles": [
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part1.pdf",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/6ed2221860867197015ce1305f3d5fc3_MD5.jpeg",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20241118221247585.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/9fa8a5adb208a83850984aa65d133e6e_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175542452.png",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/de5e4f3af014937e02583a224c8ceb06_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175532104.png",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/d3a4a9668ff856fa3aba11acde628224_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.assets/image-20241118175324769.png",
-    "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/a1347124414bd924f6710b8a5853e286_MD5.jpeg",
-    "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.assets/image-20241118174433284.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Alias_Sampling_Algo.pdf",
+    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
+    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
     "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/2e31e6d8a1802e85f3c588c2b4f26c48_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165428525.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/4225704ac2b453d8acad6839d6f58c85_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165415979.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165411130.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165405774.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165400008.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165353767.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/90551904c8323518887e8a7f87859dc1_MD5.jpeg",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165341717.png",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/PageRank.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/DeepWalk.md",
+    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/DeepWalk.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+    "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
+    "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md",
+    "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.md",
+    "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.assets",
+    "Computer_Science/Large_Language_Models/Finetuning/Alpaca.md",
+    "Computer_Science/Large_Language_Models/Finetuning/Alpaca.assets",
+    "Computer_Science/Large_Language_Models/Finetuning/LoRA.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
+    "Computer_Science/Large_Language_Models/Finetuning",
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering/RLHF.md",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering/SFT.md",
-    "Computer_Science/Leetcode_Bank/代码技巧/双指针技巧.md",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering/DPO.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/RLHF.assets",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.assets",
-    "Computer_Science/Natural_Language_Processing/Named_Entity_Recognition",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
+    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md",
     "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md",
-    "Computer_Science/Large_Language_Models/Llama/LLama_Basics.md",
-    "Computer_Science/Large_Language_Models/Prompt_Engineering/Aligning_LLMs.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/Webpack性能优化专题.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/Webpack性能优化/动态库DLL-提升速度.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/Treeshaking.md",
-    "Computer_Science/Web_Development/Webpack/进阶知识点/工程代码优化/代码分割.md",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
+    "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md",
+    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
+    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
+    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency&Lock.md",
+    "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.assets",
+    "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.assets",
+    "Computer_Science/Java_Language/Java_Concurrecncy/JMM共享内存模型",
+    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/3_面试知识点.assets",
+    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf",
     "未命名.canvas"
   ]
 }

@@ -390,10 +390,12 @@
 > **Just remember the following:**
 > 1. Each entry in the compatibility matrix indicates whether two locks can be applied at same level.
 > 2. If we request a lock at some level, we automatically assume that we lock all the subsequent lower levels. For example, if we use S lock at table level, then it automatically lock all the tuples with S lock.
-> 3. Intention Locks doesn't pose a lock at current level, but **will** put lock at subsequent lower level. For example, if we use IX lock at table level, it will put an X lock at an arbitrary tuples.
-> 4. The reason why SIX and S is not compatible is that, even if SIX and S is compatible at current level(both are S), the intention to put X(due to IX) at lower level may cause incompatibility with S at lower levels(since S puts S at lower level).
-> 5. We can never put intention locks at the bottom layer of the lock hierarchy tree since we have to put some lock on tuples. The atomic object for DBMS is tuple(record).
-> 6. One easy way to remember the rule is to think that as long as there is possibility that two types of lock won't cause the descent to be imcompatible, then they are compatible. For example, IS and IX intends to put some locks at some table at lower level of the lock hierarchy, if IS and IX are put on different table, then they don't collide with each other and are thus compatible.
+> 
+> ![](1_Transactions_Concurrency.assets/28c3273c639335179d2477e2a708416d_MD5.jpeg)![](1_Transactions_Concurrency.assets/e3030b8f5681913739a97cf064ea7f5a_MD5.jpeg)
+
+
+
+
 
 
 

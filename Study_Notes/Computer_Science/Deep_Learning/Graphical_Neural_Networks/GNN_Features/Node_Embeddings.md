@@ -158,14 +158,17 @@ print("The PageRank value for node 0 after one iteration is {}".format(r1))
 
 
 # Node Embeddings
-## Node Similarities
+## Objective
+> [!def]
+> ![](Node_Embeddings.assets/6afec62d448d7e5d8ad467fe0cf53614_MD5.jpeg)
+
+
+
+
+### Node Similarities
 > [!motiv]
 > ![](Node_Embeddings.assets/3a983ed7bb0bb68ed2b46cf1d6a1c610_MD5.jpeg)
 
-
-## How to Learn - Random Walk
-> [!important]
-> ![](Node_Embeddings.assets/5eac4c865e9a7685ad8418797a48aab3_MD5.jpeg)![](Node_Embeddings.assets/6817ff8a6ccfa793c67b6032d7121488_MD5.jpeg)
 
 
 ## Encoder-Decoder Structure
@@ -184,6 +187,11 @@ print("The PageRank value for node 0 after one iteration is {}".format(r1))
 
 
 ## DeepWalk
+### How to Learn - Random Walk
+> [!important]
+> ![](Node_Embeddings.assets/5eac4c865e9a7685ad8418797a48aab3_MD5.jpeg)![](Node_Embeddings.assets/6817ff8a6ccfa793c67b6032d7121488_MD5.jpeg)
+
+
 ### Algorithm
 > [!algo]
 > ![](GNN_Features/Node_Embeddings.assets/4368cee034ad0e1a5b08126f375e79ed_MD5.jpeg)![](GNN_Features/Node_Embeddings.assets/9cc152124ccb585bde085718122ce951_MD5.jpeg)![](GNN_Features/Node_Embeddings.assets/3c8f0d57d02aa48660aa4dc74e8f35d2_MD5.jpeg)
@@ -232,6 +240,7 @@ print("The PageRank value for node 0 after one iteration is {}".format(r1))
 
 > [!algo]
 > ![](GNN_Features/Node_Embeddings.assets/13bc54584aac72e0295c22b46ae53a0c_MD5.jpeg)
+> Details in [Node2Vec](Node2Vec.md)
 
 
 
