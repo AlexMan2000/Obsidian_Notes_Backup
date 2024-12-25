@@ -1,8 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "Graph_Attention_Networks",
+      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md"
+    },
+    {
+      "basename": "GNN_Theory",
+      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Theory.md"
+    },
+    {
+      "basename": "Graph_Convolutional_Networks",
+      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
+    },
+    {
+      "basename": "Graph_Transformers",
+      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Transformers.md"
+    },
+    {
+      "basename": "Heterogenous_Graph",
+      "path": "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph/Heterogenous_Graph.md"
+    },
+    {
+      "basename": "Node_Classification",
+      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.md"
+    },
+    {
+      "basename": "Node_Embeddings",
+      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md"
+    },
+    {
+      "basename": "PageRank_Variants",
+      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.md"
+    },
+    {
+      "basename": "DeepWalk",
+      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md"
+    },
+    {
       "basename": "Node2Vec",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md"
+      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.md"
+    },
+    {
+      "basename": "Word_Vectors",
+      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
     },
     {
       "basename": "3_Routing",
@@ -17,28 +61,8 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
     },
     {
-      "basename": "Node_Embeddings",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md"
-    },
-    {
-      "basename": "PageRank",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/PageRank.md"
-    },
-    {
-      "basename": "DeepWalk",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/DeepWalk.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
       "basename": "Word_Embedding",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
-    },
-    {
-      "basename": "Graph_Convolutional_Networks",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
     },
     {
       "basename": "QLoRA",
@@ -67,14 +91,6 @@
     {
       "basename": "Policy_Gradient_Optimization",
       "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md"
-    },
-    {
-      "basename": "Graph_Attention",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md"
-    },
-    {
-      "basename": "GNN_Layer",
-      "path": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md"
     },
     {
       "basename": "Value_Function_Methods",
@@ -183,22 +199,6 @@
     {
       "basename": "Kernel_Methods",
       "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.md"
-    },
-    {
-      "basename": "GP_Part1",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part1.pdf"
-    },
-    {
-      "basename": "GP_Part2",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part2.pdf"
-    },
-    {
-      "basename": "1_Classification",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Classification_Decision/1_Classification.md"
-    },
-    {
-      "basename": "GP_Part3",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/GP_Part3.pdf"
     }
   ],
   "omittedPaths": [],

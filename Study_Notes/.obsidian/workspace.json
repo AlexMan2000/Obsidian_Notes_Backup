@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
+                "file": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Node2Vec"
+              "title": "Graph_Attention_Networks"
+            }
+          },
+          {
+            "id": "5a286ff4b36fdcaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "离散马尔科夫链"
             }
           },
           {
@@ -95,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Hierarchical",
+                "query": "Absorption",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -147,7 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 241.5
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -220,12 +234,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
+                "file": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Node2Vec"
+              "title": "Outgoing links from Graph_Attention_Networks"
             }
           }
         ],
@@ -287,29 +301,45 @@
   },
   "active": "b9205cfa1ed611e8",
   "lastOpenFiles": [
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Alias_Sampling_Algo.pdf",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Theory.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Transformers.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md",
+    "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph/Heterogenous_Graph.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Applications",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/80a3c67ebe3648b971a9e159e156219e_MD5.jpeg",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216231035263.png",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216231030589.png",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/565f14e65f64e5baf5c6e45e1a9dd46d_MD5.jpeg",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216231002348.png",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/d948e5aa50eac3cc6e3d96a90d598a52_MD5.jpeg",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216230953326.png",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.assets/df7752748fd9e072f5933e3e0a16cc62_MD5.jpeg",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.assets/image-20241216230833222.png",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.assets/93860dca04edb1b60f9495fc9d2360d3_MD5.jpeg",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
+    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.assets",
+    "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.assets",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
+    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.md",
+    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.assets",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Alias_Sampling_Algo.pdf",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
     "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node_Embeddings.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/2e31e6d8a1802e85f3c588c2b4f26c48_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165428525.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/4225704ac2b453d8acad6839d6f58c85_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165415979.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165411130.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165405774.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165400008.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165353767.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/90551904c8323518887e8a7f87859dc1_MD5.jpeg",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets/image-20241214165341717.png",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/PageRank.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Node2Vec.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/DeepWalk.md",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.assets",
     "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/DeepWalk.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
+    "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.assets",
     "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
     "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md",
     "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.md",
@@ -317,22 +347,6 @@
     "Computer_Science/Large_Language_Models/Finetuning/Alpaca.md",
     "Computer_Science/Large_Language_Models/Finetuning/Alpaca.assets",
     "Computer_Science/Large_Language_Models/Finetuning/LoRA.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
-    "Computer_Science/Large_Language_Models/Finetuning",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/Graph_Attention.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md",
-    "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md",
-    "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md",
-    "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md",
-    "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency&Lock.md",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.assets",
-    "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.assets",
-    "Computer_Science/Java_Language/Java_Concurrecncy/JMM共享内存模型",
-    "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/3_面试知识点.assets",
-    "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf",
     "未命名.canvas"
   ]
 }
