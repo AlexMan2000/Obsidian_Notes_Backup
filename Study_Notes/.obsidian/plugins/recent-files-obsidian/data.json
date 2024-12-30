@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Servlet",
+      "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
+    },
+    {
       "basename": "Graph_Attention_Networks",
       "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Gaussian_Process",
       "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md"
-    },
-    {
-      "basename": "Kernel_Methods",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/7_Applications/Kernel_Methods.md"
     }
   ],
   "omittedPaths": [],
