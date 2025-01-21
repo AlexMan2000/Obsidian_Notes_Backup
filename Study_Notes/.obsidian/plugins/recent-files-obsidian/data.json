@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Docker",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
+    },
+    {
       "basename": "Servlet",
       "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Garbage_Collection",
       "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Garbage_Collection.md"
-    },
-    {
-      "basename": "Gaussian_Process",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/3_Random_Processes/Gaussian_Process.md"
     }
   ],
   "omittedPaths": [],
