@@ -89,11 +89,32 @@
 > ![](Concentration_Inequalities&MGF.assets/image-20240126220132498.png)
 
 
+## Hoeffding's for Sub-Gaussian
+### Lemma 
+> [!lemma]
+> ![](Concentration_Inequalities&MGF.assets/8c2998f687b36fa43c1c4f80a8dffad8_MD5.jpeg)
+
+> [!proof]
+> ![](Concentration_Inequalities&MGF.assets/8b69bb2d9c227a946ddd96180e3fda1b_MD5.jpeg)![](Concentration_Inequalities&MGF.assets/1b553171512721d192c3dbe756cdf396_MD5.jpeg)![](Concentration_Inequalities&MGF.assets/f2787b5c5b19c3e612d00a879d73f272_MD5.jpeg)
+
+
+### Inequality
+> [!important]
+> ![](Concentration_Inequalities&MGF.assets/f358015da82ab57627963cf73e5a7341_MD5.jpeg)
+
+> [!proof]
+> ![](Concentration_Inequalities&MGF.assets/2b9b991c89c61033c51bd26111d21a2e_MD5.jpeg)![](Concentration_Inequalities&MGF.assets/7fbe0dfe8a3f95ce21d727fb6b9de8e5_MD5.jpeg)![](Concentration_Inequalities&MGF.assets/7a6680989ccb94eec64c68b66de19160_MD5.jpeg)
+
 
 
 ## Hoeffding Bound
 > [!def]
 > ![](Concentration_Inequalities&MGF.assets/image-20240315224137932.png)
+
+
+
+
+
 
 
 
@@ -118,6 +139,14 @@
 
 > [!example] Coin Tossing
 > ![](Concentration_Inequalities&MGF.assets/image-20240316123007440.png)
+
+
+
+## Chernoff Bounds For Sub-Gaussian
+> [!def]
+> If $X$ is $\sigma^2$-[sub-gaussian](../../../../Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md) 
+> ![](Concentration_Inequalities&MGF.assets/93e93519470edff48faf200cbdecfa20_MD5.jpeg)![](Concentration_Inequalities&MGF.assets/bdb32d9ebd549e569cca28e63bc6e9e7_MD5.jpeg)
+
 
 
 

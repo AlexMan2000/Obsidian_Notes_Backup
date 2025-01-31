@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
+                "file": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Sub-Gaussian"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+                "file": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "离散马尔科夫链"
+              "title": "Concentration_Inequalities&MGF"
             }
           },
           {
@@ -69,15 +69,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QLoRA"
+              "title": "Docker"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "部署",
+                "query": "Docker file",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -299,15 +300,30 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b9205cfa1ed611e8",
+  "active": "c6084bcb3f29707d",
   "lastOpenFiles": [
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/460620d1a5ba3a3b5a1f9025afd9574b_MD5.jpeg",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/image-20250121125138155.png",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/2c088ed46b5b4f4539d08e6ca1304d4c_MD5.jpeg",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/image-20250120163527165.png",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/a3b644d96f6b274ae96917510136967b_MD5.jpeg",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/image-20250120163107473.png",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets/image-20250120163054484.png",
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md",
+    "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/f2787b5c5b19c3e612d00a879d73f272_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/1b553171512721d192c3dbe756cdf396_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110243739.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110237563.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/8b69bb2d9c227a946ddd96180e3fda1b_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110224891.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/7a6680989ccb94eec64c68b66de19160_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129105708182.png",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/7fbe0dfe8a3f95ce21d727fb6b9de8e5_MD5.jpeg",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129105655945.png",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.assets",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
+    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1005",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/Concentration_Inequalities&MGF.assets",
+    "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
+    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets",
     "Computer_Science/Java_Language/Java_Web/Servlet.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md",
@@ -319,10 +335,6 @@
     "Computer_Science/Graphical_Neural_Networks/GNN_Applications",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.md",
     "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.md",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/80a3c67ebe3648b971a9e159e156219e_MD5.jpeg",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216231035263.png",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/image-20241216231030589.png",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.assets/565f14e65f64e5baf5c6e45e1a9dd46d_MD5.jpeg",
     "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.assets",
@@ -334,19 +346,8 @@
     "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md",
     "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.md",
     "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
-    "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.assets",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Alias_Sampling_Algo.pdf",
     "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-    "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
-    "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.assets",
-    "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.assets",
-    "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
-    "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md",
-    "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.md",
-    "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.assets",
     "未命名.canvas"
   ]
 }

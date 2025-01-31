@@ -5,6 +5,34 @@
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
     },
     {
+      "basename": "AP-HW1-Matrix_Algebra",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
+    },
+    {
+      "basename": "QLoRA",
+      "path": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md"
+    },
+    {
+      "basename": "Concentration_Inequalities&MGF",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
+    },
+    {
+      "basename": "Sub-Gaussian",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md"
+    },
+    {
+      "basename": "概率不等式",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "大数定律，中心极限定理和收敛定理",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
+    },
+    {
       "basename": "Servlet",
       "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
     },
@@ -53,10 +81,6 @@
       "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
     },
     {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
       "basename": "3_Routing",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
     },
@@ -71,10 +95,6 @@
     {
       "basename": "Word_Embedding",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
-    },
-    {
-      "basename": "QLoRA",
-      "path": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md"
     },
     {
       "basename": "Model_Fine_Tuning",
@@ -179,26 +199,6 @@
     {
       "basename": "Synchronization",
       "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
-    },
-    {
-      "basename": "1_Recovery",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/1_Recovery.md"
-    },
-    {
-      "basename": "2_Concurrency_Control_Theory",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/2_Concurrency_Control_Theory.md"
-    },
-    {
-      "basename": "3_Regression&Reparametrization",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Regression/3_Regression&Reparametrization.md"
-    },
-    {
-      "basename": "CS 186 Discussion 9",
-      "path": "Computer_Science/Computer_Systems/Database Systems/5_Recovery/CS 186 Discussion 9.pdf"
-    },
-    {
-      "basename": "Garbage_Collection",
-      "path": "Computer_Science/Computer_Systems/Machine_Structures/9_Storage_Allocation/Garbage_Collection.md"
     }
   ],
   "omittedPaths": [],

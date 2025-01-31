@@ -202,3 +202,12 @@ server {
 		}
 	}
 ```
+
+
+
+## 最后将certbot command进行修改
+> [!important]
+> 将`docker-compose.yml`中的certbot.command中的`force-renewal` 去掉。
+
+
+
