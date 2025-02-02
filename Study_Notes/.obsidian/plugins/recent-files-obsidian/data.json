@@ -1,6 +1,66 @@
 {
   "recentFiles": [
     {
+      "basename": "Remote_SSH",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md"
+    },
+    {
+      "basename": "⭐L2106__Compilation_Files_Gitlet",
+      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/5_Git_Files_Serializable/⭐L2106__Compilation_Files_Gitlet.md"
+    },
+    {
+      "basename": "Project0_Pregame",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
+    },
+    {
+      "basename": "5_Traps",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md"
+    },
+    {
+      "basename": "6_Interrupts",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/6_Interrupts.md"
+    },
+    {
+      "basename": "4_System_Calls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
+    },
+    {
+      "basename": "Lab02_Syscalls",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
+    },
+    {
+      "basename": "Lab04_Traps",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md"
+    },
+    {
+      "basename": "Lab03_Page_Tables",
+      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Parallel_Programming/Related_Resources.md"
+    },
+    {
+      "basename": "Concentration_Inequalities&MGF",
+      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
+    },
+    {
+      "basename": "Concentration Inequality",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.md"
+    },
+    {
+      "basename": "Bivariate_Multivariate_Distributions",
+      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
+    },
+    {
+      "basename": "Sub-Gaussian",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md"
+    },
+    {
+      "basename": "Gym Library",
+      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning/Gym Library.md"
+    },
+    {
       "basename": "Docker",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
     },
@@ -11,14 +71,6 @@
     {
       "basename": "QLoRA",
       "path": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md"
-    },
-    {
-      "basename": "Concentration_Inequalities&MGF",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
-    },
-    {
-      "basename": "Sub-Gaussian",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md"
     },
     {
       "basename": "概率不等式",
@@ -147,58 +199,6 @@
     {
       "basename": "Fast_Fourier_Transform",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fast_Fourier_Transform.md"
-    },
-    {
-      "basename": "3_面试知识点",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/3_面试知识点.md"
-    },
-    {
-      "basename": "DT_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/DT_Fourier_Series.md"
-    },
-    {
-      "basename": "1_Transactions_Concurrency",
-      "path": "Computer_Science/Computer_Systems/Database Systems/4_Transaction&Concurrency/1_Transactions_Concurrency.md"
-    },
-    {
-      "basename": "Fourier_Transforms",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Fourier_Transforms.md"
-    },
-    {
-      "basename": "Laplace_Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Laplace_Transform.md"
-    },
-    {
-      "basename": "Z-Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Z-Transform.md"
-    },
-    {
-      "basename": "3.2_复数矩阵_快速傅里叶变换(FFT)",
-      "path": "Mathematics/Linear_Algebra/18.06SC_self-notes/UNIT3_Positive_Definite_Matrix/3.2_复数矩阵_快速傅里叶变换(FFT).md"
-    },
-    {
-      "basename": "Drawing 2024-11-29 00.29.49.excalidraw",
-      "path": "Excalidraw/Drawing 2024-11-29 00.29.49.excalidraw.md"
-    },
-    {
-      "basename": "ReentrantLock",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/ReentrantLock.md"
-    },
-    {
-      "basename": "SpinningLock",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Locks/SpinningLock.md"
-    },
-    {
-      "basename": "Executor_Pattern",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Concurrency_Patterns/Executor_Pattern.md"
-    },
-    {
-      "basename": "Java_Threads",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Java_Threads.md"
-    },
-    {
-      "basename": "Synchronization",
-      "path": "Computer_Science/Java_Language/Java_Concurrecncy/Threads/Synchronization.md"
     }
   ],
   "omittedPaths": [],

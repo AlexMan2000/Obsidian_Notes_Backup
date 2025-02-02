@@ -13,54 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
+                "file": "Computer_Science/Parallel_Programming/Related_Resources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sub-Gaussian"
-            }
-          },
-          {
-            "id": "5a286ff4b36fdcaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concentration_Inequalities&MGF"
-            }
-          },
-          {
-            "id": "97bc4671580beaeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Word_Vectors"
-            }
-          },
-          {
-            "id": "c88792c40efe8710",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3_Routing"
+              "title": "Related_Resources"
             }
           },
           {
@@ -69,16 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Remote_SSH"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Docker file",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -235,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
+                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Docker"
+              "title": "Outgoing links from Remote_SSH"
             }
           }
         ],
@@ -302,52 +260,52 @@
   },
   "active": "c6084bcb3f29707d",
   "lastOpenFiles": [
+    "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/5_Git_Files_Serializable/⭐L2106__Compilation_Files_Gitlet.md",
+    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/60ba3c39a3275d3b245bbd6da58e7ec3_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/image-20250201185732957.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/6c5c0f533f9bbbf6971dc1c2099fd929_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/image-20250201185656822.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/26627eb76ad942eaecc1b04db62363ea_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/image-20250201185628331.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/6_Interrupts.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/c6c9b3892a4b6f87f0ed55617d3dedea_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/image-20250201170635028.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/27e6a92a22b9fce011eaa47178620913_MD5.jpeg",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/image-20250201170625434.png",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md",
+    "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md",
+    "Computer_Science/Parallel_Programming/Related_Resources.md",
+    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
+    "Computer_Science/Parallel_Programming/CMU_15418",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.md",
+    "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.assets",
+    "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning/Gym Library.md",
+    "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning",
+    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md",
     "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/f2787b5c5b19c3e612d00a879d73f272_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/1b553171512721d192c3dbe756cdf396_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110243739.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110237563.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/8b69bb2d9c227a946ddd96180e3fda1b_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129110224891.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/7a6680989ccb94eec64c68b66de19160_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129105708182.png",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/7fbe0dfe8a3f95ce21d727fb6b9de8e5_MD5.jpeg",
-    "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.assets/image-20250129105655945.png",
     "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets",
-    "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
     "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.assets",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md",
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Mathematics/NYU_Master_Program/DS-GA-1005",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/Concentration_Inequalities&MGF.assets",
     "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.assets",
     "Computer_Science/Java_Language/Java_Web/Servlet.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Theory.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Transformers.md",
-    "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph/Heterogenous_Graph.md",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GraphSAGE.md",
     "Computer_Science/Graphical_Neural_Networks/GNN_Applications",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Layer.md",
-    "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Message_Passing.assets",
-    "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.assets",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Features.md",
-    "Computer_Science/Deep_Learning/Graphical_Neural_Networks/GNN_Features/Graph_Embeddings.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.md",
-    "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md",
-    "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.assets",
-    "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md",
     "未命名.canvas"
   ]
 }

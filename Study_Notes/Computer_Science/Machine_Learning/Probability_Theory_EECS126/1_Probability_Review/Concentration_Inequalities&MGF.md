@@ -150,4 +150,14 @@
 
 
 
+# Bernstein's Inequality
+> [!def]
+> ![](Concentration%20Inequality.assets/7136204f47b18727261682b2552f9a85_MD5.jpeg)
+
+> [!proof]
+> ![](Concentration%20Inequality.assets/9b46b93775f3c8429ff8637eb63b2618_MD5.jpeg)![](Concentration%20Inequality.assets/ffe59457a14c25b4bed6c72133d41cfe_MD5.jpeg)![](Concentration%20Inequality.assets/deb4be54ea57fefa2bdc647e0b366a50_MD5.jpeg)![](Concentration%20Inequality.assets/29d8bd95ae7a7ee32d87ec44fd4bbd39_MD5.jpeg)
+
+
+
+
 
