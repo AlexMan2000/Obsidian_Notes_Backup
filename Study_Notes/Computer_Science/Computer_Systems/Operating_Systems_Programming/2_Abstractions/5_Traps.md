@@ -70,8 +70,8 @@
 > [!important]
 > `/user/sh.asm`查看系统调用`write()`函数的地址
 > ![](5_Traps.assets/e291d8a7b547c430c099f3ea676c6f0b_MD5.jpeg)
-> 然后我们在`0xdea`（不同虚拟机可能不同）的地方，也就是`ecall`将要但还没有被执行的地方打上一个断点，通过以下两个指令:
-> - `b *0xdea`
+> 然后我们在`0xde6`（不同虚拟机可能不同）的地方，也就是`ecall`将要但还没有被执行的地方打上一个断点，通过以下两个指令:
+> - `b *0xde6`
 > - `c`
 > 
 > 在执行`make qemu-gdb`的终端在断点状态下执行`CTRL^A + C`可以呼出内存监控功能，然后通过`info mem`可以查看当前`page table`的状态
