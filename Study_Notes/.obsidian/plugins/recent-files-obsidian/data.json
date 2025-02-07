@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+    },
+    {
       "basename": "Docker",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
+    },
+    {
+      "basename": "Related_Resources",
+      "path": "Computer_Science/Parallel_Programming/Related_Resources.md"
     },
     {
       "basename": "5_Traps",
@@ -43,10 +51,6 @@
     {
       "basename": "Lab03_Page_Tables",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md"
-    },
-    {
-      "basename": "Related_Resources",
-      "path": "Computer_Science/Parallel_Programming/Related_Resources.md"
     },
     {
       "basename": "Concentration_Inequalities&MGF",
@@ -195,10 +199,6 @@
     {
       "basename": "Discrete_Time_Fourier_Series",
       "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
-    },
-    {
-      "basename": "Project4_Concurrency&Lock",
-      "path": "Computer_Science/Computer_Systems/Database Systems/UCB_CS186_Projects/Project4_Concurrency&Lock.md"
     }
   ],
   "omittedPaths": [],

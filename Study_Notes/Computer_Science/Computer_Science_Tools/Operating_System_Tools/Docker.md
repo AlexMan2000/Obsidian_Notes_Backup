@@ -21,8 +21,7 @@
 
 ## 清除所有docker文件
 > [!important]
-> `docker system prune -a --volumes
-`
+> `docker system prune -a --volumes`
 
 
 ## 修改部分文件重新部署

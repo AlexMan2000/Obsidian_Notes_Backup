@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Parallel_Programming/Related_Resources.md",
+                "file": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Related_Resources"
+              "title": "Lagrangian_Duality_Theory"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Docker"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Lagrangian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +99,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4f417f835f612f94",
@@ -194,12 +194,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
+                "file": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Docker"
+              "title": "Outgoing links from Lagrangian_Duality_Theory"
             }
           }
         ],
@@ -259,8 +259,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "c6084bcb3f29707d",
+  "active": "b9205cfa1ed611e8",
   "lastOpenFiles": [
+    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
+    "Computer_Science/Parallel_Programming/Related_Resources.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md",
@@ -282,7 +284,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md",
-    "Computer_Science/Parallel_Programming/Related_Resources.md",
     "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md",
     "Computer_Science/Parallel_Programming/CMU_15418",
     "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.md",
@@ -291,7 +292,6 @@
     "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning/Gym Library.md",
     "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning",
-    "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md",
     "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md",
     "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets",
