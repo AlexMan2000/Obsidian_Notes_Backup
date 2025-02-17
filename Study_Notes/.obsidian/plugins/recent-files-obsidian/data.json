@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Lagrangian_Duality_Theory",
-      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
+      "basename": "Torch_Venv相关",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
+    },
+    {
+      "basename": "MongoDB_Stream",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/MongoDB_Stream.md"
+    },
+    {
+      "basename": "Github_CICD",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Github_CICD.md"
     },
     {
       "basename": "Docker",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
+    },
+    {
+      "basename": "Lagrangian_Duality_Theory",
+      "path": "Computer_Science/Machine_Learning/Optimization_EECS127AB/3_Convex_Optimization/Lagrangian_Duality_Theory.md"
     },
     {
       "basename": "Related_Resources",
@@ -187,18 +199,6 @@
     {
       "basename": "Q-Learning",
       "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
-    },
-    {
-      "basename": "Fourier_Transform",
-      "path": "Computer_Science/Signal_Processing/4_Important_Transforms/Fourier_Transform.md"
-    },
-    {
-      "basename": "Ch2_DPV_Divide_and_Conquer_FFT",
-      "path": "Computer_Science/Data_Structures_Algorithms/Algorithms/Ch2_DPV_Divide_and_Conquer_FFT.md"
-    },
-    {
-      "basename": "Discrete_Time_Fourier_Series",
-      "path": "Computer_Science/Signal_Processing/2_Frequency_Domain/Discrete_Time_Fourier_Series.md"
     }
   ],
   "omittedPaths": [],
