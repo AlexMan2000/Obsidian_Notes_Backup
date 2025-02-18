@@ -18,4 +18,11 @@
 ## 在远程主机上开启jupyter服务
 > [!important]
 > `jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.allow_origin='*' --ServerApp.allow_remote_access=True --ServerApp.trust_xheaders=True`
+
+
+## 为jupyter notebook添加可选Kernel
+> [!important]
+> `pip install ipykernel`
 > 
+> `python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"
+`
