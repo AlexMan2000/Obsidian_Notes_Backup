@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "远程AI服务器租赁",
+      "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/远程AI服务器租赁.md"
+    },
+    {
       "basename": "Torch_Venv相关",
       "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Value_Function_Methods",
       "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
-    },
-    {
-      "basename": "Q-Learning",
-      "path": "Computer_Science/Reinforcement_Learning/Q-Learning/Q-Learning.md"
     }
   ],
   "omittedPaths": [],
