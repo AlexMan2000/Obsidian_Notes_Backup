@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "1_Markov_Decision_Process",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.md"
+    },
+    {
+      "basename": "Policy_Gradient_Optimization",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md"
+    },
+    {
+      "basename": "Value_Function_Methods",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
+    },
+    {
+      "basename": "Project3",
+      "path": "Computer_Science/Reinforcement_Learning/UCB_CS188_Projects/Project3.md"
+    },
+    {
+      "basename": "2_Types_of_RL",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/2_Types_of_RL.md"
+    },
+    {
+      "basename": "3_MDP_Advanced",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
+    },
+    {
+      "basename": "Actor-Critic_Algorithm",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md"
+    },
+    {
       "basename": "远程AI服务器租赁",
       "path": "Computer_Science/Computer_Science_Tools/Deep_Learning/远程AI服务器租赁.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "Word_Embedding",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
-    },
-    {
-      "basename": "Model_Fine_Tuning",
-      "path": "Computer_Science/Large_Language_Models/LangChain_Models/Model_Fine_Tuning.md"
-    },
-    {
-      "basename": "AdaLoRA",
-      "path": "Computer_Science/Large_Language_Models/Finetuning/AdaLoRA.md"
-    },
-    {
-      "basename": "Alpaca",
-      "path": "Computer_Science/Large_Language_Models/Finetuning/Alpaca.md"
-    },
-    {
-      "basename": "LoRA",
-      "path": "Computer_Science/Large_Language_Models/Finetuning/LoRA.md"
-    },
-    {
-      "basename": "Actor-Critic_Algorithm",
-      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md"
-    },
-    {
-      "basename": "Policy_Gradient_Optimization",
-      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md"
-    },
-    {
-      "basename": "Value_Function_Methods",
-      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
     }
   ],
   "omittedPaths": [],
