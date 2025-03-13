@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Docker",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
+    },
+    {
+      "basename": "Software_Requirements",
+      "path": "Computer_Science/DevOps/Software_Requirements.md"
+    },
+    {
+      "basename": "Account_Requirements",
+      "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
       "basename": "1_Markov_Decision_Process",
       "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.md"
     },
@@ -43,10 +55,6 @@
     {
       "basename": "Github_CICD",
       "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Github_CICD.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
     },
     {
       "basename": "Lagrangian_Duality_Theory",
@@ -191,14 +199,6 @@
     {
       "basename": "4_Addressing",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
-    },
-    {
-      "basename": "4_Hidden_Markov_Model",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Graphical_Models/4_Hidden_Markov_Model.md"
-    },
-    {
-      "basename": "Word_Embedding",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1012_NLP/Lecture_Notes/Word_Embedding.md"
     }
   ],
   "omittedPaths": [],
