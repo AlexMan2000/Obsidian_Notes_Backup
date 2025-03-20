@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
     {
+      "basename": "Account_Requirements",
+      "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
+      "basename": "Value_Function_Methods",
+      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
+    },
+    {
       "basename": "Vagrant Sync Directories",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "Software_Requirements",
       "path": "Computer_Science/DevOps/Software_Requirements.md"
-    },
-    {
-      "basename": "Account_Requirements",
-      "path": "Computer_Science/DevOps/Account_Requirements.md"
     },
     {
       "basename": "离散马尔科夫链",
@@ -39,10 +43,6 @@
     {
       "basename": "Policy_Gradient_Optimization",
       "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md"
-    },
-    {
-      "basename": "Value_Function_Methods",
-      "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
     },
     {
       "basename": "Project3",
