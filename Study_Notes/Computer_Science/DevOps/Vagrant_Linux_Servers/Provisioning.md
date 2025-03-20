@@ -11,6 +11,8 @@
 > - `unzip -o` means overwrite the file with the same name if they exist
 > - The bash scripts within the `config.vm.provision` will be executed when `vagrant up` for the first time or when you explicitly specify `--provision` flag
 > - For the httpd service, it automatically looks for the `index.html` file under `var/www/html/`
+> - Run `vagrant up` to check if the provisioning is working just fine
+> - If there is any logical or syntactic error in your vagrant provision bash script, the provisioning process will still go, but you may not access the web service as expected.
 > 
 ```bash
 # -*- mode: ruby -*-
@@ -81,7 +83,7 @@ Vagrant.configure("2") do |config|
      config.vm.provision "shell", inline: <<-SHELL
        yum install httpd wget unzip vim -y
        systemctl start httpd
-       systemctl enabled httpd
+       systemctl enable httpd
        mkdir -p /tmp/finance
        cd /tmp/finance
        wget https://www.tooplate.com/zip-templates/2135_mini_finance.zip
@@ -94,7 +96,6 @@ Vagrant.configure("2") do |config|
        systemctl disable firewalld
      SHELL
   end 
-
 ```
 
 
