@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Docker",
-      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
+      "basename": "Website Setup",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
+    },
+    {
+      "basename": "Vagrant Sync Directories",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md"
+    },
+    {
+      "basename": "Provisioning",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
     },
     {
       "basename": "Software_Requirements",
@@ -11,6 +19,18 @@
     {
       "basename": "Account_Requirements",
       "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
+      "basename": "离散马尔科夫链",
+      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
+    },
+    {
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md"
     },
     {
       "basename": "1_Markov_Decision_Process",
@@ -137,10 +157,6 @@
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
     },
     {
-      "basename": "离散马尔科夫链",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
-    },
-    {
       "basename": "大数定律，中心极限定理和收敛定理",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "DeepWalk",
       "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md"
-    },
-    {
-      "basename": "Node2Vec",
-      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node2Vec.md"
-    },
-    {
-      "basename": "Word_Vectors",
-      "path": "Computer_Science/Natural_Language_Processing/Word_Embedding/Word_Vectors.md"
-    },
-    {
-      "basename": "3_Routing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/3_Routing.md"
-    },
-    {
-      "basename": "4_Addressing",
-      "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
     }
   ],
   "omittedPaths": [],
