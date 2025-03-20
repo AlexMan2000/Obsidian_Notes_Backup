@@ -37,13 +37,13 @@ sudo apt install apache2 \
                  php-mbstring \
                  php-mysql \
                  php-xml \
-                 php-zip
+                 php-zip -y
 ```
 
 
 ## Install WordPress
 > [!code]
-> 创建wordpress的安装目录`/src/www`并且从https://wordpress.org/ 下载文件
+> 创建wordpress的安装目录`/src/www`, 设置ownership, 并且从https://wordpress.org/ 下载文件
 ```
 sudo mkdir -p /srv/www
 sudo chown www-data: /srv/www
@@ -53,6 +53,53 @@ curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 
 ## Configure Apache for WordPress
 > [!code]
+> 首先创建`WordPress`配置文件, `linux`系统种配置文件一般在`/etc/`目录下，我们创建`/etc/apache2/sites-available/wordpress.conf`
+```
+<VirtualHost *:80>
+    DocumentRoot /srv/www/wordpress
+    <Directory /srv/www/wordpress>
+        Options FollowSymLinks
+        AllowOverride Limit Options FileInfo
+        DirectoryIndex index.php
+        Require all granted
+    </Directory>
+    <Directory /srv/www/wordpress/wp-content>
+        Options FollowSymLinks
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+> [!code]
+> 之后执行三个命令激活
+```bash
+sudo a2ensite wordpress  # Enable the site
+sudo a2enmod rewrite   # Enable URL rewriting， setting redirect rule
+sudo a2dissite 000-default  # Disable the default "It works" site
+```
+> [!code]
+> 最后`reload` apache 服务
+```
+sudo service apache2 reload
+```
+
+
+## Configure Database
+> [!code]
+> 执行下列命令:
+```bash
+sudo mysql -u root
+
+mysql> CREATE DATABASE wordpress;
+
+mysql> CREATE USER wordpress@localhost IDENTIFIED BY '<your-password>'; # 这里密码可以任意
+
+mysql> GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER ON wordpress.* TO wordpress@localhost; # Make sure it is single line
+
+mysql> FLUSH PRIVILEGES;
+
+mysql> quit
+```
+
 
 
 
@@ -114,3 +161,5 @@ config.vm.provider "vmware_desktop" do |vmware|
 	vmware.gui = true
 end
 ```
+
+
