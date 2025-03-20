@@ -9,6 +9,10 @@
       "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
     },
     {
+      "basename": "3_MDP_Advanced",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
+    },
+    {
       "basename": "离散马尔科夫链",
       "path": "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md"
     },
@@ -51,10 +55,6 @@
     {
       "basename": "2_Types_of_RL",
       "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/2_Types_of_RL.md"
-    },
-    {
-      "basename": "3_MDP_Advanced",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
     },
     {
       "basename": "Actor-Critic_Algorithm",
