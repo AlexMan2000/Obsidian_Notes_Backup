@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
+                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Website Setup"
+              "title": "Provisioning"
             }
           }
         ],
@@ -222,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
+                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Website Setup"
+              "title": "Outgoing links from Provisioning"
             }
           }
         ],
@@ -289,10 +289,10 @@
   },
   "active": "638fc6a8a13519ab",
   "lastOpenFiles": [
+    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/c0f39ac6fed47e3933e1eae953c017d6_MD5.jpeg",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/image-20250320130107019.png",
     "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md",
-    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/946209e16c41da809553742a962a0455_MD5.jpeg",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/image-20250320125904850.png",
     "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md",
@@ -334,7 +334,6 @@
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md",
     "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md",
-    "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.assets/60ba3c39a3275d3b245bbd6da58e7ec3_MD5.jpeg",
     "未命名.canvas"
   ]
 }

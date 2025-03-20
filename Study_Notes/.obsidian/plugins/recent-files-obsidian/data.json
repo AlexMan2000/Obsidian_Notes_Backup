@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Provisioning",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
+    },
+    {
       "basename": "Website Setup",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "Account_Requirements",
       "path": "Computer_Science/DevOps/Account_Requirements.md"
-    },
-    {
-      "basename": "Provisioning",
-      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
     },
     {
       "basename": "Software_Requirements",
