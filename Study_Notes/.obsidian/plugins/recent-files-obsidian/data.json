@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Provisioning",
-      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
+      "basename": "RAG",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md"
+    },
+    {
+      "basename": "3_MDP_Advanced",
+      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
     },
     {
       "basename": "Website Setup",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
     {
-      "basename": "Monte_Carlo_Methods",
-      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
+      "basename": "Provisioning",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
     },
     {
-      "basename": "3_MDP_Advanced",
-      "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
+      "basename": "Monte_Carlo_Methods",
+      "path": "Computer_Science/Machine_Learning/AI_ML/Approximate_Inference/Monte_Carlo_Methods.md"
     },
     {
       "basename": "离散马尔科夫链",
@@ -195,10 +199,6 @@
     {
       "basename": "PageRank_Variants",
       "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.md"
-    },
-    {
-      "basename": "DeepWalk",
-      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/DeepWalk.md"
     }
   ],
   "omittedPaths": [],
