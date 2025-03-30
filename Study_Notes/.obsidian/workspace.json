@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "9df2cb374867870c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Website Setup"
+            }
+          },
+          {
             "id": "d92e1200caceafb6",
             "type": "leaf",
             "state": {
@@ -194,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
+                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from RAG"
+              "title": "Outgoing links from Website Setup"
             }
           }
         ],
@@ -259,13 +273,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "d92e1200caceafb6",
+  "active": "9df2cb374867870c",
   "lastOpenFiles": [
-    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
-    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/RAG.assets",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md",
+    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
+    "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
+    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md",
+    "Computer_Science/Large_Language_Models/AI_Agent/RAG.assets",
     "Computer_Science/Large_Language_Models/AI_Agent",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/c0f39ac6fed47e3933e1eae953c017d6_MD5.jpeg",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.assets/image-20250320130107019.png",

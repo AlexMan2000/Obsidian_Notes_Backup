@@ -1,4 +1,4 @@
-# RAG with Agents
+# RAG with Agents - QA
 ## Environment Setup - Colab
 > [!code]
 ```python
@@ -121,10 +121,48 @@ print(generate_response(llama3, messages))
 
 ## Agents
 > [!code]
+> Agent class has the following attributes and methods:
+> - **Attributes**:
+> 	- **role_description**: The role of the agent. For example, if you want this agent to be a history expert, you can set the role_description to "You are a history expert. You will only answer questions based on what really happened in the past. Do not generate any answer if you don't have reliable sources.".
+> 	- **task_description**: The task of the agent. For example, if you want this agent to answer questions only in yes/no, you can set the task_description to "Please answer the following question in yes/no. Explanations are not needed."
+> 	- **llm**: Just an indicator of the LLM model used by the agent.
+> - **Method**:
+> 	- **inference**: This method takes a message as input and returns the generated response from the LLM model. The message will first be formatted into proper input for the LLM model. (This is where you can set some global instructions like "Please speak in a polite manner" or "Please provide a detailed explanation".) The generated response will be returned as the output.
 ```python
-
-
-
+class LLMAgent():
+    def __init__(self, role_description: str, task_description: str, llm:str="bartowski/Meta-Llama-3.1-8B-Instruct-GGUF"):
+        self.role_description = role_description   # Role means who this agent should act like. e.g. the history expert, the manager......
+        self.task_description = task_description    # Task description instructs what task should this agent solve.
+        self.llm = llm  # LLM indicates which LLM backend this agent is using.
+    def inference(self, message:str) -> str:
+        if self.llm == 'bartowski/Meta-Llama-3.1-8B-Instruct-GGUF': # If using the default one.
+            # TODO: Design the system prompt and user prompt here.
+            # Format the messsages first.
+            messages = [
+                {"role": "system", "content": f"{self.role_description}"},  # Hint: you may want the agents to speak Traditional Chinese only.
+                {"role": "user", "content": f"{self.task_description}\n{message}"}, # Hint: you may want the agents to clearly distinguish the task descriptions and the user messages. A proper seperation text rather than a simple line break is recommended.
+            ]
+            return generate_response(llama3, messages)
+        else:
+            # TODO: If you want to use LLMs other than the given one, please implement the inference part on your own.
+            return ""
 ```
 
 
+## RAG Pipeline
+> [!code]
+```python
+async def pipeline(question: str) -> str:
+    # TODO: Implement your pipeline.
+    # Currently, it only feeds the question directly to the LLM.
+    # You may want to get the final results through multiple inferences.
+    extracted_question = question_extraction_agent.inference(question)
+    extracted_keywords = keyword_extraction_agent.inference(extracted_question)
+    results = await search(extracted_keywords, 1)
+    results = '\n'.join(results)
+    # summarized_results = search_result_summarize_agent.inference(results)
+    print(len(summarized_results))
+    user_prompt = "Background:\n" + results + "\nQuestion:" + extracted_question + "\nA:"
+    # Just a quick reminder, make sure your input length is within the limit of the model context window (16384 tokens), you may want to truncate some excessive texts.
+    return qa_agent.inference(user_prompt)
+```

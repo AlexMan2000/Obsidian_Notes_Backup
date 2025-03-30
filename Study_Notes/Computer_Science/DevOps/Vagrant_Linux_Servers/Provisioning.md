@@ -99,3 +99,6 @@ Vagrant.configure("2") do |config|
 ```
 
 
+# Automation Vagrant Provisioning - WordPress Example
+
+
