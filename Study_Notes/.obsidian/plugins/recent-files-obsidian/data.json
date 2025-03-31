@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "MultiVM",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/MultiVM.md"
+    },
+    {
+      "basename": "Vagrant Sync Directories",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md"
+    },
+    {
       "basename": "Website Setup",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "Value_Function_Methods",
       "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
-    },
-    {
-      "basename": "Vagrant Sync Directories",
-      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md"
     },
     {
       "basename": "Account_Requirements",
@@ -195,10 +199,6 @@
     {
       "basename": "Node_Embeddings",
       "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md"
-    },
-    {
-      "basename": "PageRank_Variants",
-      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/PageRank_Variants.md"
     }
   ],
   "omittedPaths": [],
