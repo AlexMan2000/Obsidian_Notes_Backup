@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "MCP",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/MCP.md"
+    },
+    {
+      "basename": "Software_Requirements",
+      "path": "Computer_Science/DevOps/Software_Requirements.md"
+    },
+    {
+      "basename": "Function_Calling_Theory",
+      "path": "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md"
+    },
+    {
+      "basename": "Agent_Modules",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md"
+    },
+    {
+      "basename": "RAG",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md"
+    },
+    {
+      "basename": "Project-VProfile",
+      "path": "Computer_Science/DevOps/Projects/Project-VProfile.md"
+    },
+    {
+      "basename": "Data_Format",
+      "path": "Computer_Science/DevOps/Data_Format.md"
+    },
+    {
+      "basename": "Account_Requirements",
+      "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
       "basename": "MultiVM",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/MultiVM.md"
     },
@@ -17,10 +49,6 @@
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md"
     },
     {
-      "basename": "RAG",
-      "path": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md"
-    },
-    {
       "basename": "3_MDP_Advanced",
       "path": "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md"
     },
@@ -35,14 +63,6 @@
     {
       "basename": "Value_Function_Methods",
       "path": "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md"
-    },
-    {
-      "basename": "Account_Requirements",
-      "path": "Computer_Science/DevOps/Account_Requirements.md"
-    },
-    {
-      "basename": "Software_Requirements",
-      "path": "Computer_Science/DevOps/Software_Requirements.md"
     },
     {
       "basename": "Docker",
@@ -179,26 +199,6 @@
     {
       "basename": "GNN_Theory",
       "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Theory.md"
-    },
-    {
-      "basename": "Graph_Convolutional_Networks",
-      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Convolutional_Networks.md"
-    },
-    {
-      "basename": "Graph_Transformers",
-      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Transformers.md"
-    },
-    {
-      "basename": "Heterogenous_Graph",
-      "path": "Computer_Science/Graphical_Neural_Networks/Knowledge_Graph/Heterogenous_Graph.md"
-    },
-    {
-      "basename": "Node_Classification",
-      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Classification.md"
-    },
-    {
-      "basename": "Node_Embeddings",
-      "path": "Computer_Science/Graphical_Neural_Networks/Graph_Features/Node_Embeddings.md"
     }
   ],
   "omittedPaths": [],
