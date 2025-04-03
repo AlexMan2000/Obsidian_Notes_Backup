@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Project-VProfile",
+      "path": "Computer_Science/DevOps/Projects/Project-VProfile.md"
+    },
+    {
+      "basename": "RAG",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md"
+    },
+    {
       "basename": "MCP",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/MCP.md"
     },
@@ -23,14 +31,6 @@
     {
       "basename": "Agent_Modules",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md"
-    },
-    {
-      "basename": "RAG",
-      "path": "Computer_Science/Large_Language_Models/AI_Agent/RAG.md"
-    },
-    {
-      "basename": "Project-VProfile",
-      "path": "Computer_Science/DevOps/Projects/Project-VProfile.md"
     },
     {
       "basename": "Data_Format",
