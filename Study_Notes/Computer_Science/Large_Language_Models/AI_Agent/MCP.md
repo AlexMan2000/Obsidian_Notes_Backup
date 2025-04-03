@@ -75,14 +75,14 @@ uv add mcp
 > ![](MCP.assets/4b17d111eb72108de9b9159e3d9fd907_MD5.jpeg)
 ```python
 import asyncio
-from mcp import ClientSession
-from contextlib import AsyncExitStack
+from mcp import ClientSession # 用于管理MCP客户端会话
+from contextlib import AsyncExitStack # 自动资源管理，确保程序退出时正确关闭MCP连接
 
 class MCPClient:
-    def__init__(self):
+    def __init__(self):
         """初始化 MCP 客户端"""
-        self.session = None
-        self.exit_stack = AsyncExitStack()
+        self.session = None  # 暂时不连接MCP服务器, 后续修改来真正连接
+        self.exit_stack = AsyncExitStack() # 确保程序退出时的资源正确释放
 
     async def connect_to_mock_server(self):
         """模拟 MCP 服务器的连接（暂不连接真实服务器）"""
@@ -92,33 +92,60 @@ class MCPClient:
         """运行交互式聊天循环"""
         print("\nMCP 客户端已启动！输入 'quit' 退出")
 
-        whileTrue:
+        while True:
             try:
                 query = input("\nQuery: ").strip()
                 if query.lower() == 'quit':
                     break
+                # 模拟响应
                 print(f"\n🤖 [Mock Response] 你说的是：{query}")
             except Exception as e:
                 print(f"\n⚠️ 发生错误: {str(e)}")
 
-    asyncdefcleanup(self):
+    async def cleanup(self):
         """清理资源"""
-        await self.exit_stack.aclose()
+        await self.exit_stack.aclose() # 关闭资源管理器
 
 async def main():
-    client = MCPClient()
+    client = MCPClient()  # 创建MCP客户端
     try:
-        await client.connect_to_mock_server()
-        await client.chat_loop()
+        await client.connect_to_mock_server() # 连接(模拟)服务器
+        await client.chat_loop() # 进入聊天循环
     finally:
-        await client.cleanup()
+        await client.cleanup() # 确保推出时清理资源
 
+# 确保代码只能在 Python 直接运行时执行（而不是作为库导入时）。
 if __name__ == "__main__":
+	# asyncio: Python内置的异步编程库，让MCP可以非阻塞地执行任务
     asyncio.run(main())
 
 ```
 
 
+
+## 运行MCP客户端
+> [!code]
+```bash
+uv run client.py
+```
+
+
+
+
+# MCP客户端接入OpenAI, DeepSeek在线模型流程
+## 增添依赖
+> [!code]
+> ![](MCP.assets/b48b1e61e053d577abe4d0874d2dc470_MD5.jpeg)
+```bash
+uv add mcp openai python-dotenv
+```
+
+
+## 创建env文件
+> [!code]
+```
+
+```
 
 
 

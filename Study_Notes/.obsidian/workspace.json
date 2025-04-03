@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Website Setup"
-            }
-          },
-          {
-            "id": "9df2cb374867870c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Computer_Science/Large_Language_Models/AI_Agent/MCP.md",
                 "mode": "source",
                 "source": false
@@ -49,8 +35,7 @@
               "title": "RAG"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -273,10 +258,14 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "9df2cb374867870c",
+  "active": "638fc6a8a13519ab",
   "lastOpenFiles": [
-    "Computer_Science/DevOps/Software_Requirements.md",
+    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/b48b1e61e053d577abe4d0874d2dc470_MD5.jpeg",
+    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402185712656.png",
+    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/71d9a55bd74c2f3dfd35316cfbc8726f_MD5.jpeg",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.md",
+    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
+    "Computer_Science/DevOps/Software_Requirements.md",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/4b17d111eb72108de9b9159e3d9fd907_MD5.jpeg",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183824830.png",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/1d551f178b612df72a2541f074ced32a_MD5.jpeg",
@@ -285,9 +274,7 @@
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/ab6b5c2bb3fff16aaf675f42eaa6ccb4_MD5.jpeg",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183629065.png",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/8a62507912adb9a533c907dcd71da439_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183611600.png",
     "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/20204ad70a6d853ea20b1d70017cbf36_MD5.jpeg",
     "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md",
     "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.assets",
     "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.assets",
@@ -300,7 +287,6 @@
     "Computer_Science/DevOps/Account_Requirements.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/MultiVM.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md",
-    "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md",
     "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/3_MDP_Advanced.md",
     "Computer_Science/Large_Language_Models/AI_Agent/RAG.assets",

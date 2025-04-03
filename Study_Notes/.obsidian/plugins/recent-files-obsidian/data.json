@@ -5,6 +5,14 @@
       "path": "Computer_Science/Large_Language_Models/AI_Agent/MCP.md"
     },
     {
+      "basename": "71d9a55bd74c2f3dfd35316cfbc8726f_MD5",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/71d9a55bd74c2f3dfd35316cfbc8726f_MD5.jpeg"
+    },
+    {
+      "basename": "Website Setup",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
+    },
+    {
       "basename": "Software_Requirements",
       "path": "Computer_Science/DevOps/Software_Requirements.md"
     },
@@ -39,10 +47,6 @@
     {
       "basename": "Vagrant Sync Directories",
       "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md"
-    },
-    {
-      "basename": "Website Setup",
-      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
     {
       "basename": "Provisioning",
@@ -195,10 +199,6 @@
     {
       "basename": "Graph_Attention_Networks",
       "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md"
-    },
-    {
-      "basename": "GNN_Theory",
-      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/GNN_Theory.md"
     }
   ],
   "omittedPaths": [],
