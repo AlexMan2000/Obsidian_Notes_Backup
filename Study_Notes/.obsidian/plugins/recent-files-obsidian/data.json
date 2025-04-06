@@ -2,7 +2,31 @@
   "recentFiles": [
     {
       "basename": "Project-VProfile",
-      "path": "Computer_Science/DevOps/Projects/Project-VProfile.md"
+      "path": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md"
+    },
+    {
+      "basename": "Proj3_Transport",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md"
+    },
+    {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
+    },
+    {
+      "basename": "Proj2_Routing",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md"
+    },
+    {
+      "basename": "Proj1_Traceroute",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
+    },
+    {
+      "basename": "Account_Requirements",
+      "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
+      "basename": "Data_Format",
+      "path": "Computer_Science/DevOps/Data_Format.md"
     },
     {
       "basename": "RAG",
@@ -31,14 +55,6 @@
     {
       "basename": "Agent_Modules",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md"
-    },
-    {
-      "basename": "Data_Format",
-      "path": "Computer_Science/DevOps/Data_Format.md"
-    },
-    {
-      "basename": "Account_Requirements",
-      "path": "Computer_Science/DevOps/Account_Requirements.md"
     },
     {
       "basename": "MultiVM",
@@ -183,22 +199,6 @@
     {
       "basename": "QLoRA",
       "path": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md"
-    },
-    {
-      "basename": "概率不等式",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/概率不等式.md"
-    },
-    {
-      "basename": "大数定律，中心极限定理和收敛定理",
-      "path": "Mathematics/Probablity_Statistics/Probability_Basics/9_概率极限和概率不等式/大数定律，中心极限定理和收敛定理.md"
-    },
-    {
-      "basename": "Servlet",
-      "path": "Computer_Science/Java_Language/Java_Web/Servlet.md"
-    },
-    {
-      "basename": "Graph_Attention_Networks",
-      "path": "Computer_Science/Graphical_Neural_Networks/GNN_Structures/Graph_Attention_Networks.md"
     }
   ],
   "omittedPaths": [],

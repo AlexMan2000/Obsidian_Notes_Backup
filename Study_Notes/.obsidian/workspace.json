@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/DevOps/Projects/Project-VProfile.md",
+                "file": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Project-VProfile"
+            }
+          },
+          {
+            "id": "c0c1c4c6a9c1efda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP"
             }
           }
         ],
@@ -69,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MCMC",
+                "query": "tag:#-port",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/DevOps/Projects/Project-VProfile.md",
+                "file": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -261,36 +275,40 @@
   },
   "active": "d92e1200caceafb6",
   "lastOpenFiles": [
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_WinMacIntel/VprofileProjectSetupWindowsAndMacIntel.pdf",
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_WinMacIntel/Vagrantfile",
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_WinMacIntel",
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_MacOSM1/VprofileProjectSetupMacM1M2.pdf",
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_MacOSM1/Vagrantfile",
-    "Computer_Science/DevOps/Projects/vagrant/Manual_provisioning_MacOSM1",
-    "Computer_Science/DevOps/Projects/vagrant/Automated_provisioning_WinMacIntel/tomcat_ubuntu.sh",
-    "Computer_Science/DevOps/Projects/vagrant/Automated_provisioning_WinMacIntel/tomcat.sh",
-    "Computer_Science/DevOps/Projects/vagrant/Automated_provisioning_WinMacIntel/Vagrantfile",
-    "Computer_Science/DevOps/Projects/vagrant/Automated_provisioning_WinMacIntel/rabbitmq.sh",
-    "Computer_Science/DevOps/Projects/vagrant/Automated_provisioning_WinMacIntel/nginx.sh",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/d00414edff860d4bf039a5237050c34a_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192504917.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/e7d3960ab28724b35e1b96b9002c2a27_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192334374.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192318378.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/893075f1b650a83b06f0873407637341_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192229764.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/b3c1faa789aa08cb54d47743b4379bc9_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406184520222.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/31ccce3c898b24ba3e4bf96b7df75dd5_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/cc5f8ddb896890152775a6b3ada3ab33_MD5.jpeg",
+    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
+    "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
+    "Computer_Science/DevOps/Account_Requirements.md",
+    "Computer_Science/DevOps/Data_Format.md",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel/VprofileProjectSetupWindowsAndMacIntel.pdf",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel/Vagrantfile",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_MacOSM1/VprofileProjectSetupMacM1M2.pdf",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_MacOSM1/Vagrantfile",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_MacOSM1",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat_ubuntu.sh",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat.sh",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/Vagrantfile",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/rabbitmq.sh",
     "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/b48b1e61e053d577abe4d0874d2dc470_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402185712656.png",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/71d9a55bd74c2f3dfd35316cfbc8726f_MD5.jpeg",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
     "Computer_Science/DevOps/Software_Requirements.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/4b17d111eb72108de9b9159e3d9fd907_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183824830.png",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/1d551f178b612df72a2541f074ced32a_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183728862.png",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183718057.png",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/ab6b5c2bb3fff16aaf675f42eaa6ccb4_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/image-20250402183629065.png",
     "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md",
     "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md",
-    "Computer_Science/DevOps/Projects/Project-VProfile.md",
-    "Computer_Science/DevOps/Data_Format.md",
-    "Computer_Science/DevOps/Account_Requirements.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/MultiVM.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Vagrant Sync Directories.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Provisioning.md",
@@ -303,10 +321,6 @@
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
     "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.md",
     "Computer_Science/Reinforcement_Learning/UCB_CS188_Projects/Project3.md",
-    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/2_Types_of_RL.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Actor-Critic_Algorithm.md",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/远程AI服务器租赁.md",
-    "Computer_Science/Computer_Science_Tools/Deep_Learning/Torch_Venv相关.md",
     "未命名.canvas"
   ]
 }
