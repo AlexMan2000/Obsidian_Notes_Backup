@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
+    },
+    {
+      "basename": "Bash_Scripts",
+      "path": "Computer_Science/DevOps/Bash_Scripts.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "Computer_Science/DevOps/Docker.md"
+    },
+    {
       "basename": "Project-VProfile",
       "path": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md"
     },
     {
-      "basename": "Proj3_Transport",
-      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md"
+      "basename": "4_Addressing",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md"
     },
     {
-      "basename": "TCP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
+      "basename": "Proj3_Transport",
+      "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md"
     },
     {
       "basename": "Proj2_Routing",
@@ -187,18 +199,6 @@
     {
       "basename": "Sub-Gaussian",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md"
-    },
-    {
-      "basename": "Gym Library",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-3001/Reinforcement_Learning/Gym Library.md"
-    },
-    {
-      "basename": "AP-HW1-Matrix_Algebra",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS106B_X/C++_Projects/Advanced_Programming/AP-HW1-Matrix_Algebra.md"
-    },
-    {
-      "basename": "QLoRA",
-      "path": "Computer_Science/Large_Language_Models/Finetuning/QLoRA.md"
     }
   ],
   "omittedPaths": [],

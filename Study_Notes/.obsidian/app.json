@@ -1,7 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./Project-VProfile.assets",
+  "attachmentFolderPath": "./TCP.assets",
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
   "pdfExportSettings": {

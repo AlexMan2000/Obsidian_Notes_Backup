@@ -220,6 +220,21 @@ systemctl restart tomcat
 > ![](Project-VProfile.assets/893075f1b650a83b06f0873407637341_MD5.jpeg)![](Project-VProfile.assets/e7d3960ab28724b35e1b96b9002c2a27_MD5.jpeg)![](Project-VProfile.assets/d00414edff860d4bf039a5237050c34a_MD5.jpeg)
 
 
+# Validation
+> [!important]
+> Visit the `192.168.56.21`(What you set for `web01`) to test the connection and website rendering.
+
+
 # Automated Setup
+## Creating file with content
+> [!important] 
+> ![](Project-VProfile.assets/7b0bbd470a6f7b3b248059b358c78afb_MD5.jpeg)![](Project-VProfile.assets/d4fb94d646baae9a95b7a822ca387099_MD5.jpeg)![](Project-VProfile.assets/3f9b3b325a4aaff566ec371ea6d491ad_MD5.jpeg)![](Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg)
+
+
+
+
+
+
+
 
 

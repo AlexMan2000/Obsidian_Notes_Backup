@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
+                "file": "Computer_Science/DevOps/Bash_Scripts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project-VProfile"
+              "title": "Bash_Scripts"
             }
           },
           {
@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
+                "file": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Project-VProfile"
+              "title": "Outgoing links from TCP"
             }
           }
         ],
@@ -273,24 +273,26 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "d92e1200caceafb6",
+  "active": "c0c1c4c6a9c1efda",
   "lastOpenFiles": [
+    "Computer_Science/DevOps/Bash_Scripts.md",
+    "Computer_Science/DevOps/Docker.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195505213.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/3f9b3b325a4aaff566ec371ea6d491ad_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/d4fb94d646baae9a95b7a822ca387099_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195455529.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195450272.png",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/7b0bbd470a6f7b3b248059b358c78afb_MD5.jpeg",
+    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195400106.png",
+    "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/d00414edff860d4bf039a5237050c34a_MD5.jpeg",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192504917.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/e7d3960ab28724b35e1b96b9002c2a27_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192334374.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192318378.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/893075f1b650a83b06f0873407637341_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192229764.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/b3c1faa789aa08cb54d47743b4379bc9_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406184520222.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/31ccce3c898b24ba3e4bf96b7df75dd5_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/cc5f8ddb896890152775a6b3ada3ab33_MD5.jpeg",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
     "Computer_Science/DevOps/Account_Requirements.md",
     "Computer_Science/DevOps/Data_Format.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel/VprofileProjectSetupWindowsAndMacIntel.pdf",
@@ -319,8 +321,6 @@
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "bu.md",
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
-    "Computer_Science/Reinforcement_Learning/Markov_Decision_Process/1_Markov_Decision_Process.md",
-    "Computer_Science/Reinforcement_Learning/UCB_CS188_Projects/Project3.md",
     "未命名.canvas"
   ]
 }
