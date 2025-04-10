@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+                "file": "Computer_Science/DevOps/Bash_Scripts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from TCP"
+              "title": "Outgoing links from Bash_Scripts"
             }
           }
         ],
@@ -273,11 +273,12 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "c0c1c4c6a9c1efda",
+  "active": "d92e1200caceafb6",
   "lastOpenFiles": [
+    "Computer_Science/DevOps/Bash_Scripts.assets",
+    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
     "Computer_Science/DevOps/Bash_Scripts.md",
     "Computer_Science/DevOps/Docker.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195505213.png",
@@ -320,7 +321,6 @@
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
     "bu.md",
-    "Computer_Science/Reinforcement_Learning/Policy_Gradient/Policy_Gradient_Optimization.md",
     "未命名.canvas"
   ]
 }

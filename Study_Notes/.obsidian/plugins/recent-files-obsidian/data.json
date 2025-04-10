@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "TCP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
-    },
-    {
       "basename": "Bash_Scripts",
       "path": "Computer_Science/DevOps/Bash_Scripts.md"
+    },
+    {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
     },
     {
       "basename": "Docker",
