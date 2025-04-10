@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/Bash_Scripts.md"
     },
     {
+      "basename": "AWS",
+      "path": "Computer_Science/DevOps/AWS.md"
+    },
+    {
+      "basename": "5_BGP",
+      "path": "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md"
+    },
+    {
       "basename": "TCP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Concentration Inequality",
       "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.md"
-    },
-    {
-      "basename": "Bivariate_Multivariate_Distributions",
-      "path": "Mathematics/Probablity_Statistics/Statistics_Model_Perspective/多元统计推断/Bivariate_Multivariate_Distributions.md"
-    },
-    {
-      "basename": "Sub-Gaussian",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Sub-Gaussian.md"
     }
   ],
   "omittedPaths": [],

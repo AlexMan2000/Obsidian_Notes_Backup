@@ -275,9 +275,13 @@
   },
   "active": "d92e1200caceafb6",
   "lastOpenFiles": [
+    "Computer_Science/DevOps/AWS.md",
+    "Computer_Science/DevOps/Bash_Scripts.md",
+    "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md",
+    "Computer_Science/DevOps/Bash_Scripts.assets/4f4fc6b8f0be635f5fea8a0f2c062a37_MD5.jpeg",
+    "Computer_Science/DevOps/Bash_Scripts.assets/image-20250410170008186.png",
     "Computer_Science/DevOps/Bash_Scripts.assets",
     "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
-    "Computer_Science/DevOps/Bash_Scripts.md",
     "Computer_Science/DevOps/Docker.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg",
@@ -289,8 +293,6 @@
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/7b0bbd470a6f7b3b248059b358c78afb_MD5.jpeg",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195400106.png",
     "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/d00414edff860d4bf039a5237050c34a_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406192504917.png",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
@@ -305,7 +307,6 @@
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat_ubuntu.sh",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat.sh",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/Vagrantfile",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/rabbitmq.sh",
     "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
@@ -320,7 +321,6 @@
     "Mathematics/Probablity_Statistics/Probability_Basics/7_简单随机过程/离散马尔科夫链.md",
     "Computer_Science/Reinforcement_Learning/Policy_Gradient/Value_Function_Methods.md",
     "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Docker.md",
-    "bu.md",
     "未命名.canvas"
   ]
 }
