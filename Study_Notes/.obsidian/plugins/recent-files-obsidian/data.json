@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/Bash_Scripts.md"
     },
     {
+      "basename": "Data_Format",
+      "path": "Computer_Science/DevOps/Data_Format.md"
+    },
+    {
+      "basename": "TCP",
+      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
+    },
+    {
       "basename": "Account_Requirements",
       "path": "Computer_Science/DevOps/Account_Requirements.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "5_BGP",
       "path": "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md"
-    },
-    {
-      "basename": "TCP",
-      "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
     },
     {
       "basename": "Docker",
@@ -43,10 +47,6 @@
     {
       "basename": "Proj1_Traceroute",
       "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
-    },
-    {
-      "basename": "Data_Format",
-      "path": "Computer_Science/DevOps/Data_Format.md"
     },
     {
       "basename": "RAG",

@@ -273,16 +273,17 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "abd22396395eb00b",
+  "active": "d92e1200caceafb6",
   "lastOpenFiles": [
-    "Computer_Science/DevOps/Account_Requirements.md",
+    "Computer_Science/DevOps/Data_Format.md",
     "Computer_Science/DevOps/Bash_Scripts.md",
+    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+    "Computer_Science/DevOps/Account_Requirements.md",
     "Computer_Science/DevOps/AWS.md",
     "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md",
     "Computer_Science/DevOps/Bash_Scripts.assets/4f4fc6b8f0be635f5fea8a0f2c062a37_MD5.jpeg",
     "Computer_Science/DevOps/Bash_Scripts.assets/image-20250410170008186.png",
     "Computer_Science/DevOps/Bash_Scripts.assets",
-    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
     "Computer_Science/DevOps/Docker.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg",
@@ -297,7 +298,6 @@
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md",
-    "Computer_Science/DevOps/Data_Format.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel/VprofileProjectSetupWindowsAndMacIntel.pdf",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel/Vagrantfile",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_WinMacIntel",

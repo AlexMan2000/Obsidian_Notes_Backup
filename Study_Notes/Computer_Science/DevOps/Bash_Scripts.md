@@ -256,10 +256,16 @@ root@web03:~$ vim /etc/ssh/sshd_config
 root@web03:~$ systemctl restart sshd
 ```
 > [!code] 添加用户
+> 执行下面的命令就会自动要求输入密码
 ```bash
-
+root@web03:~$ adduser devops
 ```
-
+> [!code] 更改no password setting
+> 和之前步骤一样
+```bash
+root@web03:~$ export EDITOR=vim
+root@web03:~$ visudo
+```
 
 
 # SSH Key Exchange
