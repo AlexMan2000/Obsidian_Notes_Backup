@@ -5,6 +5,10 @@
       "path": "Computer_Science/DevOps/Bash_Scripts.md"
     },
     {
+      "basename": "Account_Requirements",
+      "path": "Computer_Science/DevOps/Account_Requirements.md"
+    },
+    {
       "basename": "AWS",
       "path": "Computer_Science/DevOps/AWS.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Proj1_Traceroute",
       "path": "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj1_Traceroute.md"
-    },
-    {
-      "basename": "Account_Requirements",
-      "path": "Computer_Science/DevOps/Account_Requirements.md"
     },
     {
       "basename": "Data_Format",

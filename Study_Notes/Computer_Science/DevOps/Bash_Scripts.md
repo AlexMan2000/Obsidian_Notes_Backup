@@ -208,7 +208,57 @@ done
 
 
 # Remote Command Execution
+> [!code] Important Routine Codes
+> Suppose you have a machine called `scriptbox` and you want to access three other machines called `web01`(centos), `web02`(centos) and `web03`(ubuntus), you should follow the steps:
 
+
+## Step 1: Edit hostnames on scriptbox
+> [!code]
+> 通过`vim /etc/hosts`在其中配置`DNS`，按照`Vagrantfile`中的`IP`地址来配置, 添加如下三行:
+> `192.168.56.27 web01`
+> `192.168.56.28 web02`
+> `192.168.56.29 web03`
+> 
+```bash
+>>> vim /etc/hosts
+```
+
+
+## Step 2: Set no password for web01 and web02
+> [!code]
+> 在`scriptbox`中可以通过`ssh vagrant@web01`登录`web01`(默认用户名和密码都是`vagrant`)。然后在`web01`中我们添加新的`user`:
+```bash
+[vagrant@web01 ~]$ sudo -i
+[root@web01 ~]$ useradd devops
+[root@web01 ~]$ passwd devops
+```
+> [!code]
+> 添加完以后我们设置免密登录:
+```bash
+[root@web01 ~]$ visudo
+```
+> [!code]
+> 打开之后在`enhanced command mode`(通过esc进入)中输入`/root`找到关键位置，然后退回到`command mode`中执行`yyp`复制当前`root ALL=(ALL) ALL`到下一行，然后将下一行改为`root ALL=(ALL) NOPASSWD: ALL`
+> 
+> 在`web02`中重复此操作
+
+
+## Step 3: web03 Setup
+> [!code]
+> 由于`web03`是`ubuntu`系统默认不支持用密码登录，所以我们需要进行如下设置, 首先在项目目录下通过`vagrant ssh web03`进入这个虚拟机:
+```bash
+vagrant@web03:~$ sudo -i 
+root@web03:~$ vim /etc/ssh/sshd_config 
+```
+> [!code]
+> 找到`PasswordAuthentication`所在行，将其改为`yes`， 然后重启`sshd`服务, 然后就可以从`scriptbox`中通过密码登录`web03`了。
+```bash
+root@web03:~$ systemctl restart sshd
+```
+> [!code] 添加用户
+```bash
+
+```
 
 
 
