@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/DevOps/Bash_Scripts.md",
+                "file": "Computer_Science/DevOps/AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bash_Scripts"
+              "title": "AWS"
             }
           }
         ],
@@ -194,12 +194,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/DevOps/Bash_Scripts.md",
+                "file": "Computer_Science/DevOps/AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Bash_Scripts"
+              "title": "Outgoing links from AWS"
             }
           }
         ],
@@ -261,28 +261,30 @@
   },
   "active": "d92e1200caceafb6",
   "lastOpenFiles": [
+    "Computer_Science/DevOps/AWS.assets/e9bdb68ca0c30463d650f49c624d0229_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250413162738981.png",
+    "Computer_Science/DevOps/AWS.assets/1ba6f46dfc1b60c2084e60f673614d8e_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250413162619074.png",
+    "Computer_Science/DevOps/AWS.assets/149c242a65cc985baddacdcf192e6e8c_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250413162608673.png",
+    "Computer_Science/DevOps/AWS.assets/983b6d68ecda78b38d2a43c410b93b92_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250413162256618.png",
+    "Computer_Science/DevOps/AWS.assets/9a0c0ddce0f7bf51826f40f7653aca0c_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250413162228058.png",
+    "Computer_Science/DevOps/AWS.assets/2302417f4229495851bc4906134c52f4_MD5.jpeg",
+    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
+    "Computer_Science/DevOps/AWS.md",
     "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md",
-    "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.assets/d17d94cdc09ee47921f45fea8404a52f_MD5.jpeg",
-    "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.assets/image-20250412153744339.png",
+    "Computer_Science/DevOps/AWS.assets",
+    "Computer_Science/DevOps/Account_Requirements.md",
+    "Computer_Science/DevOps/Bash_Scripts.md",
     "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.assets",
     "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md",
-    "Computer_Science/DevOps/Bash_Scripts.md",
-    "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md",
     "Computer_Science/DevOps/Data_Format.md",
-    "Computer_Science/DevOps/Account_Requirements.md",
-    "Computer_Science/DevOps/AWS.md",
     "Computer_Science/Computer_Networks/Network_Architecture/5_BGP.md",
-    "Computer_Science/DevOps/Bash_Scripts.assets/4f4fc6b8f0be635f5fea8a0f2c062a37_MD5.jpeg",
-    "Computer_Science/DevOps/Bash_Scripts.assets/image-20250410170008186.png",
     "Computer_Science/DevOps/Bash_Scripts.assets",
     "Computer_Science/DevOps/Docker.md",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.md",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/dbd065b1bdc5e9b09bcb6d21a7bd2011_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195505213.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/3f9b3b325a4aaff566ec371ea6d491ad_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/d4fb94d646baae9a95b7a822ca387099_MD5.jpeg",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195455529.png",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Project-VProfile.assets/image-20250406195450272.png",
     "Computer_Science/Computer_Networks/Network_Architecture/4_Addressing.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj3_Transport.md",
     "Computer_Science/Computer_Networks/Network_Projects/UCB_CS168/Proj2_Routing.md",
@@ -294,7 +296,6 @@
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_MacOSM1/Vagrantfile",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Manual_provisioning_MacOSM1",
     "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat_ubuntu.sh",
-    "Computer_Science/DevOps/Projects/Project-VProfile-Setup/Automated_provisioning_WinMacIntel/tomcat.sh",
     "Computer_Science/Large_Language_Models/AI_Agent/RAG.md",
     "Computer_Science/Large_Language_Models/AI_Agent/MCP.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",

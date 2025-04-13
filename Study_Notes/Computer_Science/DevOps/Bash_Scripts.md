@@ -278,8 +278,8 @@ root@web03:~$ visudo
 
 > [!code]
 > 首先在源主机上执行`ssh-keygen`, 这个会在当前主机上生成一对密钥，其中:
-> - 私钥(`private key`)会被保存在`/root/.ssh/id_rsa`文件中
-> - 公钥(`public key`)会被保存在`/root/.ssh/id_rsa.pub`文件中
+> - 私钥(`private key`)会被保存在`/root/.ssh/id_rsa`文件中， 私钥通常会比较长
+> - 公钥(`public key`)会被保存在`/root/.ssh/id_rsa.pub`文件中，公钥通常会比较短
 ```bash
 [root@scriptbox ~]$ ssh-keygen
 ```

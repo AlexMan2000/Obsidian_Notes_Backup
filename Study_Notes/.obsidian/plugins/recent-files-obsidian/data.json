@@ -1,32 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Bash_Scripts",
-      "path": "Computer_Science/DevOps/Bash_Scripts.md"
-    },
-    {
-      "basename": "Assistant_API",
-      "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
-    },
-    {
-      "basename": "Function_Calling_Theory",
-      "path": "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md"
+      "basename": "AWS",
+      "path": "Computer_Science/DevOps/AWS.md"
     },
     {
       "basename": "TCP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
     },
     {
-      "basename": "Data_Format",
-      "path": "Computer_Science/DevOps/Data_Format.md"
+      "basename": "0ef981ab401190bc5e69b6f6ea3cb36d_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/0ef981ab401190bc5e69b6f6ea3cb36d_MD5.jpeg"
+    },
+    {
+      "basename": "Assistant_API",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
+    },
+    {
+      "basename": "deacf8e9e5ca59e888154e6ef66f4f8a_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/deacf8e9e5ca59e888154e6ef66f4f8a_MD5.jpeg"
+    },
+    {
+      "basename": "17fdad2452abba533b23bd3f39c77021_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/17fdad2452abba533b23bd3f39c77021_MD5.jpeg"
     },
     {
       "basename": "Account_Requirements",
       "path": "Computer_Science/DevOps/Account_Requirements.md"
     },
     {
-      "basename": "AWS",
-      "path": "Computer_Science/DevOps/AWS.md"
+      "basename": "Bash_Scripts",
+      "path": "Computer_Science/DevOps/Bash_Scripts.md"
+    },
+    {
+      "basename": "Function_Calling_Theory",
+      "path": "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md"
+    },
+    {
+      "basename": "Data_Format",
+      "path": "Computer_Science/DevOps/Data_Format.md"
     },
     {
       "basename": "5_BGP",
@@ -187,18 +199,6 @@
     {
       "basename": "Lab02_Syscalls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
-    },
-    {
-      "basename": "Lab04_Traps",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab04_Traps.md"
-    },
-    {
-      "basename": "Lab03_Page_Tables",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab03_Page_Tables.md"
-    },
-    {
-      "basename": "Concentration_Inequalities&MGF",
-      "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
     }
   ],
   "omittedPaths": [],
