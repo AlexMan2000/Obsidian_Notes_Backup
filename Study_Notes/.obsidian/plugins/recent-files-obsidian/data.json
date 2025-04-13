@@ -5,12 +5,20 @@
       "path": "Computer_Science/DevOps/Bash_Scripts.md"
     },
     {
-      "basename": "Data_Format",
-      "path": "Computer_Science/DevOps/Data_Format.md"
+      "basename": "Assistant_API",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
+    },
+    {
+      "basename": "Function_Calling_Theory",
+      "path": "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md"
     },
     {
       "basename": "TCP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
+    },
+    {
+      "basename": "Data_Format",
+      "path": "Computer_Science/DevOps/Data_Format.md"
     },
     {
       "basename": "Account_Requirements",
@@ -67,10 +75,6 @@
     {
       "basename": "Software_Requirements",
       "path": "Computer_Science/DevOps/Software_Requirements.md"
-    },
-    {
-      "basename": "Function_Calling_Theory",
-      "path": "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md"
     },
     {
       "basename": "Agent_Modules",
@@ -195,10 +199,6 @@
     {
       "basename": "Concentration_Inequalities&MGF",
       "path": "Computer_Science/Machine_Learning/Probability_Theory_EECS126/1_Probability_Review/Concentration_Inequalities&MGF.md"
-    },
-    {
-      "basename": "Concentration Inequality",
-      "path": "Mathematics/NYU_Master_Program/DS-GA-1005/Concentration_Inequalities&MGF.assets/Concentration Inequality.md"
     }
   ],
   "omittedPaths": [],
