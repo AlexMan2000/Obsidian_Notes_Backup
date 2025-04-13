@@ -233,14 +233,18 @@ done
 [root@web01 ~]$ passwd devops
 ```
 > [!code]
-> 添加完以后我们设置免密登录:
+> 添加完以后我们设置`root`用户免密登录:
 ```bash
 [root@web01 ~]$ visudo
 ```
 > [!code]
 > 打开之后在`enhanced command mode`(通过esc进入)中输入`/root`找到关键位置，然后退回到`command mode`中执行`yyp`复制当前`root ALL=(ALL) ALL`到下一行，然后将下一行改为`root ALL=(ALL) NOPASSWD: ALL`
 > 
-> 在`web02`中重复此操作
+> 在`web02`中重复此操作， 之后我们就可以在`scriptbox`中执行`web01`的命令, 例如:
+```bash
+ssh devops@web01 uptime
+```
+
 
 
 ## Step 3: web03 Setup
@@ -269,8 +273,32 @@ root@web03:~$ visudo
 
 
 # SSH Key Exchange
+> [!def]
+> 在上面的方法中, 我们从`scriptbox`登录任意一个`web01~web03`的machine时，会被要求输入目标用户的密码，这个密码通常需要在目标主机上配置。如果我们不想要这些繁琐的配置，则可以使用下面的`ssh key`方法
 
-
+> [!code]
+> 首先在源主机上执行`ssh-keygen`, 这个会在当前主机上生成一对密钥，其中:
+> - 私钥(`private key`)会被保存在`/root/.ssh/id_rsa`文件中
+> - 公钥(`public key`)会被保存在`/root/.ssh/id_rsa.pub`文件中
+```bash
+[root@scriptbox ~]$ ssh-keygen
+```
+> [!code] 分发公钥
+> 我们会在源主机上将公钥通过`ssh-copy-id <username>@<hostname>`指令拷贝到目标主机`web01~web03`上
+```bash
+[root@scriptbox ~]$ ssh-copy-id devops@web01
+[root@scriptbox ~]$ ssh-copy-id devops@web02
+[root@scriptbox ~]$ ssh-copy-id devops@web03
+```
+> [!code] 通过私钥登录目标主机
+> 然后我们就可以在源主机上通过`ssh <username>@<hostname> <command>` 执行命令了
+> 
+```bash
+# By default, without -i, the machine would look for .ssh/id_rsa
+[root@scriptbox ~]$ ssh devops@web01 uptime
+# Or you can specify you path of private key
+[root@scriptbox ~]$ ssh -i .ssh/id_rsa devops@web01 uptime
+```
 
 
 
