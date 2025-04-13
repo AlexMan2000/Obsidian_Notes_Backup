@@ -82,7 +82,7 @@ mkdir /tmp/test1
 
 
 
-# Best-practice EC2 Instance Creation
+# Best-practice EC2 Instance Creation Procedures
 ## Step 1: Generate Key Pair
 > [!code]
 > First go to `Network & Security` and create `key pair`, remember to select `.pem` and save the downloaded file(it only contains `private key`) to a safe local place on your local computer.
@@ -158,6 +158,31 @@ mkdir /tmp/test1
 > Then follow the instructions:
 > 
 > ![](AWS.assets/e9bdb68ca0c30463d650f49c624d0229_MD5.jpeg)
+
+
+
+## Step 4: Installing packages
+> [!code]
+> Remind that for ubuntu system, we use `apache2` instead of `httpd` service for web service.
+```bash
+sudo apt update
+sudo apt install apache2 wget unzip -y
+wget https://www.tooplate.com/zip-templates/2128_tween_agency.zip
+unzip 2128_tween_agency.zip
+cp -r 2128_tween_agency/* /var/www/html/
+systemctl restart apache2
+```
+> [!code]
+> Then visit the public IP address(you get a new one each time you stop and start the instance server, rebooting won't change the public IP though) of the server and we should get the tween web page.
+
+
+## Step 5: Static Public IP
+> [!code]
+> ![](AWS.assets/a9ceb16c1536177440025d209635109e_MD5.jpeg)![](AWS.assets/84efba09db4324e1906e76c381e42285_MD5.jpeg)
+> 
+> This public IP is reserved for you. Then you can associate your instance to this public IP.
+> 
+> ![](AWS.assets/49fcf4cdae5b0aa31c073f3c2c429f3d_MD5.jpeg)![](AWS.assets/d0b85a54b4c17278c73af7e3380fd922_MD5.jpeg)
 
 
 

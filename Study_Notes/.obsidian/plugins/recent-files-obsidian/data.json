@@ -5,6 +5,10 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "3f26bfbee5f40daffee378843b86ca70_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/3f26bfbee5f40daffee378843b86ca70_MD5.jpeg"
+    },
+    {
       "basename": "TCP",
       "path": "Computer_Science/Computer_Networks/Network_Protocols/Transport/TCP.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "4_System_Calls",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
-    },
-    {
-      "basename": "Lab02_Syscalls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/MIT_6_S081_Labs/Lab02_Syscalls.md"
     }
   ],
   "omittedPaths": [],
