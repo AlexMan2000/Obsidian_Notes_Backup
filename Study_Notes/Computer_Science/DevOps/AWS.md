@@ -143,6 +143,8 @@ mkdir /tmp/test1
 ### Storage Configurations
 > [!important]
 > ![](AWS.assets/983b6d68ecda78b38d2a43c410b93b92_MD5.jpeg)
+> 
+> gp2 would be better in terms of pricing.
 
 
 ### Advanced Details
@@ -183,6 +185,86 @@ systemctl restart apache2
 > This public IP is reserved for you. Then you can associate your instance to this public IP.
 > 
 > ![](AWS.assets/49fcf4cdae5b0aa31c073f3c2c429f3d_MD5.jpeg)![](AWS.assets/d0b85a54b4c17278c73af7e3380fd922_MD5.jpeg)
+
+
+
+# AWS-CLI
+> [!code]
+> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+## Config for AWS CLI
+### Add IAM User
+> [!important]
+> Search for IAM service and click for `Users` under `Access management` tab, click `Create User`
+> 
+> ![](AWS.assets/335742afd189d2bd8aa82340e368e4fd_MD5.jpeg)
+> 
+> Then in the `Permission policies`, click for `AdministratorAccess`
+> 
+> ![](AWS.assets/35db301af6fdd1eb978b244303c14f73_MD5.jpeg)
+
+
+### Config IAM User
+> [!important]
+> Click the newly created user, and click for `Security credentials` tab:
+> 
+> ![](AWS.assets/405af80bb527ce0ab27e23c73a5c5ca3_MD5.jpeg)
+> 
+> Scroll for `Access keys` section, hit `Create access key`:
+> 
+> ![](AWS.assets/6eeba8d5fa56c40a4d1577ac5e931ae7_MD5.jpeg)
+> 
+> Then click next till the end, remember don't review your access key to anyone else.
+> 
+> ![](AWS.assets/bd2a30911560ad0fb1aca029d3aea6af_MD5.jpeg)
+
+
+### Config AWS CLI
+> [!code]
+> Copy the access key id and access key you just created as required.
+```bash
+aws configure
+```
+> [!code] 
+> Now you can open a git bash and browse for the configuration through these commands:
+```bash
+ls ~/.aws/
+# config credentials
+cat ~/.aws/config
+# [default]
+# region = us-east-1
+# output = json
+cat ~/.aws/credentials
+# your access key id
+# your access key
+```
+> [!code]
+> Run the following command to get the user id information:
+> 
+> ![](AWS.assets/8369d2aaf3c00df0fc475d4e769d7c2b_MD5.jpeg)
+```bash
+aws sts get-caller-identity
+```
+> [!code]
+> Run the following command to get the ec2 regions
+```bash
+aws ec2 describe-instances
+```
+
+
+
+## Use AWS CLI to create instance
+> [!important]
+> You can use the following prompt to let LLM generate the commands to create and configure for new ec2 instances:
+```txt
+aws command to create key pair, security group allows port 22 from my ip and launch ec2 instance with ami amazon linux in us-east-1 region
+```
+
+
+## AWS commands documentations
+> [!code]
+> https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
 
 
 

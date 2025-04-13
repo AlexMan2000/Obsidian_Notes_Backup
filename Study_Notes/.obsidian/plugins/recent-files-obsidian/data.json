@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "Assistant_API",
+      "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
+    },
+    {
+      "basename": "f8b7d7d7caead476ed4c34126a490025_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/f8b7d7d7caead476ed4c34126a490025_MD5.jpeg"
+    },
+    {
       "basename": "3f26bfbee5f40daffee378843b86ca70_MD5",
       "path": "Computer_Science/DevOps/AWS.assets/3f26bfbee5f40daffee378843b86ca70_MD5.jpeg"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "0ef981ab401190bc5e69b6f6ea3cb36d_MD5",
       "path": "Computer_Science/DevOps/AWS.assets/0ef981ab401190bc5e69b6f6ea3cb36d_MD5.jpeg"
-    },
-    {
-      "basename": "Assistant_API",
-      "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
     },
     {
       "basename": "deacf8e9e5ca59e888154e6ef66f4f8a_MD5",
@@ -195,10 +199,6 @@
     {
       "basename": "6_Interrupts",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/6_Interrupts.md"
-    },
-    {
-      "basename": "4_System_Calls",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/4_System_Calls.md"
     }
   ],
   "omittedPaths": [],
