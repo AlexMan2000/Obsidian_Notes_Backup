@@ -301,15 +301,115 @@ aws command to create key pair, security group allows port 22 from my ip and lau
 
 ## Attach Volumes
 > [!important]
-> ![](AWS.assets/99f1f81257f5e40acb89d9d0bf958086_MD5.jpeg)
+> ![](AWS.assets/99f1f81257f5e40acb89d9d0bf958086_MD5.jpeg)![](AWS.assets/4e69c8fee886170172feee401791e080_MD5.jpeg)![](AWS.assets/eaaccaf73f6beb87470e4e900fb51d82_MD5.jpeg)
+> 
+> We can see that the 5GB volume is attached.
+```bash
+# We can see the disk storage through
+df -h
+# And
+fdisk -l
+```
+
+
+## Partition Volumes
+> [!important]
+> ![](AWS.assets/a82d1ba328e60493fe6b19b74347f89f_MD5.jpeg)
+```bash
+# First execute the following command:
+sudo -i
+fdisk /dev/xvdf
+
+# Search for n "add a new partition"
+```
+> [!important]
+> ![](AWS.assets/9ffea397f2a9d476b86b6596cb5d4967_MD5.jpeg)
+> 
+> Or you can input `+3G` for the size of current partition.
+> 
+> ![](AWS.assets/322569710714f9cc37df5362fcb8cc5f_MD5.jpeg)
+> 
+> Then hit `w` to alter the partition.
+> 
+> We can see the new partition.
 
 
 
+## Formatting Partition
+> [!important]
+```bash
+# See the disk storage format extensions that are supported on the machine
+mkfs
+
+# Or if it shows, no specified devices, you can try the following:
+ls /sbin/mkfs.*
+
+# Apply the format to the partition(e.g. mkfs.ext4)
+mkfs.ext4 /dev/xvdf1
+```
+> [!example] Output
+> ![](AWS.assets/91b2e471db38cd30f3bada23b625b469_MD5.jpeg)
+
+
+## Mount/Unmount Partition
+> [!code]
+> ![](AWS.assets/960be3c4747909789b25e7aa5ec1ac55_MD5.jpeg)
+```bash
+# This is only temporary mount, after reboot, this mount is gone
+mount /dev/xvdf1 /var/www/html
+```
+> [!example] Output
+> ![](AWS.assets/91137bc4a5839dd8ef0cefc4198d9af9_MD5.jpeg)
+```bash
+umount /var/www/html
+```
 
 
 
+## Permanent Mount/Unmount
+> [!code]
+> Append `/dev/xvdf1 /var/www/html/images ext4 0 0` to the configuration file opened by the following command:
+```bash
+vi /etc/fstab
+```
+> [!important]
+> ![](AWS.assets/9d0daabaf75eec0dbbfb535f55e87879_MD5.jpeg)![](AWS.assets/f3c37fb9b31e9e01e8ebe1d7cb9e0adc_MD5.jpeg)
+> 
+> The first 0 means no dumping.
+> 
+> The second 0 means no filesystem check.
+
+> [!code]
+> 
+```bash
+# Some system may ask you to execute the following first:
+systemctl daemon-reload
+
+# Make sure /etc/fstab takes effect
+mount -a
+```
+> [!important]
+> ![](AWS.assets/e8462825eec0a88f82f024da9a463a24_MD5.jpeg)
+> 
+> Then you can see that the new filesystem is mounted.
+> 
+> ![](AWS.assets/image-20250414192325044.png)
 
 
+
+## Configure for MySQL
+> [!important]
+```bash
+# install dependencies for mysql
+yum install mariadb-server -y
+
+systemctl start mariadb
+
+# Then you should see the data in /var/lib/mysql
+ls /var/lib/mysql
+```
+> [!important]
+> ![](AWS.assets/0762e477ef4bf09a30672e81c0da2fba_MD5.jpeg)
 
 
 
