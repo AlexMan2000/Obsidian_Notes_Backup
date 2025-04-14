@@ -167,12 +167,21 @@ mkdir /tmp/test1
 > [!code]
 > Remind that for ubuntu system, we use `apache2` instead of `httpd` service for web service.
 ```bash
+# This is for ubuntu
 sudo apt update
 sudo apt install apache2 wget unzip -y
 wget https://www.tooplate.com/zip-templates/2128_tween_agency.zip
 unzip 2128_tween_agency.zip
 cp -r 2128_tween_agency/* /var/www/html/
 systemctl restart apache2
+
+# This is for centos
+sudo yum update
+sudo yum install httpd wget unzip -y
+wget https://www.tooplate.com/zip-templates/2128_tween_agency.zip
+unzip 2128_tween_agency.zip
+cp -r 2128_tween_agency/* /var/www/html/
+systemctl restart httpd
 ```
 > [!code]
 > Then visit the public IP address(you get a new one each time you stop and start the instance server, rebooting won't change the public IP though) of the server and we should get the tween web page.
@@ -268,7 +277,37 @@ aws command to create key pair, security group allows port 22 from my ip and lau
 
 
 
-# EBS
+# EBS(Elastic Block Storage)
+## What is EBS?
+> [!important]
+> ![](AWS.assets/3b53c1df232494b0241481985b1b6ddd_MD5.jpeg)![](AWS.assets/b01ae120160709d4451fab2d3fb3d15a_MD5.jpeg)![](AWS.assets/f754f3635fc3d2565150746a9bb897d0_MD5.jpeg)![](AWS.assets/8f1dd12344f6975bcf517c8dfe039f29_MD5.jpeg)![](AWS.assets/709aab897bccc3d1b80262a4ab4d17e5_MD5.jpeg)
+
+
+
+## How to create EBS
+> [!important]
+> Hit `Create Volume` to create volume.
+> 
+> Be sure to align the availablility zone of the volume to be the same as the availability zone of the target instance.
+> 
+> ![](AWS.assets/fb26df108066f58f07a32532372c472c_MD5.jpeg)![](AWS.assets/8da7aecc6d52ccb7c45b47a7db29d0f8_MD5.jpeg)
+> 
+> Then we get:
+> 
+> ![](AWS.assets/1a9046ae6b18353665b0efec44ec43be_MD5.jpeg)
+
+
+
+
+## Attach Volumes
+> [!important]
+> ![](AWS.assets/99f1f81257f5e40acb89d9d0bf958086_MD5.jpeg)
+
+
+
+
+
+
 
 
 

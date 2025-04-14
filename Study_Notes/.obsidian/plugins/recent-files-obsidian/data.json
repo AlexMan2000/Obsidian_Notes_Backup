@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "Website Setup",
+      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
+    },
+    {
+      "basename": "8da7aecc6d52ccb7c45b47a7db29d0f8_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/8da7aecc6d52ccb7c45b47a7db29d0f8_MD5.jpeg"
+    },
+    {
       "basename": "Assistant_API",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
     },
@@ -87,10 +95,6 @@
     {
       "basename": "71d9a55bd74c2f3dfd35316cfbc8726f_MD5",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/MCP.assets/71d9a55bd74c2f3dfd35316cfbc8726f_MD5.jpeg"
-    },
-    {
-      "basename": "Website Setup",
-      "path": "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md"
     },
     {
       "basename": "Software_Requirements",
@@ -195,10 +199,6 @@
     {
       "basename": "Project0_Pregame",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/HWs_Projects/Pintos_Projects/Project0_Pregame.md"
-    },
-    {
-      "basename": "6_Interrupts",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/6_Interrupts.md"
     }
   ],
   "omittedPaths": [],
