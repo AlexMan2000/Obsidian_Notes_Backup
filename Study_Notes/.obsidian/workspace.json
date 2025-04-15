@@ -238,7 +238,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,17 +262,17 @@
   },
   "active": "d92e1200caceafb6",
   "lastOpenFiles": [
-    "Computer_Science/DevOps/AWS.assets/ad0952c93208c4867727640687b788f3_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250414212742524.png",
-    "Computer_Science/DevOps/AWS.assets/image-20250414212714895.png",
-    "Computer_Science/DevOps/AWS.assets/4a136bd5a23df3d7d46a3727a015af75_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250414212600782.png",
-    "Computer_Science/DevOps/AWS.assets/c52fa5f4419bc32245a4b7bce557804d_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250414212434559.png",
-    "Computer_Science/DevOps/AWS.assets/d5ac453f1423f0134afcce142b42a1e2_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250414212315554.png",
-    "Computer_Science/DevOps/AWS.assets/62a5021b68abe6ebeee84607bddb890a_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250414193227599.png",
+    "Computer_Science/DevOps/AWS.assets/4ba70b65deae316f912e7b9ed140159b_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250414225722145.png",
+    "Computer_Science/DevOps/AWS.assets/260fd42553dda1bbfad3f6b97f294c9c_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250414225547012.png",
+    "Computer_Science/DevOps/AWS.assets/b3cdf0d9db309664e993c76835230c5c_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250414225300816.png",
+    "Computer_Science/DevOps/AWS.assets/87051e74a7b7bc87d706e7ff679225d1_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250414224715532.png",
+    "Computer_Science/DevOps/AWS.assets/658192db03787b22fff5d52eba8dc56a_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250414224143069.png",
+    "Computer_Science/DevOps/AWS.assets/0c6c7a460ad71d0a64776a5493946f50_MD5.jpeg",
     "Computer_Science/DevOps/AWS.md",
     "Computer_Science/DevOps/Vagrant_Linux_Servers/Website Setup.md",
     "Computer_Science/DevOps/Helpful_Notes/AWS+Command+Line+Interface+Part+1.pdf",

@@ -450,16 +450,254 @@ ls /var/lib/mysql
 
 
 
-# ELB
+# ELB(Elastic Load Balancer)
+## What's Load Balancer?
+> [!def]
+> ![](AWS.assets/4e5b4b88794c0eb9572494d225d95ce0_MD5.jpeg)![](AWS.assets/c376f34cc0b57608e11ae9c99d395738_MD5.jpeg)![](AWS.assets/8cb8d68f34c9525d9d356d708b9ba6cf_MD5.jpeg)![](AWS.assets/718c9bc7d8781f490a02942790c2d406_MD5.jpeg)
+
+
+
+### Classic Load Balancer
+> [!def]
+> ![](AWS.assets/d90103c45af284db303d477c33584fdf_MD5.jpeg)![](AWS.assets/77fef0b6f808be612ef294e320291d95_MD5.jpeg)![](AWS.assets/708c4e3cb0f602b73125301904aec303_MD5.jpeg)
+
+
+
+### Application Load Balancer
+> [!important]
+> ![](AWS.assets/995e524f160712510338cc6ef63d997e_MD5.jpeg)
+
+
+
+### Network Load Balancer
+> [!important]
+> ![](AWS.assets/fb317dc7acc5d8d0c9997aa72226b469_MD5.jpeg)
+
+
+
+
+## Create Servers from Image
+> [!important]
+> The first step is to create a bunch of servers, the provisioning file is attached below.
+> 
+```bash
+#!/bin/bash
+
+# Variable Declaration
+#PACKAGE="httpd wget unzip"
+#SVC="httpd"
+URL='https://www.tooplate.com/zip-templates/2098_health.zip'
+ART_NAME='2098_health'
+TEMPDIR="/tmp/webfiles"
+
+yum --help &> /dev/null
+
+# See if it is a centos system
+if [ $? -eq 0 ]
+then
+   # Set Variables for CentOS
+   PACKAGE="httpd wget unzip"
+   SVC="httpd"
+
+   echo "Running Setup on CentOS"
+   # Installing Dependencies
+   echo "########################################"
+   echo "Installing packages."
+   echo "########################################"
+   sudo yum install $PACKAGE -y > /dev/null
+   echo
+
+   # Start & Enable Service
+   echo "########################################"
+   echo "Start & Enable HTTPD Service"
+   echo "########################################"
+   sudo systemctl start $SVC
+   sudo systemctl enable $SVC
+   echo
+
+   # Creating Temp Directory
+   echo "########################################"
+   echo "Starting Artifact Deployment"
+   echo "########################################"
+   mkdir -p $TEMPDIR
+   cd $TEMPDIR
+   echo
+
+   wget $URL > /dev/null
+   unzip $ART_NAME.zip > /dev/null
+   sudo cp -r $ART_NAME/* /var/www/html/
+   echo
+
+   # Bounce Service
+   echo "########################################"
+   echo "Restarting HTTPD service"
+   echo "########################################"
+   systemctl restart $SVC
+   echo
+
+   # Clean Up
+   echo "########################################"
+   echo "Removing Temporary Files"
+   echo "########################################"
+   rm -rf $TEMPDIR
+   echo
+
+   sudo systemctl status $SVC
+   ls /var/www/html/
+
+else
+    # Set Variables for Ubuntu
+   PACKAGE="apache2 wget unzip"
+   SVC="apache2"
+
+   echo "Running Setup on CentOS"
+   # Installing Dependencies
+   echo "########################################"
+   echo "Installing packages."
+   echo "########################################"
+   sudo apt update
+   sudo apt install $PACKAGE -y > /dev/null
+   echo
+
+   # Start & Enable Service
+   echo "########################################"
+   echo "Start & Enable HTTPD Service"
+   echo "########################################"
+   sudo systemctl start $SVC
+   sudo systemctl enable $SVC
+   echo
+
+   # Creating Temp Directory
+   echo "########################################"
+   echo "Starting Artifact Deployment"
+   echo "########################################"
+   mkdir -p $TEMPDIR
+   cd $TEMPDIR
+   echo
+
+   wget $URL > /dev/null
+   unzip $ART_NAME.zip > /dev/null
+   sudo cp -r $ART_NAME/* /var/www/html/
+   echo
+
+   # Bounce Service
+   echo "########################################"
+   echo "Restarting HTTPD service"
+   echo "########################################"
+   systemctl restart $SVC
+   echo
+
+   # Clean Up
+   echo "########################################"
+   echo "Removing Temporary Files"
+   echo "########################################"
+   rm -rf $TEMPDIR
+   echo
+
+   sudo systemctl status $SVC
+   ls /var/www/html/
+fi 
+
+```
+> [!code] Create image(AMI) from instance
+> Once we have the instance running successfully and show the website, we can create the image from that instance so that we can replicate instances.
+> 
+> ![](AWS.assets/a99c7d4e243bfcbcc6eb669347485bcf_MD5.jpeg)
+> 
+> Then create image:
+> 
+> ![](AWS.assets/43863acb0cba053580b1567cfdf86f70_MD5.jpeg)
+> 
+> Wait for sometime until the status of the image changed to `Available`
+
+
+
+## Create Launch Template
+> [!important]
+> Go to `Launch Template` section. We can create launch template from ami(which can be created from instance). 
+> 
+> Once we created the launch template, we can launch the instance from the template.
+> 
+> ![](AWS.assets/ba3f3350a3056e95914eb390fb8e5c82_MD5.jpeg)
+
+
+
+## Create Load Balancer
+> [!important] Step 1: Create Target Groups
+> Go to `Target Groups`(group of instances with health checks) first, and `Create target group`:
+> 
+> ![](AWS.assets/265d3f4324aa628ebcc32822902e0032_MD5.jpeg)![](AWS.assets/8169198d47e50033dc814dd29e777884_MD5.jpeg)![](AWS.assets/c7e8599b94a3c74141393899f323f598_MD5.jpeg)
+> 
+> Here health check path means `http://<ipv4>:80/`, if you have a different port, you can specify it in the `Advanced health check settings`.
+> 
+> - **Healthy Threshold**: It is the number of times it will check whether the port is healthy until final verdict.
+> - **Unhealthy threshold:**  Number of times of unhealth response until classifying the system as unhealthy.
+
+> [!important] Step 2: Register Targets
+> ![](AWS.assets/501065da17794f61090f9e854429ec73_MD5.jpeg)
+> 
+> Click `Include as pending below` first, then you should see both targets move to the `Review targets` section:
+> 
+> ![](AWS.assets/9305eaff5d2476d3dc1031212d6234cc_MD5.jpeg)
+> 
+> Then hit `Create target group`.
+
+> [!important] Step 3: Create Load Balancer
+> Go to `Load Balancers` section, hit `Create load balancer`:
+> 
+> ![](AWS.assets/df4f616d25e4c84c44137c1355c878f9_MD5.jpeg)
+> 
+> We will go with **Application Load Balancer** with HTTP/HTTPS routing.
+> 
+> ![](AWS.assets/24234dba4ede4cb945ce11ef54b16d45_MD5.jpeg)
+> 
+> Select all availability zones:
+> 
+> ![](AWS.assets/8dc854eeb84a83103778732c0eb5a0da_MD5.jpeg)
+> 
+> For load balancer, we have to create a new security group, different from those for instances, adjusting the inbound rules as shown(many mobile phones use IPv6 so we have to include that), then hit `Create security group`:
+> 
+> ![](AWS.assets/bc884ee719dadeea83253bde5b46647f_MD5.jpeg)
+> 
+> Then back to load balancer creator, refresh and select the security group we have just created:
+> 
+> ![](AWS.assets/0c6c7a460ad71d0a64776a5493946f50_MD5.jpeg)
+> 
+> Then set the listener to route the incoming traffic on the frontend port 80 to the specified target group(backend at port 80), then hit `Create load balancer`:
+> 
+> ![](AWS.assets/658192db03787b22fff5d52eba8dc56a_MD5.jpeg)
+> Then in your `Load Balancers` section, wait for the status from **provisioning** to **active**. 
+
+
+
+## Configure for Access
+> [!bug]
+> Typically, you find the DNS name of the server, paste that into the browser and you should access the web page, but if there is problem(most often 504 gateway time-out), please follow the steps.
+> 
+> ![](AWS.assets/87051e74a7b7bc87d706e7ff679225d1_MD5.jpeg)
+
+> [!important] Step 1: Find the problems
+> If you try directly visiting the IP of the individual servers, the website is accessible. So the problem lies in between the load balancer and the individual servers, which is **security group**.
+> 
+> The problem is that in the **inbound rules** of **individual servers**, they are not allowing the traffic from the **load balancer**.
+> 
+> Here if we go to `Target Groups` section, we see that the health check for instances didn't pass:
+> 
+> ![](AWS.assets/b3cdf0d9db309664e993c76835230c5c_MD5.jpeg)
+
+> [!important] Step 2: Adjust the Security Group
+> Since both `web01` and `web02` instance use the same the security group, we add the security group of the load balancer to the individual server:
+> 
+> ![](AWS.assets/4ba70b65deae316f912e7b9ed140159b_MD5.jpeg)
+> 
+> So that anything inside this security group(like the load balancer) can access the port 80 of the individual server.
 
 
 
 
 
 
-
-
-# Cloud Watch
+# Cloudwatch
 
 
 

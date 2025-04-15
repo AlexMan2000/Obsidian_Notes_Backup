@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "141ae188a3ac0ca31e2a94a335be818d_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/141ae188a3ac0ca31e2a94a335be818d_MD5.jpeg"
+    },
+    {
+      "basename": "5c2325d9ced0e818fe4aab61afceb6f2_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/5c2325d9ced0e818fe4aab61afceb6f2_MD5.jpeg"
+    },
+    {
       "basename": "599a75ab0b64566afbc26fe50dabdde6_MD5",
       "path": "Computer_Science/DevOps/AWS.assets/599a75ab0b64566afbc26fe50dabdde6_MD5.jpeg"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Operating System Interfaces",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
-    },
-    {
-      "basename": "Remote_SSH",
-      "path": "Computer_Science/Computer_Science_Tools/Operating_System_Tools/Remote_SSH.md"
-    },
-    {
-      "basename": "⭐L2106__Compilation_Files_Gitlet",
-      "path": "Computer_Science/Data_Structures_Algorithms/Data_Structures/CS61B/5_Git_Files_Serializable/⭐L2106__Compilation_Files_Gitlet.md"
     }
   ],
   "omittedPaths": [],
