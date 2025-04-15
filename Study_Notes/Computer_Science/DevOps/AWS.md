@@ -413,6 +413,41 @@ ls /var/lib/mysql
 
 
 
+# EBS Backup
+## Volume Storage
+> [!important]
+> ![](AWS.assets/f1710a99a0a050dd0e63e55cdc97e848_MD5.jpeg)![](AWS.assets/a802542cc7b0e5180b48d71977dcfa4a_MD5.jpeg)![](AWS.assets/33247d25e7e06933d783dd5acec8703f_MD5.jpeg)
+
+
+## Snapshot Creation
+> [!important]
+> ![](AWS.assets/5de4d6f0c070299b940f363f11af4fec_MD5.jpeg)![](AWS.assets/58fcd85066ccf070b2df7a17e32f79b5_MD5.jpeg)
+> 
+> Then in the Snapshots tab we will see:
+> 
+> ![](AWS.assets/62a5021b68abe6ebeee84607bddb890a_MD5.jpeg)
+
+
+
+## Example: Restore volumes from snapshot
+> [!example] Important Example
+> Suppose by accident, our database is corrupted(`/var/lib/mysql/` is accidentally deleted). The first thing we should do is to detach the current active volume from the machine. (Detached state of `fdisk -l`, we see `/dev/xdvf` is gone)
+> 
+> ![](AWS.assets/4a136bd5a23df3d7d46a3727a015af75_MD5.jpeg)
+> 
+> The steps are:
+> - On the machine, `umount /var/lib/mysql`.
+> - On the AWS volumes, detach the corrupted volume.
+> - Create a new volume based on the uncorrupted snapshot.
+
+> [!code] Create volume from snapshot
+> ![](AWS.assets/d5ac453f1423f0134afcce142b42a1e2_MD5.jpeg)![](AWS.assets/c52fa5f4419bc32245a4b7bce557804d_MD5.jpeg)
+
+> [!important]
+> After that, you can attach the newly created volume onto the machine, now execute `fdisk -l` again, we should see the `3G` partition back again.
+> 
+> ![](AWS.assets/ad0952c93208c4867727640687b788f3_MD5.jpeg)
+
 
 
 # ELB
