@@ -690,15 +690,32 @@ fi
 > 
 > ![](AWS.assets/4ba70b65deae316f912e7b9ed140159b_MD5.jpeg)
 > 
-> So that anything inside this security group(like the load balancer) can access the port 80 of the individual server.
+> So that anything inside this security group(like the load balancer) can access the port 80 of the individual server. Wait for sometime until the healthy check pass in the **Target Groups**:
+> 
+> ![](AWS.assets/a4505ba04d4db2555eefbd32816580a3_MD5.jpeg)
+
+> [!success]
+> Then we should be able to access `health-elb-968074153.us-east-1.elb.amazonaws.com` from the browser.
+> 
+> ![](AWS.assets/3ae5df67addb3785406151d500afa488_MD5.jpeg)
+
+> [!tip]
+> Remember we you are doing maintanence on the instance of a target group, you should deregister it first, modify your instance, then register it back to run the health check.
 
 
+## Destroy the load balancer
+> [!important]
+> When you delete the load balancer, you do it in the reverse order as we create one. 
+> 
+> Load balancer -> Target group -> Instances
 
 
 
 
 # Cloudwatch
-
+## What is Cloudwatch?
+> [!def] Introduction
+> ![](AWS.assets/5af4cb53e7a8e45861fbb658d9f5e196_MD5.jpeg)![](AWS.assets/e8b4652321342a3e62482baf20cd852a_MD5.jpeg)![](AWS.assets/aece712e27bfa94d5cb910f782f4c252_MD5.jpeg)![](AWS.assets/f001a1184de47cd0caf5a811ff915593_MD5.jpeg)
 
 
 
