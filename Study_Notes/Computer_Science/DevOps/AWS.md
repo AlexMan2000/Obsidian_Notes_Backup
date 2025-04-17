@@ -765,43 +765,53 @@ top
 
 ## Create EFS 
 > [!important] Step 1: Create security group
-> Since EFS is a **network-based file system**, so we have to create a security group before creating the EFS.
+> Since EFS is a **network-based file system**, so we have to create a security group before creating the EFS. Be careful you should not modify the outbound group. Only modify the inbound group. This settings mean to let your EFS to access your instance's file system.
 > 
-> ![](AWS.assets/a340d1d8d69b085e8271411a7c73e630_MD5.jpeg)
+> 
+> ![](AWS.assets/c5462e781cb8ceca76086cdc8b30feae_MD5.jpeg)![](AWS.assets/3aa9dafe2aea0cea149547c972c1c22a_MD5.jpeg)
 
 > [!important] Step 2: Create file system
-> ![](AWS.assets/620ae55c2b0a1c09c9bf0883d7bb0a71_MD5.jpeg)![](AWS.assets/2a70ad8b62101a0f23f3850b11e9e09c_MD5.jpeg)![](AWS.assets/861e5b5d2e6245994b9609240daa7afa_MD5.jpeg)
+> ![](AWS.assets/620ae55c2b0a1c09c9bf0883d7bb0a71_MD5.jpeg)![](AWS.assets/2a70ad8b62101a0f23f3850b11e9e09c_MD5.jpeg)![](AWS.assets/861e5b5d2e6245994b9609240daa7afa_MD5.jpeg)![](AWS.assets/c31eee7895336fb9fc81238ecd8ded05_MD5.jpeg)
 
+> [!important] Step 3: Create Access Point
+> ![](AWS.assets/2187021a4724d1ca671a2177e0aaa21b_MD5.jpeg)
 
+> [!important] Step 4: Install Amazon EFS Client Helper
+> https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html
+> 
+> ![](AWS.assets/2c9d55b3da9a4ea94da1db5978c72152_MD5.jpeg)![](AWS.assets/55d8059756b803c9aedd2567412beb22_MD5.jpeg)![](AWS.assets/bde430d9c722cf5fcae5ea423faa6850_MD5.jpeg)
+> 
+> You should choose different way of installing EFS Helper based on your system.(e.g. Ubuntu, centos， amazon linux)
+```bash
+# For amazon linux, just execute the following
+sudo yum install amazon-efs-utils -y
+```
 
+> [!important] Step 5: Mounting EFS File Systems
+> With client helper installed, we can mount efs file system automatically.
+> 
+> ![](AWS.assets/ed114b798441b4bf0086d14df2a4818b_MD5.jpeg)![](AWS.assets/d7b67fbee62e00a032b656eca3ad2be3_MD5.jpeg)![](AWS.assets/f347cef88b3de8d41fd6f75368d0836e_MD5.jpeg)
+```bash
+# We have to replace the file-system-id, efs-mount-point and access-point-id with the one we have created
+file-system-id:/ efs-mount-point efs _netdev,noresvport,tls,accesspoint=access-point-id 0 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Execute this
+vi /etc/fstab
+# Copy the following command to append to the EOF
+fs-02c9704d6debb01e9:/ /var/www/html/images efs _netdev,noresvport,tls,accesspoint=fsap-00a1a1eed2eb4d623 0 0
+# After you save the /etc/fstab, run the following to mount
+mount -fav
+```
+> [!example] Output
+> If everything is good, you should see the following:
+> 
+> ![](AWS.assets/f1fb7e6b1aa0cefaef502429fdfc4705_MD5.jpeg)
 
 
 # Autoscaling
 ## What is Autoscaling?
 > [!def]
-
-
-
-
+> ![](AWS.assets/3c4c8fca416bbbc82a07225176f7768c_MD5.jpeg)![](AWS.assets/6d32f347d64bb30d23c053a4e976fc34_MD5.jpeg)![](AWS.assets/2c38be2ce93a2a9c40cbee7bc6bcf179_MD5.jpeg)![](AWS.assets/286a069c4e62894a2afd93881eb244ab_MD5.jpeg)
 
 
 
