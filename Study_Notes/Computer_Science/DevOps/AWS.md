@@ -730,10 +730,63 @@ fi
 > Warning: it is not free.
 
 
+## Stress CPU
+> [!code] Install dependencies
+```bash
+# Install the dependencies(Before Amazon Linux 2023, otherwise not needed)
+cat /etc/os-release
+sudo amazon-linux-extras install epel -y 
+sudo yum install stress -y
+
+# After 2023, just one command
+sudo yum install stress -y
+```
+
+> [!code] Stress CPUs
+```bash
+# This command will create 4 processes simultaneously and stress the CPU for 300 seconds, and it will run at the background
+nohup stress -c 4 -t 300 &
+
+# See all the running processes
+top
+```
+> [!example] Output
+> ![](AWS.assets/a2dbc052202cac62376c8879f1fbb555_MD5.jpeg)
+
+
 
 
 
 # EFS(Elastic File System)
+## What is EFS?
+> [!def]
+> https://us-east-1.console.aws.amazon.com/efs/home?region=us-east-1#/get-started
+
+
+## Create EFS 
+> [!important] Step 1: Create security group
+> Since EFS is a **network-based file system**, so we have to create a security group before creating the EFS.
+> 
+> ![](AWS.assets/a340d1d8d69b085e8271411a7c73e630_MD5.jpeg)
+
+> [!important] Step 2: Create file system
+> ![](AWS.assets/620ae55c2b0a1c09c9bf0883d7bb0a71_MD5.jpeg)![](AWS.assets/2a70ad8b62101a0f23f3850b11e9e09c_MD5.jpeg)![](AWS.assets/861e5b5d2e6245994b9609240daa7afa_MD5.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -743,6 +796,9 @@ fi
 
 
 # Autoscaling
+## What is Autoscaling?
+> [!def]
+
 
 
 
@@ -750,7 +806,8 @@ fi
 
 
 # S3
-
+## What is S3?
+> [!def]
 
 
 
@@ -759,6 +816,9 @@ fi
 
 
 # RDS
+## What is RDS?
+> [!def]
+
 
 
 
