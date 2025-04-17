@@ -686,7 +686,7 @@ fi
 > ![](AWS.assets/b3cdf0d9db309664e993c76835230c5c_MD5.jpeg)
 
 > [!important] Step 2: Adjust the Security Group
-> Since both `web01` and `web02` instance use the same the security group, we add the security group of the load balancer to the individual server:
+> Since both `web01` and `web02` instance use the same the security group, we add the security group of the **load balancer** to the individual server:
 > 
 > ![](AWS.assets/4ba70b65deae316f912e7b9ed140159b_MD5.jpeg)
 > 
@@ -716,11 +716,26 @@ fi
 ## What is Cloudwatch?
 > [!def] Introduction
 > ![](AWS.assets/5af4cb53e7a8e45861fbb658d9f5e196_MD5.jpeg)![](AWS.assets/e8b4652321342a3e62482baf20cd852a_MD5.jpeg)![](AWS.assets/aece712e27bfa94d5cb910f782f4c252_MD5.jpeg)![](AWS.assets/f001a1184de47cd0caf5a811ff915593_MD5.jpeg)
+> 
+> When you start an instance, the cloudwatch is automatically on and it will check all of the following metrics every 5 minutes:
+> 
+> ![](AWS.assets/40b128635df70c5c3ee3370ef1a7380e_MD5.jpeg)
+
+
+
+## Detailed Monitoring
+> [!important]
+> ![](AWS.assets/2d29689c7b83849aed01f4735738de05_MD5.jpeg) 
+> 
+> Warning: it is not free.
 
 
 
 
-# EFS
+
+# EFS(Elastic File System)
+
+
 
 
 
