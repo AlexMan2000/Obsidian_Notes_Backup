@@ -5,6 +5,10 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "784f3748e67d71edbb9d72d156404ed6_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg"
+    },
+    {
       "basename": "Assistant_API",
       "path": "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "5_Traps",
       "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md"
-    },
-    {
-      "basename": "Operating System Interfaces",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/MIT_6.S081/Operating System Interfaces.md"
     }
   ],
   "omittedPaths": [],

@@ -883,10 +883,27 @@ mount -fav
 
 
 
-# S3
+# S3(Simple Storage Service)
 ## What is S3?
 > [!def]
-> ![](AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg)
+> ![](AWS.assets/50b174c0191d0b6a14265ab2aeaf8273_MD5.jpeg)![](AWS.assets/82865b18f7e120e8118a58a7552da727_MD5.jpeg)![](AWS.assets/4c3d878d818a58806c5d40f22b76765a_MD5.jpeg)![](AWS.assets/60cbe0dadda3895023cbfcca71f0758b_MD5.jpeg)![](AWS.assets/image-20250417185104706.png)
+
+
+## S3 Storage Classes
+> [!def]
+> ![](AWS.assets/db6dbd32a2c017d6d98813a16c56dd5f_MD5.jpeg)![](AWS.assets/f3f2dd2846ba26cecaf76a812cabf430_MD5.jpeg)
+
+
+## S3 Lifecycle Policies
+> [!def]
+> ![](AWS.assets/14a9dd76dceae164d1c58eeabac7d403_MD5.jpeg)![](AWS.assets/c39c53646b4f85feabd2a3e51c04c4a8_MD5.jpeg)![](AWS.assets/49ca17b9e785b5dfdc4196dc5655c0d4_MD5.jpeg)
+
+
+
+
+
+![](AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg)
+
 
 
 
