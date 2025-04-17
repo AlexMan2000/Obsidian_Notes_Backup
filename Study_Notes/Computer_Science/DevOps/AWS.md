@@ -815,9 +815,80 @@ mount -fav
 
 
 
+## Create Autoscaling Group
+### Step 1: Create a target group
+> [!important] Step 1: Create a target group
+> Create an empty target group is fine. Since autoscaling group wil dynamically add instances to this target group depending on the usage.
+
+
+### Step 2: Create a load balancer
+> [!important] Step 2: Create an application load balancer
+> Just remember to select all the regions and set the inbound rules of the security group to be the following:
+> 
+> ![](AWS.assets/1bc0c2b0059283fbeed1e4c16bb6c0cb_MD5.jpeg)
+> 
+> Also in the `Listener and routing` section, forward the request to the load balancer to the target group we have just created.
+> 
+> ![](AWS.assets/9cdb4e43d9a79e474fca172d7b8f9b7d_MD5.jpeg)
+
+
+### Step 3: Create auto-scaling group
+> [!important] Step 3: Create auto-scaling group
+> ![](AWS.assets/7a4f53d1f05fb5dbe5f28e30effed261_MD5.jpeg)![](AWS.assets/f7bfdb7ea69b20121dbb9512772f29d4_MD5.jpeg)![](AWS.assets/526a10d539ea0b2de57db4ef5d8761d5_MD5.jpeg)
+> 
+> For **integration with other services**:
+> - Need to attach to an existing load balancer since we want to autoscale
+> - Health checks need to include `ELB health check` and `EC2 instance health check`, 
+> 	- EC2 checks will only test port accessibilty, and flag the instance as unhealthy if connection attempt failed.
+> 	- ELB checks will make sure if one instance is unhealthy in the target group, it will launch a new one and replace that one.
+> 
+> ![](AWS.assets/f72bda8441406df898cc8323fb215bcf_MD5.jpeg)![](AWS.assets/9c1873a1a4dcb26321cc5189cec934f4_MD5.jpeg)
+> 
+> Here at the bottom we see `Disable scale in to crate only scale-out policy`, if disabled, you are saying that I don't want the unhealthy instances to be automatically terminated(since I may have important data stored on it). But if you are using shared storaged like EFS or you don't care about data recovery, you can uncheck it.
+> 
+> ![](AWS.assets/f24beab4fa9bb186d4faf840d511d4fa_MD5.jpeg)![](AWS.assets/f799f2e15a85a4c6b702567e382fe14b_MD5.jpeg)
+> 
+> Finally we create an autoscaling group!
+> 
+> ![](AWS.assets/2554c47a6a58179d18a6d0617f0b8214_MD5.jpeg)
+> 
+> Once done initialization, we can see in the instance management tab the status of the newly created instances:
+> 
+> ![](AWS.assets/c304f2dc7457751bf3d7407b2d63b614_MD5.jpeg)
+> 
+> Here you can `Set scale-in protection` for the instance that you don't want to be automatically terminated by the autoscaling group.
+> 
+> ![](AWS.assets/32bf5a7454d18ddf8483c5ff009661f6_MD5.jpeg)
+
+
+
+## Active instance refresh
+> [!important]
+> Here for the `Instance Refresh`
+> 
+> ![](AWS.assets/b6496a64fb8f7ee3f22b8929d8f9096b_MD5.jpeg)![](AWS.assets/06bf3223ceeef65293a1455d843e200d_MD5.jpeg)
+> 
+> Basically you can make changes to the launch template of this autoscaling group and when you refresh, it will replace the current older-version instances gradually with new-version ones.
+
+
+
+## Testing Autoscaling Features
+> [!code]
+> You can terminate the instances created by ASG to simulate unhealthy instance status to see if ASG is replacing the instances with healthy ones. 
+> 
+> You will get email notification if you have configured that before.
+> 
+> You have to delete the autoscaling group first otherwise you cannot delete up your instances.
+
+
+
+
 # S3
 ## What is S3?
 > [!def]
+> ![](AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg)
+
+
 
 
 
