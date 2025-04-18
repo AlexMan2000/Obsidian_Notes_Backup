@@ -5,6 +5,14 @@
       "path": "Computer_Science/DevOps/AWS.md"
     },
     {
+      "basename": "8823945136283014553a9e7dadb90f8e_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/8823945136283014553a9e7dadb90f8e_MD5.jpeg"
+    },
+    {
+      "basename": "17fdad2452abba533b23bd3f39c77021_MD5",
+      "path": "Computer_Science/DevOps/AWS.assets/17fdad2452abba533b23bd3f39c77021_MD5.jpeg"
+    },
+    {
       "basename": "784f3748e67d71edbb9d72d156404ed6_MD5",
       "path": "Computer_Science/DevOps/AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg"
     },
@@ -59,10 +67,6 @@
     {
       "basename": "0ef981ab401190bc5e69b6f6ea3cb36d_MD5",
       "path": "Computer_Science/DevOps/AWS.assets/0ef981ab401190bc5e69b6f6ea3cb36d_MD5.jpeg"
-    },
-    {
-      "basename": "17fdad2452abba533b23bd3f39c77021_MD5",
-      "path": "Computer_Science/DevOps/AWS.assets/17fdad2452abba533b23bd3f39c77021_MD5.jpeg"
     },
     {
       "basename": "Account_Requirements",
@@ -195,10 +199,6 @@
     {
       "basename": "Related_Resources",
       "path": "Computer_Science/Parallel_Programming/Related_Resources.md"
-    },
-    {
-      "basename": "5_Traps",
-      "path": "Computer_Science/Computer_Systems/Operating_Systems_Programming/2_Abstractions/5_Traps.md"
     }
   ],
   "omittedPaths": [],

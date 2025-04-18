@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#-port",
+                "query": "Final Shell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 241.5,
+    "collapsed": true
   },
   "right": {
     "id": "646448ef3be5aeb8",
@@ -261,18 +262,18 @@
   },
   "active": "d92e1200caceafb6",
   "lastOpenFiles": [
-    "Computer_Science/DevOps/AWS.assets/49ca17b9e785b5dfdc4196dc5655c0d4_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250417185235617.png",
-    "Computer_Science/DevOps/AWS.assets/c39c53646b4f85feabd2a3e51c04c4a8_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/784f3748e67d71edbb9d72d156404ed6_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/43ebb0f04ba998af031fe260f62ae76e_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250418183102332.png",
+    "Computer_Science/DevOps/AWS.assets/b7516e6d78b194362b546ccbf6d7e8e5_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250418183022160.png",
+    "Computer_Science/DevOps/AWS.assets/c0473baf3d64a60cf06dfb82eb0aa95b_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250418182913540.png",
+    "Computer_Science/DevOps/AWS.assets/231ad8dbd49c27bb950812e51aa2ab21_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250418182840541.png",
+    "Computer_Science/DevOps/AWS.assets/b2c0c8f24396ed0316df8527d402a365_MD5.jpeg",
+    "Computer_Science/DevOps/AWS.assets/image-20250418182745439.png",
+    "Computer_Science/DevOps/AWS.assets/071edc27ab57b8cd623ede5d54b60267_MD5.jpeg",
     "Computer_Science/DevOps/AWS.md",
-    "Computer_Science/DevOps/AWS.assets/image-20250417185213536.png",
-    "Computer_Science/DevOps/AWS.assets/14a9dd76dceae164d1c58eeabac7d403_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250417185205856.png",
-    "Computer_Science/DevOps/AWS.assets/f3f2dd2846ba26cecaf76a812cabf430_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250417185146389.png",
-    "Computer_Science/DevOps/AWS.assets/fa8bed47b25da8c978c4329ebd230112_MD5.jpeg",
-    "Computer_Science/DevOps/AWS.assets/image-20250417185136507.png",
     "Computer_Science/Large_Language_Models/AI_Agent/Assistant_API.md",
     "Computer_Science/Large_Language_Models/AI_Agent/Agent_Modules.md",
     "Computer_Science/Large_Language_Models/Functionl_Calling/Function_Calling_Theory.md",

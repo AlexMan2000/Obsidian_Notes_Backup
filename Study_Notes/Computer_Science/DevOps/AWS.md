@@ -885,18 +885,93 @@ mount -fav
 
 # S3(Simple Storage Service)
 ## What is S3?
+### Basic Information
 > [!def]
 > ![](AWS.assets/50b174c0191d0b6a14265ab2aeaf8273_MD5.jpeg)![](AWS.assets/82865b18f7e120e8118a58a7552da727_MD5.jpeg)![](AWS.assets/4c3d878d818a58806c5d40f22b76765a_MD5.jpeg)![](AWS.assets/60cbe0dadda3895023cbfcca71f0758b_MD5.jpeg)![](AWS.assets/image-20250417185104706.png)
 
 
-## S3 Storage Classes
+### S3 Storage Classes
 > [!def]
 > ![](AWS.assets/db6dbd32a2c017d6d98813a16c56dd5f_MD5.jpeg)![](AWS.assets/f3f2dd2846ba26cecaf76a812cabf430_MD5.jpeg)
 
 
-## S3 Lifecycle Policies
+### S3 Lifecycle Policies
 > [!def]
 > ![](AWS.assets/14a9dd76dceae164d1c58eeabac7d403_MD5.jpeg)![](AWS.assets/c39c53646b4f85feabd2a3e51c04c4a8_MD5.jpeg)![](AWS.assets/49ca17b9e785b5dfdc4196dc5655c0d4_MD5.jpeg)
+
+
+
+## S3 Bucket Creation
+> [!important] 
+> ![](AWS.assets/a9a2c8b872b818a2a0a0e1b6053c45ea_MD5.jpeg)![](AWS.assets/8823945136283014553a9e7dadb90f8e_MD5.jpeg)![](AWS.assets/0d9809a3bbf4af91f25a3bcf06604de6_MD5.jpeg)
+
+
+
+## S3 File Upload
+### Upload Files/Folders
+> [!important]
+> ![](AWS.assets/ce49f5f5b8faee200b53619a2fcd679c_MD5.jpeg)
+> 
+> ![](AWS.assets/9f77519bbfb9b8a614abe481dda52956_MD5.jpeg)
+
+
+### Modify Storage Class
+> [!important]
+> You can modify the storage class of your uploaded object.
+> 
+> ![](AWS.assets/40a77356633fff55fe1f9fc83785fa53_MD5.jpeg)
+> 
+> ![](AWS.assets/0bf3a6bc7f388670652d0376fa3b5fe5_MD5.jpeg)
+> 
+> ![](AWS.assets/f1666416223e37563a462501fda9074e_MD5.jpeg)
+
+
+
+## S3 Storage Access
+### Through Website
+> [!important]
+> You can view the uploaded object from the amazon website console by clicking the **Open**:
+> 
+> ![](AWS.assets/dafc4e1ecb90cd97e96fd19435985c2a_MD5.jpeg)
+> 
+> But remember, by default, s3 bucket object is private. So if you click into the object and copy the **Object URL** into the browser:
+> 
+> ![](AWS.assets/ee8acad5470ee21a234287bcf4859dca_MD5.jpeg)
+> 
+> It will show **Access denied**:
+> 
+> ![](AWS.assets/99071c6c9fd82dfb453a46ded0547170_MD5.jpeg)
+
+
+
+### Make object public
+> [!important]
+> By default, you cannot select **Make public using ACL** since you haven't configure the accessibility of the s3 bucket.
+> 
+> ![](AWS.assets/d08bd40ecf62e723de9a13ee75ab92fd_MD5.jpeg)
+> 
+> So in order to set access permission of S3 bucket, you have to go under **Permissions** tab and edit **Object Ownership** section:
+> 
+> ![](AWS.assets/b2c0c8f24396ed0316df8527d402a365_MD5.jpeg)
+> 
+> Moreover, we need to uncheck **Block public access**:
+> 
+> ![](AWS.assets/b7516e6d78b194362b546ccbf6d7e8e5_MD5.jpeg)
+> 
+> 
+> After saving changes, you can **Make public using ACL** for all the uploaded objects in this S3 bucket:
+> 
+> ![](AWS.assets/231ad8dbd49c27bb950812e51aa2ab21_MD5.jpeg)
+> 
+> ![](AWS.assets/c0473baf3d64a60cf06dfb82eb0aa95b_MD5.jpeg)
+> 
+> ![](AWS.assets/43ebb0f04ba998af031fe260f62ae76e_MD5.jpeg)
+
+
+
+
+
+
 
 
 
