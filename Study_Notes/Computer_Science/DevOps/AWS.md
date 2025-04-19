@@ -967,11 +967,8 @@ mount -fav
 > 
 > ![](AWS.assets/43ebb0f04ba998af031fe260f62ae76e_MD5.jpeg)
 
-
-
-
-
-
+> [!important]
+> The important takeaway is that even if the S3 bucket is public(by uncheck **Block all public access** under **Permissions**), the stored objects are by default private, and you have to **Make them public using ACL** so that the object URL is accessible to all users.
 
 
 
@@ -981,16 +978,11 @@ mount -fav
 
 
 
-
-
-
-
-
-
-
 # RDS
 ## What is RDS?
 > [!def]
+
+
 
 
 
